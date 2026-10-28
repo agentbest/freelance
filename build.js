@@ -1,5 +1,5 @@
 // 使い方:  node build.js
-// data/jobs.json（fetch-jobs.js が書き出す）から次のページを作り直します。
+// data/jobs.json（fetch-jobs.js が書き出す）と _media/（記事原稿）から次のページを作り直します。
 //   index.html（LP）／jobs/index.html（案件一覧）／job/<案件番号>/index.html（案件ページ）
 //   privacy.html（個人情報の取り扱い）／404.html／sitemap.xml／robots.txt
 // 外部ライブラリなし。CSS は assets/site.css。
@@ -24,6 +24,8 @@ const CATEGORIES = [
 
 // 出力に出てはいけない語（媒体名・社内の値）
 const NG_WORDS = ['WhiteBox', 'ホワイトボックス', 'チョータツ', 'アサインナビ', 'assign-navi', '掲載単価', '掲載企業', '商流', 'マージン', '手数料', '（非公開）'];
+// メディア記事は一般論として「手数料」「商流」などを説明するので、媒体名と社内の値だけを止める
+const MEDIA_NG_WORDS = ['WhiteBox', 'ホワイトボックス', 'チョータツ', 'アサインナビ', 'assign-navi', '掲載単価', '掲載企業', '（非公開）'];
 
 const jobs = JSON.parse(fs.readFileSync(path.join(dir, 'data', 'jobs.json'), 'utf8'));
 
@@ -79,6 +81,7 @@ ${canonical ? `<meta property="og:url" content="${SITE_URL}${canonical}">` : ''}
     <a class="brand" href="/"><img src="/assets/mark.png" alt="" width="28" height="28"><span>${SITE_NAME}<small>フリーランスのエンジニア・コンサル向け案件紹介</small></span></a>
     <nav class="head-nav" aria-label="メニュー">
       <a class="link" href="/jobs/">案件を探す</a>
+      <a class="link" href="/media/">お役立ち記事</a>
       <a class="link" href="/#flow">ご利用の流れ</a>
       <a class="btn btn-primary btn-sm" href="${FORM_URL}" target="_blank" rel="noopener">無料で登録</a>
     </nav>
@@ -94,6 +97,7 @@ function foot(){
     <div class="foot-links">
       <a href="/">トップ</a>
       <a href="/jobs/">案件を探す</a>
+      <a href="/media/">お役立ち記事</a>
       <a href="${FORM_URL}" target="_blank" rel="noopener">ご登録（業務委託基本契約への同意）</a>
       <a href="${PRIVACY_URL}">個人情報の取り扱い</a>
       <a href="https://www.agent-best.net/company/">運営会社</a>
@@ -400,7 +404,7 @@ function buildMisc(){
 <div class="cta-row" style="justify-content:center"><a class="btn btn-primary" href="/jobs/">案件を探す</a><a class="btn btn-ghost" href="/">トップへ</a></div></main>
 ` + foot());
   const today = new Date().toISOString().slice(0, 10);
-  const urls = ['/', '/jobs/', '/privacy.html', ...jobs.map(jobPath)];
+  const urls = ['/', '/jobs/', '/privacy.html', ...jobs.map(jobPath), ...mediaUrls];
   write('sitemap.xml', `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 ${urls.map(u => `  <url><loc>${SITE_URL}${u}</loc><lastmod>${today}</lastmod></url>`).join('\n')}
@@ -412,7 +416,8 @@ ${urls.map(u => `  <url><loc>${SITE_URL}${u}</loc><lastmod>${today}</lastmod></u
 /* ---------- 書き出し（NG語の確認つき） ---------- */
 const written = [];
 function write(rel, content){
-  const hit = NG_WORDS.filter(w => content.includes(w));
+  const ng = rel.startsWith('media/') ? MEDIA_NG_WORDS : NG_WORDS;
+  const hit = ng.filter(w => content.includes(w));
   if(hit.length){
     console.error(`✖ ${rel} に載せてはいけない語が入っています: ${hit.join('、')}。Airtable の公開用の列を直してください。`);
     process.exit(1);
@@ -429,5 +434,6 @@ buildIndex();
 buildList();
 buildPrivacy();
 jobs.forEach(buildJob);
+const mediaUrls = require('./media.js')({dir, SITE_URL, SITE_NAME, FORM_URL, TALK_URL, esc, head, foot, write});
 buildMisc();
 console.log(`案件 ${jobs.length} 件で ${written.length} ファイルを書き出しました。`);
