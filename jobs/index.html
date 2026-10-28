@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>フリーランス案件を探す｜エージェントベストジョブ フリーランス</title>
+<meta name="description" content="フリーランスのエンジニア・コンサル向け業務委託案件の一覧。職種・リモート・稼働日数・金額で絞り込めます。">
+<link rel="canonical" href="https://freelance.agent-best.net/jobs/">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="エージェントベストジョブ フリーランス">
+<meta property="og:title" content="フリーランス案件を探す｜エージェントベストジョブ フリーランス">
+<meta property="og:description" content="フリーランスのエンジニア・コンサル向け業務委託案件の一覧。職種・リモート・稼働日数・金額で絞り込めます。">
+<meta property="og:url" content="https://freelance.agent-best.net/jobs/">
+<meta name="theme-color" content="#1E3A5F">
+<link rel="icon" href="/assets/favicon.ico">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="stylesheet" href="/assets/site.css">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1XXMP8Y1B4"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-1XXMP8Y1B4');</script>
+</head>
+<body>
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="/"><img src="/assets/mark.png" alt="" width="28" height="28"><span>エージェントベストジョブ フリーランス<small>フリーランスのエンジニア・コンサル向け案件紹介</small></span></a>
+    <nav class="head-nav" aria-label="メニュー">
+      <a class="link" href="/jobs/">案件を探す</a>
+      <a class="link" href="/#flow">ご利用の流れ</a>
+      <a class="btn btn-primary btn-sm" href="https://docs.google.com/forms/d/1jKmGJwTy8p6wbJYAQxTMe3KUEloejZti8K7VusVPHgc/viewform" target="_blank" rel="noopener">無料で登録</a>
+    </nav>
+  </div>
+</header>
+<main class="wrap">
+  <p class="crumbs"><a href="/">トップ</a> › 案件を探す</p>
+  <h1 style="font-size:clamp(22px,3.6vw,30px);margin:4px 0 16px">フリーランス案件を探す</h1>
+  <form class="filters" id="filters" onsubmit="return false">
+    <div><label for="q">キーワード</label><input id="q" type="search" placeholder="例：SAP、PMO、AWS"></div>
+    <div><label for="cat">職種</label><select id="cat"><option value="">すべて</option><option value="PM・PMO">PM・PMO</option><option value="ITコンサル">ITコンサル</option><option value="業務・戦略コンサル">業務・戦略コンサル</option><option value="SAP・ERP">SAP・ERP</option><option value="開発（バックエンド）">開発（バックエンド）</option><option value="開発（フロントエンド）">開発（フロントエンド）</option><option value="インフラ・クラウド">インフラ・クラウド</option><option value="データ・AI">データ・AI</option><option value="セキュリティ">セキュリティ</option><option value="QA・テスト">QA・テスト</option><option value="その他">その他</option></select></div>
+    <div><label for="remote">リモート</label><select id="remote"><option value="">指定なし</option><option value="フルリモート">フルリモート</option><option value="一部リモート">一部リモート</option><option value="常駐">常駐</option><option value="応相談">応相談</option></select></div>
+    <div><label for="days">稼働日数</label><select id="days"><option value="">指定なし</option><option value="週5日">週5日</option><option value="週4日">週4日</option><option value="週3日">週3日</option><option value="週2日">週2日</option><option value="週1日">週1日</option><option value="応相談">応相談</option></select></div>
+    <div><label for="pay">お受け取り額（月）</label><select id="pay"><option value="">指定なし</option><option value="60">60万円以上</option><option value="80">80万円以上</option><option value="100">100万円以上</option><option value="120">120万円以上</option><option value="150">150万円以上</option></select></div>
+  </form>
+  <p class="result-count" id="count"></p>
+  <div class="grid g2" id="list"></div>
+  <div id="empty" hidden><div class="empty"><strong>公開できる案件を準備しています</strong>
+ご登録いただいた方には、サイトに載せていない案件も、ご経験・ご希望に合わせて個別にご案内しています。</div><p style="text-align:center;margin-top:16px"><a class="btn btn-primary" href="https://docs.google.com/forms/d/1jKmGJwTy8p6wbJYAQxTMe3KUEloejZti8K7VusVPHgc/viewform" target="_blank" rel="noopener">無料で登録して案件の案内を受け取る</a></p></div>
+  <p class="note" style="margin-top:24px">金額は、お受け取りになる月額の目安です（消費税・経費の扱いは案件ごとにご案内します）。</p>
+</main>
+<script>
+const JOBS = [];
+const $ = id => document.getElementById(id);
+const esc = s => String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const params = new URLSearchParams(location.search);
+['q','cat','remote','days','pay'].forEach(k => { if(params.get(k)) $(k).value = params.get(k); });
+function render(){
+  const q = $('q').value.trim().toLowerCase(), cat = $('cat').value, rm = $('remote').value, dy = $('days').value, pay = +$('pay').value || 0;
+  const hit = JOBS.filter(j => (!q || j.k.toLowerCase().includes(q)) && (!cat || j.c.includes(cat)) &&
+    (!rm || j.r === rm) && (!dy || j.d === dy) && (!pay || j.pmax >= pay));
+  $('count').textContent = JOBS.length ? hit.length + '件の案件' : '';
+  $('list').innerHTML = hit.map(j => '<a class="card job-card" href="' + j.u + '"><h3>' + esc(j.t) + '</h3><div class="pay">' + esc(j.p) +
+    '<small> / 月（お受け取り額の目安）</small></div><ul class="tags">' + [...j.c, j.r, j.d, j.a].filter(Boolean).map(t => '<li>' + esc(t) + '</li>').join('') + '</ul></a>').join('');
+  $('empty').hidden = hit.length > 0;
+  const sp = new URLSearchParams();
+  ['q','cat','remote','days','pay'].forEach(k => { if($(k).value) sp.set(k, $(k).value); });
+  history.replaceState(null, '', location.pathname + (sp.toString() ? '?' + sp : ''));
+}
+['q','cat','remote','days','pay'].forEach(k => $(k).addEventListener('input', render));
+render();
+</script>
+<footer class="site-foot">
+  <div class="wrap">
+    <strong>エージェントベストジョブ フリーランス</strong>
+    <div class="foot-links">
+      <a href="/">トップ</a>
+      <a href="/jobs/">案件を探す</a>
+      <a href="https://docs.google.com/forms/d/1jKmGJwTy8p6wbJYAQxTMe3KUEloejZti8K7VusVPHgc/viewform" target="_blank" rel="noopener">ご登録（業務委託基本契約への同意）</a>
+      <a href="https://jobs.agent-best.net/privacy.html">個人情報の取り扱い</a>
+      <a href="https://www.agent-best.net/company/">運営会社</a>
+    </div>
+    <div class="foot-links">
+      <a href="https://jobs.agent-best.net/">正社員の求人を探す（エージェントベストジョブ）</a>
+      <a href="https://skill.agent-best.net/">エージェントベストジョブ手に職</a>
+      <a href="https://www.agent-best.net/">エージェントベスト</a>
+    </div>
+    <p>運営：株式会社エージェントベスト（有料職業紹介事業 許可番号 13-ユ-316964）<br>〒106-0032 東京都港区六本木4-8-7 嶋田ビル5階</p>
+  </div>
+</footer>
+</body>
+</html>
