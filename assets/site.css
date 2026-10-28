@@ -176,3 +176,7 @@ section.block{padding:56px 0 8px}
   .cta-row{flex-direction:column}
   .media-search{flex-direction:column}
 }
+
+/* LINE（公式アカウントの緑） */
+.btn-line{background:#06c755;color:#fff;border-color:#06c755}
+.cta-band .btn-line{background:#06c755;color:#fff;border-color:#06c755}

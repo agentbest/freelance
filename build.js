@@ -12,7 +12,8 @@ const dir = __dirname;
 const SITE_URL  = 'https://freelance.agent-best.net';
 const SITE_NAME = 'エージェントベストジョブ フリーランス';
 const GA_ID     = 'G-1XXMP8Y1B4';
-const FORM_URL  = 'https://docs.google.com/forms/d/1jKmGJwTy8p6wbJYAQxTMe3KUEloejZti8K7VusVPHgc/viewform'; // 業務委託基本契約 同意フォーム
+const FORM_URL  = 'https://airtable.com/appYkc36EvioYoL1A/pag6CZC4uJmxUcrXT/form'; // ご登録フォーム（スキルシート・希望条件）→ 求職者（フリーランス）tblDp1w31rRtbgOyc
+const LINE_URL  = 'https://line.me/R/ti/p/@697nxhbt?oat_content=url&ts=08302134'; // LINE公式アカウント
 const TALK_URL  = 'https://calendly.com/r_matsuoka';
 const PRIVACY_URL = '/privacy.html';
 
@@ -73,7 +74,8 @@ ${canonical ? `<meta property="og:url" content="${SITE_URL}${canonical}">` : ''}
 <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
 <link rel="stylesheet" href="/assets/site.css">
 <script async src="https://www.googletagmanager.com/gtag/js?id=${GA_ID}"></script>
-<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','${GA_ID}');</script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','${GA_ID}');
+document.addEventListener('click',e=>{const a=e.target.closest('[data-line-cta]');if(a)gtag('event','line_add_friend',{placement:a.dataset.lineCta,page_path:location.pathname});});</script>
 </head>
 <body>
 <header class="site-head">
@@ -98,7 +100,8 @@ function foot(){
       <a href="/">トップ</a>
       <a href="/jobs/">案件を探す</a>
       <a href="/media/">お役立ち記事</a>
-      <a href="${FORM_URL}" target="_blank" rel="noopener">ご登録（業務委託基本契約への同意）</a>
+      <a href="${FORM_URL}" target="_blank" rel="noopener">ご登録（スキルシート・ご希望の条件）</a>
+      <a href="${LINE_URL}" target="_blank" rel="noopener" data-line-cta="footer">LINEで相談する</a>
       <a href="${PRIVACY_URL}">個人情報の取り扱い</a>
       <a href="https://www.agent-best.net/company/">運営会社</a>
     </div>
@@ -133,7 +136,7 @@ function buildIndex(){
   const faq = [
     ['登録にお金はかかりますか？', 'ご登録・ご利用で、フリーランスの方にお支払いいただく費用はありません。案件をご案内するときは、お受け取りになる金額（月額の目安）でお伝えします。'],
     ['登録すると、経歴がすぐ企業に送られますか？', '送りません。案件ごとに内容をご案内し、ご本人の「応募したい」というお返事をいただいてから、氏名や連絡先を伏せた経歴で企業にご提案します。'],
-    ['契約の形はどうなりますか？', '当社とフリーランスの方との業務委託契約（準委任）です。ご登録の際に基本契約へWebで同意いただき、参画が決まった案件ごとに個別契約を結びます。電子署名などのお手間はかかりません。'],
+    ['契約の形はどうなりますか？', '当社とフリーランスの方との業務委託契約（準委任）です。ご登録の時点では契約は発生しません。ご参画が決まった時点で、当社と契約を結びます。'],
     ['報酬の支払いはいつですか？', '支払期日などの取引条件は、参画が決まった案件ごとに、個別契約で書面（メール）にてお示しします。'],
     ['リモートや週3日の案件はありますか？', 'あります。案件ごとに稼働日数・リモート可否を記載しています。ご希望の条件を先に伺い、合う案件だけをご案内します。'],
     ['正社員への転職も相談できますか？', 'できます。運営会社のエージェントベストは人材紹介（有料職業紹介）の許可を持っています。業務委託と正社員の両方を比べながらご相談いただけます。'],
@@ -203,13 +206,13 @@ function buildIndex(){
 <section class="block" id="flow">
   <div class="wrap">
     <h2>ご利用の流れ</h2>
-    <p class="sub">ご登録から参画まで、メールで進められます。</p>
+    <p class="sub">ご登録から参画まで、メールかLINEで進められます。</p>
     <div class="steps">
-      <div class="card"><span class="num">1</span><h3>ご登録</h3><p>フォームで業務委託基本契約に同意いただきます（数分で終わります）。</p></div>
-      <div class="card"><span class="num">2</span><h3>経歴とご希望の共有</h3><p>スキルシートと、稼働日数・金額などのご希望をメールでお送りください。</p></div>
-      <div class="card"><span class="num">3</span><h3>案件のご案内</h3><p>条件に合う案件をメールでご案内します。気になる案件だけお返事ください。</p></div>
+      <div class="card"><span class="num">1</span><h3>ご登録</h3><p>フォームに、スキルシートとご希望の条件をご入力ください（約5分）。</p></div>
+      <div class="card"><span class="num">2</span><h3>メールかLINEでご連絡</h3><p>ご登録内容を確認し、ご希望の方法（メールまたはLINE）でご連絡します。</p></div>
+      <div class="card"><span class="num">3</span><h3>案件のご案内</h3><p>条件に合う案件をご案内します。気になる案件だけお返事ください。</p></div>
       <div class="card"><span class="num">4</span><h3>提案・面談</h3><p>ご了承いただいた案件だけを企業に提案し、面談の日程を調整します。</p></div>
-      <div class="card"><span class="num">5</span><h3>契約・参画</h3><p>個別契約にメールで同意いただき、参画が始まります。</p></div>
+      <div class="card"><span class="num">5</span><h3>契約・参画</h3><p>当社と業務委託契約を結び、参画が始まります。</p></div>
     </div>
   </div>
 </section>
@@ -225,10 +228,11 @@ function buildIndex(){
   <div class="wrap">
     <div class="cta-band">
       <h2>次の案件探しを、任せてみませんか。</h2>
-      <p>ご登録は無料です。まず話を聞いてみたい方は、オンライン面談もご予約いただけます。</p>
+      <p>ご登録は無料です。まず話を聞いてみたい方は、オンライン面談のご予約やLINEでのご相談もできます。</p>
       <div class="cta-row">
         <a class="btn btn-primary" href="${FORM_URL}" target="_blank" rel="noopener">無料で登録する</a>
         <a class="btn btn-ghost" href="${TALK_URL}" target="_blank" rel="noopener">面談を予約する</a>
+        <a class="btn btn-line" href="${LINE_URL}" target="_blank" rel="noopener" data-line-cta="lp-cta">LINEで相談する</a>
       </div>
     </div>
   </div>
@@ -370,7 +374,8 @@ function buildPrivacy(){
     '案件に関するご希望（稼働日数、リモートの可否、金額、開始時期など）',
     '事業形態、適格請求書発行事業者の登録番号など、契約と支払いに必要な情報',
     'ご紹介した案件、企業への提案・面談・参画の履歴',
-    'ご相談の内容、当社担当者とのやりとりの記録'
+    'ご相談の内容、当社担当者とのやりとりの記録（メール・LINEでのやりとりを含みます）',
+    'LINEでのご連絡をご希望の場合は、LINEの表示名'
   ]))}
   ${sec('3. 利用目的', ul([
     'ご経験・ご希望に合う案件のご紹介、ご相談への対応、面談の日程調整',
