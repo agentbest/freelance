@@ -13,6 +13,6 @@
 金額は「お受け取り額の目安」（本人への支払額）だけを出す。
 
 ## 未対応
-- 個人情報の取り扱いは jobs.agent-best.net/privacy.html（人材紹介用）にリンクしている。フリーランス案件紹介の利用目的が入っているかは未確認
-- OGP画像なし
+- 個人情報の取り扱いは /privacy.html（フリーランス用・build.js の buildPrivacy）。Googleの同意フォームはまだ jobs の privacy.html にリンクしている
+- OGP画像は assets/ogp.png。原本 tools/ogp/src.html を Chrome ヘッドレスで 1200×630 に出力
 - 登録ボタンは Googleフォーム「業務委託基本契約 同意フォーム」、面談は Calendly

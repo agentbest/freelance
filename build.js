@@ -1,7 +1,7 @@
 // 使い方:  node build.js
 // data/jobs.json（fetch-jobs.js が書き出す）から次のページを作り直します。
 //   index.html（LP）／jobs/index.html（案件一覧）／job/<案件番号>/index.html（案件ページ）
-//   404.html／sitemap.xml／robots.txt
+//   privacy.html（個人情報の取り扱い）／404.html／sitemap.xml／robots.txt
 // 外部ライブラリなし。CSS は assets/site.css。
 //
 // ★ 載せないもの: 掲載単価・掲載企業・媒体名・手数料。出力に紛れたら NG_WORDS で止まります。
@@ -14,7 +14,7 @@ const SITE_NAME = 'エージェントベストジョブ フリーランス';
 const GA_ID     = 'G-1XXMP8Y1B4';
 const FORM_URL  = 'https://docs.google.com/forms/d/1jKmGJwTy8p6wbJYAQxTMe3KUEloejZti8K7VusVPHgc/viewform'; // 業務委託基本契約 同意フォーム
 const TALK_URL  = 'https://calendly.com/r_matsuoka';
-const PRIVACY_URL = 'https://jobs.agent-best.net/privacy.html';
+const PRIVACY_URL = '/privacy.html';
 
 // 職種カテゴリ（Airtable の選択肢と同じ名前）
 const CATEGORIES = [
@@ -61,6 +61,11 @@ ${robots ? `<meta name="robots" content="${robots}">` : ''}
 <meta property="og:title" content="${esc(title)}">
 <meta property="og:description" content="${esc(desc)}">
 ${canonical ? `<meta property="og:url" content="${SITE_URL}${canonical}">` : ''}
+<meta property="og:image" content="${SITE_URL}/assets/ogp.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="${SITE_URL}/assets/ogp.png">
 <meta name="theme-color" content="#1E3A5F">
 <link rel="icon" href="/assets/favicon.ico">
 <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
@@ -335,6 +340,58 @@ function buildJob(j){
   write(`job/${jobNo(j)}/index.html`, html);
 }
 
+/* ---------- 個人情報の取り扱い（privacy.html） ---------- */
+// 人材紹介用（jobs.agent-best.net/privacy.html）とは別建て。当社が業務委託の契約当事者になる前提で書く
+function buildPrivacy(){
+  const sec = (h, body) => `<h2 style="font-size:19px;margin:32px 0 8px">${h}</h2>${body}`;
+  const ul = items => `<ul>${items.map(i => `<li>${i}</li>`).join('')}</ul>`;
+  const html = head({
+    title: `個人情報の取り扱い｜${SITE_NAME}`,
+    desc: `${SITE_NAME}（フリーランス案件の紹介）における個人情報の取り扱いについて。`,
+    canonical: '/privacy.html'
+  }) + `<main class="wrap narrow">
+  <p class="crumbs"><a href="/">トップ</a> › 個人情報の取り扱い</p>
+  <h1 style="font-size:clamp(22px,3.6vw,30px);margin:4px 0 12px">個人情報の取り扱い</h1>
+  <p class="note">フリーランス（業務委託）案件の紹介サービス／制定日：2026年10月29日</p>
+  <p>株式会社エージェントベスト（以下「当社」）は、当社が運営する「${SITE_NAME}」（以下「本サイト」）および、フリーランスの方に業務委託の案件をご紹介するサービス（以下「本サービス」）の提供にあたり、お預かりする個人情報を以下の方針に基づいて取り扱います。</p>
+  <div class="card"><p>本サービスでは、<strong>当社がフリーランスの方と業務委託契約を結び、当社が取引先（案件の発注元）と契約する</strong>形で案件をご紹介します。正社員への転職のご相談（人材紹介）における取り扱いは、<a href="https://jobs.agent-best.net/privacy.html">人材紹介サービスのプライバシーポリシー</a>をご覧ください。両方のサービスをご利用の場合は、両方が適用されます。</p></div>
+  ${sec('1. 事業者情報', `<div class="card company"><dl>
+    <dt>事業者名</dt><dd>株式会社エージェントベスト</dd>
+    <dt>所在地</dt><dd>東京都港区六本木4-8-7 嶋田ビル5階</dd>
+    <dt>お問い合わせ</dt><dd><a href="https://www.agent-best.net/contact">www.agent-best.net/contact</a></dd>
+  </dl></div>`)}
+  ${sec('2. 取得する個人情報', `<p>ご登録フォーム、メール、ご面談などを通じて、次の情報を取得します。</p>` + ul([
+    '氏名、住所、屋号（任意）、メールアドレス、電話番号',
+    'スキルシート・経歴書その他ご提出いただく書類に記載された情報（職歴・経験したプロジェクト・保有スキル・資格等）',
+    '案件に関するご希望（稼働日数、リモートの可否、金額、開始時期など）',
+    '事業形態、適格請求書発行事業者の登録番号など、契約と支払いに必要な情報',
+    'ご紹介した案件、企業への提案・面談・参画の履歴',
+    'ご相談の内容、当社担当者とのやりとりの記録'
+  ]))}
+  ${sec('3. 利用目的', ul([
+    'ご経験・ご希望に合う案件のご紹介、ご相談への対応、面談の日程調整',
+    'ご本人の了承を得た案件の取引先への提案',
+    '業務委託契約（基本契約・個別契約）の締結と履行、報酬のお支払い、請求書の受領など取引に必要な事務',
+    '参画中のフォローアップ、契約更新・終了に関するご連絡',
+    'サービス品質の向上、統計的な分析（個人を特定しない形で行います）'
+  ]) + `<p>取得した個人情報は、上記の目的の範囲を超えて利用しません。</p>`)}
+  ${sec('4. 収集しない情報', `<p>業務の目的の達成に必要な範囲内でのみ個人情報を収集し、次の情報は、特別な業務上の必要があり、ご本人の同意を得た場合を除いて収集しません。</p>` + ul([
+    '人種、民族、社会的身分、門地、本籍、出生地その他社会的差別の原因となるおそれのある事項',
+    '思想および信条',
+    '労働組合への加入状況'
+  ]))}
+  ${sec('5. 取引先への提供について', `<p>案件ごとに内容をご案内し、<strong>ご本人の了承を得た案件の取引先に限り</strong>、提案に必要な範囲で経歴等を提供します。提案の段階では、氏名・連絡先など個人を特定できる情報を伏せた経歴でお伝えします。面談や参画が決まり、取引先との手続きに必要な場合は、その都度ご本人の了承を得て氏名等をお伝えします。ご了承のない取引先へ情報を提供することはありません。</p>`)}
+  ${sec('6. 業務委託・外部サービスの利用', `<p>個人情報の保管および業務の遂行にあたり、当社は外部のクラウドサービス（顧客管理、メール、フォーム、日程調整、ファイル保管、社内通知等）を利用します。委託先の選定にあたっては安全管理体制を確認し、契約により個人情報の適正な取り扱いを義務付けます。</p>`)}
+  ${sec('7. 保管期間', `<p>契約に関する記録は、法令で定められた期間保管します。それ以外の情報は、ご相談・参画の終了後も、再度のご紹介や重複した提案の防止のため一定期間保管し、必要がなくなった情報は適切に削除します。削除をご希望の場合は、いつでもお申し出いただけます（第9項）。</p>`)}
+  ${sec('8. 安全管理措置', `<p>個人情報への不正アクセス、紛失、破壊、改ざん、漏えいを防止するため、アクセス権限の管理、通信の暗号化、取扱担当者の限定等の措置を講じます。</p>`)}
+  ${sec('9. 開示・訂正・削除、ご案内の停止', `<p>ご本人からのお申し出により、個人情報の開示、訂正、追加、削除、利用停止に対応します。案件のご案内の停止も同様に受け付けます。お問い合わせ窓口（第1項）または担当者へご連絡ください。ご本人であることを確認のうえ、速やかに対応します。</p>`)}
+  ${sec('10. Cookie・アクセス解析', `<p>本サイトでは、サービス改善のためGoogle社の提供する「Google アナリティクス」を利用しています。同ツールはCookieを利用して匿名の利用情報（閲覧したページ、滞在時間、参照元、利用端末の種類など）を収集します。氏名やメールアドレスなど個人を特定する情報は含まれません。Cookieの利用は、ご利用のブラウザの設定で拒否することができます。</p>`)}
+  ${sec('11. 本ポリシーの変更', `<p>法令の改正やサービス内容の変更に応じて、本ポリシーを改定する場合があります。重要な変更を行う場合は本サイト上でお知らせします。</p>`)}
+</main>
+` + foot();
+  write('privacy.html', html);
+}
+
 /* ---------- 404・sitemap・robots ---------- */
 function buildMisc(){
   write('404.html', head({title: `ページが見つかりません｜${SITE_NAME}`, desc: 'ページが見つかりません。', robots: 'noindex'}) +
@@ -343,7 +400,7 @@ function buildMisc(){
 <div class="cta-row" style="justify-content:center"><a class="btn btn-primary" href="/jobs/">案件を探す</a><a class="btn btn-ghost" href="/">トップへ</a></div></main>
 ` + foot());
   const today = new Date().toISOString().slice(0, 10);
-  const urls = ['/', '/jobs/', ...jobs.map(jobPath)];
+  const urls = ['/', '/jobs/', '/privacy.html', ...jobs.map(jobPath)];
   write('sitemap.xml', `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 ${urls.map(u => `  <url><loc>${SITE_URL}${u}</loc><lastmod>${today}</lastmod></url>`).join('\n')}
@@ -370,6 +427,7 @@ function write(rel, content){
 fs.rmSync(path.join(dir, 'job'), {recursive: true, force: true});
 buildIndex();
 buildList();
+buildPrivacy();
 jobs.forEach(buildJob);
 buildMisc();
 console.log(`案件 ${jobs.length} 件で ${written.length} ファイルを書き出しました。`);
