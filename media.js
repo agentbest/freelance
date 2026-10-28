@@ -126,7 +126,7 @@ module.exports = function buildMedia({dir, SITE_URL, SITE_NAME, FORM_URL, TALK_U
 
   /* ---------- 記事 ---------- */
   for(const a of arts){
-    const {html: body, toc, faq} = renderMarkdown(a.body, esc);
+    const {html: body, toc, faq} = renderMarkdown(a.body, esc, bySlug);
     const related = [
       ...(a.related || []).map(s => bySlug[s]).filter(Boolean),
       ...(byHub[a.hub] || []).filter(x => x.slug !== a.slug)
@@ -228,13 +228,16 @@ function parseArticle(file, slug){
 }
 
 /* ---------- Markdown（記事で使う範囲だけ） ---------- */
-function renderMarkdown(md, esc){
+// まだ書かれていない記事へのリンクは、文字だけにする（書かれた時点で自動でリンクになる）
+function renderMarkdown(md, esc, bySlug){
   const toc = [], faq = [];
   let n = 0;
   const inline = s => esc(s)
     .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
     .replace(/`([^`]+)`/g, '<code>$1</code>')
     .replace(/\[([^\]]+)\]\(([^)\s]+)\)/g, (_, t, u) => {
+      const own = u.match(/^\/media\/([a-z0-9-]+)\/$/);
+      if(own && !bySlug[own[1]] && !['search', 'hub'].includes(own[1])) return t;
       const ext = /^https?:/.test(u) && !u.startsWith('https://freelance.agent-best.net');
       return `<a href="${u}"${ext ? ' target="_blank" rel="noopener"' : ''}>${t}</a>`;
     });

@@ -5,7 +5,7 @@ hub: contract
 pubDate: 2026-10-29
 tags: ["準委任","請負","業務委託契約","SES","契約不適合責任"]
 related: ["gisou-ukeoi","contract-checkpoints","basic-and-individual-contract","termination","freelance-act-overview","seisan-haba"]
-sources: [{"t":"民法（e-Gov法令検索）","u":"https://laws.e-gov.go.jp/law/129AC0000000089"},{"t":"労働者派遣・請負を適正に行うためのガイド（厚生労働省）","u":"https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000077386_00020.html"},{"t":"フリーランス法特設サイト（公正取引委員会）","u":"https://www.jftc.go.jp/freelancelaw_2024/index.html"}]
+sources: [{"t": "民法（e-Gov法令検索）", "u": "https://laws.e-gov.go.jp/law/129AC0000000089"}, {"t": "労働者派遣・請負を適正に行うためのガイド（厚生労働省）", "u": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000077386_00020.html"}, {"t": "フリーランス法特設サイト（公正取引委員会）", "u": "https://www.jftc.go.jp/freelancelaw_2024/index.html"}, {"t": "フリーランスの取引適正化に向けた公正取引委員会の取組（公正取引委員会）", "u": "https://www.jftc.go.jp/fllaw_limited.html"}]
 ---
 準委任契約は「決められた業務を行うこと」に、請負契約は「仕事を完成させること」に報酬が支払われる契約です。どちらも「業務委託契約」と呼ばれますが、負う責任、報酬を受け取れる条件、途中で契約をやめるときの扱いが違います。
 
