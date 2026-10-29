@@ -375,7 +375,96 @@ extra_topics2 = {
         ('seishain-modoru-tetsuzuki', '正社員に戻ったときの社会保険・税金の切り替え'),
     ],
 }
-for d in (extra_topics, extra_topics2):
+# 2026-10-29 追加その3（第14弾〜）。数合わせはせず、既存475本と問いが重ならないものだけ
+extra_topics3 = {
+    'independence': [
+        ('kojin-jigyonushi-chigai', '個人事業主とフリーランスの違い｜呼び方と手続きの関係'),
+        ('dokuritsu-1nenme-okane', '独立1年目のお金の流れ｜税金・保険料の支払い時期'),
+        ('dokuritsu-2nenme', '独立2年目に増える支払いと備え方'),
+        ('jitaku-chintai', '賃貸住宅で事業をするときの注意点'),
+    ],
+    'find-projects': [
+        ('tantousha-yaritori', 'エージェントの担当者とのやりとりで伝えておきたいこと'),
+        ('sankaku-junbi', '参画が決まってから開始日までにやること'),
+        ('sankaku-shoki', '参画初日から最初の1週間でやること'),
+        ('genba-tachiichi', '常駐先での立ち位置と人間関係の考え方'),
+        ('hikitsugi', '契約終了時の引き継ぎの進め方'),
+        ('hyouka-tsunageru', '取引先からの評価を次の案件につなげる方法'),
+        ('enchou-dashin', '契約延長の打診が来たときの考え方'),
+    ],
+    'skillsheet-interview': [
+        ('mensetsu-ng', '業務委託の面談で避けたい受け答え'),
+        ('mensetsu-tanka', '面談で希望単価を聞かれたときの答え方'),
+        ('tanki-keireki', '短期案件が多い経歴の見せ方'),
+        ('skillsheet-shippai', 'スキルシートでよくある失敗と直し方'),
+    ],
+    'rate': [
+        ('tanka-fukumu', '単価に含まれるもの・含まれないもの'),
+        ('hiwari', '月の途中から参画したときの報酬｜日割りの考え方'),
+        ('kyujitsu-sagyo', '休日・深夜に作業したときの報酬の扱い'),
+        ('taiki-houshu', '取引先の都合で作業が止まったときの報酬'),
+    ],
+    'contract': [
+        ('keiyakusho-nashi', '契約書がないまま作業を始めるリスク'),
+        ('sansha-kankei', 'エージェント経由の契約の相手は誰？三者の関係'),
+        ('factoring', '債権譲渡の禁止条項とファクタリングの注意点'),
+        ('jikou', '報酬を請求できる期間｜消滅時効の考え方'),
+        ('data-henkyaku', '契約終了後のデータの返却・削除の義務'),
+        ('torihikisaki-kitei', '取引先の就業規則やセキュリティ規程に従う必要はある？'),
+    ],
+    'law': [
+        ('freelance-act-moushide', 'フリーランス法違反を申し出る方法と不利益な扱いの禁止'),
+        ('rousai-jiko', '業務中にけがをしたとき｜労災の特別加入と手続き'),
+        ('harassment-taiou', 'ハラスメントを受けたときの具体的な対応'),
+    ],
+    'tax': [
+        ('benkyou-keihi', '書籍・セミナー・資格の費用は経費になる？'),
+        ('ryohi', '出張の旅費・宿泊費の経費の考え方'),
+        ('kaigai-torihikisaki', '海外の取引先から報酬を受け取るときの税金'),
+        ('nouzei-yuuyo', '税金を払えないとき｜納税の猶予と分割'),
+        ('shoumeisho', '所得証明・課税証明・納税証明の取り方'),
+        ('kanjou-kamoku', '勘定科目の選び方｜フリーランスがよく使う科目'),
+        ('jigyonushi-kashi', '事業主貸・事業主借とは'),
+    ],
+    'invoice': [
+        ('menzei-gaichu', '免税事業者に仕事を外注するときの注意点'),
+        ('denshi-invoice', '電子インボイス（デジタルインボイス）とは'),
+    ],
+    'social-insurance': [
+        ('kokuho-tainou', '国民健康保険料を滞納するとどうなる？'),
+        ('kougaku-ryouyouhi', '高額療養費の仕組みと手続き'),
+    ],
+    'incorporation': [
+        ('houjin-kouza', '法人口座の開設｜準備するものと注意点'),
+        ('jigyou-mokuteki', '定款の事業目的の決め方'),
+        ('houjin-zei', '法人税・法人住民税・法人事業税の仕組み'),
+        ('houjin-gensen', '法人化後の源泉徴収と年末調整'),
+    ],
+    'workstyle': [
+        ('online-kaigi', 'オンライン会議で信頼される準備と話し方'),
+        ('chat-houkoku', 'チャットでの報告・相談の書き方'),
+        ('renraku-jikan', '稼働時間外の連絡にどう対応するか'),
+        ('document', '設計書・手順書を残す習慣｜引き継げる仕事の残し方'),
+        ('gijiroku', '議事録の書き方｜決まったことを残すコツ'),
+    ],
+    'career': [
+        ('tanaoroshi', 'キャリアの棚卸しの方法'),
+        ('nagaku-tsuzukeru', 'フリーランスを長く続けるために意識したいこと'),
+        ('tech-lead', 'テックリードとして参画するには'),
+        ('architect', 'アーキテクトとして参画するには'),
+        ('shokushu-tenkan', '職種を変えたいときの進め方'),
+        ('gyoukai-chishiki', '業界知識（金融・製造など）を強みにする方法'),
+    ],
+    'side-job': [
+        ('hongyo-torihikisaki', '本業の取引先から副業を頼まれたとき'),
+    ],
+    'back-to-employee': [
+        ('tenshoku-mensetsu', 'フリーランスの経験を転職面接でどう話すか'),
+        ('nenshu-koushou', '正社員に戻るときの年収交渉'),
+        ('keiyaku-haken-hikaku', '契約社員・派遣・業務委託の違いと選び方'),
+    ],
+}
+for d in (extra_topics, extra_topics2, extra_topics3):
     for hub, ts in d.items():
         topics[hub] = topics[hub] + ts
 
