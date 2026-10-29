@@ -15,7 +15,12 @@
 ## 未対応
 - 個人情報の取り扱いは /privacy.html（フリーランス用・build.js の buildPrivacy）。Googleの同意フォームはまだ jobs の privacy.html にリンクしている
 - OGP画像は assets/ogp.png。原本 tools/ogp/src.html を Chrome ヘッドレスで 1200×630 に出力
-- 登録ボタンは Googleフォーム「業務委託基本契約 同意フォーム」、面談は Calendly
+- 登録ボタンは Airtableフォーム pag6CZC4uJmxUcrXT（スキルシート・希望条件）、面談は Calendly、LINE公式 @697nxhbt
+
+## 案件サイトの機能（jobs-pages.js）— 2026-10-29 追加
+- 職種別 /jobs/c/<slug>/・勤務地/働き方別 /jobs/area/<slug>/（CAT_PAGES・PLACE_PAGES）。案件0件のページは noindex で sitemap に入れない
+- 気になる案件 /mypage/：assets/fav.js が localStorage（abf_fav・abf_hist）に保存。ログインなし・サーバーに送らない
+- 応募・相談フォーム Airtable paglrk4YsAU4rkius（求職者（フリーランス）へ入る）。案件番号・種類・流入フォームを prefill（列名は INQ_FIELDS。Airtable の列名を変えたら直す）
 
 ## お役立ち記事（/media/）— 2026-10-29 追加
 - jobs.agent-best.net/media を参考にした記事サイト。build.js が media.js を呼んで media/ を毎回作り直す（media/ は手で直さない）

@@ -180,3 +180,31 @@ section.block{padding:56px 0 8px}
 /* LINE（公式アカウントの緑） */
 .btn-line{background:#06c755;color:#fff;border-color:#06c755}
 .cta-band .btn-line{background:#06c755;color:#fff;border-color:#06c755}
+
+/* 案件サイト：検索・気になる・職種/勤務地別一覧 */
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.hero-search{display:flex;flex-wrap:wrap;gap:8px;background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:10px;max-width:760px;box-shadow:var(--shadow)}
+.hero-search input,.hero-search select{font:inherit;font-size:15px;padding:10px 12px;border:1px solid var(--line);border-radius:10px;background:var(--bg);color:var(--text);min-width:0}
+.hero-search input{flex:2 1 220px}
+.hero-search select{flex:1 1 160px}
+.hero-search .btn{flex:0 0 auto}
+.quick-links{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px;font-size:13.5px}
+.quick-links a{background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:4px 12px;text-decoration:none;color:var(--text)}
+.quick-links a:hover{border-color:var(--accent)}
+.job-card{position:relative}
+.job-link{color:var(--text);text-decoration:none}
+.job-link::after{content:"";position:absolute;inset:0;border-radius:var(--radius)}
+.fav-btn{position:relative;z-index:1;margin-top:12px;font:inherit;font-size:13px;font-weight:700;color:var(--gold);background:var(--gold-soft);
+  border:1px solid transparent;border-radius:999px;padding:4px 12px;cursor:pointer}
+.fav-btn[aria-pressed="true"],.fav-btn-lg[aria-pressed="true"]{border-color:var(--gold)}
+.fav-btn-lg{background:transparent;font:inherit;font-weight:700}
+.job-card.ended{opacity:.7}
+.head-nav .fav-count{display:inline-block;min-width:18px;margin-left:4px;padding:0 5px;border-radius:999px;background:var(--gold);color:#fff;font-size:11px;line-height:18px;text-align:center}
+.cat.on{border-color:var(--accent);background:var(--accent-soft);font-weight:700}
+.block-sub{margin-top:40px}
+.mini-h{font-size:17px;margin:20px 0 10px}
+.lead-text{color:var(--muted);margin:0 0 8px}
+@media (max-width:560px){
+  .head-nav a.link.keep{display:inline-block;font-size:13px;padding:6px 4px}
+  .hero-search .btn{width:100%}
+}

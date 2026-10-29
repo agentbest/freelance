@@ -32,7 +32,7 @@ document.addEventListener('click',e=>{const a=e.target.closest('[data-line-cta]'
     <nav class="head-nav" aria-label="メニュー">
       <a class="link" href="/jobs/">案件を探す</a>
       <a class="link" href="/media/">お役立ち記事</a>
-      <a class="link" href="/#flow">ご利用の流れ</a>
+      <a class="link keep" href="/mypage/" aria-label="気になる案件">☆ 気になる<span class="fav-count" data-fav-count hidden></span></a>
       <a class="btn btn-primary btn-sm" href="https://airtable.com/appYkc36EvioYoL1A/pag6CZC4uJmxUcrXT/form" target="_blank" rel="noopener">無料で登録</a>
     </nav>
   </div>
@@ -52,6 +52,12 @@ document.addEventListener('click',e=>{const a=e.target.closest('[data-line-cta]'
   <div id="empty" hidden><div class="empty"><strong>公開できる案件を準備しています</strong>
 ご登録いただいた方には、サイトに載せていない案件も、ご経験・ご希望に合わせて個別にご案内しています。</div><p style="text-align:center;margin-top:16px"><a class="btn btn-primary" href="https://airtable.com/appYkc36EvioYoL1A/pag6CZC4uJmxUcrXT/form" target="_blank" rel="noopener">無料で登録して案件の案内を受け取る</a></p></div>
   <p class="note" style="margin-top:24px">金額は、お受け取りになる月額の目安です（消費税・経費の扱いは案件ごとにご案内します）。</p>
+  <div class="block-sub">
+    <h2 class="mini-h">職種から探す</h2>
+    <div class="cat-list"><a class="cat" href="/jobs/c/pm-pmo/">PM・PMO</a><a class="cat" href="/jobs/c/it-consultant/">ITコンサル</a><a class="cat" href="/jobs/c/strategy-consultant/">業務・戦略コンサル</a><a class="cat" href="/jobs/c/sap-erp/">SAP・ERP</a><a class="cat" href="/jobs/c/backend/">開発（バックエンド）</a><a class="cat" href="/jobs/c/frontend/">開発（フロントエンド）</a><a class="cat" href="/jobs/c/infra-cloud/">インフラ・クラウド</a><a class="cat" href="/jobs/c/data-ai/">データ・AI</a><a class="cat" href="/jobs/c/security/">セキュリティ</a><a class="cat" href="/jobs/c/qa-test/">QA・テスト</a><a class="cat" href="/jobs/c/other/">その他</a></div>
+    <h2 class="mini-h">勤務地・働き方から探す</h2>
+    <div class="cat-list"><a class="cat" href="/jobs/area/remote/">フルリモート</a><a class="cat" href="/jobs/area/part-time/">週3日以下</a><a class="cat" href="/jobs/area/tokyo/">東京都</a><a class="cat" href="/jobs/area/kanagawa/">神奈川県</a><a class="cat" href="/jobs/area/saitama-chiba/">埼玉県・千葉県</a><a class="cat" href="/jobs/area/osaka/">大阪府・関西</a><a class="cat" href="/jobs/area/aichi/">愛知県・東海</a><a class="cat" href="/jobs/area/fukuoka/">福岡県・九州</a></div>
+  </div>
 </main>
 <script>
 const JOBS = [];
@@ -64,9 +70,11 @@ function render(){
   const hit = JOBS.filter(j => (!q || j.k.toLowerCase().includes(q)) && (!cat || j.c.includes(cat)) &&
     (!rm || j.r === rm) && (!dy || j.d === dy) && (!pay || j.pmax >= pay));
   $('count').textContent = JOBS.length ? hit.length + '件の案件' : '';
-  $('list').innerHTML = hit.map(j => '<a class="card job-card" href="' + j.u + '"><h3>' + esc(j.t) + '</h3><div class="pay">' + esc(j.p) +
-    '<small> / 月（お受け取り額の目安）</small></div><ul class="tags">' + [...j.c, j.r, j.d, j.a].filter(Boolean).map(t => '<li>' + esc(t) + '</li>').join('') + '</ul></a>').join('');
+  $('list').innerHTML = hit.map(j => '<div class="card job-card"><a class="job-link" href="' + j.u + '"><h3>' + esc(j.t) + '</h3></a><div class="pay">' + esc(j.p) +
+    '<small> / 月（お受け取り額の目安）</small></div><ul class="tags">' + [...j.c, j.r, j.d, j.a].filter(Boolean).map(t => '<li>' + esc(t) + '</li>').join('') +
+    '</ul><button type="button" class="fav-btn" data-fav="' + esc(j.n) + '">☆ 気になる</button></div>').join('');
   $('empty').hidden = hit.length > 0;
+  document.dispatchEvent(new Event('fav-sync'));
   const sp = new URLSearchParams();
   ['q','cat','remote','days','pay'].forEach(k => { if($(k).value) sp.set(k, $(k).value); });
   history.replaceState(null, '', location.pathname + (sp.toString() ? '?' + sp : ''));
@@ -94,5 +102,6 @@ render();
     <p>運営：株式会社エージェントベスト（有料職業紹介事業 許可番号 13-ユ-316964）<br>〒106-0032 東京都港区六本木4-8-7 嶋田ビル5階</p>
   </div>
 </footer>
+<script src="/assets/fav.js" defer></script>
 </body>
 </html>

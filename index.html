@@ -32,7 +32,7 @@ document.addEventListener('click',e=>{const a=e.target.closest('[data-line-cta]'
     <nav class="head-nav" aria-label="メニュー">
       <a class="link" href="/jobs/">案件を探す</a>
       <a class="link" href="/media/">お役立ち記事</a>
-      <a class="link" href="/#flow">ご利用の流れ</a>
+      <a class="link keep" href="/mypage/" aria-label="気になる案件">☆ 気になる<span class="fav-count" data-fav-count hidden></span></a>
       <a class="btn btn-primary btn-sm" href="https://airtable.com/appYkc36EvioYoL1A/pag6CZC4uJmxUcrXT/form" target="_blank" rel="noopener">無料で登録</a>
     </nav>
   </div>
@@ -43,9 +43,19 @@ document.addEventListener('click',e=>{const a=e.target.closest('[data-line-cta]'
     <span class="eyebrow">フリーランスのエンジニア・コンサルの方へ</span>
     <h1>条件に合う案件を、<br>ひとつずつ確かめてご紹介します。</h1>
     <p class="lead">PM・PMO、ITコンサル、SAP・ERP、開発・インフラなどの業務委託案件をご案内します。経歴を勝手に出すことはありません。取引先と支払条件を確かめた案件だけを扱います。</p>
-    <div class="cta-row">
+    <form class="hero-search" action="/jobs/" method="get" role="search">
+      <label class="sr-only" for="hq">キーワード</label>
+      <input id="hq" name="q" type="search" placeholder="キーワード（例：PMO、SAP、AWS）">
+      <label class="sr-only" for="hcat">職種</label>
+      <select id="hcat" name="cat"><option value="">職種すべて</option><option value="PM・PMO">PM・PMO</option><option value="ITコンサル">ITコンサル</option><option value="業務・戦略コンサル">業務・戦略コンサル</option><option value="SAP・ERP">SAP・ERP</option><option value="開発（バックエンド）">開発（バックエンド）</option><option value="開発（フロントエンド）">開発（フロントエンド）</option><option value="インフラ・クラウド">インフラ・クラウド</option><option value="データ・AI">データ・AI</option><option value="セキュリティ">セキュリティ</option><option value="QA・テスト">QA・テスト</option><option value="その他">その他</option></select>
+      <button class="btn btn-primary" type="submit">案件を探す</button>
+    </form>
+    <div class="quick-links">
+      <a href="/jobs/area/remote/">フルリモート</a><a href="/jobs/area/part-time/">週3日以下</a><a href="/jobs/?pay=100">月100万円以上</a><a href="/jobs/c/pm-pmo/">PM・PMO</a><a href="/jobs/c/sap-erp/">SAP・ERP</a>
+    </div>
+    <div class="cta-row" style="margin-top:20px">
       <a class="btn btn-primary" href="https://airtable.com/appYkc36EvioYoL1A/pag6CZC4uJmxUcrXT/form" target="_blank" rel="noopener">無料で登録する</a>
-      <a class="btn btn-ghost" href="/jobs/">案件を探す</a>
+      <a class="btn btn-line" href="https://line.me/R/ti/p/@697nxhbt?oat_content=url&ts=08302134" target="_blank" rel="noopener" data-line-cta="lp-hero">LINEで相談する</a>
     </div>
     <ul class="hero-points"><li>登録・利用は無料</li><li>案件ごとにご本人の了承を得てから提案</li><li>リモート・週3日からの案件も</li></ul>
   </div>
@@ -78,19 +88,31 @@ document.addEventListener('click',e=>{const a=e.target.closest('[data-line-cta]'
 
 <section class="block">
   <div class="wrap">
-    <h2>扱っている案件</h2>
+    <h2>職種から探す</h2>
     <p class="sub">エンジニアとコンサル、どちらの案件もご紹介しています。</p>
     <div class="cat-list">
-      <a class="cat" href="/jobs/?cat=PM%E3%83%BBPMO">PM・PMO</a>
-      <a class="cat" href="/jobs/?cat=IT%E3%82%B3%E3%83%B3%E3%82%B5%E3%83%AB">ITコンサル</a>
-      <a class="cat" href="/jobs/?cat=%E6%A5%AD%E5%8B%99%E3%83%BB%E6%88%A6%E7%95%A5%E3%82%B3%E3%83%B3%E3%82%B5%E3%83%AB">業務・戦略コンサル</a>
-      <a class="cat" href="/jobs/?cat=SAP%E3%83%BBERP">SAP・ERP</a>
-      <a class="cat" href="/jobs/?cat=%E9%96%8B%E7%99%BA%EF%BC%88%E3%83%90%E3%83%83%E3%82%AF%E3%82%A8%E3%83%B3%E3%83%89%EF%BC%89">開発（バックエンド）</a>
-      <a class="cat" href="/jobs/?cat=%E9%96%8B%E7%99%BA%EF%BC%88%E3%83%95%E3%83%AD%E3%83%B3%E3%83%88%E3%82%A8%E3%83%B3%E3%83%89%EF%BC%89">開発（フロントエンド）</a>
-      <a class="cat" href="/jobs/?cat=%E3%82%A4%E3%83%B3%E3%83%95%E3%83%A9%E3%83%BB%E3%82%AF%E3%83%A9%E3%82%A6%E3%83%89">インフラ・クラウド</a>
-      <a class="cat" href="/jobs/?cat=%E3%83%87%E3%83%BC%E3%82%BF%E3%83%BBAI">データ・AI</a>
-      <a class="cat" href="/jobs/?cat=%E3%82%BB%E3%82%AD%E3%83%A5%E3%83%AA%E3%83%86%E3%82%A3">セキュリティ</a>
-      <a class="cat" href="/jobs/?cat=QA%E3%83%BB%E3%83%86%E3%82%B9%E3%83%88">QA・テスト</a>
+      <a class="cat" href="/jobs/c/pm-pmo/">PM・PMO</a>
+      <a class="cat" href="/jobs/c/it-consultant/">ITコンサル</a>
+      <a class="cat" href="/jobs/c/strategy-consultant/">業務・戦略コンサル</a>
+      <a class="cat" href="/jobs/c/sap-erp/">SAP・ERP</a>
+      <a class="cat" href="/jobs/c/backend/">開発（バックエンド）</a>
+      <a class="cat" href="/jobs/c/frontend/">開発（フロントエンド）</a>
+      <a class="cat" href="/jobs/c/infra-cloud/">インフラ・クラウド</a>
+      <a class="cat" href="/jobs/c/data-ai/">データ・AI</a>
+      <a class="cat" href="/jobs/c/security/">セキュリティ</a>
+      <a class="cat" href="/jobs/c/qa-test/">QA・テスト</a>
+    </div>
+    <h2 style="margin-top:36px">勤務地・働き方から探す</h2>
+    <p class="sub">リモートや週3日からの案件、地域ごとの案件をまとめています。</p>
+    <div class="cat-list">
+      <a class="cat" href="/jobs/area/remote/">フルリモート</a>
+      <a class="cat" href="/jobs/area/part-time/">週3日以下</a>
+      <a class="cat" href="/jobs/area/tokyo/">東京都</a>
+      <a class="cat" href="/jobs/area/kanagawa/">神奈川県</a>
+      <a class="cat" href="/jobs/area/saitama-chiba/">埼玉県・千葉県</a>
+      <a class="cat" href="/jobs/area/osaka/">大阪府・関西</a>
+      <a class="cat" href="/jobs/area/aichi/">愛知県・東海</a>
+      <a class="cat" href="/jobs/area/fukuoka/">福岡県・九州</a>
     </div>
   </div>
 </section>
@@ -177,5 +199,6 @@ document.addEventListener('click',e=>{const a=e.target.closest('[data-line-cta]'
     <p>運営：株式会社エージェントベスト（有料職業紹介事業 許可番号 13-ユ-316964）<br>〒106-0032 東京都港区六本木4-8-7 嶋田ビル5階</p>
   </div>
 </footer>
+<script src="/assets/fav.js" defer></script>
 </body>
 </html>

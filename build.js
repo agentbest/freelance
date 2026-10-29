@@ -16,6 +16,9 @@ const FORM_URL  = 'https://airtable.com/appYkc36EvioYoL1A/pag6CZC4uJmxUcrXT/form
 const LINE_URL  = 'https://line.me/R/ti/p/@697nxhbt?oat_content=url&ts=08302134'; // LINE公式アカウント
 const TALK_URL  = 'https://calendly.com/r_matsuoka';
 const PRIVACY_URL = '/privacy.html';
+// 職種別・勤務地別の一覧／気になる案件（/mypage/）／応募・相談フォームは jobs-pages.js
+const jobsPages = require('./jobs-pages.js');
+const { inquiryUrl } = jobsPages;
 
 // 職種カテゴリ（Airtable の選択肢と同じ名前）
 const CATEGORIES = [
@@ -84,7 +87,7 @@ document.addEventListener('click',e=>{const a=e.target.closest('[data-line-cta]'
     <nav class="head-nav" aria-label="メニュー">
       <a class="link" href="/jobs/">案件を探す</a>
       <a class="link" href="/media/">お役立ち記事</a>
-      <a class="link" href="/#flow">ご利用の流れ</a>
+      <a class="link keep" href="/mypage/" aria-label="気になる案件">☆ 気になる<span class="fav-count" data-fav-count hidden></span></a>
       <a class="btn btn-primary btn-sm" href="${FORM_URL}" target="_blank" rel="noopener">無料で登録</a>
     </nav>
   </div>
@@ -113,17 +116,20 @@ function foot(){
     <p>運営：株式会社エージェントベスト（有料職業紹介事業 許可番号 13-ユ-316964）<br>〒106-0032 東京都港区六本木4-8-7 嶋田ビル5階</p>
   </div>
 </footer>
+<script src="/assets/fav.js" defer></script>
 </body>
 </html>
 `;
 }
 
+// カード全体がリンク（.job-link::after で広げる）。「気になる」ボタンだけは別に押せる
 function jobCard(j){
-  return `<a class="card job-card" href="${jobPath(j)}">
-  <h3>${esc(j.title)}</h3>
+  return `<div class="card job-card">
+  <a class="job-link" href="${jobPath(j)}"><h3>${esc(j.title)}</h3></a>
   <div class="pay">${esc(payText(j))}<small> / 月（お受け取り額の目安）</small></div>
   <ul class="tags">${tagList(j).map(t => `<li>${esc(t)}</li>`).join('')}</ul>
-</a>`;
+  <button type="button" class="fav-btn" data-fav="${esc(jobNo(j))}">☆ 気になる</button>
+</div>`;
 }
 
 const EMPTY_HTML = `<div class="empty"><strong>公開できる案件を準備しています</strong>
@@ -151,9 +157,19 @@ function buildIndex(){
     <span class="eyebrow">フリーランスのエンジニア・コンサルの方へ</span>
     <h1>条件に合う案件を、<br>ひとつずつ確かめてご紹介します。</h1>
     <p class="lead">PM・PMO、ITコンサル、SAP・ERP、開発・インフラなどの業務委託案件をご案内します。経歴を勝手に出すことはありません。取引先と支払条件を確かめた案件だけを扱います。</p>
-    <div class="cta-row">
+    <form class="hero-search" action="/jobs/" method="get" role="search">
+      <label class="sr-only" for="hq">キーワード</label>
+      <input id="hq" name="q" type="search" placeholder="キーワード（例：PMO、SAP、AWS）">
+      <label class="sr-only" for="hcat">職種</label>
+      <select id="hcat" name="cat"><option value="">職種すべて</option>${CATEGORIES.map(c => `<option value="${esc(c)}">${esc(c)}</option>`).join('')}</select>
+      <button class="btn btn-primary" type="submit">案件を探す</button>
+    </form>
+    <div class="quick-links">
+      <a href="/jobs/area/remote/">フルリモート</a><a href="/jobs/area/part-time/">週3日以下</a><a href="/jobs/?pay=100">月100万円以上</a><a href="/jobs/c/pm-pmo/">PM・PMO</a><a href="/jobs/c/sap-erp/">SAP・ERP</a>
+    </div>
+    <div class="cta-row" style="margin-top:20px">
       <a class="btn btn-primary" href="${FORM_URL}" target="_blank" rel="noopener">無料で登録する</a>
-      <a class="btn btn-ghost" href="/jobs/">案件を探す</a>
+      <a class="btn btn-line" href="${LINE_URL}" target="_blank" rel="noopener" data-line-cta="lp-hero">LINEで相談する</a>
     </div>
     <ul class="hero-points"><li>登録・利用は無料</li><li>案件ごとにご本人の了承を得てから提案</li><li>リモート・週3日からの案件も</li></ul>
   </div>
@@ -186,10 +202,15 @@ function buildIndex(){
 
 <section class="block">
   <div class="wrap">
-    <h2>扱っている案件</h2>
+    <h2>職種から探す</h2>
     <p class="sub">エンジニアとコンサル、どちらの案件もご紹介しています。</p>
     <div class="cat-list">
-      ${CATEGORIES.filter(c => c !== 'その他').map(c => `<a class="cat" href="/jobs/?cat=${encodeURIComponent(c)}">${esc(c)}${counts[c] ? `（${counts[c]}）` : ''}</a>`).join('\n      ')}
+      ${jobsPages.CAT_PAGES.filter(([c]) => c !== 'その他').map(([c, s]) => `<a class="cat" href="/jobs/c/${s}/">${esc(c)}${counts[c] ? `（${counts[c]}）` : ''}</a>`).join('\n      ')}
+    </div>
+    <h2 style="margin-top:36px">勤務地・働き方から探す</h2>
+    <p class="sub">リモートや週3日からの案件、地域ごとの案件をまとめています。</p>
+    <div class="cat-list">
+      ${jobsPages.PLACE_PAGES.map(p => { const n = jobs.filter(p.test).length; return `<a class="cat" href="/jobs/area/${p.slug}/">${esc(p.name)}${n ? `（${n}）` : ''}</a>`; }).join('\n      ')}
     </div>
   </div>
 </section>
@@ -259,7 +280,7 @@ function buildIndex(){
 function buildList(){
   // 一覧の絞り込みは JS でする。埋め込むのは公開用の値だけ
   const data = jobs.map(j => ({
-    u: jobPath(j), t: j.title, c: j.categories || [], p: payText(j),
+    u: jobPath(j), n: jobNo(j), t: j.title, c: j.categories || [], p: payText(j),
     pmin: j.payMin || j.payMax || 0, pmax: j.payMax || j.payMin || 0,
     r: j.remote || '', d: j.days || '', a: j.area || '',
     k: [j.title, j.content, j.must, j.welcome, ...(j.categories || [])].join(' ')
@@ -283,6 +304,12 @@ function buildList(){
   <div class="grid g2" id="list"></div>
   <div id="empty" hidden>${EMPTY_HTML}<p style="text-align:center;margin-top:16px"><a class="btn btn-primary" href="${FORM_URL}" target="_blank" rel="noopener">無料で登録して案件の案内を受け取る</a></p></div>
   <p class="note" style="margin-top:24px">金額は、お受け取りになる月額の目安です（消費税・経費の扱いは案件ごとにご案内します）。</p>
+  <div class="block-sub">
+    <h2 class="mini-h">職種から探す</h2>
+    <div class="cat-list">${jobsPages.CAT_PAGES.map(([c, s]) => `<a class="cat" href="/jobs/c/${s}/">${esc(c)}</a>`).join('')}</div>
+    <h2 class="mini-h">勤務地・働き方から探す</h2>
+    <div class="cat-list">${jobsPages.PLACE_PAGES.map(p => `<a class="cat" href="/jobs/area/${p.slug}/">${esc(p.name)}</a>`).join('')}</div>
+  </div>
 </main>
 <script>
 const JOBS = ${JSON.stringify(data).replace(/</g, '\\u003c')};
@@ -295,9 +322,11 @@ function render(){
   const hit = JOBS.filter(j => (!q || j.k.toLowerCase().includes(q)) && (!cat || j.c.includes(cat)) &&
     (!rm || j.r === rm) && (!dy || j.d === dy) && (!pay || j.pmax >= pay));
   $('count').textContent = JOBS.length ? hit.length + '件の案件' : '';
-  $('list').innerHTML = hit.map(j => '<a class="card job-card" href="' + j.u + '"><h3>' + esc(j.t) + '</h3><div class="pay">' + esc(j.p) +
-    '<small> / 月（お受け取り額の目安）</small></div><ul class="tags">' + [...j.c, j.r, j.d, j.a].filter(Boolean).map(t => '<li>' + esc(t) + '</li>').join('') + '</ul></a>').join('');
+  $('list').innerHTML = hit.map(j => '<div class="card job-card"><a class="job-link" href="' + j.u + '"><h3>' + esc(j.t) + '</h3></a><div class="pay">' + esc(j.p) +
+    '<small> / 月（お受け取り額の目安）</small></div><ul class="tags">' + [...j.c, j.r, j.d, j.a].filter(Boolean).map(t => '<li>' + esc(t) + '</li>').join('') +
+    '</ul><button type="button" class="fav-btn" data-fav="' + esc(j.n) + '">☆ 気になる</button></div>').join('');
   $('empty').hidden = hit.length > 0;
+  document.dispatchEvent(new Event('fav-sync'));
   const sp = new URLSearchParams();
   ['q','cat','remote','days','pay'].forEach(k => { if($(k).value) sp.set(k, $(k).value); });
   history.replaceState(null, '', location.pathname + (sp.toString() ? '?' + sp : ''));
@@ -318,6 +347,10 @@ function buildJob(j){
     ['開始時期', j.start], ['期間', j.term], ['年齢の目安', j.age],
     ['契約形態', '業務委託（準委任）・当社との契約'],
   ].filter(([, v]) => v);
+  const applyUrl = inquiryUrl({kind: 'この案件に応募したい', jobs: jobNo(j), from: '案件ページ'});
+  const askUrl = inquiryUrl({kind: 'まず話を聞きたい・条件を確認したい', jobs: jobNo(j), from: '案件ページ'});
+  const cats = j.categories || [];
+  const related = jobs.filter(o => o !== j && (o.categories || []).some(c => cats.includes(c))).slice(0, 4);
   const section = (h, v) => v ? `<h2 style="font-size:19px;margin:28px 0 8px">${h}</h2><div class="card"><p class="body-text">${esc(v)}</p></div>` : '';
   const html = head({
     title: `${j.title}｜フリーランス案件｜${SITE_NAME}`,
@@ -325,10 +358,14 @@ function buildJob(j){
     canonical: jobPath(j)
   }) + `<main class="wrap narrow">
   <p class="crumbs"><a href="/">トップ</a> › <a href="/jobs/">案件を探す</a> › ${esc(jobNo(j))}</p>
-  <div class="job-head">
+  <div class="job-head" data-view-job="${esc(jobNo(j))}">
     <span class="eyebrow">案件番号 ${esc(jobNo(j))}</span>
     <h1>${esc(j.title)}</h1>
     <div class="pay" style="font-size:20px">${esc(payText(j))}<small> / 月（お受け取り額の目安）</small></div>
+    <div class="cta-row" style="margin-top:14px">
+      <a class="btn btn-primary" href="${esc(applyUrl)}" target="_blank" rel="noopener">この案件に応募・相談する</a>
+      <button type="button" class="btn btn-ghost fav-btn-lg" data-fav="${esc(jobNo(j))}">☆ 気になる</button>
+    </div>
   </div>
   <table class="spec"><tbody>${rows.map(([k, v]) => `<tr><th scope="row">${esc(k)}</th><td>${esc(v)}</td></tr>`).join('')}</tbody></table>
   ${section('業務内容', j.content)}
@@ -336,13 +373,16 @@ function buildJob(j){
   ${section('歓迎するご経験・スキル', j.welcome)}
   <div class="cta-band">
     <h2>この案件が気になる方へ</h2>
-    <p>ご登録のうえ、案件番号 ${esc(jobNo(j))} をお知らせください。ご本人の了承なく企業へ経歴を出すことはありません。</p>
+    <p>応募・ご相談は約2分で送れます。案件番号 ${esc(jobNo(j))} は自動で入ります。お返事はメールかLINEでお送りし、ご本人の了承なく企業へ経歴を出すことはありません。</p>
     <div class="cta-row">
-      <a class="btn btn-primary" href="${FORM_URL}" target="_blank" rel="noopener">無料で登録する</a>
-      <a class="btn btn-ghost" href="${TALK_URL}" target="_blank" rel="noopener">面談を予約する</a>
+      <a class="btn btn-primary" href="${esc(applyUrl)}" target="_blank" rel="noopener">この案件に応募・相談する</a>
+      <a class="btn btn-ghost" href="${esc(askUrl)}" target="_blank" rel="noopener">条件を確認したい</a>
+      <a class="btn btn-line" href="${LINE_URL}" target="_blank" rel="noopener" data-line-cta="job">LINEで相談する</a>
     </div>
   </div>
   <p class="note" style="margin-top:16px">募集状況は日々変わります。掲載中でも募集が終わっている場合があります。</p>
+  ${related.length ? `<h2 style="font-size:19px;margin:36px 0 12px">似た案件</h2><div class="grid g2">${related.map(jobCard).join('\n')}</div>` : ''}
+  <p style="margin-top:20px">${(j.categories || []).map(c => `<a class="cat" href="${jobsPages.catPath(c)}">${esc(c)}の案件一覧</a>`).join(' ')}</p>
 </main>
 ` + foot();
   write(`job/${jobNo(j)}/index.html`, html);
@@ -409,7 +449,7 @@ function buildMisc(){
 <div class="cta-row" style="justify-content:center"><a class="btn btn-primary" href="/jobs/">案件を探す</a><a class="btn btn-ghost" href="/">トップへ</a></div></main>
 ` + foot());
   const today = new Date().toISOString().slice(0, 10);
-  const urls = ['/', '/jobs/', '/privacy.html', ...jobs.map(jobPath), ...mediaUrls];
+  const urls = ['/', '/jobs/', '/privacy.html', ...listUrls, ...jobs.map(jobPath), ...mediaUrls];
   write('sitemap.xml', `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 ${urls.map(u => `  <url><loc>${SITE_URL}${u}</loc><lastmod>${today}</lastmod></url>`).join('\n')}
@@ -440,5 +480,6 @@ buildList();
 buildPrivacy();
 jobs.forEach(buildJob);
 const mediaUrls = require('./media.js')({dir, SITE_URL, SITE_NAME, FORM_URL, TALK_URL, esc, head, foot, write});
+const listUrls = jobsPages({jobs, SITE_NAME, FORM_URL, LINE_URL, esc, head, foot, write, jobCard, jobNo, jobPath, payText, EMPTY_HTML}).urls;
 buildMisc();
 console.log(`案件 ${jobs.length} 件で ${written.length} ファイルを書き出しました。`);
