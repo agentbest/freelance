@@ -8,7 +8,7 @@ const plan = Object.fromEntries(fs.readFileSync(path.join(root, 'plan.tsv'), 'ut
   .map(l => l.split('\t')).map(([no, hub, slug, title]) => [slug, {hub, title}]));
 
 // 制度の数字を扱うハブは、公的な出典を必須にする
-const NEED_SOURCES = new Set(['contract', 'law', 'tax', 'invoice', 'social-insurance', 'incorporation', 'savings', 'independence', 'side-job']);
+const NEED_SOURCES = new Set(['contract', 'law', 'tax', 'invoice', 'social-insurance', 'incorporation', 'savings', 'independence', 'side-job', 'industry', 'certification']);
 const NG = [
   [/(?<!「)必ず(?!しも|ご確認|確認|ご相談)/, '「必ず」（「必ずしも」「必ずご確認ください」は可）'],
   [/確実に/, '「確実に」'], [/絶対(?!に避け)/, '「絶対」'], [/圧倒的/, '「圧倒的」'],

@@ -10,11 +10,21 @@
         ["sap-erp", "SAP・ERP"],
         ["backend", "バックエンド開発"],
         ["frontend", "フロントエンド開発"],
+        ["web-design", "Web制作・デザイン"],
         ["mobile", "モバイルアプリ開発"],
+        ["embedded-game", "組込み・ゲーム・XR"],
         ["infra-cloud", "インフラ・クラウド"],
         ["data-ai", "データ・AI"],
         ["security", "セキュリティ"],
         ["qa", "QA・テスト"]
+      ]
+    },
+    {
+      "name": "業界・資格",
+      "desc": "業界ごとの案件の特徴と業務知識、フリーランスに役立つ資格",
+      "hubs": [
+        ["industry", "業界別の案件"],
+        ["certification", "資格"]
       ]
     },
     {

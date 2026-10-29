@@ -464,6 +464,61 @@ extra_topics3 = {
         ('keiyaku-haken-hikaku', '契約社員・派遣・業務委託の違いと選び方'),
     ],
 }
+
+# ---- 2,000本計画（2026-10-29）：職種の追加・テーマの追加・業界別・資格 ----
+roles2 = {
+    'pm-pmo': [('pl', 'PL（プロジェクトリーダー）'), ('scrum-master', 'スクラムマスター'), ('agile-coach', 'アジャイルコーチ'), ('bridge-se', 'ブリッジSE')],
+    'it-consul': [('servicenow', 'ServiceNowエンジニア'), ('dynamics365', 'Dynamics 365コンサル'), ('power-platform', 'Power Platformエンジニア'), ('rpa', 'RPAエンジニア'), ('gijutsu-komon', '技術顧問・CTO代行'), ('jousys', '社内SE・情シス支援'), ('nocode', 'ノーコード・ローコード開発者'), ('ma-crm', 'MA・CRMツールのエンジニア'), ('pre-sales', 'プリセールス・セールスエンジニア')],
+    'biz-consul': [('pmi', 'M&A・PMIコンサルタント'), ('scm-consultant', 'SCMコンサルタント'), ('hr-consultant', '人事コンサルタント'), ('finance-consultant', '財務・経理コンサルタント'), ('marketing-consultant', 'マーケティングコンサルタント'), ('new-business', '新規事業コンサルタント')],
+    'sap-erp': [('sap-abap', 'SAP ABAPエンジニア'), ('sap-ppqm', 'SAP PP/QMコンサル'), ('sap-hcm', 'SAP HCM・SuccessFactorsコンサル'), ('sap-btp', 'SAP BTPエンジニア'), ('oracle-erp', 'Oracle ERPコンサル'), ('workday', 'Workdayコンサル')],
+    'backend': [('kotlin', 'Kotlinエンジニア'), ('scala', 'Scalaエンジニア'), ('rust', 'Rustエンジニア'), ('nodejs', 'Node.jsエンジニア'), ('cobol', 'COBOLエンジニア'), ('c-cpp', 'C/C++エンジニア'), ('blockchain', 'ブロックチェーンエンジニア'), ('vba', 'VBA・Excelマクロ開発者')],
+    'frontend': [('angular', 'Angularエンジニア'), ('nextjs', 'Next.jsエンジニア')],
+    'web-design': [('web-designer', 'Webデザイナー'), ('uiux', 'UI/UXデザイナー'), ('web-director', 'Webディレクター'), ('wordpress', 'WordPressエンジニア'), ('ec-engineer', 'ECサイト・Shopifyエンジニア')],
+    'mobile': [('react-native', 'React Nativeエンジニア')],
+    'embedded-game': [('embedded', '組込みエンジニア'), ('iot', 'IoTエンジニア'), ('unity', 'Unityエンジニア'), ('game-engineer', 'ゲームエンジニア'), ('xr', 'XRエンジニア')],
+    'infra-cloud': [('kubernetes', 'Kubernetesエンジニア'), ('devops', 'DevOpsエンジニア'), ('server', 'サーバーエンジニア'), ('db-engineer', 'データベースエンジニア'), ('cloud-architect', 'クラウドアーキテクト'), ('helpdesk', 'ヘルプデスク・社内ITサポート')],
+    'data-ai': [('data-analyst', 'データアナリスト'), ('bi-engineer', 'BIエンジニア'), ('mlops', 'MLOpsエンジニア')],
+    'qa': [('qa-manager', 'QAマネージャー・品質保証リード')],
+    'security': [('vulnerability', '脆弱性診断エンジニア'), ('soc', 'SOCアナリスト'), ('cloud-security', 'クラウドセキュリティエンジニア'), ('it-audit', 'IT監査・内部統制コンサル'), ('csirt', 'CSIRT・インシデント対応')],
+}
+themes2 = [
+    ('shigoto', '{r}のフリーランス案件の仕事内容｜案件の種類と働き方'),
+    ('interview', '{r}のフリーランス面談でよく聞かれる質問と答え方'),
+    ('shikaku', '{r}に資格は必要？フリーランス案件で評価される資格'),
+    ('shuu3', '{r}の週2〜3日・副業案件｜探し方と受けるときの注意点'),
+    ('anken-erabi', '{r}のフリーランス案件の選び方｜契約前に確かめたいこと'),
+    ('nenrei', '{r}は40代・50代でもフリーランスで働ける？求められる役割'),
+    ('seishain-hikaku', '{r}は正社員とフリーランスのどちらがよい？比べるときの観点'),
+    ('tsumazuki', '{r}のフリーランスがつまずきやすい点と対策'),
+    ('career-change', '{r}を目指すには｜他の職種からのキャリアチェンジ'),
+    ('first-month', '{r}の参画初月にやること｜現場で信頼される進め方'),
+]
+industries = [
+    ('ginkou', '銀行'), ('shoken', '証券'), ('hoken', '保険'), ('card', 'クレジットカード・決済'), ('seizou', '製造'),
+    ('jidousha', '自動車'), ('ryutsu', '流通・小売'), ('butsuryu', '物流'), ('ec', 'EC・通販'), ('koukyou', '公共・官公庁'),
+    ('iryou', '医療'), ('seiyaku', '製薬'), ('tsushin', '通信'), ('energy', '電力・エネルギー'), ('fudousan', '不動産'),
+    ('kensetsu', '建設'), ('koukoku', '広告・メディア'), ('kyouiku', '教育'), ('jinzai', '人材'), ('ryokou', '旅行・ホテル'),
+]
+ind_themes = [
+    ('it', '{i}業界のフリーランスIT案件｜案件の種類と特徴'),
+    ('chishiki', '{i}業界の案件で求められる業務知識と身につけ方'),
+    ('skillsheet', '{i}業界の経験をスキルシートで伝える書き方'),
+    ('kisei', '{i}業界の案件で気をつけたい規制とセキュリティのルール'),
+]
+certs = [
+    ('aws-saa', 'AWS認定ソリューションアーキテクト'), ('azure', 'Azureの認定資格'), ('gcp-pca', 'Google Cloud認定 Professional Cloud Architect'),
+    ('pmp', 'PMP'), ('ipa-pm', 'プロジェクトマネージャ試験'), ('ipa-st', 'ITストラテジスト試験'), ('ipa-sa', 'システムアーキテクト試験'),
+    ('ipa-ap', '応用情報技術者試験'), ('ipa-fe', '基本情報技術者試験'), ('ipa-sc', '情報処理安全確保支援士'), ('ipa-db', 'データベーススペシャリスト試験'),
+    ('ipa-nw', 'ネットワークスペシャリスト試験'), ('ipa-au', 'システム監査技術者試験'), ('ipa-sm', 'ITサービスマネージャ試験'), ('ipa-es', 'エンベデッドシステムスペシャリスト試験'),
+    ('itpassport', 'ITパスポート'), ('cissp', 'CISSP'), ('cisa', 'CISA'), ('comptia-security', 'CompTIA Security+'),
+    ('shindanshi', '中小企業診断士'), ('boki', '日商簿記'), ('salesforce', 'Salesforce認定資格'), ('sap', 'SAP認定コンサルタント'),
+    ('linuc', 'LinuC・LPIC'), ('ccna', 'CCNA・CCNP'), ('oracle-master', 'ORACLE MASTER'), ('g-kentei', 'G検定'),
+    ('e-shikaku', 'E資格'), ('ds-kentei', 'データサイエンティスト検定'), ('itil', 'ITILの認定資格'), ('scrum', 'スクラムの認定資格（CSM・PSM）'),
+    ('cka', 'CKA（Kubernetes認定管理者）'), ('terraform', 'Terraform Associate'), ('python', 'Python 3 エンジニア認定試験'), ('jstqb', 'JSTQB認定テスト技術者'),
+    ('toeic', 'TOEICと英語力'), ('statistics', '統計検定'),
+    ('tableau', 'Tableauの認定資格'), ('power-bi', 'Power BIの認定資格（PL-300）'), ('aws-security', 'AWS認定セキュリティ–専門知識'), ('ccsp', 'CCSP'),
+]
+
 for d in (extra_topics, extra_topics2, extra_topics3):
     for hub, ts in d.items():
         topics[hub] = topics[hub] + ts
@@ -475,6 +530,19 @@ for hub, rs in roles.items():
             rows.append((hub, f'{code}-{t}', tt.format(r=name)))
 for hub, ts in topics.items():
     rows += [(hub, s, t) for s, t in ts]
+# 2,000本計画の分は既存の行の後ろに足す（既存の no を動かさない）
+for hub, rs in roles.items():
+    for code, name in rs:
+        for t, tt in themes2:
+            rows.append((hub, f'{code}-{t}', tt.format(r=name)))
+for hub, rs in roles2.items():
+    for code, name in rs:
+        for t, tt in themes + themes2:
+            rows.append((hub, f'{code}-{t}', tt.format(r=name)))
+for code, name in industries:
+    for t, tt in ind_themes:
+        rows.append(('industry', f'ind-{code}-{t}', tt.format(i=name)))
+rows += [('certification', f'cert-{c}', f'フリーランスに{n}は役立つ？評価される場面と準備') for c, n in certs]
 slugs = [r[1] for r in rows]
 assert len(slugs) == len(set(slugs)), 'slug が重複しています'
 

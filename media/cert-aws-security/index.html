@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>フリーランスにAWS認定セキュリティ–専門知識は役立つ？評価される場面と準備｜エージェントベストジョブ フリーランス</title>
+<meta name="description" content="AWS認定セキュリティ–専門知識がなくても入れる案件は多くありますが、複数アカウントの統制や検知・対応の仕組みづくりの案件では裏付けになります。SCS-C03の範囲、試験の対象外の業務、有効期間と書き方を整理します（2026年10月時点）。">
+<link rel="canonical" href="https://freelance.agent-best.net/media/cert-aws-security/">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="エージェントベストジョブ フリーランス">
+<meta property="og:title" content="フリーランスにAWS認定セキュリティ–専門知識は役立つ？評価される場面と準備｜エージェントベストジョブ フリーランス">
+<meta property="og:description" content="AWS認定セキュリティ–専門知識がなくても入れる案件は多くありますが、複数アカウントの統制や検知・対応の仕組みづくりの案件では裏付けになります。SCS-C03の範囲、試験の対象外の業務、有効期間と書き方を整理します（2026年10月時点）。">
+<meta property="og:url" content="https://freelance.agent-best.net/media/cert-aws-security/">
+<meta property="og:image" content="https://freelance.agent-best.net/assets/ogp.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://freelance.agent-best.net/assets/ogp.png">
+<meta name="theme-color" content="#1E3A5F">
+<link rel="icon" href="/assets/favicon.ico">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="stylesheet" href="/assets/site.css">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1XXMP8Y1B4"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-1XXMP8Y1B4');
+document.addEventListener('click',e=>{const a=e.target.closest('[data-line-cta]');if(a)gtag('event','line_add_friend',{placement:a.dataset.lineCta,page_path:location.pathname});});</script>
+<script type="application/ld+json">[{"@context":"https://schema.org","@type":"Article","headline":"フリーランスにAWS認定セキュリティ–専門知識は役立つ？評価される場面と準備","description":"AWS認定セキュリティ–専門知識がなくても入れる案件は多くありますが、複数アカウントの統制や検知・対応の仕組みづくりの案件では裏付けになります。SCS-C03の範囲、試験の対象外の業務、有効期間と書き方を整理します（2026年10月時点）。","datePublished":"2026-10-29","dateModified":"2026-10-29","author":{"@type":"Organization","name":"株式会社エージェントベスト","url":"https://www.agent-best.net/"},"publisher":{"@type":"Organization","name":"株式会社エージェントベスト","logo":{"@type":"ImageObject","url":"https://freelance.agent-best.net/assets/logo.png"}},"mainEntityOfPage":"https://freelance.agent-best.net/media/cert-aws-security/"},{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"トップ","item":"https://freelance.agent-best.net/"},{"@type":"ListItem","position":2,"name":"お役立ち記事","item":"https://freelance.agent-best.net/media/"},{"@type":"ListItem","position":3,"name":"資格","item":"https://freelance.agent-best.net/media/hub/certification/"},{"@type":"ListItem","position":4,"name":"フリーランスにAWS認定セキュリティ–専門知識は役立つ？評価される場面と準備"}]},{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"ソリューションアーキテクトの認定を先に取るべきですか？","acceptedAnswer":{"@type":"Answer","text":"受験の条件ではありませんが、セキュリティ専門知識は全体設計を対象外としているため、構成全体の知識はソリューションアーキテクトの範囲で補うことになります。AWSの構成に慣れていない場合は、先にソリューションアーキテクト–アソシエイトで全体を押さえておくと、セキュリティの学習が進めやすくなります。"}},{"@type":"Question","name":"国家資格の情報処理安全確保支援士とどちらを優先すべきですか？","acceptedAnswer":{"@type":"Answer","text":"狙う案件によります。AWSの環境でセキュリティの仕組みを作る案件ではこの認定が、組織のセキュリティ管理や規程づくりに関わる案件では情報処理安全確保支援士が、それぞれ範囲と重なりやすくなります。支援士は合格後の登録と講習が必要な点も含めて、情報処理安全確保支援士の記事で確かめてください。"}},{"@type":"Question","name":"想定される経験に届いていなくても受験できますか？","acceptedAnswer":{"@type":"Answer","text":"公式ページと試験ガイドでは、経験の年数は対象となる人の目安として示されています。ただ、試験は実務での判断を前提にした問題が中心のため、経験が短い場合は、検証環境で検知から対応までの流れを動かしておくと、問題の意図をつかみやすくなります。"}}]}]</script>
+</head>
+<body>
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="/"><img src="/assets/mark.png" alt="" width="28" height="28"><span>エージェントベストジョブ フリーランス<small>フリーランスのエンジニア・コンサル向け案件紹介</small></span></a>
+    <nav class="head-nav" aria-label="メニュー">
+      <a class="link" href="/jobs/">案件を探す</a>
+      <a class="link" href="/media/">お役立ち記事</a>
+      <a class="link keep" href="/mypage/" aria-label="気になる案件">☆ 気になる<span class="fav-count" data-fav-count hidden></span></a>
+      <a class="btn btn-primary btn-sm" href="https://airtable.com/appYkc36EvioYoL1A/pag6CZC4uJmxUcrXT/form" target="_blank" rel="noopener">無料で登録</a>
+    </nav>
+  </div>
+</header>
+<main class="wrap narrow article">
+  <p class="crumbs"><a href="/">トップ</a> › <a href="/media/">お役立ち記事</a> › <a href="/media/hub/certification/">資格</a></p>
+  <a class="art-hub" href="/media/hub/certification/">資格</a>
+  <h1 class="art-title">フリーランスにAWS認定セキュリティ–専門知識は役立つ？評価される場面と準備</h1>
+  <p class="note">公開 2026-10-29　監修：株式会社エージェントベスト</p>
+  <nav class="toc" aria-label="目次"><strong>目次</strong><ol><li><a href="#s1">セキュリティ専門知識の試験の範囲</a></li><li><a href="#s2">認定がなくても入れる案件が多い理由</a></li><li><a href="#s3">認定が効きやすい場面</a></li><li><a href="#s4">認定だけでは効きにくい場面</a></li><li><a href="#s5">実務経験との組み合わせ方</a></li><li><a href="#s6">スキルシートでの書き方</a></li><li><a href="#s7">案件と並行して準備するときの進め方</a></li><li><a href="#s8">よくある質問</a></li></ol></nav>
+  <div class="art-body">
+<p>AWS認定セキュリティ–専門知識（AWS Certified Security - Specialty、以下、セキュリティ専門知識）は、<strong>持っていなくても参画できる案件が多い一方で、複数のアカウントの統制、ログの検知と対応の仕組みづくり、監査への対応といった、AWSのセキュリティを専門に担う案件では裏付けとして効きます</strong>。ただし試験ガイドには「クラウド全体の構成の設計」や「パケット単位の通信の分析」は対象外と明記されており、何を示せて何を示せない認定かを知っておくことが大切です。</p>
+<p>この記事では、2026年10月時点のAWSの公式ページと試験ガイドをもとに、範囲・対象外の業務・有効期間を確かめ、効く場面と効きにくい場面、実務経験との組み合わせ方を整理します。クラウドのセキュリティの案件で求められるスキル全体はクラウドセキュリティのスキルの記事、職種として取る資格の選び方はクラウドセキュリティの資格の記事で扱っています。</p>
+<h2 id="s1">セキュリティ専門知識の試験の範囲</h2>
+<p>セキュリティ専門知識は、Amazon Web Services（AWS）が実施する専門分野（Specialty）の認定です。クラウドのソリューションを安全に保つ責任を持つ人を対象にしています。</p>
+<div class="table-wrap"><table><thead><tr><th>項目</th><th>内容（2026年10月時点の公式ページ・試験ガイドによる）</th></tr></thead><tbody><tr><td>実施</td><td>Amazon Web Services</td></tr><tr><td>試験</td><td>SCS-C03。170分、65問。採点対象は50問で、残り15問は採点されない</td></tr><tr><td>問題の形式</td><td>択一・複数選択のほか、手順を正しい順に並べる問題、組み合わせを選ぶ問題</td></tr><tr><td>想定される経験</td><td>クラウドのセキュリティに3〜5年相当（公式ページでは、ITセキュリティの設計と実装の経験5年以上、うちAWSのワークロードの保護2年以上と案内）</td></tr><tr><td>合否</td><td>100〜1,000のスコアで、750以上が合格</td></tr><tr><td>有効期間</td><td>3年間</td></tr></tbody></table></div>
+<p>出題分野と比率は次のとおりです。</p>
+<div class="table-wrap"><table><thead><tr><th>分野</th><th>比率</th></tr></thead><tbody><tr><td>検知</td><td>16%</td></tr><tr><td>インシデント対応</td><td>14%</td></tr><tr><td>インフラストラクチャのセキュリティ</td><td>18%</td></tr><tr><td>IDとアクセスの管理</td><td>20%</td></tr><tr><td>データの保護</td><td>18%</td></tr><tr><td>セキュリティの基盤とガバナンス</td><td>14%</td></tr></tbody></table></div>
+<p>想定される知識として、複数アカウントのガバナンス、ソフトウェアのサプライチェーンのリスク管理、レイヤー3〜7のファイアウォールのルールづくり、インシデントの根本原因の分析、監査への対応の経験などが挙げられています。</p>
+<h3>試験の対象外とされている業務</h3>
+<p>試験ガイドには、受験者に求めない業務として、暗号のアルゴリズムの設計、パケット単位の通信の分析、クラウド全体の構成の設計、利用者の端末の管理、機械学習モデルの学習が挙げられています。この認定はAWSの上でセキュリティの仕組みを組み立てて運用する力を問うもので、全体の構成を決める力や、ネットワークを深く解析する力を示すものではありません。</p>
+<h3>有効期間と更新</h3>
+<p>有効期間は3年間で、期限が切れる前に最新版の試験に合格すると更新されます。AWS Skill Builderの有料プランに加入していて、有効期限の90日前以内であれば、所定の学習を終えて1年延長する「維持」の方法も対象になっています。ソリューションアーキテクトの認定と違い、上位の認定に合格して更新される仕組みはありません。</p>
+<h2 id="s2">認定がなくても入れる案件が多い理由</h2>
+<p>セキュリティの案件では、資格よりも「どの環境で、何を検知し、どう対応したか」が先に見られます。GuardDutyなどの検知の結果をだれが、どの手順で調べたか、権限の見直しをどう進めたかを具体的に話せれば、認定がなくても参画が決まることは珍しくありません。</p>
+<p>また、AWSのセキュリティの案件には、オンプレミスのセキュリティ運用や、監査対応の経験からクラウドに広げた人も多く入っています。その場合は、元の分野の経験が先に評価されます。</p>
+<h2 id="s3">認定が効きやすい場面</h2>
+<h3>複数アカウントの統制を担う案件</h3>
+<p>組織全体で多くのAWSアカウントを使う企業では、権限の境界、ログの集約、ガードレールの設計が課題になります。試験の範囲のうち「IDとアクセスの管理」と「セキュリティの基盤とガバナンス」が重なるため、こうした案件では知識の裏付けとして読まれやすくなります。</p>
+<h3>検知と対応の仕組みを作る案件</h3>
+<p>検知とインシデント対応の分野は、合わせて試験の3割を占めます。アラートが出たときの調査と封じ込めの手順を作る案件や、運用チームに対応の流れを渡す案件では、学んだ範囲と業務が直接つながります。</p>
+<h3>インフラからセキュリティの役割に広げるとき</h3>
+<p>AWSの構築や運用の経験がある人が、セキュリティ寄りの役割に広げたいとき、この認定は「セキュリティの観点を体系的に学んだ」ことを示す材料になります。インフラの経験と組み合わせると、設計の段階からセキュリティを組み込める人として説明しやすくなります。</p>
+<h2 id="s4">認定だけでは効きにくい場面</h2>
+<ul><li><strong>全体の構成を決める案件</strong>：試験の対象外とされているとおり、全体設計の力はソリューションアーキテクトの認定や設計の経験で示します。<a href="/media/cert-aws-saa/">AWS認定ソリューションアーキテクトの記事</a>をご覧ください</li><li><strong>脆弱性診断やペネトレーションテスト</strong>：攻撃の手法や診断の経験が問われ、この認定の範囲とは重なりが小さくなります</li><li><strong>ガバナンスや規程づくりが中心の案件</strong>：クラウドに限らないセキュリティの管理の知識が見られることがあります。<a href="/media/cert-ipa-sc/">情報処理安全確保支援士の記事</a>や<a href="/media/cert-ccsp/">CCSPの記事</a>もあわせてご覧ください</li></ul>
+<aside class="box box-view"><p class="box-label">エージェントベストの見解</p><p>案件紹介の現場では、セキュリティの案件の面談で、設定した内容よりも「なぜその権限の分け方にしたか」「検知したあと、だれに、どう引き継いだか」を確かめられることが多い傾向があります。認定をお持ちでも、作業の手順の説明だけで終わると、判断を任せられる範囲が伝わりにくくなります。取得したら、試験の6分野のうち自分が判断に関わった分野を一つ選び、その場面を短く話せるようにしておくことをおすすめします。</p></aside>
+<h2 id="s5">実務経験との組み合わせ方</h2>
+<p>6つの分野を自分の経験に当てはめると、面談で何を話すかが決まります。</p>
+<div class="table-wrap"><table><thead><tr><th>分野</th><th>結びつけやすい実務の経験</th></tr></thead><tbody><tr><td>検知</td><td>検知サービスの有効化と通知先の設計、ログの集約</td></tr><tr><td>インシデント対応</td><td>調査の手順書づくり、不審な認証情報の無効化と影響の確認</td></tr><tr><td>インフラストラクチャのセキュリティ</td><td>ネットワークの境界の設計、WAFのルールの調整</td></tr><tr><td>IDとアクセスの管理</td><td>権限の最小化、一時的な認証情報への切り替え、外部IDとの連携</td></tr><tr><td>データの保護</td><td>暗号化の鍵の管理、保存時と通信時の暗号化の設定</td></tr><tr><td>基盤とガバナンス</td><td>複数アカウントのガードレール、監査への資料の準備</td></tr></tbody></table></div>
+<p>経験が薄い分野は、検証用のアカウントで設定を作って確かめておくと、面談で具体的に話せます。ただし、検証で扱った内容は実務と分けて書きます。</p>
+<h2 id="s6">スキルシートでの書き方</h2>
+<p>資格欄には、正式名称、取得年月、有効期限を書きます。</p>
+<blockquote><p>例：AWS Certified Security - Specialty（20XX年X月取得、有効期限20XX年X月）</p></blockquote>
+<p>セキュリティの案件では、守秘義務の範囲で書ける内容が限られます。経歴欄には、企業名やインシデントの中身を伏せたうえで、「複数アカウントのログ集約と検知の通知の仕組みを設計」のように、担った仕組みと役割を書きます。AWSのスキルシート全体は<a href="/media/aws-skillsheet/">AWSのスキルシートの記事</a>、セキュリティの経歴の伝え方は<a href="/media/security-engineer-skills/">セキュリティエンジニアのスキルの記事</a>で紹介しています。</p>
+<aside class="box box-caution"><p class="box-label">注意</p><p>SCS-C03には、前の版（SCS-C02）との比較が試験ガイドの付録として公開されています。前の版の教材だけで準備すると、新しく加わった範囲を見落とすおそれがあります。また、一部の言語の試験は2026年12月31日に終了すると案内されています。受験の前に、公式ページと試験ガイドで最新の内容を必ずご確認ください。</p></aside>
+<h2 id="s7">案件と並行して準備するときの進め方</h2>
+<ol><li><strong>試験ガイドで対象のサービスと対象外の業務を確かめる</strong>：範囲を決めてから学習を始めます</li><li><strong>想定される知識の一覧と自分の経験を照らし合わせる</strong>：監査対応やサプライチェーンのリスク管理など、経験のない項目を先に洗い出します</li><li><strong>検証用のアカウントで検知と対応を試す</strong>：検知、通知、調査、封じ込めの流れを一通り動かすと、試験と面談の両方に生きます</li></ol>
+<aside class="box box-view"><p class="box-label">エージェントベストの見解</p><p>当社では、取引先の会社の実態と支払条件を確かめた案件を扱っています。セキュリティの案件は、扱う情報の範囲や作業できる場所に条件がつくことが多いため、認定の条件だけでなく、作業の範囲や守秘の取り決めも契約の前に確かめることをおすすめします。案件票の条件で分かりにくい点があれば、ご質問いただければ確認します。</p></aside>
+<aside class="box box-point"><p class="box-label">ポイント</p><ul><li>認定がなくても参画できる案件は多く、検知や権限の見直しで何を判断したかが先に見られる</li><li>効きやすいのは、複数アカウントの統制、検知と対応の仕組みづくり、インフラからセキュリティへの拡大</li><li>全体設計やパケット解析は試験の対象外。示せる範囲を知って使う</li><li>有効期間は3年。最新版の試験か、Skill Builderでの1年延長で更新する</li></ul></aside>
+<h2 id="s8">よくある質問</h2>
+<h3>ソリューションアーキテクトの認定を先に取るべきですか？</h3>
+<p>受験の条件ではありませんが、セキュリティ専門知識は全体設計を対象外としているため、構成全体の知識はソリューションアーキテクトの範囲で補うことになります。AWSの構成に慣れていない場合は、先にソリューションアーキテクト–アソシエイトで全体を押さえておくと、セキュリティの学習が進めやすくなります。</p>
+<h3>国家資格の情報処理安全確保支援士とどちらを優先すべきですか？</h3>
+<p>狙う案件によります。AWSの環境でセキュリティの仕組みを作る案件ではこの認定が、組織のセキュリティ管理や規程づくりに関わる案件では情報処理安全確保支援士が、それぞれ範囲と重なりやすくなります。支援士は合格後の登録と講習が必要な点も含めて、<a href="/media/cert-ipa-sc/">情報処理安全確保支援士の記事</a>で確かめてください。</p>
+<h3>想定される経験に届いていなくても受験できますか？</h3>
+<p>公式ページと試験ガイドでは、経験の年数は対象となる人の目安として示されています。ただ、試験は実務での判断を前提にした問題が中心のため、経験が短い場合は、検証環境で検知から対応までの流れを動かしておくと、問題の意図をつかみやすくなります。</p>
+  </div>
+  <section class="sources"><h2>参考にした公的情報・資料</h2><ul><li><a href="https://aws.amazon.com/jp/certification/certified-security-specialty/" target="_blank" rel="noopener nofollow">AWS Certified Security - Specialty（Amazon Web Services）</a></li><li><a href="https://docs.aws.amazon.com/aws-certification/latest/security-specialty-03/security-specialty-03.html" target="_blank" rel="noopener nofollow">AWS Certified Security - Specialty (SCS-C03) Exam Guide（AWS Documentation）</a></li><li><a href="https://aws.amazon.com/certification/recertification/" target="_blank" rel="noopener nofollow">AWS Certification Recertification（Amazon Web Services）</a></li></ul>
+  <p class="note">記事の内容は公開日時点の情報にもとづきます。制度や税率は変わることがあるため、手続きの前に必ず各機関の最新情報をご確認ください。</p></section>
+  <div class="cta-band">
+  <h2>条件に合う案件だけ、知りたい方へ</h2>
+  <p>ご登録は無料です。条件に合う案件だけを、ご本人の了承を得てからご提案します。</p>
+  <div class="cta-row">
+    <a class="btn btn-primary" href="https://airtable.com/appYkc36EvioYoL1A/pag6CZC4uJmxUcrXT/form" target="_blank" rel="noopener">無料で登録する</a>
+    <a class="btn btn-ghost" href="/jobs/">案件を探す</a>
+  </div>
+</div>
+  <section class="related"><h2>あわせて読みたい</h2><div class="grid g2"><a class="card art-card" href="/media/security-engineer-skills/">
+  <span class="art-hub">セキュリティ</span>
+  <h3>セキュリティエンジニアのフリーランス案件で求められるスキルと経験｜分野別に整理</h3>
+  <p>セキュリティエンジニアの案件では、脆弱性の仕組みの理解、クラウドやネットワークの設定を読む力、ログから異常を見つける力、調査結果を相手が動ける形で報告する力が見られます。分野ごとに求められるスキルと、資格・面談での伝え方を解説します。</p>
+</a>
+<a class="card art-card" href="/media/aws-skills/">
+  <span class="art-hub">インフラ・クラウド</span>
+  <h3>AWSエンジニアのフリーランス案件で求められるスキルと経験</h3>
+  <p>AWSエンジニアのフリーランス案件では、設計から構築・運用までのどこを担えるか、ネットワーク・セキュリティの基礎、IaCや自動化の経験が見られます。案件で求められやすいスキル、AWS認定の位置づけ、経験の伝え方を解説します。</p>
+</a>
+<a class="card art-card" href="/media/aws-skillsheet/">
+  <span class="art-hub">インフラ・クラウド</span>
+  <h3>AWSエンジニアのスキルシートの書き方｜面談で評価される実績の見せ方</h3>
+  <p>AWSのスキルシートは、サービス名を並べるより、構成の要約・担当した工程・IaCで新規に作ったか既存を直したかを書くのが基本です。AWS認定は正式名称・取得年月・有効期限を添えます。書き方と記入例を紹介します。</p>
+</a>
+<a class="card art-card" href="/media/cert-aws-saa/">
+  <span class="art-hub">資格</span>
+  <h3>フリーランスにAWS認定ソリューションアーキテクトは役立つ？評価される場面と準備</h3>
+  <p>AWS認定ソリューションアーキテクト–アソシエイトがなくても入れるAWS案件は多くあります。運用から設計へ広げたいときや書類選考では裏付けになります。試験範囲・有効期間・経験との組み合わせ方を整理します（2026年10月時点）。</p>
+</a>
+<a class="card art-card" href="/media/cert-ipa-sc/">
+  <span class="art-hub">資格</span>
+  <h3>フリーランスに情報処理安全確保支援士は役立つ？評価される場面と準備</h3>
+  <p>情報処理安全確保支援士はセキュリティ案件で知識と信頼の裏付けになりますが、なくても参画できる案件は多くあります。効く場面と効かない場面、合格と登録の違い、講習と更新、スキルシートでの書き方を解説します（2026年10月時点）。</p>
+</a>
+<a class="card art-card" href="/media/cert-ccsp/">
+  <span class="art-hub">資格</span>
+  <h3>フリーランスにCCSPは役立つ？評価される場面と準備</h3>
+  <p>CCSPは、複数のクラウドにまたがるセキュリティの設計や統制の案件で、製品に依らない知識の裏付けになります。なくても参画できる案件は多くあります。ISC2の経験要件、CISSPとの関係、CPEと更新、書き方を解説します。</p>
+</a></div></section>
+</main>
+<footer class="site-foot">
+  <div class="wrap">
+    <strong>エージェントベストジョブ フリーランス</strong>
+    <div class="foot-links">
+      <a href="/">トップ</a>
+      <a href="/jobs/">案件を探す</a>
+      <a href="/media/">お役立ち記事</a>
+      <a href="https://airtable.com/appYkc36EvioYoL1A/pag6CZC4uJmxUcrXT/form" target="_blank" rel="noopener">ご登録（スキルシート・ご希望の条件）</a>
+      <a href="https://line.me/R/ti/p/@697nxhbt?oat_content=url&ts=08302134" target="_blank" rel="noopener" data-line-cta="footer">LINEで相談する</a>
+      <a href="/privacy.html">個人情報の取り扱い</a>
+      <a href="https://www.agent-best.net/company/">運営会社</a>
+    </div>
+    <div class="foot-links">
+      <a href="https://jobs.agent-best.net/">正社員の求人を探す（エージェントベストジョブ）</a>
+      <a href="https://skill.agent-best.net/">エージェントベストジョブ手に職</a>
+      <a href="https://www.agent-best.net/">エージェントベスト</a>
+    </div>
+    <p>運営：株式会社エージェントベスト（有料職業紹介事業 許可番号 13-ユ-316964）<br>〒106-0032 東京都港区六本木4-8-7 嶋田ビル5階</p>
+  </div>
+</footer>
+<script src="/assets/fav.js" defer></script>
+</body>
+</html>
