@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>SREのフリーランス案件で求められるスキルと経験｜エージェントベストジョブ フリーランス</title>
+<meta name="description" content="SREのフリーランス案件では、利用者の体験から指標（SLI）を選びSLOとエラーバジェットで判断する力、可観測性の設計、安全なリリースの仕組み、トイルをコードで減らす力が見られます。スキルの中身と示し方を解説します。">
+<link rel="canonical" href="https://freelance.agent-best.net/media/sre-skills/">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="エージェントベストジョブ フリーランス">
+<meta property="og:title" content="SREのフリーランス案件で求められるスキルと経験｜エージェントベストジョブ フリーランス">
+<meta property="og:description" content="SREのフリーランス案件では、利用者の体験から指標（SLI）を選びSLOとエラーバジェットで判断する力、可観測性の設計、安全なリリースの仕組み、トイルをコードで減らす力が見られます。スキルの中身と示し方を解説します。">
+<meta property="og:url" content="https://freelance.agent-best.net/media/sre-skills/">
+<meta property="og:image" content="https://freelance.agent-best.net/assets/ogp.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://freelance.agent-best.net/assets/ogp.png">
+<meta name="theme-color" content="#1E3A5F">
+<link rel="icon" href="/assets/favicon.ico">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="stylesheet" href="/assets/site.css">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1XXMP8Y1B4"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-1XXMP8Y1B4');
+document.addEventListener('click',e=>{const a=e.target.closest('[data-line-cta]');if(a)gtag('event','line_add_friend',{placement:a.dataset.lineCta,page_path:location.pathname});});</script>
+<script type="application/ld+json">[{"@context":"https://schema.org","@type":"Article","headline":"SREのフリーランス案件で求められるスキルと経験","description":"SREのフリーランス案件では、利用者の体験から指標（SLI）を選びSLOとエラーバジェットで判断する力、可観測性の設計、安全なリリースの仕組み、トイルをコードで減らす力が見られます。スキルの中身と示し方を解説します。","datePublished":"2026-10-29","dateModified":"2026-10-29","author":{"@type":"Organization","name":"株式会社エージェントベスト","url":"https://www.agent-best.net/"},"publisher":{"@type":"Organization","name":"株式会社エージェントベスト","logo":{"@type":"ImageObject","url":"https://freelance.agent-best.net/assets/logo.png"}},"mainEntityOfPage":"https://freelance.agent-best.net/media/sre-skills/"},{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"トップ","item":"https://freelance.agent-best.net/"},{"@type":"ListItem","position":2,"name":"お役立ち記事","item":"https://freelance.agent-best.net/media/"},{"@type":"ListItem","position":3,"name":"インフラ・クラウド","item":"https://freelance.agent-best.net/media/hub/infra-cloud/"},{"@type":"ListItem","position":4,"name":"SREのフリーランス案件で求められるスキルと経験"}]},{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"SLOを運用した経験がないとSREの案件は難しいですか？","acceptedAnswer":{"@type":"Answer","text":"SLOの運用経験がなくても、監視の改善や自動化の経験で参画できる案件はあります。そのうえで、担当しているサービスで利用者から見た指標を一つ決め、測ってみるだけでも、面談で具体的に話せる材料になります。"}},{"@type":"Question","name":"プログラミングはどこまで求められますか？","acceptedAnswer":{"@type":"Answer","text":"運用のためのツールや自動化のコードを、ほかの人が保守できる形で書けることが求められます。GoやPythonなどで、テストを書き、レビューを通す開発の進め方に慣れておくと、参画できる案件が広がります。"}},{"@type":"Question","name":"OpenTelemetryの経験は必須ですか？","acceptedAnswer":{"@type":"Answer","text":"必須とされる案件ばかりではありません。ただ、特定の監視サービスに縛られない計測の方法として広がっているため、トレースの仕組みと、指標・ログとの関係を理解しておくと、可観測性の案件で説明しやすくなります。"}}]}]</script>
+</head>
+<body>
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="/"><img src="/assets/mark.png" alt="" width="28" height="28"><span>エージェントベストジョブ フリーランス<small>フリーランスのエンジニア・コンサル向け案件紹介</small></span></a>
+    <nav class="head-nav" aria-label="メニュー">
+      <a class="link" href="/jobs/">案件を探す</a>
+      <a class="link" href="/media/">お役立ち記事</a>
+      <a class="link keep" href="/mypage/" aria-label="気になる案件">☆ 気になる<span class="fav-count" data-fav-count hidden></span></a>
+      <a class="btn btn-primary btn-sm" href="https://airtable.com/appYkc36EvioYoL1A/pag6CZC4uJmxUcrXT/form" target="_blank" rel="noopener">無料で登録</a>
+    </nav>
+  </div>
+</header>
+<main class="wrap narrow article">
+  <p class="crumbs"><a href="/">トップ</a> › <a href="/media/">お役立ち記事</a> › <a href="/media/hub/infra-cloud/">インフラ・クラウド</a></p>
+  <a class="art-hub" href="/media/hub/infra-cloud/">インフラ・クラウド</a>
+  <h1 class="art-title">SREのフリーランス案件で求められるスキルと経験</h1>
+  <p class="note">公開 2026-10-29　監修：株式会社エージェントベスト</p>
+  <nav class="toc" aria-label="目次"><strong>目次</strong><ol><li><a href="#s1">SREの案件で見られるスキルの全体像</a></li><li><a href="#s2">SLIの選び方とエラーバジェットの使い方</a></li><li><a href="#s3">可観測性を設計する力</a></li><li><a href="#s4">壊れても戻せるリリースの仕組み</a></li><li><a href="#s5">トイルを減らす力</a></li><li><a href="#s6">障害対応を仕組みにする力</a></li><li><a href="#s7">認定資格の位置づけ</a></li><li><a href="#s8">スキルシートと面談での示し方</a></li><li><a href="#s9">よくある質問</a></li></ol></nav>
+  <div class="art-body">
+<p>SREのフリーランス案件では、<strong>利用者の体験から指標を選び、SLOとエラーバジェットで「直すか、進めるか」を判断する力、障害の原因を追える可観測性の設計、壊れても戻せるリリースの仕組み、繰り返しの運用作業をコードで減らす力</strong>が見られます。KubernetesやIaCなどの道具の経験は前提として確認されますが、評価の分かれ目になるのは、<strong>信頼性を数字で語り、開発チームと合意を作れるか</strong>です。</p>
+<p>SREの案件の型や、インフラ運用・バックエンドから目指すときの進め方、オンコールの契約上の注意は<a href="/media/sre-how-to/">SREがフリーランスになるには</a>で扱っています。この記事では、スキルの中身と、その示し方を深掘りします。</p>
+<h2 id="s1">SREの案件で見られるスキルの全体像</h2>
+<div class="table-wrap"><table><thead><tr><th>分野</th><th>中身</th><th>案件での見られ方</th></tr></thead><tbody><tr><td>信頼性の目標</td><td>SLIの選定、SLOの設定、エラーバジェットの運用</td><td>目標を決めて、判断に使った経験があるか</td></tr><tr><td>可観測性</td><td>指標・ログ・トレースの設計、アラートの条件</td><td>障害の原因までたどれる仕組みを作れるか</td></tr><tr><td>リリースの安全</td><td>段階的な公開、自動の切り戻し、変更の記録</td><td>壊れても影響を小さく戻せるか</td></tr><tr><td>トイルの削減</td><td>運用作業の自動化、手順の廃止</td><td>作業そのものをなくす設計ができるか</td></tr><tr><td>障害対応</td><td>初動の役割分担、振り返り、再発防止</td><td>個人の対応を組織の仕組みにできるか</td></tr><tr><td>基盤の技術</td><td>コンテナ基盤、IaC、CI/CD、クラウド</td><td>前提として問題なく扱えるか</td></tr></tbody></table></div>
+<p>SREはインフラとソフトウェア開発の間にある仕事です。どちらの出身かによって得意な分野が違うため、<strong>自分の軸の分野と、補っている途中の分野を分けて説明する</strong>と、案件側も役割を想像しやすくなります。</p>
+<h2 id="s2">SLIの選び方とエラーバジェットの使い方</h2>
+<p>GoogleのSREの書籍では、SLIはサービスの水準のある側面を定量的に測る指標、SLOはSLIで測る目標の値や範囲、SLAは目標を満たせなかったときの結果を含む利用者との約束と説明されています。また、100%の達成を求めるのは現実的でも望ましくもなく、目標を外してよい幅（エラーバジェット）を持ち、その残りを新しいリリースを出すかどうかの判断に使う考え方が示されています。</p>
+<p>案件で問われるのは、この定義を知っていることではなく、<strong>実際のサービスで何をSLIにしたか</strong>です。</p>
+<ul><li>サーバーのCPU使用率ではなく、利用者が受け取った応答の成功率や速さを測った</li><li>「トップページ」「決済」など、利用者にとって重みの違う機能ごとに指標を分けた</li><li>今の実績がそうだからという理由で目標を決めず、緩めの目標から始めて見直した</li><li>エラーバジェットを使い切りそうなときに、機能の追加より安定化を優先する取り決めを作った</li></ul>
+<p>書籍でも、今の性能を満たしているというだけで目標を決めないこと、緩い目標から始めて締めていくこと、SLOの数は少なく定義は簡潔に保つことが勧められています。こうした判断を、開発チームや事業側とどう合意したかまで話せると、外部から入るSREとしての動き方が伝わります。</p>
+<aside class="box box-view"><p class="box-label">エージェントベストの見解</p><p>SREの案件をご紹介していると、面談で評価されやすいのは、SLOを「設定した」で終わらず、「SLOを根拠に、何かをやめた・延ばした」経験を話せる方です。数字を判断に使った場面があると、信頼性の考え方を組織に根づかせた経験として伝わります。スキルシートには、目標の値そのものより、その目標で何を決めたかを書くことをおすすめします。</p></aside>
+<h2 id="s3">可観測性を設計する力</h2>
+<p>可観測性の案件では、監視の道具を入れることより、<strong>障害が起きたときに「どこで、なぜ」を短い時間でたどれる状態を作ること</strong>が求められます。</p>
+<p>OpenTelemetryは、トレース・指標・ログの3種類のデータを生成・収集・送信するためのフレームワークで、CNCF（Cloud Native Computing Foundation）のプロジェクトです。公式の説明では、OpenTelemetry自体はデータを保存・表示する仕組みではなく、オープンソースや商用のさまざまな保存先と組み合わせて使うとされています。特定の監視サービスに縛られずにデータを集める方法として、導入を検討する現場が増えています。</p>
+<p>案件で評価されやすい経験は次のようなものです。</p>
+<ul><li>サービスをまたぐ処理にトレースを入れ、遅い箇所を特定できるようにした</li><li>ログに処理の識別子を入れ、指標・ログ・トレースを行き来できるようにした</li><li>鳴りすぎていたアラートを、利用者への影響を基準に絞り込んだ</li><li>監視データの量と費用を見て、保存の期間や間引きの方針を決めた</li></ul>
+<p>アラートの見直しは、SREの案件で最初に任されることの多い仕事です。<strong>「このアラートが鳴ったら、誰が何をするのか」が決まっていないアラートを減らした経験</strong>は、具体的に話せる材料になります。</p>
+<h2 id="s4">壊れても戻せるリリースの仕組み</h2>
+<p>障害の多くは変更をきっかけに起きます。そのため、SREの案件では、変更を安全に出す仕組みづくりがよく求められます。</p>
+<ul><li>一部の利用者にだけ新しい版を出し、指標を見てから広げる段階的な公開</li><li>指標が悪化したときに、自動で前の版に戻す仕組み</li><li>設定の変更も、コードと同じようにレビューと記録を通す運用</li><li>データベースの変更を、前の版のアプリでも動く形に分けて出す手順</li></ul>
+<p>ここで差がつくのは、<strong>戻せない変更をどう扱ったか</strong>です。データの形を変える変更や、外部サービスとの契約に関わる変更など、切り戻しが難しいものを見分け、出し方を変えた経験は、設計の深さとして伝わります。</p>
+<h2 id="s5">トイルを減らす力</h2>
+<p>SREの書籍では、トイル（労苦）を、手作業で、繰り返し発生し、自動化でき、その場しのぎで、終わっても価値が残らず、サービスの規模に比例して増える作業と説明しています。そのうえで、SREの時間のうち運用作業を半分未満に保つことを目標にしています。</p>
+<p>案件で評価されるのは、作業を自動にしたことより、<strong>作業そのものが要らなくなるように設計を変えた経験</strong>です。たとえば、証明書の更新を手順書から自動の仕組みに変える、容量の追加を手作業から自動の拡張に変える、問い合わせのたびに行っていた調査を利用者が自分で見られる画面に変える、といったものです。自動化のコードを、ほかの人が保守できる形で残したかも確認されます。</p>
+<aside class="box box-caution"><p class="box-label">注意</p><p>「自動化した」とだけ書くと、スクリプトを一つ書いた経験と、運用の仕組みを変えた経験の区別がつきません。自動化の前後で、作業の回数や時間、対応する人の数がどう変わったかを、伏せられる範囲で書き添えると、成果の大きさが伝わります。</p></aside>
+<h2 id="s6">障害対応を仕組みにする力</h2>
+<p>障害対応では、技術の力に加え、<strong>初動の進め方</strong>が確認されます。指揮をとる人、調査する人、関係者へ知らせる人の役割を分ける、記録を時系列で残す、復旧と原因の調査を分けて進める、といった動き方です。</p>
+<p>振り返りでは、個人の責任を問わず、仕組みの改善につなげる書き方が求められます。再発防止の対策が、実際に実施されたかを追いかける仕組みまで作った経験は、組織の運用を変えた実績として評価されます。</p>
+<h2 id="s7">認定資格の位置づけ</h2>
+<p>SREに直結する資格は多くありませんが、基盤の技術を示す材料として、Kubernetesの実技試験であるCKAがあります。概要は<a href="/media/sre-how-to/">SREがフリーランスになるには</a>で紹介しています。</p>
+<p>クラウドの資格では、Google CloudのProfessional Cloud DevOps Engineerが、SREのプラクティスの適用、CI/CDパイプラインの構築、オブザーバビリティの実装と問題のトラブルシューティング、パフォーマンスと費用の最適化などを評価するとされています。推奨される経験は、Google Cloudでの本番システムの設計・管理1年以上を含む業界経験3年以上です（2026年10月時点のGoogle Cloudの案内による）。</p>
+<p>資格は知識の裏付けになりますが、SREの案件では、実際の運用で何を判断したかが中心に問われます。</p>
+<h2 id="s8">スキルシートと面談での示し方</h2>
+<p>SREの経験は、使った道具より、<strong>何を測り、何を決め、何が変わったか</strong>を書くと伝わります。</p>
+<ul><li>応答の成功率をSLIにし、SLOの残りを見てリリースの判断をする運用を作った</li><li>主要な処理にトレースを入れ、障害の原因を特定するまでの時間を短くした</li><li>段階的な公開と自動の切り戻しを入れ、変更による障害の影響を小さくした</li><li>手作業の証明書更新をなくし、関連する問い合わせ対応をなくした</li></ul>
+<p>面談では、「最近の障害で何をしたか」「SLOをどう決めたか」がよく聞かれます。書き方の詳細はSREのスキルシートの書き方、報酬との関係はSREの報酬の記事をご覧ください。</p>
+<aside class="box box-view"><p class="box-label">エージェントベストの見解</p><p>当社では、契約で業務範囲・報酬・支払期日・契約期間を個別契約に書いてお渡ししています。SREの案件は、改善の仕事とオンコールなどの運用の仕事が混ざりやすいため、どこまでが業務範囲かを契約の前に確かめておくことをおすすめします。気になる点はご質問いただければ確認します。</p></aside>
+<aside class="box box-point"><p class="box-label">ポイント</p><ul><li>SREの案件では、SLIの選定とSLOの運用、可観測性、安全なリリース、トイルの削減、障害対応の仕組みが見られる</li><li>目標を決めただけでなく、その目標で何を判断したかを話せると評価されやすい</li><li>自動化は、作業の前後で何が変わったかまで書くと成果が伝わる</li></ul></aside>
+<h2 id="s9">よくある質問</h2>
+<h3>SLOを運用した経験がないとSREの案件は難しいですか？</h3>
+<p>SLOの運用経験がなくても、監視の改善や自動化の経験で参画できる案件はあります。そのうえで、担当しているサービスで利用者から見た指標を一つ決め、測ってみるだけでも、面談で具体的に話せる材料になります。</p>
+<h3>プログラミングはどこまで求められますか？</h3>
+<p>運用のためのツールや自動化のコードを、ほかの人が保守できる形で書けることが求められます。GoやPythonなどで、テストを書き、レビューを通す開発の進め方に慣れておくと、参画できる案件が広がります。</p>
+<h3>OpenTelemetryの経験は必須ですか？</h3>
+<p>必須とされる案件ばかりではありません。ただ、特定の監視サービスに縛られない計測の方法として広がっているため、トレースの仕組みと、指標・ログとの関係を理解しておくと、可観測性の案件で説明しやすくなります。</p>
+  </div>
+  <section class="sources"><h2>参考にした公的情報・資料</h2><ul><li><a href="https://sre.google/sre-book/service-level-objectives/" target="_blank" rel="noopener nofollow">Service Level Objectives（Site Reliability Engineering｜Google）</a></li><li><a href="https://sre.google/sre-book/eliminating-toil/" target="_blank" rel="noopener nofollow">Eliminating Toil（Site Reliability Engineering｜Google）</a></li><li><a href="https://opentelemetry.io/docs/what-is-opentelemetry/" target="_blank" rel="noopener nofollow">What is OpenTelemetry?（OpenTelemetry）</a></li><li><a href="https://cloud.google.com/learn/certification/cloud-devops-engineer?hl=ja" target="_blank" rel="noopener nofollow">Professional Cloud DevOps Engineer 認定資格（Google Cloud）</a></li></ul>
+  <p class="note">記事の内容は公開日時点の情報にもとづきます。制度や税率は変わることがあるため、手続きの前に必ず各機関の最新情報をご確認ください。</p></section>
+  <div class="cta-band">
+  <h2>条件に合う案件だけ、知りたい方へ</h2>
+  <p>ご登録は無料です。条件に合う案件だけを、ご本人の了承を得てからご提案します。</p>
+  <div class="cta-row">
+    <a class="btn btn-primary" href="https://airtable.com/appYkc36EvioYoL1A/pag6CZC4uJmxUcrXT/form" target="_blank" rel="noopener">無料で登録する</a>
+    <a class="btn btn-ghost" href="/jobs/">案件を探す</a>
+  </div>
+</div>
+  <section class="related"><h2>あわせて読みたい</h2><div class="grid g2"><a class="card art-card" href="/media/sre-how-to/">
+  <span class="art-hub">インフラ・クラウド</span>
+  <h3>SREがフリーランスになるには｜必要な経験と独立までの進め方</h3>
+  <p>SREとしてフリーランスになるには、SLOの設計や障害の振り返りなど、信頼性を数字で扱い開発チームと改善を進めた経験が必要です。案件の型、独立前に積む実績、外部から参画するときの進め方、オンコールの契約上の注意を解説します。</p>
+</a>
+<a class="card art-card" href="/media/aws-skills/">
+  <span class="art-hub">インフラ・クラウド</span>
+  <h3>AWSエンジニアのフリーランス案件で求められるスキルと経験</h3>
+  <p>AWSエンジニアのフリーランス案件では、設計から構築・運用までのどこを担えるか、ネットワーク・セキュリティの基礎、IaCや自動化の経験が見られます。案件で求められやすいスキル、AWS認定の位置づけ、経験の伝え方を解説します。</p>
+</a>
+<a class="card art-card" href="/media/gcp-skills/">
+  <span class="art-hub">インフラ・クラウド</span>
+  <h3>GCPエンジニアのフリーランス案件で求められるスキルと経験</h3>
+  <p>GCPのフリーランス案件では、組織・フォルダ・プロジェクトの階層に沿ったIAM設計、BigQueryの費用を読んで抑える力、GKEやCloud Runでの運用、データチームとの連携が見られます。分野別のスキルと認定資格の扱いを解説します。</p>
+</a>
+<a class="card art-card" href="/media/azure-skills/">
+  <span class="art-hub">インフラ・クラウド</span>
+  <h3>Azureエンジニアのフリーランス案件で求められるスキルと経験</h3>
+  <p>Azureのフリーランス案件では、Entra IDとAzure RBACによる権限設計、管理グループとサブスクリプションを使ったランディングゾーンの設計、ハイブリッド接続、Bicepなどでのコード化が見られます。分野ごとのスキルと認定資格の扱いを解説します。</p>
+</a>
+<a class="card art-card" href="/media/skillsheet-basics/">
+  <span class="art-hub">スキルシート・面談</span>
+  <h3>フリーランスのスキルシートの書き方｜基本の構成とプロジェクト欄の例</h3>
+  <p>スキルシートは「基本情報・得意分野の要約・スキル一覧・プロジェクト経歴」の順で、1件ごとに役割と担当工程、成果を具体的に書くのが基本です。構成とプロジェクト欄の書き方の型を、架空の例で紹介します。</p>
+</a>
+<a class="card art-card" href="/media/interview-questions/">
+  <span class="art-hub">スキルシート・面談</span>
+  <h3>業務委託の面談でよく聞かれる質問と答え方｜回答の組み立て方</h3>
+  <p>業務委託の面談では、経歴の説明、直近案件での役割、技術や業務の深さ、稼働条件の4つがよく聞かれます。「結論→背景→自分の行動→結果」の順で短く答えると伝わりやすくなります。質問ごとの答え方を架空の例で紹介します。</p>
+</a></div></section>
+</main>
+<footer class="site-foot">
+  <div class="wrap">
+    <strong>エージェントベストジョブ フリーランス</strong>
+    <div class="foot-links">
+      <a href="/">トップ</a>
+      <a href="/jobs/">案件を探す</a>
+      <a href="/media/">お役立ち記事</a>
+      <a href="https://airtable.com/appYkc36EvioYoL1A/pag6CZC4uJmxUcrXT/form" target="_blank" rel="noopener">ご登録（スキルシート・ご希望の条件）</a>
+      <a href="https://line.me/R/ti/p/@697nxhbt?oat_content=url&ts=08302134" target="_blank" rel="noopener" data-line-cta="footer">LINEで相談する</a>
+      <a href="/privacy.html">個人情報の取り扱い</a>
+      <a href="https://www.agent-best.net/company/">運営会社</a>
+    </div>
+    <div class="foot-links">
+      <a href="https://jobs.agent-best.net/">正社員の求人を探す（エージェントベストジョブ）</a>
+      <a href="https://skill.agent-best.net/">エージェントベストジョブ手に職</a>
+      <a href="https://www.agent-best.net/">エージェントベスト</a>
+    </div>
+    <p>運営：株式会社エージェントベスト（有料職業紹介事業 許可番号 13-ユ-316964）<br>〒106-0032 東京都港区六本木4-8-7 嶋田ビル5階</p>
+  </div>
+</footer>
+<script src="/assets/fav.js" defer></script>
+</body>
+</html>
