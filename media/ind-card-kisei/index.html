@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>クレジットカード・決済業界の案件で気をつけたい規制とセキュリティのルール｜割賦販売法・ガイドライン・PCI DSS｜エージェントベストジョブ フリーランス</title>
+<meta name="description" content="カード決済の案件のルールの土台は、割賦販売法のカード番号の管理の義務、その実務上の指針であるクレジットカード・セキュリティガイドライン、国際基準のPCI DSS、前払式や送金のサービスにかかる資金決済法です。2026年10月時点で確かめた内容と現場で気をつけたい点を整理します。">
+<link rel="canonical" href="https://freelance.agent-best.net/media/ind-card-kisei/">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="エージェントベストジョブ フリーランス">
+<meta property="og:title" content="クレジットカード・決済業界の案件で気をつけたい規制とセキュリティのルール｜割賦販売法・ガイドライン・PCI DSS｜エージェントベストジョブ フリーランス">
+<meta property="og:description" content="カード決済の案件のルールの土台は、割賦販売法のカード番号の管理の義務、その実務上の指針であるクレジットカード・セキュリティガイドライン、国際基準のPCI DSS、前払式や送金のサービスにかかる資金決済法です。2026年10月時点で確かめた内容と現場で気をつけたい点を整理します。">
+<meta property="og:url" content="https://freelance.agent-best.net/media/ind-card-kisei/">
+<meta property="og:image" content="https://freelance.agent-best.net/assets/ogp.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://freelance.agent-best.net/assets/ogp.png">
+<meta name="theme-color" content="#1E3A5F">
+<link rel="icon" href="/assets/favicon.ico">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="stylesheet" href="/assets/site.css">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1XXMP8Y1B4"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-1XXMP8Y1B4');
+document.addEventListener('click',e=>{const a=e.target.closest('[data-line-cta]');if(a)gtag('event','line_add_friend',{placement:a.dataset.lineCta,page_path:location.pathname});});</script>
+<script type="application/ld+json">[{"@context":"https://schema.org","@type":"Article","headline":"クレジットカード・決済業界の案件で気をつけたい規制とセキュリティのルール｜割賦販売法・ガイドライン・PCI DSS","description":"カード決済の案件のルールの土台は、割賦販売法のカード番号の管理の義務、その実務上の指針であるクレジットカード・セキュリティガイドライン、国際基準のPCI DSS、前払式や送金のサービスにかかる資金決済法です。2026年10月時点で確かめた内容と現場で気をつけたい点を整理します。","datePublished":"2026-10-29","dateModified":"2026-10-29","author":{"@type":"Organization","name":"株式会社エージェントベスト","url":"https://www.agent-best.net/"},"publisher":{"@type":"Organization","name":"株式会社エージェントベスト","logo":{"@type":"ImageObject","url":"https://freelance.agent-best.net/assets/logo.png"}},"mainEntityOfPage":"https://freelance.agent-best.net/media/ind-card-kisei/"},{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"トップ","item":"https://freelance.agent-best.net/"},{"@type":"ListItem","position":2,"name":"お役立ち記事","item":"https://freelance.agent-best.net/media/"},{"@type":"ListItem","position":3,"name":"業界別の案件","item":"https://freelance.agent-best.net/media/hub/industry/"},{"@type":"ListItem","position":4,"name":"クレジットカード・決済業界の案件で気をつけたい規制とセキュリティのルール｜割賦販売法・ガイドライン・PCI DSS"}]},{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"フリーランスもPCI DSSの要件を全部理解しておく必要がありますか？","acceptedAnswer":{"@type":"Answer","text":"全部を理解していなくても参画はできます。準拠が求められるのは事業者で、現場ではそれを踏まえた参画先の規程や手順に従うことが求められます。まずは、自分の作業がカード情報を扱う環境の範囲に入るかどうかと、その範囲で決められた手順を確かめてください。セキュリティの専門職として参画する場合は、基準書をPCI SSCの公式サイトで確かめておくことをおすすめします。"}},{"@type":"Question","name":"カード番号が表示される画面のスクリーンショットを、不具合の報告に使ってもよいですか？","acceptedAnswer":{"@type":"Answer","text":"参画先の規程で認められていない限り、避けてください。報告には、番号を伏せた画面や、テスト用のデータで再現した画面を使うのが基本です。迷ったときは、撮る前に参画先の担当者に確かめてください。"}},{"@type":"Question","name":"規制の解釈に迷ったときはどうすればよいですか？","acceptedAnswer":{"@type":"Answer","text":"自分で結論を出さず、発注側の担当者やセキュリティ・コンプライアンスの部門に確かめてください。フリーランスとしての契約上の責任に関わる場合は、弁護士などの専門家に相談することをおすすめします。取引先の規程に従う範囲の考え方は取引先の規程の記事で扱っています。"}}]}]</script>
+</head>
+<body>
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="/"><img src="/assets/mark.png" alt="" width="28" height="28"><span>エージェントベストジョブ フリーランス<small>フリーランスのエンジニア・コンサル向け案件紹介</small></span></a>
+    <nav class="head-nav" aria-label="メニュー">
+      <a class="link" href="/jobs/">案件を探す</a>
+      <a class="link" href="/media/">お役立ち記事</a>
+      <a class="link keep" href="/mypage/" aria-label="気になる案件">☆ 気になる<span class="fav-count" data-fav-count hidden></span></a>
+      <a class="btn btn-primary btn-sm" href="https://airtable.com/appYkc36EvioYoL1A/pag6CZC4uJmxUcrXT/form" target="_blank" rel="noopener">無料で登録</a>
+    </nav>
+  </div>
+</header>
+<main class="wrap narrow article">
+  <p class="crumbs"><a href="/">トップ</a> › <a href="/media/">お役立ち記事</a> › <a href="/media/hub/industry/">業界別の案件</a></p>
+  <a class="art-hub" href="/media/hub/industry/">業界別の案件</a>
+  <h1 class="art-title">クレジットカード・決済業界の案件で気をつけたい規制とセキュリティのルール｜割賦販売法・ガイドライン・PCI DSS</h1>
+  <p class="note">公開 2026-10-29　監修：株式会社エージェントベスト</p>
+  <nav class="toc" aria-label="目次"><strong>目次</strong><ol><li><a href="#s1">割賦販売法：カード番号を扱う事業者の義務</a></li><li><a href="#s2">クレジットカード・セキュリティガイドライン</a></li><li><a href="#s3">PCI DSS：国際ブランドがつくった基準</a></li><li><a href="#s4">資金決済法：チャージ式・送金のサービス</a></li><li><a href="#s5">現場で気をつけたい5つの行動</a></li><li><a href="#s6">よくある質問</a></li></ol></nav>
+  <div class="art-body">
+<p>カード決済の案件で守るルールの土台は、<strong>割賦販売法が定めるカード番号の適切な管理と不正利用防止の義務、その実務上の指針であるクレジットカード・セキュリティガイドライン、国際基準のPCI DSS</strong>の3つです。チャージ式の支払手段や送金のサービスに関わる案件では、これに<strong>資金決済法</strong>が加わります。</p>
+<p>どれも直接の宛先は事業者ですが、事業者はこれらを踏まえて社内の規程を作り、委託先にも守らせます。フリーランスに求められるのは、条文の解釈より、カード情報の扱いの決まりを守る行動です。この記事では、2026年10月時点で各機関の公開資料から確かめた内容と、現場で気をつけたい点を整理します。個別の解釈が必要な場面では、発注側の担当部門や専門家に確かめてください。</p>
+<h2 id="s1">割賦販売法：カード番号を扱う事業者の義務</h2>
+<p>割賦販売法第35条の16第1項は、「クレジットカード番号等取扱業者」に、経済産業省令の基準に従って、カード番号の漏えい、滅失、毀損の防止など、適切な管理のために必要な措置を講じることを求めています。対象は7つの号で定められており、クレジットカード・セキュリティガイドラインは、それぞれを「1号事業者」から「7号事業者」と呼んでいます。</p>
+<div class="table-wrap"><table><thead><tr><th>区分</th><th>条文の対象（要旨）</th><th>ガイドラインが示す具体例</th></tr></thead><tbody><tr><td>1号</td><td>クレジットカード等購入あっせん業者</td><td>カード発行会社（イシュアー）</td></tr><tr><td>2号</td><td>カード払いで販売・役務提供をする事業者</td><td>加盟店</td></tr><tr><td>3号</td><td>カード会社のために加盟店へ代金相当額を交付する立替払取次業者</td><td>アクワイアラー</td></tr><tr><td>4号</td><td>立替払取次業者のために加盟店へ代金相当額を交付する事業者</td><td>決済代行業者、ECモール事業者など</td></tr><tr><td>5号</td><td>利用者のカード番号を決済用の情報と結び付けて提供する事業者</td><td>コード決済事業者など</td></tr><tr><td>6号</td><td>5号の事業者の委託でカード番号を管理する事業者</td><td>コード決済事業者のカード情報の管理の受託先</td></tr><tr><td>7号</td><td>大量のカード番号を扱う者として省令で定める事業者</td><td>EC加盟店に決済の仕組みを提供する事業者など</td></tr></tbody></table></div>
+<p>同じ条の第3項は、カード番号の取扱いを委託した場合に、委託先（二段階以上の委託を含む）に必要な指導などを行うことを求めています。フリーランスが参画先から受けるカード情報の扱いの指示は、この流れの中にあります。</p>
+<p>このほか、加盟店と契約を結ぶ事業者には経済産業省への登録（第35条の17の2）と、契約前と契約後の加盟店の調査（第35条の17の8）が、加盟店にはカード番号の不正な利用を防止する措置（第35条の17の15）が定められています。</p>
+<h3>カード番号の不正な提供・盗用には罰則がある</h3>
+<p>第49条の2は、クレジットカード番号等取扱業者やその委託を受けた事業者、またそれらの役員・職員やその職にあった者が、業務で知ったカード番号を、自己または第三者の不正な利益を図る目的で提供し、または盗用したときの罰則を定めています。自分がこの条文の対象にあたるかは契約の形にもよりますが、<strong>業務で見たカード番号を、目的の外で使わない・渡さない・控えない</strong>ことが基本だと覚えておきます。</p>
+<h2 id="s2">クレジットカード・セキュリティガイドライン</h2>
+<p>ガイドラインは、クレジット取引セキュリティ対策協議会（事務局：日本クレジット協会）がまとめたもので、2026年10月時点で日本クレジット協会のページに掲載されている最新版は2026年3月の【6.1版】です。</p>
+<p>ガイドラインの4-2によると、経済産業省の「割賦販売法（後払分野）に基づく監督の基本方針」で、このガイドラインに掲げる措置は、割賦販売法が義務付けるカード番号の漏えい等の防止と不正利用の防止のための措置の<strong>実務上の指針</strong>と位置付けられています。ガイドラインの措置またはそれと同等以上の措置を講じていれば、法律の「必要かつ適切な措置」を講じているとみなされる、という関係です。</p>
+<h3>立場ごとのカード情報保護の指針対策</h3>
+<div class="table-wrap"><table><thead><tr><th>立場</th><th>指針対策（要旨）</th></tr></thead><tbody><tr><td>加盟店（2号）</td><td>カード情報を保持しない非保持化、または保持する場合はPCI DSSに準拠</td></tr><tr><td>EC加盟店（2号）</td><td>上に加えて、システムとWebサイトの「脆弱性対策」</td></tr><tr><td>イシュアー（1号）</td><td>PCI DSSに準拠し、維持・運用する</td></tr><tr><td>1号・3号〜7号の事業者</td><td>PCI DSS準拠を指針対策としてきた（ガイドライン1-1）</td></tr></tbody></table></div>
+<p>EC加盟店の「脆弱性対策」として、ガイドラインは、管理画面のアクセス制限と管理者のID・パスワードの管理（2段階認証または多要素認証、ログイン失敗時のアカウントロックなど）、公開ディレクトリの設定不備への対策、定期的な脆弱性診断またはペネトレーションテスト、ウイルス対策ソフトの導入と運用、カード番号の有効性を悪用して確かめる攻撃への対策を挙げています。</p>
+<p>不正利用対策では、EC加盟店に、オーソリゼーション処理の体制整備、加盟店契約上の善良な管理者の注意義務の履行、EMV 3-Dセキュアの導入、適切な不正ログイン対策を求めています。EMV 3-Dセキュアと不正ログイン対策は【6.0版】（2025年3月）で指針対策に加わったもので、2026年3月の改訂資料は、【6.1版】では指針対策の追加・変更はなく、各事業者の着実な実施に向けた内容を記載したと説明しています。用語や仕組みの説明は<a href="/media/ind-card-chishiki/">カード・決済の業務知識の記事</a>で扱っています。</p>
+<aside class="box box-view"><p class="box-label">エージェントベストの見解</p><p>カード・決済の案件をご紹介していると、参画後に評価を下げやすいのは、技術の不足より、カード情報を扱う環境での決まり（作業の記録、権限の申請、持ち込み・持ち出しの制限）を軽く見てしまうケースです。手順の多い環境に慣れている方は、立ち上がりから安心して任されやすい傾向があります。参画の最初に、カード情報を扱う範囲と作業の決まりを確かめておくことをおすすめします。</p></aside>
+<h2 id="s3">PCI DSS：国際ブランドがつくった基準</h2>
+<p>PCI DSSは、カード情報を保護するための国際的なセキュリティ基準です。基準をつくるPCI SSCは、公式ページによると、American Express、Discover、JCB International、MasterCard、Visaの5つの国際ブランドが2006年に設立した団体です。PCI SSCは基準の策定と維持を担い、実施状況の監視は行わないとしており、どの事業者が準拠や検証を求められるかは、国際ブランドやアクワイアラーなどが運営するプログラムで決まると説明しています。</p>
+<p>版については、PCI SSCが2024年6月11日にv4.0.1を公表し、v4.0は2024年12月31日で廃止され、以後はv4.0.1が唯一の版になると案内しています。v4.0で追加された要件のうち、適用日が先に設定されていたものは2025年3月31日から適用されています。ガイドラインの用語集は、PCI DSSを12の要件と約400の要求事項から成り、準拠の検証方法には認定セキュリティ評価機関（QSA）による訪問審査と、自己問診（SAQ）があると説明しています。</p>
+<p>フリーランスにとって大切なのは、要件を全部覚えることではなく、<strong>自分の作業がカード情報を扱う環境の範囲に入るかどうか</strong>を知ることです。範囲に入る作業では、アカウントの発行、アクセスの記録、変更の手順などが基準に沿って管理されます。</p>
+<h2 id="s4">資金決済法：チャージ式・送金のサービス</h2>
+<p>コード決済や電子マネーの中には、資金決済法で動くサービスがあります。資金決済法は、前払式支払手段の発行者に、発行の業務に係る情報の安全管理のために必要な措置（第21条）と、業務の委託先への指導（第21条の2）を求めています。資金移動業者にも、情報の安全管理（第49条）と委託先への指導（第50条）が定められています。e-Gov法令検索では、2026年10月時点で2026年8月12日施行の改正を反映した条文が掲載されています。</p>
+<p>金融庁の事務ガイドライン（第三分冊：金融会社関係）の「資金移動業者関係」は、利用者に関する情報管理態勢の着眼点（II-2-2-3）で、カード番号や有効期限を含む個人情報を「クレジットカード情報等」として、保存期間と保存場所を限ること、業務上必要な場合を除き画面にカード番号を全桁表示しない措置をとること、独立した内部監査部門が定期的または随時に監査することなどを挙げています。テスト画面や管理画面の表示の仕様で、番号の一部を伏せる決まりがあるのは、こうした考え方を踏まえたものです。</p>
+<aside class="box box-caution"><p class="box-label">注意</p><p>「前の決済の案件ではこの手順で問題なかった」は通用しません。同じ法律やガイドラインを踏まえていても、立場によって求められる対策が違い、参画先の規程や契約の取り決めも違います。前の現場の感覚で判断せず、参画先の規程と指示を確かめてから動いてください。</p></aside>
+<h2 id="s5">現場で気をつけたい5つの行動</h2>
+<p>具体的な決まりは参画先の規程が優先します。</p>
+<ol><li><strong>カード情報を控えない</strong>：画面、ログ、チケット、チャットにカード番号を貼らない。テストは用意されたテスト用のデータだけを使う</li><li><strong>範囲の外に持ち出さない</strong>：カード情報を扱う環境のデータを、許可された場所と端末の外に出さない</li><li><strong>権限は申請した範囲だけ使う</strong>：作業に必要な範囲を超えて、環境やデータに触れない</li><li><strong>変更は手順どおりに</strong>：本番の設定やプログラムの変更は、承認と記録の手順に沿って行う</li><li><strong>異常はすぐに報告する</strong>：不審なアクセスや設定の誤り、誤送信に気づいたら、決められた経路ですぐに伝える</li></ol>
+<p>貸与された端末の使い方は<a href="/media/taiyo-pc/">貸与PCの記事</a>、万一情報を漏えいしてしまったときの対応は<a href="/media/roei-taiou/">漏えい時の対応の記事</a>、個人情報を扱う業務の契約は<a href="/media/kojin-joho-itaku/">個人情報を扱う業務の契約の記事</a>で整理しています。銀行の案件で守るFISCの安全対策基準などは<a href="/media/ind-ginkou-kisei/">銀行の規制の記事</a>、EC事業者側の規制は<a href="/media/ind-ec-kisei/">EC・通販業界の規制の記事</a>で扱います。</p>
+<aside class="box box-view"><p class="box-label">エージェントベストの見解</p><p>当社では、契約の際に業務範囲・報酬・支払期日・契約期間を個別契約に書いてお渡ししています。カード・決済の案件では、秘密保持、再委託、作業場所、カード情報の扱いに関する条件が契約や参画先の規程に入ることが多いため、参画の前に条項を読み、分からない点は早めにご相談ください。条件の細かい点は、ご質問いただければ確認します。</p></aside>
+<aside class="box box-point"><p class="box-label">ポイント</p><ul><li>割賦販売法は、カード番号を扱う1号〜7号の事業者に適切な管理の措置と委託先の指導を求め、不正な提供・盗用には罰則がある</li><li>ガイドラインは割賦販売法の実務上の指針で、2026年10月時点の最新版は2026年3月の【6.1版】</li><li>PCI DSSは国際ブランドが設立したPCI SSCの基準で、現行はv4.0.1</li><li>チャージ式・送金のサービスには資金決済法の情報の安全管理と委託先の指導の定めがかかる</li><li>現場では、控えない・持ち出さない・権限を守る・手順どおり・すぐ報告、が基本</li></ul></aside>
+<h2 id="s6">よくある質問</h2>
+<h3>フリーランスもPCI DSSの要件を全部理解しておく必要がありますか？</h3>
+<p>全部を理解していなくても参画はできます。準拠が求められるのは事業者で、現場ではそれを踏まえた参画先の規程や手順に従うことが求められます。まずは、自分の作業がカード情報を扱う環境の範囲に入るかどうかと、その範囲で決められた手順を確かめてください。セキュリティの専門職として参画する場合は、基準書をPCI SSCの公式サイトで確かめておくことをおすすめします。</p>
+<h3>カード番号が表示される画面のスクリーンショットを、不具合の報告に使ってもよいですか？</h3>
+<p>参画先の規程で認められていない限り、避けてください。報告には、番号を伏せた画面や、テスト用のデータで再現した画面を使うのが基本です。迷ったときは、撮る前に参画先の担当者に確かめてください。</p>
+<h3>規制の解釈に迷ったときはどうすればよいですか？</h3>
+<p>自分で結論を出さず、発注側の担当者やセキュリティ・コンプライアンスの部門に確かめてください。フリーランスとしての契約上の責任に関わる場合は、弁護士などの専門家に相談することをおすすめします。取引先の規程に従う範囲の考え方は<a href="/media/torihikisaki-kitei/">取引先の規程の記事</a>で扱っています。</p>
+  </div>
+  <section class="sources"><h2>参考にした公的情報・資料</h2><ul><li><a href="https://laws.e-gov.go.jp/law/336AC0000000159" target="_blank" rel="noopener nofollow">割賦販売法（e-Gov法令検索）</a></li><li><a href="https://www.j-credit.or.jp/security/document/index.html" target="_blank" rel="noopener nofollow">クレジットカード・セキュリティガイドライン等（日本クレジット協会）</a></li><li><a href="https://www.j-credit.or.jp/security/pdf/Creditcardsecurityguidelines_6.1_published.pdf" target="_blank" rel="noopener nofollow">クレジットカード・セキュリティガイドライン【6.1版】（クレジット取引セキュリティ対策協議会・2026年3月）</a></li><li><a href="https://www.j-credit.or.jp/security/pdf/Creditcardsecurityguidelines_6.1_revisionpoint.pdf" target="_blank" rel="noopener nofollow">クレジットカード・セキュリティガイドラインの改訂について（2026年3月）（日本クレジット協会）</a></li><li><a href="https://www.pcisecuritystandards.org/about_us/" target="_blank" rel="noopener nofollow">About Us（PCI Security Standards Council）</a></li><li><a href="https://blog.pcisecuritystandards.org/just-published-pci-dss-v4-0-1" target="_blank" rel="noopener nofollow">Just Published: PCI DSS v4.0.1（PCI Security Standards Council）</a></li><li><a href="https://laws.e-gov.go.jp/law/421AC0000000059" target="_blank" rel="noopener nofollow">資金決済に関する法律（e-Gov法令検索）</a></li><li><a href="https://www.fsa.go.jp/common/law/guide/kaisya/index.html" target="_blank" rel="noopener nofollow">事務ガイドライン（第三分冊：金融会社関係）（金融庁）</a></li><li><a href="https://www.fsa.go.jp/common/law/guide/kaisya/14.pdf" target="_blank" rel="noopener nofollow">事務ガイドライン 14 資金移動業者関係（金融庁）</a></li></ul>
+  <p class="note">記事の内容は公開日時点の情報にもとづきます。制度や税率は変わることがあるため、手続きの前に必ず各機関の最新情報をご確認ください。</p></section>
+  <div class="cta-band">
+  <h2>条件に合う案件だけ、知りたい方へ</h2>
+  <p>ご登録は無料です。条件に合う案件だけを、ご本人の了承を得てからご提案します。</p>
+  <div class="cta-row">
+    <a class="btn btn-primary" href="https://airtable.com/appYkc36EvioYoL1A/pag6CZC4uJmxUcrXT/form" target="_blank" rel="noopener">無料で登録する</a>
+    <a class="btn btn-ghost" href="/jobs/">案件を探す</a>
+  </div>
+</div>
+  <section class="related"><h2>あわせて読みたい</h2><div class="grid g2"><a class="card art-card" href="/media/ind-card-it/">
+  <span class="art-hub">業界別の案件</span>
+  <h3>クレジットカード・決済業界のフリーランスIT案件｜案件の種類と特徴を立場別に整理</h3>
+  <p>クレジットカード・決済業界のIT案件は、カード発行側・加盟店契約側・決済代行・コード決済など、事業者の立場ごとに扱うシステムが分かれます。案件の種類と、止められない処理やカード情報の扱いなど業界に共通する特徴を整理します。</p>
+</a>
+<a class="card art-card" href="/media/ind-card-chishiki/">
+  <span class="art-hub">業界別の案件</span>
+  <h3>クレジットカード・決済業界の案件で求められる業務知識と身につけ方｜当事者・取引の流れ・不正対策</h3>
+  <p>カード・決済の案件で求められる業務知識の中心は、取引の当事者の関係、承認から請求までの流れ、「カード情報」という言葉の範囲、不正利用対策の仕組みの4つです。案件ごとに必要な深さと、公開資料を使った身につけ方を整理します。</p>
+</a>
+<a class="card art-card" href="/media/ind-card-skillsheet/">
+  <span class="art-hub">業界別の案件</span>
+  <h3>クレジットカード・決済業界の経験をスキルシートで伝える書き方｜立場・処理・カード情報との距離</h3>
+  <p>カード・決済の経験は、発注元の立場、担当した処理、取引の種類、カード情報との距離の4点をそろえて書くと伝わります。不正検知の条件や環境の構成など書かない情報の線引きと、基幹系とEC向け決済の記入例を紹介します。</p>
+</a>
+<a class="card art-card" href="/media/ind-ginkou-kisei/">
+  <span class="art-hub">業界別の案件</span>
+  <h3>銀行業界の案件で気をつけたい規制とセキュリティのルール｜監督指針・FISC・個人情報</h3>
+  <p>銀行の案件のルールの土台は、金融庁の監督指針のシステムリスク管理、FISCの安全対策基準、金融分野の個人情報保護ガイドラインです。2026年10月時点で公開範囲から確かめた内容と、外部の委託先として働くフリーランスが現場で気をつけたい点を整理します。</p>
+</a>
+<a class="card art-card" href="/media/ind-ec-kisei/">
+  <span class="art-hub">業界別の案件</span>
+  <h3>EC・通販業界の案件で気をつけたい規制とセキュリティのルール｜特商法・景表法・個人情報</h3>
+  <p>EC・通販の案件で押さえたいルールは、特定商取引法の広告表示と最終確認画面、景品表示法の不当表示とステマ規制、個人情報保護法、カード情報の管理です。2026年10月時点で公式ページから確かめた内容と、画面や仕組みを作る側が気をつけたい点を整理します。</p>
+</a>
+<a class="card art-card" href="/media/kojin-joho-itaku/">
+  <span class="art-hub">業務委託契約の基礎</span>
+  <h3>業務で個人情報を扱うときの契約と注意点｜委託先として求められること</h3>
+  <p>取引先の顧客データなどを扱う業務は、個人情報保護法の「個人データの取扱いの委託」にあたることが多く、取引先には委託先を監督する義務があります。契約に入る安全管理・目的外利用の禁止・再委託・返却と廃棄・事故時の報告の条項と、守るための準備を整理します。</p>
+</a></div></section>
+</main>
+<footer class="site-foot">
+  <div class="wrap">
+    <strong>エージェントベストジョブ フリーランス</strong>
+    <div class="foot-links">
+      <a href="/">トップ</a>
+      <a href="/jobs/">案件を探す</a>
+      <a href="/media/">お役立ち記事</a>
+      <a href="https://airtable.com/appYkc36EvioYoL1A/pag6CZC4uJmxUcrXT/form" target="_blank" rel="noopener">ご登録（スキルシート・ご希望の条件）</a>
+      <a href="https://line.me/R/ti/p/@697nxhbt?oat_content=url&ts=08302134" target="_blank" rel="noopener" data-line-cta="footer">LINEで相談する</a>
+      <a href="/privacy.html">個人情報の取り扱い</a>
+      <a href="https://www.agent-best.net/company/">運営会社</a>
+    </div>
+    <div class="foot-links">
+      <a href="https://jobs.agent-best.net/">正社員の求人を探す（エージェントベストジョブ）</a>
+      <a href="https://skill.agent-best.net/">エージェントベストジョブ手に職</a>
+      <a href="https://www.agent-best.net/">エージェントベスト</a>
+    </div>
+    <p>運営：株式会社エージェントベスト（有料職業紹介事業 許可番号 13-ユ-316964）<br>〒106-0032 東京都港区六本木4-8-7 嶋田ビル5階</p>
+  </div>
+</footer>
+<script src="/assets/fav.js" defer></script>
+</body>
+</html>
