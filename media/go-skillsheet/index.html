@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Goエンジニアのスキルシートの書き方｜面談で評価される実績の見せ方｜エージェントベストジョブ フリーランス</title>
+<meta name="description" content="Goのスキルシートは、Goでの実務期間をほかの言語と分け、どのサービスのどの部分をGoで書いたかと、運用で起きたことへの対応を書くのが基本です。性能改善の示し方、基盤の書き分け、OSSの扱いを紹介します。">
+<link rel="canonical" href="https://freelance.agent-best.net/media/go-skillsheet/">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="エージェントベストジョブ フリーランス">
+<meta property="og:title" content="Goエンジニアのスキルシートの書き方｜面談で評価される実績の見せ方｜エージェントベストジョブ フリーランス">
+<meta property="og:description" content="Goのスキルシートは、Goでの実務期間をほかの言語と分け、どのサービスのどの部分をGoで書いたかと、運用で起きたことへの対応を書くのが基本です。性能改善の示し方、基盤の書き分け、OSSの扱いを紹介します。">
+<meta property="og:url" content="https://freelance.agent-best.net/media/go-skillsheet/">
+<meta property="og:image" content="https://freelance.agent-best.net/assets/ogp.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://freelance.agent-best.net/assets/ogp.png">
+<meta name="theme-color" content="#1E3A5F">
+<link rel="icon" href="/assets/favicon.ico">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="stylesheet" href="/assets/site.css">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1XXMP8Y1B4"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-1XXMP8Y1B4');
+document.addEventListener('click',e=>{const a=e.target.closest('[data-line-cta]');if(a)gtag('event','line_add_friend',{placement:a.dataset.lineCta,page_path:location.pathname});});</script>
+<script type="application/ld+json">[{"@context":"https://schema.org","@type":"Article","headline":"Goエンジニアのスキルシートの書き方｜面談で評価される実績の見せ方","description":"Goのスキルシートは、Goでの実務期間をほかの言語と分け、どのサービスのどの部分をGoで書いたかと、運用で起きたことへの対応を書くのが基本です。性能改善の示し方、基盤の書き分け、OSSの扱いを紹介します。","datePublished":"2026-10-29","dateModified":"2026-10-29","author":{"@type":"Organization","name":"株式会社エージェントベスト","url":"https://www.agent-best.net/"},"publisher":{"@type":"Organization","name":"株式会社エージェントベスト","logo":{"@type":"ImageObject","url":"https://freelance.agent-best.net/assets/logo.png"}},"mainEntityOfPage":"https://freelance.agent-best.net/media/go-skillsheet/"},{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"トップ","item":"https://freelance.agent-best.net/"},{"@type":"ListItem","position":2,"name":"お役立ち記事","item":"https://freelance.agent-best.net/media/"},{"@type":"ListItem","position":3,"name":"バックエンド開発","item":"https://freelance.agent-best.net/media/hub/backend/"},{"@type":"ListItem","position":4,"name":"Goエンジニアのスキルシートの書き方｜面談で評価される実績の見せ方"}]},{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Goの実務が1年未満です。ほかの言語の経験と混ぜて書いたほうがよいですか？","acceptedAnswer":{"@type":"Answer","text":"混ぜずに分けて書くほうが、結果として伝わりやすくなります。Goの期間が短くても、ほかの言語での設計・運用の経験が長ければ、その強みは別の行で示せます。Goで担当した範囲を具体的に書くことで、短い期間でも中身が伝わります。"}},{"@type":"Question","name":"社内ツールをGoで作った経験も書いてよいですか？","acceptedAnswer":{"@type":"Answer","text":"書いてかまいません。誰が使い、どんな問題を解決したかを書けば、実務の経験として判断材料になります。配布の方法や、ほかの人が保守できるようにした工夫があれば、あわせて書いておきましょう。"}},{"@type":"Question","name":"性能の数値を一切書けない場合はどうすればよいですか？","acceptedAnswer":{"@type":"Answer","text":"数値の代わりに、測った指標の種類と、特定に使った方法、変化の方向を書きます。「遅いリクエストの応答時間を指標に、プロファイラーで原因を特定して改善した」と書けば、数値がなくても手順と深さは伝わります。"}}]}]</script>
+</head>
+<body>
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="/"><img src="/assets/mark.png" alt="" width="28" height="28"><span>エージェントベストジョブ フリーランス<small>フリーランスのエンジニア・コンサル向け案件紹介</small></span></a>
+    <nav class="head-nav" aria-label="メニュー">
+      <a class="link" href="/jobs/">案件を探す</a>
+      <a class="link" href="/media/">お役立ち記事</a>
+      <a class="link keep" href="/mypage/" aria-label="気になる案件">☆ 気になる<span class="fav-count" data-fav-count hidden></span></a>
+      <a class="btn btn-primary btn-sm" href="https://airtable.com/appYkc36EvioYoL1A/pag6CZC4uJmxUcrXT/form" target="_blank" rel="noopener">無料で登録</a>
+    </nav>
+  </div>
+</header>
+<main class="wrap narrow article">
+  <p class="crumbs"><a href="/">トップ</a> › <a href="/media/">お役立ち記事</a> › <a href="/media/hub/backend/">バックエンド開発</a></p>
+  <a class="art-hub" href="/media/hub/backend/">バックエンド開発</a>
+  <h1 class="art-title">Goエンジニアのスキルシートの書き方｜面談で評価される実績の見せ方</h1>
+  <p class="note">公開 2026-10-29　監修：株式会社エージェントベスト</p>
+  <nav class="toc" aria-label="目次"><strong>目次</strong><ol><li><a href="#s1">Goの経験年数とバックエンド全体の年数を分ける</a></li><li><a href="#s2">「Goで書いた部分」と「周辺の基盤」を書き分ける</a></li><li><a href="#s3">性能改善はどう測ったかと一緒に書く</a></li><li><a href="#s4">運用の経験を独立した欄にする</a></li><li><a href="#s5">プロジェクト欄の記入例</a></li><li><a href="#s6">OSSや個人のツールの扱い</a></li><li><a href="#s7">よくある質問</a></li></ol></nav>
+  <div class="art-body">
+<p>Goエンジニアのスキルシートは、<strong>Goでの実務期間をほかの言語と分けて書き、どのサービスのどの部分をGoで書いたか、運用で何が起きてどう対応したかを示す</strong>のが基本です。Goの案件は、ほかの言語でバックエンドを経験してからGoに移った方が多く、読み手は「Goで何をどこまでやったか」を見極めようとします。経験の総量より、Goで担った部分の輪郭がはっきりしているシートが読みやすくなります。</p>
+<p>全体の構成は<a href="/media/skillsheet-basics/">スキルシートの基本</a>で解説しています。この記事では、Goのエンジニアが書くときに押さえたい点に絞って説明します。</p>
+<h2 id="s1">Goの経験年数とバックエンド全体の年数を分ける</h2>
+<p>Goのシートでよく見るのが、「バックエンド開発10年（Go、Java、PHP）」のように、言語をまとめて書く形です。これだと、Goの実務が10年なのか1年なのかが分かりません。読み手が知りたいのは、両方の数字です。</p>
+<div class="table-wrap"><table><thead><tr><th>書き方</th><th>読み手の受け取り方</th></tr></thead><tbody><tr><td>バックエンド開発10年（Go、Java）</td><td>Goの経験の長さが分からない</td></tr><tr><td>バックエンド開発10年。うちGoは直近2年（APIとバッチの開発・運用）</td><td>設計の経験は長く、Goは比較的新しいと分かる</td></tr></tbody></table></div>
+<p>スキル一覧の言語の欄には、Goの実務期間に加えて、担当した期間の主な版も書いておきます。Goはおおむね半年ごとに新しい版が出るため、版の数字から「どの時期に、どれくらい追従してきたか」が読み取れます。ジェネリクスなど、比較的新しい言語機能を実務で使ったかどうかも、版と合わせて一言添えると判断材料になります。</p>
+<p>Goの期間が短くても、ほかの言語での設計や運用の経験は評価の対象になります。分けて書くことで、<strong>「Goは2年だが、APIの設計と運用は長い」</strong>という強みがそのまま伝わります。Goへの移り方や準備は<a href="/media/go-how-to/">Goエンジニアの独立の記事</a>で扱っています。</p>
+<h2 id="s2">「Goで書いた部分」と「周辺の基盤」を書き分ける</h2>
+<p>Goはマイクロサービスやクラウドの基盤と一緒に使われることが多く、プロジェクト欄の技術が長い列になりがちです。Go、gRPC、Kubernetes、Terraform、各種のクラウドサービスが並ぶと、読み手は「この人はアプリケーションを書いたのか、基盤を作ったのか」を判断できません。</p>
+<p>プロジェクト欄の技術を、次の2つに分けて書くと読みやすくなります。</p>
+<ul><li><strong>自分がGoで書いたもの</strong>：API、バッチ、ワーカー、CLIツール、内部のライブラリなど</li><li><strong>関わった周辺の基盤</strong>：コンテナ、Kubernetesの設定、CI/CD、監視の仕組みなど。どこまで自分で触ったかを括弧で添える</li></ul>
+<p>マイクロサービスの構成では、<strong>全体のサービス数と、自分が担当したサービス</strong>を書くのも効果的です。「十数個のサービスのうち、決済と通知の2つを担当」と書けば、全体の規模と自分の責任の範囲が一度に伝わります。</p>
+<p>サービス間の通信も、方式と自分の関わり方を書き分けます。gRPCであれば「Protocol Buffersの定義を設計した」のか「決まった定義に沿って実装した」のかで、経験の重さが違います。定義を変えるときに、古い呼び出し元を残したまま段階的に移した経験があれば、それも1行にしておくと伝わります。</p>
+<h3>フレームワーク欄が空になるとき</h3>
+<p>Goは標準ライブラリを中心に書く現場が多く、フレームワークの欄に書くものがないことがあります。その場合は空欄にせず、「標準ライブラリのnet/httpを中心に構成。ルーターにchi」のように、<strong>何を選び、どう組み立てたか</strong>を書きます。使ったライブラリの名前を増やすより、構成を一言で示すほうが判断材料になります。</p>
+<h2 id="s3">性能改善はどう測ったかと一緒に書く</h2>
+<p>Goの案件では、並行処理や応答の速さが期待されて採用されることが多く、性能改善の経験は評価されやすい部分です。ただし、「高速化を担当」だけではほとんど伝わりません。次の順で書きます。</p>
+<ol><li><strong>何が問題だったか</strong>：応答の遅れ、メモリの増加、goroutineが残り続ける、など</li><li><strong>どう特定したか</strong>：pprofなどのプロファイラー、トレース、メトリクスの確認</li><li><strong>何を変えたか</strong>：同時実行数の上限、コネクションの使い回し、割り当ての削減、処理の分割など</li><li><strong>どう変わったか</strong>：前後の比較</li></ol>
+<p>前後の比較は、応答時間の上位の値（遅いほうのリクエストの時間）やメモリの使用量など、測った指標の種類を書くと具体的になります。具体的な数値が社外に出せない場合は「遅いリクエストの応答時間がおおむね半分に」「メモリの増え続ける現象が止まった」のように、相対的な表現で十分です。書いてよい範囲はスキルシートと守秘義務の記事をご覧ください。</p>
+<p>なお、どんな知識が求められるかは<a href="/media/go-skills/">Goの案件で求められるスキルの記事</a>にまとめています。シートでは、それを「どの場面で使ったか」として書くのが役割です。</p>
+<aside class="box box-view"><p class="box-label">エージェントベストの見解</p><p>Goの案件をご紹介していると、面談で評価されやすいのは、性能や障害の話を「どう測って、どこで気づき、何を変えたか」の順で説明できる方です。シートの性能改善の行がこの順で書かれていると、面談でもそのまま話を広げやすくなります。逆に、使った技術の名前が多く並んでいても、自分の判断が見えないシートは、読み手が評価に迷いがちです。</p></aside>
+<h2 id="s4">運用の経験を独立した欄にする</h2>
+<p>Goの案件は、作ったサービスをそのまま運用する体制のものが多く、運用の経験はシートの中でも重く見られます。プロジェクト欄の中で「運用」と一言書くより、次のような内容を行として書き出すと伝わります。</p>
+<ul><li>監視やアラートの設計に関わったか</li><li>障害が起きたときの対応（一次対応、原因の調査、再発防止）を担ったか</li><li>当番制の障害対応の体制に入っていたか</li><li>ログ・メトリクス・トレースのどれを使って調べていたか</li></ul>
+<p>Goのバージョンの更新を担当した場合も、この欄に書きます。「Goの版の更新と、依存するモジュールの更新を定期的に担当」と書くと、継続して運用を回していたことが伝わります。運用の比重が大きい方は、SREのスキルシートの記事も参考になります。</p>
+<h2 id="s5">プロジェクト欄の記入例</h2>
+<p>次は書き方の型を示す<strong>例</strong>です。業種や規模はぼかしてあり、実在の案件ではありません。ご自身の経験に置き換えてください。</p>
+<blockquote><p><strong>期間</strong>：○年○月〜○年○月（2年程度）<br><strong>案件概要</strong>：Webサービス事業者向け 決済まわりのマイクロサービスの開発・運用<br><strong>規模・立場</strong>：十数個のサービスのうち、決済と通知の2サービスを担当（バックエンドのメンバー）<br><strong>担当工程</strong>：設計、開発、テスト、運用（障害対応の当番を含む）<br><strong>Goで書いたもの</strong>：決済APIとgRPCの内部API、通知を送るワーカー<br><strong>周辺の基盤</strong>：Kubernetes（マニフェストの修正まで）、GitHub Actions、監視ツールでのダッシュボード作成<br><strong>工夫・成果</strong>：外部の決済サービスを並列に呼ぶ処理に同時実行数の上限とタイムアウトを設け、遅いリクエストを減らした。pprofでgoroutineが残る原因を見つけて直した</p></blockquote>
+<p>この例では、全体の中での担当範囲、Goで書いた部分と基盤の書き分け、性能と運用の行が読み取れる形にしてあります。</p>
+<h2 id="s6">OSSや個人のツールの扱い</h2>
+<p>Goは、CLIツールや小さなライブラリを作りやすい言語で、個人の成果を公開している方も多くいます。シートに載せる場合は、次の点を添えると判断材料になります。</p>
+<ul><li>何を解決するツールか、誰が使っているか（自分だけか、チームか、公開して使われているか）</li><li>テストやCIが整っているか</li><li>既存のOSSへの修正の提案であれば、どんな修正で、取り込まれたか</li></ul>
+<p>ただし、業務委託の案件では実務の経験が中心に見られます。公開の成果はあくまで補足として、シートの後ろの方に置くのが自然です。</p>
+<aside class="box box-view"><p class="box-label">エージェントベストの見解</p><p>当社では、経歴はご本人の了承を得た案件にだけ、氏名・連絡先を伏せてご提案しています。Goの案件は、アプリケーションの開発が中心のものと、運用や基盤の比重が大きいものに分かれます。応募する案件に合わせて、「Goで書いたもの」と「周辺の基盤」のどちらを先に書くかを入れ替えておくことをおすすめします。</p></aside>
+<aside class="box box-caution"><p class="box-label">注意</p><p>チームで導入したKubernetesやgRPCを、自分が設計したように読める書き方は避けてください。面談で設計の判断を聞かれたときに答えられないと、ほかの記載まで疑われることがあります。「設定の修正まで」「既存の定義に沿って実装」のように、関わった深さを正確に書くほうが信頼につながります。</p></aside>
+<aside class="box box-point"><p class="box-label">ポイント</p><ul><li>Goの実務期間とバックエンド全体の期間を分けて書く</li><li>「Goで書いたもの」と「周辺の基盤」を分け、全体のサービス数と自分の担当を書く</li><li>性能改善は「問題・特定の方法・変えたこと・前後の比較」の順で書く</li><li>運用の経験は独立した行として書き出す</li></ul></aside>
+<h2 id="s7">よくある質問</h2>
+<h3>Goの実務が1年未満です。ほかの言語の経験と混ぜて書いたほうがよいですか？</h3>
+<p>混ぜずに分けて書くほうが、結果として伝わりやすくなります。Goの期間が短くても、ほかの言語での設計・運用の経験が長ければ、その強みは別の行で示せます。Goで担当した範囲を具体的に書くことで、短い期間でも中身が伝わります。</p>
+<h3>社内ツールをGoで作った経験も書いてよいですか？</h3>
+<p>書いてかまいません。誰が使い、どんな問題を解決したかを書けば、実務の経験として判断材料になります。配布の方法や、ほかの人が保守できるようにした工夫があれば、あわせて書いておきましょう。</p>
+<h3>性能の数値を一切書けない場合はどうすればよいですか？</h3>
+<p>数値の代わりに、測った指標の種類と、特定に使った方法、変化の方向を書きます。「遅いリクエストの応答時間を指標に、プロファイラーで原因を特定して改善した」と書けば、数値がなくても手順と深さは伝わります。</p>
+  </div>
+  
+  <div class="cta-band">
+  <h2>条件に合う案件だけ、知りたい方へ</h2>
+  <p>ご登録は無料です。条件に合う案件だけを、ご本人の了承を得てからご提案します。</p>
+  <div class="cta-row">
+    <a class="btn btn-primary" href="https://airtable.com/appYkc36EvioYoL1A/pag6CZC4uJmxUcrXT/form" target="_blank" rel="noopener">無料で登録する</a>
+    <a class="btn btn-ghost" href="/jobs/">案件を探す</a>
+  </div>
+</div>
+  <section class="related"><h2>あわせて読みたい</h2><div class="grid g2"><a class="card art-card" href="/media/go-how-to/">
+  <span class="art-hub">バックエンド開発</span>
+  <h3>Goエンジニアがフリーランスになるには｜必要な経験と独立までの進め方</h3>
+  <p>Goでフリーランスになるには、Goで書いたAPIやサービスを本番で運用した経験と、コンテナ・クラウドなど周辺の基盤を扱えることが求められます。他言語から移る人の準備、面談で問われる設計の論点、独立前後の手続きを解説します。</p>
+</a>
+<a class="card art-card" href="/media/go-skills/">
+  <span class="art-hub">バックエンド開発</span>
+  <h3>Goエンジニアのフリーランス案件で求められるスキルと経験</h3>
+  <p>Goのフリーランス案件では、エラー処理やcontextなどGoの考え方に沿った書き方、並行処理を安全に設計する力、gRPCやコンテナを含むサービスの運用経験が見られます。案件で求められやすいスキルと、資格より重視される経験の示し方を解説します。</p>
+</a>
+<a class="card art-card" href="/media/go-remote/">
+  <span class="art-hub">バックエンド開発</span>
+  <h3>Goエンジニアのフリーランスはリモートで働ける？案件の傾向と探し方</h3>
+  <p>Goエンジニアは、Webサービスのバックエンドやマイクロサービス、基盤まわりの開発でリモートの案件があります。一方で、金融・決済などの閉じた環境や、障害対応の待機が条件になることも。案件の傾向と確認点を解説します。</p>
+</a>
+<a class="card art-card" href="/media/skillsheet-basics/">
+  <span class="art-hub">スキルシート・面談</span>
+  <h3>フリーランスのスキルシートの書き方｜基本の構成とプロジェクト欄の例</h3>
+  <p>スキルシートは「基本情報・得意分野の要約・スキル一覧・プロジェクト経歴」の順で、1件ごとに役割と担当工程、成果を具体的に書くのが基本です。構成とプロジェクト欄の書き方の型を、架空の例で紹介します。</p>
+</a>
+<a class="card art-card" href="/media/interview-questions/">
+  <span class="art-hub">スキルシート・面談</span>
+  <h3>業務委託の面談でよく聞かれる質問と答え方｜回答の組み立て方</h3>
+  <p>業務委託の面談では、経歴の説明、直近案件での役割、技術や業務の深さ、稼働条件の4つがよく聞かれます。「結論→背景→自分の行動→結果」の順で短く答えると伝わりやすくなります。質問ごとの答え方を架空の例で紹介します。</p>
+</a>
+<a class="card art-card" href="/media/csharp-how-to/">
+  <span class="art-hub">バックエンド開発</span>
+  <h3>C#エンジニアがフリーランスになるには｜必要な経験と独立までの進め方</h3>
+  <p>C#でフリーランスになるには、業務アプリやWebの開発経験に加えて、.NET Frameworkか新しい.NETか、どの環境で何を作ったかを説明できることが大切です。案件の型、独立前に積む実績、面談で問われる点を解説します。</p>
+</a></div></section>
+</main>
+<footer class="site-foot">
+  <div class="wrap">
+    <strong>エージェントベストジョブ フリーランス</strong>
+    <div class="foot-links">
+      <a href="/">トップ</a>
+      <a href="/jobs/">案件を探す</a>
+      <a href="/media/">お役立ち記事</a>
+      <a href="https://airtable.com/appYkc36EvioYoL1A/pag6CZC4uJmxUcrXT/form" target="_blank" rel="noopener">ご登録（スキルシート・ご希望の条件）</a>
+      <a href="https://line.me/R/ti/p/@697nxhbt?oat_content=url&ts=08302134" target="_blank" rel="noopener" data-line-cta="footer">LINEで相談する</a>
+      <a href="/privacy.html">個人情報の取り扱い</a>
+      <a href="https://www.agent-best.net/company/">運営会社</a>
+    </div>
+    <div class="foot-links">
+      <a href="https://jobs.agent-best.net/">正社員の求人を探す（エージェントベストジョブ）</a>
+      <a href="https://skill.agent-best.net/">エージェントベストジョブ手に職</a>
+      <a href="https://www.agent-best.net/">エージェントベスト</a>
+    </div>
+    <p>運営：株式会社エージェントベスト（有料職業紹介事業 許可番号 13-ユ-316964）<br>〒106-0032 東京都港区六本木4-8-7 嶋田ビル5階</p>
+  </div>
+</footer>
+<script src="/assets/fav.js" defer></script>
+</body>
+</html>

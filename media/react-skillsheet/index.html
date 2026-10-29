@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Reactエンジニアのスキルシートの書き方｜面談で評価される実績の見せ方｜エージェントベストジョブ フリーランス</title>
+<meta name="description" content="Reactのスキルシートは、ReactとNext.jsなどの版と構成、実装・設計・共通部品のどこを担ったかを書き分けるのが基本です。画面数より課題で書くコツ、表示速度の改善の示し方、公開URLやGitHubの扱いを紹介します。">
+<link rel="canonical" href="https://freelance.agent-best.net/media/react-skillsheet/">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="エージェントベストジョブ フリーランス">
+<meta property="og:title" content="Reactエンジニアのスキルシートの書き方｜面談で評価される実績の見せ方｜エージェントベストジョブ フリーランス">
+<meta property="og:description" content="Reactのスキルシートは、ReactとNext.jsなどの版と構成、実装・設計・共通部品のどこを担ったかを書き分けるのが基本です。画面数より課題で書くコツ、表示速度の改善の示し方、公開URLやGitHubの扱いを紹介します。">
+<meta property="og:url" content="https://freelance.agent-best.net/media/react-skillsheet/">
+<meta property="og:image" content="https://freelance.agent-best.net/assets/ogp.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://freelance.agent-best.net/assets/ogp.png">
+<meta name="theme-color" content="#1E3A5F">
+<link rel="icon" href="/assets/favicon.ico">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="stylesheet" href="/assets/site.css">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1XXMP8Y1B4"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-1XXMP8Y1B4');
+document.addEventListener('click',e=>{const a=e.target.closest('[data-line-cta]');if(a)gtag('event','line_add_friend',{placement:a.dataset.lineCta,page_path:location.pathname});});</script>
+<script type="application/ld+json">[{"@context":"https://schema.org","@type":"Article","headline":"Reactエンジニアのスキルシートの書き方｜面談で評価される実績の見せ方","description":"Reactのスキルシートは、ReactとNext.jsなどの版と構成、実装・設計・共通部品のどこを担ったかを書き分けるのが基本です。画面数より課題で書くコツ、表示速度の改善の示し方、公開URLやGitHubの扱いを紹介します。","datePublished":"2026-10-29","dateModified":"2026-10-29","author":{"@type":"Organization","name":"株式会社エージェントベスト","url":"https://www.agent-best.net/"},"publisher":{"@type":"Organization","name":"株式会社エージェントベスト","logo":{"@type":"ImageObject","url":"https://freelance.agent-best.net/assets/logo.png"}},"mainEntityOfPage":"https://freelance.agent-best.net/media/react-skillsheet/"},{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"トップ","item":"https://freelance.agent-best.net/"},{"@type":"ListItem","position":2,"name":"お役立ち記事","item":"https://freelance.agent-best.net/media/"},{"@type":"ListItem","position":3,"name":"フロントエンド開発","item":"https://freelance.agent-best.net/media/hub/frontend/"},{"@type":"ListItem","position":4,"name":"Reactエンジニアのスキルシートの書き方｜面談で評価される実績の見せ方"}]},{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"クラスコンポーネントの経験しかありません。どう書けばよいですか？","acceptedAnswer":{"@type":"Answer","text":"そのまま正確に書いてかまいません。古い書き方で作られた画面の保守や、新しい書き方への置き換えを扱う案件では、判断材料になります。関数コンポーネントやフックを学習している場合は、実務と分けて「学習中」と書いておくと、面談での食い違いを防げます。"}},{"@type":"Question","name":"Vue.jsの経験もある場合、同じシートに書いてよいですか？","acceptedAnswer":{"@type":"Answer","text":"書いてかまいません。スキル一覧ではReactとVue.jsを分け、それぞれの期間と使い方の深さを書きます。Reactの案件に応募するときはReactの経験を上に並べます。Vue.jsを軸にする場合はVue.jsエンジニアのスキルシートの記事をご覧ください。"}},{"@type":"Question","name":"デザインも担当していた場合は、どう書けばよいですか？","acceptedAnswer":{"@type":"Answer","text":"デザインの作業は、実装と分けた行にします。「画面の構成案の作成」「既存のデザインの規則に沿った画面の追加」のように、どこまで自分で決めたかを書くと、読み手が任せられる範囲を判断しやすくなります。"}}]}]</script>
+</head>
+<body>
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="/"><img src="/assets/mark.png" alt="" width="28" height="28"><span>エージェントベストジョブ フリーランス<small>フリーランスのエンジニア・コンサル向け案件紹介</small></span></a>
+    <nav class="head-nav" aria-label="メニュー">
+      <a class="link" href="/jobs/">案件を探す</a>
+      <a class="link" href="/media/">お役立ち記事</a>
+      <a class="link keep" href="/mypage/" aria-label="気になる案件">☆ 気になる<span class="fav-count" data-fav-count hidden></span></a>
+      <a class="btn btn-primary btn-sm" href="https://airtable.com/appYkc36EvioYoL1A/pag6CZC4uJmxUcrXT/form" target="_blank" rel="noopener">無料で登録</a>
+    </nav>
+  </div>
+</header>
+<main class="wrap narrow article">
+  <p class="crumbs"><a href="/">トップ</a> › <a href="/media/">お役立ち記事</a> › <a href="/media/hub/frontend/">フロントエンド開発</a></p>
+  <a class="art-hub" href="/media/hub/frontend/">フロントエンド開発</a>
+  <h1 class="art-title">Reactエンジニアのスキルシートの書き方｜面談で評価される実績の見せ方</h1>
+  <p class="note">公開 2026-10-29　監修：株式会社エージェントベスト</p>
+  <nav class="toc" aria-label="目次"><strong>目次</strong><ol><li><a href="#s1">技術欄は「版」と「構成」をセットで書く</a></li><li><a href="#s2">担当範囲を「実装・設計・共通部品」で書き分ける</a></li><li><a href="#s3">表示の速さとアクセシビリティの示し方</a></li><li><a href="#s4">プロジェクト欄の記入例</a></li><li><a href="#s5">公開URL・GitHub・画面の画像の扱い</a></li><li><a href="#s6">よくある質問</a></li></ol></nav>
+  <div class="art-body">
+<p>Reactエンジニアのスキルシートは、<strong>ReactとNext.jsなどの版・構成を書き、そのうえで「画面を実装した」「設計を決めた」「共通の部品を整えた」のどこを担ったかを書き分ける</strong>のが基本です。フロントエンドの経験は「画面を○枚作った」という書き方になりがちですが、読み手が知りたいのは画面の数ではなく、どんな課題をどこまで任されていたかです。</p>
+<p>全体の構成は<a href="/media/skillsheet-basics/">スキルシートの基本</a>で解説しています。この記事では、Reactのエンジニアが書くときに押さえたい点に絞って説明します。</p>
+<h2 id="s1">技術欄は「版」と「構成」をセットで書く</h2>
+<p>Reactの技術欄に「React、TypeScript」とだけ書くと、読み手は中身を推測できません。Reactは版や組み合わせるフレームワークによって、設計の考え方が大きく変わるためです。次の4つをセットで書くと、構成が一目で分かります。</p>
+<div class="table-wrap"><table><thead><tr><th>項目</th><th>書き方の例</th></tr></thead><tbody><tr><td>Reactとフレームワークの版</td><td>React 18→19、Next.js 14→15</td></tr><tr><td>ルーティングと描画の方式</td><td>App Router（サーバーで描画する部分あり）、Pages Router、SPAのみ など</td></tr><tr><td>データの取得と状態管理</td><td>TanStack Query、Redux Toolkit、Zustand、Context など</td></tr><tr><td>スタイルとUI部品</td><td>CSS Modules、Tailwind CSS、社内の共通コンポーネント など</td></tr></tbody></table></div>
+<p>とくに、<strong>サーバーで描画する構成か、ブラウザだけで動く構成か</strong>は、案件との相性を判断する大事な情報です。Next.jsを使っていても、どのルーターを使っていたかで経験の中身が違います。求められる知識そのものは<a href="/media/react-skills/">Reactの案件で求められるスキルの記事</a>にまとめているので、シートでは「どの構成で開発したか」が読み取れることを優先してください。</p>
+<p>TypeScriptは、使っていたかどうかだけでなく、「型の厳しさの設定を上げた」「APIの型を自動で生成する仕組みを入れた」のような取り組みがあれば添えます。TypeScriptを軸にする方は<a href="/media/typescript-skillsheet/">TypeScriptエンジニアのスキルシートの記事</a>も参考になります。</p>
+<h2 id="s2">担当範囲を「実装・設計・共通部品」で書き分ける</h2>
+<p>Reactの案件は、決まった設計に沿って画面を実装する役割と、設計や共通部品の整備を任される役割とで、求められる経験が分かれます。シートでは、自分がどちらの役割だったかが分かるように書きます。</p>
+<ul><li><strong>実装</strong>：デザインと仕様をもとに画面や機能を作った</li><li><strong>設計</strong>：コンポーネントの分け方、状態の置き場所、ディレクトリの構成を決めた</li><li><strong>共通部品</strong>：ボタンやフォームなどの共通コンポーネント、デザインシステムを作り、チームに広げた</li><li><strong>周辺</strong>：API連携の仕様の調整、BFF（画面向けのAPI）の開発、テストやCIの整備</li></ul>
+<p>同じプロジェクトで複数を担った場合は、それぞれを別の行にします。「フロントエンド全般を担当」とまとめるより、「前半は画面の実装、後半はフォームの共通部品の設計と導入」と書くほうが、どの段階で何を任されたかが伝わります。</p>
+<h3>画面の数ではなく課題で書く</h3>
+<p>「管理画面を20画面作成」のような書き方は、量は伝わっても難しさが伝わりません。同じ1画面でも、入力項目の多いフォームと、一覧を表示するだけの画面では手間が違います。画面の数を書くなら、<strong>その中で難しかったことを1つ添えます</strong>。</p>
+<ul><li>「入力項目の多い申し込みフォームで、入力途中の保存と、項目ごとの検証を設計」</li><li>「大量の行を表示する一覧で、表示する行だけを描画する仕組みを導入」</li></ul>
+<h3>テストの書き方も担当範囲として書く</h3>
+<p>フロントエンドのテストは、部品単位のテストと、ブラウザを動かして画面の流れを確かめるテストとで、役割が違います。「共通部品の単体テストを整備」「申し込みの流れをブラウザで確かめるテストを追加し、CIで自動実行」のように、どの種類のテストを、どの範囲で整えたかを書くと、品質に関わった深さが伝わります。</p>
+<h2 id="s3">表示の速さとアクセシビリティの示し方</h2>
+<p>表示の速さの改善は、Reactの案件で評価されやすい経験です。シートには、<strong>何で測り、何を変え、どう変わったか</strong>を書きます。</p>
+<ol><li><strong>測り方</strong>：Core Web Vitalsの指標、Lighthouse、ブラウザの開発者ツール、Reactのプロファイラーなど</li><li><strong>変えたこと</strong>：読み込みの分割、画像の最適化、不要な再描画の削減、サーバーでの描画への切り替えなど</li><li><strong>変化</strong>：どの指標がどう良くなったか</li></ol>
+<p>Lighthouseの点数は、測る環境によって変わります。点数を書く場合は、何を基準に測ったかを添えるか、「表示が始まるまでの時間を指標に改善」のように<strong>指標の種類と変化の方向</strong>で書くほうが、面談で説明しやすくなります。社外に出せない数値の扱いはスキルシートと守秘義務の記事をご覧ください。</p>
+<p>アクセシビリティの取り組みも、書き方は同じです。「キーボードだけで操作できるように共通部品を直した」「画面読み上げで読まれる内容を確認し、ラベルを整えた」のように、何を確かめ、何を変えたかを書きます。</p>
+<aside class="box box-view"><p class="box-label">エージェントベストの見解</p><p>Reactの案件をご紹介していると、面談でつまずきやすいのは、シートに並んだ技術の名前について「なぜその構成にしたのか」を聞かれて、答えが浅くなってしまう場面です。フロントエンドの面談では、画面を見せずに言葉で設計を説明することが多いため、シートに担当した設計の行があると、そこを起点に話を組み立てられます。各プロジェクトに、自分が判断した設計の行を1つは入れておくことをおすすめします。</p></aside>
+<h2 id="s4">プロジェクト欄の記入例</h2>
+<p>次は書き方の型を示す<strong>例</strong>です。業種や規模はぼかしてあり、実在の案件ではありません。ご自身の経験に置き換えてください。</p>
+<blockquote><p><strong>期間</strong>：○年○月〜○年○月（1年程度）<br><strong>案件概要</strong>：toB向け SaaSの管理画面の開発<br><strong>規模・立場</strong>：フロントエンドのチーム数名（後半は共通部品の担当）<br><strong>担当工程</strong>：設計、実装、テスト、リリース<br><strong>使用技術</strong>：React 18、Next.js（App Router）、TypeScript、TanStack Query、Tailwind CSS、Vitest、Playwright、Figma<br><strong>担当内容</strong>：前半は請求まわりの画面の実装。後半は入力フォームの共通コンポーネントを設計し、既存の画面へ順に置き換えた<br><strong>工夫・成果</strong>：サーバーのデータの取得を専用の仕組みに寄せ、画面ごとに重複していた取得処理を整理した。表示が始まるまでの時間を指標に、読み込みの分割で一覧画面の表示を速くした</p></blockquote>
+<p>この例では、構成（App Router、データ取得の仕組み）、役割の変化（実装から共通部品の設計へ）、測り方を添えた改善が読み取れる形にしてあります。</p>
+<h2 id="s5">公開URL・GitHub・画面の画像の扱い</h2>
+<p>フロントエンドは、成果を見てもらいやすい分野です。ただし、業務で作った画面には守秘義務がかかることが多く、扱いには注意が要ります。</p>
+<ul><li><strong>業務の画面の画像やURL</strong>：一般に公開されているサービスでも、「自分が担当した」と書いてよいかは契約によります。公開の可否を確かめてから載せてください</li><li><strong>GitHubのリポジトリ</strong>：個人で作ったアプリは、構成とコードの書き方を示す補足になります。READMEに構成と工夫した点を書いておくと、読み手が見るべき場所が分かります</li><li><strong>デザインとの連携</strong>：Figmaなどでデザイナーとやり取りした経験は、ツール名とあわせて「デザインの仕様のすり合わせを担当」のように書きます</li></ul>
+<p>個人の成果物は、実務の経験を補うものとして、シートの後ろの方に置くのが自然です。成果物の用意の仕方は<a href="/media/react-how-to/">Reactエンジニアの独立の記事</a>でも触れています。</p>
+<aside class="box box-view"><p class="box-label">エージェントベストの見解</p><p>当社では、経歴はご本人の了承を得た案件にだけ、氏名・連絡先を伏せてご提案しています。Reactの案件は、実装を中心に担うものと、設計や共通部品の整備を任されるものとで、読み手が見る行が違います。応募する案件の役割に近い行を上の方に置いておくことをおすすめします。業務で作った画面を載せてよいか迷う場合は、ご質問いただければ確認します。</p></aside>
+<aside class="box box-caution"><p class="box-label">注意</p><p>ライブラリの名前を多く並べるほど評価されるわけではありません。技術欄に書いたものは、面談で「なぜそれを選んだか」「ほかと比べて何が良かったか」を聞かれることがあります。選定に関わっていないものは、「既存の構成で使用」と添えておくと、食い違いを防げます。</p></aside>
+<aside class="box box-point"><p class="box-label">ポイント</p><ul><li>ReactとNext.jsなどの版、ルーティングと描画の方式、データ取得と状態管理をセットで書く</li><li>担当は「実装・設計・共通部品・周辺」で書き分ける</li><li>画面の数より、その中で難しかったことを書く</li><li>表示の速さは「測り方・変えたこと・変化」で書く</li></ul></aside>
+<h2 id="s6">よくある質問</h2>
+<h3>クラスコンポーネントの経験しかありません。どう書けばよいですか？</h3>
+<p>そのまま正確に書いてかまいません。古い書き方で作られた画面の保守や、新しい書き方への置き換えを扱う案件では、判断材料になります。関数コンポーネントやフックを学習している場合は、実務と分けて「学習中」と書いておくと、面談での食い違いを防げます。</p>
+<h3>Vue.jsの経験もある場合、同じシートに書いてよいですか？</h3>
+<p>書いてかまいません。スキル一覧ではReactとVue.jsを分け、それぞれの期間と使い方の深さを書きます。Reactの案件に応募するときはReactの経験を上に並べます。Vue.jsを軸にする場合は<a href="/media/vue-skillsheet/">Vue.jsエンジニアのスキルシートの記事</a>をご覧ください。</p>
+<h3>デザインも担当していた場合は、どう書けばよいですか？</h3>
+<p>デザインの作業は、実装と分けた行にします。「画面の構成案の作成」「既存のデザインの規則に沿った画面の追加」のように、どこまで自分で決めたかを書くと、読み手が任せられる範囲を判断しやすくなります。</p>
+  </div>
+  
+  <div class="cta-band">
+  <h2>条件に合う案件だけ、知りたい方へ</h2>
+  <p>ご登録は無料です。条件に合う案件だけを、ご本人の了承を得てからご提案します。</p>
+  <div class="cta-row">
+    <a class="btn btn-primary" href="https://airtable.com/appYkc36EvioYoL1A/pag6CZC4uJmxUcrXT/form" target="_blank" rel="noopener">無料で登録する</a>
+    <a class="btn btn-ghost" href="/jobs/">案件を探す</a>
+  </div>
+</div>
+  <section class="related"><h2>あわせて読みたい</h2><div class="grid g2"><a class="card art-card" href="/media/react-how-to/">
+  <span class="art-hub">フロントエンド開発</span>
+  <h3>Reactエンジニアがフリーランスになるには｜必要な経験と独立までの進め方</h3>
+  <p>Reactでフリーランスになるには、TypeScriptでの実務経験と、画面の実装だけでなくコンポーネント設計や状態管理を自分で決めた経験が求められます。出身別の準備、独立前に積みたい実績、面談で問われること、契約の確認点を解説します。</p>
+</a>
+<a class="card art-card" href="/media/react-skills/">
+  <span class="art-hub">フロントエンド開発</span>
+  <h3>Reactエンジニアのフリーランス案件で求められるスキルと経験</h3>
+  <p>Reactのフリーランス案件では、TypeScriptでのコンポーネント設計、サーバーのデータと画面の状態を分けた状態管理、Next.jsなどのフレームワーク、テスト・性能・アクセシビリティの知識が見られます。案件で求められやすいスキルと経験の示し方を解説します。</p>
+</a>
+<a class="card art-card" href="/media/react-rate/">
+  <span class="art-hub">フロントエンド開発</span>
+  <h3>Reactエンジニアのフリーランス案件｜報酬の決まり方と単価を上げる考え方</h3>
+  <p>Reactエンジニアの報酬は、画面の実装か設計まで担うか、TypeScriptやNext.jsの経験、性能・テスト・アクセシビリティの知識、バックエンドとの連携、稼働条件、商流で決まり、案件ごとに大きく変わります。単価を上げる考え方を解説します。</p>
+</a>
+<a class="card art-card" href="/media/react-remote/">
+  <span class="art-hub">フロントエンド開発</span>
+  <h3>Reactエンジニアのフリーランスはリモートで働ける？案件の傾向と探し方</h3>
+  <p>Reactエンジニアは、Webサービスの開発を中心にリモートで働ける案件があります。ただし、フルリモートか一部出社か、稼働時間の決まりは案件ごとに違います。リモート案件の傾向、求められる経験、探し方と確認点を解説します。</p>
+</a>
+<a class="card art-card" href="/media/skillsheet-basics/">
+  <span class="art-hub">スキルシート・面談</span>
+  <h3>フリーランスのスキルシートの書き方｜基本の構成とプロジェクト欄の例</h3>
+  <p>スキルシートは「基本情報・得意分野の要約・スキル一覧・プロジェクト経歴」の順で、1件ごとに役割と担当工程、成果を具体的に書くのが基本です。構成とプロジェクト欄の書き方の型を、架空の例で紹介します。</p>
+</a>
+<a class="card art-card" href="/media/typescript-skillsheet/">
+  <span class="art-hub">フロントエンド開発</span>
+  <h3>TypeScriptエンジニアのスキルシートの書き方｜面談で評価される実績の見せ方</h3>
+  <p>TypeScriptのスキルシートは、プロジェクトごとに使った場所（フロントエンド・バックエンド・両方）を先に書き、型の取り組みを「何を防いだか」で書くのが基本です。書き分け方と記入例を紹介します。</p>
+</a></div></section>
+</main>
+<footer class="site-foot">
+  <div class="wrap">
+    <strong>エージェントベストジョブ フリーランス</strong>
+    <div class="foot-links">
+      <a href="/">トップ</a>
+      <a href="/jobs/">案件を探す</a>
+      <a href="/media/">お役立ち記事</a>
+      <a href="https://airtable.com/appYkc36EvioYoL1A/pag6CZC4uJmxUcrXT/form" target="_blank" rel="noopener">ご登録（スキルシート・ご希望の条件）</a>
+      <a href="https://line.me/R/ti/p/@697nxhbt?oat_content=url&ts=08302134" target="_blank" rel="noopener" data-line-cta="footer">LINEで相談する</a>
+      <a href="/privacy.html">個人情報の取り扱い</a>
+      <a href="https://www.agent-best.net/company/">運営会社</a>
+    </div>
+    <div class="foot-links">
+      <a href="https://jobs.agent-best.net/">正社員の求人を探す（エージェントベストジョブ）</a>
+      <a href="https://skill.agent-best.net/">エージェントベストジョブ手に職</a>
+      <a href="https://www.agent-best.net/">エージェントベスト</a>
+    </div>
+    <p>運営：株式会社エージェントベスト（有料職業紹介事業 許可番号 13-ユ-316964）<br>〒106-0032 東京都港区六本木4-8-7 嶋田ビル5階</p>
+  </div>
+</footer>
+<script src="/assets/fav.js" defer></script>
+</body>
+</html>

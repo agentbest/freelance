@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Androidエンジニアのスキルシートの書き方｜面談で評価される実績の見せ方｜エージェントベストジョブ フリーランス</title>
+<meta name="description" content="Androidのスキルシートは、KotlinとJava、ComposeとViewの比率やtargetSdkが参画中にどう変わったかを書き、端末の対応範囲と配布の方法を添えるのが基本です。書き方と記入例、Google PlayのURLの扱いを紹介します。">
+<link rel="canonical" href="https://freelance.agent-best.net/media/android-skillsheet/">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="エージェントベストジョブ フリーランス">
+<meta property="og:title" content="Androidエンジニアのスキルシートの書き方｜面談で評価される実績の見せ方｜エージェントベストジョブ フリーランス">
+<meta property="og:description" content="Androidのスキルシートは、KotlinとJava、ComposeとViewの比率やtargetSdkが参画中にどう変わったかを書き、端末の対応範囲と配布の方法を添えるのが基本です。書き方と記入例、Google PlayのURLの扱いを紹介します。">
+<meta property="og:url" content="https://freelance.agent-best.net/media/android-skillsheet/">
+<meta property="og:image" content="https://freelance.agent-best.net/assets/ogp.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://freelance.agent-best.net/assets/ogp.png">
+<meta name="theme-color" content="#1E3A5F">
+<link rel="icon" href="/assets/favicon.ico">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="stylesheet" href="/assets/site.css">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1XXMP8Y1B4"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-1XXMP8Y1B4');
+document.addEventListener('click',e=>{const a=e.target.closest('[data-line-cta]');if(a)gtag('event','line_add_friend',{placement:a.dataset.lineCta,page_path:location.pathname});});</script>
+<script type="application/ld+json">[{"@context":"https://schema.org","@type":"Article","headline":"Androidエンジニアのスキルシートの書き方｜面談で評価される実績の見せ方","description":"Androidのスキルシートは、KotlinとJava、ComposeとViewの比率やtargetSdkが参画中にどう変わったかを書き、端末の対応範囲と配布の方法を添えるのが基本です。書き方と記入例、Google PlayのURLの扱いを紹介します。","datePublished":"2026-10-29","dateModified":"2026-10-29","author":{"@type":"Organization","name":"株式会社エージェントベスト","url":"https://www.agent-best.net/"},"publisher":{"@type":"Organization","name":"株式会社エージェントベスト","logo":{"@type":"ImageObject","url":"https://freelance.agent-best.net/assets/logo.png"}},"mainEntityOfPage":"https://freelance.agent-best.net/media/android-skillsheet/"},{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"トップ","item":"https://freelance.agent-best.net/"},{"@type":"ListItem","position":2,"name":"お役立ち記事","item":"https://freelance.agent-best.net/media/"},{"@type":"ListItem","position":3,"name":"モバイルアプリ開発","item":"https://freelance.agent-best.net/media/hub/mobile/"},{"@type":"ListItem","position":4,"name":"Androidエンジニアのスキルシートの書き方｜面談で評価される実績の見せ方"}]},{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"移行が途中のまま離任しました。どう書けばよいですか？","acceptedAnswer":{"@type":"Answer","text":"途中までの状態をそのまま書けば問題ありません。「新しい画面からComposeで作成。既存の画面は一部を移行」のように、離任した時点の状態と、自分が担った範囲を書きます。移行を段階的に進める現場は多く、途中の状態を正しく説明できることも経験として伝わります。"}},{"@type":"Question","name":"業務用端末のアプリしか経験がありません。何を書けばよいですか？","acceptedAnswer":{"@type":"Answer","text":"端末の種類、配布の方法、バーコードの読み取りや周辺機器との連携など、業務用ならではの機能を書きましょう。一般向けのアプリの案件に応募する場合は、Kotlinでの開発や設計の経験を要約の上に置くと、読み手が共通点を見つけやすくなります。"}},{"@type":"Question","name":"使ったライブラリはどこまで書けばよいですか？","acceptedAnswer":{"@type":"Answer","text":"設計に関わるもの（依存関係の注入、データベース、通信、画面の遷移など）を中心に書き、細かいライブラリは省いてかまいません。ライブラリを選んだり置き換えたりする判断に関わった場合は、担当内容に1行添えておくと、設計の経験として伝わります。"}}]}]</script>
+</head>
+<body>
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="/"><img src="/assets/mark.png" alt="" width="28" height="28"><span>エージェントベストジョブ フリーランス<small>フリーランスのエンジニア・コンサル向け案件紹介</small></span></a>
+    <nav class="head-nav" aria-label="メニュー">
+      <a class="link" href="/jobs/">案件を探す</a>
+      <a class="link" href="/media/">お役立ち記事</a>
+      <a class="link keep" href="/mypage/" aria-label="気になる案件">☆ 気になる<span class="fav-count" data-fav-count hidden></span></a>
+      <a class="btn btn-primary btn-sm" href="https://airtable.com/appYkc36EvioYoL1A/pag6CZC4uJmxUcrXT/form" target="_blank" rel="noopener">無料で登録</a>
+    </nav>
+  </div>
+</header>
+<main class="wrap narrow article">
+  <p class="crumbs"><a href="/">トップ</a> › <a href="/media/">お役立ち記事</a> › <a href="/media/hub/mobile/">モバイルアプリ開発</a></p>
+  <a class="art-hub" href="/media/hub/mobile/">モバイルアプリ開発</a>
+  <h1 class="art-title">Androidエンジニアのスキルシートの書き方｜面談で評価される実績の見せ方</h1>
+  <p class="note">公開 2026-10-29　監修：株式会社エージェントベスト</p>
+  <nav class="toc" aria-label="目次"><strong>目次</strong><ol><li><a href="#s1">「今の状態」より「どう変えたか」を書く</a></li><li><a href="#s2">targetSdkの対応は「上げた幅」と「直したこと」で書く</a></li><li><a href="#s3">端末の対応範囲を書く</a></li><li><a href="#s4">配布の方法と、Google PlayのURLの扱い</a></li><li><a href="#s5">プロジェクト欄の記入例</a></li><li><a href="#s6">Javaの期間と、SDK・ライブラリの仕事の書き方</a></li><li><a href="#s7">よくある質問</a></li></ol></nav>
+  <div class="art-body">
+<p>Androidエンジニアのスキルシートは、<strong>KotlinとJava、Jetpack ComposeとViewの比率、対象とするAPIレベル（targetSdk）が、参画している間にどう変わったか</strong>を書くのが基本です。Androidの案件の多くは運用中のアプリで、古い書き方から新しい書き方へ移す途中に入る仕事だからです。あわせて、検証した端末の範囲と、アプリの配布の方法（Google Play、社内配布など）を書くと、読み手は経験の中身をつかみやすくなります。</p>
+<p>この記事では、Androidならではの書き方と記入例を紹介します。案件で見られる技術の中身は<a href="/media/android-skills/">Androidの案件で求められるスキル</a>、Google Playの要件や独立の準備は<a href="/media/android-how-to/">Androidエンジニアがフリーランスになるには</a>で扱っています。</p>
+<h2 id="s1">「今の状態」より「どう変えたか」を書く</h2>
+<p>Androidのスキルシートでよく見るのは、使用技術の欄に「Kotlin、Jetpack Compose、Coroutines、Hilt」と、離任したときの状態だけを書く形です。これでは、最初からその構成だったのか、自分が移したのかが分かりません。</p>
+<p>運用中のアプリの案件では、「古い構成から新しい構成へ、開発を止めずに移した経験」が重く見られます。そこで、主なプロジェクトでは、参画したときと離任したときの状態を並べて書くことをおすすめします。</p>
+<div class="table-wrap"><table><thead><tr><th>項目</th><th>参画時</th><th>離任時</th><th>自分の関わり</th></tr></thead><tbody><tr><td>言語</td><td>Java 中心</td><td>Kotlin 中心</td><td>新しい画面をKotlinで作成し、既存の一部を書き換え</td></tr><tr><td>画面</td><td>XMLのView</td><td>新しい画面はCompose</td><td>Composeの共通部品を作成</td></tr><tr><td>非同期処理</td><td>RxJava</td><td>コルーチンとFlow</td><td>通信層の書き換えを担当</td></tr><tr><td>targetSdk</td><td>例：API 33</td><td>例：API 35</td><td>権限と通知の変更に対応</td></tr></tbody></table></div>
+<p>これは書き方を示すための例です。表にすると長くなる場合は、使用技術の欄に「Java → Kotlin」のように矢印で書き、担当内容で自分の関わりを説明する形でもかまいません。</p>
+<p>大切なのは「自分の関わり」の列です。移行がチームの取り組みだった場合も、自分がどの部分を担ったかを書き分けます。</p>
+<h2 id="s2">targetSdkの対応は「上げた幅」と「直したこと」で書く</h2>
+<p>Google Playの要件に合わせてtargetSdkを上げる作業は、Androidエンジニアが毎年のように向き合う仕事です。スキルシートでは「targetSdk対応」とだけ書くのではなく、次の2点を書くと伝わります。</p>
+<ul><li><strong>上げた幅</strong>：どのAPIレベルからどのAPIレベルへ上げたか</li><li><strong>直したこと</strong>：権限の扱い、通知、バックグラウンドの動作、画面の表示など、何に対応したか</li></ul>
+<p>たとえば「API 34から35へ引き上げ。端末の画面いっぱいに描画される変更に合わせて、各画面の余白の扱いを直した」のように、1〜2行で書けます。上記は書き方の例です。要件の時期や内容は変わるため、最新の情報はAndroid Developersの公式ページで確かめてください。</p>
+<p>ネイティブのライブラリを含むアプリで、メモリのページサイズの要件に対応した経験なども、対応した内容を同じ形で書いておくと、同じ作業を控えた案件で目に留まります。</p>
+<h2 id="s3">端末の対応範囲を書く</h2>
+<p>Androidは、メーカー、画面サイズ、OSの版がさまざまな端末で動きます。そのため、<strong>どの範囲の端末で動作を保証していたか</strong>は、Androidならではの経験の書きどころです。</p>
+<ul><li>最低対応のOSの版（minSdk）</li><li>検証に使った端末の範囲（主要メーカーの端末、タブレット、折りたたみ端末など）</li><li>特定の端末だけで起きた不具合を調べて直した経験</li></ul>
+<p>端末の機種名を細かく並べる必要はありません。「スマートフォンとタブレットの両方」「業務用の専用端末」のように、種類で書けば十分です。</p>
+<aside class="box box-view"><p class="box-label">エージェントベストの見解</p><p>Androidの案件をご紹介していると、運用中のアプリの案件では、参画時と離任時の違いを具体的に話せる方が評価されやすい傾向があります。スキルシートに最終的な構成だけが書かれていると、面談で移行の経緯を一つずつ確かめることになり、限られた時間がそこで終わってしまうこともあります。主なプロジェクトだけでも、どう変えたかを書いておくことをおすすめします。</p></aside>
+<h2 id="s4">配布の方法と、Google PlayのURLの扱い</h2>
+<p>Androidのアプリは、Google Playで一般に公開されるものだけではありません。業務用の端末に管理ツールで配るアプリ、限られた人にだけ配る検証用の配布など、配布の方法はさまざまです。スキルシートには、<strong>どの方法で配布していたか</strong>を書いておきましょう。配布の方法によって、ストアの審査や要件への対応の経験があるかが分かるからです。</p>
+<p>Google Playで公開されているアプリのURLを載せる場合は、次の点に気をつけます。</p>
+<ul><li><strong>関わったことを外に出してよいか</strong>：URLやアプリ名を載せてよいかは契約によります。考え方はスキルシートに書いてよいこと・いけないことをご覧ください</li><li><strong>ストアの表示を実績と混ぜない</strong>：Google Playのページにはインストール数の目安や評価が表示されますが、アプリ全体の結果であり、自分の担当範囲の成果ではありません。シートに転記するのは避けましょう</li><li><strong>社内配布のアプリにはURLがない</strong>：無理にURLを用意する必要はなく、アプリの種類と配布の方法を書けば十分です</li></ul>
+<p>公開アカウントやアプリの署名の鍵を誰が管理していたかは、契約にかかわる部分です。署名の鍵の管理を任されていた場合も、スキルシートには「署名の設定とリリースの作業を担当」程度の書き方にとどめます。</p>
+<h2 id="s5">プロジェクト欄の記入例</h2>
+<p>ここでは、運用中のアプリでComposeへの移行とtargetSdkの対応を担当した場合を想定した記入例を示します。<strong>以下は書き方を示すための例</strong>で、実在のアプリや実績ではありません。業界や規模はぼかしています。</p>
+<blockquote><p><strong>期間</strong>：20XX年X月〜20XX年X月（1年8か月）<br><strong>アプリ</strong>：金融関連サービス向け 一般利用者のAndroidアプリ（運用中）<br><strong>配布</strong>：Google Playで公開<br><strong>規模・立場</strong>：Android 5名（自分はメンバー。後半は画面設計のとりまとめ）<br><strong>使用技術</strong>：Java → Kotlin、View → Jetpack Compose、RxJava → コルーチンとFlow、Hilt、Room、JUnit<br><strong>対応範囲</strong>：スマートフォンとタブレット。最低対応のOSの版は参画中に1つ引き上げ<br><strong>担当内容</strong>：新しい画面をComposeで作成し、既存のViewの画面と共存させた。targetSdkの引き上げを担当し、権限と通知の変更に対応した<br><strong>工夫・成果</strong>：Composeの共通部品と使い方の決まりを整え、画面ごとの見た目のばらつきを減らした。特定の端末だけで起きていた表示の不具合を再現し、原因を特定して直した</p></blockquote>
+<h2 id="s6">Javaの期間と、SDK・ライブラリの仕事の書き方</h2>
+<h3>Javaの経験は年数を分けて書く</h3>
+<p>Javaで書かれたアプリの保守も、まだ案件として残っています。Javaの期間は、Kotlinの年数と合算せずに分けて書きましょう。Androidではない業務システムでのJavaの経験も、同じ「Java」の行にまとめず、用途を分けて書くと誤解を防げます。Javaを主に使う案件も検討している方は、<a href="/media/java-skillsheet/">Javaのスキルシートの書き方</a>も参考になります。</p>
+<h3>アプリではなくSDKを作った場合</h3>
+<p>ほかのアプリに組み込まれるSDKやライブラリを担当した場合は、「誰が、どう組み込むものか」を書きます。公開するAPIの設計、組み込む側への説明資料、版の管理と互換性の配慮などは、アプリの開発とは違う強みとして伝えられます。</p>
+<aside class="box box-caution"><p class="box-label">注意</p><p>Composeを使った経験を大きく見せようとして、少し触れただけの経験を「Compose◯年」と書くと、面談でつまずく原因になります。ComposeとViewが混在するアプリでは、どちらの画面を主に担当したかを比率で書くほうが、読み手の誤解が起きません。</p></aside>
+<aside class="box box-view"><p class="box-label">エージェントベストの見解</p><p>当社では、案件をご案内するときは、先に稼働日数・リモートの希望・ご希望の金額を伺い、合う案件だけをお出ししています。経歴は、ご本人の了承を得た案件にだけ、氏名・連絡先を伏せて提案しています。Androidの案件は、一般向けのアプリと業務用端末のアプリで求められる経験が分かれるため、配布の方法をシートに書いておくことをおすすめします。</p></aside>
+<aside class="box box-point"><p class="box-label">ポイント</p><ul><li>主なプロジェクトは、参画時と離任時の構成を並べ、自分が何を移したかを書く</li><li>targetSdkの対応は「上げた幅」と「直したこと」で書く</li><li>端末の対応範囲と配布の方法は、Androidならではの書きどころ</li><li>Google Playのインストール数や評価は、自分の成果として書かない</li></ul></aside>
+<h2 id="s7">よくある質問</h2>
+<h3>移行が途中のまま離任しました。どう書けばよいですか？</h3>
+<p>途中までの状態をそのまま書けば問題ありません。「新しい画面からComposeで作成。既存の画面は一部を移行」のように、離任した時点の状態と、自分が担った範囲を書きます。移行を段階的に進める現場は多く、途中の状態を正しく説明できることも経験として伝わります。</p>
+<h3>業務用端末のアプリしか経験がありません。何を書けばよいですか？</h3>
+<p>端末の種類、配布の方法、バーコードの読み取りや周辺機器との連携など、業務用ならではの機能を書きましょう。一般向けのアプリの案件に応募する場合は、Kotlinでの開発や設計の経験を要約の上に置くと、読み手が共通点を見つけやすくなります。</p>
+<h3>使ったライブラリはどこまで書けばよいですか？</h3>
+<p>設計に関わるもの（依存関係の注入、データベース、通信、画面の遷移など）を中心に書き、細かいライブラリは省いてかまいません。ライブラリを選んだり置き換えたりする判断に関わった場合は、担当内容に1行添えておくと、設計の経験として伝わります。</p>
+  </div>
+  
+  <div class="cta-band">
+  <h2>条件に合う案件だけ、知りたい方へ</h2>
+  <p>ご登録は無料です。条件に合う案件だけを、ご本人の了承を得てからご提案します。</p>
+  <div class="cta-row">
+    <a class="btn btn-primary" href="https://airtable.com/appYkc36EvioYoL1A/pag6CZC4uJmxUcrXT/form" target="_blank" rel="noopener">無料で登録する</a>
+    <a class="btn btn-ghost" href="/jobs/">案件を探す</a>
+  </div>
+</div>
+  <section class="related"><h2>あわせて読みたい</h2><div class="grid g2"><a class="card art-card" href="/media/android-skills/">
+  <span class="art-hub">モバイルアプリ開発</span>
+  <h3>Androidエンジニアのフリーランス案件で求められるスキルと経験</h3>
+  <p>Androidのフリーランス案件では、Kotlinのコルーチンとフロー、Jetpack Compose、公式の推奨アーキテクチャに沿った設計、Google Playの技術要件への対応が見られます。分野ごとのスキルと示し方を解説します。</p>
+</a>
+<a class="card art-card" href="/media/android-how-to/">
+  <span class="art-hub">モバイルアプリ開発</span>
+  <h3>Androidエンジニアがフリーランスになるには｜必要な経験と独立までの進め方</h3>
+  <p>Androidでフリーランスになるには、Kotlinでの機能開発に加え、Jetpack Composeへの移行や、Google Playの要件に合わせた更新を担った経験が要ります。案件の型、独立前に積む実績、面談で問われる点を解説します。</p>
+</a>
+<a class="card art-card" href="/media/android-remote/">
+  <span class="art-hub">モバイルアプリ開発</span>
+  <h3>Androidエンジニアのフリーランスはリモートで働ける？案件の傾向と探し方</h3>
+  <p>Androidエンジニアは、一般向けアプリの開発を中心にリモートで働ける案件があります。ただし、機種ごとの差の検証や業務用端末のアプリでは、端末の貸与や出社が条件になりやすくなります。案件の型、出社の場面、遠隔の実機を使った進め方、確認点を解説します。</p>
+</a>
+<a class="card art-card" href="/media/ios-skillsheet/">
+  <span class="art-hub">モバイルアプリ開発</span>
+  <h3>iOSエンジニアのスキルシートの書き方｜面談で評価される実績の見せ方</h3>
+  <p>iOSのスキルシートは、アプリごとにSwiftUIとUIKitの比率、最低対応OS、リリースへの関わり方を書くのが基本です。公開アプリのストアURLは、載せてよいかを確かめたうえで担当範囲と一緒に書きます。書き方と記入例を紹介します。</p>
+</a>
+<a class="card art-card" href="/media/flutter-skillsheet/">
+  <span class="art-hub">モバイルアプリ開発</span>
+  <h3>Flutterエンジニアのスキルシートの書き方｜面談で評価される実績の見せ方</h3>
+  <p>Flutterのスキルシートは「iOS・Android両対応」とまとめず、OSごとにビルド・署名・申請・ネイティブ連携のどこを自分が担ったかを分けて書くのが基本です。書き方と記入例、ストアURLの載せ方を紹介します。</p>
+</a>
+<a class="card art-card" href="/media/java-skillsheet/">
+  <span class="art-hub">バックエンド開発</span>
+  <h3>Javaエンジニアのスキルシートの書き方｜面談で評価される実績の見せ方</h3>
+  <p>Javaエンジニアのスキルシートは、JavaとSpringなどのバージョン、担当工程、チームの規模と立場をプロジェクトごとにそろえ、担当内容には技術の判断を書くのが基本です。スキル一覧の書き方、社内独自のフレームワークの扱いを架空の例で解説します。</p>
+</a></div></section>
+</main>
+<footer class="site-foot">
+  <div class="wrap">
+    <strong>エージェントベストジョブ フリーランス</strong>
+    <div class="foot-links">
+      <a href="/">トップ</a>
+      <a href="/jobs/">案件を探す</a>
+      <a href="/media/">お役立ち記事</a>
+      <a href="https://airtable.com/appYkc36EvioYoL1A/pag6CZC4uJmxUcrXT/form" target="_blank" rel="noopener">ご登録（スキルシート・ご希望の条件）</a>
+      <a href="https://line.me/R/ti/p/@697nxhbt?oat_content=url&ts=08302134" target="_blank" rel="noopener" data-line-cta="footer">LINEで相談する</a>
+      <a href="/privacy.html">個人情報の取り扱い</a>
+      <a href="https://www.agent-best.net/company/">運営会社</a>
+    </div>
+    <div class="foot-links">
+      <a href="https://jobs.agent-best.net/">正社員の求人を探す（エージェントベストジョブ）</a>
+      <a href="https://skill.agent-best.net/">エージェントベストジョブ手に職</a>
+      <a href="https://www.agent-best.net/">エージェントベスト</a>
+    </div>
+    <p>運営：株式会社エージェントベスト（有料職業紹介事業 許可番号 13-ユ-316964）<br>〒106-0032 東京都港区六本木4-8-7 嶋田ビル5階</p>
+  </div>
+</footer>
+<script src="/assets/fav.js" defer></script>
+</body>
+</html>
