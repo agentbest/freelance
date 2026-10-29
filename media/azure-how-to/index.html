@@ -46,7 +46,7 @@ document.addEventListener('click',e=>{const a=e.target.closest('[data-line-cta]'
   <nav class="toc" aria-label="目次"><strong>目次</strong><ol><li><a href="#s1">Azureの案件は「IDとつなぎ込み」が絡むことが多い</a></li><li><a href="#s2">独立の目安は「権限とテナントの影響範囲」を説明できること</a></li><li><a href="#s3">在職中に積んでおきたい実績</a></li><li><a href="#s4">検証環境と費用の管理</a></li><li><a href="#s5">独立の手続きとお金の準備</a></li><li><a href="#s6">最初の案件で確かめておくこと</a></li><li><a href="#s7">よくある質問</a></li></ol></nav>
   <div class="art-body">
 <p>Azureエンジニアがフリーランスになるには、<strong>仮想マシンやネットワークを作れることに加えて、Microsoft Entra IDを中心とした「誰に何を許すか」の設計と、社内のオンプレミス環境とのつなぎ込みを自分で判断した経験</strong>が求められます。Azureを使う企業の多くは、Microsoft 365や社内のActive Directoryと一体でクラウドを運用しているため、Azure単体の知識だけでは任せてもらえる範囲が狭くなりやすいからです。</p>
-<p>独立の準備は、自分の経験がどの型の案件に近いかを確かめ、足りない実績を在職中に補い、手続きとお金を整えてから最初の案件を選ぶ、という順で進めます。報酬の決まり方はAzureエンジニアの報酬の記事、求められるスキルの一覧はAzureで求められるスキルの記事にまとめているため、ここでは「独立までに何をするか」に絞ります。</p>
+<p>独立の準備は、自分の経験がどの型の案件に近いかを確かめ、足りない実績を在職中に補い、手続きとお金を整えてから最初の案件を選ぶ、という順で進めます。報酬の決まり方はAzureエンジニアの報酬の記事、求められるスキルの一覧は<a href="/media/azure-skills/">Azureで求められるスキルの記事</a>にまとめているため、ここでは「独立までに何をするか」に絞ります。</p>
 <h2 id="s1">Azureの案件は「IDとつなぎ込み」が絡むことが多い</h2>
 <p>Azureの業務委託案件は、発注側が何をAzureに載せたいかによって、仕事の中身が変わります。代表的な型を整理すると次のとおりです。</p>
 <div class="table-wrap"><table><thead><tr><th>案件の型</th><th>主な仕事</th><th>特に見られる経験</th></tr></thead><tbody><tr><td>オンプレミスからの移行</td><td>社内サーバーをAzureへ移し、既存のネットワークとつなぐ</td><td>現行環境の調査、VPNや専用線の接続、移行計画</td></tr><tr><td>IDと権限の整備</td><td>Entra IDのテナント設計、条件付きアクセス、管理者権限の整理</td><td>Active Directoryとの同期、多要素認証、権限の棚卸し</td></tr><tr><td>基盤の構築・標準化</td><td>サブスクリプションの分け方、ネットワーク、ポリシーを決めて作る</td><td>Bicep・ARMテンプレート・Terraformなどでのコード化</td></tr><tr><td>運用・改善</td><td>監視、バックアップ、費用の見直し、セキュリティ設定の点検</td><td>Azure Monitorなどでの監視設計、コストの分析</td></tr><tr><td>アプリ基盤</td><td>App ServiceやAKSなどでアプリを動かす環境を作る</td><td>コンテナ、CI/CD、開発チームとの連携</td></tr></tbody></table></div>
@@ -95,7 +95,12 @@ document.addEventListener('click',e=>{const a=e.target.closest('[data-line-cta]'
     <a class="btn btn-ghost" href="/jobs/">案件を探す</a>
   </div>
 </div>
-  <section class="related"><h2>あわせて読みたい</h2><div class="grid g2"><a class="card art-card" href="/media/aws-how-to/">
+  <section class="related"><h2>あわせて読みたい</h2><div class="grid g2"><a class="card art-card" href="/media/azure-skills/">
+  <span class="art-hub">インフラ・クラウド</span>
+  <h3>Azureエンジニアのフリーランス案件で求められるスキルと経験</h3>
+  <p>Azureのフリーランス案件では、Entra IDとAzure RBACによる権限設計、管理グループとサブスクリプションを使ったランディングゾーンの設計、ハイブリッド接続、Bicepなどでのコード化が見られます。分野ごとのスキルと認定資格の扱いを解説します。</p>
+</a>
+<a class="card art-card" href="/media/aws-how-to/">
   <span class="art-hub">インフラ・クラウド</span>
   <h3>AWSエンジニアがフリーランスになるには｜必要な経験と独立までの進め方</h3>
   <p>AWSエンジニアがフリーランスになるには、手順どおりの作業ではなく、構成を自分で決めて作り、障害に対応した経験が必要です。独立できる経験の目安、在職中に積むべき実績、検証環境とお金の準備、最初の案件で確かめることを解説します。</p>
@@ -119,11 +124,6 @@ document.addEventListener('click',e=>{const a=e.target.closest('[data-line-cta]'
   <span class="art-hub">独立・開業の準備</span>
   <h3>開業届の出し方｜フリーランスが出すタイミングと書き方</h3>
   <p>開業届は、事業を始めた年分の確定申告期限までに、納税地の税務署へ出す届出です（2026年10月時点）。初年度から青色申告にするなら、開業から2か月以内の承認申請書と一緒に出すのが確実です。書き方と提出方法を整理します。</p>
-</a>
-<a class="card art-card" href="/media/agent-how-to-use/">
-  <span class="art-hub">案件の探し方</span>
-  <h3>フリーランスエージェントの使い方｜登録から参画までの流れと準備</h3>
-  <p>フリーランスエージェントは、登録・面談で希望を伝え、紹介された案件に応募し、発注側との面談を経て契約・参画する流れで使います。各段階で準備すること、確かめること、うまく使うためのコツを整理します。</p>
 </a></div></section>
 </main>
 <footer class="site-foot">
