@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Next.jsエンジニアのスキルシートの書き方｜面談で評価される実績の見せ方｜エージェントベストジョブ フリーランス</title>
+<meta name="description" content="Next.jsのスキルシートは、版とルーター、描画方式、配信先を構成としてそろえて書き、構成・データ・キャッシュ・移行のどこで判断したかを書き分けるのが基本です。架空の記入例とあわせて、移行や性能改善の書き方を紹介します。">
+<link rel="canonical" href="https://freelance.agent-best.net/media/nextjs-skillsheet/">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="エージェントベストジョブ フリーランス">
+<meta property="og:title" content="Next.jsエンジニアのスキルシートの書き方｜面談で評価される実績の見せ方｜エージェントベストジョブ フリーランス">
+<meta property="og:description" content="Next.jsのスキルシートは、版とルーター、描画方式、配信先を構成としてそろえて書き、構成・データ・キャッシュ・移行のどこで判断したかを書き分けるのが基本です。架空の記入例とあわせて、移行や性能改善の書き方を紹介します。">
+<meta property="og:url" content="https://freelance.agent-best.net/media/nextjs-skillsheet/">
+<meta property="og:image" content="https://freelance.agent-best.net/assets/ogp.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://freelance.agent-best.net/assets/ogp.png">
+<meta name="theme-color" content="#1E3A5F">
+<link rel="icon" href="/assets/favicon.ico">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="stylesheet" href="/assets/site.css">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1XXMP8Y1B4"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-1XXMP8Y1B4');
+document.addEventListener('click',e=>{const a=e.target.closest('[data-line-cta]');if(a)gtag('event','line_add_friend',{placement:a.dataset.lineCta,page_path:location.pathname});});</script>
+<script type="application/ld+json">[{"@context":"https://schema.org","@type":"Article","headline":"Next.jsエンジニアのスキルシートの書き方｜面談で評価される実績の見せ方","description":"Next.jsのスキルシートは、版とルーター、描画方式、配信先を構成としてそろえて書き、構成・データ・キャッシュ・移行のどこで判断したかを書き分けるのが基本です。架空の記入例とあわせて、移行や性能改善の書き方を紹介します。","datePublished":"2026-10-29","dateModified":"2026-10-29","author":{"@type":"Organization","name":"株式会社エージェントベスト","url":"https://www.agent-best.net/"},"publisher":{"@type":"Organization","name":"株式会社エージェントベスト","logo":{"@type":"ImageObject","url":"https://freelance.agent-best.net/assets/logo.png"}},"mainEntityOfPage":"https://freelance.agent-best.net/media/nextjs-skillsheet/"},{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"トップ","item":"https://freelance.agent-best.net/"},{"@type":"ListItem","position":2,"name":"お役立ち記事","item":"https://freelance.agent-best.net/media/"},{"@type":"ListItem","position":3,"name":"フロントエンド開発","item":"https://freelance.agent-best.net/media/hub/frontend/"},{"@type":"ListItem","position":4,"name":"Next.jsエンジニアのスキルシートの書き方｜面談で評価される実績の見せ方"}]},{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"サポートが終わった古い版の経験しかありません。どう書けばよいですか？","acceptedAnswer":{"@type":"Answer","text":"そのまま正確に書いてかまいません。古い版で動くサービスの保守や、新しい版への移行を扱う案件では、判断材料になります。新しい版を個人のアプリなどで学んでいる場合は、実務と分けて書いておくと、面談での食い違いを防げます。"}},{"@type":"Question","name":"ReactとNext.jsの経験は分けて書いたほうがよいですか？","acceptedAnswer":{"@type":"Answer","text":"スキル一覧では分けて書くのがおすすめです。Next.jsを使わないReactの案件と、Next.jsの案件では、読み手が知りたいことが違います。プロジェクト欄では、Next.jsを使ったものには構成の4点を書き、Reactだけのものと区別できるようにしましょう。"}},{"@type":"Question","name":"バックエンドの処理も書いていた場合、どこに書けばよいですか？","acceptedAnswer":{"@type":"Answer","text":"Server ActionsやAPIの処理を書いていた場合は、担当欄の「データ」の行に書きます。データベースや認証の扱いまで担っていたなら、その範囲も添えます。サーバー側の経験を詳しく書く場合はNode.jsエンジニアのスキルシートの記事も参考になります。"}}]}]</script>
+</head>
+<body>
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="/"><img src="/assets/mark.png" alt="" width="28" height="28"><span>エージェントベストジョブ フリーランス<small>フリーランスのエンジニア・コンサル向け案件紹介</small></span></a>
+    <nav class="head-nav" aria-label="メニュー">
+      <a class="link" href="/jobs/">案件を探す</a>
+      <a class="link" href="/media/">お役立ち記事</a>
+      <a class="link keep" href="/mypage/" aria-label="気になる案件">☆ 気になる<span class="fav-count" data-fav-count hidden></span></a>
+      <a class="btn btn-primary btn-sm" href="https://airtable.com/appYkc36EvioYoL1A/pag6CZC4uJmxUcrXT/form" target="_blank" rel="noopener">無料で登録</a>
+    </nav>
+  </div>
+</header>
+<main class="wrap narrow article">
+  <p class="crumbs"><a href="/">トップ</a> › <a href="/media/">お役立ち記事</a> › <a href="/media/hub/frontend/">フロントエンド開発</a></p>
+  <a class="art-hub" href="/media/hub/frontend/">フロントエンド開発</a>
+  <h1 class="art-title">Next.jsエンジニアのスキルシートの書き方｜面談で評価される実績の見せ方</h1>
+  <p class="note">公開 2026-10-29　監修：株式会社エージェントベスト</p>
+  <nav class="toc" aria-label="目次"><strong>目次</strong><ol><li><a href="#s1">技術欄は「構成」として4点をそろえる</a></li><li><a href="#s2">担当範囲を判断の種類で書き分ける</a></li><li><a href="#s3">移行と版上げの書き方</a></li><li><a href="#s4">キャッシュと表示速度の改善の書き方</a></li><li><a href="#s5">運用とセキュリティ更新の書き方</a></li><li><a href="#s6">プロジェクト欄の記入例（架空）</a></li><li><a href="#s7">公開できる成果物の添え方</a></li><li><a href="#s8">よくある質問</a></li></ol></nav>
+  <div class="art-body">
+<p>Next.jsエンジニアのスキルシートは、<strong>使った版とルーター、ページの描画方式、配信先を「構成」としてひとまとまりで書き、そのうえで構成・データ・キャッシュ・移行のどこで自分が判断したかを書き分ける</strong>のが基本です。Next.jsは版やルーターで設計の考え方が大きく変わるため、「Next.js使用」とだけ書くと、読み手は経験の中身を推し量れません。</p>
+<p>全体の構成は<a href="/media/skillsheet-basics/">スキルシートの基本</a>で解説しています。Reactの画面の作り方に関する書き方は<a href="/media/react-skillsheet/">Reactのスキルシートの記事</a>にまとめているので、この記事ではNext.jsに固有の書き方に絞って説明します。</p>
+<h2 id="s1">技術欄は「構成」として4点をそろえる</h2>
+<p>Next.jsの経験を書くとき、読み手が最初に知りたいのは「どんな構成で動くアプリを扱っていたか」です。次の4点をプロジェクトごとにそろえて書きます。</p>
+<div class="table-wrap"><table><thead><tr><th>項目</th><th>書き方の例</th></tr></thead><tbody><tr><td>版</td><td>Next.js 14→16、15（保守中心）</td></tr><tr><td>ルーター</td><td>App Router、Pages Router、両方が混在（移行中）</td></tr><tr><td>描画方式</td><td>事前生成が中心、リクエスト時の描画が中心、両方を組み合わせ</td></tr><tr><td>配信先</td><td>ホスティングサービス、Node.jsのサーバー、コンテナ、静的な書き出し</td></tr></tbody></table></div>
+<p>版は、<strong>始めた時点と終えた時点</strong>の両方を書くと、版上げに関わったかどうかが伝わります。Next.jsの公式のサポート方針では、2026年10月時点で16.xがActive LTS、15.xがMaintenance LTS、14.x以前はサポート対象外です。サポート外の版を扱っていた場合も、そのまま正確に書きましょう。古い版の保守や移行の案件では、むしろ判断材料になります。</p>
+<p>ルーターは、公式ドキュメントでApp Routerが「新しいルーター」、Pages Routerが「従来のルーターで引き続きサポートされているもの」と説明されている2種類です。どちらを使ったか、混在していたかで経験の中身が違うため、書き分けてください。</p>
+<p>配信先は、公式ドキュメントで挙げられているNode.jsのサーバー、コンテナ、静的な書き出し、各プラットフォーム向けの配信のどれだったかを書きます。静的な書き出しでは使えない機能があるため、配信先が分かると、どの機能に触れていたかが読み手に伝わります。</p>
+<h2 id="s2">担当範囲を判断の種類で書き分ける</h2>
+<p>Next.jsの案件では、画面を作る人と、構成やキャッシュの方針を決める人で、求められる経験が違います。担当欄では、次のどれを担ったかを分けて書きます。</p>
+<ul><li><strong>実装</strong>：決まった構成に沿ってページ、部品、フォームを作った</li><li><strong>構成</strong>：ルーティングとレイアウト、Server ComponentsとClient Componentsの分け方を決めた</li><li><strong>データ</strong>：データの取得をまとめる層や、Server Actionsでの更新処理を設計した</li><li><strong>描画とキャッシュ</strong>：ページごとの描画方式、キャッシュの範囲、再検証のタイミングを決めた</li><li><strong>移行と運用</strong>：版上げ、ルーターの移行、配信先の設定、セキュリティ更新の適用を担った</li></ul>
+<p>一つのプロジェクトで複数を担った場合は、時期ごとに分けて書くと、任される範囲がどう広がったかが伝わります。</p>
+<aside class="box box-view"><p class="box-label">エージェントベストの見解</p><p>Next.jsの案件をご紹介していると、スキルシートで評価されやすいのは、技術の名前の多さより「何を決めたか」が一行で読み取れるシートです。面談では、シートに書かれた判断を起点に「なぜそうしたか」を聞かれることが多く、判断の行があると話を組み立てやすくなります。各プロジェクトに、構成かキャッシュに関する判断の行を一つは入れておくことをおすすめします。</p></aside>
+<h2 id="s3">移行と版上げの書き方</h2>
+<p>版上げやルーターの移行は、Next.jsの経歴の中でも具体的に書きやすい経験です。次の3つを書くと、規模と進め方が伝わります。</p>
+<ol><li><strong>範囲</strong>：どの版からどの版へ、どのくらいの画面数や機能を対象にしたか</li><li><strong>進め方</strong>：一度に切り替えたのか、画面ごとに段階的に移したのか。止めずに進めるために何をしたか</li><li><strong>対応した変更</strong>：書き換えが必要だった点（非同期での値の受け取り、ミドルウェアの名前の変更など）と、自動変換の道具で済んだ点の区別</li></ol>
+<p>「Next.js 13から15へ版上げ」と一行で済ませるより、「Pages Routerの画面を、利用の少ない画面から順にApp Routerへ移行。移行中は両方のルーターを併用」のように書くほうが、任された判断の重さが伝わります。</p>
+<h2 id="s4">キャッシュと表示速度の改善の書き方</h2>
+<p>表示速度の改善は、<strong>何で測り、何を変え、どう変わったか</strong>の順で書くのが基本です。Next.jsでは、変えたことの中身に特徴が出ます。</p>
+<ul><li>「ブラウザ側に回していた部品をサーバー側に移し、送るJavaScriptを減らした」</li><li>「リクエストのたびに作っていたページを、一部をキャッシュする形に変えた」</li><li>「更新後に古い表示が残る不具合を、再検証の仕組みを見直して解消した」</li></ul>
+<p>数値を書く場合は、測り方を添えます。社外に出せない数値は、「表示が始まるまでの時間を指標に改善」のように指標の種類と変化の方向で書きましょう。扱いに迷う場合は<a href="/media/confidentiality-in-skillsheet/">スキルシートと守秘義務の記事</a>を参考にしてください。</p>
+<h2 id="s5">運用とセキュリティ更新の書き方</h2>
+<p>Next.jsは、公式がセキュリティ更新を定期的に出しているフレームワークです。保守の案件では、更新を適用してきた経験も評価の材料になります。シートには、次のように<strong>誰の判断で、どの頻度で、どう確かめて適用したか</strong>を書きます。</p>
+<ul><li>「公式のセキュリティ更新の告知を確認し、影響の有無を判断したうえで、検証環境で確かめてから本番に適用」</li><li>「依存パッケージの更新を定期的に行う手順を整え、チームで回せるようにした」</li></ul>
+<p>運用の経験は、開発の経験に比べて書き漏らしやすい部分です。保守や移行の案件に応募するときは、開発の行と分けて書いておくと、読み手が見つけやすくなります。</p>
+<h2 id="s6">プロジェクト欄の記入例（架空）</h2>
+<p>次は書き方の型を示すための<strong>架空の記入例</strong>です。実在の案件や人物ではありません。業種や規模はぼかしてあるので、ご自身の経験に置き換えてください。</p>
+<blockquote><p><strong>期間</strong>：○年○月〜○年○月（1年程度）<br><strong>案件概要</strong>：会員向けWebサービスの画面開発と構成の見直し<br><strong>規模・立場</strong>：フロントエンドのチーム数名（後半は構成の担当）<br><strong>構成</strong>：Next.js 14→16、Pages RouterからApp Routerへ移行、事前生成とリクエスト時の描画を併用、コンテナで配信<br><strong>使用技術</strong>：TypeScript、React、Tailwind CSS、Vitest、Playwright<br><strong>担当内容</strong>：前半は会員画面の実装。後半はApp Routerへの移行計画を立て、利用の少ない画面から順に移した。データの取得を一つの層にまとめ、権限の確認をそこに集めた<br><strong>工夫・成果</strong>：ブラウザ側に回していた一覧の部品をサーバー側に移し、送るJavaScriptを減らした。更新後に古い表示が残る不具合を、再検証の方法を見直して解消した</p></blockquote>
+<p>この例では、構成の4点、役割の変化（実装から構成の担当へ）、移行の進め方、キャッシュに関する判断が読み取れる形にしてあります。</p>
+<h2 id="s7">公開できる成果物の添え方</h2>
+<p>個人で作ったNext.jsのアプリやリポジトリは、構成の考え方を示す補足になります。READMEに、版、ルーター、描画方式、配信先と、判断した理由を書いておくと、読み手が見るべき場所が分かります。公開しているアプリのURLを載せる場合は、業務で作ったものと混同されないよう「個人開発」と明記しましょう。整え方は<a href="/media/portfolio-github/">ポートフォリオやGitHubの記事</a>で解説しています。</p>
+<aside class="box box-caution"><p class="box-label">注意</p><p>技術欄に書いたものは、面談で「なぜそれを選んだか」を聞かれることがあります。既存の構成で使っていただけのもの（配信先や認証の仕組みなど）は、「既存の構成で使用」と添えておくと、選定まで担ったと受け取られる食い違いを防げます。</p></aside>
+<aside class="box box-view"><p class="box-label">エージェントベストの見解</p><p>当社では、経歴はご本人の了承を得た案件にだけ、氏名・連絡先を伏せてご提案しています。Next.jsの案件は、実装が中心のものと、移行や構成の見直しを任されるものとで、読み手が注目する行が違います。応募する案件の役割に近い経験を上の方に置いておくことをおすすめします。業務で作った画面やURLを載せてよいか迷う場合は、ご質問いただければ確認します。</p></aside>
+<aside class="box box-point"><p class="box-label">ポイント</p><ul><li>版（始めと終わり）、ルーター、描画方式、配信先を「構成」としてそろえて書く</li><li>担当は実装・構成・データ・描画とキャッシュ・移行と運用で書き分ける</li><li>移行は範囲・進め方・対応した変更の3点で書く</li><li>表示速度の改善は、測り方・変えたこと・変化の順で書く</li></ul></aside>
+<h2 id="s8">よくある質問</h2>
+<h3>サポートが終わった古い版の経験しかありません。どう書けばよいですか？</h3>
+<p>そのまま正確に書いてかまいません。古い版で動くサービスの保守や、新しい版への移行を扱う案件では、判断材料になります。新しい版を個人のアプリなどで学んでいる場合は、実務と分けて書いておくと、面談での食い違いを防げます。</p>
+<h3>ReactとNext.jsの経験は分けて書いたほうがよいですか？</h3>
+<p>スキル一覧では分けて書くのがおすすめです。Next.jsを使わないReactの案件と、Next.jsの案件では、読み手が知りたいことが違います。プロジェクト欄では、Next.jsを使ったものには構成の4点を書き、Reactだけのものと区別できるようにしましょう。</p>
+<h3>バックエンドの処理も書いていた場合、どこに書けばよいですか？</h3>
+<p>Server ActionsやAPIの処理を書いていた場合は、担当欄の「データ」の行に書きます。データベースや認証の扱いまで担っていたなら、その範囲も添えます。サーバー側の経験を詳しく書く場合は<a href="/media/nodejs-skillsheet/">Node.jsエンジニアのスキルシートの記事</a>も参考になります。</p>
+  </div>
+  <section class="sources"><h2>参考にした公的情報・資料</h2><ul><li><a href="https://nextjs.org/support-policy" target="_blank" rel="noopener nofollow">Support Policy（Next.js）</a></li><li><a href="https://nextjs.org/docs" target="_blank" rel="noopener nofollow">Next.js Docs（Next.js）</a></li><li><a href="https://nextjs.org/docs/app/getting-started/deploying" target="_blank" rel="noopener nofollow">Deploying（Next.js Docs）</a></li><li><a href="https://nextjs.org/blog/next-security-release-program" target="_blank" rel="noopener nofollow">Next.js Security Release and Our Next Patch Release（Next.js Blog）</a></li></ul>
+  <p class="note">記事の内容は公開日時点の情報にもとづきます。制度や税率は変わることがあるため、手続きの前に必ず各機関の最新情報をご確認ください。</p></section>
+  <div class="cta-band">
+  <h2>条件に合う案件だけ、知りたい方へ</h2>
+  <p>ご登録は無料です。条件に合う案件だけを、ご本人の了承を得てからご提案します。</p>
+  <div class="cta-row">
+    <a class="btn btn-primary" href="https://airtable.com/appYkc36EvioYoL1A/pag6CZC4uJmxUcrXT/form" target="_blank" rel="noopener">無料で登録する</a>
+    <a class="btn btn-ghost" href="/jobs/">案件を探す</a>
+  </div>
+</div>
+  <section class="related"><h2>あわせて読みたい</h2><div class="grid g2"><a class="card art-card" href="/media/nextjs-how-to/">
+  <span class="art-hub">フロントエンド開発</span>
+  <h3>Next.jsエンジニアがフリーランスになるには｜必要な経験と独立までの進め方</h3>
+  <p>Next.jsでフリーランスになるには、App Routerでサーバーとブラウザの役割を分けて画面を作った実務経験と、描画方式やデータ更新を自分で判断した経験が求められます。出身別の補い方、独立前の準備の順番、契約で確かめる点を解説します。</p>
+</a>
+<a class="card art-card" href="/media/nextjs-skills/">
+  <span class="art-hub">フロントエンド開発</span>
+  <h3>Next.jsエンジニアのフリーランス案件で求められるスキルと経験</h3>
+  <p>Next.jsの案件では、Server ComponentsとClient Componentsの境目の引き方、データの取得と更新、描画方式とキャッシュの判断、Server Actionsの安全な書き方、配信先の知識が問われます。分野ごと・経験の段階ごとに整理します。</p>
+</a>
+<a class="card art-card" href="/media/nextjs-rate/">
+  <span class="art-hub">フロントエンド開発</span>
+  <h3>Next.jsエンジニアのフリーランス案件｜報酬の決まり方と単価を上げる考え方</h3>
+  <p>Next.jsエンジニアの報酬は、App Routerでの設計を任されるか、描画方式とキャッシュを決められるか、版上げや配信基盤まで担えるか、稼働条件と商流で決まり、案件ごとに大きく変わります。上下する要素と交渉材料を解説します。</p>
+</a>
+<a class="card art-card" href="/media/nextjs-remote/">
+  <span class="art-hub">フロントエンド開発</span>
+  <h3>Next.jsエンジニアのフリーランスはリモートで働ける？案件の傾向と探し方</h3>
+  <p>Next.jsの案件は、Webサービスの機能開発や版上げなどリモートで進めやすい仕事が多い一方、閉じたネットワークの業務システムや本番環境の操作を伴う仕事は出社や制約が出やすくなります。仕事の向き不向き、探し方、参画前の確認点を解説します。</p>
+</a>
+<a class="card art-card" href="/media/nextjs-future/">
+  <span class="art-hub">フロントエンド開発</span>
+  <h3>Next.jsエンジニアのフリーランスの将来性とキャリアの広げ方</h3>
+  <p>Next.jsは、Cache Componentsを次のメジャー版で標準にする方針、配信先を選べるアダプターの安定化、月1回ほどのセキュリティ更新の予告制など、公式の動きが続いています。2026年10月時点の公式発表から見た今後の仕事と広げ方を解説します。</p>
+</a>
+<a class="card art-card" href="/media/react-skillsheet/">
+  <span class="art-hub">フロントエンド開発</span>
+  <h3>Reactエンジニアのスキルシートの書き方｜面談で評価される実績の見せ方</h3>
+  <p>Reactのスキルシートは、ReactとNext.jsなどの版と構成、実装・設計・共通部品のどこを担ったかを書き分けるのが基本です。画面数より課題で書くコツ、表示速度の改善の示し方、公開URLやGitHubの扱いを紹介します。</p>
+</a></div></section>
+</main>
+<footer class="site-foot">
+  <div class="wrap">
+    <strong>エージェントベストジョブ フリーランス</strong>
+    <div class="foot-links">
+      <a href="/">トップ</a>
+      <a href="/jobs/">案件を探す</a>
+      <a href="/media/">お役立ち記事</a>
+      <a href="https://airtable.com/appYkc36EvioYoL1A/pag6CZC4uJmxUcrXT/form" target="_blank" rel="noopener">ご登録（スキルシート・ご希望の条件）</a>
+      <a href="https://line.me/R/ti/p/@697nxhbt?oat_content=url&ts=08302134" target="_blank" rel="noopener" data-line-cta="footer">LINEで相談する</a>
+      <a href="/privacy.html">個人情報の取り扱い</a>
+      <a href="https://www.agent-best.net/company/">運営会社</a>
+    </div>
+    <div class="foot-links">
+      <a href="https://jobs.agent-best.net/">正社員の求人を探す（エージェントベストジョブ）</a>
+      <a href="https://skill.agent-best.net/">エージェントベストジョブ手に職</a>
+      <a href="https://www.agent-best.net/">エージェントベスト</a>
+    </div>
+    <p>運営：株式会社エージェントベスト（有料職業紹介事業 許可番号 13-ユ-316964）<br>〒106-0032 東京都港区六本木4-8-7 嶋田ビル5階</p>
+  </div>
+</footer>
+<script src="/assets/fav.js" defer></script>
+</body>
+</html>

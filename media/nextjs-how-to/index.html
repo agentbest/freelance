@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Next.jsエンジニアがフリーランスになるには｜必要な経験と独立までの進め方｜エージェントベストジョブ フリーランス</title>
+<meta name="description" content="Next.jsでフリーランスになるには、App Routerでサーバーとブラウザの役割を分けて画面を作った実務経験と、描画方式やデータ更新を自分で判断した経験が求められます。出身別の補い方、独立前の準備の順番、契約で確かめる点を解説します。">
+<link rel="canonical" href="https://freelance.agent-best.net/media/nextjs-how-to/">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="エージェントベストジョブ フリーランス">
+<meta property="og:title" content="Next.jsエンジニアがフリーランスになるには｜必要な経験と独立までの進め方｜エージェントベストジョブ フリーランス">
+<meta property="og:description" content="Next.jsでフリーランスになるには、App Routerでサーバーとブラウザの役割を分けて画面を作った実務経験と、描画方式やデータ更新を自分で判断した経験が求められます。出身別の補い方、独立前の準備の順番、契約で確かめる点を解説します。">
+<meta property="og:url" content="https://freelance.agent-best.net/media/nextjs-how-to/">
+<meta property="og:image" content="https://freelance.agent-best.net/assets/ogp.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://freelance.agent-best.net/assets/ogp.png">
+<meta name="theme-color" content="#1E3A5F">
+<link rel="icon" href="/assets/favicon.ico">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="stylesheet" href="/assets/site.css">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1XXMP8Y1B4"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-1XXMP8Y1B4');
+document.addEventListener('click',e=>{const a=e.target.closest('[data-line-cta]');if(a)gtag('event','line_add_friend',{placement:a.dataset.lineCta,page_path:location.pathname});});</script>
+<script type="application/ld+json">[{"@context":"https://schema.org","@type":"Article","headline":"Next.jsエンジニアがフリーランスになるには｜必要な経験と独立までの進め方","description":"Next.jsでフリーランスになるには、App Routerでサーバーとブラウザの役割を分けて画面を作った実務経験と、描画方式やデータ更新を自分で判断した経験が求められます。出身別の補い方、独立前の準備の順番、契約で確かめる点を解説します。","datePublished":"2026-10-29","dateModified":"2026-10-29","author":{"@type":"Organization","name":"株式会社エージェントベスト","url":"https://www.agent-best.net/"},"publisher":{"@type":"Organization","name":"株式会社エージェントベスト","logo":{"@type":"ImageObject","url":"https://freelance.agent-best.net/assets/logo.png"}},"mainEntityOfPage":"https://freelance.agent-best.net/media/nextjs-how-to/"},{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"トップ","item":"https://freelance.agent-best.net/"},{"@type":"ListItem","position":2,"name":"お役立ち記事","item":"https://freelance.agent-best.net/media/"},{"@type":"ListItem","position":3,"name":"フロントエンド開発","item":"https://freelance.agent-best.net/media/hub/frontend/"},{"@type":"ListItem","position":4,"name":"Next.jsエンジニアがフリーランスになるには｜必要な経験と独立までの進め方"}]},{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Next.jsの実務経験が短くても独立できますか？","acceptedAnswer":{"@type":"Answer","text":"案件によります。Next.jsの経験年数を条件にする案件が多いものの、Reactでの開発経験やNode.jsでのサーバー開発とあわせて評価されることもあります。経験が短い場合は、担当した範囲を具体的に書き、構成やデータの扱いで判断したことを一つでも添えると伝わりやすくなります。"}},{"@type":"Question","name":"Pages Routerの経験だけでも独立できますか？","acceptedAnswer":{"@type":"Answer","text":"Pages Routerは公式に引き続きサポートされており、その経験を求める保守や移行の案件もあります。ただ、新しく始める案件はApp Routerが多いため、個人のアプリなどでApp Routerに慣れておくと、応募できる案件が広がります。両方を知っていることは、移行の案件で強みになります。"}},{"@type":"Question","name":"バックエンドの経験もあったほうがよいですか？","acceptedAnswer":{"@type":"Answer","text":"必須ではありませんが、あると担える範囲が広がります。Next.jsでは、画面と同じリポジトリでデータの更新処理やAPIを書くことがあり、認証やデータベースの基本を理解していると、少人数のチームで頼られやすくなります。型の扱いを含めた独立の考え方はTypeScriptエンジニアの独立の記事も参考になります。"}}]}]</script>
+</head>
+<body>
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="/"><img src="/assets/mark.png" alt="" width="28" height="28"><span>エージェントベストジョブ フリーランス<small>フリーランスのエンジニア・コンサル向け案件紹介</small></span></a>
+    <nav class="head-nav" aria-label="メニュー">
+      <a class="link" href="/jobs/">案件を探す</a>
+      <a class="link" href="/media/">お役立ち記事</a>
+      <a class="link keep" href="/mypage/" aria-label="気になる案件">☆ 気になる<span class="fav-count" data-fav-count hidden></span></a>
+      <a class="btn btn-primary btn-sm" href="https://airtable.com/appYkc36EvioYoL1A/pag6CZC4uJmxUcrXT/form" target="_blank" rel="noopener">無料で登録</a>
+    </nav>
+  </div>
+</header>
+<main class="wrap narrow article">
+  <p class="crumbs"><a href="/">トップ</a> › <a href="/media/">お役立ち記事</a> › <a href="/media/hub/frontend/">フロントエンド開発</a></p>
+  <a class="art-hub" href="/media/hub/frontend/">フロントエンド開発</a>
+  <h1 class="art-title">Next.jsエンジニアがフリーランスになるには｜必要な経験と独立までの進め方</h1>
+  <p class="note">公開 2026-10-29　監修：株式会社エージェントベスト</p>
+  <nav class="toc" aria-label="目次"><strong>目次</strong><ol><li><a href="#s1">独立の目安は「Reactが書ける」より一歩先</a></li><li><a href="#s2">出身ごとに補いたい経験</a></li><li><a href="#s3">独立前に積んでおきたい実績</a></li><li><a href="#s4">独立までの進め方</a></li><li><a href="#s5">契約と開業の手続き</a></li><li><a href="#s6">よくある質問</a></li></ol></nav>
+  <div class="art-body">
+<p>Next.jsエンジニアがフリーランスになるには、<strong>App Routerを使い、サーバーで動く部分とブラウザで動く部分を分けて画面を作った実務経験</strong>と、<strong>ページの描画方式やデータの更新方法を自分で判断した経験</strong>が目安になります。フリーランスの案件は、入ってすぐに既存の構成を読み取り、判断できることを前提にしたものが多いためです。</p>
+<p>準備は、経歴を「Next.jsで何を判断したか」で棚卸しし、足りない経験を今の職場で補い、スキルシートと面談の準備をし、契約と手続きを確かめる順で進めます。この記事では、Next.jsならではの見られ方と、出身ごとの補い方を中心に整理します。</p>
+<h2 id="s1">独立の目安は「Reactが書ける」より一歩先</h2>
+<p>Next.jsの公式ドキュメントは、Next.jsを「フルスタックのWebアプリケーションを作るためのReactのフレームワーク」と説明し、前提知識としてHTML、CSS、JavaScript、Reactを挙げています。つまり、Reactで画面を書けることは出発点です。</p>
+<p>フリーランスとして案件に入るときに見られるのは、その先の部分です。経歴を次の4つに分けて振り返ってみてください。</p>
+<div class="table-wrap"><table><thead><tr><th>分け方</th><th>独立の目安になる経験</th></tr></thead><tbody><tr><td>構成</td><td>App Routerでのページとレイアウトの組み立て、Server ComponentsとClient Componentsの分け方を決めた</td></tr><tr><td>データ</td><td>サーバー側でのデータ取得、フォームからの更新処理、更新後に表示を新しくする仕組みを扱った</td></tr><tr><td>描画</td><td>ビルド時に作るページと、リクエストのたびに作るページを使い分けた</td></tr><tr><td>運用</td><td>版上げ、配信先での設定、エラーの調査に関わった</td></tr></tbody></table></div>
+<p>4つすべてを担っている必要はありません。ただ、<strong>構成とデータのどちらかで「自分が決めた」と言える経験が一つもない</strong>と、案件に入ってから手が止まりやすくなります。会社員のうちに、新しい画面群の構成を考える役割や、データの更新処理の設計に手を挙げておくと、独立後の説明材料になります。</p>
+<p>Reactを軸にした独立の考え方は<a href="/media/react-how-to/">Reactエンジニアの独立の記事</a>で扱っています。ここではNext.js特有の部分に絞ります。</p>
+<h2 id="s2">出身ごとに補いたい経験</h2>
+<p>Next.jsを使うエンジニアの経歴はさまざまです。出身によって強みと補う点が違います。</p>
+<div class="table-wrap"><table><thead><tr><th>出身</th><th>強みになりやすい経験</th><th>独立前に補っておきたいこと</th></tr></thead><tbody><tr><td>Reactのフロントエンド</td><td>コンポーネント設計、状態管理、画面の品質</td><td>サーバー側での処理、キャッシュの考え方、配信先の設定</td></tr><tr><td>バックエンド・Node.js</td><td>データの扱い、認証、APIの設計</td><td>画面の作り込み、ブラウザ側に回す部分の判断、CSS</td></tr><tr><td>Web制作・コーポレートサイト</td><td>静的なページ、表示速度、検索エンジン向けの設定</td><td>アプリとしての画面（ログイン後の画面、データの読み書き）</td></tr></tbody></table></div>
+<p>Reactのフロントエンド出身の方は、ブラウザ側の知識が強みですが、Next.jsではサーバーで動く処理の責任が増えます。キャッシュがどこで効いているか、なぜ古い表示が残るかを調べた経験があると安心です。バックエンド出身の方は、データの流れの理解が強みになる一方、画面の細部で時間がかかりやすいため、実務に近い形で慣れておきましょう。Node.jsを軸にした独立は<a href="/media/nodejs-how-to/">Node.jsエンジニアの独立の記事</a>で解説しています。</p>
+<aside class="box box-view"><p class="box-label">エージェントベストの見解</p><p>Next.jsの案件をご紹介していると、Reactの経験は十分でも、「サーバーで描画する部分とブラウザで動かす部分をどう分けたか」を聞かれて答えに詰まる方を見かけます。反対に、表示が遅い、古いデータが残るといった問題を調べ、原因をキャッシュや描画の方式から説明できる方は、評価されやすい傾向があります。独立を考え始めた段階で、関わった画面を「どこで描画していたか」の視点から整理しておくことをおすすめします。</p></aside>
+<h2 id="s3">独立前に積んでおきたい実績</h2>
+<h3>新しい版とApp Routerでの開発</h3>
+<p>Next.jsの公式のサポート方針では、2026年10月時点で16.xがActive LTS、15.xがMaintenance LTSとされ、14.x以前はサポート対象外です。案件では新しい版での経験を求められることが多いため、業務で古い版を使っている場合は、版上げの検討や一部の画面の移行に関わる機会を探しましょう。</p>
+<p>Next.js 16では、必要なNode.jsの版が20.9以上、TypeScriptが5.1以上に引き上げられ、ミドルウェアの名前が<code>proxy.ts</code>に変わるなどの変更がありました。こうした変更を<strong>実際に手を動かして追った経験</strong>は、版上げを含む案件で具体的に話せる材料になります。</p>
+<h3>キャッシュの仕組みへの理解</h3>
+<p>Next.js 16.4の公式ブログでは、キャッシュを明示的に指定する「Cache Components」がすべてのNext.jsアプリに勧められ、<code>create-next-app</code>で作る新しいアプリでは最初から有効になると案内されています（2026年10月時点）。既存のアプリには、以前の暗黙のキャッシュの考え方で書かれたものも多く残っています。新旧どちらの考え方でも、<strong>何がどこでキャッシュされるか</strong>を説明できるようにしておきましょう。</p>
+<h3>公開できる成果物</h3>
+<p>フロントエンドは成果物を見てもらいやすい分野です。業務のコードは公開できないことが多いため、App Routerで作った個人のアプリがあると、構成の考え方を示す補足になります。READMEに、描画方式をどう選んだか、データの更新をどう扱ったかを書いておくと、読み手が見るべき点が伝わります。扱い方は<a href="/media/portfolio-github/">ポートフォリオやGitHubの記事</a>を参考にしてください。ただし、案件では実務の経験が重視されるため、成果物はあくまで補足です。</p>
+<h2 id="s4">独立までの進め方</h2>
+<ol><li><strong>経歴の棚卸し</strong>：関わったサービスごとに、期間、版、ルーター、配信先、チームの人数、構成・データ・描画・運用のどこを担ったかを書き出す</li><li><strong>足りない経験を補う</strong>：今の職場で、構成の検討や版上げの調査など、判断に関わる役割を引き受ける</li><li><strong>スキルシートを作る</strong>：画面の数ではなく、判断したことと結果で書く。書き方は<a href="/media/skillsheet-basics/">スキルシートの基本</a>と<a href="/media/nextjs-skillsheet/">Next.jsのスキルシートの記事</a>を参照</li><li><strong>条件を決める</strong>：稼働日数、リモートの希望、報酬の下限、開始時期を先に決める。リモートの傾向は<a href="/media/nextjs-remote/">Next.jsのリモート案件の記事</a>で解説</li><li><strong>契約と手続きを確かめる</strong>：契約の形と取引条件を確かめ、開業の手続きを進める</li></ol>
+<p>報酬がどう決まるかは<a href="/media/nextjs-rate/">Next.jsエンジニアの報酬の記事</a>で整理しています。</p>
+<aside class="box box-caution"><p class="box-label">注意</p><p>Next.jsの仕事には、月単位で稼働する準委任の案件のほか、コーポレートサイトや小さなWebアプリを作って納品する請負の仕事もあります。請負では完成させて引き渡す責任を負うため、どのホスティング先に載せるところまでが範囲か、公開後の不具合対応をいつまで受けるかを、受ける前に決めておきましょう。契約の違いは<a href="/media/junin-vs-ukeoi/">準委任契約と請負契約の違い</a>で解説しています。</p></aside>
+<h2 id="s5">契約と開業の手続き</h2>
+<p>独立にあたっての開業届や青色申告の申請は、<a href="/media/kaigyo-todoke/">開業届の出し方</a>にまとめています。退職時の健康保険や年金の切り替えは<a href="/media/quit-company-steps/">会社員からフリーランスになる手順</a>をご覧ください。税金の判断に迷う点は、税理士など専門家にご相談ください。</p>
+<p>契約では、業務の範囲、報酬、支払期日、契約期間を書面で確かめることが基本です。Next.jsの案件は、参画後に版上げや配信の設定など範囲が広がりやすいため、<strong>最初の範囲がどこまでか</strong>を契約の段階で言葉にしておくと、後の行き違いを防げます。</p>
+<aside class="box box-view"><p class="box-label">エージェントベストの見解</p><p>当社では、案件をご案内する前に、稼働日数・リモート・希望金額を伺い、合う案件だけをお出ししています。経歴は、ご本人の了承を得た案件にだけ、氏名・連絡先を伏せて提案しています。業務の範囲・報酬・支払期日・契約期間は個別契約に書いてお渡ししています。独立の時期が決まっていない段階でも、経歴をどう伝えるかに迷う点があれば、早めにご相談ください。</p></aside>
+<aside class="box box-point"><p class="box-label">ポイント</p><ul><li>独立の目安は、App Routerでの構成とデータの扱いで「自分が決めた」経験があること</li><li>React出身はサーバー側とキャッシュ、バックエンド出身は画面とブラウザ側の判断を補う</li><li>新しい版での開発と、版上げを追った経験は具体的な材料になる</li><li>請負の仕事は、配信先と公開後の対応の範囲を先に決める</li></ul></aside>
+<h2 id="s6">よくある質問</h2>
+<h3>Next.jsの実務経験が短くても独立できますか？</h3>
+<p>案件によります。Next.jsの経験年数を条件にする案件が多いものの、Reactでの開発経験やNode.jsでのサーバー開発とあわせて評価されることもあります。経験が短い場合は、担当した範囲を具体的に書き、構成やデータの扱いで判断したことを一つでも添えると伝わりやすくなります。</p>
+<h3>Pages Routerの経験だけでも独立できますか？</h3>
+<p>Pages Routerは公式に引き続きサポートされており、その経験を求める保守や移行の案件もあります。ただ、新しく始める案件はApp Routerが多いため、個人のアプリなどでApp Routerに慣れておくと、応募できる案件が広がります。両方を知っていることは、移行の案件で強みになります。</p>
+<h3>バックエンドの経験もあったほうがよいですか？</h3>
+<p>必須ではありませんが、あると担える範囲が広がります。Next.jsでは、画面と同じリポジトリでデータの更新処理やAPIを書くことがあり、認証やデータベースの基本を理解していると、少人数のチームで頼られやすくなります。型の扱いを含めた独立の考え方は<a href="/media/typescript-how-to/">TypeScriptエンジニアの独立の記事</a>も参考になります。</p>
+  </div>
+  <section class="sources"><h2>参考にした公的情報・資料</h2><ul><li><a href="https://nextjs.org/docs" target="_blank" rel="noopener nofollow">Next.js Docs（Next.js）</a></li><li><a href="https://nextjs.org/support-policy" target="_blank" rel="noopener nofollow">Support Policy（Next.js）</a></li><li><a href="https://nextjs.org/blog/next-16" target="_blank" rel="noopener nofollow">Next.js 16（Next.js Blog）</a></li><li><a href="https://nextjs.org/blog/next-16-4" target="_blank" rel="noopener nofollow">Next.js 16.4（Next.js Blog）</a></li></ul>
+  <p class="note">記事の内容は公開日時点の情報にもとづきます。制度や税率は変わることがあるため、手続きの前に必ず各機関の最新情報をご確認ください。</p></section>
+  <div class="cta-band">
+  <h2>条件に合う案件だけ、知りたい方へ</h2>
+  <p>ご登録は無料です。条件に合う案件だけを、ご本人の了承を得てからご提案します。</p>
+  <div class="cta-row">
+    <a class="btn btn-primary" href="https://airtable.com/appYkc36EvioYoL1A/pag6CZC4uJmxUcrXT/form" target="_blank" rel="noopener">無料で登録する</a>
+    <a class="btn btn-ghost" href="/jobs/">案件を探す</a>
+  </div>
+</div>
+  <section class="related"><h2>あわせて読みたい</h2><div class="grid g2"><a class="card art-card" href="/media/nextjs-rate/">
+  <span class="art-hub">フロントエンド開発</span>
+  <h3>Next.jsエンジニアのフリーランス案件｜報酬の決まり方と単価を上げる考え方</h3>
+  <p>Next.jsエンジニアの報酬は、App Routerでの設計を任されるか、描画方式とキャッシュを決められるか、版上げや配信基盤まで担えるか、稼働条件と商流で決まり、案件ごとに大きく変わります。上下する要素と交渉材料を解説します。</p>
+</a>
+<a class="card art-card" href="/media/nextjs-skills/">
+  <span class="art-hub">フロントエンド開発</span>
+  <h3>Next.jsエンジニアのフリーランス案件で求められるスキルと経験</h3>
+  <p>Next.jsの案件では、Server ComponentsとClient Componentsの境目の引き方、データの取得と更新、描画方式とキャッシュの判断、Server Actionsの安全な書き方、配信先の知識が問われます。分野ごと・経験の段階ごとに整理します。</p>
+</a>
+<a class="card art-card" href="/media/nextjs-skillsheet/">
+  <span class="art-hub">フロントエンド開発</span>
+  <h3>Next.jsエンジニアのスキルシートの書き方｜面談で評価される実績の見せ方</h3>
+  <p>Next.jsのスキルシートは、版とルーター、描画方式、配信先を構成としてそろえて書き、構成・データ・キャッシュ・移行のどこで判断したかを書き分けるのが基本です。架空の記入例とあわせて、移行や性能改善の書き方を紹介します。</p>
+</a>
+<a class="card art-card" href="/media/nextjs-remote/">
+  <span class="art-hub">フロントエンド開発</span>
+  <h3>Next.jsエンジニアのフリーランスはリモートで働ける？案件の傾向と探し方</h3>
+  <p>Next.jsの案件は、Webサービスの機能開発や版上げなどリモートで進めやすい仕事が多い一方、閉じたネットワークの業務システムや本番環境の操作を伴う仕事は出社や制約が出やすくなります。仕事の向き不向き、探し方、参画前の確認点を解説します。</p>
+</a>
+<a class="card art-card" href="/media/nextjs-future/">
+  <span class="art-hub">フロントエンド開発</span>
+  <h3>Next.jsエンジニアのフリーランスの将来性とキャリアの広げ方</h3>
+  <p>Next.jsは、Cache Componentsを次のメジャー版で標準にする方針、配信先を選べるアダプターの安定化、月1回ほどのセキュリティ更新の予告制など、公式の動きが続いています。2026年10月時点の公式発表から見た今後の仕事と広げ方を解説します。</p>
+</a>
+<a class="card art-card" href="/media/react-how-to/">
+  <span class="art-hub">フロントエンド開発</span>
+  <h3>Reactエンジニアがフリーランスになるには｜必要な経験と独立までの進め方</h3>
+  <p>Reactでフリーランスになるには、TypeScriptでの実務経験と、画面の実装だけでなくコンポーネント設計や状態管理を自分で決めた経験が求められます。出身別の準備、独立前に積みたい実績、面談で問われること、契約の確認点を解説します。</p>
+</a></div></section>
+</main>
+<footer class="site-foot">
+  <div class="wrap">
+    <strong>エージェントベストジョブ フリーランス</strong>
+    <div class="foot-links">
+      <a href="/">トップ</a>
+      <a href="/jobs/">案件を探す</a>
+      <a href="/media/">お役立ち記事</a>
+      <a href="https://airtable.com/appYkc36EvioYoL1A/pag6CZC4uJmxUcrXT/form" target="_blank" rel="noopener">ご登録（スキルシート・ご希望の条件）</a>
+      <a href="https://line.me/R/ti/p/@697nxhbt?oat_content=url&ts=08302134" target="_blank" rel="noopener" data-line-cta="footer">LINEで相談する</a>
+      <a href="/privacy.html">個人情報の取り扱い</a>
+      <a href="https://www.agent-best.net/company/">運営会社</a>
+    </div>
+    <div class="foot-links">
+      <a href="https://jobs.agent-best.net/">正社員の求人を探す（エージェントベストジョブ）</a>
+      <a href="https://skill.agent-best.net/">エージェントベストジョブ手に職</a>
+      <a href="https://www.agent-best.net/">エージェントベスト</a>
+    </div>
+    <p>運営：株式会社エージェントベスト（有料職業紹介事業 許可番号 13-ユ-316964）<br>〒106-0032 東京都港区六本木4-8-7 嶋田ビル5階</p>
+  </div>
+</footer>
+<script src="/assets/fav.js" defer></script>
+</body>
+</html>

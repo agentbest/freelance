@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Angularエンジニアのスキルシートの書き方｜面談で評価される実績の見せ方｜エージェントベストジョブ フリーランス</title>
+<meta name="description" content="Angularのスキルシートは、扱った版と構成（standalone・Signals・変更検知の方式）を書き、実装・設計・版上げのどこを担ったかを書き分けるのが基本です。業務画面の書き方、版上げの示し方、架空の記入例を紹介します。">
+<link rel="canonical" href="https://freelance.agent-best.net/media/angular-skillsheet/">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="エージェントベストジョブ フリーランス">
+<meta property="og:title" content="Angularエンジニアのスキルシートの書き方｜面談で評価される実績の見せ方｜エージェントベストジョブ フリーランス">
+<meta property="og:description" content="Angularのスキルシートは、扱った版と構成（standalone・Signals・変更検知の方式）を書き、実装・設計・版上げのどこを担ったかを書き分けるのが基本です。業務画面の書き方、版上げの示し方、架空の記入例を紹介します。">
+<meta property="og:url" content="https://freelance.agent-best.net/media/angular-skillsheet/">
+<meta property="og:image" content="https://freelance.agent-best.net/assets/ogp.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://freelance.agent-best.net/assets/ogp.png">
+<meta name="theme-color" content="#1E3A5F">
+<link rel="icon" href="/assets/favicon.ico">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="stylesheet" href="/assets/site.css">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1XXMP8Y1B4"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-1XXMP8Y1B4');
+document.addEventListener('click',e=>{const a=e.target.closest('[data-line-cta]');if(a)gtag('event','line_add_friend',{placement:a.dataset.lineCta,page_path:location.pathname});});</script>
+<script type="application/ld+json">[{"@context":"https://schema.org","@type":"Article","headline":"Angularエンジニアのスキルシートの書き方｜面談で評価される実績の見せ方","description":"Angularのスキルシートは、扱った版と構成（standalone・Signals・変更検知の方式）を書き、実装・設計・版上げのどこを担ったかを書き分けるのが基本です。業務画面の書き方、版上げの示し方、架空の記入例を紹介します。","datePublished":"2026-10-29","dateModified":"2026-10-29","author":{"@type":"Organization","name":"株式会社エージェントベスト","url":"https://www.agent-best.net/"},"publisher":{"@type":"Organization","name":"株式会社エージェントベスト","logo":{"@type":"ImageObject","url":"https://freelance.agent-best.net/assets/logo.png"}},"mainEntityOfPage":"https://freelance.agent-best.net/media/angular-skillsheet/"},{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"トップ","item":"https://freelance.agent-best.net/"},{"@type":"ListItem","position":2,"name":"お役立ち記事","item":"https://freelance.agent-best.net/media/"},{"@type":"ListItem","position":3,"name":"フロントエンド開発","item":"https://freelance.agent-best.net/media/hub/frontend/"},{"@type":"ListItem","position":4,"name":"Angularエンジニアのスキルシートの書き方｜面談で評価される実績の見せ方"}]},{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"古い版の経験しかありません。どう書けばよいですか？","acceptedAnswer":{"@type":"Answer","text":"そのまま正確に書いてかまいません。古い版で作られた画面の保守や、版上げを扱う案件では判断材料になります。新しい版を個人で学んでいる場合は、実務と分けて「学習中」と書いておくと、面談での食い違いを防げます。"}},{"@type":"Question","name":"ReactやVue.jsの経験もある場合、同じシートに書いてよいですか？","acceptedAnswer":{"@type":"Answer","text":"書いてかまいません。スキル一覧では技術ごとに分け、それぞれの期間と使い方の深さを書きます。Angularの案件に応募するときは、Angularの経験を上に並べます。面談でよく聞かれる質問は面談でよく聞かれる質問と答え方をご覧ください。"}},{"@type":"Question","name":"サーバー側の開発も担当していた場合は、どう書けばよいですか？","acceptedAnswer":{"@type":"Answer","text":"画面とサーバー側は別の行にします。「APIの設計と実装」「画面からの呼び出し方の取り決め」のように、どこまで自分で決めたかを書くと、画面とサーバー側の両方を担う案件で判断しやすくなります。"}}]}]</script>
+</head>
+<body>
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="/"><img src="/assets/mark.png" alt="" width="28" height="28"><span>エージェントベストジョブ フリーランス<small>フリーランスのエンジニア・コンサル向け案件紹介</small></span></a>
+    <nav class="head-nav" aria-label="メニュー">
+      <a class="link" href="/jobs/">案件を探す</a>
+      <a class="link" href="/media/">お役立ち記事</a>
+      <a class="link keep" href="/mypage/" aria-label="気になる案件">☆ 気になる<span class="fav-count" data-fav-count hidden></span></a>
+      <a class="btn btn-primary btn-sm" href="https://airtable.com/appYkc36EvioYoL1A/pag6CZC4uJmxUcrXT/form" target="_blank" rel="noopener">無料で登録</a>
+    </nav>
+  </div>
+</header>
+<main class="wrap narrow article">
+  <p class="crumbs"><a href="/">トップ</a> › <a href="/media/">お役立ち記事</a> › <a href="/media/hub/frontend/">フロントエンド開発</a></p>
+  <a class="art-hub" href="/media/hub/frontend/">フロントエンド開発</a>
+  <h1 class="art-title">Angularエンジニアのスキルシートの書き方｜面談で評価される実績の見せ方</h1>
+  <p class="note">公開 2026-10-29　監修：株式会社エージェントベスト</p>
+  <nav class="toc" aria-label="目次"><strong>目次</strong><ol><li><a href="#s1">技術欄は「版」と「構成」をセットで書く</a></li><li><a href="#s2">担当範囲を「実装・設計・版上げ」で書き分ける</a></li><li><a href="#s3">版上げと移行の経験の示し方</a></li><li><a href="#s4">プロジェクト欄の記入例（架空）</a></li><li><a href="#s5">スキル一覧の書き方</a></li><li><a href="#s6">自己PR欄は「得意な場面」を一つに絞る</a></li><li><a href="#s7">よくある質問</a></li></ol></nav>
+  <div class="art-body">
+<p>Angularエンジニアのスキルシートは、<strong>扱ったAngularの版と構成を書き、そのうえで「画面を実装した」「設計や決まりを作った」「版上げや移行を進めた」のどこを担ったかを書き分ける</strong>のが基本です。業務システムの経験は「○○画面を担当」とまとめがちですが、読み手が知りたいのは、どの版のどんな構成で、どこまで任されていたかです。</p>
+<p>全体の構成は<a href="/media/skillsheet-basics/">スキルシートの基本</a>で解説しています。この記事では、Angularのエンジニアが書くときに押さえたい点に絞って説明します。</p>
+<h2 id="s1">技術欄は「版」と「構成」をセットで書く</h2>
+<p>Angularは版によって標準の構成や書き方が大きく変わってきました。「Angular、TypeScript」とだけ書くと、読み手は中身を推測できません。次の項目をセットで書くと、構成が一目で分かります。</p>
+<div class="table-wrap"><table><thead><tr><th>項目</th><th>書き方の例</th></tr></thead><tbody><tr><td>Angularの版</td><td>Angular 16→19、Angular 21 など。版上げの前後も書く</td></tr><tr><td>画面の構成</td><td>NgModule中心、standalone中心、混在</td></tr><tr><td>状態の扱い</td><td>RxJS中心、Signalsを一部導入、状態管理のライブラリ など</td></tr><tr><td>変更検知</td><td>Zone.jsを使う構成、OnPushを標準に、Zoneを使わない構成</td></tr><tr><td>UI部品とテスト</td><td>部品のライブラリ、社内の共通部品、テストの道具</td></tr></tbody></table></div>
+<p>版を書くときは、<strong>その版がどの時期のものか</strong>を意識しておくと、面談で話しやすくなります。Angular公式の版とリリースの方針によると、2026年10月時点で、v22がActive、v21とv20が長期サポート（LTS）の期間にあり、v2からv19はサポートが終わっています。サポートの終わった版での経験も、版上げや保守の案件では判断材料になるため、隠さずに正確に書きましょう。</p>
+<p>TypeScriptの型の扱いを軸に見せたい方は<a href="/media/typescript-skillsheet/">TypeScriptエンジニアのスキルシートの記事</a>も参考になります。</p>
+<h2 id="s2">担当範囲を「実装・設計・版上げ」で書き分ける</h2>
+<p>Angularの案件は、決まりに沿って画面を足す役割と、決まりを作る役割、版上げや移行を進める役割とで、求められる経験が分かれます。シートでは、自分がどの役割だったかが分かるように書きます。</p>
+<ul><li><strong>実装</strong>：仕様書をもとに画面や機能を作った</li><li><strong>設計</strong>：画面群の分け方、共通部品、フォームの作り方、状態の持ち方を決めた</li><li><strong>版上げ・移行</strong>：版上げの調査、影響範囲の洗い出し、段階的な更新、AngularJSからの置き換え</li><li><strong>周辺</strong>：APIの取り決め、テストやCIの整備、コードレビュー</li></ul>
+<p>同じプロジェクトで複数を担った場合は、別の行に分けます。「フロントエンド全般を担当」とまとめるより、「前半は申込画面の実装、後半はフォームの共通部品の設計」と書くほうが、どの段階で何を任されたかが伝わります。</p>
+<h3>業務画面は「画面数」より「難しさ」で書く</h3>
+<p>「入力画面30画面を担当」のような書き方は、量は伝わっても難しさが伝わりません。業務システムの画面は、項目の数や業務ルールの複雑さで手間が大きく変わります。画面の数を書くなら、<strong>その中で難しかったことを1つ添えます</strong>。</p>
+<ul><li>「項目の選択によって必須の項目が変わる申込フォームで、検証の決まりを共通部品にまとめた」</li><li>「大量の明細を表示する一覧で、必要な部分だけを読み込む仕組みに変えた」</li></ul>
+<p>業務の知識は、それだけで評価される材料です。「保険の契約変更の画面」「物流の出荷指示の画面」のように、業務の種類が分かる書き方をしましょう。社名や社外に出せない情報の扱いは<a href="/media/confidentiality-in-skillsheet/">スキルシートと守秘義務の記事</a>をご覧ください。</p>
+<h2 id="s3">版上げと移行の経験の示し方</h2>
+<p>版上げや移行は、Angularの案件で評価されやすい経験です。シートには、次の4点を書きます。</p>
+<ol><li><strong>前後の版</strong>：どの版からどの版へ上げたか。複数の段階に分けた場合はその流れ</li><li><strong>調べたこと</strong>：非推奨のAPI、依存するライブラリの対応状況、テストの通り方</li><li><strong>進め方</strong>：一度に上げたか、モジュールごとに分けたか、業務を止めない工夫</li><li><strong>自分の担当</strong>：全体の計画か、一部のモジュールの更新か</li></ol>
+<p>AngularJSからの移行に関わった場合は、「AngularJSの画面を残しながら段階的に置き換えた」「画面群ごとに作り直した」など、<strong>どの方式で進めたか</strong>を書くと、経験の中身が伝わります。版上げの知識そのものは<a href="/media/angular-skills/">Angularの案件で求められるスキル</a>で整理しています。</p>
+<aside class="box box-view"><p class="box-label">エージェントベストの見解</p><p>Angularの案件をご紹介していると、版上げを経験していても、シートに「Angularのバージョンアップ対応」と一行だけ書かれていることがよくあります。面談で、どの版からどの版へ、何を調べ、どの順番で進めたかを聞かれて、そこで初めて経験の深さが伝わる形です。シートの段階で前後の版と進め方を書いておくと、話を組み立てやすくなります。版上げに関わった行は、範囲が小さくても書いておくことをおすすめします。</p></aside>
+<h2 id="s4">プロジェクト欄の記入例（架空）</h2>
+<p>次は書き方の型を示すための<strong>架空の例</strong>です。実在の案件・会社・数字ではありません。ご自身の経験に置き換えてください。</p>
+<blockquote><p><strong>期間</strong>：○年○月〜○年○月（1年半程度）<br><strong>案件概要</strong>：（架空）保険会社向けの契約管理システムの画面開発<br><strong>規模・立場</strong>：画面の開発チーム数名（後半は共通部品の担当）<br><strong>担当工程</strong>：設計、実装、単体テスト、結合テストの支援<br><strong>使用技術</strong>：Angular（版上げで2つのメジャー版を経由）、TypeScript、RxJS、リアクティブフォーム、社内の共通部品、Karma・Jasmine<br><strong>担当内容</strong>：前半は契約変更の入力画面の実装。後半は入力検証の共通部品を設計し、既存の画面に順に置き換えた。版上げではフォームまわりのモジュールの更新を担当<br><strong>工夫・成果</strong>：画面ごとに書かれていた検証の処理を共通部品にまとめ、検証の決まりの食い違いを減らした。版上げでは非推奨のAPIの一覧を作り、モジュールごとに分けて置き換えた</p></blockquote>
+<p>この例では、業務の種類、役割の変化（実装から共通部品の設計へ）、版上げでの担当範囲が読み取れる形にしてあります。数字を書く場合は、社外に出してよい範囲かを確かめてから書きましょう。</p>
+<h2 id="s5">スキル一覧の書き方</h2>
+<p>スキル一覧では、AngularとAngularJSを分けて書きます。名前が似ていても仕組みが大きく違うため、まとめて書くと読み手が誤解します。</p>
+<div class="table-wrap"><table><thead><tr><th>書き方の例</th><th>伝わること</th></tr></thead><tbody><tr><td>Angular（v14〜v19）／実務○年</td><td>扱った版の幅と期間</td></tr><tr><td>AngularJS（1.x）／保守・移行○年</td><td>古い仕組みを読める経験</td></tr><tr><td>RxJS／実務○年、Signals／一部の画面で導入</td><td>状態の扱いの深さ</td></tr><tr><td>リアクティブフォーム／業務画面で多数</td><td>業務画面の経験</td></tr></tbody></table></div>
+<p>学習だけで実務で使っていない機能は、「学習中」と分けて書くと、面談での食い違いを防げます。</p>
+<h2 id="s6">自己PR欄は「得意な場面」を一つに絞る</h2>
+<p>自己PR欄に、扱える技術をすべて並べ直す必要はありません。Angularの案件では、どんな場面で力を発揮できる人かが伝わると、読み手が案件と結び付けやすくなります。次のように、得意な場面を一つに絞って書きます。</p>
+<ul><li>「入力項目の多い業務画面で、検証の決まりを共通部品にまとめるのが得意です」</li><li>「サポート期限の近い版からの版上げを、影響範囲の調査から進めてきました」</li><li>「AngularJSの画面を読み解き、新しい構成へ段階的に移した経験があります」</li></ul>
+<p>そのうえで、プロジェクト欄の該当する行を示すと、読み手がシートの中で根拠を探しやすくなります。</p>
+<aside class="box box-view"><p class="box-label">エージェントベストの見解</p><p>当社では、経歴はご本人の了承を得た案件にだけ、氏名・連絡先を伏せてご提案しています。Angularの案件は、画面の実装を中心に担うものと、版上げや構成の移行を任されるものとで、読み手が見る行が違います。応募する案件の役割に近い行を上の方に置いておくことをおすすめします。業務で扱った画面の内容をどこまで書いてよいか迷う場合は、ご質問いただければ確認します。</p></aside>
+<aside class="box box-caution"><p class="box-label">注意</p><p>技術欄に書いた機能や構成は、面談で「なぜそれを選んだか」「どう使い分けたか」を聞かれることがあります。Signalsやstandalone構成などは、既存の決まりで使っていただけなのか、自分で導入を判断したのかを分けて書きましょう。選定に関わっていないものは「既存の構成で使用」と添えておくと、食い違いを防げます。</p></aside>
+<aside class="box box-point"><p class="box-label">ポイント</p><ul><li>Angularの版と構成（standalone・状態の扱い・変更検知）をセットで書く</li><li>担当は「実装・設計・版上げ・周辺」で書き分ける</li><li>業務画面は画面数より難しさと業務の種類で書く</li><li>版上げは前後の版・調べたこと・進め方・自分の担当の4点で書く</li></ul></aside>
+<h2 id="s7">よくある質問</h2>
+<h3>古い版の経験しかありません。どう書けばよいですか？</h3>
+<p>そのまま正確に書いてかまいません。古い版で作られた画面の保守や、版上げを扱う案件では判断材料になります。新しい版を個人で学んでいる場合は、実務と分けて「学習中」と書いておくと、面談での食い違いを防げます。</p>
+<h3>ReactやVue.jsの経験もある場合、同じシートに書いてよいですか？</h3>
+<p>書いてかまいません。スキル一覧では技術ごとに分け、それぞれの期間と使い方の深さを書きます。Angularの案件に応募するときは、Angularの経験を上に並べます。面談でよく聞かれる質問は<a href="/media/interview-questions/">面談でよく聞かれる質問と答え方</a>をご覧ください。</p>
+<h3>サーバー側の開発も担当していた場合は、どう書けばよいですか？</h3>
+<p>画面とサーバー側は別の行にします。「APIの設計と実装」「画面からの呼び出し方の取り決め」のように、どこまで自分で決めたかを書くと、画面とサーバー側の両方を担う案件で判断しやすくなります。</p>
+  </div>
+  <section class="sources"><h2>参考にした公的情報・資料</h2><ul><li><a href="https://angular.dev/reference/releases" target="_blank" rel="noopener nofollow">Angular versioning and releases（Angular公式ドキュメント）</a></li></ul>
+  <p class="note">記事の内容は公開日時点の情報にもとづきます。制度や税率は変わることがあるため、手続きの前に必ず各機関の最新情報をご確認ください。</p></section>
+  <div class="cta-band">
+  <h2>条件に合う案件だけ、知りたい方へ</h2>
+  <p>ご登録は無料です。条件に合う案件だけを、ご本人の了承を得てからご提案します。</p>
+  <div class="cta-row">
+    <a class="btn btn-primary" href="https://airtable.com/appYkc36EvioYoL1A/pag6CZC4uJmxUcrXT/form" target="_blank" rel="noopener">無料で登録する</a>
+    <a class="btn btn-ghost" href="/jobs/">案件を探す</a>
+  </div>
+</div>
+  <section class="related"><h2>あわせて読みたい</h2><div class="grid g2"><a class="card art-card" href="/media/angular-how-to/">
+  <span class="art-hub">フロントエンド開発</span>
+  <h3>Angularエンジニアがフリーランスになるには｜必要な経験と独立までの進め方</h3>
+  <p>Angularでフリーランスになるには、TypeScriptでのAngularの実務経験と、既存の業務システムの設計を読み取り、チームの決まりに沿って画面を足せる力が求められます。出身別の準備、独立前に積みたい経験、進め方を解説します。</p>
+</a>
+<a class="card art-card" href="/media/angular-skills/">
+  <span class="art-hub">フロントエンド開発</span>
+  <h3>Angularエンジニアのフリーランス案件で求められるスキルと経験</h3>
+  <p>Angularの案件では、コンポーネントと依存性の注入の設計、RxJSとSignalsによる状態の扱い、フォームの入力検証、テスト、版上げの知識が問われます。分野ごとの中身と、経験の段階ごとに求められる水準を解説します。</p>
+</a>
+<a class="card art-card" href="/media/angular-rate/">
+  <span class="art-hub">フロントエンド開発</span>
+  <h3>Angularエンジニアのフリーランス案件｜報酬の決まり方と単価を上げる考え方</h3>
+  <p>Angularエンジニアの報酬は、画面の実装か設計・移行の判断まで担うか、扱う版、AngularJSからの移行経験、業務知識、稼働条件、商流で決まり、案件ごとに大きく変わります。上下する要素と上げ方を解説します。</p>
+</a>
+<a class="card art-card" href="/media/angular-remote/">
+  <span class="art-hub">フロントエンド開発</span>
+  <h3>Angularエンジニアのフリーランスはリモートで働ける？案件の傾向と探し方</h3>
+  <p>Angularエンジニアはリモートで働ける案件もありますが、業務システムでは機密情報や指定の端末の決まりから出社や一部出社を求められることがあります。リモートにしやすい仕事・しにくい仕事、探し方と契約前の確認点を解説します。</p>
+</a>
+<a class="card art-card" href="/media/angular-future/">
+  <span class="art-hub">フロントエンド開発</span>
+  <h3>Angularエンジニアのフリーランスの将来性とキャリアの広げ方</h3>
+  <p>Angularはv22からメジャー版が年1回の周期に変わり、各版は通常24か月サポートされます。公式のリリース方針、AngularJSのサポート終了、Signalsやzonelessへの移行をもとに、仕事の変化とキャリアの広げ方を解説します。</p>
+</a>
+<a class="card art-card" href="/media/skillsheet-basics/">
+  <span class="art-hub">スキルシート・面談</span>
+  <h3>フリーランスのスキルシートの書き方｜基本の構成とプロジェクト欄の例</h3>
+  <p>スキルシートは「基本情報・得意分野の要約・スキル一覧・プロジェクト経歴」の順で、1件ごとに役割と担当工程、成果を具体的に書くのが基本です。構成とプロジェクト欄の書き方の型を、架空の例で紹介します。</p>
+</a></div></section>
+</main>
+<footer class="site-foot">
+  <div class="wrap">
+    <strong>エージェントベストジョブ フリーランス</strong>
+    <div class="foot-links">
+      <a href="/">トップ</a>
+      <a href="/jobs/">案件を探す</a>
+      <a href="/media/">お役立ち記事</a>
+      <a href="https://airtable.com/appYkc36EvioYoL1A/pag6CZC4uJmxUcrXT/form" target="_blank" rel="noopener">ご登録（スキルシート・ご希望の条件）</a>
+      <a href="https://line.me/R/ti/p/@697nxhbt?oat_content=url&ts=08302134" target="_blank" rel="noopener" data-line-cta="footer">LINEで相談する</a>
+      <a href="/privacy.html">個人情報の取り扱い</a>
+      <a href="https://www.agent-best.net/company/">運営会社</a>
+    </div>
+    <div class="foot-links">
+      <a href="https://jobs.agent-best.net/">正社員の求人を探す（エージェントベストジョブ）</a>
+      <a href="https://skill.agent-best.net/">エージェントベストジョブ手に職</a>
+      <a href="https://www.agent-best.net/">エージェントベスト</a>
+    </div>
+    <p>運営：株式会社エージェントベスト（有料職業紹介事業 許可番号 13-ユ-316964）<br>〒106-0032 東京都港区六本木4-8-7 嶋田ビル5階</p>
+  </div>
+</footer>
+<script src="/assets/fav.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>C/C++エンジニアのスキルシートの書き方｜面談で評価される実績の見せ方｜エージェントベストジョブ フリーランス</title>
+<meta name="description" content="C/C++のスキルシートは、CとC++の経験を分け、用途と扱った層、使っていた規格の版とコンパイラー、性能改善や不具合の調査での役割を書くのが基本です。よくある書き方の失敗と、架空の記入例つきで解説します。">
+<link rel="canonical" href="https://freelance.agent-best.net/media/c-cpp-skillsheet/">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="エージェントベストジョブ フリーランス">
+<meta property="og:title" content="C/C++エンジニアのスキルシートの書き方｜面談で評価される実績の見せ方｜エージェントベストジョブ フリーランス">
+<meta property="og:description" content="C/C++のスキルシートは、CとC++の経験を分け、用途と扱った層、使っていた規格の版とコンパイラー、性能改善や不具合の調査での役割を書くのが基本です。よくある書き方の失敗と、架空の記入例つきで解説します。">
+<meta property="og:url" content="https://freelance.agent-best.net/media/c-cpp-skillsheet/">
+<meta property="og:image" content="https://freelance.agent-best.net/assets/ogp.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://freelance.agent-best.net/assets/ogp.png">
+<meta name="theme-color" content="#1E3A5F">
+<link rel="icon" href="/assets/favicon.ico">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="stylesheet" href="/assets/site.css">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1XXMP8Y1B4"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-1XXMP8Y1B4');
+document.addEventListener('click',e=>{const a=e.target.closest('[data-line-cta]');if(a)gtag('event','line_add_friend',{placement:a.dataset.lineCta,page_path:location.pathname});});</script>
+<script type="application/ld+json">[{"@context":"https://schema.org","@type":"Article","headline":"C/C++エンジニアのスキルシートの書き方｜面談で評価される実績の見せ方","description":"C/C++のスキルシートは、CとC++の経験を分け、用途と扱った層、使っていた規格の版とコンパイラー、性能改善や不具合の調査での役割を書くのが基本です。よくある書き方の失敗と、架空の記入例つきで解説します。","datePublished":"2026-10-29","dateModified":"2026-10-29","author":{"@type":"Organization","name":"株式会社エージェントベスト","url":"https://www.agent-best.net/"},"publisher":{"@type":"Organization","name":"株式会社エージェントベスト","logo":{"@type":"ImageObject","url":"https://freelance.agent-best.net/assets/logo.png"}},"mainEntityOfPage":"https://freelance.agent-best.net/media/c-cpp-skillsheet/"},{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"トップ","item":"https://freelance.agent-best.net/"},{"@type":"ListItem","position":2,"name":"お役立ち記事","item":"https://freelance.agent-best.net/media/"},{"@type":"ListItem","position":3,"name":"バックエンド開発","item":"https://freelance.agent-best.net/media/hub/backend/"},{"@type":"ListItem","position":4,"name":"C/C++エンジニアのスキルシートの書き方｜面談で評価される実績の見せ方"}]},{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"使っていた規格の版が分かりません。どう書けばよいですか？","acceptedAnswer":{"@type":"Answer","text":"ビルドの設定にある版の指定（-stdの指定など）やコンパイラーの版から、おおよその版が分かることがあります。はっきりしない場合は無理に書かず、「コンパイラーの版」と「使っていた主な書き方（スマートポインターの有無など）」を書くほうが、誤解を生みにくくなります。"}},{"@type":"Question","name":"守秘義務が厳しい金融系の案件は、どこまで書けますか？","acceptedAnswer":{"@type":"Answer","text":"社名や取引の中身は書かず、「取引系のサーバー処理」「データの受け渡し」のように業務を一般化して書くのが基本です。数値も相対的な表現にとどめます。契約で書けない範囲が決まっている場合は、その決まりを優先してください。"}},{"@type":"Question","name":"面談で聞かれやすい点に、シートでどう備えればよいですか？","acceptedAnswer":{"@type":"Answer","text":"シートに書いた性能改善や不具合の調査は、面談で掘り下げられることが多い部分です。各行について、なぜその方法を選んだかを一言で説明できるか確かめておきましょう。面談全般の準備は面談でよく聞かれる質問の記事をご覧ください。"}}]}]</script>
+</head>
+<body>
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="/"><img src="/assets/mark.png" alt="" width="28" height="28"><span>エージェントベストジョブ フリーランス<small>フリーランスのエンジニア・コンサル向け案件紹介</small></span></a>
+    <nav class="head-nav" aria-label="メニュー">
+      <a class="link" href="/jobs/">案件を探す</a>
+      <a class="link" href="/media/">お役立ち記事</a>
+      <a class="link keep" href="/mypage/" aria-label="気になる案件">☆ 気になる<span class="fav-count" data-fav-count hidden></span></a>
+      <a class="btn btn-primary btn-sm" href="https://airtable.com/appYkc36EvioYoL1A/pag6CZC4uJmxUcrXT/form" target="_blank" rel="noopener">無料で登録</a>
+    </nav>
+  </div>
+</header>
+<main class="wrap narrow article">
+  <p class="crumbs"><a href="/">トップ</a> › <a href="/media/">お役立ち記事</a> › <a href="/media/hub/backend/">バックエンド開発</a></p>
+  <a class="art-hub" href="/media/hub/backend/">バックエンド開発</a>
+  <h1 class="art-title">C/C++エンジニアのスキルシートの書き方｜面談で評価される実績の見せ方</h1>
+  <p class="note">公開 2026-10-29　監修：株式会社エージェントベスト</p>
+  <nav class="toc" aria-label="目次"><strong>目次</strong><ol><li><a href="#s1">「C/C++ 15年」とまとめず、言語と用途を分ける</a></li><li><a href="#s2">どの層を扱ったかを書く</a></li><li><a href="#s3">性能と不具合の調査は「何をしたか」を順に書く</a></li><li><a href="#s4">古いコードを扱った経験は、遠慮せずに書く</a></li><li><a href="#s5">プロジェクト欄の記入例（架空）</a></li><li><a href="#s6">よくある書き方の失敗</a></li><li><a href="#s7">個人の成果物やOSSの扱い</a></li><li><a href="#s8">よくある質問</a></li></ol></nav>
+  <div class="art-body">
+<p>C/C++エンジニアのスキルシートは、<strong>CとC++の経験を分けて書き、どの用途で、どの層を扱ったか、使っていた規格の版とコンパイラー、性能改善や不具合の調査で何を担ったか</strong>を示すのが基本です。C/C++の案件は用途が広く、読み手は「この人の経験は、うちの案件のどこに当てはまるか」を探しながら読みます。</p>
+<p>全体の構成は<a href="/media/skillsheet-basics/">スキルシートの基本</a>で解説しています。この記事では、C/C++のエンジニアが書くときに押さえたい点に絞って説明します。</p>
+<h2 id="s1">「C/C++ 15年」とまとめず、言語と用途を分ける</h2>
+<p>C/C++のシートでよく見るのが、「C/C++ 15年」のように言語をまとめる書き方です。これでは、Cが中心なのかC++が中心なのか、どの用途の経験なのかが分かりません。</p>
+<div class="table-wrap"><table><thead><tr><th>書き方</th><th>読み手の受け取り方</th></tr></thead><tbody><tr><td>C/C++ 15年</td><td>何をしてきた人か分からない</td></tr><tr><td>C 9年（Linux上の通信ミドルウェアの開発・保守）、C++ 6年（取引系サーバーの開発。直近3年は性能改善を担当）</td><td>用途と層、直近の役割まで分かる</td></tr></tbody></table></div>
+<p>CとC++は、案件の側では別の経験として見られることが多くあります。スキル一覧の冒頭で、言語ごとの期間と主な用途を一行ずつ書いておくと、読み手が合う案件を判断しやすくなります。</p>
+<h3>規格の版とコンパイラーを書く</h3>
+<p>C++の国際規格は版を重ねており、Standard C++ Foundation（isocpp.org）では、2026年10月時点の最新の規格はISO/IEC 14882:2024（C++23）とされています。案件によって使う版は違うため、プロジェクトごとに「C++17」「C++11」のように使っていた版と、コンパイラー（GCC、Clang、Visual C++など）とそのおおよその版を書いておくと、どの時期の書き方に慣れているかが伝わります。版の更新を担当した場合は、その旨も一言添えます。</p>
+<h3>スキル一覧は「実務で使った深さ」で書き分ける</h3>
+<p>スキル一覧に道具やライブラリを並べるときは、名前だけでなく、実務での使い方の深さを添えます。たとえば「デバッガー：コアダンプの解析まで自分で行える」「CMake：既存の構成の修正ができる」「プロファイラー：測定結果から原因を絞り込める」のように、何ができるかを一言で書くと、読み手が参画後の姿を思い描きやすくなります。</p>
+<h2 id="s2">どの層を扱ったかを書く</h2>
+<p>C/C++の経験は、同じ用途でも、扱った層によって意味が変わります。プロジェクト欄には、担当した部分がどの層にあたるかを書き添えます。</p>
+<ul><li><strong>アプリケーションの層</strong>：業務の処理、画面、ほかのシステムとの連携</li><li><strong>ミドルウェア・ライブラリの層</strong>：通信、データの保存、ほかのプログラムから呼ばれる部品</li><li><strong>OSに近い層</strong>：プロセスやスレッド、メモリ、入出力を直接扱う部分</li></ul>
+<p>あわせて、動いていたOS（Linux、Windows、UNIXなど）と、ほかの言語との境目（C++からCを呼ぶ、PythonやC#から呼ばれるなど）を書いておくと、参画先の環境との近さが伝わります。</p>
+<h2 id="s3">性能と不具合の調査は「何をしたか」を順に書く</h2>
+<p>C/C++の案件では、性能改善と不具合の調査が成果として期待されることが多くあります。「性能改善を担当」「障害対応」だけではほとんど伝わらないため、次の順で書きます。</p>
+<ol><li><strong>何が問題だったか</strong>：処理の遅れ、遅れのばらつき、メモリの増加、異常終了など</li><li><strong>どう確かめたか</strong>：プロファイラー、デバッガー、コアダンプの解析、メモリやスレッドの検査ツール、負荷試験など</li><li><strong>何を変えたか</strong>：データ構造、メモリの確保の仕方、スレッドの分け方、処理の順序など</li><li><strong>どう変わったか</strong>：前後の比較</li></ol>
+<p>社外に出せない数値は、「処理時間がおおむね3分の1に」「再現しなかった異常終了の原因を特定し、以後の報告がなくなった」のように、相対的な表現で十分です。書いてよい範囲は<a href="/media/confidentiality-in-skillsheet/">スキルシートと守秘義務の記事</a>をご覧ください。</p>
+<h2 id="s4">古いコードを扱った経験は、遠慮せずに書く</h2>
+<p>長く使われてきたコードの保守や、古い書き方のコードを段階的に整えた経験は、C/C++の案件ではよく求められます。「保守」と一言で済ませず、次のような内容を書き出すと、慎重さと判断の力が伝わります。</p>
+<ul><li>設計書の少ないコードを、どう読み解いて影響範囲を見極めたか</li><li>テストのない部分を、どう確かめてから直したか</li><li>警告や静的解析の指摘を、どの順で減らしたか</li><li>コンパイラーや規格の版を上げるときに、どんな問題に対応したか</li></ul>
+<aside class="box box-view"><p class="box-label">エージェントベストの見解</p><p>C/C++の案件をご紹介していると、面談で評価されやすいのは、シートの成果の行を「何が問題で、どう確かめ、何を変え、どう変わったか」の順で説明できる方です。シートがこの順で書かれていると、面談でもそのまま話を広げやすくなります。逆に、ツールやライブラリの名前が多く並んでいても、自分の判断が見えないシートは、読み手が評価に迷いがちです。</p></aside>
+<h2 id="s5">プロジェクト欄の記入例（架空）</h2>
+<p>次は書き方の型を示すための<strong>架空の例</strong>です。実在の案件・企業・人物ではありません。業種や規模はぼかしてあります。ご自身の経験に置き換えてください。</p>
+<blockquote><p><strong>期間</strong>：○年○月〜○年○月（2年程度）<br><strong>案件概要</strong>：取引データを受け渡すサーバー処理の改修と性能改善（架空の例）<br><strong>規模・立場</strong>：開発メンバー十数名のうち、性能改善を担当する3名のまとめ役<br><strong>言語・版</strong>：C++17（一部に古い版の書き方のコードが残る）、周辺のツールはPython<br><strong>環境</strong>：Linux、GCC、CMake、ユニットテストの仕組み、静的解析の道具<br><strong>扱った層</strong>：ミドルウェアの層（受信したデータを振り分ける部分）<br><strong>担当工程</strong>：調査、設計、実装、試験、リリース後の監視<br><strong>工夫・成果</strong>：混み合う時間帯に遅れが大きくなる問題について、プロファイラーで原因をメモリの確保の多さに絞り込み、確保の仕方を見直した。遅れのばらつきがおおむね半分になった。変更前後の比較の手順を文書にまとめ、チームの試験の流れに組み込んだ</p></blockquote>
+<p>この例では、言語と版、扱った層、問題から成果までの流れ、チームでの立場が一度に読み取れる形にしてあります。Cが中心の保守の案件であれば、「案件概要」に保守してきた期間と範囲を、「工夫・成果」に影響範囲の見極め方やテストの足し方を書くと、同じ型で経験を示せます。</p>
+<h2 id="s6">よくある書き方の失敗</h2>
+<p>C/C++のシートで、読み手が判断に迷いやすい書き方をまとめます。</p>
+<div class="table-wrap"><table><thead><tr><th>よくある書き方</th><th>読み手が困る点</th><th>直し方</th></tr></thead><tbody><tr><td>「C/C++、Linux、Windows」と並べるだけ</td><td>どの組み合わせで何をしたか分からない</td><td>プロジェクトごとに言語・OS・用途を書く</td></tr><tr><td>「詳細設計〜結合試験」と工程だけ書く</td><td>自分が何を判断したか見えない</td><td>工程ごとに、自分が決めたことを一行書く</td></tr><tr><td>「障害対応」とだけ書く</td><td>運用の窓口なのか、原因の調査なのか分からない</td><td>原因を突き止めたのか、手順どおり対応したのかを書き分ける</td></tr><tr><td>期間の長いプロジェクトを一行で済ませる</td><td>役割の変化が伝わらない</td><td>前半と後半で担当が変わったなら分けて書く</td></tr></tbody></table></div>
+<p>特に、同じ製品を長く担当してきた方は、10年分を一つのプロジェクトとして書いてしまいがちです。実装から調査、方針の決定へと役割が変わってきた場合は、時期ごとに分けて書くと、成長の流れが伝わります。</p>
+<h2 id="s7">個人の成果物やOSSの扱い</h2>
+<p>公開しているライブラリや、OSSへの修正の提案は、C/C++のコードを書けることを示す補足になります。載せる場合は、何を解決するものか、取り込まれた修正の内容、テストの有無を添えると判断材料になります。ただし、業務委託の案件では実務の経験が中心に見られるため、後ろの方に置くのが自然です。扱い方は<a href="/media/portfolio-github/">ポートフォリオやGitHubの記事</a>で解説しています。</p>
+<aside class="box box-view"><p class="box-label">エージェントベストの見解</p><p>当社では、経歴はご本人の了承を得た案件にだけ、氏名・連絡先を伏せてご提案しています。C/C++の案件は用途によって読み手が見たい経験が違うため、応募する案件に合わせて、どの用途の経験を先に書くかを入れ替えておくことをおすすめします。</p></aside>
+<aside class="box box-caution"><p class="box-label">注意</p><p>学習で触れただけの規格の新しい機能や、個人で試したライブラリを、実務で使ったものと同じ欄に並べるのは避けてください。面談で使い方を深く聞かれたときに答えに詰まると、ほかの記載の信頼まで下がることがあります。実務と個人の経験は欄を分けて書きましょう。</p></aside>
+<aside class="box box-point"><p class="box-label">ポイント</p><ul><li>「C/C++」とまとめず、CとC++の期間と主な用途を分けて書く</li><li>プロジェクトごとに、規格の版、コンパイラー、OS、扱った層を書く</li><li>性能と不具合の調査は「問題・確かめ方・変えたこと・前後の比較」の順で書く</li><li>古いコードの保守も、読み解き方と確かめ方まで書けば強みになる</li></ul></aside>
+<h2 id="s8">よくある質問</h2>
+<h3>使っていた規格の版が分かりません。どう書けばよいですか？</h3>
+<p>ビルドの設定にある版の指定（-stdの指定など）やコンパイラーの版から、おおよその版が分かることがあります。はっきりしない場合は無理に書かず、「コンパイラーの版」と「使っていた主な書き方（スマートポインターの有無など）」を書くほうが、誤解を生みにくくなります。</p>
+<h3>守秘義務が厳しい金融系の案件は、どこまで書けますか？</h3>
+<p>社名や取引の中身は書かず、「取引系のサーバー処理」「データの受け渡し」のように業務を一般化して書くのが基本です。数値も相対的な表現にとどめます。契約で書けない範囲が決まっている場合は、その決まりを優先してください。</p>
+<h3>面談で聞かれやすい点に、シートでどう備えればよいですか？</h3>
+<p>シートに書いた性能改善や不具合の調査は、面談で掘り下げられることが多い部分です。各行について、なぜその方法を選んだかを一言で説明できるか確かめておきましょう。面談全般の準備は<a href="/media/interview-questions/">面談でよく聞かれる質問の記事</a>をご覧ください。</p>
+  </div>
+  <section class="sources"><h2>参考にした公的情報・資料</h2><ul><li><a href="https://isocpp.org/std/the-standard" target="_blank" rel="noopener nofollow">The Standard（Standard C++ Foundation / isocpp.org）</a></li></ul>
+  <p class="note">記事の内容は公開日時点の情報にもとづきます。制度や税率は変わることがあるため、手続きの前に必ず各機関の最新情報をご確認ください。</p></section>
+  <div class="cta-band">
+  <h2>条件に合う案件だけ、知りたい方へ</h2>
+  <p>ご登録は無料です。条件に合う案件だけを、ご本人の了承を得てからご提案します。</p>
+  <div class="cta-row">
+    <a class="btn btn-primary" href="https://airtable.com/appYkc36EvioYoL1A/pag6CZC4uJmxUcrXT/form" target="_blank" rel="noopener">無料で登録する</a>
+    <a class="btn btn-ghost" href="/jobs/">案件を探す</a>
+  </div>
+</div>
+  <section class="related"><h2>あわせて読みたい</h2><div class="grid g2"><a class="card art-card" href="/media/c-cpp-rate/">
+  <span class="art-hub">バックエンド開発</span>
+  <h3>C/C++エンジニアのフリーランス案件｜報酬の決まり方と単価を上げる考え方</h3>
+  <p>C/C++エンジニアの報酬は、何を作る案件か、性能と品質への責任の重さ、既存コードを読み解いて直せるか、チームでの立ち位置、稼働条件と商流で決まり、案件ごとに大きく変わります。上がる場面・伸びにくい場面と交渉材料を解説します。</p>
+</a>
+<a class="card art-card" href="/media/c-cpp-how-to/">
+  <span class="art-hub">バックエンド開発</span>
+  <h3>C/C++エンジニアがフリーランスになるには｜必要な経験と独立までの進め方</h3>
+  <p>C/C++でフリーランスになるには、本番で動くC/C++のコードを設計・保守した経験と、業務系・金融系・ミドルウェアなど狙う用途の土台となる経験が求められます。経験の目安、会社員のうちの準備、独立までの流れを解説します。</p>
+</a>
+<a class="card art-card" href="/media/c-cpp-skills/">
+  <span class="art-hub">バックエンド開発</span>
+  <h3>C/C++エンジニアのフリーランス案件で求められるスキルと経験</h3>
+  <p>C/C++の案件では、メモリとリソースの管理、規格の版に応じた書き方、性能の測り方、不具合の調査、ビルドとテストの仕組みが共通して問われます。業務系・金融系・ミドルウェア・ライブラリの用途別と、経験の段階別に解説します。</p>
+</a>
+<a class="card art-card" href="/media/c-cpp-remote/">
+  <span class="art-hub">バックエンド開発</span>
+  <h3>C/C++エンジニアのフリーランスはリモートで働ける？案件の傾向と探し方</h3>
+  <p>C/C++エンジニアは、ライブラリやミドルウェア、Linux上のサーバー処理の開発などでリモートの案件があります。一方で、金融系や閉じたネットワークの案件、実機を使う案件は出社を含みやすくなります。用途ごとの傾向、探し方、参画前の確認点を解説します。</p>
+</a>
+<a class="card art-card" href="/media/c-cpp-future/">
+  <span class="art-hub">バックエンド開発</span>
+  <h3>C/C++エンジニアのフリーランスの将来性とキャリアの広げ方</h3>
+  <p>C/C++は国際規格の改訂とコンパイラーの更新が続き、既存の資産も大きいため、保守・改善の仕事は続くと考えられます。メモリ安全性をめぐる公的な動きも踏まえ、公式の動向と経験別のキャリアの広げ方を解説します。</p>
+</a>
+<a class="card art-card" href="/media/skillsheet-basics/">
+  <span class="art-hub">スキルシート・面談</span>
+  <h3>フリーランスのスキルシートの書き方｜基本の構成とプロジェクト欄の例</h3>
+  <p>スキルシートは「基本情報・得意分野の要約・スキル一覧・プロジェクト経歴」の順で、1件ごとに役割と担当工程、成果を具体的に書くのが基本です。構成とプロジェクト欄の書き方の型を、架空の例で紹介します。</p>
+</a></div></section>
+</main>
+<footer class="site-foot">
+  <div class="wrap">
+    <strong>エージェントベストジョブ フリーランス</strong>
+    <div class="foot-links">
+      <a href="/">トップ</a>
+      <a href="/jobs/">案件を探す</a>
+      <a href="/media/">お役立ち記事</a>
+      <a href="https://airtable.com/appYkc36EvioYoL1A/pag6CZC4uJmxUcrXT/form" target="_blank" rel="noopener">ご登録（スキルシート・ご希望の条件）</a>
+      <a href="https://line.me/R/ti/p/@697nxhbt?oat_content=url&ts=08302134" target="_blank" rel="noopener" data-line-cta="footer">LINEで相談する</a>
+      <a href="/privacy.html">個人情報の取り扱い</a>
+      <a href="https://www.agent-best.net/company/">運営会社</a>
+    </div>
+    <div class="foot-links">
+      <a href="https://jobs.agent-best.net/">正社員の求人を探す（エージェントベストジョブ）</a>
+      <a href="https://skill.agent-best.net/">エージェントベストジョブ手に職</a>
+      <a href="https://www.agent-best.net/">エージェントベスト</a>
+    </div>
+    <p>運営：株式会社エージェントベスト（有料職業紹介事業 許可番号 13-ユ-316964）<br>〒106-0032 東京都港区六本木4-8-7 嶋田ビル5階</p>
+  </div>
+</footer>
+<script src="/assets/fav.js" defer></script>
+</body>
+</html>

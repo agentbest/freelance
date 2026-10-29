@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Next.jsエンジニアのフリーランス案件で求められるスキルと経験｜エージェントベストジョブ フリーランス</title>
+<meta name="description" content="Next.jsの案件では、Server ComponentsとClient Componentsの境目の引き方、データの取得と更新、描画方式とキャッシュの判断、Server Actionsの安全な書き方、配信先の知識が問われます。分野ごと・経験の段階ごとに整理します。">
+<link rel="canonical" href="https://freelance.agent-best.net/media/nextjs-skills/">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="エージェントベストジョブ フリーランス">
+<meta property="og:title" content="Next.jsエンジニアのフリーランス案件で求められるスキルと経験｜エージェントベストジョブ フリーランス">
+<meta property="og:description" content="Next.jsの案件では、Server ComponentsとClient Componentsの境目の引き方、データの取得と更新、描画方式とキャッシュの判断、Server Actionsの安全な書き方、配信先の知識が問われます。分野ごと・経験の段階ごとに整理します。">
+<meta property="og:url" content="https://freelance.agent-best.net/media/nextjs-skills/">
+<meta property="og:image" content="https://freelance.agent-best.net/assets/ogp.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://freelance.agent-best.net/assets/ogp.png">
+<meta name="theme-color" content="#1E3A5F">
+<link rel="icon" href="/assets/favicon.ico">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="stylesheet" href="/assets/site.css">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1XXMP8Y1B4"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-1XXMP8Y1B4');
+document.addEventListener('click',e=>{const a=e.target.closest('[data-line-cta]');if(a)gtag('event','line_add_friend',{placement:a.dataset.lineCta,page_path:location.pathname});});</script>
+<script type="application/ld+json">[{"@context":"https://schema.org","@type":"Article","headline":"Next.jsエンジニアのフリーランス案件で求められるスキルと経験","description":"Next.jsの案件では、Server ComponentsとClient Componentsの境目の引き方、データの取得と更新、描画方式とキャッシュの判断、Server Actionsの安全な書き方、配信先の知識が問われます。分野ごと・経験の段階ごとに整理します。","datePublished":"2026-10-29","dateModified":"2026-10-29","author":{"@type":"Organization","name":"株式会社エージェントベスト","url":"https://www.agent-best.net/"},"publisher":{"@type":"Organization","name":"株式会社エージェントベスト","logo":{"@type":"ImageObject","url":"https://freelance.agent-best.net/assets/logo.png"}},"mainEntityOfPage":"https://freelance.agent-best.net/media/nextjs-skills/"},{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"トップ","item":"https://freelance.agent-best.net/"},{"@type":"ListItem","position":2,"name":"お役立ち記事","item":"https://freelance.agent-best.net/media/"},{"@type":"ListItem","position":3,"name":"フロントエンド開発","item":"https://freelance.agent-best.net/media/hub/frontend/"},{"@type":"ListItem","position":4,"name":"Next.jsエンジニアのフリーランス案件で求められるスキルと経験"}]},{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Pages Routerの知識はもう不要ですか？","acceptedAnswer":{"@type":"Answer","text":"不要ではありません。Pages Routerは公式に引き続きサポートされており、Pages Routerで動く既存のサービスの保守や、App Routerへの移行の案件があります。移行では両方の書き方を理解している必要があるため、Pages Routerの知識が強みになる場面もあります。"}},{"@type":"Question","name":"Cache Componentsを使ったことがないと不利ですか？","acceptedAnswer":{"@type":"Answer","text":"新しい考え方なので、使った経験がある人はまだ多くありません。案件では、以前の書き方で作られたアプリも多く残っています。まずはどちらの考え方でも「何がどこでキャッシュされるか」を説明できるようにし、個人のアプリなどで新しい書き方に触れておくと、面談で話せる範囲が広がります。"}},{"@type":"Question","name":"インフラの知識はどこまで必要ですか？","acceptedAnswer":{"@type":"Answer","text":"画面の実装が中心の案件では、配信先の細かい設定まで求められないことが多いです。ただ、構成を決める役割では、配信先によって使える機能が変わることを理解している必要があります。コンテナで動かす案件では、複数台での動かし方やキャッシュの共有まで求められることがあります。"}}]}]</script>
+</head>
+<body>
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="/"><img src="/assets/mark.png" alt="" width="28" height="28"><span>エージェントベストジョブ フリーランス<small>フリーランスのエンジニア・コンサル向け案件紹介</small></span></a>
+    <nav class="head-nav" aria-label="メニュー">
+      <a class="link" href="/jobs/">案件を探す</a>
+      <a class="link" href="/media/">お役立ち記事</a>
+      <a class="link keep" href="/mypage/" aria-label="気になる案件">☆ 気になる<span class="fav-count" data-fav-count hidden></span></a>
+      <a class="btn btn-primary btn-sm" href="https://airtable.com/appYkc36EvioYoL1A/pag6CZC4uJmxUcrXT/form" target="_blank" rel="noopener">無料で登録</a>
+    </nav>
+  </div>
+</header>
+<main class="wrap narrow article">
+  <p class="crumbs"><a href="/">トップ</a> › <a href="/media/">お役立ち記事</a> › <a href="/media/hub/frontend/">フロントエンド開発</a></p>
+  <a class="art-hub" href="/media/hub/frontend/">フロントエンド開発</a>
+  <h1 class="art-title">Next.jsエンジニアのフリーランス案件で求められるスキルと経験</h1>
+  <p class="note">公開 2026-10-29　監修：株式会社エージェントベスト</p>
+  <nav class="toc" aria-label="目次"><strong>目次</strong><ol><li><a href="#s1">Next.jsの案件で問われるスキルの全体像</a></li><li><a href="#s2">構成：境目をどこに引くか</a></li><li><a href="#s3">データ：取得と更新の置き場所</a></li><li><a href="#s4">描画とキャッシュ：ページごとに決める</a></li><li><a href="#s5">安全性：サーバー側の入口を守る</a></li><li><a href="#s6">配信と運用：どこで動かすか</a></li><li><a href="#s7">経験の段階ごとに求められること</a></li><li><a href="#s8">スキルシートと面談での示し方</a></li><li><a href="#s9">よくある質問</a></li></ol></nav>
+  <div class="art-body">
+<p>Next.jsのフリーランス案件で問われるのは、<strong>サーバーで動く部分とブラウザで動く部分の境目をどこに引くか、データをどこで取ってどう更新するか、ページごとの描画方式とキャッシュをどう決めるか、サーバー側の処理を安全に書けるか、どこにどう配信するか</strong>の5つです。Reactで画面を書く力は前提で、その上の「サーバーをまたぐ判断」ができるかが見られます。</p>
+<p>この記事では、5つの分野ごとに案件で問われる中身を整理し、経験の段階ごとの目安を示します。Reactのコンポーネント設計や状態管理は<a href="/media/react-skills/">Reactの案件で求められるスキルの記事</a>、型の設計は<a href="/media/typescript-skills/">TypeScriptの案件で求められるスキルの記事</a>で扱っているので、ここではNext.jsに固有の部分に絞ります。</p>
+<h2 id="s1">Next.jsの案件で問われるスキルの全体像</h2>
+<div class="table-wrap"><table><thead><tr><th>分野</th><th>主な中身</th><th>面談で聞かれやすいこと</th></tr></thead><tbody><tr><td>構成</td><td>App Router、レイアウト、Server ComponentsとClient Componentsの分け方</td><td>どのコンポーネントをブラウザ側にしたか、その理由</td></tr><tr><td>データ</td><td>サーバーでの取得、Server Actionsでの更新、更新後の再検証</td><td>取得を画面のどこに置いたか、更新後に表示をどう新しくしたか</td></tr><tr><td>描画とキャッシュ</td><td>事前に作るページとリクエスト時に作るページ、Cache Components</td><td>古い表示が残ったときに何を調べたか</td></tr><tr><td>安全性</td><td>Server Actionsの権限確認と入力検証、クライアントに渡すデータの絞り込み</td><td>誰でも呼べる入口をどう守ったか</td></tr><tr><td>配信と運用</td><td>配信先の選択、静的な書き出しの制約、版上げ</td><td>どこで動かし、何に困ったか</td></tr></tbody></table></div>
+<h2 id="s2">構成：境目をどこに引くか</h2>
+<p>App Routerでは、コンポーネントは何も指定しなければサーバーで動き、<code>&quot;use client&quot;</code>を付けたものがブラウザでも動きます。案件で見られるのは、<strong>ブラウザ側に回す範囲をできるだけ小さく保てるか</strong>です。ボタンやフォームなど操作が要る部分だけをClient Componentにし、データの取得や重い処理はサーバー側に残すと、ブラウザに送るJavaScriptが減ります。</p>
+<p>もう一つは、レイアウトの組み方です。共通のヘッダーや画面の枠をレイアウトにまとめ、ページごとの読み込み中の表示やエラー表示をどこに置くかを決めます。既存の案件に入ったときは、この構成を短い時間で読み取れるかも問われます。</p>
+<h2 id="s3">データ：取得と更新の置き場所</h2>
+<h3>取得はサーバー側に寄せる</h3>
+<p>App Routerでは、Server Componentの中で直接データを取ってこられます。便利な一方、取得処理が画面のあちこちに散らばると、権限の確認が漏れやすくなります。Next.jsの公式ブログは、新しいプロジェクトではデータへのアクセスを一か所の層にまとめ、そこで利用者の権限を確かめてから返す形を勧めています。<strong>取得の処理をどこに集めたか</strong>を説明できると、構成を任せられる人と見られやすくなります。</p>
+<h3>更新後の表示を新しくする</h3>
+<p>フォームの送信などの更新はServer Actionsで書くことが多くなっています。Next.js 16では、更新した直後にその内容を読み直す<code>updateTag()</code>や、キャッシュしていないデータだけを新しくする<code>refresh()</code>が加わり、<code>revalidateTag()</code>は第2引数にキャッシュの寿命の指定が要るように変わりました（Next.js公式ブログ、2025年10月21日）。どの方法で表示を新しくしたか、なぜそれを選んだかは、面談でよく掘り下げられる点です。</p>
+<aside class="box box-view"><p class="box-label">エージェントベストの見解</p><p>Next.jsの案件をご紹介していると、面談で差がつきやすいのは「更新したのに画面が古いままだった」という場面への向き合い方です。キャッシュのどの層が効いていたかを順に調べ、直し方を説明できる方は、構成を任せられる人として受け止められやすい傾向があります。経験した不具合を一つ取り上げ、原因と直し方を話せるよう準備しておくことをおすすめします。</p></aside>
+<h2 id="s4">描画とキャッシュ：ページごとに決める</h2>
+<p>Next.jsでは、ビルド時に作っておくページ、リクエストのたびに作るページ、静的な部分と動的な部分を一つのページで組み合わせる形を使い分けます。</p>
+<p>Next.js 16で入ったCache Componentsは、<code>&quot;use cache&quot;</code>で指定した部分だけをキャッシュする仕組みで、以前の暗黙のキャッシュとは考え方が逆です。Next.js 16.4の公式ブログでは、Cache Componentsがすべてのアプリに勧められ、新しく作るアプリでは最初から有効になると案内されています（2026年10月時点）。16.4では、ページが静的であることをビルド時に保証する<code>ensureStatic</code>も加わりました。</p>
+<p>案件では、新しい考え方で作られたアプリと、以前の書き方のアプリの両方に出会います。<strong>どちらの考え方でも、何がどこでキャッシュされているかを説明できること</strong>が求められます。</p>
+<h2 id="s5">安全性：サーバー側の入口を守る</h2>
+<p>Next.jsの公式ブログでは、<code>&quot;use server&quot;</code>を付けた関数は、ブラウザから呼び出せる入口になると説明されています。そのため、関数の最初で利用者が実行してよいかを確かめ、引数の中身を検証する必要があります。TypeScriptの型は実行時には効かないため、検証の仕組みを別に持つことになります。</p>
+<p>また、Server ComponentからClient Componentに渡したデータはブラウザに届きます。利用者の情報をまるごと渡さず、画面に必要な項目だけに絞ることも、レビューで見られる点です。サーバー側の処理の安全性やNode.jsの依存パッケージの扱いは、<a href="/media/nodejs-skills/">Node.jsの案件で求められるスキルの記事</a>が参考になります。</p>
+<aside class="box box-caution"><p class="box-label">注意</p><p>Next.jsでは、画面の部品とサーバーの処理が同じファイルの近くに並ぶため、画面の担当のつもりでサーバー側の処理を書いていることがあります。Server Actionsを書く案件では、権限の確認と入力の検証を誰が責任を持つのか、チームの決まりを参画の最初に確かめておきましょう。</p></aside>
+<h2 id="s6">配信と運用：どこで動かすか</h2>
+<p>公式ドキュメントでは、配信方法としてNode.jsのサーバー、Dockerのコンテナ、静的な書き出し、各プラットフォーム向けのアダプターが挙げられています。Node.jsのサーバーとコンテナはすべての機能に対応しますが、静的な書き出しでは、Cookieの読み取り、リダイレクトやリライト、Server Actions、既定の画像最適化など、サーバーが要る機能は使えません。</p>
+<p>配信先によって使える機能が変わるため、<strong>構成を決める段階で配信先の制約を考えに入れられるか</strong>が、設計を任される人の条件になります。コンテナで複数台動かす場合のキャッシュの共有など、インフラ寄りの知識が求められる案件もあります。</p>
+<h2 id="s7">経験の段階ごとに求められること</h2>
+<div class="table-wrap"><table><thead><tr><th>段階</th><th>求められること</th></tr></thead><tbody><tr><td>実務が浅い</td><td>既存の構成に沿ってページと部品を作れる。Server ComponentとClient Componentの違いを説明できる</td></tr><tr><td>機能を任されている</td><td>データの取得と更新を一通り設計できる。古い表示が残ったときに原因を調べられる。Server Actionsで権限確認と検証を書ける</td></tr><tr><td>構成や方針を決める</td><td>ルーティングとレイアウトの全体を決められる。描画方式とキャッシュの方針を立てられる。配信先を選び、版上げの計画を立てられる</td></tr></tbody></table></div>
+<p>浅い段階では、まず<strong>境目の判断</strong>を自分の言葉で説明できるようにするのが近道です。機能を任されている段階では、キャッシュの不具合を調べた経験が次の段階への材料になります。方針を決める段階では、技術の判断を発注元に説明する場面が増えます。</p>
+<p>テストの整え方は<a href="/media/test-automation-skills/">テスト自動化の記事</a>で扱っています。</p>
+<h2 id="s8">スキルシートと面談での示し方</h2>
+<p>Next.jsは版によって考え方が大きく変わるため、「Next.js、TypeScript」と並べるだけでは経験の中身が伝わりません。版、ルーター、配信先、そして上の5つの分野のどこで判断したかを書き分けると、読み手が任せられる範囲を判断しやすくなります。具体的な書き方は<a href="/media/nextjs-skillsheet/">Next.jsのスキルシートの記事</a>で解説しています。</p>
+<aside class="box box-view"><p class="box-label">エージェントベストの見解</p><p>当社では、経歴はご本人の了承を得た案件にだけ、氏名・連絡先を伏せて提案しています。Next.jsの案件は、画面の実装が中心のものと、構成やキャッシュの方針を任されるものとで、読み手が見る点が違います。応募する案件の役割に近い経験を、具体的な判断とあわせて伝えることをおすすめします。どの経験を前に出すか迷う場合は、ご質問いただければ確認します。</p></aside>
+<aside class="box box-point"><p class="box-label">ポイント</p><ul><li>Next.jsの案件では、構成・データ・描画とキャッシュ・安全性・配信の5分野が問われる</li><li>ブラウザ側に回す範囲を小さく保ち、取得の処理を一か所に集める考え方が評価されやすい</li><li>Server Actionsは外から呼べる入口として、権限確認と入力検証を書く</li><li>配信先によって使える機能が変わることを、構成の段階で考えに入れる</li></ul></aside>
+<h2 id="s9">よくある質問</h2>
+<h3>Pages Routerの知識はもう不要ですか？</h3>
+<p>不要ではありません。Pages Routerは公式に引き続きサポートされており、Pages Routerで動く既存のサービスの保守や、App Routerへの移行の案件があります。移行では両方の書き方を理解している必要があるため、Pages Routerの知識が強みになる場面もあります。</p>
+<h3>Cache Componentsを使ったことがないと不利ですか？</h3>
+<p>新しい考え方なので、使った経験がある人はまだ多くありません。案件では、以前の書き方で作られたアプリも多く残っています。まずはどちらの考え方でも「何がどこでキャッシュされるか」を説明できるようにし、個人のアプリなどで新しい書き方に触れておくと、面談で話せる範囲が広がります。</p>
+<h3>インフラの知識はどこまで必要ですか？</h3>
+<p>画面の実装が中心の案件では、配信先の細かい設定まで求められないことが多いです。ただ、構成を決める役割では、配信先によって使える機能が変わることを理解している必要があります。コンテナで動かす案件では、複数台での動かし方やキャッシュの共有まで求められることがあります。</p>
+  </div>
+  <section class="sources"><h2>参考にした公的情報・資料</h2><ul><li><a href="https://nextjs.org/blog/security-nextjs-server-components-actions" target="_blank" rel="noopener nofollow">How to Think About Security in Next.js（Next.js Blog）</a></li><li><a href="https://nextjs.org/blog/next-16" target="_blank" rel="noopener nofollow">Next.js 16（Next.js Blog）</a></li><li><a href="https://nextjs.org/blog/next-16-4" target="_blank" rel="noopener nofollow">Next.js 16.4（Next.js Blog）</a></li><li><a href="https://nextjs.org/docs/app/getting-started/deploying" target="_blank" rel="noopener nofollow">Deploying（Next.js Docs）</a></li><li><a href="https://nextjs.org/docs/app/guides/static-exports" target="_blank" rel="noopener nofollow">Static Exports（Next.js Docs）</a></li></ul>
+  <p class="note">記事の内容は公開日時点の情報にもとづきます。制度や税率は変わることがあるため、手続きの前に必ず各機関の最新情報をご確認ください。</p></section>
+  <div class="cta-band">
+  <h2>条件に合う案件だけ、知りたい方へ</h2>
+  <p>ご登録は無料です。条件に合う案件だけを、ご本人の了承を得てからご提案します。</p>
+  <div class="cta-row">
+    <a class="btn btn-primary" href="https://airtable.com/appYkc36EvioYoL1A/pag6CZC4uJmxUcrXT/form" target="_blank" rel="noopener">無料で登録する</a>
+    <a class="btn btn-ghost" href="/jobs/">案件を探す</a>
+  </div>
+</div>
+  <section class="related"><h2>あわせて読みたい</h2><div class="grid g2"><a class="card art-card" href="/media/nextjs-how-to/">
+  <span class="art-hub">フロントエンド開発</span>
+  <h3>Next.jsエンジニアがフリーランスになるには｜必要な経験と独立までの進め方</h3>
+  <p>Next.jsでフリーランスになるには、App Routerでサーバーとブラウザの役割を分けて画面を作った実務経験と、描画方式やデータ更新を自分で判断した経験が求められます。出身別の補い方、独立前の準備の順番、契約で確かめる点を解説します。</p>
+</a>
+<a class="card art-card" href="/media/nextjs-rate/">
+  <span class="art-hub">フロントエンド開発</span>
+  <h3>Next.jsエンジニアのフリーランス案件｜報酬の決まり方と単価を上げる考え方</h3>
+  <p>Next.jsエンジニアの報酬は、App Routerでの設計を任されるか、描画方式とキャッシュを決められるか、版上げや配信基盤まで担えるか、稼働条件と商流で決まり、案件ごとに大きく変わります。上下する要素と交渉材料を解説します。</p>
+</a>
+<a class="card art-card" href="/media/nextjs-skillsheet/">
+  <span class="art-hub">フロントエンド開発</span>
+  <h3>Next.jsエンジニアのスキルシートの書き方｜面談で評価される実績の見せ方</h3>
+  <p>Next.jsのスキルシートは、版とルーター、描画方式、配信先を構成としてそろえて書き、構成・データ・キャッシュ・移行のどこで判断したかを書き分けるのが基本です。架空の記入例とあわせて、移行や性能改善の書き方を紹介します。</p>
+</a>
+<a class="card art-card" href="/media/nextjs-remote/">
+  <span class="art-hub">フロントエンド開発</span>
+  <h3>Next.jsエンジニアのフリーランスはリモートで働ける？案件の傾向と探し方</h3>
+  <p>Next.jsの案件は、Webサービスの機能開発や版上げなどリモートで進めやすい仕事が多い一方、閉じたネットワークの業務システムや本番環境の操作を伴う仕事は出社や制約が出やすくなります。仕事の向き不向き、探し方、参画前の確認点を解説します。</p>
+</a>
+<a class="card art-card" href="/media/nextjs-future/">
+  <span class="art-hub">フロントエンド開発</span>
+  <h3>Next.jsエンジニアのフリーランスの将来性とキャリアの広げ方</h3>
+  <p>Next.jsは、Cache Componentsを次のメジャー版で標準にする方針、配信先を選べるアダプターの安定化、月1回ほどのセキュリティ更新の予告制など、公式の動きが続いています。2026年10月時点の公式発表から見た今後の仕事と広げ方を解説します。</p>
+</a>
+<a class="card art-card" href="/media/react-skills/">
+  <span class="art-hub">フロントエンド開発</span>
+  <h3>Reactエンジニアのフリーランス案件で求められるスキルと経験</h3>
+  <p>Reactのフリーランス案件では、TypeScriptでのコンポーネント設計、サーバーのデータと画面の状態を分けた状態管理、Next.jsなどのフレームワーク、テスト・性能・アクセシビリティの知識が見られます。案件で求められやすいスキルと経験の示し方を解説します。</p>
+</a></div></section>
+</main>
+<footer class="site-foot">
+  <div class="wrap">
+    <strong>エージェントベストジョブ フリーランス</strong>
+    <div class="foot-links">
+      <a href="/">トップ</a>
+      <a href="/jobs/">案件を探す</a>
+      <a href="/media/">お役立ち記事</a>
+      <a href="https://airtable.com/appYkc36EvioYoL1A/pag6CZC4uJmxUcrXT/form" target="_blank" rel="noopener">ご登録（スキルシート・ご希望の条件）</a>
+      <a href="https://line.me/R/ti/p/@697nxhbt?oat_content=url&ts=08302134" target="_blank" rel="noopener" data-line-cta="footer">LINEで相談する</a>
+      <a href="/privacy.html">個人情報の取り扱い</a>
+      <a href="https://www.agent-best.net/company/">運営会社</a>
+    </div>
+    <div class="foot-links">
+      <a href="https://jobs.agent-best.net/">正社員の求人を探す（エージェントベストジョブ）</a>
+      <a href="https://skill.agent-best.net/">エージェントベストジョブ手に職</a>
+      <a href="https://www.agent-best.net/">エージェントベスト</a>
+    </div>
+    <p>運営：株式会社エージェントベスト（有料職業紹介事業 許可番号 13-ユ-316964）<br>〒106-0032 東京都港区六本木4-8-7 嶋田ビル5階</p>
+  </div>
+</footer>
+<script src="/assets/fav.js" defer></script>
+</body>
+</html>
