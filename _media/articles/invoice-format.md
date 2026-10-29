@@ -7,7 +7,7 @@ tags: ["適格請求書","インボイス","請求書","記載事項","登録番
 related: ["invoice-basics","invoice-register-or-not","tax-included","gensen-choshu","seisan-haba","denshi-chobo","kan-i-kazei"]
 sources: [{"t":"No.6625 適格請求書等の記載事項（国税庁）","u":"https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6625.htm"},{"t":"インボイス制度の理解のために（国税庁・令和8年4月）","u":"https://www.nta.go.jp/taxes/shiraberu/zeimokubetsu/shohi/keigenzeiritsu/pdf/0020006-027.pdf"},{"t":"適格請求書に記載する消費税額等の端数処理（国税庁 インボイスQ&A）","u":"https://www.nta.go.jp/taxes/shiraberu/zeimokubetsu/shohi/keigenzeiritsu/pdf/qa/57.pdf"},{"t":"No.2795 原稿料や講演料等を支払ったとき（国税庁）","u":"https://www.nta.go.jp/taxes/shiraberu/taxanswer/gensen/2795.htm"}]
 ---
-適格請求書（インボイス）には、①発行する人の氏名と登録番号、②取引の年月日、③取引の内容、④税率ごとに分けた合計金額と適用税率、⑤税率ごとの消費税額、⑥受け取る事業者の名前、の6つを書きます。様式は決まっておらず、名称が「請求書」でなくても、手書きでも、PDFなどのデータでも、6つがそろっていれば適格請求書になります。
+適格請求書（インボイス）には、①発行する人の氏名と登録番号、②取引の年月日、③取引の内容、④税率ごとに分けた合計金額と適用税率、⑤税率ごとの消費税額、⑥受け取る事業者の名前、の6つを書きます。様式は決まっておらず、名称が「請求書」でなくても、手書きでも、PDFなどのデータでも、6つがそろっていれば適格請求書になります。PDFで送る請求書と、Peppolでやり取りするデジタルインボイスの違いは[電子インボイスの記事](/media/denshi-invoice/)で解説しています。
 
 消費税額の1円未満の端数は、1枚の請求書につき税率ごとに1回だけ処理します。この記事では、国税庁の資料をもとに、フリーランスの月額報酬の請求書を例に書き方を整理します（2026年10月時点）。
 
