@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>SREがフリーランスになるには｜必要な経験と独立までの進め方｜エージェントベストジョブ フリーランス</title>
+<meta name="description" content="SREとしてフリーランスになるには、SLOの設計や障害の振り返りなど、信頼性を数字で扱い開発チームと改善を進めた経験が必要です。案件の型、独立前に積む実績、外部から参画するときの進め方、オンコールの契約上の注意を解説します。">
+<link rel="canonical" href="https://freelance.agent-best.net/media/sre-how-to/">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="エージェントベストジョブ フリーランス">
+<meta property="og:title" content="SREがフリーランスになるには｜必要な経験と独立までの進め方｜エージェントベストジョブ フリーランス">
+<meta property="og:description" content="SREとしてフリーランスになるには、SLOの設計や障害の振り返りなど、信頼性を数字で扱い開発チームと改善を進めた経験が必要です。案件の型、独立前に積む実績、外部から参画するときの進め方、オンコールの契約上の注意を解説します。">
+<meta property="og:url" content="https://freelance.agent-best.net/media/sre-how-to/">
+<meta property="og:image" content="https://freelance.agent-best.net/assets/ogp.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://freelance.agent-best.net/assets/ogp.png">
+<meta name="theme-color" content="#1E3A5F">
+<link rel="icon" href="/assets/favicon.ico">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="stylesheet" href="/assets/site.css">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1XXMP8Y1B4"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-1XXMP8Y1B4');
+document.addEventListener('click',e=>{const a=e.target.closest('[data-line-cta]');if(a)gtag('event','line_add_friend',{placement:a.dataset.lineCta,page_path:location.pathname});});</script>
+<script type="application/ld+json">[{"@context":"https://schema.org","@type":"Article","headline":"SREがフリーランスになるには｜必要な経験と独立までの進め方","description":"SREとしてフリーランスになるには、SLOの設計や障害の振り返りなど、信頼性を数字で扱い開発チームと改善を進めた経験が必要です。案件の型、独立前に積む実績、外部から参画するときの進め方、オンコールの契約上の注意を解説します。","datePublished":"2026-10-29","dateModified":"2026-10-29","author":{"@type":"Organization","name":"株式会社エージェントベスト","url":"https://www.agent-best.net/"},"publisher":{"@type":"Organization","name":"株式会社エージェントベスト","logo":{"@type":"ImageObject","url":"https://freelance.agent-best.net/assets/logo.png"}},"mainEntityOfPage":"https://freelance.agent-best.net/media/sre-how-to/"},{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"トップ","item":"https://freelance.agent-best.net/"},{"@type":"ListItem","position":2,"name":"お役立ち記事","item":"https://freelance.agent-best.net/media/"},{"@type":"ListItem","position":3,"name":"インフラ・クラウド","item":"https://freelance.agent-best.net/media/hub/infra-cloud/"},{"@type":"ListItem","position":4,"name":"SREがフリーランスになるには｜必要な経験と独立までの進め方"}]},{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"SREの肩書きで働いた経験がなくても案件に応募できますか？","acceptedAnswer":{"@type":"Answer","text":"応募はできます。案件側が見るのは肩書きより、SLOの考え方、自動化、障害の振り返りなどを実務でどう扱ったかです。インフラ運用やバックエンド開発の中で、SREに近い取り組みをしていれば、その内容を具体的に整理して伝えましょう。"}},{"@type":"Question","name":"Kubernetesの経験は必須ですか？","acceptedAnswer":{"@type":"Answer","text":"案件によります。コンテナ基盤の整備が中心の案件では求められることが多い一方、可観測性や障害対応の仕組みづくりが中心の案件では、必須ではないこともあります。案件の型を見て、必要な経験を判断してください。"}},{"@type":"Question","name":"オンコールのない案件はありますか？","acceptedAnswer":{"@type":"Answer","text":"あります。可観測性の整備やプラットフォームづくりなど、改善が中心の案件では、オンコールを含まないこともあります。オンコールを受けたくない場合は、最初に条件として伝えておくと、合わない案件に時間を使わずに済みます。"}}]}]</script>
+</head>
+<body>
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="/"><img src="/assets/mark.png" alt="" width="28" height="28"><span>エージェントベストジョブ フリーランス<small>フリーランスのエンジニア・コンサル向け案件紹介</small></span></a>
+    <nav class="head-nav" aria-label="メニュー">
+      <a class="link" href="/jobs/">案件を探す</a>
+      <a class="link" href="/media/">お役立ち記事</a>
+      <a class="link keep" href="/mypage/" aria-label="気になる案件">☆ 気になる<span class="fav-count" data-fav-count hidden></span></a>
+      <a class="btn btn-primary btn-sm" href="https://airtable.com/appYkc36EvioYoL1A/pag6CZC4uJmxUcrXT/form" target="_blank" rel="noopener">無料で登録</a>
+    </nav>
+  </div>
+</header>
+<main class="wrap narrow article">
+  <p class="crumbs"><a href="/">トップ</a> › <a href="/media/">お役立ち記事</a> › <a href="/media/hub/infra-cloud/">インフラ・クラウド</a></p>
+  <a class="art-hub" href="/media/hub/infra-cloud/">インフラ・クラウド</a>
+  <h1 class="art-title">SREがフリーランスになるには｜必要な経験と独立までの進め方</h1>
+  <p class="note">公開 2026-10-29　監修：株式会社エージェントベスト</p>
+  <nav class="toc" aria-label="目次"><strong>目次</strong><ol><li><a href="#s1">SREの案件は名前が同じでも中身が違う</a></li><li><a href="#s2">SREの案件で問われる経験</a></li><li><a href="#s3">インフラ運用やバックエンドからSREを目指すとき</a></li><li><a href="#s4">外から参画するSREが気をつけること</a></li><li><a href="#s5">オンコールと契約の確認</a></li><li><a href="#s6">面談で聞かれやすいこと</a></li><li><a href="#s7">独立までの進め方</a></li><li><a href="#s8">よくある質問</a></li></ol></nav>
+  <div class="art-body">
+<p>SREとしてフリーランスになるには、<strong>サービスの信頼性を数字で定義し、障害から学んだことを開発チームと一緒に仕組みへ反映した経験</strong>が必要です。インフラを運用してきたことだけでは、SREの案件で求められる役割と合わないことがあります。</p>
+<p>一方で、「SRE」という名前の案件でも中身はさまざまです。独立の準備は、自分の経験がどの型の案件に近いかを見きわめ、足りない実績を在職中に補うところから始めると進めやすくなります。</p>
+<h2 id="s1">SREの案件は名前が同じでも中身が違う</h2>
+<p>SREの業務委託案件は、発注側がどんな課題を抱えているかで、仕事の中身が大きく変わります。</p>
+<div class="table-wrap"><table><thead><tr><th>案件の型</th><th>発注側の課題</th><th>主な仕事</th></tr></thead><tbody><tr><td>信頼性の改善</td><td>障害が多い、原因が分からない</td><td>SLOの設定、監視の見直し、障害の振り返りの仕組みづくり</td></tr><tr><td>可観測性の整備</td><td>ログやメトリクスが散らばっている</td><td>収集の設計、ダッシュボード、アラートの整理</td></tr><tr><td>プラットフォーム整備</td><td>開発チームごとにデプロイの方法が違う</td><td>コンテナ基盤、CI/CD、共通の仕組みづくり</td></tr><tr><td>SREチームの立ち上げ</td><td>運用を担う体制がない</td><td>役割の定義、オンコール体制、運用ルールの整備</td></tr><tr><td>運用寄りのSRE</td><td>既存の基盤を安定して回したい</td><td>監視、障害対応、定型作業の自動化</td></tr></tbody></table></div>
+<p>面談の前に、案件の説明から「どの課題を解決するために人を探しているのか」を読み取っておくと、自分の経験のどこを話すべきかが見えてきます。</p>
+<h2 id="s2">SREの案件で問われる経験</h2>
+<p>GoogleがまとめたSREの書籍『Site Reliability Engineering』では、サービスレベル目標（SLO）、トイル（繰り返しの手作業）の削減、オンコール、障害から学ぶポストモーテムの文化などが章として取り上げられています。案件の面談でも、これらを実務でどう扱ったかが問われます。</p>
+<h3>SLOを決めて運用した経験</h3>
+<p>「可用性を高めた」ではなく、何を指標にし、目標をどう決め、目標を割り込みそうなときに誰とどう判断したかを話せることが大切です。エラーバジェット（目標に対して許される失敗の幅）を使って、機能開発と信頼性の作業の優先順位を開発チームと話し合った経験は、SREらしい実績として評価されます。</p>
+<h3>トイルを減らした経験</h3>
+<p>手作業で繰り返していた運用を、どう見つけ、どう自動化し、どれだけ手間が減ったかを説明できるようにしておきます。数字は守秘義務の範囲で、「週に何回の作業がなくなった」程度の伝え方でも十分です。</p>
+<h3>障害の振り返りを仕組みにした経験</h3>
+<p>個人を責めない形で障害の記録を書き、再発防止策を追いかけて完了させた経験は、どの型の案件でも話題になります。振り返りの書式や会議の進め方を整えた経験があれば、立ち上げ型の案件でも生かせます。</p>
+<h3>基盤の技術</h3>
+<p>Kubernetesなどのコンテナ基盤、IaC、CI/CD、監視の道具の経験は多くの案件で求められます。Kubernetesの知識を示す資格としては、Linux FoundationとCNCFが作成したCKA（Certified Kubernetes Administrator）があり、オンラインで実技形式の試験を受け、認定の有効期間は2年とされています（2026年10月時点の公式サイトによる）。</p>
+<aside class="box box-view"><p class="box-label">エージェントベストの見解</p><p>SREの案件をご紹介していると、面談で評価されやすいのは、道具の名前より「開発チームとどう合意したか」を話せる方です。たとえば、SLOを割り込みそうなときに新機能のリリースを止めるかどうかを、誰とどう決めたかといった話です。インフラ運用の経験が長い方も、自動化や振り返りの経験を整理すると、SREの案件に近い経験が見つかることがあります。</p></aside>
+<h2 id="s3">インフラ運用やバックエンドからSREを目指すとき</h2>
+<p>SREの案件に参画する人は、インフラ運用の出身者と、バックエンド開発の出身者が多い傾向があります。出身によって、強みと補うべき点が違います。</p>
+<div class="table-wrap"><table><thead><tr><th>出身</th><th>強み</th><th>在職中に補いたいこと</th></tr></thead><tbody><tr><td>インフラ運用</td><td>障害対応、ネットワークやOSの知識、監視</td><td>コードでの自動化、開発チームとの合意づくり、SLOの考え方</td></tr><tr><td>バックエンド開発</td><td>アプリケーションの理解、コードを書く力</td><td>本番運用、オンコール、インフラとネットワークの基礎</td></tr><tr><td>クラウドの構築</td><td>IaC、構成の設計</td><td>運用後の改善、指標の設計、障害の振り返り</td></tr></tbody></table></div>
+<p>在職中にできることとして、所属チームでSLOを試しに決めてみる、障害の振り返りの書き手を引き受ける、繰り返しの作業をひとつ自動化する、といった小さな取り組みがあります。小さくても「自分で始めて、続けた」経験は、独立後の説明材料になります。</p>
+<h2 id="s4">外から参画するSREが気をつけること</h2>
+<p>SREの仕事は、組織の習慣や開発の進め方を変えることを含みます。業務委託として外から入る場合、社内の人よりも次の点に気を配る必要があります。</p>
+<ul><li><strong>決める権限は発注側にある</strong>：SLOやリリースの方針は、発注側の責任者が決める。提案と合意の材料づくりに徹する</li><li><strong>権限は段階的に広がる</strong>：最初は閲覧だけで、本番の変更は依頼する形のこともある</li><li><strong>残るものを意識する</strong>：手順書、ダッシュボード、SLOの文書など、契約が終わっても発注側が使い続けられる形で残す</li><li><strong>一人に依存させない</strong>：自分がいないと回らない仕組みは、発注側にとってリスクになる</li></ul>
+<p>契約の終わりを見すえて引き継げる形で仕事を残す人は、次の案件の紹介や契約の更新につながりやすくなります。</p>
+<h2 id="s5">オンコールと契約の確認</h2>
+<p>SREの案件では、障害時の呼び出し（オンコール）を含むことがあります。オンコールは稼働時間や生活への影響が大きいため、参画の前に次の点を確かめておきましょう。</p>
+<ol><li>オンコールの有無と、当番の頻度・時間帯</li><li>待機している時間と、実際に対応した時間を稼働時間にどう含めるか</li><li>精算幅を超えたときの扱い</li><li>対応できないときの代わりの体制</li></ol>
+<p>精算の仕組みは<a href="/media/seisan-haba/">精算幅の記事</a>で解説しています。2024年11月に施行されたフリーランス法では、発注側は業務の内容・報酬の額・支払期日などを書面やメールなどで直ちに明示することが求められています。また、6か月以上の委託を途中で解除するときなどには、原則として少なくとも30日前の予告が必要とされています。受け取るべき条件は<a href="/media/freelance-act-terms/">フリーランス新法の取引条件の明示</a>にまとめています。</p>
+<aside class="box box-caution"><p class="box-label">注意</p><p>オンコールの取り決めがあいまいなまま参画すると、夜間の対応が積み重なり、精算幅の上限を超えたり、日中の作業に影響したりすることがあります。「必要に応じて障害対応」とだけ書かれている場合は、頻度や時間帯、稼働への含め方を面談で確認しましょう。</p></aside>
+<h2 id="s6">面談で聞かれやすいこと</h2>
+<div class="table-wrap"><table><thead><tr><th>質問の例</th><th>見られていること</th></tr></thead><tbody><tr><td>どのサービスで、何を指標にSLOを決めましたか</td><td>信頼性を数字で扱った経験があるか</td></tr><tr><td>目標を割り込みそうなとき、どう判断しましたか</td><td>開発チームや責任者と合意を作れるか</td></tr><tr><td>減らしたトイルの例を教えてください</td><td>繰り返しの作業を見つけて自動化できるか</td></tr><tr><td>印象に残っている障害と、その振り返りを教えてください</td><td>原因の分析と再発防止を最後まで追えたか</td></tr><tr><td>監視やアラートをどう見直しましたか</td><td>鳴りすぎ・見逃しを減らす工夫ができるか</td></tr></tbody></table></div>
+<p>答えは、課題、取り組み、結果の順で話すと伝わりやすくなります。守秘義務で具体的な数字を出せない場合も、「何を測り、何を変えたか」は一般化して話せます。</p>
+<h2 id="s7">独立までの進め方</h2>
+<ol><li><strong>経験を型ごとに整理する</strong>：上の表のどの型の案件に近いかを決め、関わったサービスごとに、指標・改善・障害対応の経験を書き出す</li><li><strong>スキルシートを用意する</strong>：道具の名前より、課題・取り組み・結果の順で書く。書き方はSREのスキルシートの記事で解説している</li><li><strong>条件を決める</strong>：稼働日数、リモートの希望、オンコールを受けるかどうか、報酬の下限。報酬の考え方はSREの報酬の記事を参照</li><li><strong>手続きとお金を準備する</strong>：退職前後の手続きは<a href="/media/quit-company-steps/">会社員からフリーランスになる手順</a>、開業届は<a href="/media/kaigyo-todoke/">開業届の出し方</a>を参照</li><li><strong>案件を探す</strong>：探し方は<a href="/media/agent-how-to-use/">フリーランスエージェントの使い方</a>を参照</li></ol>
+<p>クラウドの構築から入る道筋は<a href="/media/aws-how-to/">AWSエンジニアがフリーランスになるには</a>も参考になります。</p>
+<aside class="box box-view"><p class="box-label">エージェントベストの見解</p><p>当社では、案件をご案内する前に稼働日数・リモートの希望・ご希望の金額を伺い、合う案件だけをお出ししています。オンコールを受けられるかどうかも、最初に伺っておきたい条件の一つです。業務の範囲・報酬・支払期日・契約期間は個別契約に書いてお渡ししていますので、障害対応の扱いで気になる点があれば、参画前にご質問ください。</p></aside>
+<aside class="box box-point"><p class="box-label">ポイント</p><ul><li>SREで独立するには、信頼性を数字で扱い、開発チームと改善を進めた経験が必要</li><li>案件は信頼性改善・可観測性・プラットフォーム・立ち上げ・運用寄りなどの型に分かれる</li><li>外から参画するときは、提案と合意づくりに徹し、引き継げる形で成果を残す</li><li>オンコールの頻度・時間帯・稼働への含め方は参画前に確認する</li></ul></aside>
+<h2 id="s8">よくある質問</h2>
+<h3>SREの肩書きで働いた経験がなくても案件に応募できますか？</h3>
+<p>応募はできます。案件側が見るのは肩書きより、SLOの考え方、自動化、障害の振り返りなどを実務でどう扱ったかです。インフラ運用やバックエンド開発の中で、SREに近い取り組みをしていれば、その内容を具体的に整理して伝えましょう。</p>
+<h3>Kubernetesの経験は必須ですか？</h3>
+<p>案件によります。コンテナ基盤の整備が中心の案件では求められることが多い一方、可観測性や障害対応の仕組みづくりが中心の案件では、必須ではないこともあります。案件の型を見て、必要な経験を判断してください。</p>
+<h3>オンコールのない案件はありますか？</h3>
+<p>あります。可観測性の整備やプラットフォームづくりなど、改善が中心の案件では、オンコールを含まないこともあります。オンコールを受けたくない場合は、最初に条件として伝えておくと、合わない案件に時間を使わずに済みます。</p>
+  </div>
+  <section class="sources"><h2>参考にした公的情報・資料</h2><ul><li><a href="https://sre.google/sre-book/table-of-contents/" target="_blank" rel="noopener nofollow">Site Reliability Engineering 目次（Google）</a></li><li><a href="https://training.linuxfoundation.org/certification/certified-kubernetes-administrator-cka/" target="_blank" rel="noopener nofollow">Certified Kubernetes Administrator（The Linux Foundation）</a></li><li><a href="https://www.jftc.go.jp/freelancelaw_2024/index.html" target="_blank" rel="noopener nofollow">フリーランス法特設サイト（公正取引委員会）</a></li></ul>
+  <p class="note">記事の内容は公開日時点の情報にもとづきます。制度や税率は変わることがあるため、手続きの前に必ず各機関の最新情報をご確認ください。</p></section>
+  <div class="cta-band">
+  <h2>条件に合う案件だけ、知りたい方へ</h2>
+  <p>ご登録は無料です。条件に合う案件だけを、ご本人の了承を得てからご提案します。</p>
+  <div class="cta-row">
+    <a class="btn btn-primary" href="https://airtable.com/appYkc36EvioYoL1A/pag6CZC4uJmxUcrXT/form" target="_blank" rel="noopener">無料で登録する</a>
+    <a class="btn btn-ghost" href="/jobs/">案件を探す</a>
+  </div>
+</div>
+  <section class="related"><h2>あわせて読みたい</h2><div class="grid g2"><a class="card art-card" href="/media/aws-how-to/">
+  <span class="art-hub">インフラ・クラウド</span>
+  <h3>AWSエンジニアがフリーランスになるには｜必要な経験と独立までの進め方</h3>
+  <p>AWSエンジニアがフリーランスになるには、手順どおりの作業ではなく、構成を自分で決めて作り、障害に対応した経験が必要です。独立できる経験の目安、在職中に積むべき実績、検証環境とお金の準備、最初の案件で確かめることを解説します。</p>
+</a>
+<a class="card art-card" href="/media/seisan-haba/">
+  <span class="art-hub">単価・報酬交渉</span>
+  <h3>精算幅（140〜180時間など）とは｜超過・控除の計算方法</h3>
+  <p>精算幅は、月額報酬のままでよい稼働時間の範囲です。上限を超えると超過分が加算され、下限を下回ると控除されます。超過・控除の単価は上下割か中間割かで変わるため、仮の数字を使って計算方法を整理します。</p>
+</a>
+<a class="card art-card" href="/media/quit-company-steps/">
+  <span class="art-hub">独立・開業の準備</span>
+  <h3>会社員からフリーランスになる手順｜退職前にやっておくこと</h3>
+  <p>会社員からフリーランスになるには、退職前に「お金・信用・最初の案件」を整え、退職後は健康保険・年金・税金の手続きを期限内に済ませます。順番を間違えると損をしやすい点を、時系列で整理します。</p>
+</a>
+<a class="card art-card" href="/media/kaigyo-todoke/">
+  <span class="art-hub">独立・開業の準備</span>
+  <h3>開業届の出し方｜フリーランスが出すタイミングと書き方</h3>
+  <p>開業届は、事業を始めた年分の確定申告期限までに、納税地の税務署へ出す届出です（2026年10月時点）。初年度から青色申告にするなら、開業から2か月以内の承認申請書と一緒に出すのが確実です。書き方と提出方法を整理します。</p>
+</a>
+<a class="card art-card" href="/media/agent-how-to-use/">
+  <span class="art-hub">案件の探し方</span>
+  <h3>フリーランスエージェントの使い方｜登録から参画までの流れと準備</h3>
+  <p>フリーランスエージェントは、登録・面談で希望を伝え、紹介された案件に応募し、発注側との面談を経て契約・参画する流れで使います。各段階で準備すること、確かめること、うまく使うためのコツを整理します。</p>
+</a>
+<a class="card art-card" href="/media/freelance-act-terms/">
+  <span class="art-hub">フリーランス新法・下請法</span>
+  <h3>フリーランス新法の取引条件の明示｜受け取るべき8項目と確認のしかた</h3>
+  <p>フリーランス新法では、発注者は業務委託をしたら直ちに、業務の内容・報酬の額・支払期日など8項目を書面かメール等で明示しなければなりません。口頭だけは不可です。受け取るべき内容と、未定事項や共通事項の扱いを整理します。</p>
+</a></div></section>
+</main>
+<footer class="site-foot">
+  <div class="wrap">
+    <strong>エージェントベストジョブ フリーランス</strong>
+    <div class="foot-links">
+      <a href="/">トップ</a>
+      <a href="/jobs/">案件を探す</a>
+      <a href="/media/">お役立ち記事</a>
+      <a href="https://airtable.com/appYkc36EvioYoL1A/pag6CZC4uJmxUcrXT/form" target="_blank" rel="noopener">ご登録（スキルシート・ご希望の条件）</a>
+      <a href="https://line.me/R/ti/p/@697nxhbt?oat_content=url&ts=08302134" target="_blank" rel="noopener" data-line-cta="footer">LINEで相談する</a>
+      <a href="/privacy.html">個人情報の取り扱い</a>
+      <a href="https://www.agent-best.net/company/">運営会社</a>
+    </div>
+    <div class="foot-links">
+      <a href="https://jobs.agent-best.net/">正社員の求人を探す（エージェントベストジョブ）</a>
+      <a href="https://skill.agent-best.net/">エージェントベストジョブ手に職</a>
+      <a href="https://www.agent-best.net/">エージェントベスト</a>
+    </div>
+    <p>運営：株式会社エージェントベスト（有料職業紹介事業 許可番号 13-ユ-316964）<br>〒106-0032 東京都港区六本木4-8-7 嶋田ビル5階</p>
+  </div>
+</footer>
+<script src="/assets/fav.js" defer></script>
+</body>
+</html>
