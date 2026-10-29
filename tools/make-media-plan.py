@@ -270,8 +270,114 @@ extra_topics = {
         ('seishain-gyomu-itaku-kakemochi', '正社員と業務委託の掛け持ち｜両立の注意点'),
     ],
 }
-for hub, ts in extra_topics.items():
-    topics[hub] = topics[hub] + ts
+# 2026-10-29 追加その2（第12弾〜）。既存403本と問いが重ならないものだけ
+extra_topics2 = {
+    'independence': [
+        ('dokuritsu-koukai', '独立して後悔しやすいパターンと避け方'),
+        ('taishoku-tsutaekata', '会社に退職と独立を伝えるときの順番と伝え方'),
+        ('yuukyuu-shouka', '退職前の有給休暇の使い方と独立の準備'),
+        ('kaigyo-shoki-hiyou', '独立にかかる初期費用の内訳と考え方'),
+        ('jigyo-jusho', '自宅住所を出したくないときの事業用住所の考え方'),
+        ('meishi-website', 'フリーランスに名刺やWebサイトは必要？'),
+    ],
+    'find-projects': [
+        ('gyomu-itaku-miwake', '正社員求人と業務委託案件の見分け方'),
+        ('spot-anken', 'スポット・単発の案件を受けるときの注意点'),
+        ('shinki-vs-hoshu', '新規開発案件と保守運用案件の違い'),
+        ('sns-eigyo', 'SNSや交流会で案件を得るときの注意点'),
+        ('jutaku-kaisha', '受託開発会社から仕事を受ける場合の特徴'),
+        ('torihikisaki-chousa', '取引先の会社を調べる方法｜参画前に確かめること'),
+        ('sankaku-chokuzen-cancel', '参画直前に案件がなくなったときの対応'),
+        ('anken-shuryo-tsutaekata', '案件を自分から終えるときの伝え方と時期'),
+        ('heikou-katsudou', '転職活動と案件探しを並行するときの注意点'),
+    ],
+    'skillsheet-interview': [
+        ('skillsheet-format', 'スキルシートのファイル形式と送り方'),
+        ('nenrei-shitsumon', '面談で年齢やキャリアの長さについて聞かれたとき'),
+        ('tech-test', '技術面談・コーディングテストへの備え方'),
+        ('jiko-pr', 'スキルシートの自己PR欄の書き方'),
+        ('mushou-kadai', '面談で課題の提出を求められたとき｜無償作業の線引き'),
+        ('eibun-resume', '英文のスキルシート（レジュメ）の書き方'),
+    ],
+    'rate': [
+        ('kibou-tanka-gap', '希望単価と提示額が合わないときの考え方'),
+        ('jikyu-nichigaku', '時給制・日額制の案件の報酬の考え方'),
+        ('furikomi-tesuryo', '報酬の振込手数料は誰が負担する？'),
+    ],
+    'contract': [
+        ('keiyakusho-shusei', '契約書のひな形に修正を求めるときの考え方'),
+        ('chosakusha-jinkakuken', '著作者人格権の不行使条項とは'),
+        ('oss-license', '納品物にOSSを使うときのライセンスの注意点'),
+        ('kankatsu-junkyoho', '合意管轄・準拠法の条項とは'),
+        ('ai-riyou-keiyaku', '業務での生成AIの利用に関する契約条項'),
+        ('hoken-kanyu-youkyu', '取引先から賠償責任保険への加入を求められたとき'),
+        ('mitsumorisho', '見積書の作り方｜請負案件で見積もるときの考え方'),
+        ('iyakukin', '違約金・損害賠償額の予定の条項とは'),
+    ],
+    'law': [
+        ('yuetsuteki-chii', '優越的地位の濫用とは｜フリーランスとの取引で問題になる行為'),
+        ('roudousha-sei', '労働者性とは｜業務委託でも労働者と判断される場合'),
+        ('inshizei', '業務委託契約書の印紙税｜かかる場合とかからない場合'),
+        ('roei-taiou', '個人情報や機密情報を漏えいしてしまったときの対応'),
+    ],
+    'tax': [
+        ('junsonshitsu-kurikoshi', '赤字のときの純損失の繰越し｜青色申告の特典'),
+        ('senjusha-kyuyo', '青色事業専従者給与とは｜家族に給与を払うとき'),
+        ('shakai-hoken-koujo', '社会保険料控除と確定申告｜国保・国民年金の扱い'),
+        ('shotoku-koujo-ichiran', '確定申告で使える所得控除の一覧'),
+        ('shorui-hozon', '確定申告で保存しておく書類と保存期間'),
+        ('uriage-shotoku', '売上・所得・手取りの違い｜フリーランスのお金の言葉'),
+        ('zeirishi', '税理士に頼むかどうかの判断と依頼の流れ'),
+        ('kaigyo-hi', '開業費とは｜独立前の支出の扱い'),
+        ('nouzei-houhou', '税金の納め方｜振替・クレジットカード・スマホ決済'),
+    ],
+    'invoice': [
+        ('invoice-bango-kikareta', '取引先から登録番号を聞かれたときの対応'),
+        ('invoice-shuusei', 'インボイスの記載を間違えたとき｜修正の方法'),
+    ],
+    'social-insurance': [
+        ('hikkoshi-tetsuzuki', '引っ越したときの国民健康保険と国民年金の手続き'),
+        ('kokunen-tsuino', '国民年金を払い忘れたとき｜後納と追納'),
+        ('kokuho-kumiai', '国民健康保険組合とは｜フリーランスが入れる場合'),
+        ('kaigo-hoken', '40歳からの介護保険料｜フリーランスの払い方'),
+        ('kokuho-kani-shinkoku', '所得がなくても国保の申告が必要な理由'),
+    ],
+    'incorporation': [
+        ('houjin-kaisan', '法人をたたむときの手続き｜解散と清算'),
+        ('houjin-kessan', '法人の決算と申告の流れ'),
+    ],
+    'savings': [
+        ('hoken-erabi', 'フリーランスの生命保険・医療保険の考え方'),
+        ('jutaku-loan', 'フリーランスの住宅ローン審査で見られること'),
+        ('nouzei-junbi', '税金と保険料の積み立て方｜納付に困らないための準備'),
+    ],
+    'workstyle': [
+        ('kaigai-remote', '海外から日本の案件をリモートで受けられる？注意点'),
+        ('shigoto-dougu', '仕事道具（PC・回線・ソフト）の選び方と費用の考え方'),
+        ('taiyo-pc', '取引先から貸与PCを使うときの注意点'),
+        ('tsuika-irai-kotowari', '参画中に追加の依頼を断るときの伝え方'),
+        ('shuho', '週報・進捗報告の書き方'),
+    ],
+    'career': [
+        ('keiken-nensu', '経験年数の数え方｜面談で伝える年数の考え方'),
+        ('dev-to-pm', '開発者からPM・PMOへ役割を移す進め方'),
+        ('eng-to-consul', 'エンジニアからITコンサルへ役割を広げる進め方'),
+        ('ai-shigoto-henka', '生成AIの普及でフリーランスエンジニアの仕事はどう変わる？'),
+        ('fukki', '育児・介護などで離れたあとに案件へ復帰する方法'),
+        ('jinmyaku', 'フリーランスの人脈づくり｜案件につながる関係の育て方'),
+        ('kaigo-ryouritsu', '介護と仕事の両立｜フリーランスが使える制度'),
+    ],
+    'side-job': [
+        ('fukugyo-jikan', '副業に使える時間の見積もり方'),
+        ('koumuin-fukugyo', '公務員は業務委託の副業ができる？'),
+    ],
+    'back-to-employee': [
+        ('seishain-modoru-tetsuzuki', '正社員に戻ったときの社会保険・税金の切り替え'),
+    ],
+}
+for d in (extra_topics, extra_topics2):
+    for hub, ts in d.items():
+        topics[hub] = topics[hub] + ts
 
 rows = []
 for hub, rs in roles.items():
