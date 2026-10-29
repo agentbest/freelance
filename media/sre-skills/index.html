@@ -80,7 +80,7 @@ document.addEventListener('click',e=>{const a=e.target.closest('[data-line-cta]'
 <h2 id="s8">スキルシートと面談での示し方</h2>
 <p>SREの経験は、使った道具より、<strong>何を測り、何を決め、何が変わったか</strong>を書くと伝わります。</p>
 <ul><li>応答の成功率をSLIにし、SLOの残りを見てリリースの判断をする運用を作った</li><li>主要な処理にトレースを入れ、障害の原因を特定するまでの時間を短くした</li><li>段階的な公開と自動の切り戻しを入れ、変更による障害の影響を小さくした</li><li>手作業の証明書更新をなくし、関連する問い合わせ対応をなくした</li></ul>
-<p>面談では、「最近の障害で何をしたか」「SLOをどう決めたか」がよく聞かれます。書き方の詳細は<a href="/media/sre-skillsheet/">SREのスキルシートの書き方</a>、報酬との関係はSREの報酬の記事をご覧ください。</p>
+<p>面談では、「最近の障害で何をしたか」「SLOをどう決めたか」がよく聞かれます。書き方の詳細は<a href="/media/sre-skillsheet/">SREのスキルシートの書き方</a>、報酬との関係は<a href="/media/sre-rate/">SREの報酬の記事</a>をご覧ください。</p>
 <aside class="box box-view"><p class="box-label">エージェントベストの見解</p><p>当社では、契約で業務範囲・報酬・支払期日・契約期間を個別契約に書いてお渡ししています。SREの案件は、改善の仕事とオンコールなどの運用の仕事が混ざりやすいため、どこまでが業務範囲かを契約の前に確かめておくことをおすすめします。気になる点はご質問いただければ確認します。</p></aside>
 <aside class="box box-point"><p class="box-label">ポイント</p><ul><li>SREの案件では、SLIの選定とSLOの運用、可観測性、安全なリリース、トイルの削減、障害対応の仕組みが見られる</li><li>目標を決めただけでなく、その目標で何を判断したかを話せると評価されやすい</li><li>自動化は、作業の前後で何が変わったかまで書くと成果が伝わる</li></ul></aside>
 <h2 id="s9">よくある質問</h2>
@@ -106,6 +106,11 @@ document.addEventListener('click',e=>{const a=e.target.closest('[data-line-cta]'
   <h3>SREがフリーランスになるには｜必要な経験と独立までの進め方</h3>
   <p>SREとしてフリーランスになるには、SLOの設計や障害の振り返りなど、信頼性を数字で扱い開発チームと改善を進めた経験が必要です。案件の型、独立前に積む実績、外部から参画するときの進め方、オンコールの契約上の注意を解説します。</p>
 </a>
+<a class="card art-card" href="/media/sre-rate/">
+  <span class="art-hub">インフラ・クラウド</span>
+  <h3>SREのフリーランス案件｜報酬の決まり方と単価を上げる考え方</h3>
+  <p>SREの報酬は、信頼性の改善を任されるか運用を回すだけか、開発の優先度に口を出せる裁量、オンコールの待機と対応の扱い、基盤技術の経験、仕組みを残せるかで決まり、案件ごとに大きく変わります。上下する理由と交渉の材料を解説します。</p>
+</a>
 <a class="card art-card" href="/media/sre-skillsheet/">
   <span class="art-hub">インフラ・クラウド</span>
   <h3>SREのスキルシートの書き方｜面談で評価される実績の見せ方</h3>
@@ -116,20 +121,15 @@ document.addEventListener('click',e=>{const a=e.target.closest('[data-line-cta]'
   <h3>SREのフリーランスはリモートで働ける？案件の傾向と探し方</h3>
   <p>SREは、可観測性の整備やSLOの導入、リリースの仕組みづくりなどでリモートの案件があります。リモートの条件を大きく左右するのはオンコールです。応答の速さ、待機中の場所の制約、当番の頻度と扱いなど、参画前に確かめる点を解説します。</p>
 </a>
+<a class="card art-card" href="/media/sre-future/">
+  <span class="art-hub">インフラ・クラウド</span>
+  <h3>SREのフリーランスの将来性とキャリアの広げ方</h3>
+  <p>SREは国家試験の出題範囲の案にも名前が挙がり、特定の会社の肩書きから、開発と運用をつなぐ共通の実践として扱われ始めています。AIや基盤の更新が続く中で、SREの役割の変化と経験別の広げ方を解説します。</p>
+</a>
 <a class="card art-card" href="/media/aws-skills/">
   <span class="art-hub">インフラ・クラウド</span>
   <h3>AWSエンジニアのフリーランス案件で求められるスキルと経験</h3>
   <p>AWSエンジニアのフリーランス案件では、設計から構築・運用までのどこを担えるか、ネットワーク・セキュリティの基礎、IaCや自動化の経験が見られます。案件で求められやすいスキル、AWS認定の位置づけ、経験の伝え方を解説します。</p>
-</a>
-<a class="card art-card" href="/media/gcp-skills/">
-  <span class="art-hub">インフラ・クラウド</span>
-  <h3>GCPエンジニアのフリーランス案件で求められるスキルと経験</h3>
-  <p>GCPのフリーランス案件では、組織・フォルダ・プロジェクトの階層に沿ったIAM設計、BigQueryの費用を読んで抑える力、GKEやCloud Runでの運用、データチームとの連携が見られます。分野別のスキルと認定資格の扱いを解説します。</p>
-</a>
-<a class="card art-card" href="/media/azure-skills/">
-  <span class="art-hub">インフラ・クラウド</span>
-  <h3>Azureエンジニアのフリーランス案件で求められるスキルと経験</h3>
-  <p>Azureのフリーランス案件では、Entra IDとAzure RBACによる権限設計、管理グループとサブスクリプションを使ったランディングゾーンの設計、ハイブリッド接続、Bicepなどでのコード化が見られます。分野ごとのスキルと認定資格の扱いを解説します。</p>
 </a></div></section>
 </main>
 <footer class="site-foot">

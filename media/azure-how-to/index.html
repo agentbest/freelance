@@ -46,7 +46,7 @@ document.addEventListener('click',e=>{const a=e.target.closest('[data-line-cta]'
   <nav class="toc" aria-label="目次"><strong>目次</strong><ol><li><a href="#s1">Azureの案件は「IDとつなぎ込み」が絡むことが多い</a></li><li><a href="#s2">独立の目安は「権限とテナントの影響範囲」を説明できること</a></li><li><a href="#s3">在職中に積んでおきたい実績</a></li><li><a href="#s4">検証環境と費用の管理</a></li><li><a href="#s5">独立の手続きとお金の準備</a></li><li><a href="#s6">最初の案件で確かめておくこと</a></li><li><a href="#s7">よくある質問</a></li></ol></nav>
   <div class="art-body">
 <p>Azureエンジニアがフリーランスになるには、<strong>仮想マシンやネットワークを作れることに加えて、Microsoft Entra IDを中心とした「誰に何を許すか」の設計と、社内のオンプレミス環境とのつなぎ込みを自分で判断した経験</strong>が求められます。Azureを使う企業の多くは、Microsoft 365や社内のActive Directoryと一体でクラウドを運用しているため、Azure単体の知識だけでは任せてもらえる範囲が狭くなりやすいからです。</p>
-<p>独立の準備は、自分の経験がどの型の案件に近いかを確かめ、足りない実績を在職中に補い、手続きとお金を整えてから最初の案件を選ぶ、という順で進めます。報酬の決まり方はAzureエンジニアの報酬の記事、求められるスキルの一覧は<a href="/media/azure-skills/">Azureで求められるスキルの記事</a>にまとめているため、ここでは「独立までに何をするか」に絞ります。</p>
+<p>独立の準備は、自分の経験がどの型の案件に近いかを確かめ、足りない実績を在職中に補い、手続きとお金を整えてから最初の案件を選ぶ、という順で進めます。報酬の決まり方は<a href="/media/azure-rate/">Azureエンジニアの報酬の記事</a>、求められるスキルの一覧は<a href="/media/azure-skills/">Azureで求められるスキルの記事</a>にまとめているため、ここでは「独立までに何をするか」に絞ります。</p>
 <h2 id="s1">Azureの案件は「IDとつなぎ込み」が絡むことが多い</h2>
 <p>Azureの業務委託案件は、発注側が何をAzureに載せたいかによって、仕事の中身が変わります。代表的な型を整理すると次のとおりです。</p>
 <div class="table-wrap"><table><thead><tr><th>案件の型</th><th>主な仕事</th><th>特に見られる経験</th></tr></thead><tbody><tr><td>オンプレミスからの移行</td><td>社内サーバーをAzureへ移し、既存のネットワークとつなぐ</td><td>現行環境の調査、VPNや専用線の接続、移行計画</td></tr><tr><td>IDと権限の整備</td><td>Entra IDのテナント設計、条件付きアクセス、管理者権限の整理</td><td>Active Directoryとの同期、多要素認証、権限の棚卸し</td></tr><tr><td>基盤の構築・標準化</td><td>サブスクリプションの分け方、ネットワーク、ポリシーを決めて作る</td><td>Bicep・ARMテンプレート・Terraformなどでのコード化</td></tr><tr><td>運用・改善</td><td>監視、バックアップ、費用の見直し、セキュリティ設定の点検</td><td>Azure Monitorなどでの監視設計、コストの分析</td></tr><tr><td>アプリ基盤</td><td>App ServiceやAKSなどでアプリを動かす環境を作る</td><td>コンテナ、CI/CD、開発チームとの連携</td></tr></tbody></table></div>
@@ -95,7 +95,12 @@ document.addEventListener('click',e=>{const a=e.target.closest('[data-line-cta]'
     <a class="btn btn-ghost" href="/jobs/">案件を探す</a>
   </div>
 </div>
-  <section class="related"><h2>あわせて読みたい</h2><div class="grid g2"><a class="card art-card" href="/media/azure-skills/">
+  <section class="related"><h2>あわせて読みたい</h2><div class="grid g2"><a class="card art-card" href="/media/azure-rate/">
+  <span class="art-hub">インフラ・クラウド</span>
+  <h3>Azureエンジニアのフリーランス案件｜報酬の決まり方と単価を上げる考え方</h3>
+  <p>Azureエンジニアの報酬は、作業の影響がサブスクリプション内にとどまるかテナント全体に及ぶか、IDと認証への関わり方、移行やガバナンスの経験、社内調整の量、作業時間帯で決まり、案件ごとに大きく変わります。</p>
+</a>
+<a class="card art-card" href="/media/azure-skills/">
   <span class="art-hub">インフラ・クラウド</span>
   <h3>Azureエンジニアのフリーランス案件で求められるスキルと経験</h3>
   <p>Azureのフリーランス案件では、Entra IDとAzure RBACによる権限設計、管理グループとサブスクリプションを使ったランディングゾーンの設計、ハイブリッド接続、Bicepなどでのコード化が見られます。分野ごとのスキルと認定資格の扱いを解説します。</p>
@@ -110,20 +115,15 @@ document.addEventListener('click',e=>{const a=e.target.closest('[data-line-cta]'
   <h3>Azureエンジニアのフリーランスはリモートで働ける？案件の傾向と探し方</h3>
   <p>Azureエンジニアは、ランディングゾーンの整備やIaCでの構築などでリモートの案件があります。ただし、取引先のテナントへの招待や端末の条件、オンプレミスとの接続作業によって出社が必要になることがあります。案件の型、出社の場面、権限の受け取り方と確認点を解説します。</p>
 </a>
+<a class="card art-card" href="/media/azure-future/">
+  <span class="art-hub">インフラ・クラウド</span>
+  <h3>Azureエンジニアのフリーランスの将来性とキャリアの広げ方</h3>
+  <p>Azureの仕事は、Windows Serverのサポート期限や多要素認証の必須化など、Microsoftの方針の変化に強く結び付いています。公式の発表をもとに、仕事の中身の変化、身につけたいこと、経験に応じた広げ方を解説します。</p>
+</a>
 <a class="card art-card" href="/media/aws-how-to/">
   <span class="art-hub">インフラ・クラウド</span>
   <h3>AWSエンジニアがフリーランスになるには｜必要な経験と独立までの進め方</h3>
   <p>AWSエンジニアがフリーランスになるには、手順どおりの作業ではなく、構成を自分で決めて作り、障害に対応した経験が必要です。独立できる経験の目安、在職中に積むべき実績、検証環境とお金の準備、最初の案件で確かめることを解説します。</p>
-</a>
-<a class="card art-card" href="/media/gcp-how-to/">
-  <span class="art-hub">インフラ・クラウド</span>
-  <h3>GCPエンジニアがフリーランスになるには｜必要な経験と独立までの進め方</h3>
-  <p>GCPエンジニアがフリーランスになるには、Google Cloudの構築に加えて、組織・フォルダ・プロジェクトの階層とIAMを設計し、データ基盤やコンテナの運用まで担った経験が求められます。案件の型、在職中に積む実績、認定資格、契約前の確認点を解説します。</p>
-</a>
-<a class="card art-card" href="/media/network-how-to/">
-  <span class="art-hub">インフラ・クラウド</span>
-  <h3>ネットワークエンジニアがフリーランスになるには｜必要な経験と独立までの進め方</h3>
-  <p>ネットワークエンジニアがフリーランスになるには、機器の設定や監視だけでなく、要件から設計書を作り、切り替え作業を計画して実施した経験が求められます。案件の型、在職中に積む実績、資格の扱い、現地作業や夜間作業の契約上の注意を解説します。</p>
 </a></div></section>
 </main>
 <footer class="site-foot">

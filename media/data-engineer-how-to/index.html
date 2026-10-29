@@ -74,7 +74,7 @@ document.addEventListener('click',e=>{const a=e.target.closest('[data-line-cta]'
 <ol><li><strong>扱ったデータの規模と種類</strong>：データの量、更新の頻度、取り込み元の数（伏せられる範囲で）</li><li><strong>基盤の全体像</strong>：取り込み、保存、変換、提供の流れと、使った道具</li><li><strong>障害の経験</strong>：処理が止まった原因と、復旧・再発防止の方法</li><li><strong>定義と品質</strong>：指標の定義をどうそろえたか、品質をどう確かめたか</li><li><strong>関係者とのやり取り</strong>：分析担当や事業部門から要望をどう受け、優先順位をどう決めたか</li></ol>
 <p>構成を図にして説明できるように準備しておくと、理解の深さが伝わります。スキルシートの書き方は<a href="/media/data-engineer-skillsheet/">データエンジニアのスキルシートの記事</a>と<a href="/media/skillsheet-basics/">スキルシートの書き方</a>で解説しています。</p>
 <h2 id="s6">独立までの進め方</h2>
-<ol><li><strong>パイプラインごとに経験を書き出す</strong>：入り口と出口、データの規模、使った道具、自分の担当、工夫した点</li><li><strong>条件を決める</strong>：稼働日数、リモートの希望、報酬の下限、得意な業界。リモートの傾向は<a href="/media/data-engineer-remote/">データエンジニアのリモート案件の記事</a>、報酬の考え方はデータエンジニアの報酬の記事を参照</li><li><strong>手続きとお金を準備する</strong>：退職前後の手続きは<a href="/media/quit-company-steps/">会社員からフリーランスになる手順</a>、開業届は<a href="/media/kaigyo-todoke/">開業届の出し方</a>を参照</li><li><strong>案件を探す</strong>：探し方は<a href="/media/agent-how-to-use/">フリーランスエージェントの使い方</a>を参照</li></ol>
+<ol><li><strong>パイプラインごとに経験を書き出す</strong>：入り口と出口、データの規模、使った道具、自分の担当、工夫した点</li><li><strong>条件を決める</strong>：稼働日数、リモートの希望、報酬の下限、得意な業界。リモートの傾向は<a href="/media/data-engineer-remote/">データエンジニアのリモート案件の記事</a>、報酬の考え方は<a href="/media/data-engineer-rate/">データエンジニアの報酬の記事</a>を参照</li><li><strong>手続きとお金を準備する</strong>：退職前後の手続きは<a href="/media/quit-company-steps/">会社員からフリーランスになる手順</a>、開業届は<a href="/media/kaigyo-todoke/">開業届の出し方</a>を参照</li><li><strong>案件を探す</strong>：探し方は<a href="/media/agent-how-to-use/">フリーランスエージェントの使い方</a>を参照</li></ol>
 <h2 id="s7">最初の案件の選び方</h2>
 <p>独立して最初の案件は、次の点を確かめて選ぶと、立ち上がりで苦労しにくくなります。</p>
 <ol><li><strong>扱う基盤や道具が経験に近い</strong>：データウェアハウスやワークフローの道具がまったく初めての現場は、慣れるまでに時間がかかる</li><li><strong>データの利用者が見える</strong>：誰のための基盤かが分かる案件は、優先順位を判断しやすい</li><li><strong>運用の分担がはっきりしている</strong>：処理が止まったときに誰が対応するか、夜間の扱いが決まっている</li><li><strong>アクセスの準備が整っている</strong>：参画してすぐに必要なデータや環境に触れられる</li></ol>
@@ -99,7 +99,12 @@ document.addEventListener('click',e=>{const a=e.target.closest('[data-line-cta]'
     <a class="btn btn-ghost" href="/jobs/">案件を探す</a>
   </div>
 </div>
-  <section class="related"><h2>あわせて読みたい</h2><div class="grid g2"><a class="card art-card" href="/media/data-engineer-skills/">
+  <section class="related"><h2>あわせて読みたい</h2><div class="grid g2"><a class="card art-card" href="/media/data-engineer-rate/">
+  <span class="art-hub">データ・AI</span>
+  <h3>データエンジニアのフリーランス案件｜報酬の決まり方と単価を上げる考え方</h3>
+  <p>データエンジニアの報酬は、データの定義や構成を決める側か作る側か、基盤の新規構築・移行・運用のどれか、障害が業務に与える影響、個人データなど扱うデータの重さ、費用と品質への責任で決まり、案件ごとに大きく変わります。</p>
+</a>
+<a class="card art-card" href="/media/data-engineer-skills/">
   <span class="art-hub">データ・AI</span>
   <h3>データエンジニアのフリーランス案件で求められるスキルと経験</h3>
   <p>データエンジニアのフリーランス案件では、SQLとデータモデリング、失敗しても再実行できるパイプライン、データ品質の検査、権限と個人データの扱いが見られます。分野ごとのスキル、クラウドの認定資格の扱い、経験の示し方を解説します。</p>
@@ -114,20 +119,15 @@ document.addEventListener('click',e=>{const a=e.target.closest('[data-line-cta]'
   <h3>データエンジニアのフリーランスはリモートで働ける？案件の傾向と探し方</h3>
   <p>データエンジニアは、クラウドのデータ基盤やパイプラインの開発を中心にリモートの案件があります。ただし本番データに触れる作業や、社内の基幹システムからの取り出しでは場所や端末が限られます。案件の型、開発の進め方、確認点を解説します。</p>
 </a>
+<a class="card art-card" href="/media/data-engineer-future/">
+  <span class="art-hub">データ・AI</span>
+  <h3>データエンジニアのフリーランスの将来性とキャリアの広げ方</h3>
+  <p>データエンジニアの仕事は、パイプラインを作る作業から、データの定義・品質・権限を組織として管理する仕事へ広がっています。デジタルスキル標準ver.2.0と試験制度の見直し案を手がかりに、役割の変化と経験別の広げ方を解説します。</p>
+</a>
 <a class="card art-card" href="/media/data-scientist-how-to/">
   <span class="art-hub">データ・AI</span>
   <h3>データサイエンティストがフリーランスになるには｜必要な経験と独立までの進め方</h3>
   <p>データサイエンティストがフリーランスになるには、分析の技術に加えて、曖昧な相談を分析できる問いに直し、結果を意思決定につなげた経験が求められます。案件の型、独立前に積む実績、成果物の決め方、データの扱い、面談で聞かれることを解説します。</p>
-</a>
-<a class="card art-card" href="/media/ml-engineer-how-to/">
-  <span class="art-hub">データ・AI</span>
-  <h3>機械学習エンジニアがフリーランスになるには｜必要な経験と独立までの進め方</h3>
-  <p>機械学習エンジニアがフリーランスになるには、モデルを作るだけでなく、本番のシステムに組み込んで運用した経験が求められます。案件の型、独立前に積む実績、精度を約束しない契約の考え方、成果物の権利、面談で聞かれることを解説します。</p>
-</a>
-<a class="card art-card" href="/media/quit-company-steps/">
-  <span class="art-hub">独立・開業の準備</span>
-  <h3>会社員からフリーランスになる手順｜退職前にやっておくこと</h3>
-  <p>会社員からフリーランスになるには、退職前に「お金・信用・最初の案件」を整え、退職後は健康保険・年金・税金の手続きを期限内に済ませます。順番を間違えると損をしやすい点を、時系列で整理します。</p>
 </a></div></section>
 </main>
 <footer class="site-foot">
