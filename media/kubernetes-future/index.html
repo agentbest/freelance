@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Kubernetesエンジニアのフリーランスの将来性とキャリアの広げ方｜エージェントベストジョブ フリーランス</title>
+<meta name="description" content="Kubernetesは年3回ほど新しい版が出て、各版のパッチ提供は約1年です。EKS・GKE・AKSの延長サポートの仕組みや、Ingress NGINXの開発終了とGateway APIへの移行など、公式の動向から仕事の変化と広げ方を解説します（2026年10月時点）。">
+<link rel="canonical" href="https://freelance.agent-best.net/media/kubernetes-future/">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="エージェントベストジョブ フリーランス">
+<meta property="og:title" content="Kubernetesエンジニアのフリーランスの将来性とキャリアの広げ方｜エージェントベストジョブ フリーランス">
+<meta property="og:description" content="Kubernetesは年3回ほど新しい版が出て、各版のパッチ提供は約1年です。EKS・GKE・AKSの延長サポートの仕組みや、Ingress NGINXの開発終了とGateway APIへの移行など、公式の動向から仕事の変化と広げ方を解説します（2026年10月時点）。">
+<meta property="og:url" content="https://freelance.agent-best.net/media/kubernetes-future/">
+<meta property="og:image" content="https://freelance.agent-best.net/assets/ogp.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://freelance.agent-best.net/assets/ogp.png">
+<meta name="theme-color" content="#1E3A5F">
+<link rel="icon" href="/assets/favicon.ico">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="stylesheet" href="/assets/site.css">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1XXMP8Y1B4"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-1XXMP8Y1B4');
+document.addEventListener('click',e=>{const a=e.target.closest('[data-line-cta]');if(a)gtag('event','line_add_friend',{placement:a.dataset.lineCta,page_path:location.pathname});});</script>
+<script type="application/ld+json">[{"@context":"https://schema.org","@type":"Article","headline":"Kubernetesエンジニアのフリーランスの将来性とキャリアの広げ方","description":"Kubernetesは年3回ほど新しい版が出て、各版のパッチ提供は約1年です。EKS・GKE・AKSの延長サポートの仕組みや、Ingress NGINXの開発終了とGateway APIへの移行など、公式の動向から仕事の変化と広げ方を解説します（2026年10月時点）。","datePublished":"2026-10-29","dateModified":"2026-10-29","author":{"@type":"Organization","name":"株式会社エージェントベスト","url":"https://www.agent-best.net/"},"publisher":{"@type":"Organization","name":"株式会社エージェントベスト","logo":{"@type":"ImageObject","url":"https://freelance.agent-best.net/assets/logo.png"}},"mainEntityOfPage":"https://freelance.agent-best.net/media/kubernetes-future/"},{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"トップ","item":"https://freelance.agent-best.net/"},{"@type":"ListItem","position":2,"name":"お役立ち記事","item":"https://freelance.agent-best.net/media/"},{"@type":"ListItem","position":3,"name":"インフラ・クラウド","item":"https://freelance.agent-best.net/media/hub/infra-cloud/"},{"@type":"ListItem","position":4,"name":"Kubernetesエンジニアのフリーランスの将来性とキャリアの広げ方"}]},{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"マネージドサービスが進化すると、Kubernetesエンジニアの仕事は減りますか？","acceptedAnswer":{"@type":"Answer","text":"コントロールプレーンの運用のように、クラウド側が担う範囲は広がっています。一方で、各社とも版のサポートには期限があり、ノードやアドオン、アプリの対応は利用者側に残ります。期限を前提に計画を立て、変化を安全に取り込む仕事は続くと考えられます。"}},{"@type":"Question","name":"Ingressを使い続けている現場は、すぐに移行が必要ですか？","acceptedAnswer":{"@type":"Answer","text":"Ingress API自体は削除の予定はないとされています。ただし、使っているコントローラーの開発が止まっている場合は、脆弱性への対応が受けられなくなります。何のコントローラーを使っているかを確かめ、移行の計画を立てるかどうかを判断しましょう。"}},{"@type":"Question","name":"これから伸ばすなら、どの分野がよいですか？","acceptedAnswer":{"@type":"Answer","text":"今の経験に近いところから選ぶのが現実的です。運用が中心なら版上げの計画、構築の経験があれば入り口の移行やGitOpsの導入、設計の経験があれば複数のクラスターの運用ルールづくりが、次の一歩になりやすい分野です。"}}]}]</script>
+</head>
+<body>
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="/"><img src="/assets/mark.png" alt="" width="28" height="28"><span>エージェントベストジョブ フリーランス<small>フリーランスのエンジニア・コンサル向け案件紹介</small></span></a>
+    <nav class="head-nav" aria-label="メニュー">
+      <a class="link" href="/jobs/">案件を探す</a>
+      <a class="link" href="/media/">お役立ち記事</a>
+      <a class="link keep" href="/mypage/" aria-label="気になる案件">☆ 気になる<span class="fav-count" data-fav-count hidden></span></a>
+      <a class="btn btn-primary btn-sm" href="https://airtable.com/appYkc36EvioYoL1A/pag6CZC4uJmxUcrXT/form" target="_blank" rel="noopener">無料で登録</a>
+    </nav>
+  </div>
+</header>
+<main class="wrap narrow article">
+  <p class="crumbs"><a href="/">トップ</a> › <a href="/media/">お役立ち記事</a> › <a href="/media/hub/infra-cloud/">インフラ・クラウド</a></p>
+  <a class="art-hub" href="/media/hub/infra-cloud/">インフラ・クラウド</a>
+  <h1 class="art-title">Kubernetesエンジニアのフリーランスの将来性とキャリアの広げ方</h1>
+  <p class="note">公開 2026-10-29　監修：株式会社エージェントベスト</p>
+  <nav class="toc" aria-label="目次"><strong>目次</strong><ol><li><a href="#s1">公式の情報から見える4つの動き</a></li><li><a href="#s2">年3回のリリースと、約1年のサポート</a></li><li><a href="#s3">マネージドサービスの期限の仕組み</a></li><li><a href="#s4">外部からの入り口の世代交代</a></li><li><a href="#s5">GitOpsが前提になっていく</a></li><li><a href="#s6">選択肢を広げる3つの方向</a></li><li><a href="#s7">経験に応じた広げ方</a></li><li><a href="#s8">よくある質問</a></li></ol></nav>
+  <div class="art-body">
+<p>Kubernetesエンジニアの将来性は、<strong>基盤が毎年変わり続けることを前提に、変化を安全に取り込む仕事を担えるか</strong>で考えるのが現実的です。Kubernetesは年に3回ほど新しい版が出て、各版のパッチ提供は約1年で終わります。マネージドサービスにもそれぞれのサポート期限があり、外部からの通信の入り口のように、長く使われてきた部品の世代交代も起きています。</p>
+<p>変化が続く分、<strong>版上げや移行を計画どおりに進められる人、変更をGitから安全に届ける仕組みを作れる人</strong>への需要は続くと考えられます。この記事では、2026年10月時点の公式の情報をもとに、仕事の変化と、経験に応じた広げ方を整理します。独立までの準備は<a href="/media/kubernetes-how-to/">Kubernetesエンジニアがフリーランスになるには</a>、スキルの中身は<a href="/media/kubernetes-skills/">Kubernetesの案件で求められるスキル</a>で扱っています。</p>
+<h2 id="s1">公式の情報から見える4つの動き</h2>
+<div class="table-wrap"><table><thead><tr><th>公式に示されていること</th><th>内容（2026年10月時点）</th><th>仕事への影響</th></tr></thead><tbody><tr><td>リリースの周期</td><td>新しいマイナー版はおおむね年3回。1.19以降は各版に約1年のパッチ提供</td><td>版上げが毎年の定常業務になる</td></tr><tr><td>マネージドサービスの期限</td><td>EKS・GKE・AKSとも、標準の期間のあとに延長の仕組みがあり、期限を過ぎると自動で上げられる</td><td>期限の管理と計画が発注側の課題になる</td></tr><tr><td>入り口の世代交代</td><td>Ingress APIは凍結され、Gatewayの利用が推奨。Ingress NGINXは2026年3月で開発終了</td><td>入り口の移行の仕事が生まれている</td></tr><tr><td>GitOpsの定着</td><td>ArgoとFluxはCNCFの卒業（Graduated）段階のプロジェクト</td><td>変更の届け方を整える仕事が広がる</td></tr></tbody></table></div>
+<h2 id="s2">年3回のリリースと、約1年のサポート</h2>
+<p>Kubernetesの公式ページでは、リリースはおおむね年に3回行われ、プロジェクトは直近3つのマイナー版の保守ブランチを維持し、1.19以降の版は約1年のパッチ提供を受けるとされています。2026年10月時点の最新は1.37系で、1.34のパッチ提供は2026年10月27日で終わりました。</p>
+<p>この周期では、<strong>少なくとも年に1回は版上げをしないと、コミュニティのサポートから外れていきます</strong>。版上げの作業そのものを仕組みにする考え方は<a href="/media/sre-future/">SREの将来性の記事</a>で扱っています。Kubernetesエンジニアにとっては、次に挙げるマネージドサービスの期限と組み合わせて、<strong>いつまでに何を上げるかを計画できること</strong>が仕事の中心になります。</p>
+<h2 id="s3">マネージドサービスの期限の仕組み</h2>
+<p>マネージドサービスは、コミュニティより長いサポートの選択肢を用意していますが、期限がなくなるわけではありません。2026年10月時点の各社の公式ドキュメントの説明は次のとおりです。</p>
+<div class="table-wrap"><table><thead><tr><th>サービス</th><th>公式ドキュメントの説明（2026年10月時点）</th></tr></thead><tbody><tr><td>Amazon EKS</td><td>提供開始から14か月が標準サポート、その後12か月が延長サポート。延長サポートは追加の費用がかかり、終了するとコントロールプレーンが自動で上げられる</td></tr><tr><td>GKE</td><td>標準のサポートは14か月。Extendedチャンネルでは最大24か月同じマイナー版にとどまれ、延長の期間は利用に応じた料金がかかる。延長の終了時には残ったクラスターが上げられる</td></tr><tr><td>AKS</td><td>1年のコミュニティサポートと1年の長期サポート（LTS）。LTSは明示的に有効にする必要があり、サポートの外に出たクラスターはプラットフォーム側から上げられる</td></tr></tbody></table></div>
+<p>共通しているのは、<strong>延長には費用や条件があり、放っておくと予定外の時期に自動で上げられる</strong>ことです。発注側にとっては、版上げを先送りするほど費用と不確実さが増えます。期限を一覧にし、アドオンやアプリの対応を先回りして確かめる仕事は、どの現場でも求められやすい役割です。報酬との関係は<a href="/media/kubernetes-rate/">Kubernetesエンジニアの報酬の記事</a>をご覧ください。</p>
+<aside class="box box-view"><p class="box-label">エージェントベストの見解</p><p>Kubernetesの案件をご紹介していると、面談で評価されやすいのは、版上げを「やったことがある」だけでなく、「サポートの期限から逆算して、いつ何を確かめたか」を話せる方です。延長サポートの費用や自動アップグレードの仕組みは、発注側でも十分に把握されていないことがあります。担当したクラスターの期限と計画を自分の言葉で説明できるよう、整理しておくことをおすすめします。</p></aside>
+<h2 id="s4">外部からの入り口の世代交代</h2>
+<p>Kubernetesの公式ドキュメントでは、2026年10月時点で、IngressではなくGatewayを使うことが推奨され、Ingress APIは凍結されて今後の変更はないと書かれています。Ingressは一般提供のAPIとして残り、削除の予定はないとされています。</p>
+<p>また、広く使われてきたIngressのコントローラーであるIngress NGINXについて、Kubernetesのブログでは、2026年3月で保守を止めてプロジェクトを終了し、その後はリリースも不具合の修正も、脆弱性への対応も行われないと発表されていました。既存の環境が急に動かなくなるわけではないものの、Gateway APIか、ほかのIngressのコントローラーへの移行を始めるよう勧められています。</p>
+<p>これは、多くの現場で<strong>通信の入り口の移行</strong>という具体的な仕事が生まれていることを意味します。移行では、既存の設定の書き換えだけでなく、コントローラーごとの細かな振る舞いの違いを洗い出し、切り替えと戻し方を計画する力が問われます。Gateway APIは、インフラを提供する側・クラスターを運用する側・アプリを開発する側の役割に沿って設定を分ける設計のため、<strong>誰がどの設定を持つかを組織として決める</strong>ところまで関われると、移行の案件で頼られやすくなります。</p>
+<h2 id="s5">GitOpsが前提になっていく</h2>
+<p>ArgoとFluxは、どちらもCNCFで卒業（Graduated）の段階にあるプロジェクトです。CNCFのワーキンググループがまとめたOpenGitOpsの原則では、望ましい状態を宣言的に書き、変更履歴の残る形で保管し、自動で取り込んで、実際の状態と突き合わせ続けることが示されています。</p>
+<p>変更をGitに集める運用が広がると、手作業でクラスターを直す仕事は減り、<strong>リポジトリの構成、環境ごとの差分の管理、緊急時の例外の扱い</strong>を決める仕事の比重が増えます。開発の流れ全体の整備はDevOpsの案件と重なるため、Kubernetesエンジニアとしては、クラスター側の受け口を設計できることが強みになります。</p>
+<h2 id="s6">選択肢を広げる3つの方向</h2>
+<h3>版上げと移行の専門性</h3>
+<p>期限の管理、廃止APIの影響調査、入り口の移行など、変化を取り込む仕事を一続きで担える方向です。どの現場にも毎年発生するため、経験が積み上がりやすい分野です。</p>
+<h3>クラウドとの組み合わせ</h3>
+<p>マネージドサービスの案件では、クラウドのネットワークと権限の知識がセットで求められます。クラウドごとの動向は<a href="/media/aws-future/">AWSエンジニアの将来性</a>、<a href="/media/gcp-future/">GCPエンジニアの将来性</a>、<a href="/media/azure-future/">Azureエンジニアの将来性</a>で扱っています。</p>
+<h3>セキュリティとの接点</h3>
+<p>権限の設計、サプライチェーンの対策、サポートの終わった部品の入れ替えは、セキュリティの仕事と重なります。開発が止まった部品を見つけて置き換える判断は、Ingress NGINXの例のように今後も求められます。詳しくは<a href="/media/security-engineer-future/">セキュリティエンジニアの将来性</a>をご覧ください。</p>
+<h2 id="s7">経験に応じた広げ方</h2>
+<h3>運用が中心の時期</h3>
+<p>担当しているクラスターの版と、サポートの期限を自分で一覧にしてみることから始めます。入り口に何のコントローラーを使っているかを確かめ、移行が必要かを調べるだけでも、次の面談で話せる材料になります。</p>
+<h3>構築や改善を任されている時期</h3>
+<p>版上げの計画や、Gateway APIへの移行、GitOpsの導入のどれかを、一つの案件で最初から最後まで担う経験を目指します。判断の理由を記録しておくと、設計の案件に進むときの材料になります。</p>
+<h3>設計やリードを経験している人</h3>
+<p>複数のクラスターや複数のチームにまたがる運用ルール、期限管理の仕組み、共通の基盤の整備を担える人は多くありません。技術の判断を、費用やリスクと結びつけて説明できると、上流の工程に関わる案件が広がります。<a href="/media/upper-process/">上流工程の案件に入るために必要な経験</a>や、年代ごとの傾向は<a href="/media/40s/">40代のフリーランス</a>も参考になります。</p>
+<aside class="box box-caution"><p class="box-label">注意</p><p>サポートの期限や延長の条件は、各社が更新していきます。この記事の内容は2026年10月時点の公式ドキュメントにもとづくものです。案件で期限を前提に計画を立てるときは、その時点の公式ページを必ずご確認ください。</p></aside>
+<aside class="box box-view"><p class="box-label">エージェントベストの見解</p><p>当社では、案件をご案内するときに、先に稼働日数・リモートの可否・ご希望の金額を伺い、合う案件だけをお出ししています。また、契約では業務範囲・報酬・支払期日・契約期間を個別契約に書いてお渡ししています。版上げや移行の案件は、参画期間中に期限が来るかどうかで作業の山が変わるため、契約期間と作業の予定が合っているかを参画前に見ておくことをおすすめします。</p></aside>
+<aside class="box box-point"><p class="box-label">ポイント</p><ul><li>Kubernetesは年3回ほど新しい版が出て、各版のパッチ提供は約1年（2026年10月時点）</li><li>EKS・GKE・AKSの延長サポートには費用や条件があり、期限を過ぎると自動で上げられる</li><li>Ingress APIは凍結され、Ingress NGINXは2026年3月で開発終了。入り口の移行の仕事が生まれている</li><li>GitOpsが前提になるほど、リポジトリの構成や例外の扱いを決める仕事が増える</li><li>版上げと移行、クラウドとの組み合わせ、セキュリティとの接点の3方向で広げる</li></ul></aside>
+<h2 id="s8">よくある質問</h2>
+<h3>マネージドサービスが進化すると、Kubernetesエンジニアの仕事は減りますか？</h3>
+<p>コントロールプレーンの運用のように、クラウド側が担う範囲は広がっています。一方で、各社とも版のサポートには期限があり、ノードやアドオン、アプリの対応は利用者側に残ります。期限を前提に計画を立て、変化を安全に取り込む仕事は続くと考えられます。</p>
+<h3>Ingressを使い続けている現場は、すぐに移行が必要ですか？</h3>
+<p>Ingress API自体は削除の予定はないとされています。ただし、使っているコントローラーの開発が止まっている場合は、脆弱性への対応が受けられなくなります。何のコントローラーを使っているかを確かめ、移行の計画を立てるかどうかを判断しましょう。</p>
+<h3>これから伸ばすなら、どの分野がよいですか？</h3>
+<p>今の経験に近いところから選ぶのが現実的です。運用が中心なら版上げの計画、構築の経験があれば入り口の移行やGitOpsの導入、設計の経験があれば複数のクラスターの運用ルールづくりが、次の一歩になりやすい分野です。</p>
+  </div>
+  <section class="sources"><h2>参考にした公的情報・資料</h2><ul><li><a href="https://kubernetes.io/releases/" target="_blank" rel="noopener nofollow">Releases（Kubernetes）</a></li><li><a href="https://kubernetes.io/releases/release/" target="_blank" rel="noopener nofollow">Kubernetes Release Cycle（Kubernetes）</a></li><li><a href="https://docs.aws.amazon.com/eks/latest/userguide/kubernetes-versions.html" target="_blank" rel="noopener nofollow">Understand the Kubernetes version lifecycle on EKS（Amazon EKS ユーザーガイド）</a></li><li><a href="https://docs.cloud.google.com/kubernetes-engine/docs/concepts/release-channels" target="_blank" rel="noopener nofollow">Release channels（Google Kubernetes Engine ドキュメント）</a></li><li><a href="https://learn.microsoft.com/en-us/azure/aks/supported-kubernetes-versions" target="_blank" rel="noopener nofollow">Supported Kubernetes versions in AKS（Microsoft Learn）</a></li><li><a href="https://kubernetes.io/blog/2025/11/11/ingress-nginx-retirement/" target="_blank" rel="noopener nofollow">Ingress NGINX Retirement: What You Need to Know（Kubernetes Blog）</a></li><li><a href="https://kubernetes.io/docs/concepts/services-networking/ingress/" target="_blank" rel="noopener nofollow">Ingress（Kubernetes）</a></li><li><a href="https://www.cncf.io/projects/argo/" target="_blank" rel="noopener nofollow">Argo（CNCF）</a></li><li><a href="https://www.cncf.io/projects/flux/" target="_blank" rel="noopener nofollow">Flux（CNCF）</a></li><li><a href="https://opengitops.dev/" target="_blank" rel="noopener nofollow">OpenGitOps</a></li></ul>
+  <p class="note">記事の内容は公開日時点の情報にもとづきます。制度や税率は変わることがあるため、手続きの前に必ず各機関の最新情報をご確認ください。</p></section>
+  <div class="cta-band">
+  <h2>条件に合う案件だけ、知りたい方へ</h2>
+  <p>ご登録は無料です。条件に合う案件だけを、ご本人の了承を得てからご提案します。</p>
+  <div class="cta-row">
+    <a class="btn btn-primary" href="https://airtable.com/appYkc36EvioYoL1A/pag6CZC4uJmxUcrXT/form" target="_blank" rel="noopener">無料で登録する</a>
+    <a class="btn btn-ghost" href="/jobs/">案件を探す</a>
+  </div>
+</div>
+  <section class="related"><h2>あわせて読みたい</h2><div class="grid g2"><a class="card art-card" href="/media/kubernetes-how-to/">
+  <span class="art-hub">インフラ・クラウド</span>
+  <h3>Kubernetesエンジニアがフリーランスになるには｜必要な経験と独立までの進め方</h3>
+  <p>Kubernetesエンジニアとして独立するには、本番のクラスターを運用し、障害の原因を自分で切り分け、版上げを一通り担った経験が目安になります。案件の型ごとの経験、在職中に積む実績、検証環境の準備、最初の案件で確かめることを解説します。</p>
+</a>
+<a class="card art-card" href="/media/kubernetes-skills/">
+  <span class="art-hub">インフラ・クラウド</span>
+  <h3>Kubernetesエンジニアのフリーランス案件で求められるスキルと経験</h3>
+  <p>Kubernetesの案件では、リソースの要求と上限の決め方、ServiceやGateway APIを使った通信の設計、最小権限のRBAC、GitOpsでの配布、版上げ、障害の切り分けが見られます。分野ごと・経験の段階ごとに求められる水準を解説します。</p>
+</a>
+<a class="card art-card" href="/media/kubernetes-rate/">
+  <span class="art-hub">インフラ・クラウド</span>
+  <h3>Kubernetesエンジニアのフリーランス案件｜報酬の決まり方と単価を上げる考え方</h3>
+  <p>Kubernetesエンジニアの報酬は、設計から任されるか運用の担い手か、マネージドか自前の構築か、本番の重さ、版上げと障害対応の責任範囲、GitOpsやIaCで仕組みを残せるかで決まり、案件ごとに大きく変わります。交渉の材料を解説します。</p>
+</a>
+<a class="card art-card" href="/media/kubernetes-skillsheet/">
+  <span class="art-hub">インフラ・クラウド</span>
+  <h3>Kubernetesエンジニアのスキルシートの書き方｜面談で評価される実績の見せ方</h3>
+  <p>Kubernetesのスキルシートは、ツール名を並べるより、マネージドか自前か・クラスターの数と分け方・担った役割・変更の届け方・版上げの経験を書き分けるのが基本です。項目ごとの書き方と、架空の記入例を紹介します。</p>
+</a>
+<a class="card art-card" href="/media/kubernetes-remote/">
+  <span class="art-hub">インフラ・クラウド</span>
+  <h3>Kubernetesエンジニアのフリーランスはリモートで働ける？案件の傾向と探し方</h3>
+  <p>Kubernetesの案件は、変更をGitで管理する現場ほどリモートで進めやすくなります。一方、閉域網からしかクラスターに入れない環境や、自前の基盤、切り替え当日の作業では出社の条件が付きやすくなります。案件の型と、参画前の確認点を解説します。</p>
+</a>
+<a class="card art-card" href="/media/sre-future/">
+  <span class="art-hub">インフラ・クラウド</span>
+  <h3>SREのフリーランスの将来性とキャリアの広げ方</h3>
+  <p>SREは国家試験の出題範囲の案にも名前が挙がり、特定の会社の肩書きから、開発と運用をつなぐ共通の実践として扱われ始めています。AIや基盤の更新が続く中で、SREの役割の変化と経験別の広げ方を解説します。</p>
+</a></div></section>
+</main>
+<footer class="site-foot">
+  <div class="wrap">
+    <strong>エージェントベストジョブ フリーランス</strong>
+    <div class="foot-links">
+      <a href="/">トップ</a>
+      <a href="/jobs/">案件を探す</a>
+      <a href="/media/">お役立ち記事</a>
+      <a href="https://airtable.com/appYkc36EvioYoL1A/pag6CZC4uJmxUcrXT/form" target="_blank" rel="noopener">ご登録（スキルシート・ご希望の条件）</a>
+      <a href="https://line.me/R/ti/p/@697nxhbt?oat_content=url&ts=08302134" target="_blank" rel="noopener" data-line-cta="footer">LINEで相談する</a>
+      <a href="/privacy.html">個人情報の取り扱い</a>
+      <a href="https://www.agent-best.net/company/">運営会社</a>
+    </div>
+    <div class="foot-links">
+      <a href="https://jobs.agent-best.net/">正社員の求人を探す（エージェントベストジョブ）</a>
+      <a href="https://skill.agent-best.net/">エージェントベストジョブ手に職</a>
+      <a href="https://www.agent-best.net/">エージェントベスト</a>
+    </div>
+    <p>運営：株式会社エージェントベスト（有料職業紹介事業 許可番号 13-ユ-316964）<br>〒106-0032 東京都港区六本木4-8-7 嶋田ビル5階</p>
+  </div>
+</footer>
+<script src="/assets/fav.js" defer></script>
+</body>
+</html>

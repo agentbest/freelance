@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Kubernetesエンジニアのスキルシートの書き方｜面談で評価される実績の見せ方｜エージェントベストジョブ フリーランス</title>
+<meta name="description" content="Kubernetesのスキルシートは、ツール名を並べるより、マネージドか自前か・クラスターの数と分け方・担った役割・変更の届け方・版上げの経験を書き分けるのが基本です。項目ごとの書き方と、架空の記入例を紹介します。">
+<link rel="canonical" href="https://freelance.agent-best.net/media/kubernetes-skillsheet/">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="エージェントベストジョブ フリーランス">
+<meta property="og:title" content="Kubernetesエンジニアのスキルシートの書き方｜面談で評価される実績の見せ方｜エージェントベストジョブ フリーランス">
+<meta property="og:description" content="Kubernetesのスキルシートは、ツール名を並べるより、マネージドか自前か・クラスターの数と分け方・担った役割・変更の届け方・版上げの経験を書き分けるのが基本です。項目ごとの書き方と、架空の記入例を紹介します。">
+<meta property="og:url" content="https://freelance.agent-best.net/media/kubernetes-skillsheet/">
+<meta property="og:image" content="https://freelance.agent-best.net/assets/ogp.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://freelance.agent-best.net/assets/ogp.png">
+<meta name="theme-color" content="#1E3A5F">
+<link rel="icon" href="/assets/favicon.ico">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="stylesheet" href="/assets/site.css">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1XXMP8Y1B4"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-1XXMP8Y1B4');
+document.addEventListener('click',e=>{const a=e.target.closest('[data-line-cta]');if(a)gtag('event','line_add_friend',{placement:a.dataset.lineCta,page_path:location.pathname});});</script>
+<script type="application/ld+json">[{"@context":"https://schema.org","@type":"Article","headline":"Kubernetesエンジニアのスキルシートの書き方｜面談で評価される実績の見せ方","description":"Kubernetesのスキルシートは、ツール名を並べるより、マネージドか自前か・クラスターの数と分け方・担った役割・変更の届け方・版上げの経験を書き分けるのが基本です。項目ごとの書き方と、架空の記入例を紹介します。","datePublished":"2026-10-29","dateModified":"2026-10-29","author":{"@type":"Organization","name":"株式会社エージェントベスト","url":"https://www.agent-best.net/"},"publisher":{"@type":"Organization","name":"株式会社エージェントベスト","logo":{"@type":"ImageObject","url":"https://freelance.agent-best.net/assets/logo.png"}},"mainEntityOfPage":"https://freelance.agent-best.net/media/kubernetes-skillsheet/"},{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"トップ","item":"https://freelance.agent-best.net/"},{"@type":"ListItem","position":2,"name":"お役立ち記事","item":"https://freelance.agent-best.net/media/"},{"@type":"ListItem","position":3,"name":"インフラ・クラウド","item":"https://freelance.agent-best.net/media/hub/infra-cloud/"},{"@type":"ListItem","position":4,"name":"Kubernetesエンジニアのスキルシートの書き方｜面談で評価される実績の見せ方"}]},{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"検証環境で作ったクラスターの経験は書いてよいですか？","acceptedAnswer":{"@type":"Answer","text":"書いて構いません。ただし、業務の経験とは分けて「個人の検証」と明記します。どんな構成を作り、何を確かめたかを書くと、学んでいる方向が伝わります。"}},{"@type":"Question","name":"アプリをデプロイする側としての経験は、どう書けばよいですか？","acceptedAnswer":{"@type":"Answer","text":"「利用者としてKubernetesにデプロイ」と書き、マニフェストの作成やリソースの値の決定など、自分が担った範囲を具体的に書きます。基盤側の案件を狙う場合は、障害の切り分けで基盤側まで調べた経験があれば、あわせて書くと伝わりやすくなります。"}},{"@type":"Question","name":"版の番号は書いたほうがよいですか？","acceptedAnswer":{"@type":"Answer","text":"「1.xxから1.yyへの版上げ」のように書くと、時期と経験の新しさが伝わります。ただし、番号より、どの段階から担ったかのほうが評価につながります。面談でよく聞かれる質問は業務委託の面談でよく聞かれる質問も参考になります。"}}]}]</script>
+</head>
+<body>
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="/"><img src="/assets/mark.png" alt="" width="28" height="28"><span>エージェントベストジョブ フリーランス<small>フリーランスのエンジニア・コンサル向け案件紹介</small></span></a>
+    <nav class="head-nav" aria-label="メニュー">
+      <a class="link" href="/jobs/">案件を探す</a>
+      <a class="link" href="/media/">お役立ち記事</a>
+      <a class="link keep" href="/mypage/" aria-label="気になる案件">☆ 気になる<span class="fav-count" data-fav-count hidden></span></a>
+      <a class="btn btn-primary btn-sm" href="https://airtable.com/appYkc36EvioYoL1A/pag6CZC4uJmxUcrXT/form" target="_blank" rel="noopener">無料で登録</a>
+    </nav>
+  </div>
+</header>
+<main class="wrap narrow article">
+  <p class="crumbs"><a href="/">トップ</a> › <a href="/media/">お役立ち記事</a> › <a href="/media/hub/infra-cloud/">インフラ・クラウド</a></p>
+  <a class="art-hub" href="/media/hub/infra-cloud/">インフラ・クラウド</a>
+  <h1 class="art-title">Kubernetesエンジニアのスキルシートの書き方｜面談で評価される実績の見せ方</h1>
+  <p class="note">公開 2026-10-29　監修：株式会社エージェントベスト</p>
+  <nav class="toc" aria-label="目次"><strong>目次</strong><ol><li><a href="#s1">ツール名の羅列では伝わらないこと</a></li><li><a href="#s2">冒頭に「クラスターの要約」を置く</a></li><li><a href="#s3">スキル一覧は分野ごとに「深さ」を添える</a></li><li><a href="#s4">担った工程と役割を書き分ける</a></li><li><a href="#s5">変更の届け方を1行で書く</a></li><li><a href="#s6">版上げの経験は「どこから担ったか」まで書く</a></li><li><a href="#s7">障害対応は「調べた順番」と「その後」を書く</a></li><li><a href="#s8">プロジェクト欄の記入例</a></li><li><a href="#s9">資格の書き方</a></li><li><a href="#s10">よくある質問</a></li></ol></nav>
+  <div class="art-body">
+<p>Kubernetesエンジニアのスキルシートは、<strong>ツールの名前を並べるより、「どんなクラスターを」「どの役割で」「どう変えたか」を書き分ける</strong>のが基本です。具体的には、マネージドサービスか自前の構築か、クラスターの数と分け方、担った工程、変更を本番に届ける方法、版上げの経験の5つをそろえると、案件側が任せられる範囲を判断しやすくなります。</p>
+<p>この記事では、項目ごとの書き方と、架空の記入例を紹介します。スキルシート全体の基本の構成は<a href="/media/skillsheet-basics/">フリーランスのスキルシートの書き方</a>、案件で見られるスキルの中身は<a href="/media/kubernetes-skills/">Kubernetesの案件で求められるスキル</a>で扱っています。</p>
+<h2 id="s1">ツール名の羅列では伝わらないこと</h2>
+<p>「Kubernetes、EKS、Helm、Argo CD、Prometheus、Terraform」と並べただけでは、次のことが分かりません。</p>
+<ul><li>用意されたクラスターにアプリを載せたのか、クラスターそのものを作ったのか</li><li>本番を運用していたのか、検証環境だけなのか</li><li>構成を決めたのか、決まった構成を回していたのか</li><li>ツールを導入したのか、既にあるものを使っていたのか</li></ul>
+<p>面談では、こうした点を一つずつ確かめられます。最初から書き分けておくと、面談の時間を、自分の判断や工夫の話に使えます。</p>
+<h2 id="s2">冒頭に「クラスターの要約」を置く</h2>
+<p>プロジェクト欄の冒頭に、クラスターの環境を1〜2行でまとめます。</p>
+<div class="table-wrap"><table><thead><tr><th>書く項目</th><th>書き方の例</th></tr></thead><tbody><tr><td>環境</td><td>マネージド（EKS）／自前の構築（オンプレミス）など</td></tr><tr><td>クラスターの分け方</td><td>本番・検証・開発で3クラスター、チームごとに名前空間を分割 など</td></tr><tr><td>規模の目安</td><td>数十のサービスが稼働、のように幅を持たせて書く</td></tr><tr><td>載っているもの</td><td>Webアプリ、バッチ処理、データを持つアプリの有無</td></tr></tbody></table></div>
+<p>規模は、正確なノード数やPod数を書かなくても構いません。守秘義務の範囲で、「数台」「数十」のように幅を持たせて書けば足ります。スキルシートに書いてよい範囲は<a href="/media/confidentiality-in-skillsheet/">スキルシートに書いてよいこと・いけないこと</a>をご覧ください。</p>
+<h2 id="s3">スキル一覧は分野ごとに「深さ」を添える</h2>
+<p>スキル一覧の欄では、ツールを分野ごとにまとめ、それぞれに関わりの深さを添えます。</p>
+<div class="table-wrap"><table><thead><tr><th>分野</th><th>書き方の例</th></tr></thead><tbody><tr><td>クラスター</td><td>EKS（構築・運用2年）、自前の構築（運用1年）</td></tr><tr><td>配布</td><td>Helm（チャートの作成）、GitOpsのツール（導入・運用）</td></tr><tr><td>通信</td><td>Ingress（運用）、Gateway API（検証環境で移行を試行）</td></tr><tr><td>監視</td><td>Prometheus（アラートの見直し）</td></tr><tr><td>IaC</td><td>Terraform（既存のモジュールの修正）</td></tr></tbody></table></div>
+<p>「作成」「導入」「運用」「修正」「検証」のように、関わり方を一言添えるだけで、同じツール名でも経験の厚みが区別できます。触っただけのツールは書かないか、「検証」と明記して分けます。</p>
+<h2 id="s4">担った工程と役割を書き分ける</h2>
+<p>Kubernetesの経歴は、同じ期間でも担った工程によって見え方が大きく変わります。工程ごとに、主担当か、レビューや支援だったかを書き分けます。</p>
+<ul><li><strong>設計</strong>：クラスターの分け方、通信の入り口、権限の方針を決めた（主担当／レビュー参加）</li><li><strong>構築</strong>：IaCでクラスターと周辺のクラウドのリソースを作った</li><li><strong>移行</strong>：仮想マシンからコンテナへ、または別のクラスターへ載せ替えた</li><li><strong>運用</strong>：デプロイ対応、障害対応、定型の変更</li><li><strong>改善</strong>：手作業の変更のGit管理への移行、監視の見直し、版上げの仕組み化</li></ul>
+<p>主担当ではない工程も、関わり方をそのまま書くほうが、面談で深く聞かれたときに答えがぶれません。</p>
+<h2 id="s5">変更の届け方を1行で書く</h2>
+<p>Kubernetesの案件では、変更をどう本番に届けていたかがよく聞かれます。次のように1行で書いておくと、運用の成熟度と、自分の関わり方が伝わります。</p>
+<blockquote><p>例：マニフェストはHelmで管理し、本番への反映はGitOpsのツールで自動化（導入から担当）<br>例：既存のGitOpsの運用に参加し、環境ごとの差分の整理を担当</p></blockquote>
+<p>「導入から担当」「既存の運用に参加」の違いは、改善の案件を狙うときに大きな差になります。</p>
+<aside class="box box-view"><p class="box-label">エージェントベストの見解</p><p>Kubernetesの案件をご紹介していると、面談が早く進みやすいのは、スキルシートの冒頭でクラスターの環境と自分の役割が分かる方です。反対に、ツール名だけが長く並んでいると、面談の大半がその確認に使われ、判断や工夫の話にたどり着く前に時間が終わってしまうことがあります。提出の前に、プロジェクト欄の最初の3行だけで環境と役割が伝わるかを見直すことをおすすめします。</p></aside>
+<h2 id="s6">版上げの経験は「どこから担ったか」まで書く</h2>
+<p>Kubernetesの公式ページでは、1.19以降のマイナー版のパッチ提供は約1年とされています。版上げはどの現場でも繰り返し発生するため、経験として書いておく価値があります。書くときは、回数と、<strong>作業の始まりと終わりがどこだったか</strong>を1行に入れます。</p>
+<blockquote><p>例：版上げ2回を担当。廃止APIの影響調査から、ノードの入れ替えと反映後の確認まで<br>例：版上げ1回に参加。ノードの入れ替えの作業を担当（計画はリーダーが作成）</p></blockquote>
+<p>公式の「Deprecated API Migration Guide」では、版ごとに削除されたAPIと移行先がまとめられています。こうした資料をもとに影響を調べた経験があれば、「廃止APIの影響調査を担当」と書き添えると、事前の確認から担ったことが伝わります。</p>
+<h2 id="s7">障害対応は「調べた順番」と「その後」を書く</h2>
+<p>障害対応の経験は、件数より、1件を具体的に書くほうが伝わります。何が起き、何を見て絞り込み、何を直し、再発を防ぐために何を変えたかを短くまとめます。オンコールの関わり方の書き方は<a href="/media/sre-skillsheet/">SREのスキルシートの書き方</a>で詳しく紹介しています。</p>
+<h2 id="s8">プロジェクト欄の記入例</h2>
+<p>ここでは、マネージドサービスでの運用改善と、版上げの仕組み化を担当した場合を想定した記入例を示します。<strong>以下は書き方を示すための架空の例</strong>で、実在の案件や実績ではありません。業界や規模はぼかしています。</p>
+<blockquote><p><strong>期間</strong>：20XX年X月〜20XX年X月（1年2か月）<br><strong>案件概要</strong>：小売業向け 会員サービスの基盤の運用改善<br><strong>クラスターの要約</strong>：マネージド（EKS）。本番・検証の2クラスター、チームごとに名前空間を分割。数十のサービスが稼働<br><strong>規模・立場</strong>：基盤チーム3名（自分はメンバー。後半は版上げのとりまとめ）<br><strong>担当工程</strong>：運用、改善（設計はレビューに参加）<br><strong>使用技術</strong>：EKS、Helm、GitOpsのツール（導入から担当）、Terraform（既存の修正）、Prometheus<br><strong>担当内容</strong>：kubectlでの直接変更が残っていた設定をリポジトリでの管理に移し、レビューを通して反映する形に変えた。版上げで、廃止されるAPIの洗い出しとアドオンの対応状況の確認を担当した<br><strong>工夫・成果</strong>：版上げの前の確認を検証環境で自動で行う仕組みを作り、次の版上げでの手作業を減らした。直接変更が必要になったときの手順を決め、リポジトリとの食い違いが残らないようにした</p></blockquote>
+<p>もう一つ、自前の構築の経験がある場合の例です。こちらも<strong>架空の例</strong>です。</p>
+<blockquote><p><strong>期間</strong>：20XX年X月〜20XX年X月（10か月）<br><strong>案件概要</strong>：製造業向け 社内システムのコンテナ基盤の構築<br><strong>クラスターの要約</strong>：自前の構築（オンプレミス）。本番1クラスター、検証1クラスター<br><strong>規模・立場</strong>：インフラ5名（自分はKubernetesの構築担当）<br><strong>担当工程</strong>：構築、運用（設計は方針の検討に参加）<br><strong>担当内容</strong>：クラスターの構築手順をコード化し、証明書の更新とバックアップの手順を整えた<br><strong>工夫・成果</strong>：障害時の切り分けの順番を手順書にまとめ、運用チームに引き継いだ</p></blockquote>
+<aside class="box box-caution"><p class="box-label">注意</p><p>スキルシートに、実際のクラスター名、名前空間の名前、内部のドメイン名、リポジトリのURLなどを書かないよう気をつけましょう。構成を具体的に書こうとして、参画先を特定できる情報が入ってしまうことがあります。提出の前に、固有の名前が残っていないかを見直してください。</p></aside>
+<h2 id="s9">資格の書き方</h2>
+<p>CKAなどの資格は、正式名称、取得年月、有効期限を書き、期限が切れたものは取得歴として分けます。CKAの有効期間や、経歴とのつなげ方は<a href="/media/cert-cka/">CKAの記事</a>で紹介しています。資格欄だけでなく、プロジェクト欄の環境の情報と組み合わせると、知識が実務のどこで生きたかが伝わります。</p>
+<aside class="box box-view"><p class="box-label">エージェントベストの見解</p><p>当社では、経歴は、ご本人の了承を得た案件にだけ、氏名・連絡先を伏せて提案しています。Kubernetesの経歴は、マネージドか自前か、どの工程を担ったかによってご案内できる案件が変わるため、その2点がはっきり書かれていると案件を選びやすくなります。書き方で迷う点は、ご質問いただければ確認します。</p></aside>
+<aside class="box box-point"><p class="box-label">ポイント</p><ul><li>冒頭にクラスターの要約（環境・分け方・規模の目安・載っているもの）を置く</li><li>工程ごとに主担当かレビュー参加かを書き分け、変更の届け方を1行で書く</li><li>版上げは「どの段階から担ったか」、障害対応は「調べた順番とその後」を書く</li><li>固有の名前や内部の情報が残っていないかを提出前に見直す</li></ul></aside>
+<h2 id="s10">よくある質問</h2>
+<h3>検証環境で作ったクラスターの経験は書いてよいですか？</h3>
+<p>書いて構いません。ただし、業務の経験とは分けて「個人の検証」と明記します。どんな構成を作り、何を確かめたかを書くと、学んでいる方向が伝わります。</p>
+<h3>アプリをデプロイする側としての経験は、どう書けばよいですか？</h3>
+<p>「利用者としてKubernetesにデプロイ」と書き、マニフェストの作成やリソースの値の決定など、自分が担った範囲を具体的に書きます。基盤側の案件を狙う場合は、障害の切り分けで基盤側まで調べた経験があれば、あわせて書くと伝わりやすくなります。</p>
+<h3>版の番号は書いたほうがよいですか？</h3>
+<p>「1.xxから1.yyへの版上げ」のように書くと、時期と経験の新しさが伝わります。ただし、番号より、どの段階から担ったかのほうが評価につながります。面談でよく聞かれる質問は<a href="/media/interview-questions/">業務委託の面談でよく聞かれる質問</a>も参考になります。</p>
+  </div>
+  <section class="sources"><h2>参考にした公的情報・資料</h2><ul><li><a href="https://kubernetes.io/releases/" target="_blank" rel="noopener nofollow">Releases（Kubernetes）</a></li><li><a href="https://kubernetes.io/docs/reference/using-api/deprecation-guide/" target="_blank" rel="noopener nofollow">Deprecated API Migration Guide（Kubernetes）</a></li></ul>
+  <p class="note">記事の内容は公開日時点の情報にもとづきます。制度や税率は変わることがあるため、手続きの前に必ず各機関の最新情報をご確認ください。</p></section>
+  <div class="cta-band">
+  <h2>条件に合う案件だけ、知りたい方へ</h2>
+  <p>ご登録は無料です。条件に合う案件だけを、ご本人の了承を得てからご提案します。</p>
+  <div class="cta-row">
+    <a class="btn btn-primary" href="https://airtable.com/appYkc36EvioYoL1A/pag6CZC4uJmxUcrXT/form" target="_blank" rel="noopener">無料で登録する</a>
+    <a class="btn btn-ghost" href="/jobs/">案件を探す</a>
+  </div>
+</div>
+  <section class="related"><h2>あわせて読みたい</h2><div class="grid g2"><a class="card art-card" href="/media/kubernetes-skills/">
+  <span class="art-hub">インフラ・クラウド</span>
+  <h3>Kubernetesエンジニアのフリーランス案件で求められるスキルと経験</h3>
+  <p>Kubernetesの案件では、リソースの要求と上限の決め方、ServiceやGateway APIを使った通信の設計、最小権限のRBAC、GitOpsでの配布、版上げ、障害の切り分けが見られます。分野ごと・経験の段階ごとに求められる水準を解説します。</p>
+</a>
+<a class="card art-card" href="/media/kubernetes-how-to/">
+  <span class="art-hub">インフラ・クラウド</span>
+  <h3>Kubernetesエンジニアがフリーランスになるには｜必要な経験と独立までの進め方</h3>
+  <p>Kubernetesエンジニアとして独立するには、本番のクラスターを運用し、障害の原因を自分で切り分け、版上げを一通り担った経験が目安になります。案件の型ごとの経験、在職中に積む実績、検証環境の準備、最初の案件で確かめることを解説します。</p>
+</a>
+<a class="card art-card" href="/media/kubernetes-rate/">
+  <span class="art-hub">インフラ・クラウド</span>
+  <h3>Kubernetesエンジニアのフリーランス案件｜報酬の決まり方と単価を上げる考え方</h3>
+  <p>Kubernetesエンジニアの報酬は、設計から任されるか運用の担い手か、マネージドか自前の構築か、本番の重さ、版上げと障害対応の責任範囲、GitOpsやIaCで仕組みを残せるかで決まり、案件ごとに大きく変わります。交渉の材料を解説します。</p>
+</a>
+<a class="card art-card" href="/media/kubernetes-remote/">
+  <span class="art-hub">インフラ・クラウド</span>
+  <h3>Kubernetesエンジニアのフリーランスはリモートで働ける？案件の傾向と探し方</h3>
+  <p>Kubernetesの案件は、変更をGitで管理する現場ほどリモートで進めやすくなります。一方、閉域網からしかクラスターに入れない環境や、自前の基盤、切り替え当日の作業では出社の条件が付きやすくなります。案件の型と、参画前の確認点を解説します。</p>
+</a>
+<a class="card art-card" href="/media/kubernetes-future/">
+  <span class="art-hub">インフラ・クラウド</span>
+  <h3>Kubernetesエンジニアのフリーランスの将来性とキャリアの広げ方</h3>
+  <p>Kubernetesは年3回ほど新しい版が出て、各版のパッチ提供は約1年です。EKS・GKE・AKSの延長サポートの仕組みや、Ingress NGINXの開発終了とGateway APIへの移行など、公式の動向から仕事の変化と広げ方を解説します（2026年10月時点）。</p>
+</a>
+<a class="card art-card" href="/media/sre-skillsheet/">
+  <span class="art-hub">インフラ・クラウド</span>
+  <h3>SREのスキルシートの書き方｜面談で評価される実績の見せ方</h3>
+  <p>SREのスキルシートは、道具の名前より、障害対応での役割、オンコールの関わり方、改善の前後で何が変わったかを書くのが基本です。数字のぼかし方、SREの肩書きでなかった経験の書き方、CKAの書き方を記入例で紹介します。</p>
+</a></div></section>
+</main>
+<footer class="site-foot">
+  <div class="wrap">
+    <strong>エージェントベストジョブ フリーランス</strong>
+    <div class="foot-links">
+      <a href="/">トップ</a>
+      <a href="/jobs/">案件を探す</a>
+      <a href="/media/">お役立ち記事</a>
+      <a href="https://airtable.com/appYkc36EvioYoL1A/pag6CZC4uJmxUcrXT/form" target="_blank" rel="noopener">ご登録（スキルシート・ご希望の条件）</a>
+      <a href="https://line.me/R/ti/p/@697nxhbt?oat_content=url&ts=08302134" target="_blank" rel="noopener" data-line-cta="footer">LINEで相談する</a>
+      <a href="/privacy.html">個人情報の取り扱い</a>
+      <a href="https://www.agent-best.net/company/">運営会社</a>
+    </div>
+    <div class="foot-links">
+      <a href="https://jobs.agent-best.net/">正社員の求人を探す（エージェントベストジョブ）</a>
+      <a href="https://skill.agent-best.net/">エージェントベストジョブ手に職</a>
+      <a href="https://www.agent-best.net/">エージェントベスト</a>
+    </div>
+    <p>運営：株式会社エージェントベスト（有料職業紹介事業 許可番号 13-ユ-316964）<br>〒106-0032 東京都港区六本木4-8-7 嶋田ビル5階</p>
+  </div>
+</footer>
+<script src="/assets/fav.js" defer></script>
+</body>
+</html>

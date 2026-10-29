@@ -46,7 +46,7 @@ document.addEventListener('click',e=>{const a=e.target.closest('[data-line-cta]'
   <nav class="toc" aria-label="目次"><strong>目次</strong><ol><li><a href="#s1">CKAの試験の範囲と形式</a></li><li><a href="#s2">CKAがなくても入れる案件が多い理由</a></li><li><a href="#s3">CKAが効きやすい場面</a></li><li><a href="#s4">CKAだけでは効きにくい場面</a></li><li><a href="#s5">実務経験との組み合わせ方</a></li><li><a href="#s6">スキルシートでの書き方</a></li><li><a href="#s7">案件と並行して準備するときの進め方</a></li><li><a href="#s8">よくある質問</a></li></ol></nav>
   <div class="art-body">
 <p>CKA（Certified Kubernetes Administrator、Kubernetes認定管理者）は、<strong>持っていなくても参画できるKubernetesの案件が多い一方で、選択式ではなくコマンドラインで課題を解く実技の試験のため、「手を動かしてクラスターを扱える」ことの裏付けとして効きます</strong>。とくに、障害の切り分けが出題の3割を占める点は、運用を任せる案件で評価につながりやすい部分です。</p>
-<p>この記事では、2026年10月時点のLinux Foundationの公式ページをもとに、CKAの範囲・形式・有効期間を確かめ、効く場面と効きにくい場面、実務経験との組み合わせ方を整理します。Kubernetesの案件で求められるスキル全体はKubernetesエンジニアのスキルの記事、職種として取る資格の選び方はKubernetesエンジニアの資格の記事で扱っています。</p>
+<p>この記事では、2026年10月時点のLinux Foundationの公式ページをもとに、CKAの範囲・形式・有効期間を確かめ、効く場面と効きにくい場面、実務経験との組み合わせ方を整理します。Kubernetesの案件で求められるスキル全体は<a href="/media/kubernetes-skills/">Kubernetesエンジニアのスキルの記事</a>、職種として取る資格の選び方はKubernetesエンジニアの資格の記事で扱っています。</p>
 <h2 id="s1">CKAの試験の範囲と形式</h2>
 <p>CKAは、Linux FoundationとCloud Native Computing Foundation（CNCF）が作成した認定で、Linux Foundationが提供しています。</p>
 <div class="table-wrap"><table><thead><tr><th>項目</th><th>内容（2026年10月時点のLinux Foundationの案内による）</th></tr></thead><tbody><tr><td>作成・提供</td><td>Linux Foundation、Cloud Native Computing Foundation</td></tr><tr><td>形式</td><td>オンラインの監督付きの実技試験。コマンドラインで課題を解く</td></tr><tr><td>時間</td><td>2時間</td></tr><tr><td>受験の条件</td><td>なし</td></tr><tr><td>申し込みに含まれるもの</td><td>12か月の受験資格期間、再受験1回、模擬試験2回</td></tr><tr><td>有効期間</td><td>2年間</td></tr></tbody></table></div>
@@ -75,7 +75,7 @@ document.addEventListener('click',e=>{const a=e.target.closest('[data-line-cta]'
 <h2 id="s6">スキルシートでの書き方</h2>
 <p>資格欄には、正式名称、取得年月、有効期限を書きます。</p>
 <blockquote><p>例：Certified Kubernetes Administrator（CKA）20XX年X月取得、有効期限20XX年X月</p></blockquote>
-<p>経歴欄では、Kubernetesの経験に「マネージドサービス（EKS）での運用」「自前で構築したクラスターの運用」のように、どちらの環境かを添えると、CKAの知識がどこで生きたかが伝わります。期限が切れたものは「取得歴」として分けて書きます。記入例はKubernetesエンジニアのスキルシートの記事や<a href="/media/sre-skillsheet/">SREのスキルシートの記事</a>で紹介しています。</p>
+<p>経歴欄では、Kubernetesの経験に「マネージドサービス（EKS）での運用」「自前で構築したクラスターの運用」のように、どちらの環境かを添えると、CKAの知識がどこで生きたかが伝わります。期限が切れたものは「取得歴」として分けて書きます。記入例は<a href="/media/kubernetes-skillsheet/">Kubernetesエンジニアのスキルシートの記事</a>や<a href="/media/sre-skillsheet/">SREのスキルシートの記事</a>で紹介しています。</p>
 <aside class="box box-caution"><p class="box-label">注意</p><p>CKAは実技の試験のため、知識を覚えるだけの準備では時間内に課題を解き終えにくくなります。また、対象のKubernetesのバージョンは更新されていきます。受験の前に、公式ページで対象のバージョンと出題分野、試験の環境の案内を必ずご確認ください。</p></aside>
 <h2 id="s7">案件と並行して準備するときの進め方</h2>
 <ol><li><strong>出題分野の比率から優先順位を決める</strong>：配点の大きいトラブルシューティングと、クラスターの設定から手をつけます</li><li><strong>自分でクラスターを組んで壊して直す</strong>：検証環境で設定を変え、わざと動かない状態を作って原因を探す練習をします</li><li><strong>申し込みに含まれる模擬試験を使う</strong>：本番に近い形式で時間配分を確かめます。受験資格の期間は12か月のため、案件の繁忙期を避けて日程を決めます</li></ol>
@@ -99,7 +99,17 @@ document.addEventListener('click',e=>{const a=e.target.closest('[data-line-cta]'
     <a class="btn btn-ghost" href="/jobs/">案件を探す</a>
   </div>
 </div>
-  <section class="related"><h2>あわせて読みたい</h2><div class="grid g2"><a class="card art-card" href="/media/sre-skills/">
+  <section class="related"><h2>あわせて読みたい</h2><div class="grid g2"><a class="card art-card" href="/media/kubernetes-skills/">
+  <span class="art-hub">インフラ・クラウド</span>
+  <h3>Kubernetesエンジニアのフリーランス案件で求められるスキルと経験</h3>
+  <p>Kubernetesの案件では、リソースの要求と上限の決め方、ServiceやGateway APIを使った通信の設計、最小権限のRBAC、GitOpsでの配布、版上げ、障害の切り分けが見られます。分野ごと・経験の段階ごとに求められる水準を解説します。</p>
+</a>
+<a class="card art-card" href="/media/kubernetes-skillsheet/">
+  <span class="art-hub">インフラ・クラウド</span>
+  <h3>Kubernetesエンジニアのスキルシートの書き方｜面談で評価される実績の見せ方</h3>
+  <p>Kubernetesのスキルシートは、ツール名を並べるより、マネージドか自前か・クラスターの数と分け方・担った役割・変更の届け方・版上げの経験を書き分けるのが基本です。項目ごとの書き方と、架空の記入例を紹介します。</p>
+</a>
+<a class="card art-card" href="/media/sre-skills/">
   <span class="art-hub">インフラ・クラウド</span>
   <h3>SREのフリーランス案件で求められるスキルと経験</h3>
   <p>SREのフリーランス案件では、利用者の体験から指標（SLI）を選びSLOとエラーバジェットで判断する力、可観測性の設計、安全なリリースの仕組み、トイルをコードで減らす力が見られます。スキルの中身と示し方を解説します。</p>
@@ -114,20 +124,10 @@ document.addEventListener('click',e=>{const a=e.target.closest('[data-line-cta]'
   <h3>SREがフリーランスになるには｜必要な経験と独立までの進め方</h3>
   <p>SREとしてフリーランスになるには、SLOの設計や障害の振り返りなど、信頼性を数字で扱い開発チームと改善を進めた経験が必要です。案件の型、独立前に積む実績、外部から参画するときの進め方、オンコールの契約上の注意を解説します。</p>
 </a>
-<a class="card art-card" href="/media/cert-terraform/">
-  <span class="art-hub">資格</span>
-  <h3>フリーランスにTerraform Associateは役立つ？評価される場面と準備</h3>
-  <p>Terraform Associateがなくても入れるIaCの案件は多くありますが、手作業の構築からコード化へ広げたいときには裏付けになります。004の範囲、英語のみの1時間の試験、2年の有効期間と更新、stateの経験との組み合わせ方を整理します（2026年10月時点）。</p>
-</a>
-<a class="card art-card" href="/media/cert-linuc/">
-  <span class="art-hub">資格</span>
-  <h3>フリーランスにLinuC・LPICは役立つ？評価される場面と準備</h3>
-  <p>LinuC・LPICはLinuxの操作と管理を体系的に学んだ裏付けになりますが、合格だけでインフラの案件に参画できるものではありません。効く場面と効かない場面、5年の有意性の扱い、スキルシートの書き方を整理します（2026年10月時点）。</p>
-</a>
-<a class="card art-card" href="/media/cert-aws-saa/">
-  <span class="art-hub">資格</span>
-  <h3>フリーランスにAWS認定ソリューションアーキテクトは役立つ？評価される場面と準備</h3>
-  <p>AWS認定ソリューションアーキテクト–アソシエイトがなくても入れるAWS案件は多くあります。運用から設計へ広げたいときや書類選考では裏付けになります。試験範囲・有効期間・経験との組み合わせ方を整理します（2026年10月時点）。</p>
+<a class="card art-card" href="/media/devops-skills/">
+  <span class="art-hub">インフラ・クラウド</span>
+  <h3>DevOpsエンジニアのフリーランス案件で求められるスキルと経験</h3>
+  <p>DevOpsエンジニアのフリーランス案件では、CI/CDの設計、IaCのモジュールとstateの扱い、パイプラインの権限と秘密情報の管理、開発者が使いやすい共通の仕組みづくりが見られます。分野ごとの中身と、経験の段階ごとに求められる水準を解説します。</p>
 </a></div></section>
 </main>
 <footer class="site-foot">
