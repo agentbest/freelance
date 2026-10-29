@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Node.jsエンジニアのスキルシートの書き方｜面談で評価される実績の見せ方｜エージェントベストジョブ フリーランス</title>
+<meta name="description" content="Node.jsのスキルシートは、担った層（API・BFF・サーバーレス）と画面側との境目、Node.jsの版とフレームワーク、運用で起きたことへの対応を書き分けるのが基本です。性能改善や版上げの書き方と、架空の記入例を紹介します。">
+<link rel="canonical" href="https://freelance.agent-best.net/media/nodejs-skillsheet/">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="エージェントベストジョブ フリーランス">
+<meta property="og:title" content="Node.jsエンジニアのスキルシートの書き方｜面談で評価される実績の見せ方｜エージェントベストジョブ フリーランス">
+<meta property="og:description" content="Node.jsのスキルシートは、担った層（API・BFF・サーバーレス）と画面側との境目、Node.jsの版とフレームワーク、運用で起きたことへの対応を書き分けるのが基本です。性能改善や版上げの書き方と、架空の記入例を紹介します。">
+<meta property="og:url" content="https://freelance.agent-best.net/media/nodejs-skillsheet/">
+<meta property="og:image" content="https://freelance.agent-best.net/assets/ogp.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://freelance.agent-best.net/assets/ogp.png">
+<meta name="theme-color" content="#1E3A5F">
+<link rel="icon" href="/assets/favicon.ico">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="stylesheet" href="/assets/site.css">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1XXMP8Y1B4"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-1XXMP8Y1B4');
+document.addEventListener('click',e=>{const a=e.target.closest('[data-line-cta]');if(a)gtag('event','line_add_friend',{placement:a.dataset.lineCta,page_path:location.pathname});});</script>
+<script type="application/ld+json">[{"@context":"https://schema.org","@type":"Article","headline":"Node.jsエンジニアのスキルシートの書き方｜面談で評価される実績の見せ方","description":"Node.jsのスキルシートは、担った層（API・BFF・サーバーレス）と画面側との境目、Node.jsの版とフレームワーク、運用で起きたことへの対応を書き分けるのが基本です。性能改善や版上げの書き方と、架空の記入例を紹介します。","datePublished":"2026-10-29","dateModified":"2026-10-29","author":{"@type":"Organization","name":"株式会社エージェントベスト","url":"https://www.agent-best.net/"},"publisher":{"@type":"Organization","name":"株式会社エージェントベスト","logo":{"@type":"ImageObject","url":"https://freelance.agent-best.net/assets/logo.png"}},"mainEntityOfPage":"https://freelance.agent-best.net/media/nodejs-skillsheet/"},{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"トップ","item":"https://freelance.agent-best.net/"},{"@type":"ListItem","position":2,"name":"お役立ち記事","item":"https://freelance.agent-best.net/media/"},{"@type":"ListItem","position":3,"name":"バックエンド開発","item":"https://freelance.agent-best.net/media/hub/backend/"},{"@type":"ListItem","position":4,"name":"Node.jsエンジニアのスキルシートの書き方｜面談で評価される実績の見せ方"}]},{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Node.jsの版を覚えていない場合はどう書けばよいですか？","acceptedAnswer":{"@type":"Answer","text":"正確な版が分からない場合は、「当時のLTSの版」「期間中に一度版上げ」のように、分かる範囲で書けば十分です。面談で聞かれたときに、版上げで何を確かめたかを話せるようにしておくほうが大切です。"}},{"@type":"Question","name":"フロントエンドの経験が中心ですが、Node.jsの経験はどこに書けばよいですか？","acceptedAnswer":{"@type":"Answer","text":"プロジェクトごとに、画面とサーバーの作業の割合を書き、Node.jsで担った部分を一行で切り出します。BFFを作った、APIの一部を担当したなど、サーバー側の作業がはっきり分かる書き方にすると、両方を見る案件で評価されやすくなります。"}},{"@type":"Question","name":"社内向けのツールやバッチをNode.jsで作った経験も書いてよいですか？","acceptedAnswer":{"@type":"Answer","text":"書いて構いません。社内向けでも、何のデータを扱い、どのくらいの頻度で動き、止まったときにどう対応したかを書けば、運用の経験として伝わります。規模が小さくても、自分で決めた範囲をはっきり書くことが大切です。"}}]}]</script>
+</head>
+<body>
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="/"><img src="/assets/mark.png" alt="" width="28" height="28"><span>エージェントベストジョブ フリーランス<small>フリーランスのエンジニア・コンサル向け案件紹介</small></span></a>
+    <nav class="head-nav" aria-label="メニュー">
+      <a class="link" href="/jobs/">案件を探す</a>
+      <a class="link" href="/media/">お役立ち記事</a>
+      <a class="link keep" href="/mypage/" aria-label="気になる案件">☆ 気になる<span class="fav-count" data-fav-count hidden></span></a>
+      <a class="btn btn-primary btn-sm" href="https://airtable.com/appYkc36EvioYoL1A/pag6CZC4uJmxUcrXT/form" target="_blank" rel="noopener">無料で登録</a>
+    </nav>
+  </div>
+</header>
+<main class="wrap narrow article">
+  <p class="crumbs"><a href="/">トップ</a> › <a href="/media/">お役立ち記事</a> › <a href="/media/hub/backend/">バックエンド開発</a></p>
+  <a class="art-hub" href="/media/hub/backend/">バックエンド開発</a>
+  <h1 class="art-title">Node.jsエンジニアのスキルシートの書き方｜面談で評価される実績の見せ方</h1>
+  <p class="note">公開 2026-10-29　監修：株式会社エージェントベスト</p>
+  <nav class="toc" aria-label="目次"><strong>目次</strong><ol><li><a href="#s1">「JavaScript／TypeScript」と「Node.js」を分けて書く</a></li><li><a href="#s2">担った層と、画面側との境目を書く</a></li><li><a href="#s3">性能の改善は「何を測ったか」と一緒に書く</a></li><li><a href="#s4">運用と版上げは独立した欄にする</a></li><li><a href="#s5">プロジェクト欄の記入例</a></li><li><a href="#s6">スキル一覧の欄で気をつけたいこと</a></li><li><a href="#s7">個人の開発やOSSの扱い</a></li><li><a href="#s8">よくある質問</a></li></ol></nav>
+  <div class="art-body">
+<p>Node.jsエンジニアのスキルシートは、<strong>担った層（サービスの中心となるAPI、BFF、サーバーレスなど）と画面側との境目、Node.jsの版とフレームワーク、運用で起きたことへの対応</strong>を書き分けるのが基本です。Node.jsは画面の開発者もサーバーの開発者も使うため、読み手は「この人はサーバーとして何を任されていたのか」を最初に知りたがります。</p>
+<p>全体の構成は<a href="/media/skillsheet-basics/">スキルシートの基本</a>で解説しています。この記事では、Node.jsのエンジニアが書くときに押さえたい点に絞って説明します。</p>
+<h2 id="s1">「JavaScript／TypeScript」と「Node.js」を分けて書く</h2>
+<p>Node.jsのシートでよく見るのが、「JavaScript/TypeScript 6年（React、Node.js）」のように、画面とサーバーの経験を一つにまとめる形です。これだと、サーバー側の経験が6年なのか、画面の開発の合間に少し触ったのかが分かりません。</p>
+<div class="table-wrap"><table><thead><tr><th>書き方</th><th>読み手の受け取り方</th></tr></thead><tbody><tr><td>JavaScript/TypeScript 6年（React、Node.js）</td><td>サーバー側の経験の長さと深さが分からない</td></tr><tr><td>TypeScript 6年。うちNode.jsでのAPI開発・運用は直近3年、画面（React）は前半3年</td><td>サーバー側の経験の期間と中身が分かる</td></tr></tbody></table></div>
+<p>スキル一覧には、Node.jsでの実務期間と、担当した期間の主な版も書いておきます。版の数字から、どの時期のサービスに関わり、版上げを経験しているかが読み取れます。Node.jsの公式の案内では、本番にはActive LTSかMaintenance LTSの版を使うよう示されています。サポートが終わった版で動くサービスを保守していた場合も、そのまま書いて構いません。そのうえで、版上げに関わったかどうかを添えると評価の材料になります。</p>
+<h2 id="s2">担った層と、画面側との境目を書く</h2>
+<p>Node.jsの経験は、どの層を担ったかで重みが変わります。プロジェクト欄の冒頭に、次のどれに当たるかを書いておくと伝わりやすくなります。</p>
+<ul><li><strong>サービスの中心となるAPI</strong>：業務のデータを扱い、データベースの設計まで担った</li><li><strong>BFF</strong>：画面のために既存のAPIをまとめた。GraphQLの層を作った</li><li><strong>サーバーレスの処理</strong>：クラウドの関数でAPIやイベント処理を作った</li><li><strong>リアルタイムの機能</strong>：WebSocketなどで通知や配信を作った</li></ul>
+<p>フルスタックの案件では、画面とサーバーの作業の割合をおおよそで書くと、読み手が役割を判断しやすくなります。「画面3割、API7割」のような書き方で十分です。画面側の書き方は<a href="/media/react-skillsheet/">Reactエンジニアのスキルシートの記事</a>、型の設計の書き方は<a href="/media/typescript-skillsheet/">TypeScriptエンジニアのスキルシートの記事</a>で扱っています。</p>
+<h3>技術の欄は「自分で決めたもの」と「使ったもの」を分ける</h3>
+<p>Node.jsのプロジェクトは、フレームワーク、ORM、テストのツール、クラウドのサービスなど技術の名前が長く並びがちです。構成を自分で選んだものと、決まった構成の中で使ったものを分けて書くと、設計の経験がどこにあるかが伝わります。</p>
+<h2 id="s3">性能の改善は「何を測ったか」と一緒に書く</h2>
+<p>「APIの性能を改善」とだけ書くと、何をしたかが伝わりません。Node.jsの性能の改善は、次の順で書くと読み手が判断しやすくなります。</p>
+<ol><li><strong>起きていたこと</strong>：特定のAPIの応答が遅い、メモリが増え続けて再起動が必要だった</li><li><strong>測った方法</strong>：ログやトレース、プロファイラで何を見たか</li><li><strong>原因</strong>：イベントループを止める同期処理、繰り返し発行されるクエリ、解放されないオブジェクトなど</li><li><strong>直したこと</strong>：処理をワーカーやキューに移した、クエリをまとめた、キャッシュを入れた</li><li><strong>結果</strong>：応答時間や再起動の回数がどう変わったか（おおよその幅で構わない）</li></ol>
+<p>数字を書けない場合も、「再起動が日常的に必要だった状態を、必要のない状態にした」のように、変化の向きと大きさを言葉で書くことはできます。社名や具体的な数字の扱いは<a href="/media/confidentiality-in-skillsheet/">スキルシートの守秘義務の記事</a>を参考にしてください。</p>
+<aside class="box box-view"><p class="box-label">エージェントベストの見解</p><p>Node.jsの経歴を拝見していると、技術の名前は多く並んでいるのに、障害や性能の問題にどう向き合ったかが書かれていないシートがよく見られます。面談で評価されやすいのは、起きたこと、測ったこと、直したことを順を追って話せる方です。シートの段階で一行でも書いておくと、面談の話題がそこから始まりやすくなるため、書き足すことをおすすめします。</p></aside>
+<h2 id="s4">運用と版上げは独立した欄にする</h2>
+<p>Node.jsのサービスを運用してきた経験は、プロジェクトの説明に埋もれがちです。次のような内容は、「運用」として独立した行にしておくと伝わります。</p>
+<ul><li>監視の指標やアラートを決めた、ログの形をそろえた</li><li>障害の当番に入った、原因を調べて再発を防ぐ対策を入れた</li><li>Node.js本体の版上げを担当した（どの版からどの版へ、何を確かめたか）</li><li>依存パッケージの更新や脆弱性への対応を定期的に進めた</li></ul>
+<p>版上げは、影響の調べ方、テストの範囲、本番への出し方まで書くと、保守を任せられる人であることが伝わります。</p>
+<h2 id="s5">プロジェクト欄の記入例</h2>
+<p>次は書き方の型を示すための<strong>架空の記入例</strong>です。実在の案件ではなく、業種や規模もぼかしてあります。ご自身の経験に置き換えてください。</p>
+<blockquote><p><strong>期間</strong>：○年○月〜○年○月（2年程度）<br><strong>案件概要</strong>：（架空）会員制のWebサービス向け 予約・決済まわりのAPIとBFFの開発・運用<br><strong>規模・立場</strong>：バックエンド数名のチームで、予約APIと画面向けのBFFを担当<br><strong>担当工程</strong>：設計、開発、テスト、運用（障害対応の当番を含む）<br><strong>担った層</strong>：サービスの中心となるAPI（7割）、BFF（3割）<br><strong>構成</strong>：Node.js（LTSの版で運用。期間中に一度版上げ）、TypeScript、NestJS、PostgreSQL、コンテナで稼働<br><strong>自分で決めたもの</strong>：APIのエラーの形とログの項目、BFFでのタイムアウトと部分的な失敗の扱い<br><strong>工夫・成果</strong>：予約一覧のAPIで、ループの中で繰り返し発行されていたクエリをまとめ、応答の遅さを解消した。外部の決済サービスが遅いときにBFF全体が待たされないよう、タイムアウトと代わりの表示を設けた<br><strong>運用</strong>：Node.js本体の版上げを担当し、依存パッケージの更新の順番を決めて段階的に進めた</p></blockquote>
+<p>この例では、担った層と割合、自分で決めた範囲、性能の改善と運用の行が読み取れる形にしてあります。</p>
+<h2 id="s6">スキル一覧の欄で気をつけたいこと</h2>
+<p>スキル一覧の表では、技術ごとに経験の期間と深さを書く形が多く使われます。Node.jsのまわりは技術の数が多いため、次の点に気をつけると読みやすくなります。</p>
+<ul><li><strong>フレームワークは使った期間と役割を添える</strong>：「NestJS 2年（構成の設計から）」「Express 3年（既存アプリの保守）」のように書くと、同じ名前でも深さの違いが分かる</li><li><strong>データベースはORMと分ける</strong>：ORMの名前だけだと、SQLを自分で書けるかが分からない。SQLのチューニングの経験があれば別の行にする</li><li><strong>クラウドは使ったサービスを絞る</strong>：触ったものを全部並べるより、自分で設定し運用したものに絞るほうが信頼されやすい</li><li><strong>テストは種類を書く</strong>：単体テストか、APIのテストか、外部サービスを差し替えたテストかで、品質への関わり方が伝わる</li></ul>
+<h2 id="s7">個人の開発やOSSの扱い</h2>
+<p>個人で作ったAPIやnpmパッケージは、コードの書き方を示す材料になります。ただし、案件では実務での経験が重視されるため、プロジェクト欄とは分けて「その他の活動」として添えるのがよい使い方です。公開しているものがあれば、何を作り、どう保守しているかを一行で書きます。</p>
+<aside class="box box-caution"><p class="box-label">注意</p><p>画面の開発の合間にAPIを少し直した経験を「Node.jsでのAPI開発」とだけ書くと、サーバー側の案件で期待される役割とずれることがあります。参画後に「思っていた経験と違う」とならないよう、担った層と割合は正直に書きましょう。</p></aside>
+<aside class="box box-view"><p class="box-label">エージェントベストの見解</p><p>当社では、経歴をご紹介する前に、どの案件に提案するかをご本人に確認し、ご了承いただいた案件にだけ、氏名・連絡先を伏せて経歴を提案しています。Node.jsの経歴は、画面寄りかサーバー寄りかで提案先が変わるため、担った層と割合がシートから読み取れることが大切です。書き方で迷う点はご質問いただければ確認します。</p></aside>
+<aside class="box box-point"><p class="box-label">ポイント</p><ul><li>画面の経験とNode.jsでのサーバーの経験を分け、期間と版を書く</li><li>担った層（API、BFF、サーバーレスなど）と、フルスタックなら作業の割合を書く</li><li>性能の改善は、起きたこと・測った方法・原因・直したこと・結果の順で書く</li><li>運用と版上げは独立した欄にする</li></ul></aside>
+<h2 id="s8">よくある質問</h2>
+<h3>Node.jsの版を覚えていない場合はどう書けばよいですか？</h3>
+<p>正確な版が分からない場合は、「当時のLTSの版」「期間中に一度版上げ」のように、分かる範囲で書けば十分です。面談で聞かれたときに、版上げで何を確かめたかを話せるようにしておくほうが大切です。</p>
+<h3>フロントエンドの経験が中心ですが、Node.jsの経験はどこに書けばよいですか？</h3>
+<p>プロジェクトごとに、画面とサーバーの作業の割合を書き、Node.jsで担った部分を一行で切り出します。BFFを作った、APIの一部を担当したなど、サーバー側の作業がはっきり分かる書き方にすると、両方を見る案件で評価されやすくなります。</p>
+<h3>社内向けのツールやバッチをNode.jsで作った経験も書いてよいですか？</h3>
+<p>書いて構いません。社内向けでも、何のデータを扱い、どのくらいの頻度で動き、止まったときにどう対応したかを書けば、運用の経験として伝わります。規模が小さくても、自分で決めた範囲をはっきり書くことが大切です。</p>
+  </div>
+  <section class="sources"><h2>参考にした公的情報・資料</h2><ul><li><a href="https://nodejs.org/en/about/previous-releases" target="_blank" rel="noopener nofollow">Node.js Releases（Node.js）</a></li></ul>
+  <p class="note">記事の内容は公開日時点の情報にもとづきます。制度や税率は変わることがあるため、手続きの前に必ず各機関の最新情報をご確認ください。</p></section>
+  <div class="cta-band">
+  <h2>条件に合う案件だけ、知りたい方へ</h2>
+  <p>ご登録は無料です。条件に合う案件だけを、ご本人の了承を得てからご提案します。</p>
+  <div class="cta-row">
+    <a class="btn btn-primary" href="https://airtable.com/appYkc36EvioYoL1A/pag6CZC4uJmxUcrXT/form" target="_blank" rel="noopener">無料で登録する</a>
+    <a class="btn btn-ghost" href="/jobs/">案件を探す</a>
+  </div>
+</div>
+  <section class="related"><h2>あわせて読みたい</h2><div class="grid g2"><a class="card art-card" href="/media/nodejs-how-to/">
+  <span class="art-hub">バックエンド開発</span>
+  <h3>Node.jsエンジニアがフリーランスになるには｜必要な経験と独立までの進め方</h3>
+  <p>Node.jsでフリーランスになるには、Node.jsで書いたAPIを本番で運用し、データベース・認証・障害対応まで担った経験が求められます。フロントエンドから来た人と他言語から来た人の準備、独立までの進め方を解説します。</p>
+</a>
+<a class="card art-card" href="/media/nodejs-skills/">
+  <span class="art-hub">バックエンド開発</span>
+  <h3>Node.jsエンジニアのフリーランス案件で求められるスキルと経験</h3>
+  <p>Node.jsの案件では、非同期処理とイベントループの理解、API設計とデータベース、フレームワークでの構成づくり、サーバーレスやコンテナでの運用、依存パッケージの管理が問われます。分野ごと・経験の段階ごとに整理します。</p>
+</a>
+<a class="card art-card" href="/media/nodejs-rate/">
+  <span class="art-hub">バックエンド開発</span>
+  <h3>Node.jsエンジニアのフリーランス案件｜報酬の決まり方と単価を上げる考え方</h3>
+  <p>Node.jsエンジニアの報酬は、APIの本体かBFFか、サーバーレスかといった担う層、性能と運用への責任、版上げや依存関係の管理を任されるか、稼働条件、商流で決まり、案件ごとに大きく変わります。上下する理由と交渉材料を解説します。</p>
+</a>
+<a class="card art-card" href="/media/nodejs-remote/">
+  <span class="art-hub">バックエンド開発</span>
+  <h3>Node.jsエンジニアのフリーランスはリモートで働ける？案件の傾向と探し方</h3>
+  <p>Node.jsの案件は、APIやBFF、サーバーレスの開発などリモートで進めやすい仕事が多い一方、本番データへの接続や閉じたネットワーク、障害対応の待機では条件がつきます。進めやすい仕事・しにくい仕事と、探し方・確認点を解説します。</p>
+</a>
+<a class="card art-card" href="/media/nodejs-future/">
+  <span class="art-hub">バックエンド開発</span>
+  <h3>Node.jsエンジニアのフリーランスの将来性とキャリアの広げ方</h3>
+  <p>Node.jsは27系から年1回のリリースになり、すべての版がLTSになる方針が公式に示されています。リリースの仕組みとクラウドのランタイムの期限から見た今後の仕事と、選択肢を広げる方向、経験の段階ごとの広げ方を解説します。</p>
+</a>
+<a class="card art-card" href="/media/typescript-skillsheet/">
+  <span class="art-hub">フロントエンド開発</span>
+  <h3>TypeScriptエンジニアのスキルシートの書き方｜面談で評価される実績の見せ方</h3>
+  <p>TypeScriptのスキルシートは、プロジェクトごとに使った場所（フロントエンド・バックエンド・両方）を先に書き、型の取り組みを「何を防いだか」で書くのが基本です。書き分け方と記入例を紹介します。</p>
+</a></div></section>
+</main>
+<footer class="site-foot">
+  <div class="wrap">
+    <strong>エージェントベストジョブ フリーランス</strong>
+    <div class="foot-links">
+      <a href="/">トップ</a>
+      <a href="/jobs/">案件を探す</a>
+      <a href="/media/">お役立ち記事</a>
+      <a href="https://airtable.com/appYkc36EvioYoL1A/pag6CZC4uJmxUcrXT/form" target="_blank" rel="noopener">ご登録（スキルシート・ご希望の条件）</a>
+      <a href="https://line.me/R/ti/p/@697nxhbt?oat_content=url&ts=08302134" target="_blank" rel="noopener" data-line-cta="footer">LINEで相談する</a>
+      <a href="/privacy.html">個人情報の取り扱い</a>
+      <a href="https://www.agent-best.net/company/">運営会社</a>
+    </div>
+    <div class="foot-links">
+      <a href="https://jobs.agent-best.net/">正社員の求人を探す（エージェントベストジョブ）</a>
+      <a href="https://skill.agent-best.net/">エージェントベストジョブ手に職</a>
+      <a href="https://www.agent-best.net/">エージェントベスト</a>
+    </div>
+    <p>運営：株式会社エージェントベスト（有料職業紹介事業 許可番号 13-ユ-316964）<br>〒106-0032 東京都港区六本木4-8-7 嶋田ビル5階</p>
+  </div>
+</footer>
+<script src="/assets/fav.js" defer></script>
+</body>
+</html>

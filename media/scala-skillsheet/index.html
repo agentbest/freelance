@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Scalaエンジニアのスキルシートの書き方｜面談で評価される実績の見せ方｜エージェントベストジョブ フリーランス</title>
+<meta name="description" content="Scalaエンジニアのスキルシートは、Scalaの版とビルドの仕組み、使ったライブラリと現場の書き方の型をプロジェクトごとに書き、担当内容には設計の判断を書くのが基本です。Java経験との分け方、移行の書き方を架空の例で解説します。">
+<link rel="canonical" href="https://freelance.agent-best.net/media/scala-skillsheet/">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="エージェントベストジョブ フリーランス">
+<meta property="og:title" content="Scalaエンジニアのスキルシートの書き方｜面談で評価される実績の見せ方｜エージェントベストジョブ フリーランス">
+<meta property="og:description" content="Scalaエンジニアのスキルシートは、Scalaの版とビルドの仕組み、使ったライブラリと現場の書き方の型をプロジェクトごとに書き、担当内容には設計の判断を書くのが基本です。Java経験との分け方、移行の書き方を架空の例で解説します。">
+<meta property="og:url" content="https://freelance.agent-best.net/media/scala-skillsheet/">
+<meta property="og:image" content="https://freelance.agent-best.net/assets/ogp.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://freelance.agent-best.net/assets/ogp.png">
+<meta name="theme-color" content="#1E3A5F">
+<link rel="icon" href="/assets/favicon.ico">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="stylesheet" href="/assets/site.css">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1XXMP8Y1B4"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-1XXMP8Y1B4');
+document.addEventListener('click',e=>{const a=e.target.closest('[data-line-cta]');if(a)gtag('event','line_add_friend',{placement:a.dataset.lineCta,page_path:location.pathname});});</script>
+<script type="application/ld+json">[{"@context":"https://schema.org","@type":"Article","headline":"Scalaエンジニアのスキルシートの書き方｜面談で評価される実績の見せ方","description":"Scalaエンジニアのスキルシートは、Scalaの版とビルドの仕組み、使ったライブラリと現場の書き方の型をプロジェクトごとに書き、担当内容には設計の判断を書くのが基本です。Java経験との分け方、移行の書き方を架空の例で解説します。","datePublished":"2026-10-29","dateModified":"2026-10-29","author":{"@type":"Organization","name":"株式会社エージェントベスト","url":"https://www.agent-best.net/"},"publisher":{"@type":"Organization","name":"株式会社エージェントベスト","logo":{"@type":"ImageObject","url":"https://freelance.agent-best.net/assets/logo.png"}},"mainEntityOfPage":"https://freelance.agent-best.net/media/scala-skillsheet/"},{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"トップ","item":"https://freelance.agent-best.net/"},{"@type":"ListItem","position":2,"name":"お役立ち記事","item":"https://freelance.agent-best.net/media/"},{"@type":"ListItem","position":3,"name":"バックエンド開発","item":"https://freelance.agent-best.net/media/hub/backend/"},{"@type":"ListItem","position":4,"name":"Scalaエンジニアのスキルシートの書き方｜面談で評価される実績の見せ方"}]},{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"社内独自のScalaのライブラリしか使っていません。どう書けばよいですか？","acceptedAnswer":{"@type":"Answer","text":"ライブラリの名前ではなく、中身を一般的な言葉で書きます。たとえば「副作用を型で扱う社内の共通ライブラリ」「非同期の処理をまとめた社内の部品」のように、何を担うライブラリかと、自分がどの層を書いていたかを書くと、社外の読み手にも経験の中身が伝わります。"}},{"@type":"Question","name":"Scala 2の経験しかありません。Scala 3の案件に応募してよいですか？","acceptedAnswer":{"@type":"Answer","text":"応募してかまいません。Scala 2での経験の版と年数を正直に書き、Scala 3を学んでいる場合は「個人の開発で使用」などと分けて書きます。Scala 3のモジュールはScala 2.13のライブラリに依存できるなど、移行の途中にある現場もあるため、2の経験が生きる場面もあります。"}},{"@type":"Question","name":"Sparkの経験は、Scalaのシートのどこに書けばよいですか？","acceptedAnswer":{"@type":"Answer","text":"スキル一覧に「Spark（Scala API）」として年数と使い方を書き、プロジェクト欄で、どの処理をどの規模で担ったかを書きます。データの基盤全体の設計まで担った場合は、データエンジニアのスキルシートの記事も参考にしてください。"}}]}]</script>
+</head>
+<body>
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="/"><img src="/assets/mark.png" alt="" width="28" height="28"><span>エージェントベストジョブ フリーランス<small>フリーランスのエンジニア・コンサル向け案件紹介</small></span></a>
+    <nav class="head-nav" aria-label="メニュー">
+      <a class="link" href="/jobs/">案件を探す</a>
+      <a class="link" href="/media/">お役立ち記事</a>
+      <a class="link keep" href="/mypage/" aria-label="気になる案件">☆ 気になる<span class="fav-count" data-fav-count hidden></span></a>
+      <a class="btn btn-primary btn-sm" href="https://airtable.com/appYkc36EvioYoL1A/pag6CZC4uJmxUcrXT/form" target="_blank" rel="noopener">無料で登録</a>
+    </nav>
+  </div>
+</header>
+<main class="wrap narrow article">
+  <p class="crumbs"><a href="/">トップ</a> › <a href="/media/">お役立ち記事</a> › <a href="/media/hub/backend/">バックエンド開発</a></p>
+  <a class="art-hub" href="/media/hub/backend/">バックエンド開発</a>
+  <h1 class="art-title">Scalaエンジニアのスキルシートの書き方｜面談で評価される実績の見せ方</h1>
+  <p class="note">公開 2026-10-29　監修：株式会社エージェントベスト</p>
+  <nav class="toc" aria-label="目次"><strong>目次</strong><ol><li><a href="#s1">スキル一覧は版と使い方を添える</a></li><li><a href="#s2">書き方の型を一言で示す</a></li><li><a href="#s3">Javaの経験との分け方</a></li><li><a href="#s4">担当内容には設計の判断を書く</a></li><li><a href="#s5">移行の経験は「前と後」が分かるように書く</a></li><li><a href="#s6">記入例（架空）</a></li><li><a href="#s7">個人の開発やライブラリへの貢献の扱い</a></li><li><a href="#s8">よくある質問</a></li></ol></nav>
+  <div class="art-body">
+<p>Scalaエンジニアのスキルシートは、<strong>Scalaの版とビルドの仕組み、使ったライブラリと「どんな書き方の現場だったか」をプロジェクトごとに書き、担当内容には自分が下した設計の判断を書く</strong>のが基本です。Scalaの現場は書き方の幅が広いため、読み手は「この人の経験は、うちのコードの書き方に近いか」を見ようとします。</p>
+<p>案件で問われる技術の中身は<a href="/media/scala-skills/">Scalaの案件で求められるスキル</a>、独立までの準備は<a href="/media/scala-how-to/">Scalaエンジニアがフリーランスになるには</a>で扱っています。この記事では、それをシートの上でどう見せるかに絞って解説します。シート全般の基本は<a href="/media/skillsheet-basics/">スキルシートの書き方の基本</a>をご覧ください。</p>
+<h2 id="s1">スキル一覧は版と使い方を添える</h2>
+<p>「Scala（5年）」とだけ書くと、Scala 2.12で保守を続けてきたのか、Scala 3で新しく作ってきたのかが分かりません。scala-lang.orgの配布ページでは、2026年10月時点で、Scala 3の系列（3.10系、LTSの3.3系・3.9系）と、Scala 2の2.13系・2.12系が並んでいます。どの系列で書いてきたかを分けて書きます。</p>
+<p>記入例（架空）：</p>
+<div class="table-wrap"><table><thead><tr><th>区分</th><th>書き方</th></tr></thead><tbody><tr><td>言語</td><td>Scala（2.12・2.13で4年、3で1年。直近はScala 3で設計から担当）、Java（6年・Scala以前の業務システム開発）</td></tr><tr><td>エフェクト・並行処理</td><td>標準ライブラリのFuture（3年）、エフェクトのライブラリ（2年・リソース管理とエラーの扱いの方針を作成）</td></tr><tr><td>Web・API</td><td>HTTPのライブラリでのAPI開発（3年）、JSONの変換</td></tr><tr><td>データアクセス</td><td>関数型のDBアクセスのライブラリ（2年）、SQLの調整</td></tr><tr><td>データ処理</td><td>Spark（Scala API、1年・集計処理の性能の調査）</td></tr><tr><td>ビルド・テスト</td><td>sbt（依存の衝突の解消、マルチモジュールの構成）、テストのライブラリ、プロパティベースのテスト</td></tr><tr><td>実行環境</td><td>JVM（JDK 17・21）、コンテナ、クラウドでの運用</td></tr></tbody></table></div>
+<p>ライブラリは、実際のシートでは具体的な名前で書いてかまいません。名前に加えて、「何年」「どの深さで」を括弧で添えると、読み手が案件の条件と比べやすくなります。</p>
+<h2 id="s2">書き方の型を一言で示す</h2>
+<p>Scalaのシートで差がつきやすいのが、現場の書き方の型を一言で示すことです。同じ「Scalaでの開発」でも、Javaに近い書き方の現場と、エフェクトを型で扱う現場では、求められる慣れがまったく違います。プロジェクトごとに、次のどれに近いかを書いておくと、読み手が判断しやすくなります。</p>
+<ul><li><strong>Javaに近い書き方</strong>：クラスと可変の状態を中心に、Scalaの便利な文法を使う</li><li><strong>関数型を取り入れた書き方</strong>：不変の値とOption・Eitherを中心に、副作用を外側に寄せる</li><li><strong>エフェクトを型で扱う書き方</strong>：エフェクトのライブラリを土台に、副作用を型で管理する</li></ul>
+<p>書き方の型を書くと、自分とは違う型の案件に応募するときも、どこまでが経験済みで、どこからが新しいのかを正直に伝えられます。</p>
+<h2 id="s3">Javaの経験との分け方</h2>
+<p>ScalaはJVMの上で動くため、Javaの経験を持つ人が多くいます。Javaの経験はScalaの案件でも評価されますが、シートの上で混ぜて書くと、Scalaの経験の長さが分からなくなります。</p>
+<ol><li>スキル一覧の言語の行で、ScalaとJavaの年数を分けて書く</li><li>プロジェクト欄の使用技術に、そのプロジェクトで主に使った言語を先に書く</li><li>一つのプロジェクトでScalaとJavaを両方使った場合は、どの部分をどちらで書いたかを担当内容に書く</li></ol>
+<p>Javaの側の書き方は<a href="/media/java-skillsheet/">Javaエンジニアのスキルシートの記事</a>で解説しています。</p>
+<h2 id="s4">担当内容には設計の判断を書く</h2>
+<p>「API開発を担当」だけでは、どの深さで関わったかが伝わりません。担当した範囲に加えて、自分が判断したことを一言添えます。</p>
+<div class="table-wrap"><table><thead><tr><th>書き換え前</th><th>書き換え後（架空）</th></tr></thead><tbody><tr><td>API開発を担当</td><td>注文のAPIを設計と実装。業務のエラーと想定外の障害を型で分け、利用者に返す内容を決めた</td></tr><tr><td>非同期処理を担当</td><td>外部サービスの呼び出しを並行に処理する部分を担当。同時に動かす数の上限と、時間切れのときの扱いを決めた</td></tr><tr><td>共通ライブラリを担当</td><td>複数のサービスで使う認証の部品を整備。使う側のチームが読めるよう、抽象化の段階を減らした</td></tr><tr><td>Sparkの処理を担当</td><td>日次の集計処理で、データの偏りによる遅れを特定し、処理の分け方を見直した</td></tr></tbody></table></div>
+<p>成果を数字で書く場合は、処理時間の変化など、自分の仕事の範囲で言えるものにします。利用者の数や売上など、発注元の事業に関わる数字は書かないでください。書いてよい範囲は<a href="/media/confidentiality-in-skillsheet/">スキルシートと守秘義務の記事</a>で扱っています。</p>
+<aside class="box box-view"><p class="box-label">エージェントベストの見解</p><p>Scalaの案件紹介の現場では、面談で、スキルシートに書かれた設計の判断について「なぜその書き方にしたのか」「チームの他の人は読めたか」を確かめる場面をよく見ます。評価されやすいのは、技術の理由とチームの事情の両方から説明できる方です。シートに判断が書かれていないと、面談の質問が文法の確認に寄り、経験の深い部分が伝わらないまま終わることがあります。</p></aside>
+<h2 id="s5">移行の経験は「前と後」が分かるように書く</h2>
+<p>Scala 2から3への移行や、Scala 2.12から2.13への版上げに関わった経験は、移行を控えた現場で評価されやすい材料です。書くときは、移行の前と後の版、自分が担った範囲、判断したことが分かるようにします。</p>
+<ul><li>移行前と移行後の版（例：Scala 2.13から3へ、JDK 11から17へ）</li><li>調べたこと（依存ライブラリのScala 3版の有無、マクロを使うライブラリの洗い出し）</li><li>決めたこと（移行の順番、一時的に2.13の成果物を使い続けた部分）</li><li>自分の担当（全体の計画か、一部のモジュールか）</li></ul>
+<p>Sparkを使う処理は、Apache Sparkの公式ドキュメント（4.2.0、2026年10月時点）でScala 2.13で動くとされています。Sparkの処理だけScala 2.13に残した、といった判断も、理由とあわせて書いておくと伝わります。</p>
+<h2 id="s6">記入例（架空）</h2>
+<p>次は、書き方の型を示すための例です。業種と規模はぼかしてあり、実在のプロジェクトではありません。</p>
+<blockquote><p><strong>期間</strong>：20XX年4月〜翌年9月（1年6か月）<br><strong>案件概要</strong>：EC事業者向け 注文・在庫のバックエンドの機能追加とScala 3への移行<br><strong>規模・立場</strong>：開発組織は数十名規模。自分はバックエンドチーム4名のサブリーダー<br><strong>書き方の型</strong>：エフェクトのライブラリを土台にした関数型の書き方<br><strong>担当工程</strong>：設計、実装、テスト、リリース、運用<br><strong>使用技術</strong>：Scala 2.13から3、sbt、JDK 17、PostgreSQL、コンテナ、クラウドでの運用<br><strong>担当内容</strong>：注文のAPIの設計と実装。Scala 3への移行で、依存ライブラリの調査と移行の順番の案を作成。チーム内のレビューと、Scalaが初めてのメンバー向けの書き方の手引きの作成<br><strong>工夫・成果</strong>：マクロを使うライブラリを先に洗い出し、Scala 3版のないものを置き換える計画を立てた。移行の作業をモジュールごとに分け、リリースを止めずに進めた</p></blockquote>
+<p>実際に書くときは、ご自身の経験に置き換えてください。</p>
+<h2 id="s7">個人の開発やライブラリへの貢献の扱い</h2>
+<p>Scalaでは、公開されているライブラリへの貢献や、個人で作ったものを求められることがあります。載せる場合は次の点に気をつけます。</p>
+<ol><li><strong>業務で書いたコードは載せない</strong>：発注元や前職の権利と守秘義務に関わるため</li><li><strong>経歴の欄と分ける</strong>：プロジェクト欄ではなく、「個人の開発・OSSへの貢献」として別の欄に書く</li><li><strong>実務と学習を区別する</strong>：実務で使っていないライブラリは「個人の開発で使用」と書き、実務の年数に含めない</li></ol>
+<p>個人の開発は、新しい版やライブラリを自分で試していることの裏付けになりますが、実務の経験の代わりとして読まれることは多くありません。詳しくは<a href="/media/portfolio-github/">ポートフォリオとGitHubの記事</a>で解説しています。</p>
+<aside class="box box-caution"><p class="box-label">注意</p><p>Scalaのシートで評価を下げやすいのは、型やライブラリの用語を多く並べながら、プロジェクト欄にその使い方が出てこない書き方です。読み手は、スキル一覧とプロジェクト欄を突き合わせて読み、面談でその技術を深く質問します。一覧に書いた技術は、どのプロジェクトでどう使ったかが分かるようにしておきましょう。</p></aside>
+<aside class="box box-view"><p class="box-label">エージェントベストの見解</p><p>当社では、ご経歴は、ご本人の了承を得た案件にだけ、氏名・連絡先を伏せてご提案しています。Scalaの案件は、版と書き方の型の組み合わせで求める経験が変わるため、スキル一覧の版と、プロジェクトごとの書き方の型をそろえておくことをおすすめします。案件で使われている版やライブラリは、ご質問いただければ確認します。</p></aside>
+<aside class="box box-point"><p class="box-label">ポイント</p><ul><li>スキル一覧にはScalaの系列（2.12・2.13・3）とライブラリの使い方を添え、Javaの年数とは分けて書く</li><li>プロジェクトごとに「どんな書き方の現場だったか」を一言で示す</li><li>担当内容には設計の判断を、移行の経験には前と後の版と自分が決めたことを書く</li></ul></aside>
+<h2 id="s8">よくある質問</h2>
+<h3>社内独自のScalaのライブラリしか使っていません。どう書けばよいですか？</h3>
+<p>ライブラリの名前ではなく、中身を一般的な言葉で書きます。たとえば「副作用を型で扱う社内の共通ライブラリ」「非同期の処理をまとめた社内の部品」のように、何を担うライブラリかと、自分がどの層を書いていたかを書くと、社外の読み手にも経験の中身が伝わります。</p>
+<h3>Scala 2の経験しかありません。Scala 3の案件に応募してよいですか？</h3>
+<p>応募してかまいません。Scala 2での経験の版と年数を正直に書き、Scala 3を学んでいる場合は「個人の開発で使用」などと分けて書きます。Scala 3のモジュールはScala 2.13のライブラリに依存できるなど、移行の途中にある現場もあるため、2の経験が生きる場面もあります。</p>
+<h3>Sparkの経験は、Scalaのシートのどこに書けばよいですか？</h3>
+<p>スキル一覧に「Spark（Scala API）」として年数と使い方を書き、プロジェクト欄で、どの処理をどの規模で担ったかを書きます。データの基盤全体の設計まで担った場合は、<a href="/media/data-engineer-skillsheet/">データエンジニアのスキルシートの記事</a>も参考にしてください。</p>
+  </div>
+  <section class="sources"><h2>参考にした公的情報・資料</h2><ul><li><a href="https://www.scala-lang.org/download/all.html" target="_blank" rel="noopener nofollow">All Available Versions（scala-lang.org）</a></li><li><a href="https://spark.apache.org/docs/latest/" target="_blank" rel="noopener nofollow">Spark Overview（Apache Spark）</a></li><li><a href="https://docs.scala-lang.org/scala3/guides/migration/interoperability.html" target="_blank" rel="noopener nofollow">Interoperability Overview（Scala 3 Migration Guide）</a></li></ul>
+  <p class="note">記事の内容は公開日時点の情報にもとづきます。制度や税率は変わることがあるため、手続きの前に必ず各機関の最新情報をご確認ください。</p></section>
+  <div class="cta-band">
+  <h2>条件に合う案件だけ、知りたい方へ</h2>
+  <p>ご登録は無料です。条件に合う案件だけを、ご本人の了承を得てからご提案します。</p>
+  <div class="cta-row">
+    <a class="btn btn-primary" href="https://airtable.com/appYkc36EvioYoL1A/pag6CZC4uJmxUcrXT/form" target="_blank" rel="noopener">無料で登録する</a>
+    <a class="btn btn-ghost" href="/jobs/">案件を探す</a>
+  </div>
+</div>
+  <section class="related"><h2>あわせて読みたい</h2><div class="grid g2"><a class="card art-card" href="/media/scala-how-to/">
+  <span class="art-hub">バックエンド開発</span>
+  <h3>Scalaエンジニアがフリーランスになるには｜必要な経験と独立までの進め方</h3>
+  <p>Scalaでフリーランスになるには、Scalaで書いたサービスを本番で動かした経験と、チームの書き方に合わせて関数型のコードを読み書きできることが目安です。Java出身・他言語出身ごとの準備、独立までの手順を解説します。</p>
+</a>
+<a class="card art-card" href="/media/scala-skills/">
+  <span class="art-hub">バックエンド開発</span>
+  <h3>Scalaエンジニアのフリーランス案件で求められるスキルと経験</h3>
+  <p>Scalaのフリーランス案件では、型で失敗やデータの形を表す書き方、エフェクトや並行処理のライブラリの扱い、sbtとJVMの知識、Scala 2と3の違いの理解が見られます。分野ごと・経験の段階ごとに解説します。</p>
+</a>
+<a class="card art-card" href="/media/scala-rate/">
+  <span class="art-hub">バックエンド開発</span>
+  <h3>Scalaエンジニアのフリーランス案件｜報酬の決まり方と単価を上げる考え方</h3>
+  <p>Scalaエンジニアの報酬は、案件の領域、関数型の設計をどこまで担えるか、Scala 2から3への移行やJVMの経験、担う役割と稼働条件で決まり、案件ごとに大きく変わります。上下する要素と交渉の材料を解説します。</p>
+</a>
+<a class="card art-card" href="/media/scala-remote/">
+  <span class="art-hub">バックエンド開発</span>
+  <h3>Scalaエンジニアのフリーランスはリモートで働ける？案件の傾向と探し方</h3>
+  <p>Scalaエンジニアは、Webサービスのバックエンドや社内の共通基盤の開発を中心に、リモートで働ける案件があります。一方、閉じた環境のデータ処理や立ち上がりの時期は出社を含むことも。案件の傾向と確認点を解説します。</p>
+</a>
+<a class="card art-card" href="/media/scala-future/">
+  <span class="art-hub">バックエンド開発</span>
+  <h3>Scalaエンジニアのフリーランスの将来性とキャリアの広げ方</h3>
+  <p>Scalaは2026年9月にScala 3.9が新しい長期サポートの系列となり、Scala 2.13も保守が続く方針です。版の切り替えに伴う移行の仕事と、JVM・データ処理・設計のどれかの軸が選択肢を広げます。公式の動向から解説します。</p>
+</a>
+<a class="card art-card" href="/media/java-skillsheet/">
+  <span class="art-hub">バックエンド開発</span>
+  <h3>Javaエンジニアのスキルシートの書き方｜面談で評価される実績の見せ方</h3>
+  <p>Javaエンジニアのスキルシートは、JavaとSpringなどのバージョン、担当工程、チームの規模と立場をプロジェクトごとにそろえ、担当内容には技術の判断を書くのが基本です。スキル一覧の書き方、社内独自のフレームワークの扱いを架空の例で解説します。</p>
+</a></div></section>
+</main>
+<footer class="site-foot">
+  <div class="wrap">
+    <strong>エージェントベストジョブ フリーランス</strong>
+    <div class="foot-links">
+      <a href="/">トップ</a>
+      <a href="/jobs/">案件を探す</a>
+      <a href="/media/">お役立ち記事</a>
+      <a href="https://airtable.com/appYkc36EvioYoL1A/pag6CZC4uJmxUcrXT/form" target="_blank" rel="noopener">ご登録（スキルシート・ご希望の条件）</a>
+      <a href="https://line.me/R/ti/p/@697nxhbt?oat_content=url&ts=08302134" target="_blank" rel="noopener" data-line-cta="footer">LINEで相談する</a>
+      <a href="/privacy.html">個人情報の取り扱い</a>
+      <a href="https://www.agent-best.net/company/">運営会社</a>
+    </div>
+    <div class="foot-links">
+      <a href="https://jobs.agent-best.net/">正社員の求人を探す（エージェントベストジョブ）</a>
+      <a href="https://skill.agent-best.net/">エージェントベストジョブ手に職</a>
+      <a href="https://www.agent-best.net/">エージェントベスト</a>
+    </div>
+    <p>運営：株式会社エージェントベスト（有料職業紹介事業 許可番号 13-ユ-316964）<br>〒106-0032 東京都港区六本木4-8-7 嶋田ビル5階</p>
+  </div>
+</footer>
+<script src="/assets/fav.js" defer></script>
+</body>
+</html>
