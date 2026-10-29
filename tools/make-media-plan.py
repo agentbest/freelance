@@ -166,6 +166,113 @@ topics = {
     ],
 }
 
+# 2026-10-29 追加（第10弾〜）。職種×テーマは増やさず、1ページ1問で答えられる話題だけを足す
+extra_topics = {
+    'independence': [
+        ('freelance-merit-demerit', 'フリーランスエンジニアのメリットとデメリット｜独立前に知っておくこと'),
+        ('seikatsu-hi-junbi', '独立前に用意しておく生活費の考え方｜何か月分を目安にするか'),
+        ('family-consent', '家族に独立を相談するときに伝えておきたいこと'),
+        ('jitaku-office', '自宅を仕事場にするときの環境づくり｜机・回線・セキュリティ'),
+        ('ex-employer-project', '退職した会社から業務委託で仕事を受けるときの注意点'),
+        ('coworking', 'コワーキングスペースを使うときの経費と注意点'),
+    ],
+    'find-projects': [
+        ('project-selection', '案件の選び方｜条件だけで決めないための確認ポイント'),
+        ('decline-offer', '案件の参画を辞退するときの伝え方とタイミング'),
+        ('start-date-adjust', '参画開始日の調整｜退職日や前の案件との重なり'),
+        ('long-term-project', '長期案件と短期案件のどちらを選ぶか'),
+        ('project-info-read', '案件票の読み方｜必須スキル・歓迎スキル・稼働条件の見方'),
+        ('portfolio-github', 'ポートフォリオやGitHubは必要？業務委託で実績を示す方法'),
+        ('agent-erabikata', 'フリーランスエージェントの選び方｜比べるときの観点'),
+    ],
+    'skillsheet-interview': [
+        ('interview-flow', '業務委託の面談の流れ｜顔合わせから参画決定まで'),
+        ('interview-after', '面談後の連絡と結果を待つ間にすること'),
+        ('multiple-interviews', '複数の面談が重なったときの進め方'),
+        ('blank-period-explain', '空白期間の説明の仕方｜面談で聞かれたとき'),
+        ('skillsheet-update', 'スキルシートを更新するタイミングと続け方'),
+    ],
+    'rate': [
+        ('rate-down', '単価を下げてほしいと言われたときの対応'),
+        ('kado-houkoku', '稼働報告書（作業報告書）の書き方と提出の注意点'),
+        ('seikyusho-flow', '業務委託の請求書の出し方｜締めから入金までの流れ'),
+        ('payment-delay', '報酬が支払われないときの対処｜確認から相談まで'),
+    ],
+    'contract': [
+        ('keiyaku-period', '業務委託の契約期間の決め方｜1か月更新と3か月更新の違い'),
+        ('denshi-keiyaku', '電子契約で業務委託契約を結ぶときの注意点'),
+        ('kenshu', '検収とは｜請負で報酬が確定するタイミング'),
+        ('keiyaku-futekigo', '契約不適合責任とは｜請負で負う責任の範囲'),
+        ('kojin-joho-itaku', '業務で個人情報を扱うときの契約と注意点'),
+        ('scope-change', '作業範囲が広がったときの契約の扱い'),
+        ('hansha-joko', '反社会的勢力の排除条項とは｜契約書で求められること'),
+    ],
+    'law': [
+        ('freelance-act-boshu', '募集情報の的確表示｜フリーランス新法の募集のルール'),
+        ('freelance-act-ikuji', '育児・介護とフリーランス新法の配慮義務'),
+        ('freelance-act-kinshi', 'フリーランス新法で禁止される7つの行為'),
+        ('toritekiho', '取適法（旧下請法）とは｜改正のポイントとフリーランスへの影響'),
+        ('kojinjoho-hogo', 'フリーランスと個人情報保護法｜事業者として守ること'),
+    ],
+    'tax': [
+        ('kigo-shinkoku', '確定申告の期限に遅れたとき｜期限後申告と加算税'),
+        ('shusei-shinkoku', '確定申告の間違いに気づいたとき｜修正申告と更正の請求'),
+        ('zeimu-chosa', '税務調査とは｜フリーランスが備えておくこと'),
+        ('iryouhi-koujo', 'フリーランスの医療費控除とセルフメディケーション税制'),
+        ('furusato-nouzei', 'フリーランスのふるさと納税｜上限の考え方と確定申告'),
+        ('kaigihi-kosaihi', '会議費・交際費はどこまで経費になる？'),
+        ('shotokuzei-keisan', '所得税の計算の流れ｜売上から税額まで'),
+    ],
+    'invoice': [
+        ('invoice-touroku-tetsuzuki', 'インボイス登録の手続き｜申請から登録通知まで'),
+        ('kazei-jigyosha-todoke', '消費税の届出書の種類｜課税事業者になるとき・やめるとき'),
+        ('nouzei-gimu-hantei', '消費税の納税義務はいつから？基準期間と特定期間'),
+    ],
+    'social-insurance': [
+        ('kokuho-keigen', '国民健康保険料の軽減と減免'),
+        ('nenkin-mikomi', 'フリーランスの年金の見込み額の調べ方'),
+        ('sanzen-sango', 'フリーランスの出産・育児で使える制度'),
+        ('shobyo-seido', 'フリーランスが病気やけがで働けないときに使える制度'),
+    ],
+    'incorporation': [
+        ('houjin-setsuritsu-flow', '法人設立の流れ｜フリーランスが会社を作る手順'),
+        ('houjin-shakai-hoken', '法人化したときの社会保険｜加入義務と保険料'),
+        ('houjin-keiyaku-kirikae', '法人化後に取引先との契約を切り替える手順'),
+    ],
+    'savings': [
+        ('rougo-shikin', 'フリーランスの老後資金の考え方｜公的年金と自分で備える制度'),
+        ('nisa', 'フリーランスのNISA｜iDeCo・小規模企業共済との使い分け'),
+        ('emergency-fund', '収入が途切れたときに備える貯蓄の考え方'),
+    ],
+    'workstyle': [
+        ('time-management', 'フリーランスの時間管理｜稼働の記録と休みの取り方'),
+        ('taichou-kanri', '働きすぎを防ぐ｜フリーランスの体調管理'),
+        ('benkyo-jikan', '案件と並行した学習時間の作り方'),
+        ('kyuka', '長期休暇を取りたいときの案件の調整'),
+        ('home-security', '自宅で働くときの情報セキュリティ対策'),
+    ],
+    'career': [
+        ('career-plan', 'フリーランスのキャリアプランの立て方'),
+        ('specialist-generalist', 'スペシャリストとジェネラリストのどちらを目指すか'),
+        ('shikaku', '資格はフリーランスの案件獲得に役立つ？'),
+        ('manager-to-freelance', '管理職からフリーランスになるときに考えること'),
+        ('kosodate-freelance', '子育てしながらフリーランスとして働く｜案件選びと制度'),
+        ('eigo-project', '英語を使うフリーランス案件｜求められる英語力の考え方'),
+    ],
+    'side-job': [
+        ('fukugyo-kinshi', '副業禁止の会社で業務委託を受けるリスク'),
+        ('fukugyo-kaigyo', '副業でも開業届は出すべき？判断の考え方'),
+        ('fukugyo-to-dokuritsu', '副業から独立へ移る進め方'),
+    ],
+    'back-to-employee': [
+        ('freelance-keireki-kaku', '転職の職務経歴書でフリーランス期間をどう書くか'),
+        ('seishain-offer', '取引先から正社員に誘われたときの考え方'),
+        ('seishain-gyomu-itaku-kakemochi', '正社員と業務委託の掛け持ち｜両立の注意点'),
+    ],
+}
+for hub, ts in extra_topics.items():
+    topics[hub] = topics[hub] + ts
+
 rows = []
 for hub, rs in roles.items():
     for code, name in rs:
