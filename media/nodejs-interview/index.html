@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Node.jsエンジニアのフリーランス面談でよく聞かれる質問と答え方｜エージェントベストジョブ フリーランス</title>
+<meta name="description" content="Node.js案件の面談では、担った層と画面側との境目、イベントループと非同期処理の理解、性能や障害の調査、依存パッケージと版上げ、データベースの扱いがよく聞かれます。質問ごとの意図と答えの組み立て方、準備、逆質問を整理します。">
+<link rel="canonical" href="https://freelance.agent-best.net/media/nodejs-interview/">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="エージェントベストジョブ フリーランス">
+<meta property="og:title" content="Node.jsエンジニアのフリーランス面談でよく聞かれる質問と答え方｜エージェントベストジョブ フリーランス">
+<meta property="og:description" content="Node.js案件の面談では、担った層と画面側との境目、イベントループと非同期処理の理解、性能や障害の調査、依存パッケージと版上げ、データベースの扱いがよく聞かれます。質問ごとの意図と答えの組み立て方、準備、逆質問を整理します。">
+<meta property="og:url" content="https://freelance.agent-best.net/media/nodejs-interview/">
+<meta property="og:image" content="https://freelance.agent-best.net/assets/ogp.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://freelance.agent-best.net/assets/ogp.png">
+<meta name="theme-color" content="#1E3A5F">
+<link rel="icon" href="/assets/favicon.ico">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="stylesheet" href="/assets/site.css">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1XXMP8Y1B4"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-1XXMP8Y1B4');
+document.addEventListener('click',e=>{const a=e.target.closest('[data-line-cta]');if(a)gtag('event','line_add_friend',{placement:a.dataset.lineCta,page_path:location.pathname});});</script>
+<script type="application/ld+json">[{"@context":"https://schema.org","@type":"Article","headline":"Node.jsエンジニアのフリーランス面談でよく聞かれる質問と答え方","description":"Node.js案件の面談では、担った層と画面側との境目、イベントループと非同期処理の理解、性能や障害の調査、依存パッケージと版上げ、データベースの扱いがよく聞かれます。質問ごとの意図と答えの組み立て方、準備、逆質問を整理します。","datePublished":"2026-11-04","dateModified":"2026-11-04","author":{"@type":"Organization","name":"株式会社エージェントベスト","url":"https://www.agent-best.net/"},"publisher":{"@type":"Organization","name":"株式会社エージェントベスト","logo":{"@type":"ImageObject","url":"https://freelance.agent-best.net/assets/logo.png"}},"mainEntityOfPage":"https://freelance.agent-best.net/media/nodejs-interview/"},{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"トップ","item":"https://freelance.agent-best.net/"},{"@type":"ListItem","position":2,"name":"お役立ち記事","item":"https://freelance.agent-best.net/media/"},{"@type":"ListItem","position":3,"name":"バックエンド開発","item":"https://freelance.agent-best.net/media/hub/backend/"},{"@type":"ListItem","position":4,"name":"Node.jsエンジニアのフリーランス面談でよく聞かれる質問と答え方"}]},{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"フロントエンドの経験が中心でも、Node.jsの面談に通りますか？","acceptedAnswer":{"@type":"Answer","text":"BFFや画面寄りの案件では、画面の経験が強みになります。サーバー側の案件を狙う場合は、データベースや認証、本番の運用に関わった場面を一つでも話せるように準備しましょう。どの層まで担えるかを正直に伝えるほうが、参画後のずれを防げます。"}},{"@type":"Question","name":"イベントループの仕組みは、どこまで詳しく説明できればよいですか？","acceptedAnswer":{"@type":"Answer","text":"内部の細かな段階を暗記している必要はありません。処理を止めてしまう書き方は何か、それをどう見つけ、どこに逃がすかを、自分の経験と結びつけて説明できれば十分です。仕組みの説明より、実際に出会った事例のほうが評価されやすくなります。"}},{"@type":"Question","name":"面談で答えられない技術の質問が来たらどうすればよいですか？","acceptedAnswer":{"@type":"Answer","text":"知らないことは知らないと伝え、近い経験や、自分ならどう調べるかを話します。分かったふりをして答えると、掘り下げられたときに信頼を損ないます。面談で見送られやすい理由は面談で見送られる理由の記事で解説しています。"}}]}]</script>
+</head>
+<body>
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="/"><img src="/assets/mark.png" alt="" width="28" height="28"><span>エージェントベストジョブ フリーランス<small>フリーランスのエンジニア・コンサル向け案件紹介</small></span></a>
+    <nav class="head-nav" aria-label="メニュー">
+      <a class="link" href="/jobs/">案件を探す</a>
+      <a class="link" href="/media/">お役立ち記事</a>
+      <a class="link keep" href="/mypage/" aria-label="気になる案件">☆ 気になる<span class="fav-count" data-fav-count hidden></span></a>
+      <a class="btn btn-primary btn-sm" href="https://airtable.com/appYkc36EvioYoL1A/pag6CZC4uJmxUcrXT/form" target="_blank" rel="noopener">無料で登録</a>
+    </nav>
+  </div>
+</header>
+<main class="wrap narrow article">
+  <p class="crumbs"><a href="/">トップ</a> › <a href="/media/">お役立ち記事</a> › <a href="/media/hub/backend/">バックエンド開発</a></p>
+  <a class="art-hub" href="/media/hub/backend/">バックエンド開発</a>
+  <h1 class="art-title">Node.jsエンジニアのフリーランス面談でよく聞かれる質問と答え方</h1>
+  <p class="note">公開 2026-11-04　監修：株式会社エージェントベスト</p>
+  <nav class="toc" aria-label="目次"><strong>目次</strong><ol><li><a href="#s1">Node.jsの面談で面談官が見ていること</a></li><li><a href="#s2">よく聞かれる質問と答え方の考え方</a></li><li><a href="#s3">技術の確認やコーディングの課題が出る場合</a></li><li><a href="#s4">準備は「調べて直した場面」を3〜4つに絞る</a></li><li><a href="#s5">面談の相手によって重心が変わる</a></li><li><a href="#s6">Node.jsならではの逆質問</a></li><li><a href="#s7">よくある質問</a></li></ol></nav>
+  <div class="art-body">
+<p>Node.jsエンジニアのフリーランス面談でよく聞かれるのは、<strong>どの層をどこまで担ったか、イベントループと非同期処理をどう理解しているか、遅くなった・落ちたときに何を調べて直したか、依存パッケージと版上げをどう扱ったか</strong>の4点です。面談官は、文法やフレームワークの知識より「このサービスのサーバーを任せたら、本番で何か起きたときにどう動くか」を確かめようとしています。</p>
+<p>答えるときは、模範回答を覚えるより、自分の経験から「調べて直した場面」を3〜4つ選び、どの質問にもそこから答えられるように準備しておくのが近道です。面談全般の答え方の型は<a href="/media/interview-questions/">業務委託の面談でよく聞かれる質問と答え方</a>で解説しているので、この記事ではNode.jsの面談に固有の質問に絞ります。</p>
+<h2 id="s1">Node.jsの面談で面談官が見ていること</h2>
+<p>Node.js案件の面談に出てくるのは、発注元のテックリードやバックエンドのリーダー、開発の責任者であることが多く、本人もNode.jsで本番のサービスを動かしてきた人です。そのため、用語の正確さより、話の中に出てくる<strong>計測の仕方と判断の理由</strong>を聞いています。</p>
+<p>面談官が知りたいのは、おおむね次の3点です。</p>
+<ol><li><strong>任せられる層</strong>：サービスの中心となるAPIを任せられるのか、BFFや決まった範囲の実装が合うのか</li><li><strong>崩れたときの動き方</strong>：性能の問題や障害が起きたときに、何を見て、どこまで自分で絞り込めるか</li><li><strong>チームとの相性</strong>：レビューの受け方や仕様の合意の取り方が、自社のやり方に合うか</li></ol>
+<p>Node.jsは画面の開発者もサーバーの開発者も使うため、経歴だけでは「サーバーとして何を任されていたか」が見えにくいという事情があります。面談の質問の多くは、その見えにくい部分を確かめるためのものです。</p>
+<h2 id="s2">よく聞かれる質問と答え方の考え方</h2>
+<p>ここで示す答えの例は、組み立て方を伝えるための<strong>架空の例</strong>です。そのまま使うのではなく、ご自身の経験に置き換えて準備してください。</p>
+<h3>1. 「直近の案件で担当した範囲を教えてください」</h3>
+<p>確かめたいのは、任せられる層です。サービスの概要、チームの人数、担った層（中心となるAPI、BFF、サーバーレスなど）、画面とサーバーの作業の割合、自分で決めた範囲を短く伝えます。</p>
+<p>架空の例：「会員向けサービスのバックエンドで、予約まわりのAPIを担当していました。チームは数名で、作業の7割がAPI、3割が画面向けのBFFです。APIのエラーの形とログの項目は自分で決めました」</p>
+<h3>2. 「Node.jsで処理が遅くなるのはどんなときですか」</h3>
+<p>Node.jsの面談で最も多い技術の質問です。一つのスレッドで多くのリクエストをさばく仕組みを理解しているかを見ています。大きなJSONの変換や同期的なファイル操作、重い計算が混ざるとほかのリクエストが待たされること、それを<strong>どう見つけ、どこに逃がしたか</strong>まで話せると、知識が実務につながっていることが伝わります。仕組みの説明だけで終わらず、自分が出会った事例を一つ添えるのがよい答え方です。</p>
+<h3>3. 「性能の問題や障害を調べて直した経験を教えてください」</h3>
+<p>最もよく掘り下げられる質問です。次の順番で組み立てると伝わりやすくなります。</p>
+<ul><li>何が起きていたか（どのAPIが、どの程度、いつから）</li><li>何を見て原因を絞り込んだか（ログ、トレース、プロファイラ、データベースの実行計画など）</li><li>原因は何だったか</li><li>どう直し、どう確かめたか</li><li>再発を防ぐために何を変えたか</li></ul>
+<p>「キャッシュを入れて速くしました」だけで終わると、なぜそこが原因と分かったのかが見えません。<strong>ほかの原因を外した理由</strong>まで話せると、調査の力が伝わります。</p>
+<h3>4. 「非同期処理のエラーをどう扱っていますか」</h3>
+<p>async/awaitで書いていても、待たずに投げた処理やイベントで届くエラーは取りこぼしやすい部分です。面談官は、処理されなかったエラーでプロセスが止まったときにどうなるか、ログにどう残し、どう再起動させるかまで考えているかを見ています。チームで決めていたルールがあれば、それを話すと具体的になります。</p>
+<h3>5. 「データベースとのやりとりで気をつけていることは」</h3>
+<p>ORMを使えることより、発行されるSQLを確かめているか、ループの中で問い合わせを繰り返す書き方に気づけるか、トランザクションの範囲をどう決めたかを確かめる質問です。遅いクエリを直した経験があれば、どう見つけたかと合わせて話します。</p>
+<h3>6. 「依存パッケージの更新や、Node.jsの版上げはどうしていましたか」</h3>
+<p>保守を任せられる人かを見る質問です。脆弱性の報告が出たときの影響の調べ方、更新を小さく分けて進める段取り、本体の版上げでテストの範囲をどう決めたかを話します。Node.jsの公式の案内では、本番のアプリにはActive LTSかMaintenance LTSの版を使うよう示されています（2026年10月時点）。担当したサービスがどの版で動いていて、版上げに関わったかどうかは、正確に答えられるようにしておきましょう。</p>
+<h3>7. 「フレームワークを選ぶなら、何を基準にしますか」</h3>
+<p>ExpressとNestJSのどちらが好きかを聞いているのではありません。チームの人数や経験、サービスの規模、既存の資産から、<strong>構成をどう決めるかの考え方</strong>を見ています。自分が構成を決めた立場だったのか、決まった構成の中で書いたのかも、ここで正直に分けて話します。</p>
+<h3>8. 「画面側のチームとはどうやりとりしていましたか」</h3>
+<p>BFFやフルスタックに近い案件で聞かれやすい質問です。APIの仕様を先に書いて合意したか、エラーのときの返し方や項目が空のときの扱いをどう決めたかを話します。仕様が変わったときの連絡の流れも、チームとの相性を見る材料になります。</p>
+<aside class="box box-view"><p class="box-label">エージェントベストの見解</p><p>Node.jsの案件をご紹介していると、面談で評価されやすいのは、遅くなった・落ちたという場面を「何を測り、どこが原因で、どう直したか」の順で話せる方です。反対に、技術の名前を並べる答えが続くと、設計を決めた人なのか、決まった構成に沿って書いた人なのかが伝わらず、見送られやすい傾向があります。小さな事例でも、自分で調べて直した話を一つ用意しておくことをおすすめします。</p></aside>
+<h2 id="s3">技術の確認やコーディングの課題が出る場合</h2>
+<p>Node.jsの面談では、会話の中で技術を確かめるだけでなく、短いコードを読んで問題点を挙げる、簡単なAPIを書くといった課題が出ることもあります。見られているのは、正解の速さより、<strong>何を気にしながら書くか</strong>です。エラーの扱い、入力の検証、待たされる処理の有無を口に出しながら進めると、考え方が伝わります。課題の受け方と、無償の作業との線引きは<a href="/media/tech-test/">技術テストの記事</a>で解説しています。</p>
+<h2 id="s4">準備は「調べて直した場面」を3〜4つに絞る</h2>
+<p>上の質問は数が多く見えますが、答えの材料は共通しています。準備は次の手順で進めると効率的です。</p>
+<ol><li><strong>場面を選ぶ</strong>：性能の問題、障害、版上げやパッケージの更新、仕様のすり合わせなど、性質の違う場面を3〜4つ選ぶ</li><li><strong>場面ごとにメモをつくる</strong>：起きたこと、見たもの、原因、直したこと、結果、次に変えたことを書き出す</li><li><strong>構成をそろえる</strong>：Node.jsの版、フレームワーク、データベース、動かしていた環境を、どの場面でも同じ言い方で言えるようにする</li><li><strong>2分版と5分版をつくる</strong>：最初は短く話し、掘り下げられたら詳しく話せるようにする</li><li><strong>スキルシートと照らし合わせる</strong>：シートの「担った層」「運用」の欄と話の内容が一致しているかを確かめる</li></ol>
+<p>面談官はシートを見ながら質問するため、話とシートがずれると、どちらも信用されにくくなります。シートの書き方は<a href="/media/nodejs-skillsheet/">Node.jsエンジニアのスキルシートの記事</a>、冒頭の自己紹介の組み立て方は<a href="/media/self-introduction/">面談の自己紹介の記事</a>で解説しています。</p>
+<aside class="box box-caution"><p class="box-label">注意</p><p>面談では、前の案件のサービス名、利用者数やリクエスト数の正確な数字、障害の詳しい経緯などを話してしまいがちです。性能や障害の話は具体的なほど伝わりますが、守秘の範囲を超えないよう、社名やサービス名は伏せ、数字はおおよその規模に置き換えましょう。前の現場のコードや前任者の批判も、聞き手に「自分たちも同じように言われるのでは」と受け取られやすいので避けたほうが無難です。</p></aside>
+<h2 id="s5">面談の相手によって重心が変わる</h2>
+<div class="table-wrap"><table><thead><tr><th>面談の相手</th><th>重く見られやすい点</th></tr></thead><tbody><tr><td>テックリード・バックエンドのリーダー</td><td>非同期処理の理解、調査の進め方、レビューの受け方</td></tr><tr><td>開発の責任者・プロダクトの責任者</td><td>担える範囲、仕様の合意の取り方、稼働の安定</td></tr><tr><td>元請けの会社の担当者</td><td>経歴とシートの一致、体制の中での役割、稼働の条件</td></tr></tbody></table></div>
+<p>技術の面談と条件の面談が分かれていることもあります。技術の面談では調べて直した場面、条件の面談では担える範囲と稼働の条件に重心を置くと、限られた時間を有効に使えます。オンラインでの面談の進め方は<a href="/media/online-interview/">オンライン面談の記事</a>をご覧ください。</p>
+<h2 id="s6">Node.jsならではの逆質問</h2>
+<p>逆質問は、印象づくりより<strong>参画後のずれを防ぐ確認</strong>に使います。Node.jsの案件では、次の点を聞いておくと判断しやすくなります。</p>
+<ul><li>担う層と、画面の作業が含まれるかどうか、その割合</li><li>動いているNode.jsの版と、版上げの予定</li><li>障害の当番の有無と頻度</li><li>コードレビューの流れと、設計を決める人</li><li>検証用の環境やクラウドの権限が、参画時にそろっているか</li></ul>
+<p>一般的な逆質問の考え方は<a href="/media/reverse-questions/">業務委託の面談で聞いておくべき逆質問</a>にまとめています。聞いた内容は、契約前の確認にもそのまま使えます。案件を選ぶときの確認点は<a href="/media/nodejs-anken-erabi/">Node.js案件の選び方</a>で整理しています。</p>
+<aside class="box box-view"><p class="box-label">エージェントベストの見解</p><p>当社では、経歴をご本人の了承を得た案件にだけ、氏名・連絡先を伏せてご提案しています。Node.jsの面談では、案件票だけでは分からない担う層や画面の作業の割合について、面談の前に確かめておきたい点があれば、ご質問いただければ確認します。面談後に参画を迷う点が出てきた場合も、早めにご相談ください。</p></aside>
+<aside class="box box-point"><p class="box-label">ポイント</p><ul><li>Node.jsの面談では、担った層、イベントループと非同期処理、性能や障害の調査、依存パッケージと版上げがよく聞かれる</li><li>答えは「起きたこと→見たもの→原因→直したこと→再発防止」の順で組み立てる</li><li>準備は調べて直した場面を3〜4つに絞り、スキルシートと内容をそろえる</li><li>逆質問では、担う層、版、障害の当番、レビューの流れを確かめる</li></ul></aside>
+<h2 id="s7">よくある質問</h2>
+<h3>フロントエンドの経験が中心でも、Node.jsの面談に通りますか？</h3>
+<p>BFFや画面寄りの案件では、画面の経験が強みになります。サーバー側の案件を狙う場合は、データベースや認証、本番の運用に関わった場面を一つでも話せるように準備しましょう。どの層まで担えるかを正直に伝えるほうが、参画後のずれを防げます。</p>
+<h3>イベントループの仕組みは、どこまで詳しく説明できればよいですか？</h3>
+<p>内部の細かな段階を暗記している必要はありません。処理を止めてしまう書き方は何か、それをどう見つけ、どこに逃がすかを、自分の経験と結びつけて説明できれば十分です。仕組みの説明より、実際に出会った事例のほうが評価されやすくなります。</p>
+<h3>面談で答えられない技術の質問が来たらどうすればよいですか？</h3>
+<p>知らないことは知らないと伝え、近い経験や、自分ならどう調べるかを話します。分かったふりをして答えると、掘り下げられたときに信頼を損ないます。面談で見送られやすい理由は<a href="/media/interview-fail-reasons/">面談で見送られる理由の記事</a>で解説しています。</p>
+  </div>
+  <section class="sources"><h2>参考にした公的情報・資料</h2><ul><li><a href="https://nodejs.org/en/about/previous-releases" target="_blank" rel="noopener nofollow">Node.js Releases（Node.js）</a></li></ul>
+  <p class="note">記事の内容は公開日時点の情報にもとづきます。制度や税率は変わることがあるため、手続きの前に必ず各機関の最新情報をご確認ください。</p></section>
+  <div class="cta-band">
+  <h2>条件に合う案件だけ、知りたい方へ</h2>
+  <p>ご登録は無料です。条件に合う案件だけを、ご本人の了承を得てからご提案します。</p>
+  <div class="cta-row">
+    <a class="btn btn-primary" href="https://airtable.com/appYkc36EvioYoL1A/pag6CZC4uJmxUcrXT/form" target="_blank" rel="noopener">無料で登録する</a>
+    <a class="btn btn-ghost" href="/jobs/">案件を探す</a>
+  </div>
+</div>
+  <section class="related"><h2>あわせて読みたい</h2><div class="grid g2"><a class="card art-card" href="/media/interview-questions/">
+  <span class="art-hub">スキルシート・面談</span>
+  <h3>業務委託の面談でよく聞かれる質問と答え方｜回答の組み立て方</h3>
+  <p>業務委託の面談では、経歴の説明、直近案件での役割、技術や業務の深さ、稼働条件の4つがよく聞かれます。「結論→背景→自分の行動→結果」の順で短く答えると伝わりやすくなります。質問ごとの答え方を架空の例で紹介します。</p>
+</a>
+<a class="card art-card" href="/media/reverse-questions/">
+  <span class="art-hub">スキルシート・面談</span>
+  <h3>業務委託の面談で聞いておくべき逆質問｜参画後のずれを防ぐ確認項目</h3>
+  <p>業務委託の面談の逆質問は、印象づくりより「参画後のずれを防ぐ確認」に使うのが基本です。業務の範囲、体制と指示の流れ、稼働の実態、期間の見込みの4つを確かめておくと、契約後の「話が違う」を減らせます。</p>
+</a>
+<a class="card art-card" href="/media/nodejs-skillsheet/">
+  <span class="art-hub">バックエンド開発</span>
+  <h3>Node.jsエンジニアのスキルシートの書き方｜面談で評価される実績の見せ方</h3>
+  <p>Node.jsのスキルシートは、担った層（API・BFF・サーバーレス）と画面側との境目、Node.jsの版とフレームワーク、運用で起きたことへの対応を書き分けるのが基本です。性能改善や版上げの書き方と、架空の記入例を紹介します。</p>
+</a>
+<a class="card art-card" href="/media/nodejs-skills/">
+  <span class="art-hub">バックエンド開発</span>
+  <h3>Node.jsエンジニアのフリーランス案件で求められるスキルと経験</h3>
+  <p>Node.jsの案件では、非同期処理とイベントループの理解、API設計とデータベース、フレームワークでの構成づくり、サーバーレスやコンテナでの運用、依存パッケージの管理が問われます。分野ごと・経験の段階ごとに整理します。</p>
+</a>
+<a class="card art-card" href="/media/nodejs-shigoto/">
+  <span class="art-hub">バックエンド開発</span>
+  <h3>Node.jsエンジニアのフリーランス案件の仕事内容｜案件の種類と働き方</h3>
+  <p>Node.jsのフリーランス案件は、サービスの中心となるAPI、BFF、サーバーレス、リアルタイム機能、既存アプリの保守の5種類に分かれ、種類ごとに1日の流れ、関わる相手、成果物が違います。参画前に働き方を具体的に思い描くための記事です。</p>
+</a>
+<a class="card art-card" href="/media/nodejs-anken-erabi/">
+  <span class="art-hub">バックエンド開発</span>
+  <h3>Node.jsエンジニアのフリーランス案件の選び方｜契約前に確かめたいこと</h3>
+  <p>Node.js案件は、同じ募集でも担う層、画面の作業の割合、運用と障害当番、版と依存パッケージの状態で負担が大きく変わります。契約前に確かめたい7つの点と、確かめた内容を書面と照らし合わせる方法を解説します。</p>
+</a></div></section>
+</main>
+<footer class="site-foot">
+  <div class="wrap">
+    <strong>エージェントベストジョブ フリーランス</strong>
+    <div class="foot-links">
+      <a href="/">トップ</a>
+      <a href="/jobs/">案件を探す</a>
+      <a href="/media/">お役立ち記事</a>
+      <a href="https://airtable.com/appYkc36EvioYoL1A/pag6CZC4uJmxUcrXT/form" target="_blank" rel="noopener">ご登録（スキルシート・ご希望の条件）</a>
+      <a href="https://line.me/R/ti/p/@697nxhbt?oat_content=url&ts=08302134" target="_blank" rel="noopener" data-line-cta="footer">LINEで相談する</a>
+      <a href="/privacy.html">個人情報の取り扱い</a>
+      <a href="https://www.agent-best.net/company/">運営会社</a>
+    </div>
+    <div class="foot-links">
+      <a href="https://jobs.agent-best.net/">正社員の求人を探す（エージェントベストジョブ）</a>
+      <a href="https://skill.agent-best.net/">エージェントベストジョブ手に職</a>
+      <a href="https://www.agent-best.net/">エージェントベスト</a>
+    </div>
+    <p>運営：株式会社エージェントベスト（有料職業紹介事業 許可番号 13-ユ-316964）<br>〒106-0032 東京都港区六本木4-8-7 嶋田ビル5階</p>
+  </div>
+</footer>
+<script src="/assets/fav.js" defer></script>
+</body>
+</html>

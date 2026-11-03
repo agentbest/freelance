@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ブロックチェーンエンジニアの参画初月にやること｜現場で信頼される進め方｜エージェントベストジョブ フリーランス</title>
+<meta name="description" content="ブロックチェーンエンジニアの参画初月は、鍵と権限・公開の流れを確かめ、手元でビルドとテストを通し、小さな変更をレビューを経て届けるのが基本です。週ごとの進め方、案件の型による重心の違い、初月に避けたい動き、月末の振り返りを整理します。">
+<link rel="canonical" href="https://freelance.agent-best.net/media/blockchain-first-month/">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="エージェントベストジョブ フリーランス">
+<meta property="og:title" content="ブロックチェーンエンジニアの参画初月にやること｜現場で信頼される進め方｜エージェントベストジョブ フリーランス">
+<meta property="og:description" content="ブロックチェーンエンジニアの参画初月は、鍵と権限・公開の流れを確かめ、手元でビルドとテストを通し、小さな変更をレビューを経て届けるのが基本です。週ごとの進め方、案件の型による重心の違い、初月に避けたい動き、月末の振り返りを整理します。">
+<meta property="og:url" content="https://freelance.agent-best.net/media/blockchain-first-month/">
+<meta property="og:image" content="https://freelance.agent-best.net/assets/ogp.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://freelance.agent-best.net/assets/ogp.png">
+<meta name="theme-color" content="#1E3A5F">
+<link rel="icon" href="/assets/favicon.ico">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="stylesheet" href="/assets/site.css">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1XXMP8Y1B4"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-1XXMP8Y1B4');
+document.addEventListener('click',e=>{const a=e.target.closest('[data-line-cta]');if(a)gtag('event','line_add_friend',{placement:a.dataset.lineCta,page_path:location.pathname});});</script>
+<script type="application/ld+json">[{"@context":"https://schema.org","@type":"Article","headline":"ブロックチェーンエンジニアの参画初月にやること｜現場で信頼される進め方","description":"ブロックチェーンエンジニアの参画初月は、鍵と権限・公開の流れを確かめ、手元でビルドとテストを通し、小さな変更をレビューを経て届けるのが基本です。週ごとの進め方、案件の型による重心の違い、初月に避けたい動き、月末の振り返りを整理します。","datePublished":"2026-11-04","dateModified":"2026-11-04","author":{"@type":"Organization","name":"株式会社エージェントベスト","url":"https://www.agent-best.net/"},"publisher":{"@type":"Organization","name":"株式会社エージェントベスト","logo":{"@type":"ImageObject","url":"https://freelance.agent-best.net/assets/logo.png"}},"mainEntityOfPage":"https://freelance.agent-best.net/media/blockchain-first-month/"},{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"トップ","item":"https://freelance.agent-best.net/"},{"@type":"ListItem","position":2,"name":"お役立ち記事","item":"https://freelance.agent-best.net/media/"},{"@type":"ListItem","position":3,"name":"バックエンド開発","item":"https://freelance.agent-best.net/media/hub/backend/"},{"@type":"ListItem","position":4,"name":"ブロックチェーンエンジニアの参画初月にやること｜現場で信頼される進め方"}]},{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"初月から本番の鍵を渡されそうになりました。断ってもよいですか？","acceptedAnswer":{"@type":"Answer","text":"外部の立場で本番の鍵を個人の端末に預かることは、紛失や漏えいの際に責任の所在が自分に寄るため、避けたほうが安全です。断るというより、複数人での承認や発注側が管理する仕組みを使う形を相談するのがおすすめです。"}},{"@type":"Question","name":"引き継ぎの資料がほとんどありません。何から始めればよいですか？","acceptedAnswer":{"@type":"Answer","text":"まずは本番に関わる操作の流れと連絡先を、聞いた範囲でまとめて窓口に確かめてもらいます。そのうえで、過去のプルリクエストと監査の報告書、テストのコードを読むと、現場の判断の傾向をつかみやすくなります。引き継ぎの考え方は引き継ぎの記事をご覧ください。"}},{"@type":"Question","name":"1か月たっても全体像がつかめません。どうすればよいですか？","acceptedAnswer":{"@type":"Answer","text":"ブロックチェーンの案件は、チェーンの上と外側の処理が絡み合うため、全体像に時間がかかることは珍しくありません。分かっている範囲と分からない範囲を書き出し、窓口に共有したうえで、次の1か月で優先して知るべき部分を合わせておくと進めやすくなります。"}}]}]</script>
+</head>
+<body>
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="/"><img src="/assets/mark.png" alt="" width="28" height="28"><span>エージェントベストジョブ フリーランス<small>フリーランスのエンジニア・コンサル向け案件紹介</small></span></a>
+    <nav class="head-nav" aria-label="メニュー">
+      <a class="link" href="/jobs/">案件を探す</a>
+      <a class="link" href="/media/">お役立ち記事</a>
+      <a class="link keep" href="/mypage/" aria-label="気になる案件">☆ 気になる<span class="fav-count" data-fav-count hidden></span></a>
+      <a class="btn btn-primary btn-sm" href="https://airtable.com/appYkc36EvioYoL1A/pag6CZC4uJmxUcrXT/form" target="_blank" rel="noopener">無料で登録</a>
+    </nav>
+  </div>
+</header>
+<main class="wrap narrow article">
+  <p class="crumbs"><a href="/">トップ</a> › <a href="/media/">お役立ち記事</a> › <a href="/media/hub/backend/">バックエンド開発</a></p>
+  <a class="art-hub" href="/media/hub/backend/">バックエンド開発</a>
+  <h1 class="art-title">ブロックチェーンエンジニアの参画初月にやること｜現場で信頼される進め方</h1>
+  <p class="note">公開 2026-11-04　監修：株式会社エージェントベスト</p>
+  <nav class="toc" aria-label="目次"><strong>目次</strong><ol><li><a href="#s1">初月のゴールを3つに分ける</a></li><li><a href="#s2">1週目：権限と手順、現状を集める</a></li><li><a href="#s3">2週目：手元で回せるようにする</a></li><li><a href="#s4">3〜4週目：小さく届け、気づいた点を共有する</a></li><li><a href="#s5">案件の型によって初月の重心は変わる</a></li><li><a href="#s6">初月に避けたい動き</a></li><li><a href="#s7">1か月の終わりに振り返ること</a></li><li><a href="#s8">よくある質問</a></li></ol></nav>
+  <div class="art-body">
+<p>ブロックチェーンエンジニアの参画初月は、<strong>鍵と権限、公開と更新の流れを確かめ、手元でビルドとテストを通し、小さな変更をレビューを経て届ける</strong>ことに力を注ぐのが基本です。取り消せない処理を扱う現場では、最初の1か月に速く大きく成果を出すことより、「手順を守り、危うい点を早く言える人」と見てもらうことが信頼の土台になります。</p>
+<p>この記事では、初月のゴール、週ごとの進め方、案件の型による重心の違い、避けたい動き、月末の振り返りを整理します。参画前の準備の全体は<a href="/media/sankaku-junbi/">参画前の準備の記事</a>で扱っているので、ここではブロックチェーンの現場ならではの動き方に絞ります。</p>
+<h2 id="s1">初月のゴールを3つに分ける</h2>
+<p>初月に目指すことは、次の3つに分けると整理しやすくなります。</p>
+<div class="table-wrap"><table><thead><tr><th>ゴール</th><th>中身</th><th>月末にできている状態</th></tr></thead><tbody><tr><td>権限と手順を知る</td><td>鍵の保管、署名、公開・更新の承認の流れ、緊急時の連絡先</td><td>本番に関わる操作を誰がどう行うかを説明できる</td></tr><tr><td>手元で回せる</td><td>ビルド、テスト、テストネットへの公開、静的解析などを自分の環境で動かせる</td><td>レビューに出す前の確認を自分で一通りできる</td></tr><tr><td>小さく届ける</td><td>小さな修正やテストの追加を、レビューを経て取り込んでもらう</td><td>現場の書き方とレビューの観点をつかんでいる</td></tr></tbody></table></div>
+<p>3つ目の「小さく届ける」は、本番への公開までを初月に求めるものではありません。案件によっては公開の頻度が低く、初月はレビューを経て取り込まれるところまでで十分なこともあります。</p>
+<h2 id="s2">1週目：権限と手順、現状を集める</h2>
+<h3>最初に確かめたいこと</h3>
+<p>1週目は、コードより先に<strong>本番に関わる決まり</strong>を確かめます。</p>
+<ul><li>本番の管理者権限を持つ鍵を誰が持ち、どこに保管しているか</li><li>公開・更新・緊急停止の操作は、誰の承認でどう行うか</li><li>テストネットと本番で、使う鍵や設定がどう分かれているか</li><li>障害や不審な取引に気づいたとき、誰に連絡するか</li></ul>
+<p>ここが文書になっていない現場もあります。その場合は、聞いた内容を自分でまとめ、窓口に見てもらって確かめます。外部の立場で本番の鍵を個人の端末に預かる形は避け、発注側の決まりに沿った扱いを相談してください。</p>
+<h3>読む資料と話す相手</h3>
+<p>設計の資料、外部監査の報告書（あれば）、過去の障害の記録、課題の一覧に目を通します。監査の報告書には、指摘された箇所と直し方の議論が残っているため、そのコードの危うい部分と現場の判断の傾向を知る手がかりになります。関係者とは短く話し、担当の範囲と、困ったときの相談先を確かめます。</p>
+<p>話す相手は、開発のリード、本番の操作を担う担当者、事業や業務の担当者の三者がそろうと全体が見えやすくなります。開発のリードには設計の経緯とレビューの方針を、本番の担当者には操作の手順と過去の障害を、事業の担当者には利用者や取引先から見た困りごとを聞きます。同じ仕組みでも立場によって気にしている点が違うため、三者の話を突き合わせると、優先して直すべき部分の見当がつきます。</p>
+<h3>稼働と連絡の形を合わせる</h3>
+<p>海外のチームや、時間帯の違うメンバーがいる現場では、会議の時間、チャットでの返答の目安、緊急時の連絡手段を1週目に合わせておきます。公開や障害の前後に待機が求められるかどうか、その時間の扱いが契約でどうなっているかも、この段階で確かめておくと後の食い違いを防げます。</p>
+<h2 id="s3">2週目：手元で回せるようにする</h2>
+<h3>ビルドとテストを通す</h3>
+<p>手元の環境で、ビルド、テスト、テストネットへの公開、静的解析など、現場で使っている確認を一通り動かします。手順書どおりに動かなかった箇所は、直した内容をメモしておき、手順書の更新として提案すると、次に入る人の助けにもなります。</p>
+<h3>現場の書き方とレビューの観点をつかむ</h3>
+<p>過去のプルリクエストとレビューのやりとりを読み、現場がどの点を重く見ているかをつかみます。Solidityの公式ドキュメントが挙げる、外部呼び出しの前に状態を更新する書き方（チェック、状態の更新、外部呼び出しの順）や、<code>tx.origin</code>を認可に使わないことなどを、現場がどう決まりにしているかを確かめます（2026年10月時点）。</p>
+<aside class="box box-view"><p class="box-label">エージェントベストの見解</p><p>案件紹介の現場で見ていると、ブロックチェーンの案件で早く信頼を得る方は、最初のプルリクエストを「小さく、テストつきで、変更の理由が書かれた」形で出していることが多い傾向があります。大きな改善案を初月に出すより、まず現場の書き方に合わせた小さな変更を通すほうが、レビューする側の負担も少なく、任される範囲が広がりやすくなります。</p></aside>
+<h2 id="s4">3〜4週目：小さく届け、気づいた点を共有する</h2>
+<h3>小さな変更を通す</h3>
+<p>テストの追加、小さな不具合の修正、権限まわりのテストの補強など、影響の小さい変更から始めます。変更の理由と、確かめた範囲（どのテストを追加し、何を確かめたか）を説明に書きます。</p>
+<h3>危うい点は早めに、理由を添えて伝える</h3>
+<p>コードを読む中で、アクセス制御の不備、外部呼び出しの扱い、入力の検証不足など、OWASPのSmart Contract Top 10（2025年版）に並ぶような危うさに気づくことがあります。確信がなくても、場所と理由、考えられる影響を添えて早めに共有します。直すかどうかの判断は現場に委ね、自分の権限で本番に関わる変更を進めないことが大切です。</p>
+<h3>次の1〜2か月の担当を確かめる</h3>
+<p>月末に向けて、次に担う範囲を窓口と確かめます。初月で見えた課題のうち、自分が担えそうなものを候補として挙げると、話が進めやすくなります。</p>
+<h2 id="s5">案件の型によって初月の重心は変わる</h2>
+<h3>公開型チェーンのスマートコントラクト開発</h3>
+<p>重心は、テストと現場の書き方をつかむことに置きます。公開後に直しにくいため、レビューとテストの水準が高い現場が多く、初月は小さな変更を通して観点を合わせることが中心になります。</p>
+<h3>企業向けの分散台帳・業務への組み込み</h3>
+<p>重心は、業務とデータの流れを知ることに置きます。参加者が限られた許可型の仕組み（Hyperledger Fabricなど）では、どの組織がどのデータを見られるか、どの承認で取引が確定するかが業務の決まりと結び付いています。業務の担当者とも話し、チェーンに載せる範囲の考え方を確かめます。</p>
+<h3>コードの監査・レビュー</h3>
+<p>重心は、範囲と報告の形を合わせることに置きます。監査する範囲、指摘の重さの付け方、報告書の書式、依頼者とのやりとりの窓口を最初に確かめます。指摘を出したあとに、修正の確認まで担うかどうかも合わせておきます。</p>
+<h3>周辺のバックエンド・既存システムとの接続</h3>
+<p>重心は、チェーンの外側の処理が状態をどう扱うかを知ることに置きます。取引の遅れや失敗、チェーンの再編成が起きたときに、残高や状態の表示がどうなるかを確かめておくと、後の不具合を防げます。</p>
+<h2 id="s6">初月に避けたい動き</h2>
+<ul><li><strong>本番の鍵や管理者権限を個人で預かる</strong>：便利でも、紛失や漏えいの際の責任が自分に寄る</li><li><strong>手順を飛ばして操作する</strong>：テストネットでの確認や承認を「念のため後で」にする</li><li><strong>大きな書き換えを早く提案しすぎる</strong>：現場の判断の理由を知る前に、設計の作り直しを持ちかける</li><li><strong>気づいた危うさを抱え込む</strong>：確信がないからと黙っていると、後で「知っていたのに言わなかった」と見られる</li><li><strong>範囲外の作業を黙って引き受ける</strong>：監査対応や公開作業が契約の範囲に入るかを確かめずに担う</li></ul>
+<aside class="box box-caution"><p class="box-label">注意</p><p>資産を扱う仕組みでは、善意の操作でも手順から外れると事故の原因になります。本番に関わる操作は、発注側の決めた手順と承認を通してから行ってください。参画初期の動き方の一般的な注意は<a href="/media/sankaku-shoki/">参画初期の記事</a>でも整理しています。</p></aside>
+<h2 id="s7">1か月の終わりに振り返ること</h2>
+<p>月末には、次の点を自分で振り返り、必要なら窓口と短く話します。</p>
+<ol><li>本番に関わる操作の流れと、自分が触れてよい範囲を説明できるか</li><li>手元でレビュー前の確認を一通り回せるか</li><li>取り込まれた変更と、共有した気づきは何か</li><li>契約の業務範囲と、実際に求められている作業にずれはないか</li><li>次の1〜2か月で担う範囲が合意できているか</li></ol>
+<p>稼働の報告の形は<a href="/media/kado-houkoku/">稼働報告の記事</a>、評価につなげる考え方は<a href="/media/hyouka-tsunageru/">評価につなげる記事</a>で扱っています。</p>
+<aside class="box box-view"><p class="box-label">エージェントベストの見解</p><p>当社では、契約で業務範囲・報酬・支払期日・契約期間を個別契約に書いてお渡ししています。参画してから、監査対応や公開作業など契約の範囲に入るか迷う作業を求められた場合は、ご質問いただければ確認します。</p></aside>
+<aside class="box box-point"><p class="box-label">ポイント</p><ul><li>初月のゴールは、権限と手順を知る、手元で回せる、小さく届けるの3つ</li><li>1週目は鍵と公開の流れ、2週目は手元の確認、3〜4週目は小さな変更と気づきの共有</li><li>案件の型によって、テスト・業務・報告・チェーンの外側など、重心が変わる</li></ul></aside>
+<h2 id="s8">よくある質問</h2>
+<h3>初月から本番の鍵を渡されそうになりました。断ってもよいですか？</h3>
+<p>外部の立場で本番の鍵を個人の端末に預かることは、紛失や漏えいの際に責任の所在が自分に寄るため、避けたほうが安全です。断るというより、複数人での承認や発注側が管理する仕組みを使う形を相談するのがおすすめです。</p>
+<h3>引き継ぎの資料がほとんどありません。何から始めればよいですか？</h3>
+<p>まずは本番に関わる操作の流れと連絡先を、聞いた範囲でまとめて窓口に確かめてもらいます。そのうえで、過去のプルリクエストと監査の報告書、テストのコードを読むと、現場の判断の傾向をつかみやすくなります。引き継ぎの考え方は<a href="/media/hikitsugi/">引き継ぎの記事</a>をご覧ください。</p>
+<h3>1か月たっても全体像がつかめません。どうすればよいですか？</h3>
+<p>ブロックチェーンの案件は、チェーンの上と外側の処理が絡み合うため、全体像に時間がかかることは珍しくありません。分かっている範囲と分からない範囲を書き出し、窓口に共有したうえで、次の1か月で優先して知るべき部分を合わせておくと進めやすくなります。</p>
+  </div>
+  <section class="sources"><h2>参考にした公的情報・資料</h2><ul><li><a href="https://docs.soliditylang.org/en/latest/security-considerations.html" target="_blank" rel="noopener nofollow">Security Considerations（Solidity Documentation）</a></li><li><a href="https://owasp.org/www-project-smart-contract-top-10/" target="_blank" rel="noopener nofollow">OWASP Smart Contract Top 10（OWASP Foundation）</a></li><li><a href="https://hyperledger-fabric.readthedocs.io/en/latest/whatis.html" target="_blank" rel="noopener nofollow">Introduction（Hyperledger Fabric Documentation）</a></li></ul>
+  <p class="note">記事の内容は公開日時点の情報にもとづきます。制度や税率は変わることがあるため、手続きの前に必ず各機関の最新情報をご確認ください。</p></section>
+  <div class="cta-band">
+  <h2>条件に合う案件だけ、知りたい方へ</h2>
+  <p>ご登録は無料です。条件に合う案件だけを、ご本人の了承を得てからご提案します。</p>
+  <div class="cta-row">
+    <a class="btn btn-primary" href="https://airtable.com/appYkc36EvioYoL1A/pag6CZC4uJmxUcrXT/form" target="_blank" rel="noopener">無料で登録する</a>
+    <a class="btn btn-ghost" href="/jobs/">案件を探す</a>
+  </div>
+</div>
+  <section class="related"><h2>あわせて読みたい</h2><div class="grid g2"><a class="card art-card" href="/media/sankaku-junbi/">
+  <span class="art-hub">案件の探し方</span>
+  <h3>参画が決まってから開始日までにやること｜契約・事業の手続き・作業環境の準備</h3>
+  <p>参画が決まったら、開始日までに「契約の書面の確認」「他の選考の整理」「請求と事業の手続き」「作業環境」「業務の予習」の5つを進めます。時期ごとのやることと、開始前の作業を頼まれたときの注意点を整理します。</p>
+</a>
+<a class="card art-card" href="/media/sankaku-shoki/">
+  <span class="art-hub">案件の探し方</span>
+  <h3>参画初日から最初の1週間でやること｜業務委託で立ち上がりを早める進め方</h3>
+  <p>参画して最初の1週間は、成果を急ぐより「任された範囲・依頼の窓口・報告の形」を確かめ、小さな仕事を一つ終えることを優先します。初日から5日目までの進め方と、つまずきやすい点を整理します。</p>
+</a>
+<a class="card art-card" href="/media/genba-tachiichi/">
+  <span class="art-hub">案件の探し方</span>
+  <h3>常駐先での立ち位置と人間関係の考え方｜業務委託で社員と働くときの距離感</h3>
+  <p>常駐先でのフリーランスは「社員の一員」でも「外の業者」でもなく、契約で任された範囲を担う人という立ち位置です。関係者ごとの距離感、社員と同じ扱いになりにくい場面、摩擦が起きたときの相談の順番を整理します。</p>
+</a>
+<a class="card art-card" href="/media/hikitsugi/">
+  <span class="art-hub">案件の探し方</span>
+  <h3>契約終了時の引き継ぎの進め方｜業務の棚卸しから資料・並走・返却まで</h3>
+  <p>契約終了時の引き継ぎは、終了が決まった時点で「範囲・相手・期限」を窓口と決め、業務の棚卸し、資料作り、後任との並走、権限と資料の返却の順に進めます。後任が決まらないときや、終了後の問い合わせへの対応も整理します。</p>
+</a>
+<a class="card art-card" href="/media/hyouka-tsunageru/">
+  <span class="art-hub">案件の探し方</span>
+  <h3>取引先からの評価を次の案件につなげる方法｜評価を聞く・残す・伝える</h3>
+  <p>取引先からの評価は、そのままでは次の案件に届きません。参画中に評価を聞いて言葉にし、成果を守秘に配慮した形で記録し、スキルシートと面談で伝えられる形に直すことで、次の案件選びに生かせます。進め方と注意点を整理します。</p>
+</a>
+<a class="card art-card" href="/media/kado-houkoku/">
+  <span class="art-hub">単価・報酬交渉</span>
+  <h3>稼働報告書（作業報告書）の書き方と提出の注意点｜時間の数え方と期限</h3>
+  <p>稼働報告書は、月額報酬の精算額を決める根拠になる書類です。日ごとの稼働時間と作業内容を、契約で決めた時間の数え方に沿って書き、期限までに現場の確認を受けて出すのが基本です。書く項目、時間の数え方、提出の流れと注意点を整理します。</p>
+</a></div></section>
+</main>
+<footer class="site-foot">
+  <div class="wrap">
+    <strong>エージェントベストジョブ フリーランス</strong>
+    <div class="foot-links">
+      <a href="/">トップ</a>
+      <a href="/jobs/">案件を探す</a>
+      <a href="/media/">お役立ち記事</a>
+      <a href="https://airtable.com/appYkc36EvioYoL1A/pag6CZC4uJmxUcrXT/form" target="_blank" rel="noopener">ご登録（スキルシート・ご希望の条件）</a>
+      <a href="https://line.me/R/ti/p/@697nxhbt?oat_content=url&ts=08302134" target="_blank" rel="noopener" data-line-cta="footer">LINEで相談する</a>
+      <a href="/privacy.html">個人情報の取り扱い</a>
+      <a href="https://www.agent-best.net/company/">運営会社</a>
+    </div>
+    <div class="foot-links">
+      <a href="https://jobs.agent-best.net/">正社員の求人を探す（エージェントベストジョブ）</a>
+      <a href="https://skill.agent-best.net/">エージェントベストジョブ手に職</a>
+      <a href="https://www.agent-best.net/">エージェントベスト</a>
+    </div>
+    <p>運営：株式会社エージェントベスト（有料職業紹介事業 許可番号 13-ユ-316964）<br>〒106-0032 東京都港区六本木4-8-7 嶋田ビル5階</p>
+  </div>
+</footer>
+<script src="/assets/fav.js" defer></script>
+</body>
+</html>

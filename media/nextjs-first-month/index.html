@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Next.jsエンジニアの参画初月にやること｜現場で信頼される進め方｜エージェントベストジョブ フリーランス</title>
+<meta name="description" content="Next.jsエンジニアの参画初月は、版とルーター・描画方式・キャッシュ・配信先の4点で構成をつかみ、小さな変更をレビューに乗せ、月末に一つの担当を仕上げて気づいた点を提案するのが基本です。週ごとの進め方と避けたい動きを整理します。">
+<link rel="canonical" href="https://freelance.agent-best.net/media/nextjs-first-month/">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="エージェントベストジョブ フリーランス">
+<meta property="og:title" content="Next.jsエンジニアの参画初月にやること｜現場で信頼される進め方｜エージェントベストジョブ フリーランス">
+<meta property="og:description" content="Next.jsエンジニアの参画初月は、版とルーター・描画方式・キャッシュ・配信先の4点で構成をつかみ、小さな変更をレビューに乗せ、月末に一つの担当を仕上げて気づいた点を提案するのが基本です。週ごとの進め方と避けたい動きを整理します。">
+<meta property="og:url" content="https://freelance.agent-best.net/media/nextjs-first-month/">
+<meta property="og:image" content="https://freelance.agent-best.net/assets/ogp.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://freelance.agent-best.net/assets/ogp.png">
+<meta name="theme-color" content="#1E3A5F">
+<link rel="icon" href="/assets/favicon.ico">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="stylesheet" href="/assets/site.css">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1XXMP8Y1B4"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-1XXMP8Y1B4');
+document.addEventListener('click',e=>{const a=e.target.closest('[data-line-cta]');if(a)gtag('event','line_add_friend',{placement:a.dataset.lineCta,page_path:location.pathname});});</script>
+<script type="application/ld+json">[{"@context":"https://schema.org","@type":"Article","headline":"Next.jsエンジニアの参画初月にやること｜現場で信頼される進め方","description":"Next.jsエンジニアの参画初月は、版とルーター・描画方式・キャッシュ・配信先の4点で構成をつかみ、小さな変更をレビューに乗せ、月末に一つの担当を仕上げて気づいた点を提案するのが基本です。週ごとの進め方と避けたい動きを整理します。","datePublished":"2026-11-04","dateModified":"2026-11-04","author":{"@type":"Organization","name":"株式会社エージェントベスト","url":"https://www.agent-best.net/"},"publisher":{"@type":"Organization","name":"株式会社エージェントベスト","logo":{"@type":"ImageObject","url":"https://freelance.agent-best.net/assets/logo.png"}},"mainEntityOfPage":"https://freelance.agent-best.net/media/nextjs-first-month/"},{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"トップ","item":"https://freelance.agent-best.net/"},{"@type":"ListItem","position":2,"name":"お役立ち記事","item":"https://freelance.agent-best.net/media/"},{"@type":"ListItem","position":3,"name":"フロントエンド開発","item":"https://freelance.agent-best.net/media/hub/frontend/"},{"@type":"ListItem","position":4,"name":"Next.jsエンジニアの参画初月にやること｜現場で信頼される進め方"}]},{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"初日から機能の開発を任されました。何に気をつければよいですか？","acceptedAnswer":{"@type":"Answer","text":"まず、作る画面がどの描画方式とキャッシュの考え方で作られているかを確かめてください。分からないまま作り始めると、データの更新後に表示が新しくならない、といった不具合につながります。近い画面のコードを一つ読み、同じ書き方で作るのが早道です。"}},{"@type":"Question","name":"現場がPages RouterとApp Routerの混在でした。どちらの書き方に合わせればよいですか？","acceptedAnswer":{"@type":"Answer","text":"新しく作る画面をどちらで作るかは、現場の方針で決まります。移行の途中なら、移行の計画と、新しい画面の置き場所を窓口に確かめてください。決まっていなければ、どちらで作るかを決めてもらうよう相談し、決まったことを文書に残しておくと、後から入る人も迷いません。"}},{"@type":"Question","name":"1か月たっても全体の構成がつかめません。どうすればよいですか？","acceptedAnswer":{"@type":"Answer","text":"まずは、版とルーター、描画方式、キャッシュ、配信先の4点だけでも一枚にまとめ、分からない部分を書き出してください。そのうえで、構成を決めている人に30分ほど時間をもらい、まとめた紙を見ながら確かめると、短い時間で全体がつかめます。分からない点を具体的に示すことは、信頼を落とすことにはなりません。"}}]}]</script>
+</head>
+<body>
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="/"><img src="/assets/mark.png" alt="" width="28" height="28"><span>エージェントベストジョブ フリーランス<small>フリーランスのエンジニア・コンサル向け案件紹介</small></span></a>
+    <nav class="head-nav" aria-label="メニュー">
+      <a class="link" href="/jobs/">案件を探す</a>
+      <a class="link" href="/media/">お役立ち記事</a>
+      <a class="link keep" href="/mypage/" aria-label="気になる案件">☆ 気になる<span class="fav-count" data-fav-count hidden></span></a>
+      <a class="btn btn-primary btn-sm" href="https://airtable.com/appYkc36EvioYoL1A/pag6CZC4uJmxUcrXT/form" target="_blank" rel="noopener">無料で登録</a>
+    </nav>
+  </div>
+</header>
+<main class="wrap narrow article">
+  <p class="crumbs"><a href="/">トップ</a> › <a href="/media/">お役立ち記事</a> › <a href="/media/hub/frontend/">フロントエンド開発</a></p>
+  <a class="art-hub" href="/media/hub/frontend/">フロントエンド開発</a>
+  <h1 class="art-title">Next.jsエンジニアの参画初月にやること｜現場で信頼される進め方</h1>
+  <p class="note">公開 2026-11-04　監修：株式会社エージェントベスト</p>
+  <nav class="toc" aria-label="目次"><strong>目次</strong><ol><li><a href="#s1">初月のゴールを3つに分ける</a></li><li><a href="#s2">1週目：動かして、構成の4点をつかむ</a></li><li><a href="#s3">2週目：小さな変更を出し、流れに乗る</a></li><li><a href="#s4">3〜4週目：まとまった担当を仕上げる</a></li><li><a href="#s5">案件の型によって初月の重心は変わる</a></li><li><a href="#s6">初月に避けたい動き</a></li><li><a href="#s7">1か月の終わりに振り返ること</a></li><li><a href="#s8">よくある質問</a></li></ol></nav>
+  <div class="art-body">
+<p>Next.jsエンジニアの参画初月は、<strong>版とルーター、描画方式、キャッシュの考え方、配信先の4点でアプリの構成をつかみ、小さな変更をレビューに乗せ、月末までに一つの担当を仕上げて、気づいた点を提案として出す</strong>ところまでを目標にします。最初の1か月で求められるのは、大きな機能を作ることより、<strong>この人なら現場の構成を壊さずに任せられる</strong>と判断できる材料を示すことです。</p>
+<p>参画前の契約や環境の準備は<a href="/media/sankaku-junbi/">参画が決まってから開始日までにやること</a>、職種を問わない最初の1週間の進め方は<a href="/media/sankaku-shoki/">参画初日から最初の1週間でやること</a>で解説しています。この記事では、Next.jsならではの初月の動き方に絞ります。</p>
+<h2 id="s1">初月のゴールを3つに分ける</h2>
+<div class="table-wrap"><table><thead><tr><th>ゴール</th><th>中身</th><th>月末に手元にあるもの</th></tr></thead><tbody><tr><td>構成をつかむ</td><td>版とルーター、描画方式、キャッシュ、配信先、データの流れを知る</td><td>構成のメモ（どこで何をしているかの一覧）</td></tr><tr><td>流れに乗る</td><td>手元で動かし、小さな変更をレビューと配信の流れに乗せる</td><td>本番に出た小さな変更がいくつか</td></tr><tr><td>任せてもらう</td><td>一つの画面か機能を担当として仕上げる</td><td>仕上げた担当と、気づいた点の提案</td></tr></tbody></table></div>
+<p>この3つを、1週目、2週目、3〜4週目の順に重心を移しながら進めます。</p>
+<h2 id="s2">1週目：動かして、構成の4点をつかむ</h2>
+<h3>手元で動かすところまでを最初の目標にする</h3>
+<p>初日から数日は、手元の環境でアプリを動かし、ビルドとテストが通るところまでを目標にします。環境変数の置き場所、外部のAPIやデータベースへのつなぎ方、手元で使えないサービスの代わりの仕組みなど、つまずいた点はその場でメモし、手順書に足しておくと、次に入る人の役にも立ちます。</p>
+<h3>構成を4点で確かめる</h3>
+<p>Next.jsは、同じ「Next.jsのアプリ」でも構成によって書き方が大きく変わります。最初の週に、次の4点を確かめてください。</p>
+<ol><li><strong>版とルーター</strong>：使っている版と、App RouterかPages Routerか、両方が混ざっているか。公式のサポート方針では、2026年10月時点で16.xがActive LTS、15.xがMaintenance LTSで、14.x以前はサポート外です。古い版なら、版上げの予定があるかも聞いておきます</li><li><strong>描画方式</strong>：ページごとに、事前に作っているか、リクエストのたびに描いているか、静的な書き出しか</li><li><strong>キャッシュの考え方</strong>：Cache Componentsを有効にしているか、以前のキャッシュの考え方のままか。Next.js 16.4ではCache Componentsがすべてのアプリに勧められ、新しく作るアプリでは最初から有効になっています（2026年10月時点）。現場がどちらで作っているかで、データの更新の書き方が変わります</li><li><strong>配信先</strong>：どこにどう配信しているか、本番の設定やログを見られるか</li></ol>
+<h3>コードを読む順番</h3>
+<p>構成の4点をつかんだら、次の順でコードを読むと全体を追いやすくなります。</p>
+<ol><li><strong>設定ファイル</strong>：Next.jsの設定、TypeScriptの設定、リンターの規則</li><li><strong>ルートのレイアウトと主なページ</strong>：画面の骨組みと、共通で読み込んでいるもの</li><li><strong><code>&#39;use client&#39;</code>の置き場所</strong>：どの部品からブラウザで動かしているか。現場の境目の引き方が見える</li><li><strong>データへのアクセスの層</strong>：データベースや外部APIへの問い合わせをどこにまとめているか</li><li><strong>Server ActionsとRoute Handlers</strong>：更新の処理と、そこでの権限の確かめ方</li></ol>
+<p>Next.jsの公式ブログは、<code>&quot;use server&quot;</code>を付けた関数は外から呼び出せる入口になるとし、関数の中で権限と引数を確かめるよう説明しています。読むときに、現場がどこで権限を確かめているかを押さえておくと、自分が更新の処理を書くときに迷いません。</p>
+<h3>誰に何を聞けばよいかを押さえる</h3>
+<p>構成やルールを決めているのは誰か、デザインの判断は誰か、配信や本番の操作を担うのは誰かを、最初の週に確かめます。聞く相手が分かっていると、2週目以降の小さな疑問を早く解けます。</p>
+<h2 id="s3">2週目：小さな変更を出し、流れに乗る</h2>
+<h3>最初の変更は小さく速く</h3>
+<p>文言の修正、小さな不具合の修正、テストの追加など、影響の小さい変更を早めに出します。目的は、ブランチの切り方、レビュー、プレビュー環境での確認、本番への配信まで、<strong>一通りの流れを自分で一度回すこと</strong>です。</p>
+<h3>キャッシュの効き方を確かめる習慣をつける</h3>
+<p>Next.jsでは、手元では正しく表示されても、本番に近い環境ではキャッシュの効き方が違うことがあります。変更を出すたびに、プレビュー環境で「更新したあとに表示が新しくなるか」「ほかの利用者の情報が混ざらないか」を確かめる習慣をつけておくと、後の大きな不具合を防げます。</p>
+<h3>レビューの指摘から規約を学ぶ</h3>
+<p>最初の数回のレビューで受けた指摘は、現場の規約そのものです。指摘をまとめておき、次の変更から先に反映すると、同じ指摘を受けずに済み、レビューする側の負担も減ります。</p>
+<aside class="box box-view"><p class="box-label">エージェントベストの見解</p><p>案件紹介の現場では、Next.jsの方が初月に信頼を得やすいのは、大きな機能を早く作ったときより、小さな変更を規約どおりに速く出し続けたときだという傾向があります。とくに、境目の引き方やデータの更新の書き方を現場に合わせられているかは、レビューする側がよく見ている点です。</p></aside>
+<h2 id="s4">3〜4週目：まとまった担当を仕上げる</h2>
+<h3>一つの画面か機能を担当として仕上げる</h3>
+<p>3週目からは、一つの画面か機能を担当として受け持ちます。データの取得、更新、表示までを、現場の構成のとおりに仕上げます。どこからをClient Componentにしたか、何をキャッシュしたかは、レビューの説明に理由を添えて書いておくと、判断の筋道が伝わります。</p>
+<h3>気づいた改善点は提案として出す</h3>
+<p>初月に構成を読むと、直したい点がいくつも見つかります。ただ、すぐに書き換えるのは避け、<strong>直したい点、理由、影響の範囲、移す順番</strong>をまとめて提案として出します。たとえば、古いキャッシュの考え方からの移行、サポートが終わった版からの版上げ、権限の確かめ方のばらつきなどは、提案の形で出すと受け入れられやすくなります。</p>
+<h3>次に任されたい範囲を相談する</h3>
+<p>月末には、窓口と次の1〜2か月で任されたい範囲を話します。今後も同じ種類の画面を担うのか、版上げや移行の計画に関わるのかで、次の月の動き方が変わります。範囲が契約の内容から広がるときは、<a href="/media/scope-change/">作業範囲の変更への対応</a>を参考に、条件の見直しも含めて相談してください。</p>
+<h2 id="s5">案件の型によって初月の重心は変わる</h2>
+<div class="table-wrap"><table><thead><tr><th>案件の型</th><th>初月の重心</th></tr></thead><tbody><tr><td>新規の立ち上げ</td><td>構成とルールを決める会議に早く入り、決めたことを文書に残す</td></tr><tr><td>既存サービスの機能開発</td><td>現場の規約に合わせ、小さな変更を速く出し続ける</td></tr><tr><td>版上げ・移行</td><td>古い版と新しい版の違いを一覧にし、移す順番と確かめ方を合意する</td></tr><tr><td>保守・運用</td><td>公式のセキュリティ更新の告知を追い、適用の手順と誰が担うかを確かめる</td></tr></tbody></table></div>
+<p>保守を担う案件では、セキュリティ更新の運用が初月から関わってきます。Next.jsは2026年7月から、月に1回ほどセキュリティ更新の予定を事前に公式ブログで告知する運用を始め、緊急の場合は予告なしの修正も出すとしています。告知を誰が見て、誰が適用を判断するかを、初月のうちに決めておくと安心です。リモート中心の現場での報告の工夫は<a href="/media/nextjs-remote/">Next.jsエンジニアのリモートの記事</a>でも触れています。</p>
+<h2 id="s6">初月に避けたい動き</h2>
+<ul><li><strong>前の現場の書き方を持ち込む</strong>：<code>&#39;use client&#39;</code>の置き方やデータの取り方を、現場の規約より自分の型で書く</li><li><strong>構成を確かめずに作り込む</strong>：キャッシュの考え方や描画方式を確かめないまま、大きな画面を作り始める</li><li><strong>権限の確認を省く</strong>：画面からしか呼ばない前提で、Server Actionsの中の権限確認を省く</li><li><strong>一人で抱え込む</strong>：手元で動かない、仕様が分からないといった点を、聞かずに何日も調べ続ける</li><li><strong>頼まれていない書き換えをする</strong>：直したい点を、提案なしにまとめて書き換える</li></ul>
+<p>つまずきやすい点の全体は<a href="/media/nextjs-tsumazuki/">Next.jsエンジニアのフリーランスがつまずきやすい点と対策</a>で整理しています。</p>
+<aside class="box box-caution"><p class="box-label">注意</p><p>初月に「現場のコードが古い」と強く言いすぎると、それまで作ってきた人の立場を損ないます。古い書き方には、作った時点の版の事情や締め切りがあったことも多くあります。直したい点は事実と理由で伝え、決めるのは現場だという前提で提案してください。</p></aside>
+<h2 id="s7">1か月の終わりに振り返ること</h2>
+<p>月末には、次の点を自分で振り返り、必要なものは窓口と共有します。</p>
+<ol><li><strong>構成のメモはできたか</strong>：版とルーター、描画方式、キャッシュ、配信先、データの流れを説明できるか</li><li><strong>流れに乗れたか</strong>：レビューから本番への配信まで、自分で何回回せたか</li><li><strong>担当を仕上げたか</strong>：任された画面か機能を、現場の構成のとおりに仕上げたか</li><li><strong>提案を出したか</strong>：気づいた改善点を、理由と順番をそえて出せたか</li><li><strong>次の範囲を相談したか</strong>：次の1〜2か月で何を任されるかを合意できたか</li></ol>
+<p>稼働の報告や評価を次の契約につなげる考え方は<a href="/media/hyouka-tsunageru/">評価を次の契約につなげるには</a>をご覧ください。</p>
+<aside class="box box-view"><p class="box-label">エージェントベストの見解</p><p>当社では、契約にあたって業務範囲・報酬・支払期日・契約期間を個別契約に書いてお渡ししています。初月に任される範囲が、契約で決めた範囲から広がりそうなときは、早めに状況を整理しておくことをおすすめします。参画後に気になる点があれば、ご質問いただければ確認します。</p></aside>
+<aside class="box box-point"><p class="box-label">ポイント</p><ul><li>1週目は手元で動かし、版とルーター・描画方式・キャッシュ・配信先の4点で構成をつかむ</li><li>2週目は小さな変更をレビューと配信の流れに乗せ、キャッシュの効き方を確かめる習慣をつける</li><li>3〜4週目は一つの担当を仕上げ、気づいた点は理由と順番をそえて提案として出す</li></ul></aside>
+<h2 id="s8">よくある質問</h2>
+<h3>初日から機能の開発を任されました。何に気をつければよいですか？</h3>
+<p>まず、作る画面がどの描画方式とキャッシュの考え方で作られているかを確かめてください。分からないまま作り始めると、データの更新後に表示が新しくならない、といった不具合につながります。近い画面のコードを一つ読み、同じ書き方で作るのが早道です。</p>
+<h3>現場がPages RouterとApp Routerの混在でした。どちらの書き方に合わせればよいですか？</h3>
+<p>新しく作る画面をどちらで作るかは、現場の方針で決まります。移行の途中なら、移行の計画と、新しい画面の置き場所を窓口に確かめてください。決まっていなければ、どちらで作るかを決めてもらうよう相談し、決まったことを文書に残しておくと、後から入る人も迷いません。</p>
+<h3>1か月たっても全体の構成がつかめません。どうすればよいですか？</h3>
+<p>まずは、版とルーター、描画方式、キャッシュ、配信先の4点だけでも一枚にまとめ、分からない部分を書き出してください。そのうえで、構成を決めている人に30分ほど時間をもらい、まとめた紙を見ながら確かめると、短い時間で全体がつかめます。分からない点を具体的に示すことは、信頼を落とすことにはなりません。</p>
+  </div>
+  <section class="sources"><h2>参考にした公的情報・資料</h2><ul><li><a href="https://nextjs.org/support-policy" target="_blank" rel="noopener nofollow">Support Policy（Next.js）</a></li><li><a href="https://nextjs.org/blog/next-16-4" target="_blank" rel="noopener nofollow">Next.js 16.4（Next.js Blog）</a></li><li><a href="https://nextjs.org/blog/security-nextjs-server-components-actions" target="_blank" rel="noopener nofollow">How to Think About Security in Next.js（Next.js Blog）</a></li><li><a href="https://nextjs.org/blog/next-security-release-program" target="_blank" rel="noopener nofollow">Next.js Security Release and Our Next Patch Release（Next.js Blog）</a></li></ul>
+  <p class="note">記事の内容は公開日時点の情報にもとづきます。制度や税率は変わることがあるため、手続きの前に必ず各機関の最新情報をご確認ください。</p></section>
+  <div class="cta-band">
+  <h2>条件に合う案件だけ、知りたい方へ</h2>
+  <p>ご登録は無料です。条件に合う案件だけを、ご本人の了承を得てからご提案します。</p>
+  <div class="cta-row">
+    <a class="btn btn-primary" href="https://airtable.com/appYkc36EvioYoL1A/pag6CZC4uJmxUcrXT/form" target="_blank" rel="noopener">無料で登録する</a>
+    <a class="btn btn-ghost" href="/jobs/">案件を探す</a>
+  </div>
+</div>
+  <section class="related"><h2>あわせて読みたい</h2><div class="grid g2"><a class="card art-card" href="/media/sankaku-junbi/">
+  <span class="art-hub">案件の探し方</span>
+  <h3>参画が決まってから開始日までにやること｜契約・事業の手続き・作業環境の準備</h3>
+  <p>参画が決まったら、開始日までに「契約の書面の確認」「他の選考の整理」「請求と事業の手続き」「作業環境」「業務の予習」の5つを進めます。時期ごとのやることと、開始前の作業を頼まれたときの注意点を整理します。</p>
+</a>
+<a class="card art-card" href="/media/sankaku-shoki/">
+  <span class="art-hub">案件の探し方</span>
+  <h3>参画初日から最初の1週間でやること｜業務委託で立ち上がりを早める進め方</h3>
+  <p>参画して最初の1週間は、成果を急ぐより「任された範囲・依頼の窓口・報告の形」を確かめ、小さな仕事を一つ終えることを優先します。初日から5日目までの進め方と、つまずきやすい点を整理します。</p>
+</a>
+<a class="card art-card" href="/media/nextjs-tsumazuki/">
+  <span class="art-hub">フロントエンド開発</span>
+  <h3>Next.jsエンジニアのフリーランスがつまずきやすい点と対策</h3>
+  <p>フリーランスのNext.jsエンジニアがつまずきやすいのは、サーバー側や配信まで範囲が広がる契約、キャッシュの方針が決まっていない現場、Server Actionsの権限確認の抜け、移行完了での契約終了などです。契約・現場・技術・お金の順に対策を整理します。</p>
+</a>
+<a class="card art-card" href="/media/nextjs-skills/">
+  <span class="art-hub">フロントエンド開発</span>
+  <h3>Next.jsエンジニアのフリーランス案件で求められるスキルと経験</h3>
+  <p>Next.jsの案件では、Server ComponentsとClient Componentsの境目の引き方、データの取得と更新、描画方式とキャッシュの判断、Server Actionsの安全な書き方、配信先の知識が問われます。分野ごと・経験の段階ごとに整理します。</p>
+</a>
+<a class="card art-card" href="/media/nextjs-remote/">
+  <span class="art-hub">フロントエンド開発</span>
+  <h3>Next.jsエンジニアのフリーランスはリモートで働ける？案件の傾向と探し方</h3>
+  <p>Next.jsの案件は、Webサービスの機能開発や版上げなどリモートで進めやすい仕事が多い一方、閉じたネットワークの業務システムや本番環境の操作を伴う仕事は出社や制約が出やすくなります。仕事の向き不向き、探し方、参画前の確認点を解説します。</p>
+</a>
+<a class="card art-card" href="/media/nextjs-nenrei/">
+  <span class="art-hub">フロントエンド開発</span>
+  <h3>Next.jsエンジニアは40代・50代でもフリーランスで働ける？求められる役割</h3>
+  <p>40代・50代のNext.jsエンジニアには、版上げと移行の計画、構成とルールづくり、サーバー側との橋渡し、品質と安全性の点検など、判断の重い役割が求められます。心配されやすい点と補い方、案件の型ごとの向き不向きを整理します。</p>
+</a></div></section>
+</main>
+<footer class="site-foot">
+  <div class="wrap">
+    <strong>エージェントベストジョブ フリーランス</strong>
+    <div class="foot-links">
+      <a href="/">トップ</a>
+      <a href="/jobs/">案件を探す</a>
+      <a href="/media/">お役立ち記事</a>
+      <a href="https://airtable.com/appYkc36EvioYoL1A/pag6CZC4uJmxUcrXT/form" target="_blank" rel="noopener">ご登録（スキルシート・ご希望の条件）</a>
+      <a href="https://line.me/R/ti/p/@697nxhbt?oat_content=url&ts=08302134" target="_blank" rel="noopener" data-line-cta="footer">LINEで相談する</a>
+      <a href="/privacy.html">個人情報の取り扱い</a>
+      <a href="https://www.agent-best.net/company/">運営会社</a>
+    </div>
+    <div class="foot-links">
+      <a href="https://jobs.agent-best.net/">正社員の求人を探す（エージェントベストジョブ）</a>
+      <a href="https://skill.agent-best.net/">エージェントベストジョブ手に職</a>
+      <a href="https://www.agent-best.net/">エージェントベスト</a>
+    </div>
+    <p>運営：株式会社エージェントベスト（有料職業紹介事業 許可番号 13-ユ-316964）<br>〒106-0032 東京都港区六本木4-8-7 嶋田ビル5階</p>
+  </div>
+</footer>
+<script src="/assets/fav.js" defer></script>
+</body>
+</html>

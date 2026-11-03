@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Rustエンジニアは40代・50代でもフリーランスで働ける？求められる役割｜エージェントベストジョブ フリーランス</title>
+<meta name="description" content="40代・50代のRustエンジニアには、C/C++からの移行の計画、unsafeと他言語との境界の設計、性能の責任、チームへのRustの定着など、経験がないと任せにくい役割が求められます。不利に見られやすい点と補い方を整理します。">
+<link rel="canonical" href="https://freelance.agent-best.net/media/rust-nenrei/">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="エージェントベストジョブ フリーランス">
+<meta property="og:title" content="Rustエンジニアは40代・50代でもフリーランスで働ける？求められる役割｜エージェントベストジョブ フリーランス">
+<meta property="og:description" content="40代・50代のRustエンジニアには、C/C++からの移行の計画、unsafeと他言語との境界の設計、性能の責任、チームへのRustの定着など、経験がないと任せにくい役割が求められます。不利に見られやすい点と補い方を整理します。">
+<meta property="og:url" content="https://freelance.agent-best.net/media/rust-nenrei/">
+<meta property="og:image" content="https://freelance.agent-best.net/assets/ogp.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://freelance.agent-best.net/assets/ogp.png">
+<meta name="theme-color" content="#1E3A5F">
+<link rel="icon" href="/assets/favicon.ico">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="stylesheet" href="/assets/site.css">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1XXMP8Y1B4"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-1XXMP8Y1B4');
+document.addEventListener('click',e=>{const a=e.target.closest('[data-line-cta]');if(a)gtag('event','line_add_friend',{placement:a.dataset.lineCta,page_path:location.pathname});});</script>
+<script type="application/ld+json">[{"@context":"https://schema.org","@type":"Article","headline":"Rustエンジニアは40代・50代でもフリーランスで働ける？求められる役割","description":"40代・50代のRustエンジニアには、C/C++からの移行の計画、unsafeと他言語との境界の設計、性能の責任、チームへのRustの定着など、経験がないと任せにくい役割が求められます。不利に見られやすい点と補い方を整理します。","datePublished":"2026-11-04","dateModified":"2026-11-04","author":{"@type":"Organization","name":"株式会社エージェントベスト","url":"https://www.agent-best.net/"},"publisher":{"@type":"Organization","name":"株式会社エージェントベスト","logo":{"@type":"ImageObject","url":"https://freelance.agent-best.net/assets/logo.png"}},"mainEntityOfPage":"https://freelance.agent-best.net/media/rust-nenrei/"},{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"トップ","item":"https://freelance.agent-best.net/"},{"@type":"ListItem","position":2,"name":"お役立ち記事","item":"https://freelance.agent-best.net/media/"},{"@type":"ListItem","position":3,"name":"バックエンド開発","item":"https://freelance.agent-best.net/media/hub/backend/"},{"@type":"ListItem","position":4,"name":"Rustエンジニアは40代・50代でもフリーランスで働ける？求められる役割"}]},{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"50代でRustの実務経験が1年未満でも、案件に入れますか？","acceptedAnswer":{"@type":"Answer","text":"入れる案件はあります。ただ、Rustの経験だけで評価されることは少なく、C/C++や組込み、基盤など、それ以前の分野の経験を軸に参画する形が中心になります。Rustで書いた範囲は短くても具体的に示し、分野の経験とつなげて伝えることをおすすめします。進め方はRustエンジニアがフリーランスになるにはをご覧ください。"}},{"@type":"Question","name":"年下のテックリードの方針に従うのが不安です。","acceptedAnswer":{"@type":"Answer","text":"参画の初期に、誰が何を決めるかを言葉で確かめておくことが出発点です。自分が決める範囲と、提案にとどめる範囲を分けておくと、相手の立場を損なわずに経験を生かせます。参画初月の動き方はRustエンジニアの参画初月にやることで整理しています。"}},{"@type":"Question","name":"40代からRustに軸を移すのは遅いですか？","acceptedAnswer":{"@type":"Answer","text":"一概には言えません。Rustは他の言語を経験してから使い始める人が多い言語で、既存システムの課題をどう解いてきたかが問われやすいためです。いきなりRustだけに絞らず、これまでの言語の案件のうちRustを一部で使うものから始めると、軸を移しやすくなります。移り方はRustエンジニアを目指すにはで解説しています。"}}]}]</script>
+</head>
+<body>
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="/"><img src="/assets/mark.png" alt="" width="28" height="28"><span>エージェントベストジョブ フリーランス<small>フリーランスのエンジニア・コンサル向け案件紹介</small></span></a>
+    <nav class="head-nav" aria-label="メニュー">
+      <a class="link" href="/jobs/">案件を探す</a>
+      <a class="link" href="/media/">お役立ち記事</a>
+      <a class="link keep" href="/mypage/" aria-label="気になる案件">☆ 気になる<span class="fav-count" data-fav-count hidden></span></a>
+      <a class="btn btn-primary btn-sm" href="https://airtable.com/appYkc36EvioYoL1A/pag6CZC4uJmxUcrXT/form" target="_blank" rel="noopener">無料で登録</a>
+    </nav>
+  </div>
+</header>
+<main class="wrap narrow article">
+  <p class="crumbs"><a href="/">トップ</a> › <a href="/media/">お役立ち記事</a> › <a href="/media/hub/backend/">バックエンド開発</a></p>
+  <a class="art-hub" href="/media/hub/backend/">バックエンド開発</a>
+  <h1 class="art-title">Rustエンジニアは40代・50代でもフリーランスで働ける？求められる役割</h1>
+  <p class="note">公開 2026-11-04　監修：株式会社エージェントベスト</p>
+  <nav class="toc" aria-label="目次"><strong>目次</strong><ol><li><a href="#s1">40代・50代のRustエンジニアに期待されやすい役割</a></li><li><a href="#s2">年齢とともに不利に見られやすい点</a></li><li><a href="#s3">不利に見られやすい点の補い方</a></li><li><a href="#s4">案件の型ごとの向き不向き</a></li><li><a href="#s5">働き方の幅を広げると選べる案件が増える</a></li><li><a href="#s6">よくある質問</a></li></ol></nav>
+  <div class="art-body">
+<p>40代・50代でも、フリーランスのRustエンジニアとして働くことはできます。Rustは、C/C++やJava、Goなどで長く開発してきた人が後から使い始めることの多い言語で、<strong>Rust歴の長さより、それ以前に積んだ設計・運用・移行の経験をRustの仕事にどう生かせるか</strong>が見られやすいためです。</p>
+<p>一方で、40代・50代には「書ける人」以上の役割を期待されることが多く、そこに応えられないと条件が合いにくくなります。この記事では、年代に期待されやすい役割、不利に見られやすい点とその補い方、案件の型ごとの向き不向きを整理します。Rustのキャリアの広げ方そのものは<a href="/media/rust-future/">Rustエンジニアの将来性の記事</a>で扱っているので、ここでは「今、案件で何を任され、何を心配されるか」に絞ります。</p>
+<h2 id="s1">40代・50代のRustエンジニアに期待されやすい役割</h2>
+<p>若い世代のRustエンジニアとの違いは、決められた設計に沿って実装することより、<strong>判断が重く、失敗したときの影響が大きい部分を引き受けること</strong>を期待される点です。</p>
+<div class="table-wrap"><table><thead><tr><th>役割</th><th>中身</th><th>経験がものを言う理由</th></tr></thead><tbody><tr><td>移行の計画役</td><td>C/C++などで書かれた部品のうち、どこから、どの順でRustに移すかを決める</td><td>既存システムの癖と、止めてはいけない部分を見抜く必要がある</td></tr><tr><td>境界の設計役</td><td>FFIとunsafeの範囲、安全な部品での包み方、検査の方法を決める</td><td>低い層の不具合を見てきた経験が、危うい箇所の見立てに効く</td></tr><tr><td>性能の責任者</td><td>計測の方法を決め、改善の前後を比べて結果に責任を持つ</td><td>原因の当たりをつける速さは、場数に比例しやすい</td></tr><tr><td>Rustの定着役</td><td>レビューの基準、エラー処理の方針、クレートの選び方をチームでそろえる</td><td>新しい技術を組織に根付かせた経験そのものが評価される</td></tr><tr><td>技術選定の相談役</td><td>Rustを使うかどうか、どこまで使うかを発注側と一緒に判断する</td><td>他の言語と比べた長所と短所を、実体験で語れる</td></tr></tbody></table></div>
+<p>どの役割にも共通するのは、<strong>Rustの知識と、Rust以前の経験の両方が要る</strong>ことです。40代では「Rustで設計し、チームを引っ張りながら手も動かせる人」、50代では「既存システムとRustの間に立ち、移行や方針の判断を担う人」として期待される傾向があります。</p>
+<h3>40代は「設計と実装の両方に届くこと」が強みになる</h3>
+<p>40代のRustエンジニアは、まだ実装の量もこなせる一方で、設計の判断やレビューの中心も担える人が多い年代です。非同期処理の構成を決め、自分で中心の部品を書き、メンバーのプルリクエストをレビューする、という複数の層を一人で担えると、少人数のチームでは特に重宝されます。</p>
+<h3>50代は「既存の資産を知っていること」が強みになる</h3>
+<p>50代のエンジニアには、C/C++や組込み、基幹系の開発を長く担ってきた人が少なくありません。Rustへの移行が話題になる現場では、その既存の資産を読める人が限られることがあります。古いビルドの仕組みや、長年使われてきたライブラリの前提を理解したうえで、Rustの部品とどうつなぐかを決められると、年齢と経験がそのまま説得力になります。</p>
+<aside class="box box-view"><p class="box-label">エージェントベストの見解</p><p>Rustの案件をご紹介していると、40代・50代の方で評価されやすいのは、「Rust以前の経験で何を解いてきた人か」と「それをRustでどう生かしたか」を一続きで話せる場合です。たとえば「C++の解析部品で起きていたメモリの不具合を、境界の層を設けて段階的にRustへ移して減らした」のように、局面と役割が結び付いていると、案件側も任せる姿を思い描きやすくなります。逆に、扱った言語を年代順に並べるだけだと、強みが伝わりにくい傾向があります。</p></aside>
+<h2 id="s2">年齢とともに不利に見られやすい点</h2>
+<p>年齢を理由にした一律の判断を前提に考える必要はありません。ただ、面談の場で発注側が抱きやすい心配には、ある程度の型があります。年齢を聞かれたときの答え方は<a href="/media/nenrei-shitsumon/">面談で年齢やキャリアの長さについて聞かれたとき</a>で解説しているので、ここではRustならではの心配に絞ります。</p>
+<h3>Rustの書き方が「前の言語のまま」ではないか</h3>
+<p>C++やJavaの経験が長い人ほど、Rustでも前の言語の発想で書いてしまうのではないか、と心配されることがあります。たとえば、所有権の制約を避けるために値の複製や共有の仕組みを重ね、動きはするがRustらしくないコードになる、という懸念です。</p>
+<h3>更新の速さについてこられるか</h3>
+<p>Rustの公式の解説書では、安定版は6週間ごとに出ると説明されています（2026年10月時点）。ツールチェーンや依存するクレートの更新が短い間隔で続くため、「新しい書き方や仕組みを追い続けられるか」は見られやすい点です。</p>
+<h3>自分のやり方を持ち込みすぎないか</h3>
+<p>経験が長いほど、エラー処理の方針、モジュールの分け方、テストの書き方に自分の型を持っています。Rustの経験者が少ないチームでは、その型がそのまま標準になってしまうこともあり、発注側は「チームの合意なしに決めてしまわないか」を気にします。</p>
+<h3>報酬と役割の釣り合い</h3>
+<p>経験に見合った報酬を希望すると、案件側は「その金額で何を任せられるか」をより厳しく見ます。Rust歴が短い場合は特に、役割の説明が抽象的だと条件の折り合いがつきにくくなります。報酬の決まり方は<a href="/media/rust-rate/">Rustエンジニアの報酬の記事</a>で整理しています。</p>
+<h2 id="s3">不利に見られやすい点の補い方</h2>
+<p>心配のそれぞれに、具体的な材料で先回りして答えるのが基本です。</p>
+<ol><li><strong>データの持ち方を説明できるようにする</strong>：直近に書いたRustのコードで、どのデータを誰が持ち、どこで借り、どこで複製を許したかを理由とあわせて話せるようにします。「前の言語ならこう書いたが、Rustではこうした」という対比があると、書き方を切り替えられる人だと伝わります</li><li><strong>更新を回してきた仕組みを話す</strong>：Rustの版やクレートをどの間隔で上げてきたか、エディションの移行に関わったかを話せると、更新の速さへの心配に答えられます。公式のエディションガイドでは、エディションはクレートごとにCargo.tomlで選び、異なるエディションのクレートどうしも組み合わせられると説明されています。段階的に移した経験は、計画を任せられる材料になります</li><li><strong>チームで決めた経験を挙げる</strong>：自分の方針をそのまま通した話より、レビューの基準やunsafeの決まりをチームで話し合って決めた場面を話すほうが、「持ち込みすぎ」の心配を和らげます</li><li><strong>任せてほしい範囲を言葉にする</strong>：「C++の部品のうち、まず入力の解析部分を3か月で置き換え、比較の仕組みまで作る」のように、範囲と期間を区切って伝えると、報酬との釣り合いを判断してもらいやすくなります</li></ol>
+<p>スキルシートでも、年代が上がるほど古い案件の記述を短くし、直近のRustの経験と、それにつながる前の経験を厚く書くほうが伝わります。書き方は<a href="/media/rust-skillsheet/">Rustエンジニアのスキルシートの記事</a>をご覧ください。</p>
+<aside class="box box-caution"><p class="box-label">注意</p><p>「開発歴〇〇年」のように年数だけを前に出すと、Rustの実務がどれだけあるのかが読み手に伝わらず、かえって「Rustは名前だけでは」と受け取られることがあります。分野の経験年数とRustの経験期間は分けて書き、直近でRustを使って何を判断したかを先に伝えてください。</p></aside>
+<h2 id="s4">案件の型ごとの向き不向き</h2>
+<p>自分の経験がそのまま効く案件か、合わせるための準備が要る案件かを見分けておくと、参画後の苦労が減ります。</p>
+<div class="table-wrap"><table><thead><tr><th>案件の型</th><th>40代・50代の経験が生きやすいか</th><th>見ておきたいこと</th></tr></thead><tbody><tr><td>C/C++からの置き換え</td><td>生きやすい</td><td>既存コードとビルドの仕組みを読めるか</td></tr><tr><td>組込み・制御</td><td>生きやすい</td><td>実機での検証の経験、no_stdでの開発への慣れ</td></tr><tr><td>基盤・ツール</td><td>分野の経験次第</td><td>Linuxやネットワークの深い知識があるか</td></tr><tr><td>Webサービスのバックエンド</td><td>準備が要る場合がある</td><td>非同期処理の構成、クラウドと監視の今の進め方</td></tr><tr><td>WebAssembly</td><td>準備が要る場合がある</td><td>フロントエンドの仕組みへの理解</td></tr></tbody></table></div>
+<p>置き換えや組込みのように、既存の資産やハードウェアの知識が問われる案件では、年代の経験がそのまま判断の早さにつながりやすくなります。一方、短い周期でリリースを重ねるWebサービスでは、非同期のランタイムを前提にした構成や、クラウドでの運用の今のやり方に合わせる必要があり、最初の数週間を「現場の回し方を覚える期間」として見込んでおくと安心です。分野ごとに問われる技術は<a href="/media/rust-skills/">Rustエンジニアに求められるスキル</a>で整理しています。</p>
+<h3>C/C++の経験を持つ人は隣の案件も視野に入れる</h3>
+<p>Rustを主に使う案件は、多くの言語に比べて数が限られることがあります。C/C++の経験が長い人は、Rustへの移行を控えたC/C++の案件や、C/C++とRustが並んで動く案件も候補にすると、選べる幅が広がります。C/C++側の年代の期待は<a href="/media/c-cpp-nenrei/">C/C++エンジニアは40代・50代でも働けるかの記事</a>も参考になります。</p>
+<h2 id="s5">働き方の幅を広げると選べる案件が増える</h2>
+<p>40代・50代のRustエンジニアは、週5日の実装担当にこだわらないことで、選べる案件が広がる場合があります。</p>
+<ul><li><strong>移行の初期だけ関わる</strong>：置き換えの計画と、最初の部品の移行、比較の仕組みづくりまでを担う形</li><li><strong>レビューと方針づくりで関わる</strong>：unsafeを含む変更のレビューや、エラー処理・依存クレートの方針づくりを中心に担う形</li><li><strong>性能の調査として関わる</strong>：計測と原因の切り分け、改善案の提示を区切って担う形</li></ul>
+<p>こうした関わり方は期間が短くなりやすく、次の案件までの空白が生まれることもあります。年代ごとのお金の準備は<a href="/media/40s/">40代のフリーランス</a>と<a href="/media/50s/">50代のフリーランス</a>の記事で扱っています。</p>
+<aside class="box box-view"><p class="box-label">エージェントベストの見解</p><p>当社では、案件をご案内する前に稼働日数・リモートの可否・希望金額を伺い、条件に合う案件だけをお出ししています。40代・50代のRustエンジニアの方は、「どの分野の、どの局面で、どこまで任されたいか」もあわせてお伝えいただくと、案件の型を選ぶ材料になります。経歴は、ご本人の了承を得た案件にだけ、氏名・連絡先を伏せてご提案しています。</p></aside>
+<aside class="box box-point"><p class="box-label">ポイント</p><ul><li>40代・50代のRustエンジニアには、移行の計画、境界の設計、性能の責任、チームへの定着など、判断の重い役割が期待される</li><li>心配されやすいのは、前の言語のままの書き方、更新への追従、やり方の持ち込み、報酬と役割の釣り合い</li><li>データの持ち方の説明、更新の仕組み、チームで決めた経験、任されたい範囲で先回りする</li></ul></aside>
+<h2 id="s6">よくある質問</h2>
+<h3>50代でRustの実務経験が1年未満でも、案件に入れますか？</h3>
+<p>入れる案件はあります。ただ、Rustの経験だけで評価されることは少なく、C/C++や組込み、基盤など、それ以前の分野の経験を軸に参画する形が中心になります。Rustで書いた範囲は短くても具体的に示し、分野の経験とつなげて伝えることをおすすめします。進め方は<a href="/media/rust-how-to/">Rustエンジニアがフリーランスになるには</a>をご覧ください。</p>
+<h3>年下のテックリードの方針に従うのが不安です。</h3>
+<p>参画の初期に、誰が何を決めるかを言葉で確かめておくことが出発点です。自分が決める範囲と、提案にとどめる範囲を分けておくと、相手の立場を損なわずに経験を生かせます。参画初月の動き方は<a href="/media/rust-first-month/">Rustエンジニアの参画初月にやること</a>で整理しています。</p>
+<h3>40代からRustに軸を移すのは遅いですか？</h3>
+<p>一概には言えません。Rustは他の言語を経験してから使い始める人が多い言語で、既存システムの課題をどう解いてきたかが問われやすいためです。いきなりRustだけに絞らず、これまでの言語の案件のうちRustを一部で使うものから始めると、軸を移しやすくなります。移り方は<a href="/media/rust-career-change/">Rustエンジニアを目指すには</a>で解説しています。</p>
+  </div>
+  <section class="sources"><h2>参考にした公的情報・資料</h2><ul><li><a href="https://doc.rust-lang.org/book/appendix-07-nightly-rust.html" target="_blank" rel="noopener nofollow">Rust Release Channels（The Rust Programming Language）</a></li><li><a href="https://doc.rust-lang.org/edition-guide/editions/index.html" target="_blank" rel="noopener nofollow">What are Editions?（The Rust Edition Guide）</a></li></ul>
+  <p class="note">記事の内容は公開日時点の情報にもとづきます。制度や税率は変わることがあるため、手続きの前に必ず各機関の最新情報をご確認ください。</p></section>
+  <div class="cta-band">
+  <h2>条件に合う案件だけ、知りたい方へ</h2>
+  <p>ご登録は無料です。条件に合う案件だけを、ご本人の了承を得てからご提案します。</p>
+  <div class="cta-row">
+    <a class="btn btn-primary" href="https://airtable.com/appYkc36EvioYoL1A/pag6CZC4uJmxUcrXT/form" target="_blank" rel="noopener">無料で登録する</a>
+    <a class="btn btn-ghost" href="/jobs/">案件を探す</a>
+  </div>
+</div>
+  <section class="related"><h2>あわせて読みたい</h2><div class="grid g2"><a class="card art-card" href="/media/rust-future/">
+  <span class="art-hub">バックエンド開発</span>
+  <h3>Rustエンジニアのフリーランスの将来性とキャリアの広げ方</h3>
+  <p>Rustは6週間ごとの安定版と、互換を保つエディションの仕組みのもとで版を重ねています。メモリ安全性への公的な関心も背景に、使われる分野は広がりつつあります。公式の動向と、経験別のキャリアの広げ方を解説します。</p>
+</a>
+<a class="card art-card" href="/media/rust-skills/">
+  <span class="art-hub">バックエンド開発</span>
+  <h3>Rustエンジニアのフリーランス案件で求められるスキルと経験</h3>
+  <p>Rustの案件では、所有権と型を使った設計、非同期処理、エラー処理、unsafeと他言語との境界、Cargoを中心とした開発の進め方が問われます。Web・基盤・組込み・WebAssemblyの分野別と、経験の段階別に解説します。</p>
+</a>
+<a class="card art-card" href="/media/rust-skillsheet/">
+  <span class="art-hub">バックエンド開発</span>
+  <h3>Rustエンジニアのスキルシートの書き方｜面談で評価される実績の見せ方</h3>
+  <p>Rustのスキルシートは、Rustでの実務期間をほかの言語と分け、どの分野で何をRustで書いたか、なぜRustを選んだか、unsafeや他言語との境界にどう関わったかを書くのが基本です。架空の記入例つきで解説します。</p>
+</a>
+<a class="card art-card" href="/media/rust-rate/">
+  <span class="art-hub">バックエンド開発</span>
+  <h3>Rustエンジニアのフリーランス案件｜報酬の決まり方と単価を上げる考え方</h3>
+  <p>Rustエンジニアの報酬は、Rustで何を作るか、性能と安全性への責任の重さ、C/C++などとの境界を扱えるか、チームでの立ち位置、稼働条件と商流で決まり、案件ごとに大きく変わります。上がる場面・伸びにくい場面と交渉材料を解説します。</p>
+</a>
+<a class="card art-card" href="/media/rust-how-to/">
+  <span class="art-hub">バックエンド開発</span>
+  <h3>Rustエンジニアがフリーランスになるには｜必要な経験と独立までの進め方</h3>
+  <p>Rustでフリーランスになるには、Rustで書いたものを本番で動かした経験と、Web・基盤・組込みなど狙う領域の土台となる経験が求められます。他言語から移る人の準備、実務経験の作り方、独立前後の流れを解説します。</p>
+</a>
+<a class="card art-card" href="/media/rust-career-change/">
+  <span class="art-hub">バックエンド開発</span>
+  <h3>Rustエンジニアを目指すには｜他の職種からのキャリアチェンジ</h3>
+  <p>他の職種からRustエンジニアを目指すルートは、C/C++、Go・Javaなどのバックエンド、組込み、フロントエンド、SRE・インフラなどがあります。出発点ごとに生かせる経験と足りない部分、埋める順番、面談で確かめられやすいことを整理します。</p>
+</a></div></section>
+</main>
+<footer class="site-foot">
+  <div class="wrap">
+    <strong>エージェントベストジョブ フリーランス</strong>
+    <div class="foot-links">
+      <a href="/">トップ</a>
+      <a href="/jobs/">案件を探す</a>
+      <a href="/media/">お役立ち記事</a>
+      <a href="https://airtable.com/appYkc36EvioYoL1A/pag6CZC4uJmxUcrXT/form" target="_blank" rel="noopener">ご登録（スキルシート・ご希望の条件）</a>
+      <a href="https://line.me/R/ti/p/@697nxhbt?oat_content=url&ts=08302134" target="_blank" rel="noopener" data-line-cta="footer">LINEで相談する</a>
+      <a href="/privacy.html">個人情報の取り扱い</a>
+      <a href="https://www.agent-best.net/company/">運営会社</a>
+    </div>
+    <div class="foot-links">
+      <a href="https://jobs.agent-best.net/">正社員の求人を探す（エージェントベストジョブ）</a>
+      <a href="https://skill.agent-best.net/">エージェントベストジョブ手に職</a>
+      <a href="https://www.agent-best.net/">エージェントベスト</a>
+    </div>
+    <p>運営：株式会社エージェントベスト（有料職業紹介事業 許可番号 13-ユ-316964）<br>〒106-0032 東京都港区六本木4-8-7 嶋田ビル5階</p>
+  </div>
+</footer>
+<script src="/assets/fav.js" defer></script>
+</body>
+</html>

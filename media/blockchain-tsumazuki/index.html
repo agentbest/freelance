@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ブロックチェーンエンジニアのフリーランスがつまずきやすい点と対策｜エージェントベストジョブ フリーランス</title>
+<meta name="description" content="フリーランスのブロックチェーンエンジニアがつまずきやすいのは、不具合の責任があいまいな契約、本番の鍵の扱い、公開後に直しにくいコード、事業の縮小による突然の契約終了です。契約・現場・技術・お金の順に、よくある場面と対策を整理します。">
+<link rel="canonical" href="https://freelance.agent-best.net/media/blockchain-tsumazuki/">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="エージェントベストジョブ フリーランス">
+<meta property="og:title" content="ブロックチェーンエンジニアのフリーランスがつまずきやすい点と対策｜エージェントベストジョブ フリーランス">
+<meta property="og:description" content="フリーランスのブロックチェーンエンジニアがつまずきやすいのは、不具合の責任があいまいな契約、本番の鍵の扱い、公開後に直しにくいコード、事業の縮小による突然の契約終了です。契約・現場・技術・お金の順に、よくある場面と対策を整理します。">
+<meta property="og:url" content="https://freelance.agent-best.net/media/blockchain-tsumazuki/">
+<meta property="og:image" content="https://freelance.agent-best.net/assets/ogp.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://freelance.agent-best.net/assets/ogp.png">
+<meta name="theme-color" content="#1E3A5F">
+<link rel="icon" href="/assets/favicon.ico">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="stylesheet" href="/assets/site.css">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1XXMP8Y1B4"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-1XXMP8Y1B4');
+document.addEventListener('click',e=>{const a=e.target.closest('[data-line-cta]');if(a)gtag('event','line_add_friend',{placement:a.dataset.lineCta,page_path:location.pathname});});</script>
+<script type="application/ld+json">[{"@context":"https://schema.org","@type":"Article","headline":"ブロックチェーンエンジニアのフリーランスがつまずきやすい点と対策","description":"フリーランスのブロックチェーンエンジニアがつまずきやすいのは、不具合の責任があいまいな契約、本番の鍵の扱い、公開後に直しにくいコード、事業の縮小による突然の契約終了です。契約・現場・技術・お金の順に、よくある場面と対策を整理します。","datePublished":"2026-11-04","dateModified":"2026-11-04","author":{"@type":"Organization","name":"株式会社エージェントベスト","url":"https://www.agent-best.net/"},"publisher":{"@type":"Organization","name":"株式会社エージェントベスト","logo":{"@type":"ImageObject","url":"https://freelance.agent-best.net/assets/logo.png"}},"mainEntityOfPage":"https://freelance.agent-best.net/media/blockchain-tsumazuki/"},{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"トップ","item":"https://freelance.agent-best.net/"},{"@type":"ListItem","position":2,"name":"お役立ち記事","item":"https://freelance.agent-best.net/media/"},{"@type":"ListItem","position":3,"name":"バックエンド開発","item":"https://freelance.agent-best.net/media/hub/backend/"},{"@type":"ListItem","position":4,"name":"ブロックチェーンエンジニアのフリーランスがつまずきやすい点と対策"}]},{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"自分の書いたコードで資産の流出が起きたら、全額を賠償しなければなりませんか？","acceptedAnswer":{"@type":"Answer","text":"契約の内容や、故意・過失の有無などによって変わるため、一概には言えません。だからこそ、署名の前に損害賠償の上限や範囲が書かれているかを読み、書かれていなければ確かめることが大切です。実際に問題が起きた場合は、早めに弁護士などの専門家にご相談ください。"}},{"@type":"Question","name":"外部監査を通ったコードなら、責任を問われることはありませんか？","acceptedAnswer":{"@type":"Answer","text":"外部監査は不具合を見つける助けになりますが、すべての不具合がなくなることを保証するものではありません。監査の範囲と指摘への対応の記録を残し、自分が担った範囲を説明できるようにしておくことをおすすめします。"}},{"@type":"Question","name":"参画してから、聞いていた役割と違うと気づきました。どうすればよいですか？","acceptedAnswer":{"@type":"Answer","text":"まずは、契約書に書かれた業務範囲と、現場で求められている作業を書き出して比べます。そのうえで、エージェントや発注側の窓口に、範囲の確認や契約の見直しを相談してください。範囲の外の作業を黙って続けると、後から精算や責任の話がこじれやすくなります。"}}]}]</script>
+</head>
+<body>
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="/"><img src="/assets/mark.png" alt="" width="28" height="28"><span>エージェントベストジョブ フリーランス<small>フリーランスのエンジニア・コンサル向け案件紹介</small></span></a>
+    <nav class="head-nav" aria-label="メニュー">
+      <a class="link" href="/jobs/">案件を探す</a>
+      <a class="link" href="/media/">お役立ち記事</a>
+      <a class="link keep" href="/mypage/" aria-label="気になる案件">☆ 気になる<span class="fav-count" data-fav-count hidden></span></a>
+      <a class="btn btn-primary btn-sm" href="https://airtable.com/appYkc36EvioYoL1A/pag6CZC4uJmxUcrXT/form" target="_blank" rel="noopener">無料で登録</a>
+    </nav>
+  </div>
+</header>
+<main class="wrap narrow article">
+  <p class="crumbs"><a href="/">トップ</a> › <a href="/media/">お役立ち記事</a> › <a href="/media/hub/backend/">バックエンド開発</a></p>
+  <a class="art-hub" href="/media/hub/backend/">バックエンド開発</a>
+  <h1 class="art-title">ブロックチェーンエンジニアのフリーランスがつまずきやすい点と対策</h1>
+  <p class="note">公開 2026-11-04　監修：株式会社エージェントベスト</p>
+  <nav class="toc" aria-label="目次"><strong>目次</strong><ol><li><a href="#s1">契約でのつまずき</a></li><li><a href="#s2">現場でのつまずき</a></li><li><a href="#s3">技術でのつまずき</a></li><li><a href="#s4">お金でのつまずき</a></li><li><a href="#s5">よくある質問</a></li></ol></nav>
+  <div class="art-body">
+<p>フリーランスのブロックチェーンエンジニアがつまずきやすいのは、<strong>不具合が起きたときの責任があいまいな契約、本番の鍵や管理者権限の扱い、公開後に直しにくいコード、事業の縮小による突然の契約終了</strong>です。どれも、取り消せない処理と資産を扱うというブロックチェーンの性格から起きます。</p>
+<p>対策の基本は、<strong>責任と権限の線を契約と参画初期の取り決めで引いておき、現場ではテストと記録、早めの共有で守ること</strong>です。この記事では、契約・現場・技術・お金の順に、ブロックチェーンならではの場面と対策を整理します。契約前に確かめる項目の一覧は<a href="/media/blockchain-anken-erabi/">ブロックチェーンエンジニアの案件の選び方</a>で扱っているので、ここでは「実際に起きやすい場面」に絞ります。</p>
+<h2 id="s1">契約でのつまずき</h2>
+<h3>不具合による損失の責任が広く読める</h3>
+<p>スマートコントラクトの不具合は、資産の流出に直結することがあります。そのため、発注側が「損失が出たら責任を取ってほしい」と考えるのは自然なことです。ところが、契約書に損害賠償の上限や範囲が書かれていないと、思いがけず大きな責任を負うように読める場合があります。</p>
+<p><strong>対策</strong>：署名の前に、損害賠償の上限、故意・重過失の扱い、外部監査を経たかどうかで責任がどう変わるかを読みます。準委任契約で参画する場合は、成果の保証ではなく業務を適切に行うことが約束の中身になるのが一般的ですが、書き方次第で読み方が変わります。考え方は<a href="/media/baisho-sekinin/">損害賠償責任の記事</a>で解説しています。判断に迷う場合は弁護士などの専門家に相談するのが安全です。</p>
+<h3>「開発」の範囲に監査対応や運用まで含まれていた</h3>
+<p>契約書には「スマートコントラクトの開発」とだけ書かれ、現場では外部監査の指摘への対応、公開作業、公開後の監視まで期待されていた、という食い違いは起きやすいものです。</p>
+<p><strong>対策</strong>：参画前に、担う工程（設計、実装、テスト、監査対応、公開、運用）を言葉で確かめます。範囲の外の依頼が来たときの扱いは<a href="/media/scope-change/">業務範囲が変わったときの記事</a>をご覧ください。</p>
+<h3>海外の事業者との契約で条件が読みにくい</h3>
+<p>Web3の案件では、海外の事業者や、海外にいるチームと直接やりとりする話が出ることがあります。契約の言語や準拠法、支払いの方法が国内の取引と違い、トラブルの際に手が届きにくくなります。考え方は<a href="/media/kaigai-torihikisaki/">海外の取引先と契約するときの記事</a>で整理しています。</p>
+<h2 id="s2">現場でのつまずき</h2>
+<h3>本番の鍵を個人で預かってしまう</h3>
+<p>参画して間もなく、「公開作業をお願いしたい」と本番の管理者権限を持つ鍵を渡されそうになることがあります。鍵を個人の端末で預かると、紛失や漏えいの際に責任の所在が自分に寄ってしまいます。</p>
+<p><strong>対策</strong>：鍵の保管と署名の手順は発注側の決まりに従い、個人の端末に置かない形を相談します。複数人の承認で署名する仕組みや、操作の記録が残る手順があるかを、参画の初期に確かめておきます。</p>
+<h3>社内の暗黙の決まりを知らずに進める</h3>
+<p>公開の前に誰の承認が要るのか、テストネットでどこまで確かめるのか、といった決まりが文書になっていない現場もあります。知らずに進めると、悪気がなくても手順を飛ばしたと見られます。</p>
+<p><strong>対策</strong>：参画の初期に、公開と更新の流れ、承認者、緊急時の連絡先を一枚に書き出し、窓口と確かめます。最初の1か月の進め方は<a href="/media/blockchain-first-month/">ブロックチェーンエンジニアの参画初月にやること</a>で整理しています。</p>
+<aside class="box box-view"><p class="box-label">エージェントベストの見解</p><p>案件紹介の現場で見ていると、参画後に評価を下げやすいのは、技術力の不足より「危ういと気づいたことを早く言わなかった」場面です。権限の設計や外部呼び出しの扱いに疑問を持ったら、確信がなくても理由を添えて早めに共有するほうが、結果として信頼につながる傾向があります。</p></aside>
+<h3>指揮命令の形が社員と変わらなくなる</h3>
+<p>少人数のチームでは、社員と同じ定例やチャットに入り、作業の順番や時間まで細かく指示されることがあります。この状態が続くと、準委任の契約と実態がずれてきます。考え方は<a href="/media/gisou-ukeoi/">偽装請負の記事</a>で解説しています。</p>
+<h3>監査の指摘への対応が自分だけに集まる</h3>
+<p>外部監査の報告書が届くと、指摘の一つひとつへの対応を、実装を担った外部のエンジニアにまとめて任されることがあります。指摘には、設計の方針そのものに関わるものも含まれ、一人で直し方を決めると、後から「なぜその直し方にしたのか」を問われます。</p>
+<p><strong>対策</strong>：指摘ごとに、直す・直さない・別の方法で防ぐのどれにするかを、発注側の判断者と合意してから手を付けます。合意の内容と理由は、課題の一覧などに残しておきます。</p>
+<h2 id="s3">技術でのつまずき</h2>
+<h3>公開後に直せない前提を甘く見る</h3>
+<p>スマートコントラクトは、一度公開すると簡単には書き換えられません。更新できる仕組みを組み込む方法もありますが、その仕組み自体が権限の集中や新たな不具合の原因になることがあります。</p>
+<p><strong>対策</strong>：公開前に、更新の仕組みを持たせるか、誰がどの権限で更新できるかを、設計の段階で発注側と合意します。決めた理由を記録に残しておくと、後から責任の所在が問われたときにも説明できます。</p>
+<h3>代表的な脆弱性の見落とし</h3>
+<p>Solidityの公式ドキュメントでは、外部呼び出しの前に状態を更新しないことで起きる再入（リエントランシー）や、<code>tx.origin</code>を認可に使う危うさ、コントラクトのデータは<code>private</code>でも外から読めることなどが注意点として挙げられています。OWASPのSmart Contract Top 10（2025年版）でも、アクセス制御の不備、価格オラクルの操作、ロジックの誤り、入力の検証不足などが並んでいます（いずれも2026年10月時点）。</p>
+<p><strong>対策</strong>：チェック、状態の更新、外部呼び出しの順を守る書き方を基本にし、権限まわりのテストを厚くします。静的解析や第三者のレビューを使える現場なら、自分のコードを早めに見てもらいます。</p>
+<h3>チェーンの外側の不具合を見落とす</h3>
+<p>チェーンの上のコードが正しくても、取引の状態を読み取るバックエンド、利用者の画面、外部のデータの取り込みに不具合があれば、利用者には誤った残高や状態が見えます。</p>
+<p><strong>対策</strong>：チェーンの再編成や取引の遅れ、失敗を前提に、チェーンの外側の処理が状態をどう扱うかを確かめます。既存システムとつなぐ案件では、とくにこの部分に時間をかけます。</p>
+<h2 id="s4">お金でのつまずき</h2>
+<h3>事業の縮小で契約が突然終わる</h3>
+<p>市場の動きや資金調達の状況で、開発の計画が急に変わることがあります。外部の人員から契約を終えることもあり、次の案件までの空白が生まれやすい分野です。</p>
+<p><strong>対策</strong>：6か月以上の業務委託を解除・不更新とする場合は、原則として30日前までの予告が必要です（2026年10月時点、公正取引委員会の案内による）。それでも空白は起こりうるため、生活費の数か月分を手元に置き、契約の残り期間を見ながら次の案件の相談を早めに始めます。空白期間の過ごし方は<a href="/media/no-project-gap/">案件が途切れたときにやること</a>をご覧ください。</p>
+<h3>支払いの遅れや、暗号資産での受け取り</h3>
+<p>報酬の支払期日は、成果物などを受け取った日から60日以内のできる限り短い期間で定めることになっています（2026年10月時点、公正取引委員会の案内による）。考え方は<a href="/media/freelance-act-60days/">支払期日60日の記事</a>で整理しています。報酬を暗号資産で受け取る話が出た場合は、値動きや税務の扱いが関わるため、契約で受け取り方を明確にし、税理士にご相談ください。</p>
+<h3>公開前後の待機が精算されない</h3>
+<p>公開の前後や障害の発生時には、深夜や休日の対応が求められることがあります。こうした時間の扱いを決めずに参画すると、稼働が増えても報酬に反映されないことがあります。精算の考え方は<a href="/media/seisan-haba/">精算幅の記事</a>をご覧ください。</p>
+<aside class="box box-caution"><p class="box-label">注意</p><p>資産を扱う仕組みでは、「念のため自分の権限で直しておく」ような善意の操作が、手順違反や事故の原因になることがあります。本番に関わる操作は、発注側の決めた手順と承認を通してから行ってください。</p></aside>
+<aside class="box box-view"><p class="box-label">エージェントベストの見解</p><p>当社では、取引先の会社の実態と支払条件を確かめた案件を扱い、契約では業務範囲・報酬・支払期日・契約期間を個別契約に書いてお渡ししています。監査対応や公開作業が範囲に入るか、鍵の扱いがどうなっているかなど、参画前に気になる点はご質問いただければ確認します。</p></aside>
+<aside class="box box-point"><p class="box-label">ポイント</p><ul><li>契約では、損害賠償の範囲と、担う工程（監査対応・公開・運用）を先に確かめる</li><li>現場では、鍵を個人で預からず、公開と更新の流れと承認者を参画初期に確かめる</li><li>技術では、公開後に直しにくい前提で設計とテストを厚くし、チェーンの外側の処理も確かめる</li><li>お金では、事業の縮小による空白と、公開前後の待機の精算に備える</li></ul></aside>
+<h2 id="s5">よくある質問</h2>
+<h3>自分の書いたコードで資産の流出が起きたら、全額を賠償しなければなりませんか？</h3>
+<p>契約の内容や、故意・過失の有無などによって変わるため、一概には言えません。だからこそ、署名の前に損害賠償の上限や範囲が書かれているかを読み、書かれていなければ確かめることが大切です。実際に問題が起きた場合は、早めに弁護士などの専門家にご相談ください。</p>
+<h3>外部監査を通ったコードなら、責任を問われることはありませんか？</h3>
+<p>外部監査は不具合を見つける助けになりますが、すべての不具合がなくなることを保証するものではありません。監査の範囲と指摘への対応の記録を残し、自分が担った範囲を説明できるようにしておくことをおすすめします。</p>
+<h3>参画してから、聞いていた役割と違うと気づきました。どうすればよいですか？</h3>
+<p>まずは、契約書に書かれた業務範囲と、現場で求められている作業を書き出して比べます。そのうえで、エージェントや発注側の窓口に、範囲の確認や契約の見直しを相談してください。範囲の外の作業を黙って続けると、後から精算や責任の話がこじれやすくなります。</p>
+  </div>
+  <section class="sources"><h2>参考にした公的情報・資料</h2><ul><li><a href="https://www.jftc.go.jp/freelancelaw_2026/" target="_blank" rel="noopener nofollow">2026年 フリーランス法特設サイト（公正取引委員会）</a></li><li><a href="https://docs.soliditylang.org/en/latest/security-considerations.html" target="_blank" rel="noopener nofollow">Security Considerations（Solidity Documentation）</a></li><li><a href="https://owasp.org/www-project-smart-contract-top-10/" target="_blank" rel="noopener nofollow">OWASP Smart Contract Top 10（OWASP Foundation）</a></li></ul>
+  <p class="note">記事の内容は公開日時点の情報にもとづきます。制度や税率は変わることがあるため、手続きの前に必ず各機関の最新情報をご確認ください。</p></section>
+  <div class="cta-band">
+  <h2>条件に合う案件だけ、知りたい方へ</h2>
+  <p>ご登録は無料です。条件に合う案件だけを、ご本人の了承を得てからご提案します。</p>
+  <div class="cta-row">
+    <a class="btn btn-primary" href="https://airtable.com/appYkc36EvioYoL1A/pag6CZC4uJmxUcrXT/form" target="_blank" rel="noopener">無料で登録する</a>
+    <a class="btn btn-ghost" href="/jobs/">案件を探す</a>
+  </div>
+</div>
+  <section class="related"><h2>あわせて読みたい</h2><div class="grid g2"><a class="card art-card" href="/media/blockchain-how-to/">
+  <span class="art-hub">バックエンド開発</span>
+  <h3>ブロックチェーンエンジニアがフリーランスになるには｜必要な経験と独立までの進め方</h3>
+  <p>ブロックチェーンエンジニアとして独立するには、チェーンに関わるものを本番で動かした経験と、Webのバックエンドやセキュリティなど土台になる経験の両方が目安です。狙う領域の決め方、会社員のうちの準備、独立前後の流れを解説します。</p>
+</a>
+<a class="card art-card" href="/media/blockchain-skills/">
+  <span class="art-hub">バックエンド開発</span>
+  <h3>ブロックチェーンエンジニアのフリーランス案件で求められるスキルと経験</h3>
+  <p>ブロックチェーンの案件では、スマートコントラクトの設計と安全性の検証、チェーンと既存システムをつなぐ開発、鍵と権限の扱いが共通して問われます。公開型チェーン・企業向け分散台帳・監査の分野別と、経験の段階別に解説します。</p>
+</a>
+<a class="card art-card" href="/media/blockchain-first-month/">
+  <span class="art-hub">バックエンド開発</span>
+  <h3>ブロックチェーンエンジニアの参画初月にやること｜現場で信頼される進め方</h3>
+  <p>ブロックチェーンエンジニアの参画初月は、鍵と権限・公開の流れを確かめ、手元でビルドとテストを通し、小さな変更をレビューを経て届けるのが基本です。週ごとの進め方、案件の型による重心の違い、初月に避けたい動き、月末の振り返りを整理します。</p>
+</a>
+<a class="card art-card" href="/media/blockchain-remote/">
+  <span class="art-hub">バックエンド開発</span>
+  <h3>ブロックチェーンエンジニアのフリーランスはリモートで働ける？案件の傾向と探し方</h3>
+  <p>ブロックチェーンエンジニアは、スマートコントラクトやWeb3サービスの開発、コードの監査を中心にリモートの案件があります。一方、暗号資産交換業者や企業の基幹に近い案件は出社や専用端末を含みやすくなります。傾向、探し方、参画前の確認点を解説します。</p>
+</a>
+<a class="card art-card" href="/media/blockchain-rate/">
+  <span class="art-hub">バックエンド開発</span>
+  <h3>ブロックチェーンエンジニアのフリーランス案件｜報酬の決まり方と単価を上げる考え方</h3>
+  <p>ブロックチェーンエンジニアの報酬は、扱う領域、資産と不可逆な処理への責任、セキュリティの検証をどこまで担うか、業務知識、稼働条件と商流で決まり、案件ごとに大きく変わります。上がる場面・伸びにくい場面と交渉材料を解説します。</p>
+</a>
+<a class="card art-card" href="/media/blockchain-seishain-hikaku/">
+  <span class="art-hub">バックエンド開発</span>
+  <h3>ブロックチェーンエンジニアは正社員とフリーランスのどちらがよい？比べるときの観点</h3>
+  <p>ブロックチェーンエンジニアが正社員とフリーランスのどちらを選ぶかは、収入の安定、社会保険、設計と鍵の権限・キャリア、働き方の4つで比べると判断しやすくなります。ブロックチェーンならではの違いと、自分に合う方を確かめる手順を整理します。</p>
+</a></div></section>
+</main>
+<footer class="site-foot">
+  <div class="wrap">
+    <strong>エージェントベストジョブ フリーランス</strong>
+    <div class="foot-links">
+      <a href="/">トップ</a>
+      <a href="/jobs/">案件を探す</a>
+      <a href="/media/">お役立ち記事</a>
+      <a href="https://airtable.com/appYkc36EvioYoL1A/pag6CZC4uJmxUcrXT/form" target="_blank" rel="noopener">ご登録（スキルシート・ご希望の条件）</a>
+      <a href="https://line.me/R/ti/p/@697nxhbt?oat_content=url&ts=08302134" target="_blank" rel="noopener" data-line-cta="footer">LINEで相談する</a>
+      <a href="/privacy.html">個人情報の取り扱い</a>
+      <a href="https://www.agent-best.net/company/">運営会社</a>
+    </div>
+    <div class="foot-links">
+      <a href="https://jobs.agent-best.net/">正社員の求人を探す（エージェントベストジョブ）</a>
+      <a href="https://skill.agent-best.net/">エージェントベストジョブ手に職</a>
+      <a href="https://www.agent-best.net/">エージェントベスト</a>
+    </div>
+    <p>運営：株式会社エージェントベスト（有料職業紹介事業 許可番号 13-ユ-316964）<br>〒106-0032 東京都港区六本木4-8-7 嶋田ビル5階</p>
+  </div>
+</footer>
+<script src="/assets/fav.js" defer></script>
+</body>
+</html>

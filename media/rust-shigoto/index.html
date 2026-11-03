@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Rustエンジニアのフリーランス案件の仕事内容｜案件の種類別の1日・1か月の流れ｜エージェントベストジョブ フリーランス</title>
+<meta name="description" content="フリーランスのRustエンジニアの仕事は、何をRustで作るかで中身が変わります。Webのバックエンド、基盤・ツール、C/C++からの置き換え、組込み・WebAssemblyの4つの案件ごとに、1日と1か月の流れ、関わる相手、成果物を整理します。">
+<link rel="canonical" href="https://freelance.agent-best.net/media/rust-shigoto/">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="エージェントベストジョブ フリーランス">
+<meta property="og:title" content="Rustエンジニアのフリーランス案件の仕事内容｜案件の種類別の1日・1か月の流れ｜エージェントベストジョブ フリーランス">
+<meta property="og:description" content="フリーランスのRustエンジニアの仕事は、何をRustで作るかで中身が変わります。Webのバックエンド、基盤・ツール、C/C++からの置き換え、組込み・WebAssemblyの4つの案件ごとに、1日と1か月の流れ、関わる相手、成果物を整理します。">
+<meta property="og:url" content="https://freelance.agent-best.net/media/rust-shigoto/">
+<meta property="og:image" content="https://freelance.agent-best.net/assets/ogp.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://freelance.agent-best.net/assets/ogp.png">
+<meta name="theme-color" content="#1E3A5F">
+<link rel="icon" href="/assets/favicon.ico">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="stylesheet" href="/assets/site.css">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1XXMP8Y1B4"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-1XXMP8Y1B4');
+document.addEventListener('click',e=>{const a=e.target.closest('[data-line-cta]');if(a)gtag('event','line_add_friend',{placement:a.dataset.lineCta,page_path:location.pathname});});</script>
+<script type="application/ld+json">[{"@context":"https://schema.org","@type":"Article","headline":"Rustエンジニアのフリーランス案件の仕事内容｜案件の種類別の1日・1か月の流れ","description":"フリーランスのRustエンジニアの仕事は、何をRustで作るかで中身が変わります。Webのバックエンド、基盤・ツール、C/C++からの置き換え、組込み・WebAssemblyの4つの案件ごとに、1日と1か月の流れ、関わる相手、成果物を整理します。","datePublished":"2026-11-04","dateModified":"2026-11-04","author":{"@type":"Organization","name":"株式会社エージェントベスト","url":"https://www.agent-best.net/"},"publisher":{"@type":"Organization","name":"株式会社エージェントベスト","logo":{"@type":"ImageObject","url":"https://freelance.agent-best.net/assets/logo.png"}},"mainEntityOfPage":"https://freelance.agent-best.net/media/rust-shigoto/"},{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"トップ","item":"https://freelance.agent-best.net/"},{"@type":"ListItem","position":2,"name":"お役立ち記事","item":"https://freelance.agent-best.net/media/"},{"@type":"ListItem","position":3,"name":"バックエンド開発","item":"https://freelance.agent-best.net/media/hub/backend/"},{"@type":"ListItem","position":4,"name":"Rustエンジニアのフリーランス案件の仕事内容｜案件の種類別の1日・1か月の流れ"}]},{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"フリーランスのRustエンジニアは、Rustだけを書いていればよいですか？","acceptedAnswer":{"@type":"Answer","text":"Rustだけで完結する案件は多くありません。Webの案件ではデータベースやクラウドの設定、置き換えの案件ではC/C++の読解、組込みではハードウェアの資料を読む力が求められます。どこまでが担当範囲かは、参画前に確かめておくと安心です。"}},{"@type":"Question","name":"Rustの経験が浅い人が多いチームでは、どんな仕事が増えますか？","acceptedAnswer":{"@type":"Answer","text":"レビューや書き方の相談、ビルドが通らないときの手助けなど、チームを支える仕事が増えやすくなります。こうした役割が期待されているかどうかは、面談で聞いておくと、稼働の見込みとのずれを防げます。"}},{"@type":"Question","name":"参画して最初の1か月は何をすることが多いですか？","acceptedAnswer":{"@type":"Answer","text":"開発環境の構築、既存のコードとチームの書き方の決まりの読み込み、小さな修正の担当から始めるのが一般的です。初月の進め方はRustエンジニアの参画初月にやることで詳しく解説します。"}}]}]</script>
+</head>
+<body>
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="/"><img src="/assets/mark.png" alt="" width="28" height="28"><span>エージェントベストジョブ フリーランス<small>フリーランスのエンジニア・コンサル向け案件紹介</small></span></a>
+    <nav class="head-nav" aria-label="メニュー">
+      <a class="link" href="/jobs/">案件を探す</a>
+      <a class="link" href="/media/">お役立ち記事</a>
+      <a class="link keep" href="/mypage/" aria-label="気になる案件">☆ 気になる<span class="fav-count" data-fav-count hidden></span></a>
+      <a class="btn btn-primary btn-sm" href="https://airtable.com/appYkc36EvioYoL1A/pag6CZC4uJmxUcrXT/form" target="_blank" rel="noopener">無料で登録</a>
+    </nav>
+  </div>
+</header>
+<main class="wrap narrow article">
+  <p class="crumbs"><a href="/">トップ</a> › <a href="/media/">お役立ち記事</a> › <a href="/media/hub/backend/">バックエンド開発</a></p>
+  <a class="art-hub" href="/media/hub/backend/">バックエンド開発</a>
+  <h1 class="art-title">Rustエンジニアのフリーランス案件の仕事内容｜案件の種類別の1日・1か月の流れ</h1>
+  <p class="note">公開 2026-11-04　監修：株式会社エージェントベスト</p>
+  <nav class="toc" aria-label="目次"><strong>目次</strong><ol><li><a href="#s1">仕事の中身は「Rustを選んだ理由」と「何を作るか」で決まる</a></li><li><a href="#s2">Webサービスのバックエンドの仕事</a></li><li><a href="#s3">基盤・ツールの開発の仕事</a></li><li><a href="#s4">C/C++からの置き換え・連携の仕事</a></li><li><a href="#s5">組込み・WebAssemblyの仕事</a></li><li><a href="#s6">どの案件にも共通する仕事</a></li><li><a href="#s7">関わる相手と、その相手に出すもの</a></li><li><a href="#s8">よくある質問</a></li></ol></nav>
+  <div class="art-body">
+<p>フリーランスのRustエンジニアの仕事は、<strong>Rustで部品を設計して書き、性能と安全性を測って確かめ、チームが保守を続けられる形で渡すことの繰り返し</strong>です。ただし、Webサービスのバックエンドを書くのか、基盤やツールを作るのか、C/C++の部品を置き換えるのか、組込みやWebAssemblyを扱うのかで、1日の時間の使い方も、向き合う相手も、手元に残る成果物も大きく変わります。</p>
+<p>この記事では、フリーランスのRust案件を4つの種類に分け、それぞれの1日と1か月の流れ、関わる相手、成果物を整理します。報酬の決まり方は<a href="/media/rust-rate/">Rustエンジニアの報酬の記事</a>、求められるスキルは<a href="/media/rust-skills/">Rustエンジニアのスキルの記事</a>で扱っているので、ここでは「参画したら実際に何をしているか」に絞ります。</p>
+<h2 id="s1">仕事の中身は「Rustを選んだ理由」と「何を作るか」で決まる</h2>
+<p>Rustの案件では、発注側がRustを選んだ理由がはっきりしていることが多く、その理由が毎日の仕事の重心を決めます。速さと資源の節約が理由なら計測と改善に、メモリ安全性が理由なら境界のコードとレビューに、配りやすさが理由なら対応する環境の検証に、時間を多く使います。</p>
+<p>これに「何を作るか」を掛け合わせると、フリーランスのRust案件はおおむね次の4種類に分けられます。</p>
+<div class="table-wrap"><table><thead><tr><th>案件の種類</th><th>主な相手</th><th>時間を多く使う仕事</th></tr></thead><tbody><tr><td>Webサービスのバックエンド</td><td>同じチームのエンジニア、フロントエンド、インフラ担当</td><td>API・データ処理の実装、レビュー、性能の確認</td></tr><tr><td>基盤・ツールの開発</td><td>社内の開発者（利用者）、SRE、プラットフォーム担当</td><td>CLI・エージェント・プロキシの実装、配布と互換性の検証</td></tr><tr><td>C/C++からの置き換え・連携</td><td>既存コードの保守担当、技術リード、品質担当</td><td>既存コードの読解、FFIとunsafeの設計、移行の計画</td></tr><tr><td>組込み・WebAssembly</td><td>ハードウェア担当、フロントエンド、製品の責任者</td><td>実行環境に合わせた実装、実機やブラウザでの検証</td></tr></tbody></table></div>
+<p>以下では、それぞれの1日と1か月の流れを、典型的な例として紹介します。時間の配分は案件ごとに違うため、目安として読んでください。</p>
+<h2 id="s2">Webサービスのバックエンドの仕事</h2>
+<h3>1日の流れ（例）</h3>
+<p>朝は、チームの短い打ち合わせで前日の作業と今日の予定をそろえます。午前中は担当するAPIやバッチ処理の実装を進め、テストを書きます。午後は、ほかのメンバーのプルリクエストをレビューし、所有権やエラー処理の扱い、非同期処理の書き方で気になる点を指摘します。夕方は、ステージング環境で性能を測ったり、前日に出たアラートやログを確かめたりします。</p>
+<p>Rustの書き方そのものより、<strong>チームの他の人が読んで直せる書き方にそろえる</strong>ことに意外と時間を使います。</p>
+<h3>1か月の流れ（例）</h3>
+<ul><li><strong>月初</strong>：スプリントやチケットの計画で、担当する機能と見積もりを決める</li><li><strong>毎週</strong>：レビューと実装を回し、依存しているクレートの更新やセキュリティの通知を確かめる</li><li><strong>月の半ば</strong>：性能や負荷の確認、障害が起きた箇所の振り返りと修正</li><li><strong>月末</strong>：リリース、稼働の報告、翌月に持ち越す課題の整理</li></ul>
+<h3>成果物</h3>
+<p>APIやバッチのコード、テスト、設計の簡単な説明書、性能を測った結果、運用の手順書などです。レビューの指摘やチームの書き方の決まりを文書にまとめることも、成果物として扱われることがあります。</p>
+<h2 id="s3">基盤・ツールの開発の仕事</h2>
+<h3>1日・1か月の流れ（例）</h3>
+<p>社内の開発者が使うCLI、ログを集めるエージェント、通信を中継するプロキシ、ビルドや検査の支援ツールなどを作る案件です。1日の中では、実装と並んで、<strong>利用者からの要望や不具合の報告を読み、再現し、優先順位を決める</strong>時間が多くなります。</p>
+<p>1か月の単位では、対応するOSやCPUの種類ごとにビルドと動作を確かめ、配布の手順を回すことが仕事の山になります。Rustの安定版は6週間ごとに出ます（2026年10月時点、Rustの公式ドキュメントによる）。そのため、ツールチェーンを上げるか、最低限サポートする版（Cargoの<code>rust-version</code>で宣言できる）をどこに置くかを、定期的に決める役割を任されることもあります。</p>
+<h3>成果物</h3>
+<p>ツール本体、対応する環境の一覧と検証の記録、配布用のビルドの設定、利用者向けの説明書、変更履歴などです。利用者が社内の別チームである分、<strong>説明書と変更履歴の質</strong>が評価に直結しやすい案件です。</p>
+<aside class="box box-view"><p class="box-label">エージェントベストの見解</p><p>Rustの案件をご紹介していると、同じ「Rust開発」の募集でも、Webのバックエンドと基盤のツールでは、1日の過ごし方がかなり違うことに参画後に気づく方がいます。ツールの案件では、実装よりも利用者とのやりとりや環境ごとの検証に時間がかかりやすい傾向があります。応募の段階で、作るものの利用者が誰か、何種類の環境に対応するのかを具体的に聞いておくことをおすすめします。</p></aside>
+<h2 id="s4">C/C++からの置き換え・連携の仕事</h2>
+<p>既存のC/C++のコードの一部をRustへ移す、あるいはRustからC/C++のライブラリを呼ぶ案件です。最初の数週間と、その後とで仕事の中身が大きく変わります。</p>
+<h3>参画直後の数週間</h3>
+<p>最初は、<strong>書くより読む</strong>のが仕事です。既存のコードの構造、メモリの持ち方、スレッドの使い方を読み、どこを境界にするかの候補を挙げます。既存の保守担当者に、過去の不具合や触ると危ない箇所を聞く時間も欠かせません。</p>
+<h3>境界を決めた後</h3>
+<p>境界が決まったら、unsafeを使う範囲をどこまでに抑えるか、安全な部品でどう包むかを設計し、技術リードの合意を取ります。その後は、置き換えた部分の動作を既存の実装と比べるテスト、性能の比較、段階的な切り替えの計画を進めます。</p>
+<h3>成果物</h3>
+<p>境界の設計書、unsafeを使った箇所とその理由の一覧、既存の実装との比較テスト、性能の比較の結果、移行の計画などです。この種類の案件では、<strong>「なぜそこを境界にしたか」を説明する資料</strong>の重みが増します。C/C++側の仕事の中身は<a href="/media/c-cpp-shigoto/">C/C++エンジニアの仕事内容</a>が参考になります。</p>
+<h2 id="s5">組込み・WebAssemblyの仕事</h2>
+<h3>組込みの1日・1か月の流れ（例）</h3>
+<p>小さなマイコンや機器の上で動くプログラムを書く案件です。1日の中では、実装に加えて、<strong>実機に書き込み、計測器やログで動きを確かめる時間</strong>が大きな割合を占めます。ハードウェアの担当者と、信号のタイミングや資源の制約について相談する場面も多くなります。1か月の単位では、試作の段階や評価の日程に合わせて作業が区切られます。組込み全般の働き方は組込みエンジニアの仕事内容をご覧ください。</p>
+<h3>WebAssemblyの1日・1か月の流れ（例）</h3>
+<p>ブラウザやサーバーの実行環境で動く処理をRustで書き、WebAssemblyに変換して使う案件です。フロントエンドの担当者と、JavaScriptとの受け渡しの形を決め、ファイルの大きさや読み込みの速さを確かめる作業が中心になります。</p>
+<h3>成果物</h3>
+<p>組込みでは、プログラム本体、実機での評価の記録、資源の使用量の測定結果、ハードウェア担当との取り決めの記録などです。WebAssemblyでは、変換した部品、呼び出し側との取り決め、大きさと速さを測った結果などです。</p>
+<h2 id="s6">どの案件にも共通する仕事</h2>
+<p>種類が違っても、次の仕事はほぼすべてのRust案件にあります。</p>
+<ol><li><strong>レビュー</strong>：所有権、エラー処理、unsafeの扱いを、チームの決まりに沿って確かめる</li><li><strong>依存の管理</strong>：クレートの更新、ライセンスの確認、セキュリティの通知への対応</li><li><strong>計測</strong>：性能やメモリの使用量を測り、変更の前後を比べる</li><li><strong>記録</strong>：設計の判断とその理由を残し、後から来た人も追えるようにする</li></ol>
+<p>依存しているクレートのライセンスの扱いは、<a href="/media/oss-license/">OSSライセンスの記事</a>で解説しています。</p>
+<p>フリーランスならではの仕事として、<strong>自分の稼働の記録と報告</strong>もあります。月の稼働時間に幅を決めて精算する契約が多いため、調査やビルド待ちを含めて使った時間を日々つけておく必要があります。精算の仕組みは<a href="/media/seisan-haba/">精算幅の記事</a>をご覧ください。</p>
+<aside class="box box-caution"><p class="box-label">注意</p><p>Rustの経験者がチームに少ない現場では、Rustについての質問やレビューの依頼が一人に集まりやすくなります。社内勉強会の講師や、別チームのコードの相談など、契約した業務の範囲から外れる仕事が少しずつ増えることがあります。引き受ける前に、契約の業務範囲に入るかを確かめ、外れる場合は条件の見直しを相談しましょう。考え方は<a href="/media/scope-change/">作業範囲が広がったときの契約の扱い</a>で解説しています。</p></aside>
+<h2 id="s7">関わる相手と、その相手に出すもの</h2>
+<p>Rustエンジニアの1日は、誰に何を渡すかで組み立てられています。相手ごとに整理すると、次のようになります。</p>
+<div class="table-wrap"><table><thead><tr><th>相手</th><th>Rustエンジニアが出すもの</th><th>頻度の目安</th></tr></thead><tbody><tr><td>技術リード・アーキテクト</td><td>設計の案、境界やunsafeの判断の理由</td><td>週次、節目ごと</td></tr><tr><td>同じチームのエンジニア</td><td>コード、レビューの指摘、書き方の決まり</td><td>毎日</td></tr><tr><td>利用者・他チーム</td><td>説明書、変更履歴、不具合への回答</td><td>随時</td></tr><tr><td>インフラ・SRE</td><td>ビルドと配布の設定、運用の手順</td><td>週次、リリースごと</td></tr><tr><td>ハードウェア・フロントエンドの担当</td><td>受け渡しの取り決め、検証の結果</td><td>週次、随時</td></tr></tbody></table></div>
+<p>働く場所については、Webのバックエンドやツールの開発はリモートで回しやすい一方、実機を使う組込みや閉じた環境の案件では出社を求められやすくなります。詳しくは<a href="/media/rust-remote/">Rustエンジニアのリモート案件の記事</a>をご覧ください。</p>
+<aside class="box box-view"><p class="box-label">エージェントベストの見解</p><p>当社では、案件をご案内する前に稼働日数・リモートの希望・ご希望の金額を伺い、合う案件だけをお出ししています。Rustの案件では、何を作るかによって毎日の仕事が変わるため、「これまでRustで書いてきたものの種類」と「避けたい働き方」をあわせてお伝えいただくと、案件を照らし合わせやすくなります。レビューの体制や対応する環境の数など、案件票に書かれていない働き方の点は、ご質問いただければ確認します。</p></aside>
+<aside class="box box-point"><p class="box-label">ポイント</p><ul><li>Rustの仕事の中身は、発注側がRustを選んだ理由と、何を作るかで大きく変わる</li><li>Webのバックエンドは実装とレビュー、基盤・ツールは利用者対応と環境ごとの検証が中心</li><li>C/C++からの置き換えは最初の数週間が読解の期間、組込みは実機での確認に時間を使う</li><li>レビュー・依存の管理・計測・記録は、どのRust案件にも共通する</li></ul></aside>
+<h2 id="s8">よくある質問</h2>
+<h3>フリーランスのRustエンジニアは、Rustだけを書いていればよいですか？</h3>
+<p>Rustだけで完結する案件は多くありません。Webの案件ではデータベースやクラウドの設定、置き換えの案件ではC/C++の読解、組込みではハードウェアの資料を読む力が求められます。どこまでが担当範囲かは、参画前に確かめておくと安心です。</p>
+<h3>Rustの経験が浅い人が多いチームでは、どんな仕事が増えますか？</h3>
+<p>レビューや書き方の相談、ビルドが通らないときの手助けなど、チームを支える仕事が増えやすくなります。こうした役割が期待されているかどうかは、面談で聞いておくと、稼働の見込みとのずれを防げます。</p>
+<h3>参画して最初の1か月は何をすることが多いですか？</h3>
+<p>開発環境の構築、既存のコードとチームの書き方の決まりの読み込み、小さな修正の担当から始めるのが一般的です。初月の進め方は<a href="/media/rust-first-month/">Rustエンジニアの参画初月にやること</a>で詳しく解説します。</p>
+  </div>
+  <section class="sources"><h2>参考にした公的情報・資料</h2><ul><li><a href="https://doc.rust-lang.org/book/appendix-07-nightly-rust.html" target="_blank" rel="noopener nofollow">Rust Release Channels（The Rust Programming Language）</a></li><li><a href="https://doc.rust-lang.org/cargo/reference/rust-version.html" target="_blank" rel="noopener nofollow">The rust-version field（The Cargo Book）</a></li></ul>
+  <p class="note">記事の内容は公開日時点の情報にもとづきます。制度や税率は変わることがあるため、手続きの前に必ず各機関の最新情報をご確認ください。</p></section>
+  <div class="cta-band">
+  <h2>条件に合う案件だけ、知りたい方へ</h2>
+  <p>ご登録は無料です。条件に合う案件だけを、ご本人の了承を得てからご提案します。</p>
+  <div class="cta-row">
+    <a class="btn btn-primary" href="https://airtable.com/appYkc36EvioYoL1A/pag6CZC4uJmxUcrXT/form" target="_blank" rel="noopener">無料で登録する</a>
+    <a class="btn btn-ghost" href="/jobs/">案件を探す</a>
+  </div>
+</div>
+  <section class="related"><h2>あわせて読みたい</h2><div class="grid g2"><a class="card art-card" href="/media/rust-rate/">
+  <span class="art-hub">バックエンド開発</span>
+  <h3>Rustエンジニアのフリーランス案件｜報酬の決まり方と単価を上げる考え方</h3>
+  <p>Rustエンジニアの報酬は、Rustで何を作るか、性能と安全性への責任の重さ、C/C++などとの境界を扱えるか、チームでの立ち位置、稼働条件と商流で決まり、案件ごとに大きく変わります。上がる場面・伸びにくい場面と交渉材料を解説します。</p>
+</a>
+<a class="card art-card" href="/media/rust-how-to/">
+  <span class="art-hub">バックエンド開発</span>
+  <h3>Rustエンジニアがフリーランスになるには｜必要な経験と独立までの進め方</h3>
+  <p>Rustでフリーランスになるには、Rustで書いたものを本番で動かした経験と、Web・基盤・組込みなど狙う領域の土台となる経験が求められます。他言語から移る人の準備、実務経験の作り方、独立前後の流れを解説します。</p>
+</a>
+<a class="card art-card" href="/media/rust-skills/">
+  <span class="art-hub">バックエンド開発</span>
+  <h3>Rustエンジニアのフリーランス案件で求められるスキルと経験</h3>
+  <p>Rustの案件では、所有権と型を使った設計、非同期処理、エラー処理、unsafeと他言語との境界、Cargoを中心とした開発の進め方が問われます。Web・基盤・組込み・WebAssemblyの分野別と、経験の段階別に解説します。</p>
+</a>
+<a class="card art-card" href="/media/rust-remote/">
+  <span class="art-hub">バックエンド開発</span>
+  <h3>Rustエンジニアのフリーランスはリモートで働ける？案件の傾向と探し方</h3>
+  <p>Rustエンジニアは、Webサービスのバックエンドや基盤のツール、ライブラリの開発でリモートの案件があります。一方で、実機を使う組込みや閉じた環境の案件は出社を含みやすくなります。分野ごとの傾向、探し方、参画前の確認点を解説します。</p>
+</a>
+<a class="card art-card" href="/media/rust-skillsheet/">
+  <span class="art-hub">バックエンド開発</span>
+  <h3>Rustエンジニアのスキルシートの書き方｜面談で評価される実績の見せ方</h3>
+  <p>Rustのスキルシートは、Rustでの実務期間をほかの言語と分け、どの分野で何をRustで書いたか、なぜRustを選んだか、unsafeや他言語との境界にどう関わったかを書くのが基本です。架空の記入例つきで解説します。</p>
+</a>
+<a class="card art-card" href="/media/rust-future/">
+  <span class="art-hub">バックエンド開発</span>
+  <h3>Rustエンジニアのフリーランスの将来性とキャリアの広げ方</h3>
+  <p>Rustは6週間ごとの安定版と、互換を保つエディションの仕組みのもとで版を重ねています。メモリ安全性への公的な関心も背景に、使われる分野は広がりつつあります。公式の動向と、経験別のキャリアの広げ方を解説します。</p>
+</a></div></section>
+</main>
+<footer class="site-foot">
+  <div class="wrap">
+    <strong>エージェントベストジョブ フリーランス</strong>
+    <div class="foot-links">
+      <a href="/">トップ</a>
+      <a href="/jobs/">案件を探す</a>
+      <a href="/media/">お役立ち記事</a>
+      <a href="https://airtable.com/appYkc36EvioYoL1A/pag6CZC4uJmxUcrXT/form" target="_blank" rel="noopener">ご登録（スキルシート・ご希望の条件）</a>
+      <a href="https://line.me/R/ti/p/@697nxhbt?oat_content=url&ts=08302134" target="_blank" rel="noopener" data-line-cta="footer">LINEで相談する</a>
+      <a href="/privacy.html">個人情報の取り扱い</a>
+      <a href="https://www.agent-best.net/company/">運営会社</a>
+    </div>
+    <div class="foot-links">
+      <a href="https://jobs.agent-best.net/">正社員の求人を探す（エージェントベストジョブ）</a>
+      <a href="https://skill.agent-best.net/">エージェントベストジョブ手に職</a>
+      <a href="https://www.agent-best.net/">エージェントベスト</a>
+    </div>
+    <p>運営：株式会社エージェントベスト（有料職業紹介事業 許可番号 13-ユ-316964）<br>〒106-0032 東京都港区六本木4-8-7 嶋田ビル5階</p>
+  </div>
+</footer>
+<script src="/assets/fav.js" defer></script>
+</body>
+</html>
