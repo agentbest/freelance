@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Goエンジニアの参画初月にやること｜現場で信頼される進め方｜エージェントベストジョブ フリーランス</title>
+<meta name="description" content="Goエンジニアの参画初月は、現場の書き方とレビューの決まりを覚え、小さな変更を本番まで一度通し、月末に運用上の気がかりを整理して伝えるのが基本です。週ごとの進め方と、案件の型による重心の違い、避けたい動きを整理します。">
+<link rel="canonical" href="https://freelance.agent-best.net/media/go-first-month/">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="エージェントベストジョブ フリーランス">
+<meta property="og:title" content="Goエンジニアの参画初月にやること｜現場で信頼される進め方｜エージェントベストジョブ フリーランス">
+<meta property="og:description" content="Goエンジニアの参画初月は、現場の書き方とレビューの決まりを覚え、小さな変更を本番まで一度通し、月末に運用上の気がかりを整理して伝えるのが基本です。週ごとの進め方と、案件の型による重心の違い、避けたい動きを整理します。">
+<meta property="og:url" content="https://freelance.agent-best.net/media/go-first-month/">
+<meta property="og:image" content="https://freelance.agent-best.net/assets/ogp.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://freelance.agent-best.net/assets/ogp.png">
+<meta name="theme-color" content="#1E3A5F">
+<link rel="icon" href="/assets/favicon.ico">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="stylesheet" href="/assets/site.css">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1XXMP8Y1B4"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-1XXMP8Y1B4');
+document.addEventListener('click',e=>{const a=e.target.closest('[data-line-cta]');if(a)gtag('event','line_add_friend',{placement:a.dataset.lineCta,page_path:location.pathname});});</script>
+<script type="application/ld+json">[{"@context":"https://schema.org","@type":"Article","headline":"Goエンジニアの参画初月にやること｜現場で信頼される進め方","description":"Goエンジニアの参画初月は、現場の書き方とレビューの決まりを覚え、小さな変更を本番まで一度通し、月末に運用上の気がかりを整理して伝えるのが基本です。週ごとの進め方と、案件の型による重心の違い、避けたい動きを整理します。","datePublished":"2026-11-04","dateModified":"2026-11-04","author":{"@type":"Organization","name":"株式会社エージェントベスト","url":"https://www.agent-best.net/"},"publisher":{"@type":"Organization","name":"株式会社エージェントベスト","logo":{"@type":"ImageObject","url":"https://freelance.agent-best.net/assets/logo.png"}},"mainEntityOfPage":"https://freelance.agent-best.net/media/go-first-month/"},{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"トップ","item":"https://freelance.agent-best.net/"},{"@type":"ListItem","position":2,"name":"お役立ち記事","item":"https://freelance.agent-best.net/media/"},{"@type":"ListItem","position":3,"name":"バックエンド開発","item":"https://freelance.agent-best.net/media/hub/backend/"},{"@type":"ListItem","position":4,"name":"Goエンジニアの参画初月にやること｜現場で信頼される進め方"}]},{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"手元の環境づくりに数日かかってしまいました。遅れと見られますか？","acceptedAnswer":{"@type":"Answer","text":"社内のモジュールの取得や生成コードの手順など、現場ごとの事情で時間がかかることは珍しくありません。どこでつまずき、どう解決したかを記録し、手順書の修正として提案すれば、後から入る人の役に立つ仕事として受け止められやすくなります。"}},{"@type":"Question","name":"初月から大きな機能の担当を任されたら、どうすればよいですか？","acceptedAnswer":{"@type":"Answer","text":"断る必要はありませんが、最初に設計の方針を短いメモにまとめ、リードと合意を取ってから実装に入ることをおすすめします。あわせて、小さな単位でプルリクエストを出し、早い段階でレビューを受けると、現場の書き方とのずれを小さいうちに直せます。"}},{"@type":"Question","name":"レビューの指摘が多く、自信をなくしています。どう受け止めればよいですか？","acceptedAnswer":{"@type":"Answer","text":"参画直後に指摘が多いのは、現場の書き方を知らないことによる部分が大きく、能力の評価とは別のことが多くあります。指摘を内容ごとに分けてメモにまとめ、同じ指摘を繰り返さないようにすると、数週間で落ち着いていくのが一般的です。考え方の違いによる指摘は、理由をレビュアーに尋ねてください。"}}]}]</script>
+</head>
+<body>
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="/"><img src="/assets/mark.png" alt="" width="28" height="28"><span>エージェントベストジョブ フリーランス<small>フリーランスのエンジニア・コンサル向け案件紹介</small></span></a>
+    <nav class="head-nav" aria-label="メニュー">
+      <a class="link" href="/jobs/">案件を探す</a>
+      <a class="link" href="/media/">お役立ち記事</a>
+      <a class="link keep" href="/mypage/" aria-label="気になる案件">☆ 気になる<span class="fav-count" data-fav-count hidden></span></a>
+      <a class="btn btn-primary btn-sm" href="https://airtable.com/appYkc36EvioYoL1A/pag6CZC4uJmxUcrXT/form" target="_blank" rel="noopener">無料で登録</a>
+    </nav>
+  </div>
+</header>
+<main class="wrap narrow article">
+  <p class="crumbs"><a href="/">トップ</a> › <a href="/media/">お役立ち記事</a> › <a href="/media/hub/backend/">バックエンド開発</a></p>
+  <a class="art-hub" href="/media/hub/backend/">バックエンド開発</a>
+  <h1 class="art-title">Goエンジニアの参画初月にやること｜現場で信頼される進め方</h1>
+  <p class="note">公開 2026-11-04　監修：株式会社エージェントベスト</p>
+  <nav class="toc" aria-label="目次"><strong>目次</strong><ol><li><a href="#s1">初月のゴールを3つに分ける</a></li><li><a href="#s2">1週目：環境を整え、コードと決まりを読む</a></li><li><a href="#s3">2週目：小さな変更を本番まで通す</a></li><li><a href="#s4">3〜4週目：運用を知り、気がかりを整理する</a></li><li><a href="#s5">案件の型によって初月の重心は変わる</a></li><li><a href="#s6">初月に避けたい動き</a></li><li><a href="#s7">1か月の終わりに振り返ること</a></li><li><a href="#s8">よくある質問</a></li></ol></nav>
+  <div class="art-body">
+<p>Goエンジニアの参画初月は、<strong>現場の書き方とレビューの決まりを覚え、小さな変更を本番まで一度通し、月末に運用上の気がかりを整理して伝える</strong>ところまでを目標にします。最初の1か月で求められるのは、大きな機能を作ることより、<strong>このチームのやり方で安心してコードを任せられる人だと示すこと</strong>です。</p>
+<p>参画前の契約や環境の準備は<a href="/media/sankaku-junbi/">参画が決まってから開始日までにやること</a>、職種を問わない最初の1週間の動き方は<a href="/media/sankaku-shoki/">参画初日から最初の1週間でやること</a>で解説しています。この記事では、Goのバックエンドや基盤の現場ならではの初月の進め方に絞ります。</p>
+<h2 id="s1">初月のゴールを3つに分ける</h2>
+<div class="table-wrap"><table><thead><tr><th>ゴール</th><th>中身</th><th>月末に手元にあるもの</th></tr></thead><tbody><tr><td>書き方に合わせる</td><td>エラーの扱い、パッケージの分け方、ログ、テストの書き方をチームに合わせる</td><td>自分用の「この現場の書き方」メモ</td></tr><tr><td>流れを一度通す</td><td>手元での開発からレビュー、CI、リリース、本番での確認までを自分で経験する</td><td>本番に出た自分の変更と、その確認の記録</td></tr><tr><td>運用の危うさを見立てる</td><td>監視、障害の履歴、版や依存の古さなど、気になる点を集める</td><td>優先度をつけた気がかりの一覧</td></tr></tbody></table></div>
+<p>この3つを、1週目、2週目、3〜4週目の順に重心を移しながら進めます。Goの現場は少人数のチームが多く、一人の振る舞いが全体に響きやすいため、最初の数週間は<strong>速さより合わせ方</strong>を優先するのが無難です。</p>
+<h2 id="s2">1週目：環境を整え、コードと決まりを読む</h2>
+<h3>手元で動かせる状態をつくる</h3>
+<p>最初の数日は、リポジトリを取得し、手元でビルドとテストが通り、サービスを起動できる状態をつくることに使います。Goはビルドが速く、依存もモジュールで管理されているため、手順書どおりに進めば短時間で動くことが多い言語です。それでも、社内のモジュールの取得に認証が要る、生成コードを作る手順がある、ローカル用のデータベースをコンテナで立てる、といった現場ごとの手順でつまずくことがあります。</p>
+<p>つまずいた点は、解決した方法と合わせて書き残しておきます。手順書に足りない部分があれば、そのまま修正の提案につなげられます。後から入る人の助けになるため、初週の貢献として受け入れられやすい仕事です。</p>
+<h3>読む順番を決めて、コードを読む</h3>
+<p>Goのコードは、入口から追うと全体をつかみやすくなります。次の順で目を通すのがおすすめです。</p>
+<ol><li><strong>mainパッケージと起動の流れ</strong>：設定の読み込み、依存の組み立て、サーバーの起動と終了の扱い</li><li><strong>ディレクトリとパッケージの分け方</strong>：層で分けているのか、機能で分けているのか</li><li><strong>エラーの扱い</strong>：エラーの包み方、ログに出す場所、呼び出し元への返し方</li><li><strong>context と並行処理</strong>：タイムアウトやキャンセルをどこで設定し、goroutineをどう止めているか</li><li><strong>テストの書き方</strong>：テーブル駆動のテストか、モックの作り方、結合テストの有無</li></ol>
+<p>あわせて、直近のプルリクエストとレビューのやりとりを数十件ほど読みます。どんな指摘が多いかを見ると、チームが大事にしている点が分かります。</p>
+<h3>決まりを書き出す</h3>
+<p>読みながら、「この現場の書き方」を自分用に書き出します。命名、エラーメッセージの形、ログの項目、設定の渡し方、依存を増やすときの決まりなどです。前の現場と違う点ほど、意識して書いておきます。</p>
+<aside class="box box-view"><p class="box-label">エージェントベストの見解</p><p>案件紹介の現場で、参画後の評価が高いGoエンジニアの方に共通しているのは、最初のプルリクエストから「現場の書き方に沿っている」ことです。Goは書き方の自由度が比較的小さい言語だからこそ、細かな違いがレビューで目立ちます。初週は自分の得意な書き方を出すより、既存のコードに似せて書くことを優先するのをおすすめします。</p></aside>
+<h2 id="s3">2週目：小さな変更を本番まで通す</h2>
+<h3>最初の変更は小さく選ぶ</h3>
+<p>2週目には、小さな不具合の修正、ログの改善、テストの追加など、影響の小さい変更を一つ選び、本番に出すところまで進めます。窓口やリードに「最初に取り組むのに向いた課題」を尋ねると、ちょうどよい大きさのものを選んでもらえることが多くあります。</p>
+<p>ねらいは、変更そのものより<strong>流れを一度通すこと</strong>です。ブランチの切り方、プルリクエストの書き方、レビューの依頼の仕方、CIで走る静的解析とテスト、リリースの手順、本番での確かめ方を、自分の手で経験します。どこで誰の承認が要るかも、このときに分かります。</p>
+<h3>レビューの指摘は理由まで聞く</h3>
+<p>最初の数件のプルリクエストでは、指摘が多くなるのが普通です。指摘を直すだけでなく、理由が分からないものは短く尋ね、メモに足していきます。同じ指摘を二度受けないようにすることが、2週目以降の信頼につながります。</p>
+<h3>報告の形を合わせる</h3>
+<p>日々の報告や相談をどの場で、どの粒度で行うかも、この時期に合わせます。チャットでの書き方は<a href="/media/chat-houkoku/">チャットでの報告・相談の書き方</a>で整理しています。稼働の記録の付け方と提出の形も、初月のうちに窓口と確かめておくと、月末に慌てずに済みます。書き方は<a href="/media/kado-houkoku/">稼働報告書の記事</a>をご覧ください。</p>
+<h2 id="s4">3〜4週目：運用を知り、気がかりを整理する</h2>
+<h3>監視と障害の履歴を見る</h3>
+<p>3週目からは、本番の運用に目を向けます。ダッシュボードやアラートの設定、ログの検索の仕方、トレースの見方を覚え、直近の障害の振り返りの記録があれば読みます。障害対応の当番がある案件では、手順書と連絡の流れを確かめ、当番に入る時期と、待機や対応の扱いを窓口と言葉で合わせておきます。</p>
+<h3>気がかりを集めて、優先度をつける</h3>
+<p>1か月の間に気づいた点を、次のような観点で並べます。</p>
+<ul><li><strong>版と依存</strong>：使っているGoの版がサポートの範囲にあるか、古いままのモジュールがないか</li><li><strong>並行処理</strong>：止める仕組みのないgoroutine、タイムアウトのない外部呼び出し</li><li><strong>監視</strong>：障害に気づけない処理、ノイズの多いアラート</li><li><strong>テストとCI</strong>：テストのない重要な処理、時間のかかりすぎるCI</li><li><strong>手順書</strong>：手元の環境づくりやリリースの手順で足りなかった点</li></ul>
+<p>一覧にしたら、影響の大きさと直す手間で優先度をつけ、リードや窓口に共有します。直すかどうか、いつ直すかを決めるのは発注側です。初月は<strong>見えるようにすることまで</strong>を自分の役割と考えると、出過ぎた提案と受け取られにくくなります。並行処理や版の更新で起きやすいつまずきは<a href="/media/go-tsumazuki/">Goエンジニアのフリーランスがつまずきやすい点と対策</a>で詳しく扱っています。</p>
+<h2 id="s5">案件の型によって初月の重心は変わる</h2>
+<p>同じGoの案件でも、型によって初月に力を入れる場所が違います。</p>
+<div class="table-wrap"><table><thead><tr><th>案件の型</th><th>初月の重心</th><th>気をつけたいこと</th></tr></thead><tbody><tr><td>他言語からの置き換え</td><td>移す元のコードと業務の仕様を読み、切り替えの単位を確かめる</td><td>Goの書き方と、元の仕様の再現のどちらを優先するかを確かめる</td></tr><tr><td>既存サービスの機能開発・保守</td><td>書き方に合わせ、小さな変更を早めに本番に出す</td><td>レビューの文化に合わせ、大きな作り変えを急がない</td></tr><tr><td>基盤・マイクロサービスの設計</td><td>サービス間の通信、データの持ち方、障害時の影響範囲を図にする</td><td>設計の判断は短いメモで合意を取ってから進める</td></tr><tr><td>性能改善・障害対応</td><td>計測の仕組みを確かめ、まず現状の数字を取る</td><td>計測の前に直し始めない。変える前後を同じ条件で比べる</td></tr><tr><td>新規サービスの立ち上げ</td><td>方針の決まっていない点を洗い出し、決める人と期限を確かめる</td><td>自分の好みで構成を決めず、選択肢として示す</td></tr></tbody></table></div>
+<p>置き換えの案件では、元のコードの読み解きに時間がかかるのが普通です。初月の成果が見えにくくなるため、どこまで読めたか、どの単位で移せそうかを週ごとに短く報告すると、進み具合が伝わります。リモート中心の現場では、こうした報告がとくに大切になります。進め方の工夫は<a href="/media/go-remote/">Goエンジニアのリモートの記事</a>でも触れています。</p>
+<h2 id="s6">初月に避けたい動き</h2>
+<div class="table-wrap"><table><thead><tr><th>避けたい動き</th><th>起きやすいこと</th><th>代わりにすること</th></tr></thead><tbody><tr><td>前の現場の書き方を持ち込む</td><td>レビューで食い違い、合わせない人と見られる</td><td>既存のコードに似せて書き、提案は理由を添えて別に出す</td></tr><tr><td>大きな作り変えを提案する</td><td>現場の事情を知らないまま否定したと受け取られる</td><td>気がかりとして一覧に載せ、判断を仰ぐ</td></tr><tr><td>相談なく依存を増やす</td><td>保守の手間が増え、レビューで止まる</td><td>標準ライブラリで足りないかを先に確かめる</td></tr><tr><td>分からないことを抱え込む</td><td>手が止まり、進みが見えなくなる</td><td>調べた範囲を添えて、早めに短く尋ねる</td></tr><tr><td>範囲外の作業を黙って引き受ける</td><td>インフラや運用の作業が積み上がり、本来の仕事が遅れる</td><td>担う範囲を確かめ、外れる依頼は窓口と話す</td></tr></tbody></table></div>
+<p>範囲外の依頼が増えてきたときの扱いは<a href="/media/scope-change/">作業範囲が広がったときの記事</a>で整理しています。</p>
+<aside class="box box-caution"><p class="box-label">注意</p><p>参画して間もない時期に、本番のデータベースやクラウドの権限を広く渡されることがあります。権限があっても、手順が分からないまま本番に触ると、障害の原因になりかねません。本番での作業は、手順と確認する人を決めてから行い、不要な権限は早めに返してください。</p></aside>
+<h2 id="s7">1か月の終わりに振り返ること</h2>
+<p>1か月が過ぎたら、次の点を自分で振り返ります。</p>
+<ul><li>自分の変更を、レビューからリリース、本番での確認まで通せたか</li><li>この現場の書き方のメモがまとまり、レビューの指摘が減ってきているか</li><li>監視とログの見方を覚え、障害が起きたときの連絡の流れを知っているか</li><li>気がかりの一覧を、リードや窓口と共有できたか</li><li>契約で決めた業務の範囲と、実際に担っている仕事がずれていないか</li><li>稼働の記録が残り、精算幅との関係を把握できているか</li></ul>
+<p>稼働が精算幅を超えそうな場合の扱いは<a href="/media/seisan-haba/">精算幅の記事</a>で解説しています。ずれている点があれば、2か月目の早い段階で窓口と話しておきます。</p>
+<aside class="box box-view"><p class="box-label">エージェントベストの見解</p><p>当社では、契約で業務範囲・報酬・支払期日・契約期間を個別契約に書いてお渡ししています。参画して1か月の間に、障害対応の当番やインフラの作業など、聞いていた範囲と実際の仕事に違いを感じたときは、早めにご相談ください。契約の内容に関わる点は、ご質問いただければ確認します。</p></aside>
+<aside class="box box-point"><p class="box-label">ポイント</p><ul><li>Goエンジニアの初月は、書き方に合わせる、流れを一度通す、運用の危うさを見立てる、の3つを順に進める</li><li>1週目は手元の環境とコードの読み込み、2週目に小さな変更を本番まで通す</li><li>3〜4週目に監視と障害の履歴を見て、気がかりを優先度つきで共有する</li><li>前の現場の書き方の持ち込み、大きな作り変えの提案、相談のない依存の追加は避ける</li></ul></aside>
+<h2 id="s8">よくある質問</h2>
+<h3>手元の環境づくりに数日かかってしまいました。遅れと見られますか？</h3>
+<p>社内のモジュールの取得や生成コードの手順など、現場ごとの事情で時間がかかることは珍しくありません。どこでつまずき、どう解決したかを記録し、手順書の修正として提案すれば、後から入る人の役に立つ仕事として受け止められやすくなります。</p>
+<h3>初月から大きな機能の担当を任されたら、どうすればよいですか？</h3>
+<p>断る必要はありませんが、最初に設計の方針を短いメモにまとめ、リードと合意を取ってから実装に入ることをおすすめします。あわせて、小さな単位でプルリクエストを出し、早い段階でレビューを受けると、現場の書き方とのずれを小さいうちに直せます。</p>
+<h3>レビューの指摘が多く、自信をなくしています。どう受け止めればよいですか？</h3>
+<p>参画直後に指摘が多いのは、現場の書き方を知らないことによる部分が大きく、能力の評価とは別のことが多くあります。指摘を内容ごとに分けてメモにまとめ、同じ指摘を繰り返さないようにすると、数週間で落ち着いていくのが一般的です。考え方の違いによる指摘は、理由をレビュアーに尋ねてください。</p>
+  </div>
+  
+  <div class="cta-band">
+  <h2>条件に合う案件だけ、知りたい方へ</h2>
+  <p>ご登録は無料です。条件に合う案件だけを、ご本人の了承を得てからご提案します。</p>
+  <div class="cta-row">
+    <a class="btn btn-primary" href="https://airtable.com/appYkc36EvioYoL1A/pag6CZC4uJmxUcrXT/form" target="_blank" rel="noopener">無料で登録する</a>
+    <a class="btn btn-ghost" href="/jobs/">案件を探す</a>
+  </div>
+</div>
+  <section class="related"><h2>あわせて読みたい</h2><div class="grid g2"><a class="card art-card" href="/media/sankaku-junbi/">
+  <span class="art-hub">案件の探し方</span>
+  <h3>参画が決まってから開始日までにやること｜契約・事業の手続き・作業環境の準備</h3>
+  <p>参画が決まったら、開始日までに「契約の書面の確認」「他の選考の整理」「請求と事業の手続き」「作業環境」「業務の予習」の5つを進めます。時期ごとのやることと、開始前の作業を頼まれたときの注意点を整理します。</p>
+</a>
+<a class="card art-card" href="/media/sankaku-shoki/">
+  <span class="art-hub">案件の探し方</span>
+  <h3>参画初日から最初の1週間でやること｜業務委託で立ち上がりを早める進め方</h3>
+  <p>参画して最初の1週間は、成果を急ぐより「任された範囲・依頼の窓口・報告の形」を確かめ、小さな仕事を一つ終えることを優先します。初日から5日目までの進め方と、つまずきやすい点を整理します。</p>
+</a>
+<a class="card art-card" href="/media/go-tsumazuki/">
+  <span class="art-hub">バックエンド開発</span>
+  <h3>Goエンジニアのフリーランスがつまずきやすい点と対策</h3>
+  <p>フリーランスのGoエンジニアがつまずきやすいのは、障害対応の待機が契約にないこと、他言語の書き方の持ち込み、並行処理の不具合、版の更新の後回し、稼働の膨らみなどです。契約・現場・技術・お金の順に対策を整理します。</p>
+</a>
+<a class="card art-card" href="/media/go-skills/">
+  <span class="art-hub">バックエンド開発</span>
+  <h3>Goエンジニアのフリーランス案件で求められるスキルと経験</h3>
+  <p>Goのフリーランス案件では、エラー処理やcontextなどGoの考え方に沿った書き方、並行処理を安全に設計する力、gRPCやコンテナを含むサービスの運用経験が見られます。案件で求められやすいスキルと、資格より重視される経験の示し方を解説します。</p>
+</a>
+<a class="card art-card" href="/media/go-remote/">
+  <span class="art-hub">バックエンド開発</span>
+  <h3>Goエンジニアのフリーランスはリモートで働ける？案件の傾向と探し方</h3>
+  <p>Goエンジニアは、Webサービスのバックエンドやマイクロサービス、基盤まわりの開発でリモートの案件があります。一方で、金融・決済などの閉じた環境や、障害対応の待機が条件になることも。案件の傾向と確認点を解説します。</p>
+</a>
+<a class="card art-card" href="/media/go-nenrei/">
+  <span class="art-hub">バックエンド開発</span>
+  <h3>Goエンジニアは40代・50代でもフリーランスで働ける？求められる役割</h3>
+  <p>40代・50代のGoエンジニアには、障害に強い設計の判断、他言語からの置き換えの計画、チームの書き方をそろえるレビュー役など、経験がものを言う役割が求められます。不利に見られやすい点と補い方を整理します。</p>
+</a></div></section>
+</main>
+<footer class="site-foot">
+  <div class="wrap">
+    <strong>エージェントベストジョブ フリーランス</strong>
+    <div class="foot-links">
+      <a href="/">トップ</a>
+      <a href="/jobs/">案件を探す</a>
+      <a href="/media/">お役立ち記事</a>
+      <a href="https://airtable.com/appYkc36EvioYoL1A/pag6CZC4uJmxUcrXT/form" target="_blank" rel="noopener">ご登録（スキルシート・ご希望の条件）</a>
+      <a href="https://line.me/R/ti/p/@697nxhbt?oat_content=url&ts=08302134" target="_blank" rel="noopener" data-line-cta="footer">LINEで相談する</a>
+      <a href="/privacy.html">個人情報の取り扱い</a>
+      <a href="https://www.agent-best.net/company/">運営会社</a>
+    </div>
+    <div class="foot-links">
+      <a href="https://jobs.agent-best.net/">正社員の求人を探す（エージェントベストジョブ）</a>
+      <a href="https://skill.agent-best.net/">エージェントベストジョブ手に職</a>
+      <a href="https://www.agent-best.net/">エージェントベスト</a>
+    </div>
+    <p>運営：株式会社エージェントベスト（有料職業紹介事業 許可番号 13-ユ-316964）<br>〒106-0032 東京都港区六本木4-8-7 嶋田ビル5階</p>
+  </div>
+</footer>
+<script src="/assets/fav.js" defer></script>
+</body>
+</html>

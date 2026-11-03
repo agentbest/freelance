@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Goエンジニアのフリーランスがつまずきやすい点と対策｜エージェントベストジョブ フリーランス</title>
+<meta name="description" content="フリーランスのGoエンジニアがつまずきやすいのは、障害対応の待機が契約にないこと、他言語の書き方の持ち込み、並行処理の不具合、版の更新の後回し、稼働の膨らみなどです。契約・現場・技術・お金の順に対策を整理します。">
+<link rel="canonical" href="https://freelance.agent-best.net/media/go-tsumazuki/">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="エージェントベストジョブ フリーランス">
+<meta property="og:title" content="Goエンジニアのフリーランスがつまずきやすい点と対策｜エージェントベストジョブ フリーランス">
+<meta property="og:description" content="フリーランスのGoエンジニアがつまずきやすいのは、障害対応の待機が契約にないこと、他言語の書き方の持ち込み、並行処理の不具合、版の更新の後回し、稼働の膨らみなどです。契約・現場・技術・お金の順に対策を整理します。">
+<meta property="og:url" content="https://freelance.agent-best.net/media/go-tsumazuki/">
+<meta property="og:image" content="https://freelance.agent-best.net/assets/ogp.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://freelance.agent-best.net/assets/ogp.png">
+<meta name="theme-color" content="#1E3A5F">
+<link rel="icon" href="/assets/favicon.ico">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="stylesheet" href="/assets/site.css">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1XXMP8Y1B4"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-1XXMP8Y1B4');
+document.addEventListener('click',e=>{const a=e.target.closest('[data-line-cta]');if(a)gtag('event','line_add_friend',{placement:a.dataset.lineCta,page_path:location.pathname});});</script>
+<script type="application/ld+json">[{"@context":"https://schema.org","@type":"Article","headline":"Goエンジニアのフリーランスがつまずきやすい点と対策","description":"フリーランスのGoエンジニアがつまずきやすいのは、障害対応の待機が契約にないこと、他言語の書き方の持ち込み、並行処理の不具合、版の更新の後回し、稼働の膨らみなどです。契約・現場・技術・お金の順に対策を整理します。","datePublished":"2026-11-04","dateModified":"2026-11-04","author":{"@type":"Organization","name":"株式会社エージェントベスト","url":"https://www.agent-best.net/"},"publisher":{"@type":"Organization","name":"株式会社エージェントベスト","logo":{"@type":"ImageObject","url":"https://freelance.agent-best.net/assets/logo.png"}},"mainEntityOfPage":"https://freelance.agent-best.net/media/go-tsumazuki/"},{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"トップ","item":"https://freelance.agent-best.net/"},{"@type":"ListItem","position":2,"name":"お役立ち記事","item":"https://freelance.agent-best.net/media/"},{"@type":"ListItem","position":3,"name":"バックエンド開発","item":"https://freelance.agent-best.net/media/hub/backend/"},{"@type":"ListItem","position":4,"name":"Goエンジニアのフリーランスがつまずきやすい点と対策"}]},{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"レビューで指摘が多く、現場に合っていない気がします。どうすればよいですか？","acceptedAnswer":{"@type":"Answer","text":"指摘の内容を分類し、現場の書き方の違いによるものか、Goの考え方の理解によるものかを分けて見てください。前者はチームの決まりを書き出して合わせれば減ります。後者は、指摘された箇所の理由をレビュアーに尋ね、同じ指摘を受けないよう手元にまとめておくと、数週間で落ち着くことが多くあります。"}},{"@type":"Question","name":"契約にない夜間の障害対応を頼まれました。断ってもよいですか？","acceptedAnswer":{"@type":"Answer","text":"契約にない業務は、引き受ける義務があるとは限りません。ただ、サービスの事情もあるため、まずは対応できる範囲と条件を窓口に伝え、続けるなら契約に書き加える形で話を進めるのが現実的です。判断に迷う場合は、紹介を受けたエージェントに確かめてください。"}},{"@type":"Question","name":"本番で自分が書いたコードが原因の障害が起きたら、損害賠償を求められますか？","acceptedAnswer":{"@type":"Answer","text":"準委任契約では、成果そのものではなく、専門家として通常求められる注意を払って業務を行うことが約束の中身です。ただし、契約の内容や落ち度の有無によって判断が変わることがあります。不安がある場合は、契約書の損害賠償の条項を読み、弁護士などの専門家にご相談ください。"}}]}]</script>
+</head>
+<body>
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="/"><img src="/assets/mark.png" alt="" width="28" height="28"><span>エージェントベストジョブ フリーランス<small>フリーランスのエンジニア・コンサル向け案件紹介</small></span></a>
+    <nav class="head-nav" aria-label="メニュー">
+      <a class="link" href="/jobs/">案件を探す</a>
+      <a class="link" href="/media/">お役立ち記事</a>
+      <a class="link keep" href="/mypage/" aria-label="気になる案件">☆ 気になる<span class="fav-count" data-fav-count hidden></span></a>
+      <a class="btn btn-primary btn-sm" href="https://airtable.com/appYkc36EvioYoL1A/pag6CZC4uJmxUcrXT/form" target="_blank" rel="noopener">無料で登録</a>
+    </nav>
+  </div>
+</header>
+<main class="wrap narrow article">
+  <p class="crumbs"><a href="/">トップ</a> › <a href="/media/">お役立ち記事</a> › <a href="/media/hub/backend/">バックエンド開発</a></p>
+  <a class="art-hub" href="/media/hub/backend/">バックエンド開発</a>
+  <h1 class="art-title">Goエンジニアのフリーランスがつまずきやすい点と対策</h1>
+  <p class="note">公開 2026-11-04　監修：株式会社エージェントベスト</p>
+  <nav class="toc" aria-label="目次"><strong>目次</strong><ol><li><a href="#s1">契約でのつまずき</a></li><li><a href="#s2">現場でのつまずき</a></li><li><a href="#s3">技術でのつまずき</a></li><li><a href="#s4">お金でのつまずき</a></li><li><a href="#s5">よくある質問</a></li></ol></nav>
+  <div class="art-body">
+<p>フリーランスのGoエンジニアがつまずきやすいのは、<strong>障害対応の待機が契約に書かれていないこと、他の言語の書き方を持ち込んでレビューで食い違うこと、並行処理の不具合を本番で出すこと、版の更新を後回しにすること、障害やリリースで稼働が膨らむこと</strong>です。どれも、止められないサービスや基盤を外部の立場で担うことから起きます。</p>
+<p>対策の基本は、<strong>つまずきの種を契約と参画初期の取り決めで小さくし、現場では書き方の合意と記録で守ること</strong>です。この記事では、契約・現場・技術・お金の順に、Goならではの場面と対策を整理します。独立前の準備は<a href="/media/go-how-to/">Goエンジニアがフリーランスになるには</a>で扱っているので、ここでは参画中に起きやすい場面に絞ります。</p>
+<h2 id="s1">契約でのつまずき</h2>
+<h3>障害対応の待機が、契約にないまま当たり前になる</h3>
+<p>Goで作られるサービスは、止まると影響の大きいものが少なくありません。参画してしばらくすると、「何かあったら連絡が行くので対応してほしい」と頼まれ、夜間や休日の待機が契約に書かれないまま続くことがあります。</p>
+<p><strong>対策</strong>：参画前に、障害対応の当番があるか、あるならどの時間帯で、待機と対応の時間をどう扱うかを確かめます。契約書の業務範囲に書かれていない対応を求められたときの扱いは<a href="/media/scope-change/">業務範囲が変わったときの記事</a>と<a href="/media/tsuika-irai-kotowari/">追加の依頼の断り方</a>をご覧ください。</p>
+<h3>「API開発」のはずが、インフラまで任される</h3>
+<p>Goの現場では、アプリとインフラの境目があいまいなことが多く、APIの開発で入ったのに、Kubernetesの設定やクラウドの権限設計、CIの整備まで頼まれることがあります。できる範囲で手伝うのは悪いことではありませんが、責任の範囲が広がったまま報酬や稼働が変わらないと負担になります。</p>
+<p><strong>対策</strong>：引き受ける作業と引き受けない作業を、参画初期に窓口と言葉で確かめます。インフラの作業が継続的に増えそうなら、契約の見直しの対象として早めに伝えます。</p>
+<h3>指揮命令の形が社員と変わらなくなる</h3>
+<p>少人数のチームに深く入ると、勤務時間の管理や作業の手順まで社員と同じように指示される状態になりやすくなります。準委任の契約と実態がずれていないかは、<a href="/media/gisou-ukeoi/">偽装請負の記事</a>で考え方を確かめてください。</p>
+<h2 id="s2">現場でのつまずき</h2>
+<h3>他の言語の書き方を持ち込み、レビューで揉める</h3>
+<p>JavaやPHPから移ってきた人に起きやすいつまずきです。深い抽象化、使う側より先に大きなinterfaceを定義する作り、エラーを握りつぶす書き方などは、Goの現場のレビューで指摘されやすい点です。指摘が続くと、「現場の決まりに合わせない人」と見られてしまいます。</p>
+<p><strong>対策</strong>：参画した最初の週に、既存のコードとレビューの履歴を読み、エラーの包み方、パッケージの分け方、ログの出し方など、そのチームの書き方を書き出します。前の現場のやり方を勧めたいときは、まず現場の書き方で書いたうえで、理由と一緒に提案します。</p>
+<h3>設計の合意を取らずに実装を進める</h3>
+<p>Goは書き始めるのが速い言語です。そのため、サービス間の通信の形やデータの持ち方を相談せずに実装し、レビューで大きな手戻りになることがあります。リモート中心の現場ではとくに起きやすくなります。</p>
+<p><strong>対策</strong>：一定以上の変更は、短い設計メモを先に書いて合意を取ってから実装します。リモートで進めるときの工夫は<a href="/media/go-remote/">Goエンジニアのリモートの記事</a>でも触れています。</p>
+<h3>障害の場で、原因の切り分けより修正を急ぐ</h3>
+<p>障害対応では、すぐに直したくなります。しかし、原因を絞り込まないまま修正を入れると、別の不具合を生んだり、発注側への説明ができなかったりします。</p>
+<p><strong>対策</strong>：影響の範囲、暫定の対応、原因の見立て、恒久の対策を分けて報告します。判断に迷う修正は、発注側の担当者に選んでもらう形をとります。</p>
+<aside class="box box-view"><p class="box-label">エージェントベストの見解</p><p>案件紹介の現場で、フリーランスのGoエンジニアの方が契約の更新を見送られる理由として耳にしやすいのは、技術力の不足よりも「現場の書き方に合わせない」「相談なく大きく作り変える」といった進め方の食い違いです。Goの現場は少人数で、一人の振る舞いがチーム全体に響きやすいためです。最初の数週間は、現場の決まりを覚えることを優先するのをおすすめします。</p></aside>
+<h2 id="s3">技術でのつまずき</h2>
+<h3>goroutineの後始末を忘れ、本番で問題が出る</h3>
+<p>並行処理は、手元のテストでは問題が見えにくく、本番の負荷の下で初めて表に出ることがあります。終わらないgoroutineがたまってメモリが増え続ける、contextのキャンセルが伝わらず処理が止まらない、共有したデータの競合で値が壊れる、といった場面です。</p>
+<p><strong>対策</strong>：goroutineを起こすときは、誰がいつ止めるのかを先に決めます。contextを最後まで渡す、競合の検出を有効にしてテストする、負荷をかけた試験で増え方を見る、といった確認を習慣にします。並行処理の考え方は<a href="/media/go-skills/">Goエンジニアに求められるスキル</a>で整理しています。</p>
+<h3>版の更新を後回しにする</h3>
+<p>Goの公式のリリース履歴では、各メジャーリリースは、2つ新しいメジャーリリースが出るまでサポートされる方針が示されています。2026年10月時点では、Go 1.27（2026年8月19日リリース）とGo 1.26（2026年2月10日リリース）がサポート対象です。新しい版がおおむね半年ごとに出るため、更新を後回しにすると、気づいたときにはサポートの外の版で動いていることがあります。</p>
+<p><strong>対策</strong>：参画した現場で使っている版と、依存するモジュールの更新の状況を早めに確かめます。更新を自分の仕事として提案し、テストとCIで確かめる流れを回すと、運用まで担える人として評価されやすくなります。</p>
+<h3>依存するモジュールを気軽に増やす</h3>
+<p>便利なライブラリを次々に加えると、更新や脆弱性への対応の手間が増え、後から入る人が読みにくくなります。標準ライブラリを重んじる現場では、とくに嫌われやすい動きです。</p>
+<p><strong>対策</strong>：新しい依存を加えるときは、標準ライブラリで足りないか、保守が続いているかを確かめ、理由をレビューで説明します。</p>
+<h2 id="s4">お金でのつまずき</h2>
+<h3>障害やリリースで稼働が精算幅を超える</h3>
+<p>障害対応や大きなリリースの前後には稼働が延びやすく、精算幅を大きく超えることがあります。超えた分の扱いを決めていないと、報酬に反映されないまま負担だけが増えます。</p>
+<p><strong>対策</strong>：稼働を日々記録し、精算幅を超えそうな段階で窓口に伝えます。精算の仕組みは<a href="/media/seisan-haba/">精算幅の記事</a>で解説しています。</p>
+<h3>置き換えや立ち上げの区切りで契約が終わる</h3>
+<p>置き換えが終わった、基盤が稼働した、といった節目で契約が更新されないことがあります。フリーランス法では、6か月以上続く業務委託を解除したり更新しなかったりする場合、発注側は少なくとも30日前までに予告することになっています（2026年10月時点、公正取引委員会の案内による）。</p>
+<p><strong>対策</strong>：契約期間と開発の山の区切りを並べて見ておき、更新の見込みを早めに確かめます。契約期間の考え方は<a href="/media/keiyaku-period/">契約期間の記事</a>をご覧ください。</p>
+<h3>学ぶための費用と時間を見込んでいない</h3>
+<p>Goの周辺は、クラウド、コンテナ、監視の道具など、手元で試すのに費用がかかるものが多くあります。案件に追われて学ぶ時間も取れないと、次の案件で選べる幅が狭まります。</p>
+<p><strong>対策</strong>：検証用の環境の費用を経費として記録し、学ぶ時間を月の予定に組み込んでおきます。</p>
+<aside class="box box-caution"><p class="box-label">注意</p><p>障害対応が続く案件では、深夜の呼び出しで睡眠が削られる時期があります。稼働の記録がないと、精算の相談も体調の管理も難しくなります。<a href="/media/taichou-kanri/">体調管理の記事</a>も参考に、待機の上限を自分で決めておいてください。</p></aside>
+<aside class="box box-view"><p class="box-label">エージェントベストの見解</p><p>当社では、契約で業務範囲・報酬・支払期日・契約期間を個別契約に書いてお渡ししています。障害対応の待機の有無や、インフラの作業をどこまで含むかなど、参画前に気になる点はご質問いただければ確認します。</p></aside>
+<aside class="box box-point"><p class="box-label">ポイント</p><ul><li>契約では、障害対応の待機と、インフラの作業をどこまで含むかを参画前に確かめる</li><li>現場では、チームの書き方を先に覚え、大きな変更は設計メモで合意を取ってから進める</li><li>技術では、goroutineの止め方、版の更新、依存の増やし方に気を配る</li><li>稼働は日々記録し、精算幅を超えそうなら早めに伝える</li></ul></aside>
+<h2 id="s5">よくある質問</h2>
+<h3>レビューで指摘が多く、現場に合っていない気がします。どうすればよいですか？</h3>
+<p>指摘の内容を分類し、現場の書き方の違いによるものか、Goの考え方の理解によるものかを分けて見てください。前者はチームの決まりを書き出して合わせれば減ります。後者は、指摘された箇所の理由をレビュアーに尋ね、同じ指摘を受けないよう手元にまとめておくと、数週間で落ち着くことが多くあります。</p>
+<h3>契約にない夜間の障害対応を頼まれました。断ってもよいですか？</h3>
+<p>契約にない業務は、引き受ける義務があるとは限りません。ただ、サービスの事情もあるため、まずは対応できる範囲と条件を窓口に伝え、続けるなら契約に書き加える形で話を進めるのが現実的です。判断に迷う場合は、紹介を受けたエージェントに確かめてください。</p>
+<h3>本番で自分が書いたコードが原因の障害が起きたら、損害賠償を求められますか？</h3>
+<p>準委任契約では、成果そのものではなく、専門家として通常求められる注意を払って業務を行うことが約束の中身です。ただし、契約の内容や落ち度の有無によって判断が変わることがあります。不安がある場合は、契約書の損害賠償の条項を読み、弁護士などの専門家にご相談ください。</p>
+  </div>
+  <section class="sources"><h2>参考にした公的情報・資料</h2><ul><li><a href="https://go.dev/doc/devel/release" target="_blank" rel="noopener nofollow">Release History（The Go Programming Language）</a></li><li><a href="https://www.jftc.go.jp/freelancelaw_2026/" target="_blank" rel="noopener nofollow">2026年 フリーランス法特設サイト（公正取引委員会）</a></li></ul>
+  <p class="note">記事の内容は公開日時点の情報にもとづきます。制度や税率は変わることがあるため、手続きの前に必ず各機関の最新情報をご確認ください。</p></section>
+  <div class="cta-band">
+  <h2>条件に合う案件だけ、知りたい方へ</h2>
+  <p>ご登録は無料です。条件に合う案件だけを、ご本人の了承を得てからご提案します。</p>
+  <div class="cta-row">
+    <a class="btn btn-primary" href="https://airtable.com/appYkc36EvioYoL1A/pag6CZC4uJmxUcrXT/form" target="_blank" rel="noopener">無料で登録する</a>
+    <a class="btn btn-ghost" href="/jobs/">案件を探す</a>
+  </div>
+</div>
+  <section class="related"><h2>あわせて読みたい</h2><div class="grid g2"><a class="card art-card" href="/media/go-how-to/">
+  <span class="art-hub">バックエンド開発</span>
+  <h3>Goエンジニアがフリーランスになるには｜必要な経験と独立までの進め方</h3>
+  <p>Goでフリーランスになるには、Goで書いたAPIやサービスを本番で運用した経験と、コンテナ・クラウドなど周辺の基盤を扱えることが求められます。他言語から移る人の準備、面談で問われる設計の論点、独立前後の手続きを解説します。</p>
+</a>
+<a class="card art-card" href="/media/go-first-month/">
+  <span class="art-hub">バックエンド開発</span>
+  <h3>Goエンジニアの参画初月にやること｜現場で信頼される進め方</h3>
+  <p>Goエンジニアの参画初月は、現場の書き方とレビューの決まりを覚え、小さな変更を本番まで一度通し、月末に運用上の気がかりを整理して伝えるのが基本です。週ごとの進め方と、案件の型による重心の違い、避けたい動きを整理します。</p>
+</a>
+<a class="card art-card" href="/media/go-skills/">
+  <span class="art-hub">バックエンド開発</span>
+  <h3>Goエンジニアのフリーランス案件で求められるスキルと経験</h3>
+  <p>Goのフリーランス案件では、エラー処理やcontextなどGoの考え方に沿った書き方、並行処理を安全に設計する力、gRPCやコンテナを含むサービスの運用経験が見られます。案件で求められやすいスキルと、資格より重視される経験の示し方を解説します。</p>
+</a>
+<a class="card art-card" href="/media/go-rate/">
+  <span class="art-hub">バックエンド開発</span>
+  <h3>Goエンジニアのフリーランス案件｜報酬の決まり方と単価を上げる考え方</h3>
+  <p>Goエンジニアの報酬は、Goで何を作るか（API・基盤・ツール）、本番運用や障害対応への責任、分散システムやクラウドの経験、稼働条件、商流で決まり、案件ごとに大きく変わります。上がる場面・下がる場面と交渉材料を解説します。</p>
+</a>
+<a class="card art-card" href="/media/go-remote/">
+  <span class="art-hub">バックエンド開発</span>
+  <h3>Goエンジニアのフリーランスはリモートで働ける？案件の傾向と探し方</h3>
+  <p>Goエンジニアは、Webサービスのバックエンドやマイクロサービス、基盤まわりの開発でリモートの案件があります。一方で、金融・決済などの閉じた環境や、障害対応の待機が条件になることも。案件の傾向と確認点を解説します。</p>
+</a>
+<a class="card art-card" href="/media/scope-change/">
+  <span class="art-hub">業務委託契約の基礎</span>
+  <h3>作業範囲が広がったときの契約の扱い｜追加の報酬と変更の残し方</h3>
+  <p>契約で決めた業務範囲を超える作業は、原則として当初の報酬に含まれません。追加するなら、作業内容・報酬・期限を決め直して書面やメールで合意します。フリーランス新法の不当な給付内容の変更の考え方と、変更を合意する手順を整理します。</p>
+</a></div></section>
+</main>
+<footer class="site-foot">
+  <div class="wrap">
+    <strong>エージェントベストジョブ フリーランス</strong>
+    <div class="foot-links">
+      <a href="/">トップ</a>
+      <a href="/jobs/">案件を探す</a>
+      <a href="/media/">お役立ち記事</a>
+      <a href="https://airtable.com/appYkc36EvioYoL1A/pag6CZC4uJmxUcrXT/form" target="_blank" rel="noopener">ご登録（スキルシート・ご希望の条件）</a>
+      <a href="https://line.me/R/ti/p/@697nxhbt?oat_content=url&ts=08302134" target="_blank" rel="noopener" data-line-cta="footer">LINEで相談する</a>
+      <a href="/privacy.html">個人情報の取り扱い</a>
+      <a href="https://www.agent-best.net/company/">運営会社</a>
+    </div>
+    <div class="foot-links">
+      <a href="https://jobs.agent-best.net/">正社員の求人を探す（エージェントベストジョブ）</a>
+      <a href="https://skill.agent-best.net/">エージェントベストジョブ手に職</a>
+      <a href="https://www.agent-best.net/">エージェントベスト</a>
+    </div>
+    <p>運営：株式会社エージェントベスト（有料職業紹介事業 許可番号 13-ユ-316964）<br>〒106-0032 東京都港区六本木4-8-7 嶋田ビル5階</p>
+  </div>
+</footer>
+<script src="/assets/fav.js" defer></script>
+</body>
+</html>

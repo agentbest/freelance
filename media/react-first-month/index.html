@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Reactエンジニアの参画初月にやること｜現場で信頼される進め方｜エージェントベストジョブ フリーランス</title>
+<meta name="description" content="Reactエンジニアの参画初月は、開発環境と規約をつかみ、小さな変更を早く出してレビューの流れに乗り、月末に共通部品や画面の担当を任される状態をつくるのが目標です。週ごとの進め方、案件の型による重心の違い、避けたい動きを整理します。">
+<link rel="canonical" href="https://freelance.agent-best.net/media/react-first-month/">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="エージェントベストジョブ フリーランス">
+<meta property="og:title" content="Reactエンジニアの参画初月にやること｜現場で信頼される進め方｜エージェントベストジョブ フリーランス">
+<meta property="og:description" content="Reactエンジニアの参画初月は、開発環境と規約をつかみ、小さな変更を早く出してレビューの流れに乗り、月末に共通部品や画面の担当を任される状態をつくるのが目標です。週ごとの進め方、案件の型による重心の違い、避けたい動きを整理します。">
+<meta property="og:url" content="https://freelance.agent-best.net/media/react-first-month/">
+<meta property="og:image" content="https://freelance.agent-best.net/assets/ogp.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://freelance.agent-best.net/assets/ogp.png">
+<meta name="theme-color" content="#1E3A5F">
+<link rel="icon" href="/assets/favicon.ico">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="stylesheet" href="/assets/site.css">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1XXMP8Y1B4"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-1XXMP8Y1B4');
+document.addEventListener('click',e=>{const a=e.target.closest('[data-line-cta]');if(a)gtag('event','line_add_friend',{placement:a.dataset.lineCta,page_path:location.pathname});});</script>
+<script type="application/ld+json">[{"@context":"https://schema.org","@type":"Article","headline":"Reactエンジニアの参画初月にやること｜現場で信頼される進め方","description":"Reactエンジニアの参画初月は、開発環境と規約をつかみ、小さな変更を早く出してレビューの流れに乗り、月末に共通部品や画面の担当を任される状態をつくるのが目標です。週ごとの進め方、案件の型による重心の違い、避けたい動きを整理します。","datePublished":"2026-11-04","dateModified":"2026-11-04","author":{"@type":"Organization","name":"株式会社エージェントベスト","url":"https://www.agent-best.net/"},"publisher":{"@type":"Organization","name":"株式会社エージェントベスト","logo":{"@type":"ImageObject","url":"https://freelance.agent-best.net/assets/logo.png"}},"mainEntityOfPage":"https://freelance.agent-best.net/media/react-first-month/"},{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"トップ","item":"https://freelance.agent-best.net/"},{"@type":"ListItem","position":2,"name":"お役立ち記事","item":"https://freelance.agent-best.net/media/"},{"@type":"ListItem","position":3,"name":"フロントエンド開発","item":"https://freelance.agent-best.net/media/hub/frontend/"},{"@type":"ListItem","position":4,"name":"Reactエンジニアの参画初月にやること｜現場で信頼される進め方"}]},{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"初日から機能の開発を任されました。何に気をつければよいですか？","acceptedAnswer":{"@type":"Answer","text":"既存の似た画面を一つ選び、その書き方をなぞるところから始めると、規約から外れにくくなります。分からない点は一定の時間で区切ってまとめて質問し、途中の段階でもプルリクエストを下書きとして出して、方向が合っているかを早めに見てもらうと手戻りが減ります。"}},{"@type":"Question","name":"現場のコードの書き方が古く、直したくなります。どうすればよいですか？","acceptedAnswer":{"@type":"Answer","text":"初月は合わせることを優先し、気づいた点はメモにためておきます。月末に、影響の範囲と直し方の案、直したときに良くなる点を添えて提案すると、受け入れられやすくなります。決めるのはチームだという線を守ることが、長く信頼される近道です。"}},{"@type":"Question","name":"1か月たっても全体の構成がつかめません。どうすればよいですか？","acceptedAnswer":{"@type":"Answer","text":"大きなアプリでは、1か月で全体をつかみきれないこともあります。その場合は、自分が担当する範囲の周りから構成メモを広げ、分からない部分をテックリードに短く説明してもらう時間をお願いしてみてください。分からない点を隠したまま進めるより、範囲を区切って伝えるほうが信頼されます。"}}]}]</script>
+</head>
+<body>
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="/"><img src="/assets/mark.png" alt="" width="28" height="28"><span>エージェントベストジョブ フリーランス<small>フリーランスのエンジニア・コンサル向け案件紹介</small></span></a>
+    <nav class="head-nav" aria-label="メニュー">
+      <a class="link" href="/jobs/">案件を探す</a>
+      <a class="link" href="/media/">お役立ち記事</a>
+      <a class="link keep" href="/mypage/" aria-label="気になる案件">☆ 気になる<span class="fav-count" data-fav-count hidden></span></a>
+      <a class="btn btn-primary btn-sm" href="https://airtable.com/appYkc36EvioYoL1A/pag6CZC4uJmxUcrXT/form" target="_blank" rel="noopener">無料で登録</a>
+    </nav>
+  </div>
+</header>
+<main class="wrap narrow article">
+  <p class="crumbs"><a href="/">トップ</a> › <a href="/media/">お役立ち記事</a> › <a href="/media/hub/frontend/">フロントエンド開発</a></p>
+  <a class="art-hub" href="/media/hub/frontend/">フロントエンド開発</a>
+  <h1 class="art-title">Reactエンジニアの参画初月にやること｜現場で信頼される進め方</h1>
+  <p class="note">公開 2026-11-04　監修：株式会社エージェントベスト</p>
+  <nav class="toc" aria-label="目次"><strong>目次</strong><ol><li><a href="#s1">初月のゴールを3つに分ける</a></li><li><a href="#s2">1週目：動かして、読んで、構成をつかむ</a></li><li><a href="#s3">2週目：小さな変更を出し、レビューの流れに乗る</a></li><li><a href="#s4">3〜4週目：まとまった担当を仕上げる</a></li><li><a href="#s5">案件の型によって初月の重心は変わる</a></li><li><a href="#s6">初月に避けたい動き</a></li><li><a href="#s7">1か月の終わりに振り返ること</a></li><li><a href="#s8">よくある質問</a></li></ol></nav>
+  <div class="art-body">
+<p>Reactエンジニアの参画初月は、<strong>開発環境と規約をつかみ、小さな変更を早く出してレビューの流れに乗り、月末には画面や共通部品のまとまった担当を任される状態をつくる</strong>ところまでを目標にします。最初の1か月で求められるのは、大きな機能を作ることより、<strong>この人ならこの現場の書き方で任せられる</strong>と発注側が判断できる材料を示すことです。</p>
+<p>参画前の契約や環境の準備は<a href="/media/sankaku-junbi/">参画が決まってから開始日までにやること</a>、職種を問わない最初の1週間の進め方は<a href="/media/sankaku-shoki/">参画初日から最初の1週間でやること</a>で解説しています。この記事では、Reactの現場ならではの初月の動き方に絞ります。</p>
+<h2 id="s1">初月のゴールを3つに分ける</h2>
+<div class="table-wrap"><table><thead><tr><th>ゴール</th><th>中身</th><th>月末に手元にあるもの</th></tr></thead><tbody><tr><td>現場の書き方をつかむ</td><td>版、フレームワーク、ディレクトリ構成、状態管理、規約、テストの流れを把握する</td><td>自分用の構成メモと、迷ったときの相談先</td></tr><tr><td>流れに乗る</td><td>小さな変更を出し、レビューを受けて取り込まれる流れを一巡させる</td><td>取り込まれた変更がいくつかある状態</td></tr><tr><td>任される範囲を広げる</td><td>一つの画面や共通部品を担当として仕上げる</td><td>担当した画面と、次に任されたい範囲の相談</td></tr></tbody></table></div>
+<p>この3つを、1週目、2週目、3〜4週目の順に重心を移しながら進めます。</p>
+<h2 id="s2">1週目：動かして、読んで、構成をつかむ</h2>
+<h3>手元で動かすところまでを最初の目標にする</h3>
+<p>初日から数日は、開発環境を整えてアプリを手元で動かすことが最優先です。リポジトリの手順書どおりに進めて詰まった点は、そのままメモしておきます。手順書の古い部分を見つけたら、直す提案が最初の小さな貢献になります。</p>
+<h3>コードを読む順番</h3>
+<p>Reactの現場では、次の順で読むと全体像をつかみやすくなります。</p>
+<ol><li><strong>package.json</strong>：Reactとフレームワークの版、状態管理、スタイル、テストの道具を確かめる</li><li><strong>ディレクトリ構成とルーティング</strong>：画面がどこにあり、URLとどう結び付いているか</li><li><strong>共通部品</strong>：ボタン、入力欄、表、モーダルなど、すでにある部品と使い方</li><li><strong>データの取り方</strong>：APIを呼ぶ場所、読み込み中やエラーの扱い、キャッシュの仕組み</li><li><strong>規約とレビューの決まり</strong>：命名、ファイルの分け方、プルリクエストの書き方、レビューの基準</li></ol>
+<p>読みながら、「この現場では状態をどこに置くか」「サーバー側での描画をどこで使っているか」を自分の言葉で一枚にまとめておくと、2週目以降の判断が速くなります。</p>
+<h3>誰に何を聞けばよいかを押さえる</h3>
+<p>テックリード、デザイナー、バックエンドの担当、企画の窓口のうち、仕様を決める人、デザインを決める人、レビューをする人が誰かを確かめます。チャットのどの場所で何を相談するかも、早めに知っておくと動きやすくなります。</p>
+<h2 id="s3">2週目：小さな変更を出し、レビューの流れに乗る</h2>
+<h3>最初の変更は小さく速く</h3>
+<p>2週目には、文言の修正、小さな表示の不具合、共通部品の軽い改善など、範囲の小さな課題を担当させてもらいます。目的は成果の大きさではなく、<strong>ブランチの切り方、テスト、プルリクエスト、レビュー、取り込み、リリースまでの流れを一巡させること</strong>です。一度通すと、現場の決まりの多くが見えてきます。</p>
+<h3>レビューの指摘から規約を学ぶ</h3>
+<p>最初の数回は、規約と違う書き方を指摘されることがあります。指摘は、その現場の書き方を学ぶ材料です。同じ指摘を二度受けないよう、メモに足していきます。自分の好みと違う決まりがあっても、この時期は合わせることを優先します。</p>
+<h3>画面の状態をそろえて確かめる</h3>
+<p>小さな画面でも、正常時、データがないとき、読み込み中、エラーのときの4つの見え方を確かめてから出します。デザインに描かれていない状態は、作る前にデザイナーや窓口に確かめます。この習慣があると、レビューする側の安心につながります。</p>
+<aside class="box box-view"><p class="box-label">エージェントベストの見解</p><p>案件紹介の現場で、参画後の評価が高いReactエンジニアの方に共通しているのは、最初の2週間で「小さく出して、指摘を素直に取り込む」流れをつくっていることです。大きな機能を抱えたまま長くプルリクエストを出さないと、進み具合も書き方も周りから見えず、心配されやすくなります。初月は、量より見える形で出す回数を優先することをおすすめします。</p></aside>
+<h2 id="s4">3〜4週目：まとまった担当を仕上げる</h2>
+<h3>一つの画面か部品を担当として仕上げる</h3>
+<p>流れに乗れたら、一つの画面や共通部品を担当として引き受けます。仕様の確認、デザインとのすり合わせ、APIの担当との調整、テストまでを自分で回すことで、「任せられる範囲」が具体的に伝わります。</p>
+<h3>気づいた改善点は提案として出す</h3>
+<p>コードを読んでいるうちに、重い描画、使われていない部品、型のゆるい箇所、テストのない部分などに気づくはずです。この時期には、すぐ直すのではなく、影響の範囲と直し方の案を添えて、課題として提案します。決めるのはチームに任せます。</p>
+<h3>次に任されたい範囲を相談する</h3>
+<p>月末には、テックリードや窓口と短く話す時間をもらい、初月にやったことと、次に任されたい範囲を伝えます。共通部品の整理、テストの拡充、表示の速さの改善など、具体的に挙げると話が進みます。</p>
+<h2 id="s5">案件の型によって初月の重心は変わる</h2>
+<h3>自社のWebサービスの開発</h3>
+<p>リリースの間隔が短い現場では、2週目までに本番まで出す流れを経験できるかが重要です。機能の開発と並行して、計測やエラーの監視の仕組みも早めに見ておくと、障害のときに慌てずに済みます。</p>
+<h3>業務システム・管理画面の開発</h3>
+<p>入力の多い画面、権限による出し分け、表の扱いが中心になります。コードより先に業務の流れを理解することが、手戻りを減らす近道です。仕様書や画面の一覧があれば、1週目のうちに目を通します。</p>
+<h3>古い画面からReactへの移行</h3>
+<p>移行の案件では、新しいコードと古いコードが混在しています。初月は、移行の方針と、どの画面から移すかの順番、古い画面との共存のさせ方をつかむことに重心を置きます。前任者から引き継ぐ場合の進め方は<a href="/media/hikitsugi/">引き継ぎの記事</a>をご覧ください。</p>
+<h3>リモート中心の現場</h3>
+<p>顔を合わせる機会が少ないため、進み具合や詰まっていることを、自分からチャットで短く書く回数を増やします。リモートの案件での働き方は<a href="/media/react-remote/">Reactエンジニアのリモートの記事</a>で扱っています。</p>
+<h2 id="s6">初月に避けたい動き</h2>
+<div class="table-wrap"><table><thead><tr><th>避けたい動き</th><th>起きやすいこと</th><th>代わりにすること</th></tr></thead><tbody><tr><td>自分の慣れた書き方を持ち込む</td><td>レビューの指摘が続き、チームの書き方が混ざる</td><td>まず規約に合わせ、変えたい点は提案にとどめる</td></tr><tr><td>大きなリファクタリングを始める</td><td>差分が大きく、レビューも影響の確認も重くなる</td><td>気づいた点は課題として出し、決めてもらう</td></tr><tr><td>新しいライブラリを相談なく足す</td><td>規約や承認の手続きとぶつかる</td><td>追加の手続きを確かめ、理由を添えて相談する</td></tr><tr><td>分からないまま長く抱え込む</td><td>進み具合が見えず、心配される</td><td>一定時間で区切って質問する</td></tr><tr><td>範囲外の依頼をすべて引き受ける</td><td>本来の担当が遅れ、稼働も膨らむ</td><td>担う範囲を確かめ、外れる依頼は窓口と話す</td></tr></tbody></table></div>
+<p>範囲外の依頼が増えてきたときの扱いは<a href="/media/scope-change/">作業範囲が広がったときの記事</a>、Reactの現場で起きやすいつまずきは<a href="/media/react-tsumazuki/">Reactエンジニアのフリーランスがつまずきやすい点と対策</a>で整理しています。</p>
+<aside class="box box-caution"><p class="box-label">注意</p><p>立ち上がりを急ぐあまり、勤務時間の外で長く作業を続けると、稼働の記録と実態がずれていきます。初月から稼働時間を日々記録しておくと、精算の相談も自分の体調の管理もしやすくなります。精算の仕組みは<a href="/media/seisan-haba/">精算幅の記事</a>をご覧ください。</p></aside>
+<h2 id="s7">1か月の終わりに振り返ること</h2>
+<p>1か月が過ぎたら、次の点を自分で振り返ります。</p>
+<ul><li>開発環境と規約を把握し、迷わず書ける状態になったか</li><li>小さな変更を出し、取り込まれる流れを何度か通せたか</li><li>一つの画面や部品を担当として仕上げられたか</li><li>仕様を決める人、デザインを決める人、レビューをする人が分かっているか</li><li>契約で決めた業務の範囲と、実際に担っている仕事がずれていないか</li><li>稼働時間の記録が残っているか</li></ul>
+<p>ずれている点があれば、2か月目の早い段階で窓口と話しておきます。求められるスキルの全体像は<a href="/media/react-skills/">Reactエンジニアに求められるスキル</a>もご覧ください。</p>
+<aside class="box box-view"><p class="box-label">エージェントベストの見解</p><p>当社では、契約で業務範囲・報酬・支払期日・契約期間を個別契約に書いてお渡ししています。参画して1か月の間に、聞いていた役割や技術構成と実際の仕事に違いを感じたときは、早めにご相談ください。契約の内容に関わる点は、ご質問いただければ確認します。</p></aside>
+<aside class="box box-point"><p class="box-label">ポイント</p><ul><li>Reactの初月は、現場の書き方をつかむ、流れに乗る、任される範囲を広げる、の3つを順に進める</li><li>1週目は手元で動かして構成を読み、2週目に小さな変更でレビューの流れを一巡させる</li><li>3〜4週目に一つの画面か部品を担当として仕上げ、気づいた改善点は提案として出す</li><li>慣れた書き方の持ち込み、大きなリファクタリング、相談なしのライブラリ追加は避ける</li></ul></aside>
+<h2 id="s8">よくある質問</h2>
+<h3>初日から機能の開発を任されました。何に気をつければよいですか？</h3>
+<p>既存の似た画面を一つ選び、その書き方をなぞるところから始めると、規約から外れにくくなります。分からない点は一定の時間で区切ってまとめて質問し、途中の段階でもプルリクエストを下書きとして出して、方向が合っているかを早めに見てもらうと手戻りが減ります。</p>
+<h3>現場のコードの書き方が古く、直したくなります。どうすればよいですか？</h3>
+<p>初月は合わせることを優先し、気づいた点はメモにためておきます。月末に、影響の範囲と直し方の案、直したときに良くなる点を添えて提案すると、受け入れられやすくなります。決めるのはチームだという線を守ることが、長く信頼される近道です。</p>
+<h3>1か月たっても全体の構成がつかめません。どうすればよいですか？</h3>
+<p>大きなアプリでは、1か月で全体をつかみきれないこともあります。その場合は、自分が担当する範囲の周りから構成メモを広げ、分からない部分をテックリードに短く説明してもらう時間をお願いしてみてください。分からない点を隠したまま進めるより、範囲を区切って伝えるほうが信頼されます。</p>
+  </div>
+  
+  <div class="cta-band">
+  <h2>条件に合う案件だけ、知りたい方へ</h2>
+  <p>ご登録は無料です。条件に合う案件だけを、ご本人の了承を得てからご提案します。</p>
+  <div class="cta-row">
+    <a class="btn btn-primary" href="https://airtable.com/appYkc36EvioYoL1A/pag6CZC4uJmxUcrXT/form" target="_blank" rel="noopener">無料で登録する</a>
+    <a class="btn btn-ghost" href="/jobs/">案件を探す</a>
+  </div>
+</div>
+  <section class="related"><h2>あわせて読みたい</h2><div class="grid g2"><a class="card art-card" href="/media/sankaku-junbi/">
+  <span class="art-hub">案件の探し方</span>
+  <h3>参画が決まってから開始日までにやること｜契約・事業の手続き・作業環境の準備</h3>
+  <p>参画が決まったら、開始日までに「契約の書面の確認」「他の選考の整理」「請求と事業の手続き」「作業環境」「業務の予習」の5つを進めます。時期ごとのやることと、開始前の作業を頼まれたときの注意点を整理します。</p>
+</a>
+<a class="card art-card" href="/media/sankaku-shoki/">
+  <span class="art-hub">案件の探し方</span>
+  <h3>参画初日から最初の1週間でやること｜業務委託で立ち上がりを早める進め方</h3>
+  <p>参画して最初の1週間は、成果を急ぐより「任された範囲・依頼の窓口・報告の形」を確かめ、小さな仕事を一つ終えることを優先します。初日から5日目までの進め方と、つまずきやすい点を整理します。</p>
+</a>
+<a class="card art-card" href="/media/hikitsugi/">
+  <span class="art-hub">案件の探し方</span>
+  <h3>契約終了時の引き継ぎの進め方｜業務の棚卸しから資料・並走・返却まで</h3>
+  <p>契約終了時の引き継ぎは、終了が決まった時点で「範囲・相手・期限」を窓口と決め、業務の棚卸し、資料作り、後任との並走、権限と資料の返却の順に進めます。後任が決まらないときや、終了後の問い合わせへの対応も整理します。</p>
+</a>
+<a class="card art-card" href="/media/react-tsumazuki/">
+  <span class="art-hub">フロントエンド開発</span>
+  <h3>Reactエンジニアのフリーランスがつまずきやすい点と対策</h3>
+  <p>フリーランスのReactエンジニアがつまずきやすいのは、デザイン修正で作業が膨らむこと、既存の規約とのずれ、版やフレームワークの違い、表示の速さや不具合の責任の線引き、リリース前の稼働超過です。契約・現場・技術・お金の順に対策を整理します。</p>
+</a>
+<a class="card art-card" href="/media/react-skills/">
+  <span class="art-hub">フロントエンド開発</span>
+  <h3>Reactエンジニアのフリーランス案件で求められるスキルと経験</h3>
+  <p>Reactのフリーランス案件では、TypeScriptでのコンポーネント設計、サーバーのデータと画面の状態を分けた状態管理、Next.jsなどのフレームワーク、テスト・性能・アクセシビリティの知識が見られます。案件で求められやすいスキルと経験の示し方を解説します。</p>
+</a>
+<a class="card art-card" href="/media/react-remote/">
+  <span class="art-hub">フロントエンド開発</span>
+  <h3>Reactエンジニアのフリーランスはリモートで働ける？案件の傾向と探し方</h3>
+  <p>Reactエンジニアは、Webサービスの開発を中心にリモートで働ける案件があります。ただし、フルリモートか一部出社か、稼働時間の決まりは案件ごとに違います。リモート案件の傾向、求められる経験、探し方と確認点を解説します。</p>
+</a></div></section>
+</main>
+<footer class="site-foot">
+  <div class="wrap">
+    <strong>エージェントベストジョブ フリーランス</strong>
+    <div class="foot-links">
+      <a href="/">トップ</a>
+      <a href="/jobs/">案件を探す</a>
+      <a href="/media/">お役立ち記事</a>
+      <a href="https://airtable.com/appYkc36EvioYoL1A/pag6CZC4uJmxUcrXT/form" target="_blank" rel="noopener">ご登録（スキルシート・ご希望の条件）</a>
+      <a href="https://line.me/R/ti/p/@697nxhbt?oat_content=url&ts=08302134" target="_blank" rel="noopener" data-line-cta="footer">LINEで相談する</a>
+      <a href="/privacy.html">個人情報の取り扱い</a>
+      <a href="https://www.agent-best.net/company/">運営会社</a>
+    </div>
+    <div class="foot-links">
+      <a href="https://jobs.agent-best.net/">正社員の求人を探す（エージェントベストジョブ）</a>
+      <a href="https://skill.agent-best.net/">エージェントベストジョブ手に職</a>
+      <a href="https://www.agent-best.net/">エージェントベスト</a>
+    </div>
+    <p>運営：株式会社エージェントベスト（有料職業紹介事業 許可番号 13-ユ-316964）<br>〒106-0032 東京都港区六本木4-8-7 嶋田ビル5階</p>
+  </div>
+</footer>
+<script src="/assets/fav.js" defer></script>
+</body>
+</html>

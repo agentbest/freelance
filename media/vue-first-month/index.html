@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Vue.jsエンジニアの参画初月にやること｜現場で信頼される進め方｜エージェントベストジョブ フリーランス</title>
+<meta name="description" content="Vue.jsエンジニアの参画初月は、開発環境を立ち上げて現場の書き方の決まりをつかみ、小さな修正で流れを一周し、月末には画面を一つ任される状態を目指すのが基本です。週ごとの進め方と避けたい動きを整理します。">
+<link rel="canonical" href="https://freelance.agent-best.net/media/vue-first-month/">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="エージェントベストジョブ フリーランス">
+<meta property="og:title" content="Vue.jsエンジニアの参画初月にやること｜現場で信頼される進め方｜エージェントベストジョブ フリーランス">
+<meta property="og:description" content="Vue.jsエンジニアの参画初月は、開発環境を立ち上げて現場の書き方の決まりをつかみ、小さな修正で流れを一周し、月末には画面を一つ任される状態を目指すのが基本です。週ごとの進め方と避けたい動きを整理します。">
+<meta property="og:url" content="https://freelance.agent-best.net/media/vue-first-month/">
+<meta property="og:image" content="https://freelance.agent-best.net/assets/ogp.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://freelance.agent-best.net/assets/ogp.png">
+<meta name="theme-color" content="#1E3A5F">
+<link rel="icon" href="/assets/favicon.ico">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="stylesheet" href="/assets/site.css">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1XXMP8Y1B4"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-1XXMP8Y1B4');
+document.addEventListener('click',e=>{const a=e.target.closest('[data-line-cta]');if(a)gtag('event','line_add_friend',{placement:a.dataset.lineCta,page_path:location.pathname});});</script>
+<script type="application/ld+json">[{"@context":"https://schema.org","@type":"Article","headline":"Vue.jsエンジニアの参画初月にやること｜現場で信頼される進め方","description":"Vue.jsエンジニアの参画初月は、開発環境を立ち上げて現場の書き方の決まりをつかみ、小さな修正で流れを一周し、月末には画面を一つ任される状態を目指すのが基本です。週ごとの進め方と避けたい動きを整理します。","datePublished":"2026-11-04","dateModified":"2026-11-04","author":{"@type":"Organization","name":"株式会社エージェントベスト","url":"https://www.agent-best.net/"},"publisher":{"@type":"Organization","name":"株式会社エージェントベスト","logo":{"@type":"ImageObject","url":"https://freelance.agent-best.net/assets/logo.png"}},"mainEntityOfPage":"https://freelance.agent-best.net/media/vue-first-month/"},{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"トップ","item":"https://freelance.agent-best.net/"},{"@type":"ListItem","position":2,"name":"お役立ち記事","item":"https://freelance.agent-best.net/media/"},{"@type":"ListItem","position":3,"name":"フロントエンド開発","item":"https://freelance.agent-best.net/media/hub/frontend/"},{"@type":"ListItem","position":4,"name":"Vue.jsエンジニアの参画初月にやること｜現場で信頼される進め方"}]},{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"開発環境の構築に数日かかりそうです。問題ありませんか？","acceptedAnswer":{"@type":"Answer","text":"古い版のパッケージが残る現場などでは、環境の構築に時間がかかることは珍しくありません。どこで止まっているかを具体的に伝え、早めに助けを求めるほうが、黙って抱え込むより信頼されます。つまずいた点と直し方を手順書に足す提案をすると、次に参画する人の役にも立ちます。"}},{"@type":"Question","name":"現場のコードの書き方が古く、直したくなります。どうすればよいですか？","acceptedAnswer":{"@type":"Answer","text":"初月は、決まりに合わせて書くことを優先し、直したい点は一覧にためておきます。月末の振り返りで、直すと何が良くなるか、どれくらい手間がかかるかを添えて相談すると、発注側も判断しやすくなります。決めるのは発注側だという線を守ってください。"}},{"@type":"Question","name":"初月から大きな画面を任されました。どう進めればよいですか？","acceptedAnswer":{"@type":"Answer","text":"着手の前に、コンポーネントの分け方と状態の置き場所を簡単にまとめてレビュー担当に見てもらい、方向が合っているかを確かめます。そのうえで、画面を小さな単位に分けてプルリクエストを出すと、大きな差し戻しを防げます。求められるスキルの全体像はVue.jsエンジニアに求められるスキルをご覧ください。"}}]}]</script>
+</head>
+<body>
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="/"><img src="/assets/mark.png" alt="" width="28" height="28"><span>エージェントベストジョブ フリーランス<small>フリーランスのエンジニア・コンサル向け案件紹介</small></span></a>
+    <nav class="head-nav" aria-label="メニュー">
+      <a class="link" href="/jobs/">案件を探す</a>
+      <a class="link" href="/media/">お役立ち記事</a>
+      <a class="link keep" href="/mypage/" aria-label="気になる案件">☆ 気になる<span class="fav-count" data-fav-count hidden></span></a>
+      <a class="btn btn-primary btn-sm" href="https://airtable.com/appYkc36EvioYoL1A/pag6CZC4uJmxUcrXT/form" target="_blank" rel="noopener">無料で登録</a>
+    </nav>
+  </div>
+</header>
+<main class="wrap narrow article">
+  <p class="crumbs"><a href="/">トップ</a> › <a href="/media/">お役立ち記事</a> › <a href="/media/hub/frontend/">フロントエンド開発</a></p>
+  <a class="art-hub" href="/media/hub/frontend/">フロントエンド開発</a>
+  <h1 class="art-title">Vue.jsエンジニアの参画初月にやること｜現場で信頼される進め方</h1>
+  <p class="note">公開 2026-11-04　監修：株式会社エージェントベスト</p>
+  <nav class="toc" aria-label="目次"><strong>目次</strong><ol><li><a href="#s1">初月のゴールを3つに分ける</a></li><li><a href="#s2">1週目：環境を立ち上げ、構成を読む</a></li><li><a href="#s3">2週目：小さな修正で流れを一周する</a></li><li><a href="#s4">3〜4週目：画面を一つ任される</a></li><li><a href="#s5">案件の型によって初月の重心は変わる</a></li><li><a href="#s6">初月に避けたい動き</a></li><li><a href="#s7">1か月の終わりに振り返ること</a></li><li><a href="#s8">よくある質問</a></li></ol></nav>
+  <div class="art-body">
+<p>Vue.jsエンジニアの参画初月は、<strong>開発環境を立ち上げて現場の書き方の決まりをつかみ、小さな修正で「実装からレビュー、反映まで」を一周し、月末には画面を一つ任される状態になる</strong>ところまでを目標にします。最初の1か月で求められるのは、大きな機能を作ることより、<strong>この人に画面を任せても現場の決まりから外れない</strong>と判断できる材料を示すことです。</p>
+<p>参画前の契約・環境の準備は<a href="/media/sankaku-junbi/">参画が決まってから開始日までにやること</a>、職種を問わない最初の1週間の進め方は<a href="/media/sankaku-shoki/">参画初日から最初の1週間でやること</a>で解説しています。この記事では、Vue.jsエンジニアならではの初月の動き方に絞ります。</p>
+<h2 id="s1">初月のゴールを3つに分ける</h2>
+<div class="table-wrap"><table><thead><tr><th>ゴール</th><th>中身</th><th>月末に手元にあるもの</th></tr></thead><tbody><tr><td>環境と構成をつかむ</td><td>版、ビルドの道具、ディレクトリの構成、状態管理の置き場所を知る</td><td>構成のメモ（使っている版・ライブラリ・決まり）</td></tr><tr><td>流れを一周する</td><td>小さな修正で、実装・レビュー・確認・反映を経験する</td><td>マージされた修正と、レビューで指摘された点の記録</td></tr><tr><td>画面を任される</td><td>一つの画面や機能を、仕様の確認から反映まで担う</td><td>担当した画面と、次の担当の候補</td></tr></tbody></table></div>
+<p>この3つを、1週目、2週目、3〜4週目の順に重心を移しながら進めます。</p>
+<h2 id="s2">1週目：環境を立ち上げ、構成を読む</h2>
+<h3>開発環境を動かし、つまずいた点を残す</h3>
+<p>初日から数日は、手元で画面が動くところまでを最優先にします。リポジトリの取得、パッケージの導入、環境変数の設定、ローカルでの起動、テストの実行までを一通り試します。手順書どおりに動かなかった点は、その場でメモに残しておきます。次に参画する人の役に立つうえ、手順書の更新を提案すると、最初の小さな貢献になります。</p>
+<h3>Vue.jsの現場で最初に確かめること</h3>
+<p>Vue.jsの現場は、書き方や道具の組み合わせが現場ごとに違います。次の点を確かめて、構成のメモにまとめます。</p>
+<ol><li><strong>Vueの版とNuxtの有無</strong>：Vue 3か、Vue 2が残っているか。Nuxtを使っているか</li><li><strong>書き方の決まり</strong>：Composition APIか、Options APIが混ざっているか。<code>script setup</code> を使っているか</li><li><strong>状態管理</strong>：Piniaか、Vuexが残っているか。どの状態をストアに置き、どれをコンポーネントの中に置くか</li><li><strong>型とビルド</strong>：TypeScriptの設定の厳しさ、Viteか古いビルドの道具か</li><li><strong>部品のライブラリとスタイル</strong>：UIの部品のライブラリ、CSSの書き方の決まり</li><li><strong>テストと確認の仕組み</strong>：単体テスト、画面の確認用の環境、レビューの決まり</li></ol>
+<p>Vue.jsの公式サイトでは、Vue 2は2023年12月31日にサポートを終えたと案内されています（2026年10月時点）。Vue 2が残る現場では、移行の予定があるか、残す画面と移す画面の区別があるかも、この段階で聞いておくと後の判断がしやすくなります。</p>
+<h3>既存のコンポーネントを読む</h3>
+<p>構成をつかんだら、よく使われているコンポーネントを数個読み、命名、ファイルの置き方、props と emit の書き方、composableの使い方の決まりを書き出します。決まりが文書になっていなければ、レビュー担当に短く確かめます。</p>
+<h2 id="s3">2週目：小さな修正で流れを一周する</h2>
+<h3>最初の担当は小さく、早く出す</h3>
+<p>2週目には、表示の不具合の修正や文言の変更など、小さな作業を担当させてもらいます。目的は成果の大きさではなく、<strong>ブランチの切り方、プルリクエストの書き方、レビューの受け方、確認用の環境での確認、反映</strong>までの流れを一周することです。</p>
+<p>プルリクエストには、変えた理由、変えた画面の画像、確かめた手順を添えると、レビューする側の負担が減ります。リモート中心の現場での画面の確認の回し方は<a href="/media/vue-remote/">Vue.jsエンジニアのリモートの記事</a>でも触れています。</p>
+<h3>レビューの指摘を決まりとして蓄える</h3>
+<p>レビューで受けた指摘は、その場で直すだけでなく、「この現場の決まり」としてメモに足していきます。同じ指摘を二度受けないことが、初月に信頼を得るうえでもっとも効きます。</p>
+<h3>関わる人と連絡の経路をつかむ</h3>
+<p>デザイナー、プロダクトの担当、バックエンドの担当、レビュー担当のそれぞれに、何を誰に聞けばよいかを確かめます。とくに、<strong>デザインの確定と、APIの仕様の確定を誰が決めるか</strong>は、初月のうちに押さえておきたい点です。</p>
+<aside class="box box-view"><p class="box-label">エージェントベストの見解</p><p>案件紹介の現場で、参画後の評価が高いVue.jsエンジニアの方に共通しているのは、最初の2週間で「この現場の決まり」を自分から確かめ、同じ指摘を繰り返さないことです。技術の力は面談でもある程度見えますが、現場に合わせる早さは参画してからでないと見えません。初月は、自分の書き方を出すより、現場の書き方に合わせることを優先するのをおすすめします。</p></aside>
+<h2 id="s4">3〜4週目：画面を一つ任される</h2>
+<h3>仕様の確認から反映までを担う</h3>
+<p>3週目以降は、一つの画面や機能を、仕様の確認から反映まで担当させてもらいます。着手の前に、デザインのどの版で作るか、APIの項目と形、入力のチェックの決まり、対応するブラウザや画面の幅を確かめ、分からない点は一覧にして先に聞きます。</p>
+<h3>コンポーネントの分け方を先に共有する</h3>
+<p>画面を作り始める前に、どのコンポーネントに分けるか、どの状態をどこに置くかを簡単な図やメモで共有すると、レビューでの大きな差し戻しを防げます。既存の部品を使い回せるのに新しく作ってしまう、という初月によくある失敗も避けられます。</p>
+<h3>気づいた改善点はためておく</h3>
+<p>既存のコードを読むうちに、直したい点が見つかることがあります。初月はすぐに直さず、気づいた点を一覧にためておき、月末の振り返りで優先度とあわせて相談します。</p>
+<h2 id="s5">案件の型によって初月の重心は変わる</h2>
+<h3>自社サービスの画面開発</h3>
+<p>デザイナーやプロダクトの担当と短い間隔でやりとりしながら進むため、連絡の速さと、画面の変更への合わせ方が見られます。初月は、チャットでの確認の作法や、どの程度の変更なら相談なしで進めてよいかをつかむことに力を入れます。</p>
+<h3>Vue 2からの移行の案件</h3>
+<p>移行の案件では、初月のうちに、使っているライブラリと各画面の依存関係を洗い出すことが中心になります。月末には、どの画面から移すかの順番の案と、Vue 3に対応していない部品の一覧を出せると、移行の計画に貢献できます。見積もりが膨らみやすい点は<a href="/media/vue-tsumazuki/">Vue.jsエンジニアのつまずきやすい点の記事</a>で整理しています。</p>
+<h3>業務システムの管理画面</h3>
+<p>入力の項目が多く、業務の決まりが画面の動きに入り込んでいる現場では、画面より先に業務の流れを理解することが大切です。業務の用語や、入力のチェックの理由を担当者に聞き、メモにまとめておくと、2か月目以降の作業が速くなります。</p>
+<h2 id="s6">初月に避けたい動き</h2>
+<div class="table-wrap"><table><thead><tr><th>避けたい動き</th><th>起きやすいこと</th><th>代わりにすること</th></tr></thead><tbody><tr><td>自分の書き方を持ち込む</td><td>レビューで差し戻しが続く</td><td>既存のコンポーネントの決まりに合わせる</td></tr><tr><td>古い書き方を勝手に書き換える</td><td>範囲外の変更で別の画面を壊す</td><td>気づいた点をためておき、月末に相談する</td></tr><tr><td>分からない仕様を推測で作る</td><td>作り直しが増え、遅れが表に出る</td><td>着手前に分からない点を一覧にして聞く</td></tr><tr><td>大きなプルリクエストを出す</td><td>レビューが進まず、指摘が後からまとめて来る</td><td>小さく分けて早めに出す</td></tr><tr><td>範囲外の作業を黙って引き受ける</td><td>本来の画面の作業が遅れる</td><td>担う範囲を確かめ、外れる依頼は窓口と話す</td></tr></tbody></table></div>
+<p>範囲外の依頼が増えてきたときの扱いは<a href="/media/scope-change/">業務範囲が変わったときの記事</a>、前任者からの引き継ぎの受け方は<a href="/media/hikitsugi/">引き継ぎの記事</a>で整理しています。</p>
+<aside class="box box-caution"><p class="box-label">注意</p><p>初月は環境の立ち上げや資料の読み込みで、稼働が見込みより増えることがあります。読み込みに使った時間も稼働として記録してください。精算幅を超えそうなときは早めに窓口に伝えます。仕組みは<a href="/media/seisan-haba/">精算幅の記事</a>をご覧ください。</p></aside>
+<h2 id="s7">1か月の終わりに振り返ること</h2>
+<p>1か月が過ぎたら、次の点を自分で振り返ります。</p>
+<ul><li>現場の版、構成、書き方の決まりを、メモにまとめられたか</li><li>小さな修正で、実装から反映までの流れを一周できたか</li><li>レビューで受けた指摘を、次の作業で繰り返していないか</li><li>画面を一つ、仕様の確認から反映まで担えたか</li><li>契約で決めた業務の範囲と、実際に担っている仕事がずれていないか</li><li>稼働時間の記録が残っているか</li></ul>
+<p>ずれている点があれば、2か月目の早い段階で窓口と話しておきます。ためておいた改善点も、このときに優先度をつけて相談すると、次の担当の話につながりやすくなります。</p>
+<aside class="box box-view"><p class="box-label">エージェントベストの見解</p><p>当社では、契約で業務範囲・報酬・支払期日・契約期間を個別契約に書いてお渡ししています。参画して1か月の間に、聞いていた役割と実際の仕事に違いを感じたときは、早めにご相談ください。契約の内容に関わる点は、ご質問いただければ確認します。</p></aside>
+<aside class="box box-point"><p class="box-label">ポイント</p><ul><li>Vue.jsエンジニアの初月は、環境と構成をつかむ、流れを一周する、画面を任される、の3つを順に進める</li><li>1週目は版・書き方・状態管理・ビルドの決まりを確かめ、2週目に小さな修正で流れを一周する</li><li>3〜4週目は画面を一つ担い、コンポーネントの分け方を先に共有する</li><li>自分の書き方の持ち込み、勝手な書き換え、推測での実装は避ける</li></ul></aside>
+<h2 id="s8">よくある質問</h2>
+<h3>開発環境の構築に数日かかりそうです。問題ありませんか？</h3>
+<p>古い版のパッケージが残る現場などでは、環境の構築に時間がかかることは珍しくありません。どこで止まっているかを具体的に伝え、早めに助けを求めるほうが、黙って抱え込むより信頼されます。つまずいた点と直し方を手順書に足す提案をすると、次に参画する人の役にも立ちます。</p>
+<h3>現場のコードの書き方が古く、直したくなります。どうすればよいですか？</h3>
+<p>初月は、決まりに合わせて書くことを優先し、直したい点は一覧にためておきます。月末の振り返りで、直すと何が良くなるか、どれくらい手間がかかるかを添えて相談すると、発注側も判断しやすくなります。決めるのは発注側だという線を守ってください。</p>
+<h3>初月から大きな画面を任されました。どう進めればよいですか？</h3>
+<p>着手の前に、コンポーネントの分け方と状態の置き場所を簡単にまとめてレビュー担当に見てもらい、方向が合っているかを確かめます。そのうえで、画面を小さな単位に分けてプルリクエストを出すと、大きな差し戻しを防げます。求められるスキルの全体像は<a href="/media/vue-skills/">Vue.jsエンジニアに求められるスキル</a>をご覧ください。</p>
+  </div>
+  <section class="sources"><h2>参考にした公的情報・資料</h2><ul><li><a href="https://v2.vuejs.org/lts/" target="_blank" rel="noopener nofollow">Vue 2 LTS, EOL &amp; Extended Support（Vue.js）</a></li></ul>
+  <p class="note">記事の内容は公開日時点の情報にもとづきます。制度や税率は変わることがあるため、手続きの前に必ず各機関の最新情報をご確認ください。</p></section>
+  <div class="cta-band">
+  <h2>条件に合う案件だけ、知りたい方へ</h2>
+  <p>ご登録は無料です。条件に合う案件だけを、ご本人の了承を得てからご提案します。</p>
+  <div class="cta-row">
+    <a class="btn btn-primary" href="https://airtable.com/appYkc36EvioYoL1A/pag6CZC4uJmxUcrXT/form" target="_blank" rel="noopener">無料で登録する</a>
+    <a class="btn btn-ghost" href="/jobs/">案件を探す</a>
+  </div>
+</div>
+  <section class="related"><h2>あわせて読みたい</h2><div class="grid g2"><a class="card art-card" href="/media/sankaku-junbi/">
+  <span class="art-hub">案件の探し方</span>
+  <h3>参画が決まってから開始日までにやること｜契約・事業の手続き・作業環境の準備</h3>
+  <p>参画が決まったら、開始日までに「契約の書面の確認」「他の選考の整理」「請求と事業の手続き」「作業環境」「業務の予習」の5つを進めます。時期ごとのやることと、開始前の作業を頼まれたときの注意点を整理します。</p>
+</a>
+<a class="card art-card" href="/media/sankaku-shoki/">
+  <span class="art-hub">案件の探し方</span>
+  <h3>参画初日から最初の1週間でやること｜業務委託で立ち上がりを早める進め方</h3>
+  <p>参画して最初の1週間は、成果を急ぐより「任された範囲・依頼の窓口・報告の形」を確かめ、小さな仕事を一つ終えることを優先します。初日から5日目までの進め方と、つまずきやすい点を整理します。</p>
+</a>
+<a class="card art-card" href="/media/hikitsugi/">
+  <span class="art-hub">案件の探し方</span>
+  <h3>契約終了時の引き継ぎの進め方｜業務の棚卸しから資料・並走・返却まで</h3>
+  <p>契約終了時の引き継ぎは、終了が決まった時点で「範囲・相手・期限」を窓口と決め、業務の棚卸し、資料作り、後任との並走、権限と資料の返却の順に進めます。後任が決まらないときや、終了後の問い合わせへの対応も整理します。</p>
+</a>
+<a class="card art-card" href="/media/vue-tsumazuki/">
+  <span class="art-hub">フロントエンド開発</span>
+  <h3>Vue.jsエンジニアのフリーランスがつまずきやすい点と対策</h3>
+  <p>フリーランスのVue.jsエンジニアがつまずきやすいのは、画面一式の範囲があいまいな契約、デザインやAPIの仕様が固まらないまま進む現場、Vue 2からの移行の見積もりの膨らみ、修正の繰り返しによる稼働超過です。契約・現場・技術・お金の順に対策を整理します。</p>
+</a>
+<a class="card art-card" href="/media/vue-skills/">
+  <span class="art-hub">フロントエンド開発</span>
+  <h3>Vue.jsエンジニアのフリーランス案件で求められるスキルと経験</h3>
+  <p>Vue.jsのフリーランス案件では、Composition APIでのコンポーネント設計、Piniaでの状態管理、TypeScriptとの組み合わせ、Nuxtでの描画方式の理解が見られます。分野ごとのスキルと、経験の示し方を解説します。</p>
+</a>
+<a class="card art-card" href="/media/vue-remote/">
+  <span class="art-hub">フロントエンド開発</span>
+  <h3>Vue.jsエンジニアのフリーランスはリモートで働ける？案件の傾向と探し方</h3>
+  <p>Vue.jsエンジニアは、自社サービスの画面開発や管理画面、Vue 2からの移行などでリモートの案件があります。画面の確認をオンラインでどう回すかが進めやすさを左右します。案件の傾向、進め方、確認点を解説します。</p>
+</a></div></section>
+</main>
+<footer class="site-foot">
+  <div class="wrap">
+    <strong>エージェントベストジョブ フリーランス</strong>
+    <div class="foot-links">
+      <a href="/">トップ</a>
+      <a href="/jobs/">案件を探す</a>
+      <a href="/media/">お役立ち記事</a>
+      <a href="https://airtable.com/appYkc36EvioYoL1A/pag6CZC4uJmxUcrXT/form" target="_blank" rel="noopener">ご登録（スキルシート・ご希望の条件）</a>
+      <a href="https://line.me/R/ti/p/@697nxhbt?oat_content=url&ts=08302134" target="_blank" rel="noopener" data-line-cta="footer">LINEで相談する</a>
+      <a href="/privacy.html">個人情報の取り扱い</a>
+      <a href="https://www.agent-best.net/company/">運営会社</a>
+    </div>
+    <div class="foot-links">
+      <a href="https://jobs.agent-best.net/">正社員の求人を探す（エージェントベストジョブ）</a>
+      <a href="https://skill.agent-best.net/">エージェントベストジョブ手に職</a>
+      <a href="https://www.agent-best.net/">エージェントベスト</a>
+    </div>
+    <p>運営：株式会社エージェントベスト（有料職業紹介事業 許可番号 13-ユ-316964）<br>〒106-0032 東京都港区六本木4-8-7 嶋田ビル5階</p>
+  </div>
+</footer>
+<script src="/assets/fav.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>TypeScriptエンジニアのフリーランスがつまずきやすい点と対策｜エージェントベストジョブ フリーランス</title>
+<meta name="description" content="フリーランスのTypeScriptエンジニアは、担当する層の食い違い、既存の型の方針とのずれ、版や設定の違い、型を整える作業の精算などでつまずきやすくなります。契約・現場・技術・お金の4面から、つまずきと対策を整理します。">
+<link rel="canonical" href="https://freelance.agent-best.net/media/typescript-tsumazuki/">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="エージェントベストジョブ フリーランス">
+<meta property="og:title" content="TypeScriptエンジニアのフリーランスがつまずきやすい点と対策｜エージェントベストジョブ フリーランス">
+<meta property="og:description" content="フリーランスのTypeScriptエンジニアは、担当する層の食い違い、既存の型の方針とのずれ、版や設定の違い、型を整える作業の精算などでつまずきやすくなります。契約・現場・技術・お金の4面から、つまずきと対策を整理します。">
+<meta property="og:url" content="https://freelance.agent-best.net/media/typescript-tsumazuki/">
+<meta property="og:image" content="https://freelance.agent-best.net/assets/ogp.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://freelance.agent-best.net/assets/ogp.png">
+<meta name="theme-color" content="#1E3A5F">
+<link rel="icon" href="/assets/favicon.ico">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="stylesheet" href="/assets/site.css">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1XXMP8Y1B4"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-1XXMP8Y1B4');
+document.addEventListener('click',e=>{const a=e.target.closest('[data-line-cta]');if(a)gtag('event','line_add_friend',{placement:a.dataset.lineCta,page_path:location.pathname});});</script>
+<script type="application/ld+json">[{"@context":"https://schema.org","@type":"Article","headline":"TypeScriptエンジニアのフリーランスがつまずきやすい点と対策","description":"フリーランスのTypeScriptエンジニアは、担当する層の食い違い、既存の型の方針とのずれ、版や設定の違い、型を整える作業の精算などでつまずきやすくなります。契約・現場・技術・お金の4面から、つまずきと対策を整理します。","datePublished":"2026-11-04","dateModified":"2026-11-04","author":{"@type":"Organization","name":"株式会社エージェントベスト","url":"https://www.agent-best.net/"},"publisher":{"@type":"Organization","name":"株式会社エージェントベスト","logo":{"@type":"ImageObject","url":"https://freelance.agent-best.net/assets/logo.png"}},"mainEntityOfPage":"https://freelance.agent-best.net/media/typescript-tsumazuki/"},{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"トップ","item":"https://freelance.agent-best.net/"},{"@type":"ListItem","position":2,"name":"お役立ち記事","item":"https://freelance.agent-best.net/media/"},{"@type":"ListItem","position":3,"name":"フロントエンド開発","item":"https://freelance.agent-best.net/media/hub/frontend/"},{"@type":"ListItem","position":4,"name":"TypeScriptエンジニアのフリーランスがつまずきやすい点と対策"}]},{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"参画してから、フロントエンドだけの約束がサーバーまで任されています。どうすればよいですか？","acceptedAnswer":{"@type":"Answer","text":"まず契約の業務範囲を確かめます。範囲に入っていない場合は、追加の作業として扱うかどうかを、エージェントや発注側の担当者と相談します。引き受ける場合も、期間や稼働への影響を先に伝えておくと、後の食い違いを防げます。"}},{"@type":"Question","name":"anyだらけのコードを直したいのですが、提案してよいですか？","acceptedAnswer":{"@type":"Answer","text":"提案すること自体は問題ありません。ただ、いきなり全体の設定を厳しくするのではなく、自分の担当範囲で型を整えた結果を見せ、範囲と順番を区切って提案するほうが受け入れられやすくなります。"}},{"@type":"Question","name":"自分の環境では通るのにCIで型エラーになります。何を確かめればよいですか？","acceptedAnswer":{"@type":"Answer","text":"TypeScriptとNode.jsの版、tsconfigの設定、依存パッケージの版が現場と同じかを確かめます。とくに初期設定が変わる版の違いは影響が大きいため、手元の版を現場に合わせてから原因を探すと早く片付きます。"}}]}]</script>
+</head>
+<body>
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="/"><img src="/assets/mark.png" alt="" width="28" height="28"><span>エージェントベストジョブ フリーランス<small>フリーランスのエンジニア・コンサル向け案件紹介</small></span></a>
+    <nav class="head-nav" aria-label="メニュー">
+      <a class="link" href="/jobs/">案件を探す</a>
+      <a class="link" href="/media/">お役立ち記事</a>
+      <a class="link keep" href="/mypage/" aria-label="気になる案件">☆ 気になる<span class="fav-count" data-fav-count hidden></span></a>
+      <a class="btn btn-primary btn-sm" href="https://airtable.com/appYkc36EvioYoL1A/pag6CZC4uJmxUcrXT/form" target="_blank" rel="noopener">無料で登録</a>
+    </nav>
+  </div>
+</header>
+<main class="wrap narrow article">
+  <p class="crumbs"><a href="/">トップ</a> › <a href="/media/">お役立ち記事</a> › <a href="/media/hub/frontend/">フロントエンド開発</a></p>
+  <a class="art-hub" href="/media/hub/frontend/">フロントエンド開発</a>
+  <h1 class="art-title">TypeScriptエンジニアのフリーランスがつまずきやすい点と対策</h1>
+  <p class="note">公開 2026-11-04　監修：株式会社エージェントベスト</p>
+  <nav class="toc" aria-label="目次"><strong>目次</strong><ol><li><a href="#s1">契約でのつまずき</a></li><li><a href="#s2">現場でのつまずき</a></li><li><a href="#s3">技術でのつまずき</a></li><li><a href="#s4">お金でのつまずき</a></li><li><a href="#s5">よくある質問</a></li></ol></nav>
+  <div class="art-body">
+<p>フリーランスのTypeScriptエンジニアがつまずきやすいのは、<strong>「TypeScriptの開発」という言葉の範囲が広く、画面・サーバー・ビルドの設定のどこまでを担うかが曖昧なまま参画してしまう</strong>ことです。そこから、型の方針の食い違い、版や設定の違い、型を整える作業の精算といった問題が生まれます。</p>
+<p>対策の多くは、参画前と参画直後に「担当する層」と「型と設定の決めごと」を確かめておくことです。この記事では、契約・現場・技術・お金の4つの面から、この職種ならではのつまずきと対策を整理します。</p>
+<h2 id="s1">契約でのつまずき</h2>
+<h3>担当する層が、契約と現場の期待でずれる</h3>
+<p>TypeScriptは画面にもサーバーにも使われるため、「TypeScriptでの開発」と書かれた契約でも、現場によっては画面の実装だけ、APIまで、ビルドやCIの設定まで、と期待が大きく違います。フロントエンドのつもりで参画したら、Node.jsのAPIやデータベースまで任された、という食い違いが起きやすくなります。</p>
+<p><strong>対策</strong>：面談の段階で、担当する層（画面・サーバー・両方）、触ってよい範囲（tsconfig、ビルド、CI）を確かめ、契約の業務範囲と照らし合わせます。フリーランス法では、発注側が業務の内容、報酬の額、支払期日などを書面や電子メールで明示することになっています（2026年10月時点、公正取引委員会の特設サイトによる）。明示される項目は<a href="/media/freelance-act-terms/">フリーランス法の明示事項</a>で確かめてください。範囲が広がった場合の扱いは<a href="/media/scope-change/">業務範囲が変わったとき</a>を参考にしてください。</p>
+<h3>生成AIの使用ルールが決まっていない</h3>
+<p>TypeScriptの開発では、コード補完や生成AIを使う場面が多くあります。ところが、発注側の規程で使える道具が決まっていたり、外部にコードを送ることが禁じられていたりすることがあります。知らずに使うと、情報の取り扱いの問題になりかねません。</p>
+<p><strong>対策</strong>：参画前に、使ってよい道具と、使えない場合の扱いを確かめます。契約での考え方は<a href="/media/ai-riyou-keiyaku/">AIの利用と契約</a>で整理しています。</p>
+<h3>指揮命令の形が社員と変わらなくなる</h3>
+<p>準委任契約で参画していても、作業の手順や勤務時間まで社員と同じように指示される状態が続くことがあります。こうした状態は、契約の形と実態がずれている可能性があります。考え方は<a href="/media/gisou-ukeoi/">偽装請負の記事</a>をご覧ください。</p>
+<h2 id="s2">現場でのつまずき</h2>
+<h3>既存の型の方針とずれたコードを書く</h3>
+<p>現場には、anyの扱い、interfaceとtypeの使い分け、型の置き場所、命名など、明文化されていない決めごとがあることが多くあります。前の現場の流儀で書くと、レビューで何度も差し戻され、「合わせてくれない人」と見られかねません。</p>
+<p><strong>対策</strong>：参画の最初の週に、既存のコードとレビューのやり取りを読み、決めごとを自分なりに書き出します。分からない点は、最初のプルリクエストで「この書き方でよいか」を添えて確かめます。</p>
+<h3>型を厳しくしたい気持ちを早く出しすぎる</h3>
+<p>anyや型の無視が多いコードを見ると、strictを有効にしたくなります。ただ、一度に設定を厳しくすると、大量のエラーが出てチーム全体の作業が止まります。</p>
+<p><strong>対策</strong>：まず自分の担当範囲で型を整え、効果を見せてから、範囲を区切った提案をします。提案には、出るエラーの数の見込みと、直す順番を添えると通りやすくなります。</p>
+<aside class="box box-view"><p class="box-label">エージェントベストの見解</p><p>案件紹介の現場では、TypeScriptエンジニアの方が参画後に評価を落としやすいのは、技術力の不足より、「現場の決めごとより自分の好みの書き方を優先した」と受け取られた場合だとよく聞きます。型の方針に意見があるときは、最初の数週間は現場の書き方に合わせ、そのうえで理由と影響範囲を添えて提案することをおすすめします。</p></aside>
+<h3>フロントとサーバーの間で板挟みになる</h3>
+<p>両方の層に関わる案件では、APIのデータの形を変えたいサーバー側と、画面の都合を優先したいフロント側の間に立つことがあります。型の定義を共有していると、片方の変更がもう片方のエラーとして表に出るため、調整の相手になりやすくなります。</p>
+<p><strong>対策</strong>：型の変更を出すときは、影響を受ける画面やAPIを書き添え、どちらのチームの判断が要るかを分けて伝えます。決める人を自分にしないことが、板挟みを避ける近道です。</p>
+<h2 id="s3">技術でのつまずき</h2>
+<h3>版や設定の違いを見落とす</h3>
+<p>TypeScriptは版によって初期設定や使える設定が変わります。2026年7月8日に公開されたTypeScript 7.0では、strictが初期設定で有効になり、moduleResolution: node（node10）やbaseUrlなどの設定がエラーになりました（Microsoftの公式ブログによる）。手元の環境と現場の版が違うと、自分の環境では通るのにCIで落ちる、といったことが起きます。</p>
+<p><strong>対策</strong>：参画初日に、TypeScriptとNode.jsの版、tsconfig、パッケージ管理の道具を確かめ、手元を現場に合わせます。版上げの判断は現場に任せ、自分で勝手に上げないことも大切です。</p>
+<h3>型を通すことが目的になる</h3>
+<p>締め切りが迫ると、型の断定（as）やanyでエラーを黙らせたくなります。型チェックが通っても、外部から来るデータの形が想定と違えば、実行時に不具合が出ます。</p>
+<p><strong>対策</strong>：APIやフォームなど外部から来るデータは、実行時に検証してから型を付けます。やむを得ずanyや型の無視を使ったときは、理由をコメントやプルリクエストに残します。考え方は<a href="/media/typescript-skills/">TypeScriptの案件で求められるスキル</a>で整理しています。</p>
+<h2 id="s4">お金でのつまずき</h2>
+<h3>型を整える作業が見積もりに入っていない</h3>
+<p>古いコードに機能を足すとき、周りの型を整えないと実装が進まないことがあります。この作業が見積もりに入っていないと、稼働が延びても「機能の開発が遅い」と見られます。</p>
+<p><strong>対策</strong>：作業に入る前に、型を整える範囲と時間を分けて伝えます。精算の幅を超えそうなときは早めに相談します。稼働の考え方は<a href="/media/seisan-haba/">精算幅の記事</a>をご覧ください。</p>
+<h3>追加の依頼をなし崩しで引き受ける</h3>
+<p>「ついでにビルドの設定も見てほしい」「CIで型チェックを回したい」といった依頼は、TypeScriptに詳しい人に集まりやすくなります。引き受けるほど稼働が増え、本来の機能開発が遅れます。</p>
+<p><strong>対策</strong>：契約の範囲に入るかを確かめ、入らない場合は優先度と期限を相談します。断り方は<a href="/media/tsuika-irai-kotowari/">追加の依頼の断り方</a>で整理しています。</p>
+<h3>開発の区切りで契約が終わる</h3>
+<p>画面の作り直しや移行が終わると、人数を減らす現場は少なくありません。目の前の作業に追われていると、次の案件探しが遅れます。</p>
+<p><strong>対策</strong>：契約期間の終わりが見えた段階で、更新の見込みを確かめ、次の案件の相談を始めます。</p>
+<aside class="box box-caution"><p class="box-label">注意</p><p>参画後に「話と違う」と気づいても、黙って作業を続けるほど元に戻しにくくなります。担当する層や作業の範囲がずれていると感じたら、早めに契約の業務範囲と照らし合わせ、エージェントや発注側の担当者に相談してください。</p></aside>
+<aside class="box box-view"><p class="box-label">エージェントベストの見解</p><p>当社では、契約で業務範囲・報酬・支払期日・契約期間を個別契約に書いてお渡ししています。担当する層や、ビルドやCIまで含むかなど、TypeScriptの案件で食い違いやすい点は、参画前にご質問いただければ確認します。</p></aside>
+<aside class="box box-point"><p class="box-label">ポイント</p><ul><li>つまずきの多くは、担当する層と型・設定の決めごとが曖昧なまま参画することから生まれる</li><li>現場の書き方に合わせてから、理由と影響範囲を添えて提案する</li><li>版と設定は初日に確かめ、型を整える作業は見積もりで分けて伝える</li></ul></aside>
+<h2 id="s5">よくある質問</h2>
+<h3>参画してから、フロントエンドだけの約束がサーバーまで任されています。どうすればよいですか？</h3>
+<p>まず契約の業務範囲を確かめます。範囲に入っていない場合は、追加の作業として扱うかどうかを、エージェントや発注側の担当者と相談します。引き受ける場合も、期間や稼働への影響を先に伝えておくと、後の食い違いを防げます。</p>
+<h3>anyだらけのコードを直したいのですが、提案してよいですか？</h3>
+<p>提案すること自体は問題ありません。ただ、いきなり全体の設定を厳しくするのではなく、自分の担当範囲で型を整えた結果を見せ、範囲と順番を区切って提案するほうが受け入れられやすくなります。</p>
+<h3>自分の環境では通るのにCIで型エラーになります。何を確かめればよいですか？</h3>
+<p>TypeScriptとNode.jsの版、tsconfigの設定、依存パッケージの版が現場と同じかを確かめます。とくに初期設定が変わる版の違いは影響が大きいため、手元の版を現場に合わせてから原因を探すと早く片付きます。</p>
+  </div>
+  <section class="sources"><h2>参考にした公的情報・資料</h2><ul><li><a href="https://www.jftc.go.jp/freelancelaw_2026/" target="_blank" rel="noopener nofollow">2026年 フリーランス法特設サイト（公正取引委員会）</a></li><li><a href="https://devblogs.microsoft.com/typescript/announcing-typescript-7-0/" target="_blank" rel="noopener nofollow">Announcing TypeScript 7.0（Microsoft TypeScript Blog）</a></li></ul>
+  <p class="note">記事の内容は公開日時点の情報にもとづきます。制度や税率は変わることがあるため、手続きの前に必ず各機関の最新情報をご確認ください。</p></section>
+  <div class="cta-band">
+  <h2>条件に合う案件だけ、知りたい方へ</h2>
+  <p>ご登録は無料です。条件に合う案件だけを、ご本人の了承を得てからご提案します。</p>
+  <div class="cta-row">
+    <a class="btn btn-primary" href="https://airtable.com/appYkc36EvioYoL1A/pag6CZC4uJmxUcrXT/form" target="_blank" rel="noopener">無料で登録する</a>
+    <a class="btn btn-ghost" href="/jobs/">案件を探す</a>
+  </div>
+</div>
+  <section class="related"><h2>あわせて読みたい</h2><div class="grid g2"><a class="card art-card" href="/media/typescript-first-month/">
+  <span class="art-hub">フロントエンド開発</span>
+  <h3>TypeScriptエンジニアの参画初月にやること｜現場で信頼される進め方</h3>
+  <p>TypeScriptエンジニアの参画初月は、環境と設定を現場に合わせ、型の決めごとを読み取り、小さな変更で信頼を積むことがゴールです。週ごとの進め方、案件の型による重心の違い、避けたい動き、月末の振り返りを整理します。</p>
+</a>
+<a class="card art-card" href="/media/typescript-skills/">
+  <span class="art-hub">フロントエンド開発</span>
+  <h3>TypeScriptエンジニアのフリーランス案件で求められるスキルと経験</h3>
+  <p>TypeScriptのフリーランス案件では、型の設計力、型と実行時の検証の使い分け、tsconfigやビルドの知識、そして使う場所の技術が見られます。分野ごとに求められるスキルと、経験の示し方を解説します。</p>
+</a>
+<a class="card art-card" href="/media/typescript-remote/">
+  <span class="art-hub">フロントエンド開発</span>
+  <h3>TypeScriptエンジニアのフリーランスはリモートで働ける？案件の傾向と探し方</h3>
+  <p>TypeScriptの案件は、型の定義をチームの共通の約束として使えるため、リモートで進めやすい仕事です。ただしバックエンドや業務システムでは、閉じた開発環境や出社が条件になることもあります。案件の型、出社が求められる場面、端末と情報管理の確認点を解説します。</p>
+</a>
+<a class="card art-card" href="/media/typescript-rate/">
+  <span class="art-hub">フロントエンド開発</span>
+  <h3>TypeScriptエンジニアのフリーランス案件｜報酬の決まり方と単価を上げる考え方</h3>
+  <p>TypeScriptエンジニアの報酬は、画面・Node.jsのサーバー・フルスタックのどの層で使うか、型やビルドの基盤に責任を持つか、移行を担えるか、稼働条件、商流で決まり、案件ごとに大きく変わります。上下する理由と交渉材料を解説します。</p>
+</a>
+<a class="card art-card" href="/media/typescript-seishain-hikaku/">
+  <span class="art-hub">フロントエンド開発</span>
+  <h3>TypeScriptエンジニアは正社員とフリーランスのどちらがよい？比べるときの観点</h3>
+  <p>TypeScriptエンジニアが正社員とフリーランスを比べるときは、収入の安定、社会保険、技術の決定権とキャリア、働き方の4つの観点で並べると判断しやすくなります。この職種ならではの違いと、自分に合う方を確かめる方法を整理します。</p>
+</a>
+<a class="card art-card" href="/media/typescript-anken-erabi/">
+  <span class="art-hub">フロントエンド開発</span>
+  <h3>TypeScriptエンジニアのフリーランス案件の選び方｜契約前に確かめたいこと</h3>
+  <p>TypeScriptの案件は、同じ募集でも層の割合、型の設定、コードベースの状態、版上げの予定で負担が変わります。仕事の割合、型の決まり、コードの状態、API契約の持ち方、開発環境、成果物と権利、稼働の振れ幅の7点を契約前にどう確かめるかを解説します。</p>
+</a></div></section>
+</main>
+<footer class="site-foot">
+  <div class="wrap">
+    <strong>エージェントベストジョブ フリーランス</strong>
+    <div class="foot-links">
+      <a href="/">トップ</a>
+      <a href="/jobs/">案件を探す</a>
+      <a href="/media/">お役立ち記事</a>
+      <a href="https://airtable.com/appYkc36EvioYoL1A/pag6CZC4uJmxUcrXT/form" target="_blank" rel="noopener">ご登録（スキルシート・ご希望の条件）</a>
+      <a href="https://line.me/R/ti/p/@697nxhbt?oat_content=url&ts=08302134" target="_blank" rel="noopener" data-line-cta="footer">LINEで相談する</a>
+      <a href="/privacy.html">個人情報の取り扱い</a>
+      <a href="https://www.agent-best.net/company/">運営会社</a>
+    </div>
+    <div class="foot-links">
+      <a href="https://jobs.agent-best.net/">正社員の求人を探す（エージェントベストジョブ）</a>
+      <a href="https://skill.agent-best.net/">エージェントベストジョブ手に職</a>
+      <a href="https://www.agent-best.net/">エージェントベスト</a>
+    </div>
+    <p>運営：株式会社エージェントベスト（有料職業紹介事業 許可番号 13-ユ-316964）<br>〒106-0032 東京都港区六本木4-8-7 嶋田ビル5階</p>
+  </div>
+</footer>
+<script src="/assets/fav.js" defer></script>
+</body>
+</html>

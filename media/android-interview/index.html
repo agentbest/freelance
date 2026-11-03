@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Androidエンジニアのフリーランス面談でよく聞かれる質問と答え方｜エージェントベストジョブ フリーランス</title>
+<meta name="description" content="Androidの面談では、担当したアプリの規模と役割、Kotlin・Composeへの移行、targetSdkの更新、端末差への対応、不具合の調べ方がよく聞かれます。質問ごとに面談官が確かめたいこと、準備の仕方、逆質問を整理します。">
+<link rel="canonical" href="https://freelance.agent-best.net/media/android-interview/">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="エージェントベストジョブ フリーランス">
+<meta property="og:title" content="Androidエンジニアのフリーランス面談でよく聞かれる質問と答え方｜エージェントベストジョブ フリーランス">
+<meta property="og:description" content="Androidの面談では、担当したアプリの規模と役割、Kotlin・Composeへの移行、targetSdkの更新、端末差への対応、不具合の調べ方がよく聞かれます。質問ごとに面談官が確かめたいこと、準備の仕方、逆質問を整理します。">
+<meta property="og:url" content="https://freelance.agent-best.net/media/android-interview/">
+<meta property="og:image" content="https://freelance.agent-best.net/assets/ogp.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://freelance.agent-best.net/assets/ogp.png">
+<meta name="theme-color" content="#1E3A5F">
+<link rel="icon" href="/assets/favicon.ico">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="stylesheet" href="/assets/site.css">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1XXMP8Y1B4"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-1XXMP8Y1B4');
+document.addEventListener('click',e=>{const a=e.target.closest('[data-line-cta]');if(a)gtag('event','line_add_friend',{placement:a.dataset.lineCta,page_path:location.pathname});});</script>
+<script type="application/ld+json">[{"@context":"https://schema.org","@type":"Article","headline":"Androidエンジニアのフリーランス面談でよく聞かれる質問と答え方","description":"Androidの面談では、担当したアプリの規模と役割、Kotlin・Composeへの移行、targetSdkの更新、端末差への対応、不具合の調べ方がよく聞かれます。質問ごとに面談官が確かめたいこと、準備の仕方、逆質問を整理します。","datePublished":"2026-11-04","dateModified":"2026-11-04","author":{"@type":"Organization","name":"株式会社エージェントベスト","url":"https://www.agent-best.net/"},"publisher":{"@type":"Organization","name":"株式会社エージェントベスト","logo":{"@type":"ImageObject","url":"https://freelance.agent-best.net/assets/logo.png"}},"mainEntityOfPage":"https://freelance.agent-best.net/media/android-interview/"},{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"トップ","item":"https://freelance.agent-best.net/"},{"@type":"ListItem","position":2,"name":"お役立ち記事","item":"https://freelance.agent-best.net/media/"},{"@type":"ListItem","position":3,"name":"モバイルアプリ開発","item":"https://freelance.agent-best.net/media/hub/mobile/"},{"@type":"ListItem","position":4,"name":"Androidエンジニアのフリーランス面談でよく聞かれる質問と答え方"}]},{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Composeの実務経験がないと、面談で不利になりますか？","acceptedAnswer":{"@type":"Answer","text":"Composeを使っている現場では、経験があるほうが立ち上がりは早いと見られます。ただ、運用中のアプリにはViewのコードも多く残っているため、Viewでの経験が評価される案件もあります。実務で使った範囲と、個人で試した範囲を分けて正直に話すことが大切です。"}},{"@type":"Question","name":"面談でコードを書く課題が出ることはありますか？","acceptedAnswer":{"@type":"Answer","text":"案件によってあります。その場で簡単な処理を書く形や、過去に書いたコードについて説明を求められる形などがあります。事前に課題の提出を求められた場合の考え方は面談で課題の提出を求められたときで解説しています。"}},{"@type":"Question","name":"個人で公開したアプリの話をしてもよいですか？","acceptedAnswer":{"@type":"Answer","text":"話して問題ありません。業務の経験が少ない分野を補う材料になります。その場合も、何を作ったかより、どんな判断をして、公開後にどんな問題をどう直したかを話すと伝わりやすくなります。業務の経験と混ぜずに、個人の取り組みとして分けて話しましょう。"}}]}]</script>
+</head>
+<body>
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="/"><img src="/assets/mark.png" alt="" width="28" height="28"><span>エージェントベストジョブ フリーランス<small>フリーランスのエンジニア・コンサル向け案件紹介</small></span></a>
+    <nav class="head-nav" aria-label="メニュー">
+      <a class="link" href="/jobs/">案件を探す</a>
+      <a class="link" href="/media/">お役立ち記事</a>
+      <a class="link keep" href="/mypage/" aria-label="気になる案件">☆ 気になる<span class="fav-count" data-fav-count hidden></span></a>
+      <a class="btn btn-primary btn-sm" href="https://airtable.com/appYkc36EvioYoL1A/pag6CZC4uJmxUcrXT/form" target="_blank" rel="noopener">無料で登録</a>
+    </nav>
+  </div>
+</header>
+<main class="wrap narrow article">
+  <p class="crumbs"><a href="/">トップ</a> › <a href="/media/">お役立ち記事</a> › <a href="/media/hub/mobile/">モバイルアプリ開発</a></p>
+  <a class="art-hub" href="/media/hub/mobile/">モバイルアプリ開発</a>
+  <h1 class="art-title">Androidエンジニアのフリーランス面談でよく聞かれる質問と答え方</h1>
+  <p class="note">公開 2026-11-04　監修：株式会社エージェントベスト</p>
+  <nav class="toc" aria-label="目次"><strong>目次</strong><ol><li><a href="#s1">Androidの面談で面談官が見ていること</a></li><li><a href="#s2">よく聞かれる質問と答え方の考え方</a></li><li><a href="#s3">準備は「判断の場面」と「数字」をそろえる</a></li><li><a href="#s4">案件の種類によって聞かれる重心が変わる</a></li><li><a href="#s5">Androidならではの逆質問</a></li><li><a href="#s6">よくある質問</a></li></ol></nav>
+  <div class="art-body">
+<p>Androidエンジニアのフリーランス面談でよく聞かれるのは、<strong>どんなアプリをどの役割で担ったか、古い書き方から新しい書き方へどう移したか、Google Playの要件に合わせた更新をどう進めたか、端末の差や不具合にどう向き合ったか</strong>の4つです。面談官は知識の量より、「この人に自分たちのアプリを触らせたら、何をどの順番で進めるか」を確かめています。</p>
+<p>準備では、模範回答を覚えるより、自分の経験から<strong>判断した場面を3〜4つ</strong>選び、どの質問にもそこから答えられるようにしておくのが近道です。面談全般の答え方は<a href="/media/interview-questions/">業務委託の面談でよく聞かれる質問と答え方</a>で扱っているので、この記事ではAndroidの面談に固有の質問に絞ります。</p>
+<h2 id="s1">Androidの面談で面談官が見ていること</h2>
+<p>Androidの面談に出てくるのは、発注元のテックリードやAndroidチームのリーダー、受託側の開発責任者であることが多く、本人もAndroidのコードを書いてきた人です。そのため、使った技術の名前を並べるより、<strong>なぜその書き方を選んだか、どこで困ってどう抜けたか</strong>を聞いています。</p>
+<p>面談官が知りたいのは、おおむね次の3点です。</p>
+<ol><li><strong>すぐに手を動かせるか</strong>：今のコードの書き方（Kotlin、コルーチン、Compose、推奨アーキテクチャなど）に、立ち上がりの時間をかけずに入れるか</li><li><strong>古いものとの付き合い方</strong>：Javaのコード、XMLのView、古いライブラリが残るアプリを、壊さずに直していけるか</li><li><strong>チームの進め方に合うか</strong>：レビュー、リリースの周期、iOS担当やサーバー側との連絡の取り方が、自社のやり方に合うか</li></ol>
+<p>以下の質問は、この3点のどれかを確かめるためのものです。質問の意図が分かれば、答えの中心に何を置くかも決まります。</p>
+<h2 id="s2">よく聞かれる質問と答え方の考え方</h2>
+<p>ここで示す答えの例は、組み立て方を伝えるための<strong>架空の例</strong>です。ご自身の経験に置き換えて準備してください。</p>
+<h3>1. 「直近で担当したアプリと、あなたの役割を教えてください」</h3>
+<p>確かめたいのは、経験の重さと範囲です。一般向けか業務用か、利用者の規模感（言える範囲で）、チームの人数、Androidの担当者の人数、自分が担った範囲（画面だけか、設計からか、リリースまでか）を短く伝えます。</p>
+<p>架空の例：「一般向けの会員アプリで、Android担当3名のうちの1名でした。主に決済まわりの画面と処理を担当し、後半は設計のレビューも任されていました。リリースの作業はリーダーが担っていました」</p>
+<p>肩書きより<strong>実際に担った範囲</strong>を正確に話すと、後の質問との食い違いが起きません。</p>
+<h3>2. 「JavaからKotlin、ViewからComposeへの移行はどう進めましたか」</h3>
+<p>運用中のアプリを持つ発注元が、最もよく聞く質問の一つです。見られているのは、新しい書き方を知っているかより、<strong>リリースを止めずに少しずつ置き換える進め方</strong>を持っているかです。</p>
+<ul><li>どの単位で区切ったか（画面ごと、モジュールごと、新しい画面から）</li><li>古い部分と新しい部分をどうつないだか</li><li>置き換えの途中で起きた不具合と、その防ぎ方</li><li>途中でやめた、見送った判断があればその理由</li></ul>
+<p>移行の経験がない場合は、新しく作った画面でComposeを使った経験や、個人で試した範囲を正直に分けて話します。</p>
+<h3>3. 「targetSdkの引き上げはどう対応しましたか」</h3>
+<p>Google Playでは、2026年8月31日以降、新しいアプリとアプリの更新はAndroid 16（APIレベル36）以上を対象にする必要があると案内されています（スマートフォン向けの場合。2026年10月時点のAndroid Developersの案内）。この種の対応は毎年のように発生するため、経験の有無をよく聞かれます。</p>
+<p>答えるときは、「上げました」で終わらせず、<strong>影響をどう調べ、何を直し、どう確かめたか</strong>を順に話します。権限、通知、バックグラウンドの処理、画面の表示など、どこに影響が出たかを具体的に挙げられると、実際に担ったことが伝わります。組み込んでいたSDKやライブラリの対応を待った、といった調整の話も評価の材料になります。</p>
+<h3>4. 「機種やOSの版による不具合にどう対応しましたか」</h3>
+<p>Androidならではの質問です。確かめたいのは、端末の差を前提にした<strong>確認の範囲の決め方</strong>と、<strong>再現できない不具合の詰め方</strong>です。</p>
+<ul><li>確認する機種とOSの版を、誰がどう決めていたか</li><li>特定のメーカーの端末だけで起きた不具合を、どう見つけてどう直したか</li><li>手元にない端末の問題を、どんな情報から絞り込んだか</li></ul>
+<h3>5. 「クラッシュや性能の問題を、どう調べて直しましたか」</h3>
+<p>運用中のアプリでは、リリース後の不具合への向き合い方が見られます。クラッシュの報告から原因を絞り込んだ手順、画面の動きの重さやメモリの問題を測った方法、直したあとに再発していないかをどう確かめたかを話します。「ツールを使いました」より、<strong>何を見て仮説を立て、どう確かめたか</strong>の順番が伝わる話し方がよいでしょう。</p>
+<h3>6. 「設計の方針を教えてください。なぜその構成にしましたか」</h3>
+<p>アーキテクチャの名前を答えるより、画面の状態をどこで持ち、データの取得や保存をどう分けたか、テストをどこで書いたかを話します。チームの既存の構成に合わせた経験があれば、それも評価されます。新しい構成を持ち込んだ場合は、<strong>チームにどう説明して合意したか</strong>も添えると、現場での動き方が伝わります。</p>
+<h3>7. 「iOS担当やサーバー側とは、どう連携していましたか」</h3>
+<p>アプリの開発は、iOS版やAPIの担当者と仕様をそろえる仕事でもあります。挙動の違いをどうそろえたか、APIの仕様の変更をどう受け止めたか、デザイナーとの細かなすり合わせをどう進めたかを話します。連絡の頻度や手段も、発注元が自社のやり方との相性を測る材料になります。</p>
+<h3>8. 「なぜフリーランスで、なぜこの案件に興味を持ちましたか」</h3>
+<p>長く続けてもらえるか、案件の中身を理解しているかを確かめる質問です。働き方の希望だけでなく、案件のどの部分（移行、新規開発、業務用端末など）で自分の経験が生きると考えたかを添えます。</p>
+<aside class="box box-view"><p class="box-label">エージェントベストの見解</p><p>Androidの案件をご紹介していると、面談で評価されやすいのは、移行や要件対応を「どの順番で、何を見て進めたか」まで話せる方です。反対に、使ったライブラリの名前を並べるだけの答えが続くと、実際にどこまで担ったかが見えず、見送られやすい傾向があります。担当が一部だった場合も、その範囲を正確に話せば経験として受け止められることが多くあります。</p></aside>
+<h2 id="s3">準備は「判断の場面」と「数字」をそろえる</h2>
+<p>上の質問は数が多く見えますが、答えの材料は共通しています。準備は次の手順で進めると効率的です。</p>
+<ol><li><strong>場面を選ぶ</strong>：移行、要件対応、端末の差による不具合、リリース後の障害など、性質の違う場面を3〜4つ選ぶ</li><li><strong>場面ごとにメモをつくる</strong>：状況、気づいたきっかけ、調べたこと、選んだ方法と理由、結果、次に生かしたことを書き出す</li><li><strong>規模の言い方をそろえる</strong>：チームの人数、Android担当の人数、期間、対応したOSの版の幅を、どの場面でも同じ言い方で話せるようにする</li><li><strong>2分版と5分版をつくる</strong>：最初は短く話し、掘り下げられたら詳しく話せるようにする</li><li><strong>スキルシートと照らし合わせる</strong>：シートに書いたKotlinとJavaの比率、Composeの経験、targetSdkの対応の書き方と話がずれていないかを確かめる</li></ol>
+<p>スキルシートの書き方は<a href="/media/android-skillsheet/">Androidのスキルシートの記事</a>、冒頭の自己紹介の組み立ては<a href="/media/self-introduction/">面談の自己紹介の記事</a>で解説しています。コードを書く課題や技術的な質問が中心の面談への備えは<a href="/media/tech-test/">技術面談・コーディングテストへの備え方</a>をご覧ください。</p>
+<aside class="box box-caution"><p class="box-label">注意</p><p>面談では、前の案件のアプリの名前、発注元の社名、利用者数や売上の具体的な数字、まだ公開されていない機能の内容を話してしまいがちです。アプリの開発は公開前の情報に触れることが多いため、守秘の意識が見られています。アプリの名前や数字は伏せ、「一般向けの会員アプリ」「業務用の在庫管理アプリ」のように種類と規模感で伝えましょう。画面の録画やソースコードを見せる場合も、公開してよいものかを確かめてからにしてください。</p></aside>
+<h2 id="s4">案件の種類によって聞かれる重心が変わる</h2>
+<p>Androidの面談は、案件の種類によって聞かれる内容の重心が変わります。案件の種類ごとの働き方は<a href="/media/android-shigoto/">Androidの仕事内容の記事</a>で整理しています。</p>
+<div class="table-wrap"><table><thead><tr><th>案件の種類</th><th>重く見られやすい点</th></tr></thead><tbody><tr><td>運用中アプリの機能開発</td><td>レビューとリリースの周期への慣れ、古いコードとの付き合い方</td></tr><tr><td>新規アプリの開発</td><td>設計の判断と説明、ストアへの公開の流れの理解</td></tr><tr><td>移行・要件対応</td><td>影響の調べ方、少しずつ置き換える進め方、確認の範囲</td></tr><tr><td>業務用端末・機器連携</td><td>実機での検証の経験、機器との通信、現場の利用者との調整</td></tr></tbody></table></div>
+<p>同じ質問でも、案件の種類に合わせて選ぶ場面を変えると、限られた時間で伝わりやすくなります。</p>
+<h2 id="s5">Androidならではの逆質問</h2>
+<p>面談の終わりの逆質問は、印象づくりより<strong>参画後のずれを防ぐ確認</strong>に使います。Androidの案件では、次の点を聞いておくと判断がしやすくなります。</p>
+<ul><li>今のコードの状態（Kotlinの比率、Composeの導入の度合い、主なアーキテクチャ）</li><li>次のtargetSdkの対応の予定と、その担当の見込み</li><li>検証端末の用意の仕方と、確認する機種の決め方</li><li>リリースの周期と、ストアへの提出を誰が担うか</li><li>iOS版の有無と、担当者との連絡の取り方</li></ul>
+<p>一般的な逆質問の考え方は<a href="/media/reverse-questions/">業務委託の面談で聞いておくべき逆質問</a>にまとめています。逆質問で聞いた内容は、契約前の確認にもそのまま使えます。案件を選ぶときの確認点は<a href="/media/android-anken-erabi/">Android案件の選び方</a>で整理しています。</p>
+<aside class="box box-view"><p class="box-label">エージェントベストの見解</p><p>当社では、経歴をご本人の了承を得た案件にだけ、氏名・連絡先を伏せてご提案しています。Androidの案件では、コードの状態や検証端末の用意など、案件票だけでは分からない点が面談の前に気になることがあります。確かめておきたい点があれば、ご質問いただければ確認します。</p></aside>
+<aside class="box box-point"><p class="box-label">ポイント</p><ul><li>Androidの面談では、担当範囲、移行の進め方、targetSdkの対応、端末差と不具合への向き合い方がよく聞かれる</li><li>答えは「気づいたきっかけ→調べたこと→選んだ方法と理由→結果」の順で組み立てる</li><li>準備は判断の場面を3〜4つに絞り、スキルシートと規模の言い方をそろえる</li><li>逆質問では、コードの状態、要件対応の予定、検証端末、リリースの担当を確かめる</li></ul></aside>
+<h2 id="s6">よくある質問</h2>
+<h3>Composeの実務経験がないと、面談で不利になりますか？</h3>
+<p>Composeを使っている現場では、経験があるほうが立ち上がりは早いと見られます。ただ、運用中のアプリにはViewのコードも多く残っているため、Viewでの経験が評価される案件もあります。実務で使った範囲と、個人で試した範囲を分けて正直に話すことが大切です。</p>
+<h3>面談でコードを書く課題が出ることはありますか？</h3>
+<p>案件によってあります。その場で簡単な処理を書く形や、過去に書いたコードについて説明を求められる形などがあります。事前に課題の提出を求められた場合の考え方は<a href="/media/mushou-kadai/">面談で課題の提出を求められたとき</a>で解説しています。</p>
+<h3>個人で公開したアプリの話をしてもよいですか？</h3>
+<p>話して問題ありません。業務の経験が少ない分野を補う材料になります。その場合も、何を作ったかより、どんな判断をして、公開後にどんな問題をどう直したかを話すと伝わりやすくなります。業務の経験と混ぜずに、個人の取り組みとして分けて話しましょう。</p>
+  </div>
+  <section class="sources"><h2>参考にした公的情報・資料</h2><ul><li><a href="https://developer.android.com/google/play/requirements/target-sdk" target="_blank" rel="noopener nofollow">Google Play のターゲット API レベルの要件（Android Developers）</a></li></ul>
+  <p class="note">記事の内容は公開日時点の情報にもとづきます。制度や税率は変わることがあるため、手続きの前に必ず各機関の最新情報をご確認ください。</p></section>
+  <div class="cta-band">
+  <h2>条件に合う案件だけ、知りたい方へ</h2>
+  <p>ご登録は無料です。条件に合う案件だけを、ご本人の了承を得てからご提案します。</p>
+  <div class="cta-row">
+    <a class="btn btn-primary" href="https://airtable.com/appYkc36EvioYoL1A/pag6CZC4uJmxUcrXT/form" target="_blank" rel="noopener">無料で登録する</a>
+    <a class="btn btn-ghost" href="/jobs/">案件を探す</a>
+  </div>
+</div>
+  <section class="related"><h2>あわせて読みたい</h2><div class="grid g2"><a class="card art-card" href="/media/interview-questions/">
+  <span class="art-hub">スキルシート・面談</span>
+  <h3>業務委託の面談でよく聞かれる質問と答え方｜回答の組み立て方</h3>
+  <p>業務委託の面談では、経歴の説明、直近案件での役割、技術や業務の深さ、稼働条件の4つがよく聞かれます。「結論→背景→自分の行動→結果」の順で短く答えると伝わりやすくなります。質問ごとの答え方を架空の例で紹介します。</p>
+</a>
+<a class="card art-card" href="/media/reverse-questions/">
+  <span class="art-hub">スキルシート・面談</span>
+  <h3>業務委託の面談で聞いておくべき逆質問｜参画後のずれを防ぐ確認項目</h3>
+  <p>業務委託の面談の逆質問は、印象づくりより「参画後のずれを防ぐ確認」に使うのが基本です。業務の範囲、体制と指示の流れ、稼働の実態、期間の見込みの4つを確かめておくと、契約後の「話が違う」を減らせます。</p>
+</a>
+<a class="card art-card" href="/media/tech-test/">
+  <span class="art-hub">スキルシート・面談</span>
+  <h3>技術面談・コーディングテストへの備え方｜形式の確かめ方と当日の進め方</h3>
+  <p>技術面談やコーディングテストで見られるのは、正解の速さより、考え方を説明しながら進められるかです。事前に形式・時間・使える道具を確かめ、直近の業務を説明する準備と、手を動かす練習を分けて行います。当日の進め方と注意点もまとめます。</p>
+</a>
+<a class="card art-card" href="/media/self-introduction/">
+  <span class="art-hub">スキルシート・面談</span>
+  <h3>面談の自己紹介の組み立て方｜1〜2分で伝える経歴と話す順番</h3>
+  <p>業務委託の面談の自己紹介は「経験の全体像→直近の案件と役割→この案件に生かせる経験」の3段で、1〜2分にまとめるのが基本です。年代順に全部話さず、案件に合う経験を選んで話す組み立て方を架空の例で紹介します。</p>
+</a>
+<a class="card art-card" href="/media/android-skillsheet/">
+  <span class="art-hub">モバイルアプリ開発</span>
+  <h3>Androidエンジニアのスキルシートの書き方｜面談で評価される実績の見せ方</h3>
+  <p>Androidのスキルシートは、KotlinとJava、ComposeとViewの比率やtargetSdkが参画中にどう変わったかを書き、端末の対応範囲と配布の方法を添えるのが基本です。書き方と記入例、Google PlayのURLの扱いを紹介します。</p>
+</a>
+<a class="card art-card" href="/media/android-skills/">
+  <span class="art-hub">モバイルアプリ開発</span>
+  <h3>Androidエンジニアのフリーランス案件で求められるスキルと経験</h3>
+  <p>Androidのフリーランス案件では、Kotlinのコルーチンとフロー、Jetpack Compose、公式の推奨アーキテクチャに沿った設計、Google Playの技術要件への対応が見られます。分野ごとのスキルと示し方を解説します。</p>
+</a></div></section>
+</main>
+<footer class="site-foot">
+  <div class="wrap">
+    <strong>エージェントベストジョブ フリーランス</strong>
+    <div class="foot-links">
+      <a href="/">トップ</a>
+      <a href="/jobs/">案件を探す</a>
+      <a href="/media/">お役立ち記事</a>
+      <a href="https://airtable.com/appYkc36EvioYoL1A/pag6CZC4uJmxUcrXT/form" target="_blank" rel="noopener">ご登録（スキルシート・ご希望の条件）</a>
+      <a href="https://line.me/R/ti/p/@697nxhbt?oat_content=url&ts=08302134" target="_blank" rel="noopener" data-line-cta="footer">LINEで相談する</a>
+      <a href="/privacy.html">個人情報の取り扱い</a>
+      <a href="https://www.agent-best.net/company/">運営会社</a>
+    </div>
+    <div class="foot-links">
+      <a href="https://jobs.agent-best.net/">正社員の求人を探す（エージェントベストジョブ）</a>
+      <a href="https://skill.agent-best.net/">エージェントベストジョブ手に職</a>
+      <a href="https://www.agent-best.net/">エージェントベスト</a>
+    </div>
+    <p>運営：株式会社エージェントベスト（有料職業紹介事業 許可番号 13-ユ-316964）<br>〒106-0032 東京都港区六本木4-8-7 嶋田ビル5階</p>
+  </div>
+</footer>
+<script src="/assets/fav.js" defer></script>
+</body>
+</html>

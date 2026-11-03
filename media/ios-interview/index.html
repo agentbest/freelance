@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>iOSエンジニアのフリーランス面談でよく聞かれる質問と答え方｜エージェントベストジョブ フリーランス</title>
+<meta name="description" content="iOS案件の面談では、担当したアプリと役割、Swiftの並行処理やSwiftUIへの向き合い方、審査とリリースへの関わり、不具合の調べ方がよく聞かれます。質問ごとに面談官が確かめたいことと答えの組み立て方、準備の進め方、逆質問を整理します。">
+<link rel="canonical" href="https://freelance.agent-best.net/media/ios-interview/">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="エージェントベストジョブ フリーランス">
+<meta property="og:title" content="iOSエンジニアのフリーランス面談でよく聞かれる質問と答え方｜エージェントベストジョブ フリーランス">
+<meta property="og:description" content="iOS案件の面談では、担当したアプリと役割、Swiftの並行処理やSwiftUIへの向き合い方、審査とリリースへの関わり、不具合の調べ方がよく聞かれます。質問ごとに面談官が確かめたいことと答えの組み立て方、準備の進め方、逆質問を整理します。">
+<meta property="og:url" content="https://freelance.agent-best.net/media/ios-interview/">
+<meta property="og:image" content="https://freelance.agent-best.net/assets/ogp.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://freelance.agent-best.net/assets/ogp.png">
+<meta name="theme-color" content="#1E3A5F">
+<link rel="icon" href="/assets/favicon.ico">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="stylesheet" href="/assets/site.css">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1XXMP8Y1B4"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-1XXMP8Y1B4');
+document.addEventListener('click',e=>{const a=e.target.closest('[data-line-cta]');if(a)gtag('event','line_add_friend',{placement:a.dataset.lineCta,page_path:location.pathname});});</script>
+<script type="application/ld+json">[{"@context":"https://schema.org","@type":"Article","headline":"iOSエンジニアのフリーランス面談でよく聞かれる質問と答え方","description":"iOS案件の面談では、担当したアプリと役割、Swiftの並行処理やSwiftUIへの向き合い方、審査とリリースへの関わり、不具合の調べ方がよく聞かれます。質問ごとに面談官が確かめたいことと答えの組み立て方、準備の進め方、逆質問を整理します。","datePublished":"2026-11-04","dateModified":"2026-11-04","author":{"@type":"Organization","name":"株式会社エージェントベスト","url":"https://www.agent-best.net/"},"publisher":{"@type":"Organization","name":"株式会社エージェントベスト","logo":{"@type":"ImageObject","url":"https://freelance.agent-best.net/assets/logo.png"}},"mainEntityOfPage":"https://freelance.agent-best.net/media/ios-interview/"},{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"トップ","item":"https://freelance.agent-best.net/"},{"@type":"ListItem","position":2,"name":"お役立ち記事","item":"https://freelance.agent-best.net/media/"},{"@type":"ListItem","position":3,"name":"モバイルアプリ開発","item":"https://freelance.agent-best.net/media/hub/mobile/"},{"@type":"ListItem","position":4,"name":"iOSエンジニアのフリーランス面談でよく聞かれる質問と答え方"}]},{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"SwiftUIの経験が少なくても、面談で不利になりますか？","acceptedAnswer":{"@type":"Answer","text":"案件によります。UIKitが中心の運用中アプリでは、UIKitの経験が重く見られることもあります。SwiftUIの経験が浅い場合は、個人開発や検証で試した内容と、UIKitとの境目をどう扱うかの考えを話せるようにしておくと、受け止めてもらいやすくなります。"}},{"@type":"Question","name":"面談でライブコーディングを求められることはありますか？","acceptedAnswer":{"@type":"Answer","text":"一部の案件ではあります。短い課題を画面共有で解いたり、既存のコードを読んで改善点を話したりする形が多く見られます。長い時間を要する課題を無償で求められた場合の考え方は、面談で課題の提出を求められたときをご覧ください。"}},{"@type":"Question","name":"個人開発のアプリは面談で話してよいですか？","acceptedAnswer":{"@type":"Answer","text":"話して問題ありません。仕事の経験が少ない技術を補う材料になります。審査を通した経験や、利用者の声を受けて直した経験があれば、実務に近い話として伝わります。個人開発の扱い方はiOSエンジニアがフリーランスになるにはでも解説しています。"}}]}]</script>
+</head>
+<body>
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="/"><img src="/assets/mark.png" alt="" width="28" height="28"><span>エージェントベストジョブ フリーランス<small>フリーランスのエンジニア・コンサル向け案件紹介</small></span></a>
+    <nav class="head-nav" aria-label="メニュー">
+      <a class="link" href="/jobs/">案件を探す</a>
+      <a class="link" href="/media/">お役立ち記事</a>
+      <a class="link keep" href="/mypage/" aria-label="気になる案件">☆ 気になる<span class="fav-count" data-fav-count hidden></span></a>
+      <a class="btn btn-primary btn-sm" href="https://airtable.com/appYkc36EvioYoL1A/pag6CZC4uJmxUcrXT/form" target="_blank" rel="noopener">無料で登録</a>
+    </nav>
+  </div>
+</header>
+<main class="wrap narrow article">
+  <p class="crumbs"><a href="/">トップ</a> › <a href="/media/">お役立ち記事</a> › <a href="/media/hub/mobile/">モバイルアプリ開発</a></p>
+  <a class="art-hub" href="/media/hub/mobile/">モバイルアプリ開発</a>
+  <h1 class="art-title">iOSエンジニアのフリーランス面談でよく聞かれる質問と答え方</h1>
+  <p class="note">公開 2026-11-04　監修：株式会社エージェントベスト</p>
+  <nav class="toc" aria-label="目次"><strong>目次</strong><ol><li><a href="#s1">iOSの面談で面談官が見ていること</a></li><li><a href="#s2">よく聞かれる質問と答え方の考え方</a></li><li><a href="#s3">準備は「判断の場面」と「数字」をそろえる</a></li><li><a href="#s4">面談の相手によって重心が変わる</a></li><li><a href="#s5">iOSエンジニアならではの逆質問</a></li><li><a href="#s6">よくある質問</a></li></ol></nav>
+  <div class="art-body">
+<p>フリーランスのiOSエンジニアの面談でよく聞かれるのは、<strong>どのアプリでどこを担当したか、Swiftの並行処理やSwiftUIにどう向き合ってきたか、審査とリリースにどこまで関わったか、不具合をどう調べて直したか</strong>の4つです。面談官は知識の量より、「この人に今のコードを渡したら、壊さずに前へ進めてくれるか」を確かめようとしています。</p>
+<p>準備では、模範回答を覚えるより、自分の経験から「判断した場面」を3〜4つ選び、どの質問にもそこから答えられるようにしておくのが近道です。面談全般の答え方は<a href="/media/interview-questions/">業務委託の面談でよく聞かれる質問と答え方</a>にまとめているので、ここではiOSの面談に固有の点に絞ります。</p>
+<h2 id="s1">iOSの面談で面談官が見ていること</h2>
+<p>iOS案件の面談に出てくるのは、発注元のテックリードやiOSチームのリーダー、PdMであることが多くあります。テックリードは技術の深さを、PdMは進め方や話の通じやすさを見ています。どちらも気にしているのは、おおむね次の3点です。</p>
+<ol><li><strong>今のコードに入れるか</strong>：アプリの規模、UIKitとSwiftUIの比率、最低対応OSなど、自社の状態に近い経験があるか</li><li><strong>リリースを任せられるか</strong>：TestFlightでの配布、審査への提出、リリース後のクラッシュへの対応を経験しているか</li><li><strong>チームで動けるか</strong>：レビューの受け方と出し方、デザイナーやサーバー側の開発者とのやり取りが自社のやり方に合うか</li></ol>
+<p>以下の質問は、この3点のどれかを確かめるためのものです。意図が分かれば、答えの中心に何を置くかも決まります。</p>
+<h2 id="s2">よく聞かれる質問と答え方の考え方</h2>
+<p>答えの例は組み立て方を示すための<strong>架空の例</strong>です。ご自身の経験に置き換えて準備してください。</p>
+<h3>1. 「直近で担当したアプリと、あなたの役割を教えてください」</h3>
+<p>確かめたいのは、自社のアプリに近いかどうかです。アプリの種類、利用者の規模感、チームの人数、自分の担当範囲、UIKitとSwiftUIの比率、最低対応OSを短く伝えます。社名やアプリ名は伏せてかまいません。</p>
+<p>架空の例：「会員向けの予約アプリで、iOSは3名のチームでした。画面の新規開発はSwiftUI、既存画面はUIKitで、比率は半々くらいです。私は予約と決済の画面を担当し、レビューも受け持っていました」</p>
+<h3>2. 「Swiftの並行処理（async/await、actor）はどう使っていますか」</h3>
+<p>並行処理への理解は、iOSの面談でよく掘り下げられる点です。言葉の説明より、<strong>既存のコールバックやCombineの処理をどう置き換えたか、データの競合をどう避けたか</strong>といった場面を話すと伝わります。Swift 6の言語モードへの移行を経験していれば、どの層から手をつけ、警告やエラーをどう減らしたかが話の材料になります。技術の背景は<a href="/media/ios-skills/">iOSエンジニアのスキルの記事</a>で整理しています。</p>
+<h3>3. 「SwiftUIとUIKitを、どう使い分けていますか」</h3>
+<p>正解を聞いている質問ではありません。自社のアプリが混在している場合に、<strong>どちらかに偏らず判断できるか</strong>を見ています。「新しい画面はSwiftUIで作り、複雑なリストや既存の部品はUIKitを残して、境目はこう包んだ」のように、使い分けた理由と境目の扱いを話しましょう。</p>
+<h3>4. 「画面とデータの分け方（設計）はどうしていましたか」</h3>
+<p>MVVMなどの名前を挙げるだけでは、判断の中身が見えません。チームの規模や画面の数に対して、なぜその分け方にしたのか、テストをどこまで書いたのかを話します。自分で決めた方針なのか、既存の方針に従ったのかも分けて伝えると、誇張していない印象になります。</p>
+<h3>5. 「App Storeの審査で指摘を受けたことはありますか」</h3>
+<p>審査とリリースへの関わりを確かめる質問です。指摘の内容、どう直したか、再提出までの流れを話します。Appleの審査ガイドラインは安全性・パフォーマンス・ビジネス・デザイン・法的事項の5章で構成され、アカウント作成ができるアプリにはアプリ内でのアカウント削除が求められています（2026年10月時点、Appleの案内による）。こうした要件を前もって確かめていた経験があれば、あわせて話すと伝わりやすくなります。提出を社員が担っていた場合は、自分がどこまで準備したかを正確に伝えます。</p>
+<h3>6. 「リリース後に大きな不具合が出たとき、どう対応しましたか」</h3>
+<p>クラッシュの報告や利用者の声から、原因をどう絞り込み、どの順番で直したかを話します。次の順で組み立てると伝わりやすくなります。</p>
+<ul><li>何から異常に気づいたか（クラッシュの報告、問い合わせ、指標の変化など）</li><li>再現の手順をどう見つけたか（端末、OSの版、通信の状態）</li><li>暫定の対処と本来の修正をどう分けたか</li><li>誰にいつ伝え、修正版をどう出したか</li><li>再発を防ぐために何を変えたか</li></ul>
+<h3>7. 「Appleの要件の変化には、どう追従していますか」</h3>
+<p>App Store Connectへのアップロードには、2026年4月28日からXcode 26以降とiOS 26などのSDKでのビルドが、2026年9月9日からはiOS 13以降を対象にすることが求められています（2026年10月時点、Apple Developerの案内による）。面談官は日付を覚えているかではなく、<strong>こうした要件をどこで確かめ、チームでどう対応を計画したか</strong>を聞いています。</p>
+<h3>8. 「なぜフリーランスで、なぜこの案件なのですか」</h3>
+<p>長く続けてもらえるか、案件との相性はどうかを確かめる質問です。働き方の希望だけでなく、どんな状態のアプリで力を出したいかを添えると、案件との合い方が伝わります。</p>
+<aside class="box box-view"><p class="box-label">エージェントベストの見解</p><p>iOSの案件をご紹介していると、面談で評価されやすいのは、技術の名前を並べる方より、「このコードをなぜこう直したか」を順を追って話せる方です。反対に、SwiftUIやasync/awaitの経験を問われて「使っています」で終わると、深さが伝わらず見送られやすい傾向があります。経験が浅い技術でも、試したことと分かったことを正直に話せれば、受け止めてもらえることが多くあります。</p></aside>
+<h2 id="s3">準備は「判断の場面」と「数字」をそろえる</h2>
+<p>質問は多く見えますが、答えの材料は共通しています。次の手順で準備すると効率的です。</p>
+<ol><li><strong>場面を選ぶ</strong>：設計の判断、移行、審査の指摘、リリース後の不具合など、性質の違う場面を3〜4つ選ぶ</li><li><strong>場面ごとにメモをつくる</strong>：状況、選択肢、選んだ理由、結果、学びを書き出す</li><li><strong>規模をそろえる</strong>：チームの人数、画面の数、最低対応OS、技術の比率を、どの場面でも同じ数字で言えるようにする</li><li><strong>画面を共有できる材料を用意する</strong>：個人開発のアプリや検証用のコードがあれば、見せられる状態にしておく</li><li><strong>スキルシートと照らし合わせる</strong>：面談官はシートを見ながら質問するため、話とシートの内容をそろえる</li></ol>
+<p>シートの書き方は<a href="/media/ios-skillsheet/">iOSエンジニアのスキルシートの記事</a>、冒頭の話し方は<a href="/media/self-introduction/">面談の自己紹介の組み立て方</a>で解説しています。コードを書く課題やライブコーディングが出る場合の備えは<a href="/media/tech-test/">技術面談・コーディングテストへの備え方</a>をご覧ください。</p>
+<aside class="box box-caution"><p class="box-label">注意</p><p>前の案件のアプリ名、未公開の機能、利用者の数、社内の画面などを、面談で話したり画面共有で見せたりしてしまうことがあります。守秘の範囲を超えると、技術の評価以前に信頼を損ないます。アプリの種類や規模で伝え、コードを見せるなら自分で作ったものに限りましょう。</p></aside>
+<h2 id="s4">面談の相手によって重心が変わる</h2>
+<div class="table-wrap"><table><thead><tr><th>面談の相手</th><th>重く見られやすい点</th></tr></thead><tbody><tr><td>テックリード・iOSのリーダー</td><td>並行処理、設計の判断、レビューの仕方、移行の経験</td></tr><tr><td>PdM・事業側の担当者</td><td>仕様の詰め方、見積もりの出し方、リリースの進め方</td></tr><tr><td>受託会社のPM（受託開発の案件）</td><td>仕様の確認の仕方、納期への向き合い方、報告の仕方</td></tr></tbody></table></div>
+<p>テックリードとPdMが同席する面談では、技術の話をした後に「それで利用者や開発の進み方にどう効いたか」を一言添えると、両方に伝わります。</p>
+<h2 id="s5">iOSエンジニアならではの逆質問</h2>
+<p>逆質問は印象づくりより、<strong>参画後のずれを防ぐ確認</strong>に使います。iOSの案件では、次の点を聞いておくと判断しやすくなります。</p>
+<ul><li>UIKitとSwiftUIの比率、最低対応OS、Swift 6の言語モードへの移行の状況</li><li>審査への提出とリリースの判断を誰が担うか</li><li>TestFlightでの配布やCIの仕組みが整っているか</li><li>開発用のMacと検証用の端末の扱い（貸与か、持ち込みか）</li><li>Androidやサーバー側のチームとの仕様のそろえ方</li></ul>
+<p>一般的な考え方は<a href="/media/reverse-questions/">業務委託の面談で聞いておくべき逆質問</a>にまとめています。聞いた内容は契約前の確認にもそのまま使えます。確認点の全体は<a href="/media/ios-anken-erabi/">iOSエンジニアの案件の選び方</a>で整理しています。</p>
+<aside class="box box-view"><p class="box-label">エージェントベストの見解</p><p>当社では、経歴をご本人の了承を得た案件にだけ、氏名・連絡先を伏せてご提案しています。iOSの面談では、案件票だけでは分からないアプリの状態や開発機材の扱いについて、面談の前に確かめたい点があれば、ご質問いただければ確認します。面談の準備として、話す場面を3〜4つに絞っておくことをおすすめします。</p></aside>
+<aside class="box box-point"><p class="box-label">ポイント</p><ul><li>iOSの面談では、担当したアプリと役割、並行処理とSwiftUI、審査とリリース、不具合への対応がよく聞かれる</li><li>答えは「状況→選択肢→選んだ理由→結果→学び」の順で組み立てる</li><li>準備は判断の場面を3〜4つに絞り、規模の数字とスキルシートをそろえる</li><li>逆質問では、技術の比率、審査の担当、開発機材の扱いを確かめる</li></ul></aside>
+<h2 id="s6">よくある質問</h2>
+<h3>SwiftUIの経験が少なくても、面談で不利になりますか？</h3>
+<p>案件によります。UIKitが中心の運用中アプリでは、UIKitの経験が重く見られることもあります。SwiftUIの経験が浅い場合は、個人開発や検証で試した内容と、UIKitとの境目をどう扱うかの考えを話せるようにしておくと、受け止めてもらいやすくなります。</p>
+<h3>面談でライブコーディングを求められることはありますか？</h3>
+<p>一部の案件ではあります。短い課題を画面共有で解いたり、既存のコードを読んで改善点を話したりする形が多く見られます。長い時間を要する課題を無償で求められた場合の考え方は、<a href="/media/mushou-kadai/">面談で課題の提出を求められたとき</a>をご覧ください。</p>
+<h3>個人開発のアプリは面談で話してよいですか？</h3>
+<p>話して問題ありません。仕事の経験が少ない技術を補う材料になります。審査を通した経験や、利用者の声を受けて直した経験があれば、実務に近い話として伝わります。個人開発の扱い方は<a href="/media/ios-how-to/">iOSエンジニアがフリーランスになるには</a>でも解説しています。</p>
+  </div>
+  <section class="sources"><h2>参考にした公的情報・資料</h2><ul><li><a href="https://developer.apple.com/jp/app-store/review/guidelines/" target="_blank" rel="noopener nofollow">App Review ガイドライン（Apple）</a></li><li><a href="https://developer.apple.com/news/upcoming-requirements/" target="_blank" rel="noopener nofollow">Upcoming Requirements（Apple Developer）</a></li><li><a href="https://developer.apple.com/testflight/" target="_blank" rel="noopener nofollow">TestFlight（Apple Developer）</a></li></ul>
+  <p class="note">記事の内容は公開日時点の情報にもとづきます。制度や税率は変わることがあるため、手続きの前に必ず各機関の最新情報をご確認ください。</p></section>
+  <div class="cta-band">
+  <h2>条件に合う案件だけ、知りたい方へ</h2>
+  <p>ご登録は無料です。条件に合う案件だけを、ご本人の了承を得てからご提案します。</p>
+  <div class="cta-row">
+    <a class="btn btn-primary" href="https://airtable.com/appYkc36EvioYoL1A/pag6CZC4uJmxUcrXT/form" target="_blank" rel="noopener">無料で登録する</a>
+    <a class="btn btn-ghost" href="/jobs/">案件を探す</a>
+  </div>
+</div>
+  <section class="related"><h2>あわせて読みたい</h2><div class="grid g2"><a class="card art-card" href="/media/ios-skills/">
+  <span class="art-hub">モバイルアプリ開発</span>
+  <h3>iOSエンジニアのフリーランス案件で求められるスキルと経験</h3>
+  <p>iOSのフリーランス案件では、Swiftの並行処理への理解、SwiftUIとUIKitでの画面実装、設計の判断、Appleの提出要件に追従する力が見られます。分野ごとのスキルと、面談やスキルシートでの示し方を解説します。</p>
+</a>
+<a class="card art-card" href="/media/ios-skillsheet/">
+  <span class="art-hub">モバイルアプリ開発</span>
+  <h3>iOSエンジニアのスキルシートの書き方｜面談で評価される実績の見せ方</h3>
+  <p>iOSのスキルシートは、アプリごとにSwiftUIとUIKitの比率、最低対応OS、リリースへの関わり方を書くのが基本です。公開アプリのストアURLは、載せてよいかを確かめたうえで担当範囲と一緒に書きます。書き方と記入例を紹介します。</p>
+</a>
+<a class="card art-card" href="/media/ios-shigoto/">
+  <span class="art-hub">モバイルアプリ開発</span>
+  <h3>iOSエンジニアのフリーランス案件の仕事内容｜案件の種類と1日・1か月の流れ</h3>
+  <p>iOSエンジニアのフリーランス案件は、運用中アプリの機能追加、新規アプリの立ち上げ、書き換え・移行、受託開発、共通基盤づくりの5つに分かれます。種類ごとの1日・1か月の流れ、関わる相手、成果物を整理します。</p>
+</a>
+<a class="card art-card" href="/media/ios-anken-erabi/">
+  <span class="art-hub">モバイルアプリ開発</span>
+  <h3>iOSエンジニアのフリーランス案件の選び方｜契約前に確かめたいこと</h3>
+  <p>iOS案件は同じ「Swiftで開発」でも、アプリの状態、審査とリリースの担当、開発機材とアカウント、契約の形で負担が大きく変わります。契約前に確かめたい7つの点と、書面との照らし合わせ方を解説します。</p>
+</a>
+<a class="card art-card" href="/media/ios-how-to/">
+  <span class="art-hub">モバイルアプリ開発</span>
+  <h3>iOSエンジニアがフリーランスになるには｜必要な経験と独立までの進め方</h3>
+  <p>iOSエンジニアがフリーランスになるには、Swiftでの機能開発に加えて、設計の判断とApp Storeへのリリースまでを自分で担った経験が必要です。案件の型、独立前に積む実績、開発環境の準備、面談で聞かれることを解説します。</p>
+</a>
+<a class="card art-card" href="/media/ios-first-month/">
+  <span class="art-hub">モバイルアプリ開発</span>
+  <h3>iOSエンジニアの参画初月にやること｜現場で信頼される進め方</h3>
+  <p>iOSエンジニアの参画初月は、ビルドと配布の環境を整え、既存コードの作りとリリースの手順をつかみ、小さな変更を審査まで通して、月末に改善の見立てを出すのが基本です。週ごとの進め方と、案件の型による重心の違い、避けたい動きを整理します。</p>
+</a></div></section>
+</main>
+<footer class="site-foot">
+  <div class="wrap">
+    <strong>エージェントベストジョブ フリーランス</strong>
+    <div class="foot-links">
+      <a href="/">トップ</a>
+      <a href="/jobs/">案件を探す</a>
+      <a href="/media/">お役立ち記事</a>
+      <a href="https://airtable.com/appYkc36EvioYoL1A/pag6CZC4uJmxUcrXT/form" target="_blank" rel="noopener">ご登録（スキルシート・ご希望の条件）</a>
+      <a href="https://line.me/R/ti/p/@697nxhbt?oat_content=url&ts=08302134" target="_blank" rel="noopener" data-line-cta="footer">LINEで相談する</a>
+      <a href="/privacy.html">個人情報の取り扱い</a>
+      <a href="https://www.agent-best.net/company/">運営会社</a>
+    </div>
+    <div class="foot-links">
+      <a href="https://jobs.agent-best.net/">正社員の求人を探す（エージェントベストジョブ）</a>
+      <a href="https://skill.agent-best.net/">エージェントベストジョブ手に職</a>
+      <a href="https://www.agent-best.net/">エージェントベスト</a>
+    </div>
+    <p>運営：株式会社エージェントベスト（有料職業紹介事業 許可番号 13-ユ-316964）<br>〒106-0032 東京都港区六本木4-8-7 嶋田ビル5階</p>
+  </div>
+</footer>
+<script src="/assets/fav.js" defer></script>
+</body>
+</html>

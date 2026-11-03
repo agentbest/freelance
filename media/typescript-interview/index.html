@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>TypeScriptエンジニアのフリーランス面談でよく聞かれる質問と答え方｜エージェントベストジョブ フリーランス</title>
+<meta name="description" content="TypeScript案件の面談では、使ってきた層、anyの扱い、型と実行時の検証の境目、既存コードの改善、tsconfigやビルドへの関わり方がよく聞かれます。質問ごとに面談官が確かめたいこと、答えの組み立て方、準備と逆質問を整理します。">
+<link rel="canonical" href="https://freelance.agent-best.net/media/typescript-interview/">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="エージェントベストジョブ フリーランス">
+<meta property="og:title" content="TypeScriptエンジニアのフリーランス面談でよく聞かれる質問と答え方｜エージェントベストジョブ フリーランス">
+<meta property="og:description" content="TypeScript案件の面談では、使ってきた層、anyの扱い、型と実行時の検証の境目、既存コードの改善、tsconfigやビルドへの関わり方がよく聞かれます。質問ごとに面談官が確かめたいこと、答えの組み立て方、準備と逆質問を整理します。">
+<meta property="og:url" content="https://freelance.agent-best.net/media/typescript-interview/">
+<meta property="og:image" content="https://freelance.agent-best.net/assets/ogp.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://freelance.agent-best.net/assets/ogp.png">
+<meta name="theme-color" content="#1E3A5F">
+<link rel="icon" href="/assets/favicon.ico">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="stylesheet" href="/assets/site.css">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1XXMP8Y1B4"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-1XXMP8Y1B4');
+document.addEventListener('click',e=>{const a=e.target.closest('[data-line-cta]');if(a)gtag('event','line_add_friend',{placement:a.dataset.lineCta,page_path:location.pathname});});</script>
+<script type="application/ld+json">[{"@context":"https://schema.org","@type":"Article","headline":"TypeScriptエンジニアのフリーランス面談でよく聞かれる質問と答え方","description":"TypeScript案件の面談では、使ってきた層、anyの扱い、型と実行時の検証の境目、既存コードの改善、tsconfigやビルドへの関わり方がよく聞かれます。質問ごとに面談官が確かめたいこと、答えの組み立て方、準備と逆質問を整理します。","datePublished":"2026-11-04","dateModified":"2026-11-04","author":{"@type":"Organization","name":"株式会社エージェントベスト","url":"https://www.agent-best.net/"},"publisher":{"@type":"Organization","name":"株式会社エージェントベスト","logo":{"@type":"ImageObject","url":"https://freelance.agent-best.net/assets/logo.png"}},"mainEntityOfPage":"https://freelance.agent-best.net/media/typescript-interview/"},{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"トップ","item":"https://freelance.agent-best.net/"},{"@type":"ListItem","position":2,"name":"お役立ち記事","item":"https://freelance.agent-best.net/media/"},{"@type":"ListItem","position":3,"name":"フロントエンド開発","item":"https://freelance.agent-best.net/media/hub/frontend/"},{"@type":"ListItem","position":4,"name":"TypeScriptエンジニアのフリーランス面談でよく聞かれる質問と答え方"}]},{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"型の高度な書き方を聞かれて答えられなかったら、見送られますか？","acceptedAnswer":{"@type":"Answer","text":"それだけで決まることは多くありません。知らないことは知らないと伝え、自分ならどう調べて、チームが読める形にするかを話せば、受け止め方は変わります。知ったかぶりで答えて掘り下げられるほうが、評価を下げやすくなります。"}},{"@type":"Question","name":"JavaScriptの経験が長く、TypeScriptの実務が短い場合はどう話せばよいですか？","acceptedAnswer":{"@type":"Answer","text":"JavaScriptで起きた不具合のうち、型があれば防げたものと防げなかったものを分けて話すと、型への理解が伝わります。TypeScriptの実務は期間を正確に伝え、移行や型の追加に関わった場面があれば中心に据えましょう。"}},{"@type":"Question","name":"面談で見送られることが続くときは、何を見直せばよいですか？","acceptedAnswer":{"@type":"Answer","text":"層の伝え方と、答えの具体性を見直すのが先です。応募した案件の層と、話した経験の層がずれていないかを確かめてください。見送られやすい理由は面談で見送られる理由の記事で解説しています。"}}]}]</script>
+</head>
+<body>
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="/"><img src="/assets/mark.png" alt="" width="28" height="28"><span>エージェントベストジョブ フリーランス<small>フリーランスのエンジニア・コンサル向け案件紹介</small></span></a>
+    <nav class="head-nav" aria-label="メニュー">
+      <a class="link" href="/jobs/">案件を探す</a>
+      <a class="link" href="/media/">お役立ち記事</a>
+      <a class="link keep" href="/mypage/" aria-label="気になる案件">☆ 気になる<span class="fav-count" data-fav-count hidden></span></a>
+      <a class="btn btn-primary btn-sm" href="https://airtable.com/appYkc36EvioYoL1A/pag6CZC4uJmxUcrXT/form" target="_blank" rel="noopener">無料で登録</a>
+    </nav>
+  </div>
+</header>
+<main class="wrap narrow article">
+  <p class="crumbs"><a href="/">トップ</a> › <a href="/media/">お役立ち記事</a> › <a href="/media/hub/frontend/">フロントエンド開発</a></p>
+  <a class="art-hub" href="/media/hub/frontend/">フロントエンド開発</a>
+  <h1 class="art-title">TypeScriptエンジニアのフリーランス面談でよく聞かれる質問と答え方</h1>
+  <p class="note">公開 2026-11-04　監修：株式会社エージェントベスト</p>
+  <nav class="toc" aria-label="目次"><strong>目次</strong><ol><li><a href="#s1">TypeScriptの面談で面談官が見ていること</a></li><li><a href="#s2">よく聞かれる質問と答え方の考え方</a></li><li><a href="#s3">技術課題やコードを見せる場面の準備</a></li><li><a href="#s4">準備は「型で判断した場面」を3〜4つに絞る</a></li><li><a href="#s5">案件の層によって重心が変わる</a></li><li><a href="#s6">TypeScriptならではの逆質問</a></li><li><a href="#s7">よくある質問</a></li></ol></nav>
+  <div class="art-body">
+<p>TypeScriptエンジニアのフリーランス面談でよく聞かれるのは、<strong>どの層（画面・サーバー・両方）で使ってきたか、anyや型の無視をどう扱ってきたか、型で防げない部分をどう守ったか、既存のコードをどう改善したか</strong>の4つです。面談官は型の文法の知識より、「この人がチームのコードに入ったとき、型を使って品質を上げてくれるか、逆に複雑にしないか」を確かめようとしています。</p>
+<p>答えるときは、模範回答を覚えるより、自分の経験から「型で判断した場面」を3〜4つ選び、どの質問にもそこから答えられるように準備しておくのが近道です。面談全般の答え方は<a href="/media/interview-questions/">業務委託の面談でよく聞かれる質問と答え方</a>で解説しているので、この記事ではTypeScriptの面談に固有の質問に絞ります。</p>
+<h2 id="s1">TypeScriptの面談で面談官が見ていること</h2>
+<p>TypeScriptの案件の面談に出てくるのは、テックリードや開発の責任者であることが多く、本人もTypeScriptを日常的に書いています。そのため、用語の正しさより、<strong>型を使う判断の理由と、その判断がチームにどう効いたか</strong>を聞いています。</p>
+<p>面談官が知りたいのは、おおむね次の3点です。</p>
+<ol><li><strong>合う層か</strong>：案件で触る画面・サーバー・基盤の経験があるか</li><li><strong>型の使い方の加減</strong>：型を厳しくしすぎてチームを止めないか、ゆるくしすぎて意味をなくさないか</li><li><strong>チームとの相性</strong>：レビューで型の判断を言葉で説明できるか、既存のやり方を尊重して改善を進められるか</li></ol>
+<p>以下の質問は、この3点のどれかを確かめるためのものです。質問の意図が分かれば、答えの中心に何を置くかも決まります。</p>
+<h2 id="s2">よく聞かれる質問と答え方の考え方</h2>
+<p>ここで示す答えの例は、組み立て方を伝えるための<strong>架空の例</strong>です。そのまま使うのではなく、ご自身の経験に置き換えて準備してください。</p>
+<h3>1. 「TypeScriptをどこで、どのくらいの規模で使ってきましたか」</h3>
+<p>確かめたいのは、案件に合う層かどうかです。「TypeScript歴◯年」ではなく、プロジェクトごとに画面かサーバーか、使ったフレームワークや実行環境、チームの人数、自分が触った範囲を短く伝えます。</p>
+<p>架空の例：「直近は自社サービスの画面側で、ReactとTypeScriptを使っていました。開発者は6名ほどで、私は注文まわりの画面と、APIの応答の型の管理を担当していました。Node.jsのBFFも一部触っています」</p>
+<h3>2. 「anyはどんなときに使いますか。減らしたことはありますか」</h3>
+<p>最もよく聞かれる質問の一つです。「anyは使いません」と答えるより、<strong>使うことがある場面と、その代わりに使うもの、残すときの決まり</strong>を話すほうが信頼されます。たとえば、型の分からない外部のデータはunknownで受けて検証してから使う、移行の途中でやむを得ず残すときは理由をコメントに書いて後で数を追う、といった話です。減らした経験があれば、どう数を測り、開発を止めずにどの順番で減らしたかを添えます。</p>
+<h3>3. 「型では防げない不具合を、どう防ぎましたか」</h3>
+<p>型は実行時には消えるため、APIの応答やフォームの入力、外部サービスのデータは型の約束を守ってくれません。面談官は、<strong>型と実行時の検証の境目を理解しているか</strong>を見ています。どこで入力を検証し、検証の結果を型につなげたか、テストで何を補ったかを話します。具体的な不具合を1つ挙げ、原因と、同じことが起きないようにした仕組みまで話せると伝わります。</p>
+<h3>4. 「型エラーの多いコードや、JavaScriptのコードをどう改善しましたか」</h3>
+<p>既存のコードベースに入る案件では、ほぼ聞かれます。答えは次の順番で組み立てると伝わりやすくなります。</p>
+<ul><li>どんな状態だったか（型エラーの数、型の無視の多さ、テストの有無）</li><li>何を基準に、どこから手をつけたか</li><li>ほかの開発者の作業を止めないために何をしたか</li><li>結果として何が楽になったか、何が残ったか</li></ul>
+<p>「全部strictにしました」で終わると、判断の中身が見えません。<strong>一度にやらなかった理由</strong>まで話せると、現場での加減が伝わります。</p>
+<h3>5. 「tsconfigやビルドの設定に関わったことはありますか」</h3>
+<p>設定を自分で変えたことがあるかを確かめる質問です。最初からあった設定を使っていただけなら、そのとおりに話して構いません。変えた経験があれば、何を変え、なぜ変え、変えたときに出たエラーをどう片付けたかを話します。</p>
+<p>2026年10月時点では、TypeScript 7.0（2026年7月8日公開、Microsoftの公式ブログによる）でstrictが初期設定で有効になり、一部の古い設定がエラーになったため、版上げへの考えを聞かれることもあります。触っていない場合は、無理に詳しいふりをせず、自分の現場なら何を確かめてから上げるかを話せば十分です。</p>
+<h3>6. 「型の設計で工夫したことを教えてください」</h3>
+<p>ジェネリクスや判別のできる共用体型など、書き方の名前を並べるより、<strong>どんな問題を、その型で防いだか</strong>を話します。たとえば、状態ごとに持つデータが違う画面で、ありえない組み合わせを型で表せないようにした、という話です。凝った型を書いた話をするときは、ほかの人が読めるようにどう工夫したかも添えると、チームとの相性が伝わります。</p>
+<h3>7. 「レビューで、型の付け方について意見が分かれたらどうしますか」</h3>
+<p>型の厳しさや書き方は好みが分かれやすく、チームでの振る舞いを見る質問です。自分の考えを押し通すより、<strong>チームの決まりがあればそれに合わせ、なければ根拠を示して決まりを作る提案をする</strong>、という順番を話すと安心されます。</p>
+<h3>8. 「生成AIのコード補完は使っていますか」</h3>
+<p>使っているかどうかより、出てきたコードの型をどう確かめているか、案件の決まりに従えるかを見ています。使う場合は、型チェックとテストで確かめてから出していること、使ってよいかは現場の決まりに合わせることを話します。</p>
+<aside class="box box-view"><p class="box-label">エージェントベストの見解</p><p>TypeScriptの案件をご紹介していると、面談で評価されやすいのは、型の書き方の知識より「なぜその厳しさにしたか」を自分の言葉で話せる方です。反対に、anyを使わないことや型の高度な書き方を強調しすぎると、既存のコードに合わせられるかを心配されることがあります。完璧な型より、チームが続けられる型を選んだ経験を話すことをおすすめします。</p></aside>
+<h2 id="s3">技術課題やコードを見せる場面の準備</h2>
+<p>面談の中で、画面を共有してコードの説明を求められたり、短い技術課題を出されたりすることがあります。TypeScriptの課題では、動くことに加えて、型の付け方や名前の付け方、エラーの扱いが見られます。課題全般の考え方は<a href="/media/tech-test/">技術面談・コーディングテストへの備え方</a>で解説しています。</p>
+<p>公開リポジトリを見せる場合は、前の案件のコードや、取引先の情報が入ったものを使わないよう注意してください。</p>
+<h2 id="s4">準備は「型で判断した場面」を3〜4つに絞る</h2>
+<p>上の質問は数が多く見えますが、答えの材料は共通しています。準備は次の手順で進めると効率的です。</p>
+<ol><li><strong>場面を選ぶ</strong>：anyを減らした、実行時の検証を入れた、移行を進めた、レビューで意見が分かれた、など性質の違う場面を3〜4つ選ぶ</li><li><strong>場面ごとにメモをつくる</strong>：状態、判断の基準、選ばなかった方法、ほかの人への影響、結果を書き出す</li><li><strong>層と規模をそろえる</strong>：画面かサーバーか、チームの人数、期間を、どの場面でも同じ言い方で話せるようにする</li><li><strong>1分版と3分版をつくる</strong>：まず短く話し、掘り下げられたら詳しく話せるようにする</li><li><strong>スキルシートと照らし合わせる</strong>：シートに書いた型の取り組みと、話の内容が一致しているかを確かめる</li></ol>
+<p>スキルシートの書き方は<a href="/media/typescript-skillsheet/">TypeScriptのスキルシートの記事</a>、冒頭の自己紹介の組み立て方は<a href="/media/self-introduction/">面談の自己紹介の記事</a>で解説しています。</p>
+<aside class="box box-caution"><p class="box-label">注意</p><p>面談では、前の案件のサービス名や社内のコード、障害の詳細を話してしまいがちです。画面共有で前の現場のリポジトリやチャットが映ることもあります。社名やサービス名は伏せ、規模は人数や期間で示しましょう。画面共有の前には、映してよい画面だけを開いておくと安心です。オンライン面談の準備は<a href="/media/online-interview/">オンライン面談の記事</a>をご覧ください。</p></aside>
+<h2 id="s5">案件の層によって重心が変わる</h2>
+<div class="table-wrap"><table><thead><tr><th>案件の層</th><th>重く見られやすい点</th></tr></thead><tbody><tr><td>画面</td><td>フレームワークの経験、APIの応答の型の扱い、状態の設計</td></tr><tr><td>Node.jsのサーバー</td><td>入力の検証、エラーの扱い、データベースや外部連携の経験</td></tr><tr><td>フルスタック</td><td>型の定義を画面とサーバーで共有した経験、仕様を詰める力</td></tr><tr><td>型・ビルドの基盤</td><td>移行や版上げの進め方、設定を変えた理由、チームへの広げ方</td></tr></tbody></table></div>
+<p>画面の案件ではフレームワークの質問も多く出ます。<a href="/media/react-interview/">Reactの面談の記事</a>やNode.jsの面談の記事もあわせて準備に使ってください。</p>
+<h2 id="s6">TypeScriptならではの逆質問</h2>
+<p>逆質問は、印象づくりより<strong>参画後のずれを防ぐ確認</strong>に使います。TypeScriptの案件では、次の点を聞いておくと判断がしやすくなります。</p>
+<ul><li>画面・サーバー・基盤の仕事の割合と、主に触るリポジトリ</li><li>strictなど型チェックの設定と、anyや型の無視の扱いの決まり</li><li>TypeScriptの版と、版上げの予定があるか</li><li>APIの型を画面とサーバーでどう共有しているか</li><li>CIで型チェックとテストが回っているか</li></ul>
+<p>一般的な逆質問の考え方は<a href="/media/reverse-questions/">業務委託の面談で聞いておくべき逆質問</a>にまとめています。聞いた内容は契約前の確認にも使えます。案件選びの確認点は<a href="/media/typescript-anken-erabi/">TypeScript案件の選び方</a>で整理しています。</p>
+<aside class="box box-view"><p class="box-label">エージェントベストの見解</p><p>当社では、経歴をご本人の了承を得た案件にだけ、氏名・連絡先を伏せてご提案しています。TypeScriptの案件は、案件票だけでは画面とサーバーの割合や型の設定が分からないことがあります。面談の前に確かめておきたい点があれば、ご質問いただければ確認します。</p></aside>
+<aside class="box box-point"><p class="box-label">ポイント</p><ul><li>TypeScriptの面談では、使ってきた層、anyの扱い、型と実行時の検証の境目、既存コードの改善がよく聞かれる</li><li>答えは「状態→判断の基準→選ばなかった方法→影響→結果」の順で組み立てる</li><li>型の厳しさは「チームが続けられるか」の観点で話すと伝わる</li><li>逆質問では、仕事の割合、型の設定と決まり、版上げの予定、型の共有の仕方を確かめる</li></ul></aside>
+<h2 id="s7">よくある質問</h2>
+<h3>型の高度な書き方を聞かれて答えられなかったら、見送られますか？</h3>
+<p>それだけで決まることは多くありません。知らないことは知らないと伝え、自分ならどう調べて、チームが読める形にするかを話せば、受け止め方は変わります。知ったかぶりで答えて掘り下げられるほうが、評価を下げやすくなります。</p>
+<h3>JavaScriptの経験が長く、TypeScriptの実務が短い場合はどう話せばよいですか？</h3>
+<p>JavaScriptで起きた不具合のうち、型があれば防げたものと防げなかったものを分けて話すと、型への理解が伝わります。TypeScriptの実務は期間を正確に伝え、移行や型の追加に関わった場面があれば中心に据えましょう。</p>
+<h3>面談で見送られることが続くときは、何を見直せばよいですか？</h3>
+<p>層の伝え方と、答えの具体性を見直すのが先です。応募した案件の層と、話した経験の層がずれていないかを確かめてください。見送られやすい理由は<a href="/media/interview-fail-reasons/">面談で見送られる理由の記事</a>で解説しています。</p>
+  </div>
+  <section class="sources"><h2>参考にした公的情報・資料</h2><ul><li><a href="https://devblogs.microsoft.com/typescript/announcing-typescript-7-0/" target="_blank" rel="noopener nofollow">Announcing TypeScript 7.0（Microsoft TypeScript Blog）</a></li></ul>
+  <p class="note">記事の内容は公開日時点の情報にもとづきます。制度や税率は変わることがあるため、手続きの前に必ず各機関の最新情報をご確認ください。</p></section>
+  <div class="cta-band">
+  <h2>条件に合う案件だけ、知りたい方へ</h2>
+  <p>ご登録は無料です。条件に合う案件だけを、ご本人の了承を得てからご提案します。</p>
+  <div class="cta-row">
+    <a class="btn btn-primary" href="https://airtable.com/appYkc36EvioYoL1A/pag6CZC4uJmxUcrXT/form" target="_blank" rel="noopener">無料で登録する</a>
+    <a class="btn btn-ghost" href="/jobs/">案件を探す</a>
+  </div>
+</div>
+  <section class="related"><h2>あわせて読みたい</h2><div class="grid g2"><a class="card art-card" href="/media/interview-questions/">
+  <span class="art-hub">スキルシート・面談</span>
+  <h3>業務委託の面談でよく聞かれる質問と答え方｜回答の組み立て方</h3>
+  <p>業務委託の面談では、経歴の説明、直近案件での役割、技術や業務の深さ、稼働条件の4つがよく聞かれます。「結論→背景→自分の行動→結果」の順で短く答えると伝わりやすくなります。質問ごとの答え方を架空の例で紹介します。</p>
+</a>
+<a class="card art-card" href="/media/reverse-questions/">
+  <span class="art-hub">スキルシート・面談</span>
+  <h3>業務委託の面談で聞いておくべき逆質問｜参画後のずれを防ぐ確認項目</h3>
+  <p>業務委託の面談の逆質問は、印象づくりより「参画後のずれを防ぐ確認」に使うのが基本です。業務の範囲、体制と指示の流れ、稼働の実態、期間の見込みの4つを確かめておくと、契約後の「話が違う」を減らせます。</p>
+</a>
+<a class="card art-card" href="/media/self-introduction/">
+  <span class="art-hub">スキルシート・面談</span>
+  <h3>面談の自己紹介の組み立て方｜1〜2分で伝える経歴と話す順番</h3>
+  <p>業務委託の面談の自己紹介は「経験の全体像→直近の案件と役割→この案件に生かせる経験」の3段で、1〜2分にまとめるのが基本です。年代順に全部話さず、案件に合う経験を選んで話す組み立て方を架空の例で紹介します。</p>
+</a>
+<a class="card art-card" href="/media/interview-fail-reasons/">
+  <span class="art-hub">スキルシート・面談</span>
+  <h3>業務委託の面談で見送られる理由と次に生かす方法｜振り返りの手順</h3>
+  <p>業務委託の面談で見送られる理由は、経験のずれ、条件のずれ、伝わり方、自分では変えられない事情の4つに分けられます。理由を分けて振り返り、変えられるものだけを次の応募や面談で直すのが基本です。分類と振り返りの手順を整理します。</p>
+</a>
+<a class="card art-card" href="/media/tech-test/">
+  <span class="art-hub">スキルシート・面談</span>
+  <h3>技術面談・コーディングテストへの備え方｜形式の確かめ方と当日の進め方</h3>
+  <p>技術面談やコーディングテストで見られるのは、正解の速さより、考え方を説明しながら進められるかです。事前に形式・時間・使える道具を確かめ、直近の業務を説明する準備と、手を動かす練習を分けて行います。当日の進め方と注意点もまとめます。</p>
+</a>
+<a class="card art-card" href="/media/online-interview/">
+  <span class="art-hub">スキルシート・面談</span>
+  <h3>オンライン面談で気をつけること｜環境・話し方・資料の準備</h3>
+  <p>業務委託のオンライン面談では、通信・音声・カメラの環境を前日までに試し、結論から短く話し、画面共有する資料は守秘義務に触れないものに絞ることが大切です。準備から当日の流れ、接続トラブルへの備えまで整理します。</p>
+</a></div></section>
+</main>
+<footer class="site-foot">
+  <div class="wrap">
+    <strong>エージェントベストジョブ フリーランス</strong>
+    <div class="foot-links">
+      <a href="/">トップ</a>
+      <a href="/jobs/">案件を探す</a>
+      <a href="/media/">お役立ち記事</a>
+      <a href="https://airtable.com/appYkc36EvioYoL1A/pag6CZC4uJmxUcrXT/form" target="_blank" rel="noopener">ご登録（スキルシート・ご希望の条件）</a>
+      <a href="https://line.me/R/ti/p/@697nxhbt?oat_content=url&ts=08302134" target="_blank" rel="noopener" data-line-cta="footer">LINEで相談する</a>
+      <a href="/privacy.html">個人情報の取り扱い</a>
+      <a href="https://www.agent-best.net/company/">運営会社</a>
+    </div>
+    <div class="foot-links">
+      <a href="https://jobs.agent-best.net/">正社員の求人を探す（エージェントベストジョブ）</a>
+      <a href="https://skill.agent-best.net/">エージェントベストジョブ手に職</a>
+      <a href="https://www.agent-best.net/">エージェントベスト</a>
+    </div>
+    <p>運営：株式会社エージェントベスト（有料職業紹介事業 許可番号 13-ユ-316964）<br>〒106-0032 東京都港区六本木4-8-7 嶋田ビル5階</p>
+  </div>
+</footer>
+<script src="/assets/fav.js" defer></script>
+</body>
+</html>

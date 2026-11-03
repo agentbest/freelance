@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Reactエンジニアのフリーランス面談でよく聞かれる質問と答え方｜エージェントベストジョブ フリーランス</title>
+<meta name="description" content="Reactの案件の面談では、担った範囲、コンポーネントの分け方、状態の置き場所、TypeScriptの使い方、性能やテストへの向き合い方がよく聞かれます。質問ごとに面談官が確かめたいこと、答えの組み立て方、準備と逆質問を整理します。">
+<link rel="canonical" href="https://freelance.agent-best.net/media/react-interview/">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="エージェントベストジョブ フリーランス">
+<meta property="og:title" content="Reactエンジニアのフリーランス面談でよく聞かれる質問と答え方｜エージェントベストジョブ フリーランス">
+<meta property="og:description" content="Reactの案件の面談では、担った範囲、コンポーネントの分け方、状態の置き場所、TypeScriptの使い方、性能やテストへの向き合い方がよく聞かれます。質問ごとに面談官が確かめたいこと、答えの組み立て方、準備と逆質問を整理します。">
+<meta property="og:url" content="https://freelance.agent-best.net/media/react-interview/">
+<meta property="og:image" content="https://freelance.agent-best.net/assets/ogp.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://freelance.agent-best.net/assets/ogp.png">
+<meta name="theme-color" content="#1E3A5F">
+<link rel="icon" href="/assets/favicon.ico">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="stylesheet" href="/assets/site.css">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1XXMP8Y1B4"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-1XXMP8Y1B4');
+document.addEventListener('click',e=>{const a=e.target.closest('[data-line-cta]');if(a)gtag('event','line_add_friend',{placement:a.dataset.lineCta,page_path:location.pathname});});</script>
+<script type="application/ld+json">[{"@context":"https://schema.org","@type":"Article","headline":"Reactエンジニアのフリーランス面談でよく聞かれる質問と答え方","description":"Reactの案件の面談では、担った範囲、コンポーネントの分け方、状態の置き場所、TypeScriptの使い方、性能やテストへの向き合い方がよく聞かれます。質問ごとに面談官が確かめたいこと、答えの組み立て方、準備と逆質問を整理します。","datePublished":"2026-11-04","dateModified":"2026-11-04","author":{"@type":"Organization","name":"株式会社エージェントベスト","url":"https://www.agent-best.net/"},"publisher":{"@type":"Organization","name":"株式会社エージェントベスト","logo":{"@type":"ImageObject","url":"https://freelance.agent-best.net/assets/logo.png"}},"mainEntityOfPage":"https://freelance.agent-best.net/media/react-interview/"},{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"トップ","item":"https://freelance.agent-best.net/"},{"@type":"ListItem","position":2,"name":"お役立ち記事","item":"https://freelance.agent-best.net/media/"},{"@type":"ListItem","position":3,"name":"フロントエンド開発","item":"https://freelance.agent-best.net/media/hub/frontend/"},{"@type":"ListItem","position":4,"name":"Reactエンジニアのフリーランス面談でよく聞かれる質問と答え方"}]},{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"面談でコーディングの課題を出されることはありますか？","acceptedAnswer":{"@type":"Answer","text":"案件によってはあります。事前に課題を渡される場合も、面談中に画面共有で書く場合もあります。完成させることより、どう考えて進めたかを声に出して説明できるかが見られることが多いので、詰まったときも考えている内容を話しましょう。"}},{"@type":"Question","name":"クラスコンポーネントの経験が長いことは不利になりますか？","acceptedAnswer":{"@type":"Answer","text":"古い書き方の経験そのものは、既存画面の刷新の案件で生きることがあります。そのうえで、関数コンポーネントとフックでの開発経験を話せることが前提になる案件が多いため、直近で書いたコードや学んだ内容を具体的に伝えましょう。"}},{"@type":"Question","name":"面談で見送られた理由が分からないときはどうすればよいですか？","acceptedAnswer":{"@type":"Answer","text":"紹介を受けた窓口に、答えられる範囲で理由を聞いてみるのが一つの方法です。よくある理由は面談で見送られる理由の記事にまとめています。技術の話が抽象的だった、担当範囲がシートと合わなかった、といった点を振り返ると、次の準備に生かせます。"}}]}]</script>
+</head>
+<body>
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="/"><img src="/assets/mark.png" alt="" width="28" height="28"><span>エージェントベストジョブ フリーランス<small>フリーランスのエンジニア・コンサル向け案件紹介</small></span></a>
+    <nav class="head-nav" aria-label="メニュー">
+      <a class="link" href="/jobs/">案件を探す</a>
+      <a class="link" href="/media/">お役立ち記事</a>
+      <a class="link keep" href="/mypage/" aria-label="気になる案件">☆ 気になる<span class="fav-count" data-fav-count hidden></span></a>
+      <a class="btn btn-primary btn-sm" href="https://airtable.com/appYkc36EvioYoL1A/pag6CZC4uJmxUcrXT/form" target="_blank" rel="noopener">無料で登録</a>
+    </nav>
+  </div>
+</header>
+<main class="wrap narrow article">
+  <p class="crumbs"><a href="/">トップ</a> › <a href="/media/">お役立ち記事</a> › <a href="/media/hub/frontend/">フロントエンド開発</a></p>
+  <a class="art-hub" href="/media/hub/frontend/">フロントエンド開発</a>
+  <h1 class="art-title">Reactエンジニアのフリーランス面談でよく聞かれる質問と答え方</h1>
+  <p class="note">公開 2026-11-04　監修：株式会社エージェントベスト</p>
+  <nav class="toc" aria-label="目次"><strong>目次</strong><ol><li><a href="#s1">Reactの面談で面談官が見ていること</a></li><li><a href="#s2">よく聞かれる質問と答え方の考え方</a></li><li><a href="#s3">準備は「判断した場面」を3〜4つに絞る</a></li><li><a href="#s4">面談の相手によって重心が変わる</a></li><li><a href="#s5">Reactならではの逆質問</a></li><li><a href="#s6">よくある質問</a></li></ol></nav>
+  <div class="art-body">
+<p>Reactエンジニアのフリーランス面談でよく聞かれるのは、<strong>どの範囲を担ったか、コンポーネントをどう分けたか、状態をどこに置いたか、品質をどう支えたか</strong>の4つです。面談官は、知っているライブラリの数より「この人に画面の設計を任せたら、チームのコードがどうなるか」を確かめようとしています。</p>
+<p>答えるときは、模範回答を覚えるより、自分が関わった画面や機能から「判断した場面」を3〜4つ選び、どの質問にもそこから答えられるように準備しておくのが近道です。面談全般の答え方は<a href="/media/interview-questions/">業務委託の面談でよく聞かれる質問と答え方</a>で解説しているので、この記事ではReactの面談に固有の質問に絞ります。</p>
+<h2 id="s1">Reactの面談で面談官が見ていること</h2>
+<p>Reactの案件の面談には、現場のテックリードやフロントエンドの担当者が同席することが多く、技術の話を具体的に掘り下げてきます。ただし、聞きたいのは用語の説明ではなく、<strong>なぜその書き方を選んだのか</strong>という判断の理由です。</p>
+<p>面談官が知りたいのは、おおむね次の3点です。</p>
+<ol><li><strong>任せられる範囲</strong>：決まった画面の実装までか、共通部品や設計まで任せられるか</li><li><strong>コードの質の考え方</strong>：読みやすさ、壊れにくさ、表示の速さ、使いやすさをどう扱ってきたか</li><li><strong>チームとの相性</strong>：レビューの受け方や、デザイナー・バックエンドとのやり取りが自社のやり方に合うか</li></ol>
+<p>以下の質問は、この3点のどれかを確かめるためのものです。質問の意図が分かれば、答えの中心に何を置くかも決まります。</p>
+<h2 id="s2">よく聞かれる質問と答え方の考え方</h2>
+<p>ここで示す答えの例は、組み立て方を伝えるための<strong>架空の例</strong>です。そのまま使わず、ご自身の経験に置き換えてください。</p>
+<h3>1. 「直近の案件で、どこからどこまでを担当しましたか」</h3>
+<p>確かめたいのは任せられる範囲です。チームの人数、自分の立場、担った範囲（画面の実装、共通部品、設計の方針、レビュー）を短く伝えます。「Reactで開発していました」だけでは範囲が見えません。</p>
+<p>架空の例：「フロントエンド4名のチームで、注文管理の画面群の実装と、フォームの共通部品の設計を担いました。方針はテックリードが決め、私はレビューも担当していました」</p>
+<h3>2. 「コンポーネントをどういう考え方で分けていますか」</h3>
+<p>設計の考え方を確かめる質問です。一般論より、<strong>実際に分けた画面を一つ取り上げて</strong>、どこで分け、なぜそうしたか、後から困ったことは何かを話すと伝わります。分けすぎて受け渡しが増えた失敗も、気づいて直した経緯まで話せれば評価の材料になります。</p>
+<h3>3. 「状態はどこに置いていましたか。ライブラリは何を使いましたか」</h3>
+<p>最もよく掘り下げられる質問の一つです。ライブラリの名前を並べるより、<strong>サーバーから取ってくるデータと、画面だけで使う状態を分けて考えているか</strong>が見られています。どの状態をどこに置き、なぜそのライブラリ（または使わない判断）を選んだかを順に話します。useEffectをどんな場面で使い、どんな場面では使わないようにしていたかも聞かれやすい点です。</p>
+<h3>4. 「TypeScriptはどの程度使っていましたか」</h3>
+<p>型をどこまで厳しくしていたか、APIの型をどう用意していたか、型で防げた不具合の例を話します。型の設定を自分で決めたのか、決まった設定の中で書いていたのかを分けて伝えると、誇張していない印象になります。TypeScriptの面談で見られる点は<a href="/media/typescript-interview/">TypeScriptエンジニアの面談の記事</a>でも扱っています。</p>
+<h3>5. 「表示が遅い画面をどう改善しましたか」</h3>
+<p>性能の経験を確かめる質問です。何で遅さに気づいたか（利用者の声、計測の数値、開発ツール）、原因をどう突き止めたか、何を変えたか、変えた後どう確かめたかの順で話します。メモ化を足しただけで終わると、原因の見立てが見えません。<strong>計測してから手を入れた</strong>という順番が伝わることが大切です。</p>
+<h3>6. 「テストはどう書いていましたか」</h3>
+<p>何をテストし、何をしなかったかを聞いています。部品の単体テスト、画面の操作のテスト、ブラウザを使った通しのテストのうち、どれをどの程度書いていたか、テストがあって助かった場面を話します。テストの経験が少ない場合は、少ない理由と、自分で補っていた確認の方法を正直に伝えましょう。</p>
+<h3>7. 「Next.jsなどのフレームワークは使っていましたか」</h3>
+<p>サーバーで描画する部分とブラウザで動かす部分をどう分けたか、データの取得をどこで行ったかを話します。使ったことがない場合は、Reactだけの構成で何を自分で組み立てていたかを話すと、経験の重さが伝わります。</p>
+<h3>8. 「デザイナーやバックエンドの担当者とはどうやり取りしていましたか」</h3>
+<p>チームとの相性を見る質問です。デザインと実装の食い違いをどう相談したか、APIの形が合わないときにどう決めたかを話します。<strong>相手の都合も聞いたうえで、記録を残して決めた</strong>流れが伝わると安心されます。</p>
+<aside class="box box-view"><p class="box-label">エージェントベストの見解</p><p>Reactの案件をご紹介していると、面談で評価されやすいのは、技術の名前より「なぜその書き方にしたか」を自分の画面を例に話せる方です。反対に、ライブラリやフレームワークの名前を数多く挙げても、掘り下げられたときに選んだ理由が出てこないと、見送られやすい傾向があります。使った技術の数を増やすより、判断の理由を話せる場面を準備することをおすすめします。</p></aside>
+<h2 id="s3">準備は「判断した場面」を3〜4つに絞る</h2>
+<p>上の質問は数が多く見えますが、答えの材料は共通しています。準備は次の手順で進めると効率的です。</p>
+<ol><li><strong>場面を選ぶ</strong>：部品の分け方、状態の置き場所、性能の改善、テストや版上げなど、性質の違う場面を3〜4つ選ぶ</li><li><strong>場面ごとにメモをつくる</strong>：状況、ほかの選択肢、選んだ理由、結果、今ならどうするかを書き出す</li><li><strong>版と構成をそろえる</strong>：React・TypeScript・フレームワークの版や、主なライブラリを、どの場面でも同じ内容で言えるようにする</li><li><strong>短い版と詳しい版をつくる</strong>：最初は1〜2分で話し、掘り下げられたら詳しく話せるようにする</li><li><strong>スキルシートと照らし合わせる</strong>：シートに書いた担当範囲と話がずれていないかを確かめる</li></ol>
+<p>スキルシートとの一致は特に大切です。面談官はシートを見ながら質問するため、話とシートがずれると、どちらも信用されにくくなります。シートの書き方は<a href="/media/react-skillsheet/">Reactのスキルシートの記事</a>、冒頭の自己紹介は<a href="/media/self-introduction/">面談の自己紹介の記事</a>で解説しています。</p>
+<p>オンラインの面談では、画面共有でコードや画面を見せるよう求められることもあります。公開できるものを用意しておくと話が早く進みますが、前の現場のコードを見せることは避けましょう。進め方は<a href="/media/online-interview/">オンライン面談の記事</a>が参考になります。</p>
+<aside class="box box-caution"><p class="box-label">注意</p><p>面談では、前の現場のサービス名、画面の具体的な中身、社内のコードをそのまま話したり見せたりしてしまいがちです。画面の内容は「受発注の管理画面」のように一般化し、コードは自分で作った公開できる例に置き換えましょう。前の現場のコードの質を批判する話し方も、聞き手に「自分たちのコードも同じように言われるのでは」と受け取られやすいので避けたほうが無難です。</p></aside>
+<h2 id="s4">面談の相手によって重心が変わる</h2>
+<div class="table-wrap"><table><thead><tr><th>面談の相手</th><th>重く見られやすい点</th></tr></thead><tbody><tr><td>現場のテックリード・フロントエンドの担当者</td><td>設計の考え方、状態管理、テスト、レビューの受け方</td></tr><tr><td>プロダクトの責任者・事業部門</td><td>仕様が決まっていないときの動き方、改善の提案</td></tr><tr><td>元請けのリーダー（受託の案件）</td><td>仕様書に沿った実装の確かさ、報告の仕方、稼働の安定</td></tr></tbody></table></div>
+<p>面談の相手が技術者でない場合は、技術の細部より、何を作り、どんな問題を解いたかを中心に話すと伝わりやすくなります。</p>
+<h2 id="s5">Reactならではの逆質問</h2>
+<p>逆質問は、印象づくりより<strong>参画後のずれを防ぐ確認</strong>に使います。Reactの案件では、次の点を聞いておくと判断がしやすくなります。</p>
+<ul><li>使っているReactとフレームワークの版、版上げの予定</li><li>状態管理やスタイルの書き方の方針と、それを決めている人</li><li>テストの範囲とレビューの進め方</li><li>デザイナーとの受け渡しの方法と、仕様を決める人</li><li>最初に担当する画面や機能</li></ul>
+<p>一般的な逆質問の考え方は<a href="/media/reverse-questions/">業務委託の面談で聞いておくべき逆質問</a>にまとめています。聞いた内容は契約前の確認にも使えます。案件を選ぶときの確認点は<a href="/media/react-anken-erabi/">Reactの案件の選び方</a>で整理しています。</p>
+<aside class="box box-view"><p class="box-label">エージェントベストの見解</p><p>当社では、経歴をご本人の了承を得た案件にだけ、氏名・連絡先を伏せてご提案しています。Reactの面談の前に、版や体制など案件票だけでは分からない点で確かめておきたいことがあれば、ご質問いただければ確認します。面談の後に参画を迷う点が出てきた場合も、早めにご相談ください。</p></aside>
+<aside class="box box-point"><p class="box-label">ポイント</p><ul><li>Reactの面談では、担当範囲、コンポーネントの分け方、状態の置き場所、TypeScript、性能とテストがよく聞かれる</li><li>答えは「状況→ほかの選択肢→選んだ理由→結果→今ならどうするか」の順で組み立てる</li><li>準備は判断した場面を3〜4つに絞り、版と構成、スキルシートの内容をそろえる</li><li>逆質問では、版と版上げの予定、方針を決める人、テストとレビュー、最初の担当を確かめる</li></ul></aside>
+<h2 id="s6">よくある質問</h2>
+<h3>面談でコーディングの課題を出されることはありますか？</h3>
+<p>案件によってはあります。事前に課題を渡される場合も、面談中に画面共有で書く場合もあります。完成させることより、どう考えて進めたかを声に出して説明できるかが見られることが多いので、詰まったときも考えている内容を話しましょう。</p>
+<h3>クラスコンポーネントの経験が長いことは不利になりますか？</h3>
+<p>古い書き方の経験そのものは、既存画面の刷新の案件で生きることがあります。そのうえで、関数コンポーネントとフックでの開発経験を話せることが前提になる案件が多いため、直近で書いたコードや学んだ内容を具体的に伝えましょう。</p>
+<h3>面談で見送られた理由が分からないときはどうすればよいですか？</h3>
+<p>紹介を受けた窓口に、答えられる範囲で理由を聞いてみるのが一つの方法です。よくある理由は<a href="/media/interview-fail-reasons/">面談で見送られる理由の記事</a>にまとめています。技術の話が抽象的だった、担当範囲がシートと合わなかった、といった点を振り返ると、次の準備に生かせます。</p>
+  </div>
+  
+  <div class="cta-band">
+  <h2>条件に合う案件だけ、知りたい方へ</h2>
+  <p>ご登録は無料です。条件に合う案件だけを、ご本人の了承を得てからご提案します。</p>
+  <div class="cta-row">
+    <a class="btn btn-primary" href="https://airtable.com/appYkc36EvioYoL1A/pag6CZC4uJmxUcrXT/form" target="_blank" rel="noopener">無料で登録する</a>
+    <a class="btn btn-ghost" href="/jobs/">案件を探す</a>
+  </div>
+</div>
+  <section class="related"><h2>あわせて読みたい</h2><div class="grid g2"><a class="card art-card" href="/media/interview-questions/">
+  <span class="art-hub">スキルシート・面談</span>
+  <h3>業務委託の面談でよく聞かれる質問と答え方｜回答の組み立て方</h3>
+  <p>業務委託の面談では、経歴の説明、直近案件での役割、技術や業務の深さ、稼働条件の4つがよく聞かれます。「結論→背景→自分の行動→結果」の順で短く答えると伝わりやすくなります。質問ごとの答え方を架空の例で紹介します。</p>
+</a>
+<a class="card art-card" href="/media/reverse-questions/">
+  <span class="art-hub">スキルシート・面談</span>
+  <h3>業務委託の面談で聞いておくべき逆質問｜参画後のずれを防ぐ確認項目</h3>
+  <p>業務委託の面談の逆質問は、印象づくりより「参画後のずれを防ぐ確認」に使うのが基本です。業務の範囲、体制と指示の流れ、稼働の実態、期間の見込みの4つを確かめておくと、契約後の「話が違う」を減らせます。</p>
+</a>
+<a class="card art-card" href="/media/self-introduction/">
+  <span class="art-hub">スキルシート・面談</span>
+  <h3>面談の自己紹介の組み立て方｜1〜2分で伝える経歴と話す順番</h3>
+  <p>業務委託の面談の自己紹介は「経験の全体像→直近の案件と役割→この案件に生かせる経験」の3段で、1〜2分にまとめるのが基本です。年代順に全部話さず、案件に合う経験を選んで話す組み立て方を架空の例で紹介します。</p>
+</a>
+<a class="card art-card" href="/media/online-interview/">
+  <span class="art-hub">スキルシート・面談</span>
+  <h3>オンライン面談で気をつけること｜環境・話し方・資料の準備</h3>
+  <p>業務委託のオンライン面談では、通信・音声・カメラの環境を前日までに試し、結論から短く話し、画面共有する資料は守秘義務に触れないものに絞ることが大切です。準備から当日の流れ、接続トラブルへの備えまで整理します。</p>
+</a>
+<a class="card art-card" href="/media/interview-fail-reasons/">
+  <span class="art-hub">スキルシート・面談</span>
+  <h3>業務委託の面談で見送られる理由と次に生かす方法｜振り返りの手順</h3>
+  <p>業務委託の面談で見送られる理由は、経験のずれ、条件のずれ、伝わり方、自分では変えられない事情の4つに分けられます。理由を分けて振り返り、変えられるものだけを次の応募や面談で直すのが基本です。分類と振り返りの手順を整理します。</p>
+</a>
+<a class="card art-card" href="/media/react-skillsheet/">
+  <span class="art-hub">フロントエンド開発</span>
+  <h3>Reactエンジニアのスキルシートの書き方｜面談で評価される実績の見せ方</h3>
+  <p>Reactのスキルシートは、ReactとNext.jsなどの版と構成、実装・設計・共通部品のどこを担ったかを書き分けるのが基本です。画面数より課題で書くコツ、表示速度の改善の示し方、公開URLやGitHubの扱いを紹介します。</p>
+</a></div></section>
+</main>
+<footer class="site-foot">
+  <div class="wrap">
+    <strong>エージェントベストジョブ フリーランス</strong>
+    <div class="foot-links">
+      <a href="/">トップ</a>
+      <a href="/jobs/">案件を探す</a>
+      <a href="/media/">お役立ち記事</a>
+      <a href="https://airtable.com/appYkc36EvioYoL1A/pag6CZC4uJmxUcrXT/form" target="_blank" rel="noopener">ご登録（スキルシート・ご希望の条件）</a>
+      <a href="https://line.me/R/ti/p/@697nxhbt?oat_content=url&ts=08302134" target="_blank" rel="noopener" data-line-cta="footer">LINEで相談する</a>
+      <a href="/privacy.html">個人情報の取り扱い</a>
+      <a href="https://www.agent-best.net/company/">運営会社</a>
+    </div>
+    <div class="foot-links">
+      <a href="https://jobs.agent-best.net/">正社員の求人を探す（エージェントベストジョブ）</a>
+      <a href="https://skill.agent-best.net/">エージェントベストジョブ手に職</a>
+      <a href="https://www.agent-best.net/">エージェントベスト</a>
+    </div>
+    <p>運営：株式会社エージェントベスト（有料職業紹介事業 許可番号 13-ユ-316964）<br>〒106-0032 東京都港区六本木4-8-7 嶋田ビル5階</p>
+  </div>
+</footer>
+<script src="/assets/fav.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Androidエンジニアの参画初月にやること｜現場で信頼される進め方｜エージェントベストジョブ フリーランス</title>
+<meta name="description" content="Androidエンジニアの参画初月は、ビルドと検証の環境を整え、既存アプリの作りとリリースの流れをつかみ、小さな修正を本番まで届けるのが基本です。週ごとの進め方、案件の型による重心の違い、初月に避けたい動きを整理します。">
+<link rel="canonical" href="https://freelance.agent-best.net/media/android-first-month/">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="エージェントベストジョブ フリーランス">
+<meta property="og:title" content="Androidエンジニアの参画初月にやること｜現場で信頼される進め方｜エージェントベストジョブ フリーランス">
+<meta property="og:description" content="Androidエンジニアの参画初月は、ビルドと検証の環境を整え、既存アプリの作りとリリースの流れをつかみ、小さな修正を本番まで届けるのが基本です。週ごとの進め方、案件の型による重心の違い、初月に避けたい動きを整理します。">
+<meta property="og:url" content="https://freelance.agent-best.net/media/android-first-month/">
+<meta property="og:image" content="https://freelance.agent-best.net/assets/ogp.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://freelance.agent-best.net/assets/ogp.png">
+<meta name="theme-color" content="#1E3A5F">
+<link rel="icon" href="/assets/favicon.ico">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="stylesheet" href="/assets/site.css">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1XXMP8Y1B4"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-1XXMP8Y1B4');
+document.addEventListener('click',e=>{const a=e.target.closest('[data-line-cta]');if(a)gtag('event','line_add_friend',{placement:a.dataset.lineCta,page_path:location.pathname});});</script>
+<script type="application/ld+json">[{"@context":"https://schema.org","@type":"Article","headline":"Androidエンジニアの参画初月にやること｜現場で信頼される進め方","description":"Androidエンジニアの参画初月は、ビルドと検証の環境を整え、既存アプリの作りとリリースの流れをつかみ、小さな修正を本番まで届けるのが基本です。週ごとの進め方、案件の型による重心の違い、初月に避けたい動きを整理します。","datePublished":"2026-11-04","dateModified":"2026-11-04","author":{"@type":"Organization","name":"株式会社エージェントベスト","url":"https://www.agent-best.net/"},"publisher":{"@type":"Organization","name":"株式会社エージェントベスト","logo":{"@type":"ImageObject","url":"https://freelance.agent-best.net/assets/logo.png"}},"mainEntityOfPage":"https://freelance.agent-best.net/media/android-first-month/"},{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"トップ","item":"https://freelance.agent-best.net/"},{"@type":"ListItem","position":2,"name":"お役立ち記事","item":"https://freelance.agent-best.net/media/"},{"@type":"ListItem","position":3,"name":"モバイルアプリ開発","item":"https://freelance.agent-best.net/media/hub/mobile/"},{"@type":"ListItem","position":4,"name":"Androidエンジニアの参画初月にやること｜現場で信頼される進め方"}]},{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"1週間たってもビルドが通りません。どうすればよいですか？","acceptedAnswer":{"@type":"Answer","text":"エラーの内容と、試したことを書き出して、その日のうちに窓口やチームの担当者に伝えてください。社内の設定ファイルや権限が足りないことが原因の場合も多く、一人で調べ続けるより早く解決します。止まっている時間も、報告の中で正直に伝えておくとよいでしょう。"}},{"@type":"Question","name":"既存のコードが古く、直したい点がたくさんあります。初月から提案してよいですか？","acceptedAnswer":{"@type":"Answer","text":"提案してかまいませんが、初月は「気になる点の一覧」としてまとめ、理由と影響の範囲を添えて出すのがおすすめです。どれを直すかを決めるのは発注側で、すでに計画がある場合もあります。まずは既存の書き方に合わせて修正を届け、信頼を得てから具体的な改善を提案すると受け入れられやすくなります。"}},{"@type":"Question","name":"リモートの案件で、チームとの距離を縮めるにはどうすればよいですか？","acceptedAnswer":{"@type":"Answer","text":"質問と共有をこまめにすることが近道です。アプリの構成のメモや、修正で確かめた端末の範囲を文章で残すと、顔を合わせなくても仕事の進め方が伝わります。リモートの案件の傾向はAndroidのリモート案件の記事で扱っています。"}}]}]</script>
+</head>
+<body>
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="/"><img src="/assets/mark.png" alt="" width="28" height="28"><span>エージェントベストジョブ フリーランス<small>フリーランスのエンジニア・コンサル向け案件紹介</small></span></a>
+    <nav class="head-nav" aria-label="メニュー">
+      <a class="link" href="/jobs/">案件を探す</a>
+      <a class="link" href="/media/">お役立ち記事</a>
+      <a class="link keep" href="/mypage/" aria-label="気になる案件">☆ 気になる<span class="fav-count" data-fav-count hidden></span></a>
+      <a class="btn btn-primary btn-sm" href="https://airtable.com/appYkc36EvioYoL1A/pag6CZC4uJmxUcrXT/form" target="_blank" rel="noopener">無料で登録</a>
+    </nav>
+  </div>
+</header>
+<main class="wrap narrow article">
+  <p class="crumbs"><a href="/">トップ</a> › <a href="/media/">お役立ち記事</a> › <a href="/media/hub/mobile/">モバイルアプリ開発</a></p>
+  <a class="art-hub" href="/media/hub/mobile/">モバイルアプリ開発</a>
+  <h1 class="art-title">Androidエンジニアの参画初月にやること｜現場で信頼される進め方</h1>
+  <p class="note">公開 2026-11-04　監修：株式会社エージェントベスト</p>
+  <nav class="toc" aria-label="目次"><strong>目次</strong><ol><li><a href="#s1">初月のゴールを3つに分ける</a></li><li><a href="#s2">1週目：環境を整え、アプリを動かす</a></li><li><a href="#s3">2週目：既存の作りをつかむ</a></li><li><a href="#s4">3〜4週目：小さな修正をリリースまで届ける</a></li><li><a href="#s5">案件の型によって初月の重心は変わる</a></li><li><a href="#s6">初月に避けたい動き</a></li><li><a href="#s7">1か月の終わりに振り返ること</a></li><li><a href="#s8">よくある質問</a></li></ol></nav>
+  <div class="art-body">
+<p>Androidエンジニアの参画初月は、<strong>ビルドと検証の環境を整え、既存のアプリの作りとリリースの流れをつかみ、小さな修正を一つ本番のリリースまで届ける</strong>ところまでを目標にします。最初の1か月で求められるのは、大きな機能を作ることより、<strong>このエンジニアにアプリを任せて大丈夫だと発注側が判断できる材料</strong>を示すことです。</p>
+<p>参画前の契約・環境の準備は<a href="/media/sankaku-junbi/">参画が決まってから開始日までにやること</a>、職種を問わない最初の1週間の進め方は<a href="/media/sankaku-shoki/">参画初日から最初の1週間でやること</a>で解説しています。この記事では、Androidならではの初月の動き方に絞ります。</p>
+<h2 id="s1">初月のゴールを3つに分ける</h2>
+<div class="table-wrap"><table><thead><tr><th>ゴール</th><th>中身</th><th>月末に手元にあるもの</th></tr></thead><tbody><tr><td>環境を整える</td><td>ビルド、署名の設定、検証用の端末、配布の仕組みを使える状態にする</td><td>手元でビルドし、検証用の端末に入れて動かせる状態</td></tr><tr><td>作りをつかむ</td><td>層の分け方、JavaとKotlin・ViewとComposeの比率、ライブラリ、テストの範囲を知る</td><td>アプリの構成のメモと、気になる点の一覧</td></tr><tr><td>一度届ける</td><td>小さな修正や機能を、レビューと検証を通してリリースに載せる</td><td>自分の変更が入ったリリースと、リリースの手順の理解</td></tr></tbody></table></div>
+<p>この3つを、1週目、2週目、3〜4週目の順に重心を移しながら進めます。</p>
+<h2 id="s2">1週目：環境を整え、アプリを動かす</h2>
+<h3>最初の数日で済ませたいこと</h3>
+<p>Androidの案件は、作業を始めるまでの準備が多い職種です。次の順で確かめると、止まる時間を短くできます。</p>
+<ol><li><strong>貸与PCとアカウント</strong>：リポジトリ、チケット、チャット、クラッシュの報告を見るツールの権限</li><li><strong>手元でのビルド</strong>：開発用と本番用など、ビルドの種類ごとに手元でビルドできるか</li><li><strong>検証用の端末</strong>：貸与される端末の機種とOSの版、エミュレーターで足りる範囲</li><li><strong>配布の仕組み</strong>：社内の検証版をどう配り、誰が確かめているか</li></ol>
+<p>ビルドが通らない、権限が足りないといった問題は、自分で抱えずにその日のうちに窓口へ伝えます。貸与PCの扱いは<a href="/media/taiyo-pc/">貸与PCを使うときの注意点</a>をご覧ください。</p>
+<h3>アプリを利用者として触る</h3>
+<p>コードを読む前に、アプリを利用者として一通り触ります。主な画面の流れ、通知、ログインやオフラインのときの動きを確かめ、気づいた点を書き留めておきます。ストアの評価やレビューに目を通すと、利用者が困っている点が見えてくることもあります。</p>
+<h2 id="s3">2週目：既存の作りをつかむ</h2>
+<h3>読む順番</h3>
+<p>アプリの構成は、次の順で見ると全体像をつかみやすくなります。</p>
+<ol><li><strong>モジュールと依存関係</strong>：Gradleの設定、モジュールの分け方、主なライブラリ</li><li><strong>画面の層とデータの層</strong>：ViewModelなどの状態の持ち主と、リポジトリやデータソースの分け方</li><li><strong>言語と画面の作り方の比率</strong>：JavaとKotlin、ViewとComposeがどこにどれだけ残っているか</li><li><strong>テストとビルドの仕組み</strong>：ユニットテストやUIテストの範囲、自動でビルドとテストが走る仕組み</li></ol>
+<p>Android Developersのアプリ アーキテクチャ ガイドでは、少なくともUI層とデータ層に分けること、データごとに持ち主を一つに決めること、依存関係の注入とHiltの利用がすすめられています。既存のアプリがこのとおりとは限りません。ガイドとの違いを「直すべき点」と決めつけず、なぜそうなっているかを周りに尋ねながらメモにしておきます。</p>
+<h3>年次の要件の状況を知る</h3>
+<p>あわせて、アプリのtargetSdkと、次の要件への対応の予定を確かめておきます。Android Developersの案内では、2026年8月31日以降、新しいアプリとアプリの更新はAndroid 16（APIレベル36）以上を対象にする必要があるとされています（2026年10月時点）。対応がまだの場合は、近いうちに自分が担当する可能性があります。</p>
+<h3>報告の形を合わせる</h3>
+<p>窓口やリーダーに、どの頻度で、どの粒度の報告がほしいかを確かめます。チャットでの日々の共有、週ごとのまとめなど、現場の形に合わせます。書き方は<a href="/media/shuho/">週報・進捗報告の書き方</a>で解説しています。</p>
+<aside class="box box-view"><p class="box-label">エージェントベストの見解</p><p>案件紹介の現場で、参画後の評価が高いAndroidエンジニアの方に共通しているのは、最初の2週間で「アプリの構成のメモ」をチームと共有していることです。モジュールの分け方や、JavaとKotlinの残り方、気になった点を短くまとめて見せると、発注側は理解の速さと見立ての確かさを早い段階で感じ取れます。初月は、作り直す提案より、今の作りを正しくつかんだことを示すのを優先するのをおすすめします。</p></aside>
+<h2 id="s4">3〜4週目：小さな修正をリリースまで届ける</h2>
+<h3>最初のチケットは小さく選ぶ</h3>
+<p>3週目には、小さな不具合の修正や、範囲の限られた機能の追加を担当します。大きさより、<strong>レビュー、検証、リリースの流れを一度通すこと</strong>に意味があります。既存の書き方に合わせて実装し、レビューの指摘から、チームの決まりを覚えていきます。</p>
+<h3>検証の範囲を自分から示す</h3>
+<p>修正を出すときは、どの端末とOSの版で確かめたか、確かめられなかった範囲はどこかを添えます。Androidでは端末によって挙動が違うことがあるため、検証の範囲を自分から示すと、レビューする側も判断しやすくなります。</p>
+<h3>リリースの手順を書き留める</h3>
+<p>リリースの作業に立ち会えたら、ビルドの作成から公開、段階的な配信、問題が出たときの止め方までの手順を書き留めておきます。リリースを誰が担うかが契約の範囲と違う場合は、この段階で窓口と話しておきます。</p>
+<h2 id="s5">案件の型によって初月の重心は変わる</h2>
+<p>同じAndroidの案件でも、型によって初月に力を入れる場所が違います。</p>
+<h3>運用中のアプリの機能追加</h3>
+<p>既存の作りに合わせることが最優先です。初月は、チームの書き方とレビューの決まりを覚え、小さな変更を一つずつ届けることに重心を置きます。</p>
+<h3>移行の案件（JavaからKotlin、ViewからCompose）</h3>
+<p>移行の案件では、どこから移すかの順番が後の進み方を左右します。初月は、移行の対象の範囲と、壊れやすい場所、テストで守られている範囲を調べ、移す順番の案を出すところまでを目指します。いきなり大きく書き換えるより、一つの画面や一つのクラスで手順を試し、レビューの通り方を確かめるのが安全です。</p>
+<h3>年次の要件対応の短期案件</h3>
+<p>期限が決まっているため、1週目から挙動の変更の調査に入ります。調査、修正、検証の見通しを2週目までに出し、ライブラリの対応待ちなど自分では進められない部分を早めに共有します。</p>
+<h3>業務用端末・機器と連携するアプリ</h3>
+<p>実機での確認が中心になるため、端末と機器がそろう日程と、出社が必要な日を最初に確かめます。機器の仕様書や通信の手順書の場所も、早いうちに教えてもらいます。</p>
+<h2 id="s6">初月に避けたい動き</h2>
+<div class="table-wrap"><table><thead><tr><th>避けたい動き</th><th>起きやすいこと</th><th>代わりにすること</th></tr></thead><tbody><tr><td>既存の設計を否定する</td><td>チームが身構え、経緯を聞き出しにくくなる</td><td>違いをメモにし、理由を尋ねてから提案する</td></tr><tr><td>ライブラリを独断で足す・上げる</td><td>ビルドや他の画面に思わぬ影響が出る</td><td>理由と影響の範囲を添えて相談する</td></tr><tr><td>再現しない不具合を黙って調べ続ける</td><td>進み具合が見えず、評価が下がる</td><td>調べた範囲と次の手を日々共有する</td></tr><tr><td>検証の範囲を書かずに修正を出す</td><td>別の端末で不具合が見つかり、信頼を損なう</td><td>確かめた端末と、確かめていない範囲を添える</td></tr><tr><td>範囲外の作業を抱え込む</td><td>本来の実装の時間が足りなくなる</td><td>担う範囲を確かめ、外れる依頼は窓口と話す</td></tr></tbody></table></div>
+<p>範囲外の依頼が増えてきたときの扱いは<a href="/media/scope-change/">作業範囲が広がったときの記事</a>、Androidのフリーランスがつまずきやすい場面は<a href="/media/android-tsumazuki/">Androidエンジニアのフリーランスがつまずきやすい点と対策</a>で整理しています。</p>
+<aside class="box box-caution"><p class="box-label">注意</p><p>ソースコードや署名の設定ファイル、検証用のアカウントの情報を、私物の端末や個人のクラウドに移すのは避けてください。作業を早く進めたい初月ほど起こりやすい行き違いです。発注側の決まりに沿って、貸与された環境の中で扱ってください。</p></aside>
+<h2 id="s7">1か月の終わりに振り返ること</h2>
+<p>1か月が過ぎたら、次の点を自分で振り返ります。</p>
+<ul><li>手元でビルドし、検証用の端末で動かせる状態が整っているか</li><li>アプリの構成のメモを作り、チームと共有できたか</li><li>自分の変更が、レビューと検証を通してリリースに載ったか</li><li>報告の形が、窓口やリーダーの求めるものと合っているか</li><li>契約で決めた業務の範囲と、実際に担っている作業がずれていないか</li><li>稼働時間の記録が残っているか</li></ul>
+<p>ずれている点があれば、2か月目の早い段階で窓口と話しておきます。</p>
+<aside class="box box-view"><p class="box-label">エージェントベストの見解</p><p>当社では、契約で業務範囲・報酬・支払期日・契約期間を個別契約に書いてお渡ししています。参画して1か月の間に、リリース作業の範囲や端末の用意など、聞いていた条件と実際の作業に違いを感じたときは、ご質問いただければ契約の内容を確認します。</p></aside>
+<aside class="box box-point"><p class="box-label">ポイント</p><ul><li>Androidの初月は、環境を整える、作りをつかむ、一度届ける、の3つを順に進める</li><li>1週目はビルドと検証の環境を整え、2週目に既存の作りと年次の要件の状況をつかむ</li><li>3〜4週目に小さな修正をリリースまで届け、検証の範囲を自分から示す</li><li>既存の設計の否定、ライブラリの独断での変更、不具合の抱え込みは避ける</li></ul></aside>
+<h2 id="s8">よくある質問</h2>
+<h3>1週間たってもビルドが通りません。どうすればよいですか？</h3>
+<p>エラーの内容と、試したことを書き出して、その日のうちに窓口やチームの担当者に伝えてください。社内の設定ファイルや権限が足りないことが原因の場合も多く、一人で調べ続けるより早く解決します。止まっている時間も、報告の中で正直に伝えておくとよいでしょう。</p>
+<h3>既存のコードが古く、直したい点がたくさんあります。初月から提案してよいですか？</h3>
+<p>提案してかまいませんが、初月は「気になる点の一覧」としてまとめ、理由と影響の範囲を添えて出すのがおすすめです。どれを直すかを決めるのは発注側で、すでに計画がある場合もあります。まずは既存の書き方に合わせて修正を届け、信頼を得てから具体的な改善を提案すると受け入れられやすくなります。</p>
+<h3>リモートの案件で、チームとの距離を縮めるにはどうすればよいですか？</h3>
+<p>質問と共有をこまめにすることが近道です。アプリの構成のメモや、修正で確かめた端末の範囲を文章で残すと、顔を合わせなくても仕事の進め方が伝わります。リモートの案件の傾向は<a href="/media/android-remote/">Androidのリモート案件の記事</a>で扱っています。</p>
+  </div>
+  <section class="sources"><h2>参考にした公的情報・資料</h2><ul><li><a href="https://developer.android.com/topic/architecture" target="_blank" rel="noopener nofollow">Guide to app architecture（Android Developers）</a></li><li><a href="https://developer.android.com/google/play/requirements/target-sdk" target="_blank" rel="noopener nofollow">Google Play のターゲット API レベルの要件（Android Developers）</a></li></ul>
+  <p class="note">記事の内容は公開日時点の情報にもとづきます。制度や税率は変わることがあるため、手続きの前に必ず各機関の最新情報をご確認ください。</p></section>
+  <div class="cta-band">
+  <h2>条件に合う案件だけ、知りたい方へ</h2>
+  <p>ご登録は無料です。条件に合う案件だけを、ご本人の了承を得てからご提案します。</p>
+  <div class="cta-row">
+    <a class="btn btn-primary" href="https://airtable.com/appYkc36EvioYoL1A/pag6CZC4uJmxUcrXT/form" target="_blank" rel="noopener">無料で登録する</a>
+    <a class="btn btn-ghost" href="/jobs/">案件を探す</a>
+  </div>
+</div>
+  <section class="related"><h2>あわせて読みたい</h2><div class="grid g2"><a class="card art-card" href="/media/sankaku-junbi/">
+  <span class="art-hub">案件の探し方</span>
+  <h3>参画が決まってから開始日までにやること｜契約・事業の手続き・作業環境の準備</h3>
+  <p>参画が決まったら、開始日までに「契約の書面の確認」「他の選考の整理」「請求と事業の手続き」「作業環境」「業務の予習」の5つを進めます。時期ごとのやることと、開始前の作業を頼まれたときの注意点を整理します。</p>
+</a>
+<a class="card art-card" href="/media/sankaku-shoki/">
+  <span class="art-hub">案件の探し方</span>
+  <h3>参画初日から最初の1週間でやること｜業務委託で立ち上がりを早める進め方</h3>
+  <p>参画して最初の1週間は、成果を急ぐより「任された範囲・依頼の窓口・報告の形」を確かめ、小さな仕事を一つ終えることを優先します。初日から5日目までの進め方と、つまずきやすい点を整理します。</p>
+</a>
+<a class="card art-card" href="/media/android-tsumazuki/">
+  <span class="art-hub">モバイルアプリ開発</span>
+  <h3>Androidエンジニアのフリーランスがつまずきやすい点と対策</h3>
+  <p>フリーランスのAndroidエンジニアがつまずきやすいのは、リリース作業や公開アカウントの扱いがあいまいな契約、端末の違いによる不具合、年次の要件対応の見積もり違い、検証端末の費用などです。契約・現場・技術・お金の順に対策を整理します。</p>
+</a>
+<a class="card art-card" href="/media/android-skills/">
+  <span class="art-hub">モバイルアプリ開発</span>
+  <h3>Androidエンジニアのフリーランス案件で求められるスキルと経験</h3>
+  <p>Androidのフリーランス案件では、Kotlinのコルーチンとフロー、Jetpack Compose、公式の推奨アーキテクチャに沿った設計、Google Playの技術要件への対応が見られます。分野ごとのスキルと示し方を解説します。</p>
+</a>
+<a class="card art-card" href="/media/android-remote/">
+  <span class="art-hub">モバイルアプリ開発</span>
+  <h3>Androidエンジニアのフリーランスはリモートで働ける？案件の傾向と探し方</h3>
+  <p>Androidエンジニアは、一般向けアプリの開発を中心にリモートで働ける案件があります。ただし、機種ごとの差の検証や業務用端末のアプリでは、端末の貸与や出社が条件になりやすくなります。案件の型、出社の場面、遠隔の実機を使った進め方、確認点を解説します。</p>
+</a>
+<a class="card art-card" href="/media/android-how-to/">
+  <span class="art-hub">モバイルアプリ開発</span>
+  <h3>Androidエンジニアがフリーランスになるには｜必要な経験と独立までの進め方</h3>
+  <p>Androidでフリーランスになるには、Kotlinでの機能開発に加え、Jetpack Composeへの移行や、Google Playの要件に合わせた更新を担った経験が要ります。案件の型、独立前に積む実績、面談で問われる点を解説します。</p>
+</a></div></section>
+</main>
+<footer class="site-foot">
+  <div class="wrap">
+    <strong>エージェントベストジョブ フリーランス</strong>
+    <div class="foot-links">
+      <a href="/">トップ</a>
+      <a href="/jobs/">案件を探す</a>
+      <a href="/media/">お役立ち記事</a>
+      <a href="https://airtable.com/appYkc36EvioYoL1A/pag6CZC4uJmxUcrXT/form" target="_blank" rel="noopener">ご登録（スキルシート・ご希望の条件）</a>
+      <a href="https://line.me/R/ti/p/@697nxhbt?oat_content=url&ts=08302134" target="_blank" rel="noopener" data-line-cta="footer">LINEで相談する</a>
+      <a href="/privacy.html">個人情報の取り扱い</a>
+      <a href="https://www.agent-best.net/company/">運営会社</a>
+    </div>
+    <div class="foot-links">
+      <a href="https://jobs.agent-best.net/">正社員の求人を探す（エージェントベストジョブ）</a>
+      <a href="https://skill.agent-best.net/">エージェントベストジョブ手に職</a>
+      <a href="https://www.agent-best.net/">エージェントベスト</a>
+    </div>
+    <p>運営：株式会社エージェントベスト（有料職業紹介事業 許可番号 13-ユ-316964）<br>〒106-0032 東京都港区六本木4-8-7 嶋田ビル5階</p>
+  </div>
+</footer>
+<script src="/assets/fav.js" defer></script>
+</body>
+</html>
