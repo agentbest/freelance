@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>SREの参画初月にやること｜現場で信頼される進め方｜エージェントベストジョブ フリーランス</title>
+<meta name="description" content="SREの参画初月のゴールは、サービスと障害の現状をつかむこと、当番と権限の線を決めること、小さな改善を一つ形にすることの3つです。週ごとの進め方、案件の型による重心の違い、避けたい動き、月末の振り返りを整理します。">
+<link rel="canonical" href="https://freelance.agent-best.net/media/sre-first-month/">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="エージェントベストジョブ フリーランス">
+<meta property="og:title" content="SREの参画初月にやること｜現場で信頼される進め方｜エージェントベストジョブ フリーランス">
+<meta property="og:description" content="SREの参画初月のゴールは、サービスと障害の現状をつかむこと、当番と権限の線を決めること、小さな改善を一つ形にすることの3つです。週ごとの進め方、案件の型による重心の違い、避けたい動き、月末の振り返りを整理します。">
+<meta property="og:url" content="https://freelance.agent-best.net/media/sre-first-month/">
+<meta property="og:image" content="https://freelance.agent-best.net/assets/ogp.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://freelance.agent-best.net/assets/ogp.png">
+<meta name="theme-color" content="#1E3A5F">
+<link rel="icon" href="/assets/favicon.ico">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="stylesheet" href="/assets/site.css">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1XXMP8Y1B4"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-1XXMP8Y1B4');
+document.addEventListener('click',e=>{const a=e.target.closest('[data-line-cta]');if(a)gtag('event','line_add_friend',{placement:a.dataset.lineCta,page_path:location.pathname});});</script>
+<script type="application/ld+json">[{"@context":"https://schema.org","@type":"Article","headline":"SREの参画初月にやること｜現場で信頼される進め方","description":"SREの参画初月のゴールは、サービスと障害の現状をつかむこと、当番と権限の線を決めること、小さな改善を一つ形にすることの3つです。週ごとの進め方、案件の型による重心の違い、避けたい動き、月末の振り返りを整理します。","datePublished":"2026-11-04","dateModified":"2026-11-04","author":{"@type":"Organization","name":"株式会社エージェントベスト","url":"https://www.agent-best.net/"},"publisher":{"@type":"Organization","name":"株式会社エージェントベスト","logo":{"@type":"ImageObject","url":"https://freelance.agent-best.net/assets/logo.png"}},"mainEntityOfPage":"https://freelance.agent-best.net/media/sre-first-month/"},{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"トップ","item":"https://freelance.agent-best.net/"},{"@type":"ListItem","position":2,"name":"お役立ち記事","item":"https://freelance.agent-best.net/media/"},{"@type":"ListItem","position":3,"name":"インフラ・クラウド","item":"https://freelance.agent-best.net/media/hub/infra-cloud/"},{"@type":"ListItem","position":4,"name":"SREの参画初月にやること｜現場で信頼される進め方"}]},{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"前任のSREからの引き継ぎがほとんどありません。何から始めればよいですか？","acceptedAnswer":{"@type":"Answer","text":"まずは過去の障害の記録と、アラートの鳴った履歴を読み、よく起きていることを把握します。そのうえで、当番に入っているメンバーに困りごとを聞くと、手順書のどこが足りないかが見えてきます。引き継ぎの進め方は引き継ぎの記事で整理しています。"}},{"@type":"Question","name":"参画初月から大きな障害の対応を任されたら、どうすればよいですか？","acceptedAnswer":{"@type":"Answer","text":"自分だけで判断せず、指揮をとる人と連絡の場所を先に確かめ、作業と時刻をその場で記録しながら進めます。現場の手順に分からない点があれば、その場で確かめてください。落ち着いた後の振り返りに加わると、現場の仕組みを早く理解する機会にもなります。"}},{"@type":"Question","name":"1か月たっても全体像がつかめません。どうすればよいですか？","acceptedAnswer":{"@type":"Answer","text":"SREの現場は構成が大きく、1か月ですべてをつかめないことは珍しくありません。つかめた範囲とつかめていない範囲を分けて窓口に伝え、2か月目に重点的に見る範囲を決めてもらうと、焦らずに進められます。"}}]}]</script>
+</head>
+<body>
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="/"><img src="/assets/mark.png" alt="" width="28" height="28"><span>エージェントベストジョブ フリーランス<small>フリーランスのエンジニア・コンサル向け案件紹介</small></span></a>
+    <nav class="head-nav" aria-label="メニュー">
+      <a class="link" href="/jobs/">案件を探す</a>
+      <a class="link" href="/media/">お役立ち記事</a>
+      <a class="link keep" href="/mypage/" aria-label="気になる案件">☆ 気になる<span class="fav-count" data-fav-count hidden></span></a>
+      <a class="btn btn-primary btn-sm" href="https://airtable.com/appYkc36EvioYoL1A/pag6CZC4uJmxUcrXT/form" target="_blank" rel="noopener">無料で登録</a>
+    </nav>
+  </div>
+</header>
+<main class="wrap narrow article">
+  <p class="crumbs"><a href="/">トップ</a> › <a href="/media/">お役立ち記事</a> › <a href="/media/hub/infra-cloud/">インフラ・クラウド</a></p>
+  <a class="art-hub" href="/media/hub/infra-cloud/">インフラ・クラウド</a>
+  <h1 class="art-title">SREの参画初月にやること｜現場で信頼される進め方</h1>
+  <p class="note">公開 2026-11-04　監修：株式会社エージェントベスト</p>
+  <nav class="toc" aria-label="目次"><strong>目次</strong><ol><li><a href="#s1">初月のゴールを3つに分ける</a></li><li><a href="#s2">1週目：構成と障害の記録から現状を集める</a></li><li><a href="#s3">2週目：当番と権限の線を決める</a></li><li><a href="#s4">3〜4週目：見立てを出し、小さな改善を一つ形にする</a></li><li><a href="#s5">案件の型によって初月の重心は変わる</a></li><li><a href="#s6">初月に避けたい動き</a></li><li><a href="#s7">1か月の終わりに振り返ること</a></li><li><a href="#s8">よくある質問</a></li></ol></nav>
+  <div class="art-body">
+<p>SREの参画初月にやることは、<strong>サービスと障害の現状をつかむこと、当番と権限の線を決めること、小さな改善を一つ形にすること</strong>の3つです。大きな仕組みを入れるのは2か月目以降で構いません。初月は「この人に本番を任せて大丈夫か」を周りが見ている期間だと考えてください。</p>
+<p>SREは本番環境に触れる職種のため、最初の動き方で信頼が大きく左右されます。この記事では、週ごとの進め方、案件の型による重心の違い、避けたい動き、月末の振り返りを整理します。参画全般の準備は<a href="/media/sankaku-junbi/">参画前の準備</a>と<a href="/media/sankaku-shoki/">参画初期の動き方</a>で扱っているので、ここではSREならではの進め方に絞ります。</p>
+<h2 id="s1">初月のゴールを3つに分ける</h2>
+<div class="table-wrap"><table><thead><tr><th>ゴール</th><th>月末の状態</th></tr></thead><tbody><tr><td>現状をつかむ</td><td>サービスの構成、主な障害の傾向、当番の負担を自分の言葉で説明できる</td></tr><tr><td>線を決める</td><td>当番に入る時期と範囲、本番で使える権限、決めてもらう相手が決まっている</td></tr><tr><td>小さな改善を一つ形にする</td><td>鳴っても対応しないアラートを減らす、手順を一つ自動化するなど、目に見える変化が一つある</td></tr></tbody></table></div>
+<p>3つ目を急ぎすぎないことも大切です。現状をつかむ前に手を入れると、前提の誤りで手戻りが出やすくなります。</p>
+<h2 id="s2">1週目：構成と障害の記録から現状を集める</h2>
+<h3>SREとして最初に読む資料</h3>
+<p>まずは、次の資料に目を通します。すべてが揃っている現場は多くないため、「ないもの」を把握すること自体が収穫になります。</p>
+<ul><li><strong>構成図とリポジトリ</strong>：サービスのつながり、Infrastructure as Codeの置き場所、デプロイの流れ</li><li><strong>過去の障害の記録</strong>：直近数か月の障害の一覧と振り返りの文書。同じ原因が繰り返していないかを見る</li><li><strong>アラートの設定と鳴った履歴</strong>：どのアラートがよく鳴り、そのうち実際に対応が要ったものはどれか</li><li><strong>当番の体制</strong>：当番表、呼び出しの手段、手順書（ランブック）</li><li><strong>SLOや目標の取り決め</strong>：あれば、その値と、守れなかったときの扱い</li></ul>
+<h3>関係者と短く話す</h3>
+<p>資料だけでは分からないことを、関係者に15〜30分ずつ聞きます。相手は、当番に入っているメンバー、開発チームのリーダー、窓口となる発注側の担当者が中心です。聞くことは「最近いちばん困った障害は何か」「夜間に呼ばれる理由で多いものは何か」「SREに一番期待していることは何か」の3つに絞ると、短い時間でも本音が出やすくなります。</p>
+<p>この週は、本番環境への変更は控えます。読み取りの権限で、監視画面とログの見方に慣れておきます。</p>
+<h2 id="s3">2週目：当番と権限の線を決める</h2>
+<h3>当番に入る時期を合わせる</h3>
+<p>参画してすぐに一人で当番に入るのは避けたいところです。最初は既存のメンバーの当番に付き添う形で入り、呼び出しの流れと手順書の抜けを確かめます。一人で当番に入る時期と、応答までの時間、呼び出し時の稼働の扱いを、窓口と確かめておきます。Googleが公開しているSREの本でも、12時間の当番で扱う障害は2件までを目安とするなど、当番の負担を測って抑える考え方が示されています（2026年10月時点、公開ページによる）。呼び出しの件数を最初から記録しておくと、後で負担の話をするときの材料になります。</p>
+<h3>本番の権限を作業ごとに分ける</h3>
+<p>本番で何ができるかを、作業ごとに整理します。読み取りだけでよい作業、変更が要る作業、強い権限が要る作業を分け、強い権限が要る作業は誰の承認で行うかを決めておきます。権限が広く渡されそうなときほど、操作の記録が残る形を選んでください。</p>
+<h3>決めてもらう相手を一枚にまとめる</h3>
+<p>リリースを止めるかどうか、当番の体制を変えるかどうか、改善の優先度をどうするかは、外部のSREが一人で決められないことが一般的です。それぞれを誰が決めるのかを一枚に書き出し、窓口と確かめておきます。</p>
+<aside class="box box-view"><p class="box-label">エージェントベストの見解</p><p>案件紹介の現場で、参画後に評価が上がりやすいSREの方は、最初の2週間で「本番に何をしないか」をはっきりさせている方です。権限の範囲や当番の入り方を自分から確かめ、記録の残る形で動くと、発注側は安心して任せる範囲を広げやすくなります。逆に、早く成果を出そうとして本番の設定をすぐに変えると、たとえ正しい変更でも警戒されやすい傾向があります。</p></aside>
+<h2 id="s4">3〜4週目：見立てを出し、小さな改善を一つ形にする</h2>
+<h3>現状の見立てをまとめる</h3>
+<p>1〜2週目で集めた材料から、現状の見立てを短くまとめます。障害の傾向、当番の負担、アラートの質、手作業の多さを並べ、どこから手を入れると効きそうかを示します。数字が取れる部分は数字で示し、取れない部分は「取れていない」こと自体を課題として挙げます。</p>
+<h3>小さな改善を一つ形にする</h3>
+<p>初月の改善は、影響が小さく、効果が目に見えるものを選びます。</p>
+<ul><li>鳴っても対応しないアラートを整理し、本当に動く必要があるものだけを残す</li><li>当番がよく行う手作業の確認を一つ自動化する</li><li>手順書の抜けを、当番に付き添った経験から埋める</li></ul>
+<p>変更はコードとしてリポジトリに入れ、レビューを通して反映します。現場のやり方に沿って進めることで、「外から来た人が勝手に変えた」と受け取られずに済みます。</p>
+<h3>振り返りの進め方に触れる</h3>
+<p>初月に障害が起きたら、振り返りの場に加わります。同じ本では、振り返りは個人やチームを責めずに仕組みの原因を探すものとされ、利用者に見える停止や劣化、データの損失、当番による切り戻しなどの対応が要ったとき、などが振り返りを書くきっかけの例として挙げられています。現場に振り返りの決まりがない場合は、こうした例を参考に、いつ振り返りを書くかの基準を提案すると、2か月目以降の仕事の土台になります。</p>
+<h2 id="s5">案件の型によって初月の重心は変わる</h2>
+<h3>信頼性の立て直しの案件</h3>
+<p>障害が続いている現場では、初月から障害対応に呼ばれることがあります。その場合も、対応しながら障害の記録を整え、同じ原因の障害を減らす手を一つ打つことを優先します。大きな構成の見直しは、見立てを出して合意を取ってからにします。</p>
+<h3>SLO・可観測性の導入の案件</h3>
+<p>導入の案件では、初月に指標の候補を出し、開発チームや事業側と話す場を設けるところまで進めると、2か月目の設計に入りやすくなります。いきなり道具を入れるより、何を測りたいかの合意を先に取ります。</p>
+<h3>運用の当番が中心の案件</h3>
+<p>当番が中心の案件では、手順書の抜けと、繰り返しの作業の洗い出しに初月を使います。当番の負担を記録しておくと、改善の時間を確保する相談の材料になります。</p>
+<h3>基盤の移行の案件</h3>
+<p>移行の案件では、今の構成の癖と、切り替え時に戻す方法の確認が初月の中心です。移行の計画を急ぐより、古い構成の中で「誰も理由を知らない設定」を洗い出しておくと、後のつまずきを減らせます。</p>
+<h2 id="s6">初月に避けたい動き</h2>
+<ul><li><strong>本番の設定をすぐに変える</strong>：正しい変更でも、現場の合意がないと警戒されます</li><li><strong>前の現場の道具を持ち込む</strong>：今ある道具で何ができるかを先に確かめます</li><li><strong>一人で当番に入る</strong>：手順書の抜けを知らないまま呼び出されると、対応が遅れます</li><li><strong>障害の原因を人に向ける</strong>：振り返りの場では、仕組みの側の原因を探します</li><li><strong>改善の時間を記録しない</strong>：当番と改善の配分が見えないと、後で負担の話ができません</li></ul>
+<p>参画後のつまずきやすい場面は<a href="/media/sre-tsumazuki/">SREのつまずきやすい点と対策</a>で詳しく扱っています。</p>
+<aside class="box box-caution"><p class="box-label">注意</p><p>参画初月に「夜間の当番も最初から一人で」と頼まれることがあります。契約で決めた業務範囲に当番が入っているかを確かめ、入っていない場合や扱いが決まっていない場合は、引き受ける前に窓口に相談してください。範囲が広がったときの考え方は<a href="/media/scope-change/">業務範囲が変わったときの記事</a>をご覧ください。</p></aside>
+<h2 id="s7">1か月の終わりに振り返ること</h2>
+<p>月末には、次の点を短くまとめ、窓口と共有します。稼働の報告とあわせて出すと、相手も読みやすくなります。報告の形は<a href="/media/kado-houkoku/">稼働報告の記事</a>を参考にしてください。</p>
+<ol><li>現状の見立て（障害の傾向、当番の負担、アラートの質）</li><li>初月に形にした改善と、その効果</li><li>当番に使った時間と改善に使った時間の配分</li><li>2か月目に取り組みたいことと、決めてもらいたいこと</li></ol>
+<aside class="box box-view"><p class="box-label">エージェントベストの見解</p><p>当社では、契約で業務範囲・報酬・支払期日・契約期間を個別契約に書いてお渡ししています。参画初月に、当番の入り方や権限の範囲など契約の内容と違うと感じた点があれば、早めにご相談ください。ご質問いただければ確認します。</p></aside>
+<aside class="box box-point"><p class="box-label">ポイント</p><ul><li>初月のゴールは、現状をつかむ、当番と権限の線を決める、小さな改善を一つ形にするの3つ</li><li>1週目は資料と人から集め、本番への変更は控える。2週目は当番の入り方と権限を決める</li><li>3〜4週目に見立てを出し、影響の小さい改善をコードとレビューを通して入れる</li></ul></aside>
+<h2 id="s8">よくある質問</h2>
+<h3>前任のSREからの引き継ぎがほとんどありません。何から始めればよいですか？</h3>
+<p>まずは過去の障害の記録と、アラートの鳴った履歴を読み、よく起きていることを把握します。そのうえで、当番に入っているメンバーに困りごとを聞くと、手順書のどこが足りないかが見えてきます。引き継ぎの進め方は<a href="/media/hikitsugi/">引き継ぎの記事</a>で整理しています。</p>
+<h3>参画初月から大きな障害の対応を任されたら、どうすればよいですか？</h3>
+<p>自分だけで判断せず、指揮をとる人と連絡の場所を先に確かめ、作業と時刻をその場で記録しながら進めます。現場の手順に分からない点があれば、その場で確かめてください。落ち着いた後の振り返りに加わると、現場の仕組みを早く理解する機会にもなります。</p>
+<h3>1か月たっても全体像がつかめません。どうすればよいですか？</h3>
+<p>SREの現場は構成が大きく、1か月ですべてをつかめないことは珍しくありません。つかめた範囲とつかめていない範囲を分けて窓口に伝え、2か月目に重点的に見る範囲を決めてもらうと、焦らずに進められます。</p>
+  </div>
+  <section class="sources"><h2>参考にした公的情報・資料</h2><ul><li><a href="https://sre.google/sre-book/postmortem-culture/" target="_blank" rel="noopener nofollow">Postmortem Culture: Learning from Failure（Site Reliability Engineering｜Google）</a></li><li><a href="https://sre.google/sre-book/being-on-call/" target="_blank" rel="noopener nofollow">Being On-Call（Site Reliability Engineering｜Google）</a></li></ul>
+  <p class="note">記事の内容は公開日時点の情報にもとづきます。制度や税率は変わることがあるため、手続きの前に必ず各機関の最新情報をご確認ください。</p></section>
+  <div class="cta-band">
+  <h2>条件に合う案件だけ、知りたい方へ</h2>
+  <p>ご登録は無料です。条件に合う案件だけを、ご本人の了承を得てからご提案します。</p>
+  <div class="cta-row">
+    <a class="btn btn-primary" href="https://airtable.com/appYkc36EvioYoL1A/pag6CZC4uJmxUcrXT/form" target="_blank" rel="noopener">無料で登録する</a>
+    <a class="btn btn-ghost" href="/jobs/">案件を探す</a>
+  </div>
+</div>
+  <section class="related"><h2>あわせて読みたい</h2><div class="grid g2"><a class="card art-card" href="/media/sankaku-junbi/">
+  <span class="art-hub">案件の探し方</span>
+  <h3>参画が決まってから開始日までにやること｜契約・事業の手続き・作業環境の準備</h3>
+  <p>参画が決まったら、開始日までに「契約の書面の確認」「他の選考の整理」「請求と事業の手続き」「作業環境」「業務の予習」の5つを進めます。時期ごとのやることと、開始前の作業を頼まれたときの注意点を整理します。</p>
+</a>
+<a class="card art-card" href="/media/sankaku-shoki/">
+  <span class="art-hub">案件の探し方</span>
+  <h3>参画初日から最初の1週間でやること｜業務委託で立ち上がりを早める進め方</h3>
+  <p>参画して最初の1週間は、成果を急ぐより「任された範囲・依頼の窓口・報告の形」を確かめ、小さな仕事を一つ終えることを優先します。初日から5日目までの進め方と、つまずきやすい点を整理します。</p>
+</a>
+<a class="card art-card" href="/media/genba-tachiichi/">
+  <span class="art-hub">案件の探し方</span>
+  <h3>常駐先での立ち位置と人間関係の考え方｜業務委託で社員と働くときの距離感</h3>
+  <p>常駐先でのフリーランスは「社員の一員」でも「外の業者」でもなく、契約で任された範囲を担う人という立ち位置です。関係者ごとの距離感、社員と同じ扱いになりにくい場面、摩擦が起きたときの相談の順番を整理します。</p>
+</a>
+<a class="card art-card" href="/media/hikitsugi/">
+  <span class="art-hub">案件の探し方</span>
+  <h3>契約終了時の引き継ぎの進め方｜業務の棚卸しから資料・並走・返却まで</h3>
+  <p>契約終了時の引き継ぎは、終了が決まった時点で「範囲・相手・期限」を窓口と決め、業務の棚卸し、資料作り、後任との並走、権限と資料の返却の順に進めます。後任が決まらないときや、終了後の問い合わせへの対応も整理します。</p>
+</a>
+<a class="card art-card" href="/media/sre-tsumazuki/">
+  <span class="art-hub">インフラ・クラウド</span>
+  <h3>SREのフリーランスがつまずきやすい点と対策</h3>
+  <p>フリーランスのSREがつまずきやすいのは、オンコールの扱いを決めないまま当番に入ること、権限のない立場で改善を押し通すこと、仕組みを残さず属人化すること、障害時の稼働超過などです。契約・現場・技術・お金の4面で対策を整理します。</p>
+</a>
+<a class="card art-card" href="/media/sre-skills/">
+  <span class="art-hub">インフラ・クラウド</span>
+  <h3>SREのフリーランス案件で求められるスキルと経験</h3>
+  <p>SREのフリーランス案件では、利用者の体験から指標（SLI）を選びSLOとエラーバジェットで判断する力、可観測性の設計、安全なリリースの仕組み、トイルをコードで減らす力が見られます。スキルの中身と示し方を解説します。</p>
+</a></div></section>
+</main>
+<footer class="site-foot">
+  <div class="wrap">
+    <strong>エージェントベストジョブ フリーランス</strong>
+    <div class="foot-links">
+      <a href="/">トップ</a>
+      <a href="/jobs/">案件を探す</a>
+      <a href="/media/">お役立ち記事</a>
+      <a href="https://airtable.com/appYkc36EvioYoL1A/pag6CZC4uJmxUcrXT/form" target="_blank" rel="noopener">ご登録（スキルシート・ご希望の条件）</a>
+      <a href="https://line.me/R/ti/p/@697nxhbt?oat_content=url&ts=08302134" target="_blank" rel="noopener" data-line-cta="footer">LINEで相談する</a>
+      <a href="/privacy.html">個人情報の取り扱い</a>
+      <a href="https://www.agent-best.net/company/">運営会社</a>
+    </div>
+    <div class="foot-links">
+      <a href="https://jobs.agent-best.net/">正社員の求人を探す（エージェントベストジョブ）</a>
+      <a href="https://skill.agent-best.net/">エージェントベストジョブ手に職</a>
+      <a href="https://www.agent-best.net/">エージェントベスト</a>
+    </div>
+    <p>運営：株式会社エージェントベスト（有料職業紹介事業 許可番号 13-ユ-316964）<br>〒106-0032 東京都港区六本木4-8-7 嶋田ビル5階</p>
+  </div>
+</footer>
+<script src="/assets/fav.js" defer></script>
+</body>
+</html>

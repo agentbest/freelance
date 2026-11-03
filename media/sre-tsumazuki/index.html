@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>SREのフリーランスがつまずきやすい点と対策｜エージェントベストジョブ フリーランス</title>
+<meta name="description" content="フリーランスのSREがつまずきやすいのは、オンコールの扱いを決めないまま当番に入ること、権限のない立場で改善を押し通すこと、仕組みを残さず属人化すること、障害時の稼働超過などです。契約・現場・技術・お金の4面で対策を整理します。">
+<link rel="canonical" href="https://freelance.agent-best.net/media/sre-tsumazuki/">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="エージェントベストジョブ フリーランス">
+<meta property="og:title" content="SREのフリーランスがつまずきやすい点と対策｜エージェントベストジョブ フリーランス">
+<meta property="og:description" content="フリーランスのSREがつまずきやすいのは、オンコールの扱いを決めないまま当番に入ること、権限のない立場で改善を押し通すこと、仕組みを残さず属人化すること、障害時の稼働超過などです。契約・現場・技術・お金の4面で対策を整理します。">
+<meta property="og:url" content="https://freelance.agent-best.net/media/sre-tsumazuki/">
+<meta property="og:image" content="https://freelance.agent-best.net/assets/ogp.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://freelance.agent-best.net/assets/ogp.png">
+<meta name="theme-color" content="#1E3A5F">
+<link rel="icon" href="/assets/favicon.ico">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="stylesheet" href="/assets/site.css">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1XXMP8Y1B4"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-1XXMP8Y1B4');
+document.addEventListener('click',e=>{const a=e.target.closest('[data-line-cta]');if(a)gtag('event','line_add_friend',{placement:a.dataset.lineCta,page_path:location.pathname});});</script>
+<script type="application/ld+json">[{"@context":"https://schema.org","@type":"Article","headline":"SREのフリーランスがつまずきやすい点と対策","description":"フリーランスのSREがつまずきやすいのは、オンコールの扱いを決めないまま当番に入ること、権限のない立場で改善を押し通すこと、仕組みを残さず属人化すること、障害時の稼働超過などです。契約・現場・技術・お金の4面で対策を整理します。","datePublished":"2026-11-04","dateModified":"2026-11-04","author":{"@type":"Organization","name":"株式会社エージェントベスト","url":"https://www.agent-best.net/"},"publisher":{"@type":"Organization","name":"株式会社エージェントベスト","logo":{"@type":"ImageObject","url":"https://freelance.agent-best.net/assets/logo.png"}},"mainEntityOfPage":"https://freelance.agent-best.net/media/sre-tsumazuki/"},{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"トップ","item":"https://freelance.agent-best.net/"},{"@type":"ListItem","position":2,"name":"お役立ち記事","item":"https://freelance.agent-best.net/media/"},{"@type":"ListItem","position":3,"name":"インフラ・クラウド","item":"https://freelance.agent-best.net/media/hub/infra-cloud/"},{"@type":"ListItem","position":4,"name":"SREのフリーランスがつまずきやすい点と対策"}]},{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"参画してから、当番に入るよう言われました。どうすればよいですか？","acceptedAnswer":{"@type":"Answer","text":"まずは契約で決めた業務範囲に当番が含まれているかを確かめます。含まれていない場合は、紹介を受けたエージェントや発注側の窓口に早めに伝え、入るなら頻度と扱いを決めてから引き受けてください。業務範囲が広がったときの考え方は業務範囲が変わったときの記事をご覧ください。"}},{"@type":"Question","name":"自分の作業が原因で障害が起きたら、損害賠償を求められますか？","acceptedAnswer":{"@type":"Answer","text":"準委任契約では、成果そのものを約束しているわけではありません。ただし、契約の内容や、作業の進め方に落ち度があったかどうかで判断が変わることがあります。不安がある場合は、契約書の損害賠償の条項を読み、弁護士などの専門家にご相談ください。"}},{"@type":"Question","name":"開発チームが改善の提案を聞いてくれません。どうすればよいですか？","acceptedAnswer":{"@type":"Answer","text":"改善の必要性を、利用者への影響や障害の件数など、相手が気にしている数字に置き換えて伝えます。そのうえで、決めるのは発注側だという線を守り、示したリスクと決まった内容は記録に残しておくと、後で経緯を確かめられます。"}}]}]</script>
+</head>
+<body>
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="/"><img src="/assets/mark.png" alt="" width="28" height="28"><span>エージェントベストジョブ フリーランス<small>フリーランスのエンジニア・コンサル向け案件紹介</small></span></a>
+    <nav class="head-nav" aria-label="メニュー">
+      <a class="link" href="/jobs/">案件を探す</a>
+      <a class="link" href="/media/">お役立ち記事</a>
+      <a class="link keep" href="/mypage/" aria-label="気になる案件">☆ 気になる<span class="fav-count" data-fav-count hidden></span></a>
+      <a class="btn btn-primary btn-sm" href="https://airtable.com/appYkc36EvioYoL1A/pag6CZC4uJmxUcrXT/form" target="_blank" rel="noopener">無料で登録</a>
+    </nav>
+  </div>
+</header>
+<main class="wrap narrow article">
+  <p class="crumbs"><a href="/">トップ</a> › <a href="/media/">お役立ち記事</a> › <a href="/media/hub/infra-cloud/">インフラ・クラウド</a></p>
+  <a class="art-hub" href="/media/hub/infra-cloud/">インフラ・クラウド</a>
+  <h1 class="art-title">SREのフリーランスがつまずきやすい点と対策</h1>
+  <p class="note">公開 2026-11-04　監修：株式会社エージェントベスト</p>
+  <nav class="toc" aria-label="目次"><strong>目次</strong><ol><li><a href="#s1">契約でのつまずき</a></li><li><a href="#s2">現場でのつまずき</a></li><li><a href="#s3">技術でのつまずき</a></li><li><a href="#s4">お金でのつまずき</a></li><li><a href="#s5">よくある質問</a></li></ol></nav>
+  <div class="art-body">
+<p>フリーランスのSREがつまずきやすいのは、<strong>オンコールの扱いを決めないまま当番に入ること、優先度を決める権限がない立場で改善を押し通そうとすること、仕組みを自分の頭の中に残して属人化させること、障害時の稼働の膨らみ</strong>です。どれも、正社員なら社内の規程やチームが受け止めてくれた部分を、外部の立場で一人で抱えることから起きます。</p>
+<p>対策の基本は、<strong>つまずきの種を契約と参画初期の取り決めで小さくし、現場では数字と記録で守ること</strong>です。この記事では、契約・現場・技術・お金の4面で、SREならではの場面と対策を整理します。独立前に確かめる項目は<a href="/media/sre-how-to/">SREがフリーランスになるには</a>で扱っているので、ここでは「実際に起きやすい場面」に絞ります。</p>
+<h2 id="s1">契約でのつまずき</h2>
+<h3>オンコールの扱いが契約に書かれていない</h3>
+<p>SREの契約でもっとも多い食い違いが、当番の扱いです。契約書には「運用改善業務」とだけ書かれ、参画してみると夜間の当番表に名前が入っていた、ということが起きます。待機の時間が稼働に入るのか、呼び出されたときの作業時間をどう数えるのかが決まっていないと、負担だけが増えます。</p>
+<p><strong>対策</strong>：参画前に、当番に入るかどうか、入るなら頻度、応答までの時間、待機と呼び出しの扱いを言葉で確かめ、契約の内容と照らし合わせます。待機の報酬の考え方は<a href="/media/taiki-houshu/">待機報酬の記事</a>、リモートでの当番の確かめ方は<a href="/media/sre-remote/">SREのリモート案件の記事</a>をご覧ください。</p>
+<h3>「信頼性の向上」を成果として約束したように読める</h3>
+<p>契約書や業務説明に「稼働率を〇〇%にする」と書かれていると、達成できなかったときに責任を問われるおそれがあります。準委任契約では、成果そのものではなく、専門家として通常求められる注意を払って業務を行うことが約束の中身です。ただ、書き方によっては成果を約束したように読める場合もあります。</p>
+<p><strong>対策</strong>：数字の目標は「目指す値」として扱い、達成を約束する文言になっていないかを署名の前に読みます。障害で損害が出たときの責任の範囲は<a href="/media/damages-cap/">損害賠償の上限の記事</a>で解説しています。判断に迷う場合は弁護士などの専門家にご相談ください。</p>
+<h3>社員と同じ当番表・作業指示で動くようになる</h3>
+<p>社員のSREと同じ当番表に入り、作業の手順や時間まで細かく指示されるようになると、準委任の契約と実態がずれてきます。考え方は<a href="/media/gisou-ukeoi/">偽装請負の記事</a>で解説しています。</p>
+<h2 id="s2">現場でのつまずき</h2>
+<h3>権限のない立場で「リリースを止めるべき」と言い続ける</h3>
+<p>SREの考え方では、信頼性が落ちたら新機能より改善を優先します。ただ、外部のSREには、開発の優先度を決める権限がないのが一般的です。正しい主張でも、合意の仕組みがないまま繰り返すと、「開発の邪魔をする人」と受け取られてしまいます。</p>
+<p><strong>対策</strong>：止めるかどうかを自分で決めようとせず、決める人に判断材料を出す役に徹します。利用者への影響、エラーバジェットの残り、止めない場合に起きそうなことを並べ、決めてもらう形をとります。エラーバジェットの取り決めがない現場では、まず取り決めをつくる提案から始めます。</p>
+<h3>障害の振り返りが犯人探しになる</h3>
+<p>障害の後の振り返りで、誰の操作が原因だったかに話が向くと、次から事実が出てこなくなります。外部のSREが振り返りの進行を任されたとき、ここで場を立て直せないと、仕組みの改善につながりません。Googleが公開しているSREの本でも、振り返りは個人やチームを責めずに、仕組みと手順の側の原因を探すものとして説明されています（2026年10月時点、公開ページによる）。</p>
+<p><strong>対策</strong>：振り返りの文書の型を先に決め、「誰が」ではなく「何がそれを起こしやすくしていたか」を書く欄を設けます。対策は、担当者と期限を決めて課題として追います。</p>
+<aside class="box box-view"><p class="box-label">エージェントベストの見解</p><p>案件紹介の現場で、フリーランスのSREの方が契約の更新を見送られる理由として耳にしやすいのは、技術力の不足より「開発チームとの関係」です。改善の必要性は正しくても、伝え方が強すぎて開発側との溝が深まる、という場面が続くと、信頼を取り戻すのに時間がかかります。数字を示して決めてもらう形をとることをおすすめします。</p></aside>
+<h3>当番と改善の両方を抱え込む</h3>
+<p>少人数の現場では、当番に入りながら改善も期待されることがあります。同じ本では、12時間の当番で扱う障害は2件までを目安とし、当番の体制は1拠点のチームなら8人を最小とする考え方が示されています。これより人数が少なく、呼び出しの多い現場では、改善の時間がほとんど残りません。</p>
+<p><strong>対策</strong>：当番の対応に使った時間と、改善に使った時間を週ごとに記録し、窓口と共有します。改善が進まない理由を数字で示せると、当番の分担や優先度を見直す相談がしやすくなります。</p>
+<h2 id="s3">技術でのつまずき</h2>
+<h3>自分しか分からない仕組みを残す</h3>
+<p>外部のSREが作った自動化や監視の設定が、本人しか分からない状態で残ると、契約が終わった後に誰も直せなくなります。「辞めたら回らない」状態は、短期的には頼られても、長い目で見ると発注側の不満になります。</p>
+<p><strong>対策</strong>：仕組みはコードとしてリポジトリに置き、何のための仕組みか、止めたらどうなるか、直し方を短い文書に残します。社内のメンバーに一度作業してもらい、手放せるかを確かめておくと安心です。引き継ぎの進め方は<a href="/media/hikitsugi/">引き継ぎの記事</a>で整理しています。</p>
+<h3>道具を入れることが目的になる</h3>
+<p>可観測性の基盤や新しいデプロイの仕組みを入れても、誰も見ない監視画面や、使われないアラートが増えるだけ、ということがあります。</p>
+<p><strong>対策</strong>：道具を入れる前に、利用者のどんな体験を測りたいのか、アラートが鳴ったら誰が何をするのかを決めます。鳴っても何もしないアラートは減らす、という方針を持っておくと、当番の負担も軽くなります。求められるスキルの中身は<a href="/media/sre-skills/">SREに求められるスキル</a>で触れています。</p>
+<h3>本番の権限を広く持ちすぎる</h3>
+<p>障害対応を早くするために、外部のSREに強い権限がまとめて渡されることがあります。誤った操作の影響が大きくなるうえ、何か起きたときに疑われやすい立場にもなります。</p>
+<p><strong>対策</strong>：必要な権限を作業ごとに分け、操作の記録が残る形で使います。強い権限が要る作業は、事前に窓口と手順を合わせておきます。</p>
+<h2 id="s4">お金でのつまずき</h2>
+<h3>障害対応の稼働超過が精算されない</h3>
+<p>大きな障害や切り替えの作業では、稼働が延び、精算幅を大きく超えることがあります。超えた分の扱いを決めていないと、報酬に反映されないまま負担だけが増えます。</p>
+<p><strong>対策</strong>：稼働を日々記録し、精算幅を超えそうな段階で窓口に伝えます。精算の仕組みは<a href="/media/seisan-haba/">精算幅の記事</a>で解説しています。</p>
+<h3>仕組みが入ったところで契約が終わる</h3>
+<p>SREの案件は、仕組みが整い社内で回せるようになると役割を終えることがあります。フリーランス法では、6か月以上の業務委託を解除したり更新しなかったりする場合、発注側は少なくとも30日前までに予告することになっています（2026年10月時点、公正取引委員会の案内による）。</p>
+<p><strong>対策</strong>：引き継ぎの見通しが立った段階で、更新の見込みを窓口に尋ね、次の案件の相談を始めます。契約期間の考え方は<a href="/media/keiyaku-period/">契約期間の記事</a>をご覧ください。</p>
+<aside class="box box-caution"><p class="box-label">注意</p><p>夜間の呼び出しが続くと、睡眠が削られたまま翌日の作業に入ることになり、判断の誤りが起きやすくなります。体調を崩してからでは遅いため、<a href="/media/taichou-kanri/">体調管理の記事</a>も参考に、当番の上限を自分で決めておいてください。</p></aside>
+<aside class="box box-view"><p class="box-label">エージェントベストの見解</p><p>当社では、取引先の会社の実態と支払条件を確かめた案件を扱い、契約では業務範囲・報酬・支払期日・契約期間を個別契約に書いてお渡ししています。オンコールの扱いや権限の範囲など、参画前に気になる点はご質問いただければ確認します。</p></aside>
+<aside class="box box-point"><p class="box-label">ポイント</p><ul><li>契約では、当番の有無と扱い、成果を約束したように読める文言を参画前に確かめる</li><li>現場では、止めるかどうかを決める人に材料を出す役に徹し、振り返りは仕組みの原因を探す</li><li>仕組みはコードと短い文書で残し、手放せる形にする</li><li>稼働は日々記録し、精算幅を超えそうなら早めに伝える</li></ul></aside>
+<h2 id="s5">よくある質問</h2>
+<h3>参画してから、当番に入るよう言われました。どうすればよいですか？</h3>
+<p>まずは契約で決めた業務範囲に当番が含まれているかを確かめます。含まれていない場合は、紹介を受けたエージェントや発注側の窓口に早めに伝え、入るなら頻度と扱いを決めてから引き受けてください。業務範囲が広がったときの考え方は<a href="/media/scope-change/">業務範囲が変わったときの記事</a>をご覧ください。</p>
+<h3>自分の作業が原因で障害が起きたら、損害賠償を求められますか？</h3>
+<p>準委任契約では、成果そのものを約束しているわけではありません。ただし、契約の内容や、作業の進め方に落ち度があったかどうかで判断が変わることがあります。不安がある場合は、契約書の損害賠償の条項を読み、弁護士などの専門家にご相談ください。</p>
+<h3>開発チームが改善の提案を聞いてくれません。どうすればよいですか？</h3>
+<p>改善の必要性を、利用者への影響や障害の件数など、相手が気にしている数字に置き換えて伝えます。そのうえで、決めるのは発注側だという線を守り、示したリスクと決まった内容は記録に残しておくと、後で経緯を確かめられます。</p>
+  </div>
+  <section class="sources"><h2>参考にした公的情報・資料</h2><ul><li><a href="https://sre.google/sre-book/being-on-call/" target="_blank" rel="noopener nofollow">Being On-Call（Site Reliability Engineering｜Google）</a></li><li><a href="https://sre.google/sre-book/postmortem-culture/" target="_blank" rel="noopener nofollow">Postmortem Culture: Learning from Failure（Site Reliability Engineering｜Google）</a></li><li><a href="https://www.jftc.go.jp/freelancelaw_2026/" target="_blank" rel="noopener nofollow">2026年 フリーランス法特設サイト（公正取引委員会）</a></li></ul>
+  <p class="note">記事の内容は公開日時点の情報にもとづきます。制度や税率は変わることがあるため、手続きの前に必ず各機関の最新情報をご確認ください。</p></section>
+  <div class="cta-band">
+  <h2>条件に合う案件だけ、知りたい方へ</h2>
+  <p>ご登録は無料です。条件に合う案件だけを、ご本人の了承を得てからご提案します。</p>
+  <div class="cta-row">
+    <a class="btn btn-primary" href="https://airtable.com/appYkc36EvioYoL1A/pag6CZC4uJmxUcrXT/form" target="_blank" rel="noopener">無料で登録する</a>
+    <a class="btn btn-ghost" href="/jobs/">案件を探す</a>
+  </div>
+</div>
+  <section class="related"><h2>あわせて読みたい</h2><div class="grid g2"><a class="card art-card" href="/media/sre-how-to/">
+  <span class="art-hub">インフラ・クラウド</span>
+  <h3>SREがフリーランスになるには｜必要な経験と独立までの進め方</h3>
+  <p>SREとしてフリーランスになるには、SLOの設計や障害の振り返りなど、信頼性を数字で扱い開発チームと改善を進めた経験が必要です。案件の型、独立前に積む実績、外部から参画するときの進め方、オンコールの契約上の注意を解説します。</p>
+</a>
+<a class="card art-card" href="/media/sre-first-month/">
+  <span class="art-hub">インフラ・クラウド</span>
+  <h3>SREの参画初月にやること｜現場で信頼される進め方</h3>
+  <p>SREの参画初月のゴールは、サービスと障害の現状をつかむこと、当番と権限の線を決めること、小さな改善を一つ形にすることの3つです。週ごとの進め方、案件の型による重心の違い、避けたい動き、月末の振り返りを整理します。</p>
+</a>
+<a class="card art-card" href="/media/sre-skills/">
+  <span class="art-hub">インフラ・クラウド</span>
+  <h3>SREのフリーランス案件で求められるスキルと経験</h3>
+  <p>SREのフリーランス案件では、利用者の体験から指標（SLI）を選びSLOとエラーバジェットで判断する力、可観測性の設計、安全なリリースの仕組み、トイルをコードで減らす力が見られます。スキルの中身と示し方を解説します。</p>
+</a>
+<a class="card art-card" href="/media/sre-rate/">
+  <span class="art-hub">インフラ・クラウド</span>
+  <h3>SREのフリーランス案件｜報酬の決まり方と単価を上げる考え方</h3>
+  <p>SREの報酬は、信頼性の改善を任されるか運用を回すだけか、開発の優先度に口を出せる裁量、オンコールの待機と対応の扱い、基盤技術の経験、仕組みを残せるかで決まり、案件ごとに大きく変わります。上下する理由と交渉の材料を解説します。</p>
+</a>
+<a class="card art-card" href="/media/sre-remote/">
+  <span class="art-hub">インフラ・クラウド</span>
+  <h3>SREのフリーランスはリモートで働ける？案件の傾向と探し方</h3>
+  <p>SREは、可観測性の整備やSLOの導入、リリースの仕組みづくりなどでリモートの案件があります。リモートの条件を大きく左右するのはオンコールです。応答の速さ、待機中の場所の制約、当番の頻度と扱いなど、参画前に確かめる点を解説します。</p>
+</a>
+<a class="card art-card" href="/media/sre-seishain-hikaku/">
+  <span class="art-hub">インフラ・クラウド</span>
+  <h3>SREは正社員とフリーランスのどちらがよい？比べるときの観点</h3>
+  <p>SREとして正社員とフリーランスのどちらがよいかは、収入の安定、社会保険、改善の権限とキャリア、オンコールを含む働き方の4つで比べると判断しやすくなります。SREならではの違いと、自分に合う方を確かめる方法を整理します。</p>
+</a></div></section>
+</main>
+<footer class="site-foot">
+  <div class="wrap">
+    <strong>エージェントベストジョブ フリーランス</strong>
+    <div class="foot-links">
+      <a href="/">トップ</a>
+      <a href="/jobs/">案件を探す</a>
+      <a href="/media/">お役立ち記事</a>
+      <a href="https://airtable.com/appYkc36EvioYoL1A/pag6CZC4uJmxUcrXT/form" target="_blank" rel="noopener">ご登録（スキルシート・ご希望の条件）</a>
+      <a href="https://line.me/R/ti/p/@697nxhbt?oat_content=url&ts=08302134" target="_blank" rel="noopener" data-line-cta="footer">LINEで相談する</a>
+      <a href="/privacy.html">個人情報の取り扱い</a>
+      <a href="https://www.agent-best.net/company/">運営会社</a>
+    </div>
+    <div class="foot-links">
+      <a href="https://jobs.agent-best.net/">正社員の求人を探す（エージェントベストジョブ）</a>
+      <a href="https://skill.agent-best.net/">エージェントベストジョブ手に職</a>
+      <a href="https://www.agent-best.net/">エージェントベスト</a>
+    </div>
+    <p>運営：株式会社エージェントベスト（有料職業紹介事業 許可番号 13-ユ-316964）<br>〒106-0032 東京都港区六本木4-8-7 嶋田ビル5階</p>
+  </div>
+</footer>
+<script src="/assets/fav.js" defer></script>
+</body>
+</html>

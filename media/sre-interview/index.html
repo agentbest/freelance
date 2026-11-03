@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>SREのフリーランス面談でよく聞かれる質問と答え方の準備｜エージェントベストジョブ フリーランス</title>
+<meta name="description" content="SRE案件の面談では、SLOの決め方、障害対応での役割、振り返りから何を変えたか、トイルの減らし方、オンコールの関わり方がよく聞かれます。質問ごとに面談官が確かめたいこと、答えの組み立て方、準備の進め方、SREならではの逆質問を整理します。">
+<link rel="canonical" href="https://freelance.agent-best.net/media/sre-interview/">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="エージェントベストジョブ フリーランス">
+<meta property="og:title" content="SREのフリーランス面談でよく聞かれる質問と答え方の準備｜エージェントベストジョブ フリーランス">
+<meta property="og:description" content="SRE案件の面談では、SLOの決め方、障害対応での役割、振り返りから何を変えたか、トイルの減らし方、オンコールの関わり方がよく聞かれます。質問ごとに面談官が確かめたいこと、答えの組み立て方、準備の進め方、SREならではの逆質問を整理します。">
+<meta property="og:url" content="https://freelance.agent-best.net/media/sre-interview/">
+<meta property="og:image" content="https://freelance.agent-best.net/assets/ogp.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://freelance.agent-best.net/assets/ogp.png">
+<meta name="theme-color" content="#1E3A5F">
+<link rel="icon" href="/assets/favicon.ico">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="stylesheet" href="/assets/site.css">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1XXMP8Y1B4"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-1XXMP8Y1B4');
+document.addEventListener('click',e=>{const a=e.target.closest('[data-line-cta]');if(a)gtag('event','line_add_friend',{placement:a.dataset.lineCta,page_path:location.pathname});});</script>
+<script type="application/ld+json">[{"@context":"https://schema.org","@type":"Article","headline":"SREのフリーランス面談でよく聞かれる質問と答え方の準備","description":"SRE案件の面談では、SLOの決め方、障害対応での役割、振り返りから何を変えたか、トイルの減らし方、オンコールの関わり方がよく聞かれます。質問ごとに面談官が確かめたいこと、答えの組み立て方、準備の進め方、SREならではの逆質問を整理します。","datePublished":"2026-11-04","dateModified":"2026-11-04","author":{"@type":"Organization","name":"株式会社エージェントベスト","url":"https://www.agent-best.net/"},"publisher":{"@type":"Organization","name":"株式会社エージェントベスト","logo":{"@type":"ImageObject","url":"https://freelance.agent-best.net/assets/logo.png"}},"mainEntityOfPage":"https://freelance.agent-best.net/media/sre-interview/"},{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"トップ","item":"https://freelance.agent-best.net/"},{"@type":"ListItem","position":2,"name":"お役立ち記事","item":"https://freelance.agent-best.net/media/"},{"@type":"ListItem","position":3,"name":"インフラ・クラウド","item":"https://freelance.agent-best.net/media/hub/infra-cloud/"},{"@type":"ListItem","position":4,"name":"SREのフリーランス面談でよく聞かれる質問と答え方の準備"}]},{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"SREの肩書きで働いたことがなくても、SREの面談は受けられますか？","acceptedAnswer":{"@type":"Answer","text":"受けられる案件はあります。インフラ運用やバックエンド開発の中で、障害の振り返りを主導した、監視の基準を見直した、手作業を自動化したといった経験があれば、その場面を中心に話しましょう。目指し方はSREがフリーランスになるにはで解説しています。"}},{"@type":"Question","name":"技術的な質問にその場で答えられなかったらどうすればよいですか？","acceptedAnswer":{"@type":"Answer","text":"知らないことを知っているように話すより、「経験はありませんが、こう調べて確かめます」と進め方を示すほうが評価されやすくなります。SREの仕事は、分からない状態から原因を絞り込むことの連続だからです。"}},{"@type":"Question","name":"面談で障害の原因が自分の操作ミスだった話をしてもよいですか？","acceptedAnswer":{"@type":"Answer","text":"話して問題ありません。大切なのは、ミスの後に何を報告し、同じミスが起きない仕組みをどう入れたかを説明できることです。面談で見送られやすい理由は面談で見送られる理由の記事で解説しています。"}}]}]</script>
+</head>
+<body>
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="/"><img src="/assets/mark.png" alt="" width="28" height="28"><span>エージェントベストジョブ フリーランス<small>フリーランスのエンジニア・コンサル向け案件紹介</small></span></a>
+    <nav class="head-nav" aria-label="メニュー">
+      <a class="link" href="/jobs/">案件を探す</a>
+      <a class="link" href="/media/">お役立ち記事</a>
+      <a class="link keep" href="/mypage/" aria-label="気になる案件">☆ 気になる<span class="fav-count" data-fav-count hidden></span></a>
+      <a class="btn btn-primary btn-sm" href="https://airtable.com/appYkc36EvioYoL1A/pag6CZC4uJmxUcrXT/form" target="_blank" rel="noopener">無料で登録</a>
+    </nav>
+  </div>
+</header>
+<main class="wrap narrow article">
+  <p class="crumbs"><a href="/">トップ</a> › <a href="/media/">お役立ち記事</a> › <a href="/media/hub/infra-cloud/">インフラ・クラウド</a></p>
+  <a class="art-hub" href="/media/hub/infra-cloud/">インフラ・クラウド</a>
+  <h1 class="art-title">SREのフリーランス面談でよく聞かれる質問と答え方の準備</h1>
+  <p class="note">公開 2026-11-04　監修：株式会社エージェントベスト</p>
+  <nav class="toc" aria-label="目次"><strong>目次</strong><ol><li><a href="#s1">SREの面談で面談官が見ていること</a></li><li><a href="#s2">よく聞かれる質問と答え方の考え方</a></li><li><a href="#s3">準備は「障害と改善の場面」を3〜4つに絞る</a></li><li><a href="#s4">面談の相手によって重心が変わる</a></li><li><a href="#s5">SREならではの逆質問</a></li><li><a href="#s6">よくある質問</a></li></ol></nav>
+  <div class="art-body">
+<p>フリーランスのSRE（サイト信頼性エンジニア）の面談でよく聞かれるのは、<strong>信頼性の目標をどう決めたか、障害のときにどの役割で何をしたか、振り返りから何を変えたか、手作業をどう減らしたか</strong>の4つです。面談官は、使えるツールの数より「この人に本番の環境を任せたら、壊れたときにどう動き、同じ障害をどう防ぐか」を確かめようとしています。</p>
+<p>答えるときは、模範解答を覚えるより、自分の経験から障害や改善の場面を3〜4つ選び、どの質問にもそこから答えられるように準備しておくのが近道です。面談全般の答え方は<a href="/media/interview-questions/">業務委託の面談でよく聞かれる質問と答え方</a>で解説しているので、この記事ではSREの面談に固有の質問に絞ります。</p>
+<h2 id="s1">SREの面談で面談官が見ていること</h2>
+<p>SRE案件の面談に出てくるのは、発注元のSREチームやインフラチームのリーダー、開発の責任者であることが多く、本人も障害対応の経験を持っています。そのため、用語の正しさより、話の中に出てくる<strong>判断の順番と、その後に残した仕組み</strong>を聞いています。</p>
+<p>面談官が知りたいのは、おおむね次の3点です。</p>
+<ol><li><strong>任せられる範囲</strong>：どの規模の基盤を、どこまでの権限で触ってきたか</li><li><strong>壊れたときの動き方</strong>：障害のときに何を見て、誰に何を伝え、どう戻したか</li><li><strong>改善を続ける力</strong>：障害や手作業を、仕組みの変更につなげてきたか</li></ol>
+<p>以下の質問は、この3点のどれかを確かめるためのものです。</p>
+<h2 id="s2">よく聞かれる質問と答え方の考え方</h2>
+<p>ここで示す答えの例は、組み立て方を伝えるための<strong>架空の例</strong>です。ご自身の経験に置き換えて準備してください。</p>
+<h3>1. 「直近の基盤の規模と、あなたの役割を教えてください」</h3>
+<p>確かめたいのは任せられる範囲です。クラウドやコンテナ基盤の種類、サービスの数、チームの人数、本番環境に対してどこまでの権限を持っていたか、オンコールに入っていたかを短く伝えます。</p>
+<p>架空の例：「数十のサービスが動くコンテナ基盤を、5名のSREチームで見ていました。本番の構成変更はレビューを通せば自分で反映でき、オンコールは週替わりの当番に入っていました」</p>
+<h3>2. 「SLOはどう決めましたか。決めた後、何に使いましたか」</h3>
+<p>SREの面談に特有の質問です。数値そのものより、<strong>利用者の困りごとから指標を選んだ経緯</strong>と、<strong>決めた後にリリースや優先度の判断に使ったか</strong>を見ています。SLOを置いただけでダッシュボードの飾りになっていた場合は、その反省も含めて話すと、理解の深さが伝わります。SLOを決めた経験がない場合は、近い経験として、アラートの基準を見直した話などを正直に話しましょう。</p>
+<h3>3. 「大きな障害のとき、あなたは何をしましたか」</h3>
+<p>最もよく掘り下げられる質問です。次の順番で組み立てると伝わりやすくなります。</p>
+<ul><li>何から異常に気づいたか（アラート、問い合わせ、指標）</li><li>自分の役割は何だったか（指揮、調査、連絡、復旧の作業）</li><li>どう影響を抑え、どう戻したか</li><li>誰に、いつ、何を伝えたか</li><li>振り返りで何が決まり、何が実際に変わったか</li></ul>
+<p>「再起動して直りました」で終わると、判断の中身が見えません。<strong>原因が分からない段階で、何を優先したか</strong>まで話せると、障害対応の経験の重さが伝わります。</p>
+<h3>4. 「振り返りから、どんな仕組みを変えましたか」</h3>
+<p>障害を仕組みの改善につなげているかを確かめる質問です。対策を決めただけでなく、実装され、効果を確かめたところまでを話します。人を責めない振り返りの進め方を意識していたかも見られます。</p>
+<h3>5. 「手作業を減らした経験を教えてください」</h3>
+<p>トイルの削減の経験です。どの作業を、どの基準で選び、何に置き換え、作業時間がどう変わったかを話します。作業時間は社内の数字をそのまま出さず、割合や「週に何回あった作業がなくなった」程度にとどめると無難です。</p>
+<h3>6. 「オンコールにはどう関わってきましたか。この案件で入れますか」</h3>
+<p>当番の頻度や応答の速さ、待機中の制約に対応できるかを確かめる質問です。経験と、今回の案件で対応できる範囲を分けて答えます。入れない時間帯がある場合は、面談の場で正直に伝えたほうが、参画後のずれを防げます。</p>
+<h3>7. 「開発チームと優先度がぶつかったとき、どうしましたか」</h3>
+<p>信頼性の改善と機能の開発のどちらを先にするかで意見が割れた場面の話です。面談官は、どちらを通したかより、<strong>数字をもとに論点を整理し、誰に決めてもらったか</strong>を見ています。</p>
+<h3>8. 「参画したら、最初に何を確かめますか」</h3>
+<p>断定的な計画より、構成と監視の現状、過去の障害の記録、当番の運用、権限の範囲など、<strong>何を確かめてから手を打つか</strong>を順に示すほうが信頼されます。</p>
+<aside class="box box-view"><p class="box-label">エージェントベストの見解</p><p>SREの案件をご紹介していると、面談で評価されやすいのは、うまく収まった障害の話より、原因が分からない時間帯に何を優先したかを順を追って話せる方です。反対に、ツールの名前が並ぶだけで、自分の役割と判断が見えない答えが続くと、見送られやすい傾向があります。小さな障害でも、気づいてから仕組みを変えるまでを話せれば、経験として受け止められることが多くあります。</p></aside>
+<h2 id="s3">準備は「障害と改善の場面」を3〜4つに絞る</h2>
+<p>答えの材料は共通しています。準備は次の手順で進めると効率的です。</p>
+<ol><li><strong>場面を選ぶ</strong>：大きな障害、SLOやアラートの見直し、トイルの削減、開発チームとの調整など、性質の違う場面を3〜4つ選ぶ</li><li><strong>場面ごとにメモをつくる</strong>：状況、気づいたきっかけ、自分の役割、打った手、伝えた相手、振り返りで変えたこと、結果を書き出す</li><li><strong>規模の言い方をそろえる</strong>：サービスの数、チームの人数、権限の範囲を、どの場面でも同じ言い方で話せるようにする</li><li><strong>2分版と5分版をつくる</strong>：最初は短く話し、掘り下げられたら詳しく話せるようにする</li><li><strong>スキルシートと照らし合わせる</strong>：シートに書いた障害対応の役割や改善の成果と、話の内容が一致しているかを確かめる</li></ol>
+<p>面談官はシートを見ながら質問するため、話とシートがずれると、どちらも信用されにくくなります。書き方は<a href="/media/sre-skillsheet/">SREのスキルシートの記事</a>、冒頭の自己紹介は<a href="/media/self-introduction/">面談の自己紹介の記事</a>で解説しています。</p>
+<aside class="box box-caution"><p class="box-label">注意</p><p>障害の話は具体的に話すほど説得力が増しますが、前の現場の社名、サービス名、障害の発生日、影響を受けた利用者の数、構成の詳細などは、守秘の対象であることが多くあります。社名やサービス名は伏せ、規模は割合や「数十のサービス」程度の表現にとどめましょう。前の現場の担当者の失敗を詳しく話すのも、聞き手に悪い印象を与えやすいので避けたほうが無難です。考え方は<a href="/media/confidentiality-in-skillsheet/">スキルシートに書いてよいこと・いけないこと</a>が参考になります。</p></aside>
+<h2 id="s4">面談の相手によって重心が変わる</h2>
+<div class="table-wrap"><table><thead><tr><th>面談の相手</th><th>重く見られやすい点</th></tr></thead><tbody><tr><td>SREチーム・インフラチームのリーダー</td><td>障害対応の役割、基盤の技術、オンコールの経験</td></tr><tr><td>開発の責任者</td><td>SLOとエラーバジェットの使い方、開発チームとの進め方</td></tr><tr><td>情報システム部門や事業の責任者</td><td>報告の仕方、信頼性への投資を説明する力</td></tr></tbody></table></div>
+<p>技術的な掘り下げが続く面談では、ホワイトボードや画面共有で構成を描きながら話すよう求められることもあります。オンラインの面談での話し方は<a href="/media/online-interview/">オンライン面談の記事</a>をご覧ください。</p>
+<h2 id="s5">SREならではの逆質問</h2>
+<p>逆質問は、印象づくりより<strong>参画後のずれを防ぐ確認</strong>に使います。SREの案件では、次の点を聞いておくと判断がしやすくなります。</p>
+<ul><li>オンコールの当番の人数と頻度、応答までの時間の目安、時間外の対応の扱い</li><li>改善の仕事と運用の仕事の時間の配分の見込み</li><li>SLOや監視の今の整備状況</li><li>本番環境に対して与えられる権限の範囲と、変更の承認の流れ</li><li>開発チームとの関係（優先度を一緒に決める場があるか）</li></ul>
+<p>一般的な逆質問の考え方は<a href="/media/reverse-questions/">業務委託の面談で聞いておくべき逆質問</a>にまとめています。聞いた内容は、契約前の確認にもそのまま使えます。案件を選ぶときの確認点は<a href="/media/sre-anken-erabi/">SRE案件の選び方</a>で整理しています。</p>
+<aside class="box box-view"><p class="box-label">エージェントベストの見解</p><p>当社では、経歴をご本人の了承を得た案件にだけ、氏名・連絡先を伏せてご提案しています。SREの面談では、オンコールの条件や権限の範囲など、案件票だけでは分からない点が判断を左右します。面談の前に確認しておきたい点があれば、ご質問いただければ確認します。</p></aside>
+<aside class="box box-point"><p class="box-label">ポイント</p><ul><li>SREの面談では、SLOの決め方、障害対応での役割、振り返りから変えたこと、トイルの削減、オンコールがよく聞かれる</li><li>障害の話は「気づいたきっかけ→役割→打った手→伝えた相手→変えた仕組み」の順で組み立てる</li><li>準備は障害と改善の場面を3〜4つに絞り、スキルシートと内容をそろえる</li><li>逆質問では、オンコールの条件、改善と運用の配分、権限の範囲を確かめる</li></ul></aside>
+<h2 id="s6">よくある質問</h2>
+<h3>SREの肩書きで働いたことがなくても、SREの面談は受けられますか？</h3>
+<p>受けられる案件はあります。インフラ運用やバックエンド開発の中で、障害の振り返りを主導した、監視の基準を見直した、手作業を自動化したといった経験があれば、その場面を中心に話しましょう。目指し方は<a href="/media/sre-how-to/">SREがフリーランスになるには</a>で解説しています。</p>
+<h3>技術的な質問にその場で答えられなかったらどうすればよいですか？</h3>
+<p>知らないことを知っているように話すより、「経験はありませんが、こう調べて確かめます」と進め方を示すほうが評価されやすくなります。SREの仕事は、分からない状態から原因を絞り込むことの連続だからです。</p>
+<h3>面談で障害の原因が自分の操作ミスだった話をしてもよいですか？</h3>
+<p>話して問題ありません。大切なのは、ミスの後に何を報告し、同じミスが起きない仕組みをどう入れたかを説明できることです。面談で見送られやすい理由は<a href="/media/interview-fail-reasons/">面談で見送られる理由の記事</a>で解説しています。</p>
+  </div>
+  
+  <div class="cta-band">
+  <h2>条件に合う案件だけ、知りたい方へ</h2>
+  <p>ご登録は無料です。条件に合う案件だけを、ご本人の了承を得てからご提案します。</p>
+  <div class="cta-row">
+    <a class="btn btn-primary" href="https://airtable.com/appYkc36EvioYoL1A/pag6CZC4uJmxUcrXT/form" target="_blank" rel="noopener">無料で登録する</a>
+    <a class="btn btn-ghost" href="/jobs/">案件を探す</a>
+  </div>
+</div>
+  <section class="related"><h2>あわせて読みたい</h2><div class="grid g2"><a class="card art-card" href="/media/interview-questions/">
+  <span class="art-hub">スキルシート・面談</span>
+  <h3>業務委託の面談でよく聞かれる質問と答え方｜回答の組み立て方</h3>
+  <p>業務委託の面談では、経歴の説明、直近案件での役割、技術や業務の深さ、稼働条件の4つがよく聞かれます。「結論→背景→自分の行動→結果」の順で短く答えると伝わりやすくなります。質問ごとの答え方を架空の例で紹介します。</p>
+</a>
+<a class="card art-card" href="/media/reverse-questions/">
+  <span class="art-hub">スキルシート・面談</span>
+  <h3>業務委託の面談で聞いておくべき逆質問｜参画後のずれを防ぐ確認項目</h3>
+  <p>業務委託の面談の逆質問は、印象づくりより「参画後のずれを防ぐ確認」に使うのが基本です。業務の範囲、体制と指示の流れ、稼働の実態、期間の見込みの4つを確かめておくと、契約後の「話が違う」を減らせます。</p>
+</a>
+<a class="card art-card" href="/media/self-introduction/">
+  <span class="art-hub">スキルシート・面談</span>
+  <h3>面談の自己紹介の組み立て方｜1〜2分で伝える経歴と話す順番</h3>
+  <p>業務委託の面談の自己紹介は「経験の全体像→直近の案件と役割→この案件に生かせる経験」の3段で、1〜2分にまとめるのが基本です。年代順に全部話さず、案件に合う経験を選んで話す組み立て方を架空の例で紹介します。</p>
+</a>
+<a class="card art-card" href="/media/interview-fail-reasons/">
+  <span class="art-hub">スキルシート・面談</span>
+  <h3>業務委託の面談で見送られる理由と次に生かす方法｜振り返りの手順</h3>
+  <p>業務委託の面談で見送られる理由は、経験のずれ、条件のずれ、伝わり方、自分では変えられない事情の4つに分けられます。理由を分けて振り返り、変えられるものだけを次の応募や面談で直すのが基本です。分類と振り返りの手順を整理します。</p>
+</a>
+<a class="card art-card" href="/media/online-interview/">
+  <span class="art-hub">スキルシート・面談</span>
+  <h3>オンライン面談で気をつけること｜環境・話し方・資料の準備</h3>
+  <p>業務委託のオンライン面談では、通信・音声・カメラの環境を前日までに試し、結論から短く話し、画面共有する資料は守秘義務に触れないものに絞ることが大切です。準備から当日の流れ、接続トラブルへの備えまで整理します。</p>
+</a>
+<a class="card art-card" href="/media/sre-skillsheet/">
+  <span class="art-hub">インフラ・クラウド</span>
+  <h3>SREのスキルシートの書き方｜面談で評価される実績の見せ方</h3>
+  <p>SREのスキルシートは、道具の名前より、障害対応での役割、オンコールの関わり方、改善の前後で何が変わったかを書くのが基本です。数字のぼかし方、SREの肩書きでなかった経験の書き方、CKAの書き方を記入例で紹介します。</p>
+</a></div></section>
+</main>
+<footer class="site-foot">
+  <div class="wrap">
+    <strong>エージェントベストジョブ フリーランス</strong>
+    <div class="foot-links">
+      <a href="/">トップ</a>
+      <a href="/jobs/">案件を探す</a>
+      <a href="/media/">お役立ち記事</a>
+      <a href="https://airtable.com/appYkc36EvioYoL1A/pag6CZC4uJmxUcrXT/form" target="_blank" rel="noopener">ご登録（スキルシート・ご希望の条件）</a>
+      <a href="https://line.me/R/ti/p/@697nxhbt?oat_content=url&ts=08302134" target="_blank" rel="noopener" data-line-cta="footer">LINEで相談する</a>
+      <a href="/privacy.html">個人情報の取り扱い</a>
+      <a href="https://www.agent-best.net/company/">運営会社</a>
+    </div>
+    <div class="foot-links">
+      <a href="https://jobs.agent-best.net/">正社員の求人を探す（エージェントベストジョブ）</a>
+      <a href="https://skill.agent-best.net/">エージェントベストジョブ手に職</a>
+      <a href="https://www.agent-best.net/">エージェントベスト</a>
+    </div>
+    <p>運営：株式会社エージェントベスト（有料職業紹介事業 許可番号 13-ユ-316964）<br>〒106-0032 東京都港区六本木4-8-7 嶋田ビル5階</p>
+  </div>
+</footer>
+<script src="/assets/fav.js" defer></script>
+</body>
+</html>

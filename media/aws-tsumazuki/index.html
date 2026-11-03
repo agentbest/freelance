@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AWSエンジニアのフリーランスがつまずきやすい点と対策｜エージェントベストジョブ フリーランス</title>
+<meta name="description" content="フリーランスのAWSエンジニアがつまずきやすいのは、障害時の責任範囲があいまいな契約、権限待ちで止まる作業、本番への手作業の変更、検証環境の費用の膨らみなどです。契約・現場・技術・お金の順に、よくある場面と対策を整理します。">
+<link rel="canonical" href="https://freelance.agent-best.net/media/aws-tsumazuki/">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="エージェントベストジョブ フリーランス">
+<meta property="og:title" content="AWSエンジニアのフリーランスがつまずきやすい点と対策｜エージェントベストジョブ フリーランス">
+<meta property="og:description" content="フリーランスのAWSエンジニアがつまずきやすいのは、障害時の責任範囲があいまいな契約、権限待ちで止まる作業、本番への手作業の変更、検証環境の費用の膨らみなどです。契約・現場・技術・お金の順に、よくある場面と対策を整理します。">
+<meta property="og:url" content="https://freelance.agent-best.net/media/aws-tsumazuki/">
+<meta property="og:image" content="https://freelance.agent-best.net/assets/ogp.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://freelance.agent-best.net/assets/ogp.png">
+<meta name="theme-color" content="#1E3A5F">
+<link rel="icon" href="/assets/favicon.ico">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="stylesheet" href="/assets/site.css">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1XXMP8Y1B4"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-1XXMP8Y1B4');
+document.addEventListener('click',e=>{const a=e.target.closest('[data-line-cta]');if(a)gtag('event','line_add_friend',{placement:a.dataset.lineCta,page_path:location.pathname});});</script>
+<script type="application/ld+json">[{"@context":"https://schema.org","@type":"Article","headline":"AWSエンジニアのフリーランスがつまずきやすい点と対策","description":"フリーランスのAWSエンジニアがつまずきやすいのは、障害時の責任範囲があいまいな契約、権限待ちで止まる作業、本番への手作業の変更、検証環境の費用の膨らみなどです。契約・現場・技術・お金の順に、よくある場面と対策を整理します。","datePublished":"2026-11-04","dateModified":"2026-11-04","author":{"@type":"Organization","name":"株式会社エージェントベスト","url":"https://www.agent-best.net/"},"publisher":{"@type":"Organization","name":"株式会社エージェントベスト","logo":{"@type":"ImageObject","url":"https://freelance.agent-best.net/assets/logo.png"}},"mainEntityOfPage":"https://freelance.agent-best.net/media/aws-tsumazuki/"},{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"トップ","item":"https://freelance.agent-best.net/"},{"@type":"ListItem","position":2,"name":"お役立ち記事","item":"https://freelance.agent-best.net/media/"},{"@type":"ListItem","position":3,"name":"インフラ・クラウド","item":"https://freelance.agent-best.net/media/hub/infra-cloud/"},{"@type":"ListItem","position":4,"name":"AWSエンジニアのフリーランスがつまずきやすい点と対策"}]},{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"自分の設定ミスで障害が起きたら、損害賠償を求められますか？","acceptedAnswer":{"@type":"Answer","text":"準委任契約では、成果そのものではなく、専門家として通常求められる注意を払って業務を行うことが約束の中身です。ただし、契約の内容や、作業の進め方に落ち度があったかどうかで判断が変わることがあります。不安がある場合は、契約書の損害賠償の条項を読み、弁護士などの専門家にご相談ください。"}},{"@type":"Question","name":"参画したのに権限が付かず、作業ができません。どうすればよいですか？","acceptedAnswer":{"@type":"Answer","text":"まずは、申請の状況と、付く見込みの時期を窓口に確かめてください。待つ間に読める設計書やコードがあれば読み込み、権限が付いたらすぐに着手できる準備を進めます。待ちの期間が長く続く場合は、作業が止まっていることを記録に残し、紹介を受けたエージェントにも伝えておくと、後で稼働の扱いを話し合いやすくなります。"}},{"@type":"Question","name":"運用の当番に社員と同じように入るよう求められました。応じてよいですか？","acceptedAnswer":{"@type":"Answer","text":"契約で決めた業務の範囲に、運用や待機が含まれているかをまず確かめてください。含まれていない場合は、範囲の追加として条件を話し合う必要があります。勤務時間や手順まで社員と同じように指示される形になる場合は、契約の形と実態がずれていないかもあわせて確かめてください。"}}]}]</script>
+</head>
+<body>
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="/"><img src="/assets/mark.png" alt="" width="28" height="28"><span>エージェントベストジョブ フリーランス<small>フリーランスのエンジニア・コンサル向け案件紹介</small></span></a>
+    <nav class="head-nav" aria-label="メニュー">
+      <a class="link" href="/jobs/">案件を探す</a>
+      <a class="link" href="/media/">お役立ち記事</a>
+      <a class="link keep" href="/mypage/" aria-label="気になる案件">☆ 気になる<span class="fav-count" data-fav-count hidden></span></a>
+      <a class="btn btn-primary btn-sm" href="https://airtable.com/appYkc36EvioYoL1A/pag6CZC4uJmxUcrXT/form" target="_blank" rel="noopener">無料で登録</a>
+    </nav>
+  </div>
+</header>
+<main class="wrap narrow article">
+  <p class="crumbs"><a href="/">トップ</a> › <a href="/media/">お役立ち記事</a> › <a href="/media/hub/infra-cloud/">インフラ・クラウド</a></p>
+  <a class="art-hub" href="/media/hub/infra-cloud/">インフラ・クラウド</a>
+  <h1 class="art-title">AWSエンジニアのフリーランスがつまずきやすい点と対策</h1>
+  <p class="note">公開 2026-11-04　監修：株式会社エージェントベスト</p>
+  <nav class="toc" aria-label="目次"><strong>目次</strong><ol><li><a href="#s1">契約でのつまずき</a></li><li><a href="#s2">現場でのつまずき</a></li><li><a href="#s3">技術でのつまずき</a></li><li><a href="#s4">お金でのつまずき</a></li><li><a href="#s5">よくある質問</a></li></ol></nav>
+  <div class="art-body">
+<p>フリーランスのAWSエンジニアがつまずきやすいのは、<strong>障害や設定ミスの責任範囲があいまいなまま契約すること、権限が付かずに作業が止まること、本番環境に手作業で変更を入れて経緯が追えなくなること、検証環境や夜間対応でお金と時間が膨らむこと</strong>です。どれも、会社員なら社内のルールや上司が受け止めてくれた部分を、外部の立場で一人で抱えることから起きます。</p>
+<p>対策の基本は、<strong>つまずきの種を契約と参画初期の取り決めで小さくしておき、現場では変更をコードと記録で残して自分を守ること</strong>です。この記事では、契約・現場・技術・お金の順に、AWSエンジニアならではの場面と対策を整理します。契約前に確かめる項目の一覧は<a href="/media/aws-anken-erabi/">AWSエンジニアの案件の選び方</a>で扱っているので、ここでは「実際に起きやすい場面」に絞ります。</p>
+<h2 id="s1">契約でのつまずき</h2>
+<h3>障害の責任をどこまで負うかが書かれていない</h3>
+<p>AWSの環境では、一つの設定ミスが、サービスの停止や情報の公開につながることがあります。契約書に「インフラ構築業務」とだけ書かれ、障害が起きたときの責任の範囲や賠償の上限が決まっていないと、問題が起きたときに話がこじれやすくなります。</p>
+<p><strong>対策</strong>：署名の前に、損害賠償の条項に上限があるか、故意・重過失に限るなどの定めがあるかを読みます。準委任契約か請負契約かで、何を約束しているかも変わります。考え方は<a href="/media/baisho-sekinin/">損害賠償の責任の記事</a>で解説しています。判断に迷う場合は弁護士などの専門家に相談するのが安全です。</p>
+<h3>「構築」と書かれていて、運用まで期待される</h3>
+<p>構築の案件として入ったのに、稼働後の監視や問い合わせ対応、夜間の一次対応まで頼まれる、という食い違いはよく起きます。AWSの仕事は構築と運用の境目があいまいなため、引き受けた範囲が少しずつ広がりやすいのが特徴です。</p>
+<p><strong>対策</strong>：参画前に、担う成果物（設計書、IaCのコード、手順書など）と、担わないもの（稼働後の監視、利用者からの問い合わせ対応など）を言葉で確かめておきます。範囲の外の依頼が来たときの扱いは<a href="/media/scope-change/">業務範囲が変わったときの記事</a>をご覧ください。</p>
+<h3>指揮命令の形が社員と変わらなくなる</h3>
+<p>発注側の運用チームに組み込まれ、勤務時間や作業の手順まで細かく指示されるようになると、準委任の契約と実態がずれてきます。運用の当番表に社員と同じように入れられる場面は、とくに気づきにくいところです。考え方は<a href="/media/gisou-ukeoi/">偽装請負の記事</a>で解説しています。</p>
+<h2 id="s2">現場でのつまずき</h2>
+<h3>権限が付かず、最初の数週間が進まない</h3>
+<p>外部の人にAWSのアカウントへの権限を付けるには、発注側の申請と承認が要るのが一般的です。参画初日に権限がなく、申請の流れも分からないまま待つと、成果の出ない期間だけが過ぎていきます。</p>
+<p><strong>対策</strong>：参画前に、どのアカウントにどの権限で入るのか、申請の窓口は誰かを確かめます。権限が付くまでの間は、設計書やIaCのコード、構成図を読み込み、権限が付いた日にすぐ動ける準備をしておきます。最初の1か月の進め方は<a href="/media/aws-first-month/">AWSエンジニアの参画初月にやること</a>で整理しています。</p>
+<h3>広すぎる権限をもらってしまう</h3>
+<p>反対に、手間を省くために管理者に近い権限を最初から渡されることもあります。便利に見えますが、誤操作の影響が大きくなり、事故が起きたときに外部の人の操作が疑われやすくなります。AWSのIAMの公式のベストプラクティスでも、作業に必要な権限だけを付ける「最小権限」や、人が使う場合の一時的な認証情報の利用、多要素認証が勧められています。</p>
+<p><strong>対策</strong>：作業に必要な範囲の権限に絞るよう、自分から提案します。本番と検証で使う権限を分けてもらうと、誤って本番を触る危険も減ります。</p>
+<h3>本番に手作業で変更を入れてしまう</h3>
+<p>急ぎの依頼で、画面から本番の設定を直接変えると、その場は早く済みます。しかし、IaCのコードと実際の環境がずれ、次に誰かがコードを適用したときに設定が戻る、変更の経緯を後から説明できない、といった問題が起きます。</p>
+<p><strong>対策</strong>：急ぎでも、変更はコードと実行計画で見せ、レビューを通して入れるのを基本にします。どうしても手作業が必要な場合は、変更の内容と時刻を記録し、後でコードに反映する作業を自分の宿題として残します。</p>
+<aside class="box box-view"><p class="box-label">エージェントベストの見解</p><p>案件紹介の現場で、フリーランスのAWSエンジニアの方が契約の更新を見送られる理由として耳にしやすいのは、技術の不足よりも「変更の伝え方」です。本番への変更を事前に共有せずに入れた、障害の報告が遅れた、といった場面が続くと、腕が確かでも任せにくいと受け取られます。変更は小さくても事前に共有し、迷ったら早めに報告することをおすすめします。</p></aside>
+<h3>障害の報告を抱え込む</h3>
+<p>外部の立場だと、自分の変更が原因かもしれない障害を、「直してから報告しよう」と抱え込みがちです。しかし、影響が広がってから表に出るほうが、信頼を大きく損ないます。</p>
+<p><strong>対策</strong>：原因が確定していなくても、影響が出ている事実と、今やっていることを先に伝えます。原因の調べと再発防止は、落ち着いてから振り返りとしてまとめます。</p>
+<h2 id="s3">技術でのつまずき</h2>
+<h3>「AWSが守ってくれる範囲」を思い違える</h3>
+<p>AWSは、データセンターやハードウェア、仮想化の層など「クラウドのセキュリティ」を担い、利用者は、OSの更新、ファイアウォールの設定、データや権限の管理など「クラウドにおけるセキュリティ」を担う、という責任の分け方（責任共有モデル）を公開しています。使うサービスによって利用者の範囲は変わります。マネージドサービスだから安全、と思い込むと、公開設定や権限の抜けを見落とします。</p>
+<p><strong>対策</strong>：使うサービスごとに、利用者が設定すべきもの（公開範囲、暗号化、権限、ログ）を一覧にし、構築の完了時に確かめる習慣を持ちます。</p>
+<h3>前任者の構成を読み解けない</h3>
+<p>引き継いだ環境が、画面操作で作られた部分とコードで作られた部分の混在だと、何がどこで管理されているかが分からず、変更のたびに時間がかかります。</p>
+<p><strong>対策</strong>：最初に、コードで管理されている範囲とそうでない範囲を分けた構成の一覧を作ります。そのうえで、コード化されていない部分を少しずつ取り込む提案をすると、現場の役に立ちながら自分の作業も楽になります。</p>
+<h3>他のクラウドや新しいサービスに広げすぎる</h3>
+<p>案件の幅を広げようと、AzureやGoogle Cloud、新しいサービスを同時に追いかけると、どれも浅くなりがちです。面談では「どこまで自分で決めて作ったか」を深く聞かれるため、浅い経験の並べ方はかえって不利になります。</p>
+<p><strong>対策</strong>：まずAWSで設計から運用まで語れる領域を一つ固め、他のクラウドはその比較として学ぶ順番が無理がありません。求められるスキルの全体像は<a href="/media/aws-skills/">AWSで求められるスキルの記事</a>で触れています。</p>
+<h2 id="s4">お金でのつまずき</h2>
+<h3>検証環境の費用が膨らむ</h3>
+<p>個人の検証環境で構成を試したあと、消し忘れたリソースの費用がかさむことがあります。AWS Budgetsでは、費用の予算を決めて、実績や予測が超えそうなときに通知を受け取れます。ただし、公式の説明でも、利用から通知までに時間差があり、通知の前に予算を超えることがあるとされています。</p>
+<p><strong>対策</strong>：検証用のアカウントでは予算の通知を設定したうえで、試したリソースはその日のうちにコードで消す習慣を持ちます。検証環境の費用を経費として扱えるかは<a href="/media/keihi-list/">経費にできるものの記事</a>をご覧ください。個別の判断は税理士にご相談ください。</p>
+<h3>夜間の切り替えや障害対応の稼働が精算されない</h3>
+<p>本番の切り替えや障害対応は夜間や休日に入りやすく、精算幅を超えることがあります。超えた分や深夜の扱いを決めていないと、報酬に反映されないまま負担だけが増えます。</p>
+<p><strong>対策</strong>：稼働を日々記録し、精算幅を超えそうな段階で窓口に伝えます。待機そのものを稼働に数えるかも、参画前に確かめておきます。精算の仕組みは<a href="/media/seisan-haba/">精算幅の記事</a>で解説しています。</p>
+<h3>構築の完了で契約が突然終わる</h3>
+<p>本番の稼働や移行の切り替えを迎えると、体制が縮み、契約が更新されないことがあります。フリーランス法では、6か月以上続く業務委託を解除したり更新しなかったりする場合、発注側は少なくとも30日前までに予告することになっています（2026年10月時点、公正取引委員会の案内による）。</p>
+<p><strong>対策</strong>：契約期間と、構築や移行の節目を並べて見ておき、更新の見込みを早めに確かめます。契約期間の考え方は<a href="/media/keiyaku-period/">契約期間の記事</a>をご覧ください。</p>
+<aside class="box box-caution"><p class="box-label">注意</p><p>移行の切り替えが続く時期は、深夜の作業と日中の会議が重なり、休む時間が削られがちです。疲れたまま本番を操作すると、誤操作の危険が上がります。<a href="/media/taichou-kanri/">体調管理の記事</a>も参考に、夜間作業の翌日の稼働の扱いを事前に相談しておくことをおすすめします。</p></aside>
+<aside class="box box-view"><p class="box-label">エージェントベストの見解</p><p>当社では、契約で業務範囲・報酬・支払期日・契約期間を個別契約に書いてお渡ししています。構築と運用の範囲、夜間作業や待機の扱いなど、参画前に気になる点はご質問いただければ確認します。参画後に範囲が広がってきたと感じたときも、早めにご相談ください。</p></aside>
+<aside class="box box-point"><p class="box-label">ポイント</p><ul><li>契約では、障害時の責任と賠償の定め、構築と運用の範囲を参画前に確かめる</li><li>現場では、権限は必要な範囲に絞り、本番への変更はコードと事前の共有で入れる</li><li>技術では、責任共有モデルで自分が設定すべき範囲を確かめ、まずAWSで語れる領域を固める</li><li>お金では、検証環境の予算の通知と消し忘れ対策、夜間の稼働の記録と精算の確認を続ける</li></ul></aside>
+<h2 id="s5">よくある質問</h2>
+<h3>自分の設定ミスで障害が起きたら、損害賠償を求められますか？</h3>
+<p>準委任契約では、成果そのものではなく、専門家として通常求められる注意を払って業務を行うことが約束の中身です。ただし、契約の内容や、作業の進め方に落ち度があったかどうかで判断が変わることがあります。不安がある場合は、契約書の損害賠償の条項を読み、弁護士などの専門家にご相談ください。</p>
+<h3>参画したのに権限が付かず、作業ができません。どうすればよいですか？</h3>
+<p>まずは、申請の状況と、付く見込みの時期を窓口に確かめてください。待つ間に読める設計書やコードがあれば読み込み、権限が付いたらすぐに着手できる準備を進めます。待ちの期間が長く続く場合は、作業が止まっていることを記録に残し、紹介を受けたエージェントにも伝えておくと、後で稼働の扱いを話し合いやすくなります。</p>
+<h3>運用の当番に社員と同じように入るよう求められました。応じてよいですか？</h3>
+<p>契約で決めた業務の範囲に、運用や待機が含まれているかをまず確かめてください。含まれていない場合は、範囲の追加として条件を話し合う必要があります。勤務時間や手順まで社員と同じように指示される形になる場合は、契約の形と実態がずれていないかもあわせて確かめてください。</p>
+  </div>
+  <section class="sources"><h2>参考にした公的情報・資料</h2><ul><li><a href="https://www.jftc.go.jp/freelancelaw_2026/" target="_blank" rel="noopener nofollow">2026年 フリーランス法特設サイト（公正取引委員会）</a></li><li><a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html" target="_blank" rel="noopener nofollow">Security best practices in IAM（AWS ドキュメント）</a></li><li><a href="https://docs.aws.amazon.com/cost-management/latest/userguide/budgets-managing-costs.html" target="_blank" rel="noopener nofollow">Managing your costs with AWS Budgets（AWS ドキュメント）</a></li><li><a href="https://aws.amazon.com/compliance/shared-responsibility-model/" target="_blank" rel="noopener nofollow">Shared Responsibility Model（Amazon Web Services）</a></li></ul>
+  <p class="note">記事の内容は公開日時点の情報にもとづきます。制度や税率は変わることがあるため、手続きの前に必ず各機関の最新情報をご確認ください。</p></section>
+  <div class="cta-band">
+  <h2>条件に合う案件だけ、知りたい方へ</h2>
+  <p>ご登録は無料です。条件に合う案件だけを、ご本人の了承を得てからご提案します。</p>
+  <div class="cta-row">
+    <a class="btn btn-primary" href="https://airtable.com/appYkc36EvioYoL1A/pag6CZC4uJmxUcrXT/form" target="_blank" rel="noopener">無料で登録する</a>
+    <a class="btn btn-ghost" href="/jobs/">案件を探す</a>
+  </div>
+</div>
+  <section class="related"><h2>あわせて読みたい</h2><div class="grid g2"><a class="card art-card" href="/media/aws-how-to/">
+  <span class="art-hub">インフラ・クラウド</span>
+  <h3>AWSエンジニアがフリーランスになるには｜必要な経験と独立までの進め方</h3>
+  <p>AWSエンジニアがフリーランスになるには、手順どおりの作業ではなく、構成を自分で決めて作り、障害に対応した経験が必要です。独立できる経験の目安、在職中に積むべき実績、検証環境とお金の準備、最初の案件で確かめることを解説します。</p>
+</a>
+<a class="card art-card" href="/media/aws-first-month/">
+  <span class="art-hub">インフラ・クラウド</span>
+  <h3>AWSエンジニアの参画初月にやること｜現場で信頼される進め方</h3>
+  <p>AWSエンジニアの参画初月は、権限と接続を整え、アカウント・ネットワーク・IaCの範囲・運用の流れをつかみ、月末に現状の見立てと改善案を出して合意を取るのが基本です。週ごとの進め方、案件の型による重心の違い、避けたい動きを整理します。</p>
+</a>
+<a class="card art-card" href="/media/aws-skills/">
+  <span class="art-hub">インフラ・クラウド</span>
+  <h3>AWSエンジニアのフリーランス案件で求められるスキルと経験</h3>
+  <p>AWSエンジニアのフリーランス案件では、設計から構築・運用までのどこを担えるか、ネットワーク・セキュリティの基礎、IaCや自動化の経験が見られます。案件で求められやすいスキル、AWS認定の位置づけ、経験の伝え方を解説します。</p>
+</a>
+<a class="card art-card" href="/media/aws-remote/">
+  <span class="art-hub">インフラ・クラウド</span>
+  <h3>AWSエンジニアのフリーランスはリモートで働ける？案件の傾向と探し方</h3>
+  <p>AWSエンジニアは、IaCでの構築や設計、移行の計画などでリモートの案件があります。ただし、閉域網からしか入れない環境や、障害対応の体制が決まっている案件では出社や待機の条件が付きやすくなります。案件の型、出社の場面、権限の受け取り方と確認点を解説します。</p>
+</a>
+<a class="card art-card" href="/media/aws-rate/">
+  <span class="art-hub">インフラ・クラウド</span>
+  <h3>AWSエンジニアのフリーランス案件｜報酬の決まり方と単価を上げる考え方</h3>
+  <p>AWSエンジニアの報酬は、設計から関わるか運用中心か、IaCやコンテナの経験、セキュリティ・ネットワークの知識、障害対応の有無、稼働条件、商流で決まり、案件ごとに大きく変わります。上下する要素と単価を上げる考え方を解説します。</p>
+</a>
+<a class="card art-card" href="/media/aws-seishain-hikaku/">
+  <span class="art-hub">インフラ・クラウド</span>
+  <h3>AWSエンジニアは正社員とフリーランスのどちらがよい？比べるときの観点</h3>
+  <p>AWSエンジニアとして正社員とフリーランスのどちらがよいかは、収入の安定、社会保険、権限と技術の積み方、働き方の4つの観点で比べると判断しやすくなります。AWSならではの違いと、自分に合う方を確かめる方法を整理します。</p>
+</a></div></section>
+</main>
+<footer class="site-foot">
+  <div class="wrap">
+    <strong>エージェントベストジョブ フリーランス</strong>
+    <div class="foot-links">
+      <a href="/">トップ</a>
+      <a href="/jobs/">案件を探す</a>
+      <a href="/media/">お役立ち記事</a>
+      <a href="https://airtable.com/appYkc36EvioYoL1A/pag6CZC4uJmxUcrXT/form" target="_blank" rel="noopener">ご登録（スキルシート・ご希望の条件）</a>
+      <a href="https://line.me/R/ti/p/@697nxhbt?oat_content=url&ts=08302134" target="_blank" rel="noopener" data-line-cta="footer">LINEで相談する</a>
+      <a href="/privacy.html">個人情報の取り扱い</a>
+      <a href="https://www.agent-best.net/company/">運営会社</a>
+    </div>
+    <div class="foot-links">
+      <a href="https://jobs.agent-best.net/">正社員の求人を探す（エージェントベストジョブ）</a>
+      <a href="https://skill.agent-best.net/">エージェントベストジョブ手に職</a>
+      <a href="https://www.agent-best.net/">エージェントベスト</a>
+    </div>
+    <p>運営：株式会社エージェントベスト（有料職業紹介事業 許可番号 13-ユ-316964）<br>〒106-0032 東京都港区六本木4-8-7 嶋田ビル5階</p>
+  </div>
+</footer>
+<script src="/assets/fav.js" defer></script>
+</body>
+</html>

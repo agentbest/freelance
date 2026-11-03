@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AWSエンジニアの参画初月にやること｜現場で信頼される進め方｜エージェントベストジョブ フリーランス</title>
+<meta name="description" content="AWSエンジニアの参画初月は、権限と接続を整え、アカウント・ネットワーク・IaCの範囲・運用の流れをつかみ、月末に現状の見立てと改善案を出して合意を取るのが基本です。週ごとの進め方、案件の型による重心の違い、避けたい動きを整理します。">
+<link rel="canonical" href="https://freelance.agent-best.net/media/aws-first-month/">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="エージェントベストジョブ フリーランス">
+<meta property="og:title" content="AWSエンジニアの参画初月にやること｜現場で信頼される進め方｜エージェントベストジョブ フリーランス">
+<meta property="og:description" content="AWSエンジニアの参画初月は、権限と接続を整え、アカウント・ネットワーク・IaCの範囲・運用の流れをつかみ、月末に現状の見立てと改善案を出して合意を取るのが基本です。週ごとの進め方、案件の型による重心の違い、避けたい動きを整理します。">
+<meta property="og:url" content="https://freelance.agent-best.net/media/aws-first-month/">
+<meta property="og:image" content="https://freelance.agent-best.net/assets/ogp.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://freelance.agent-best.net/assets/ogp.png">
+<meta name="theme-color" content="#1E3A5F">
+<link rel="icon" href="/assets/favicon.ico">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="stylesheet" href="/assets/site.css">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1XXMP8Y1B4"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-1XXMP8Y1B4');
+document.addEventListener('click',e=>{const a=e.target.closest('[data-line-cta]');if(a)gtag('event','line_add_friend',{placement:a.dataset.lineCta,page_path:location.pathname});});</script>
+<script type="application/ld+json">[{"@context":"https://schema.org","@type":"Article","headline":"AWSエンジニアの参画初月にやること｜現場で信頼される進め方","description":"AWSエンジニアの参画初月は、権限と接続を整え、アカウント・ネットワーク・IaCの範囲・運用の流れをつかみ、月末に現状の見立てと改善案を出して合意を取るのが基本です。週ごとの進め方、案件の型による重心の違い、避けたい動きを整理します。","datePublished":"2026-11-04","dateModified":"2026-11-04","author":{"@type":"Organization","name":"株式会社エージェントベスト","url":"https://www.agent-best.net/"},"publisher":{"@type":"Organization","name":"株式会社エージェントベスト","logo":{"@type":"ImageObject","url":"https://freelance.agent-best.net/assets/logo.png"}},"mainEntityOfPage":"https://freelance.agent-best.net/media/aws-first-month/"},{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"トップ","item":"https://freelance.agent-best.net/"},{"@type":"ListItem","position":2,"name":"お役立ち記事","item":"https://freelance.agent-best.net/media/"},{"@type":"ListItem","position":3,"name":"インフラ・クラウド","item":"https://freelance.agent-best.net/media/hub/infra-cloud/"},{"@type":"ListItem","position":4,"name":"AWSエンジニアの参画初月にやること｜現場で信頼される進め方"}]},{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"構成図や設計書がほとんどありません。何から始めればよいですか？","acceptedAnswer":{"@type":"Answer","text":"IaCのコードと実際のアカウントの設定から、自分用の構成の一覧を作るのが近道です。そのうえで、基盤の責任者と運用の担当に、今一番気になっていることを聞いてください。資料がない状態そのものも、現状の見立ての一部として報告に含めておくとよいでしょう。"}},{"@type":"Question","name":"参画初月に本番の障害が起きたら、どう動けばよいですか？","acceptedAnswer":{"@type":"Answer","text":"まず、障害時の自分の役割と連絡の流れに沿って動きます。役割がまだ決まっていない場合は、勝手に本番を触らず、調べた事実と取れる手を責任者に伝えて判断を仰ぎます。その経験をもとに、障害時の役割をあらためて確かめておくと、次から迷わずに済みます。"}},{"@type":"Question","name":"1か月たっても全体像がつかめません。どうすればよいですか？","acceptedAnswer":{"@type":"Answer","text":"アカウントやサービスの多い基盤では、1か月で全体をつかみきれないこともあります。その場合は、分かっている範囲と分かっていない範囲を分けて報告し、残りをいつまでに確かめるかの予定を示してください。分からない点を隠したまま改善案を出すより、範囲を区切って示すほうが信頼されます。"}}]}]</script>
+</head>
+<body>
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="/"><img src="/assets/mark.png" alt="" width="28" height="28"><span>エージェントベストジョブ フリーランス<small>フリーランスのエンジニア・コンサル向け案件紹介</small></span></a>
+    <nav class="head-nav" aria-label="メニュー">
+      <a class="link" href="/jobs/">案件を探す</a>
+      <a class="link" href="/media/">お役立ち記事</a>
+      <a class="link keep" href="/mypage/" aria-label="気になる案件">☆ 気になる<span class="fav-count" data-fav-count hidden></span></a>
+      <a class="btn btn-primary btn-sm" href="https://airtable.com/appYkc36EvioYoL1A/pag6CZC4uJmxUcrXT/form" target="_blank" rel="noopener">無料で登録</a>
+    </nav>
+  </div>
+</header>
+<main class="wrap narrow article">
+  <p class="crumbs"><a href="/">トップ</a> › <a href="/media/">お役立ち記事</a> › <a href="/media/hub/infra-cloud/">インフラ・クラウド</a></p>
+  <a class="art-hub" href="/media/hub/infra-cloud/">インフラ・クラウド</a>
+  <h1 class="art-title">AWSエンジニアの参画初月にやること｜現場で信頼される進め方</h1>
+  <p class="note">公開 2026-11-04　監修：株式会社エージェントベスト</p>
+  <nav class="toc" aria-label="目次"><strong>目次</strong><ol><li><a href="#s1">初月のゴールを3つに分ける</a></li><li><a href="#s2">1週目：権限を整え、構成を読む</a></li><li><a href="#s3">2週目：小さな変更を、正しい流れで一つ通す</a></li><li><a href="#s4">3〜4週目：見立てを出し、改善に合意を取る</a></li><li><a href="#s5">案件の型によって初月の重心は変わる</a></li><li><a href="#s6">初月に避けたい動き</a></li><li><a href="#s7">1か月の終わりに振り返ること</a></li><li><a href="#s8">よくある質問</a></li></ol></nav>
+  <div class="art-body">
+<p>AWSエンジニアの参画初月は、<strong>権限と接続を整え、アカウント・ネットワーク・IaCで管理されている範囲・運用の流れをつかみ、月末に「現状の見立て」と「改善の案」を出して合意を取る</strong>ところまでを目標にします。最初の1か月で求められるのは、大きな変更を入れることより、<strong>このエンジニアに本番を触らせて大丈夫だと発注側が判断できる材料</strong>を示すことです。</p>
+<p>参画前の契約・環境の準備は<a href="/media/sankaku-junbi/">参画が決まってから開始日までにやること</a>、職種を問わない最初の1週間の進め方は<a href="/media/sankaku-shoki/">参画初日から最初の1週間でやること</a>で解説しています。この記事では、AWSエンジニアならではの初月の動き方に絞ります。</p>
+<h2 id="s1">初月のゴールを3つに分ける</h2>
+<div class="table-wrap"><table><thead><tr><th>ゴール</th><th>中身</th><th>月末に手元にあるもの</th></tr></thead><tbody><tr><td>環境をつかむ</td><td>アカウントの分け方、ネットワーク、主なサービス、IaCの範囲を把握する</td><td>自分用の構成の一覧と、コード化されていない部分のメモ</td></tr><tr><td>変更の入れ方をつかむ</td><td>誰が承認し、どのレビューを通し、いつ本番に入れるかを知る</td><td>変更の流れと連絡先の一覧</td></tr><tr><td>次の手を合意する</td><td>危うい点や改善できる点を示し、優先順位を決めてもらう</td><td>合意した改善の案と、次の1〜2か月の作業計画</td></tr></tbody></table></div>
+<p>この3つを、1週目、2週目、3〜4週目の順に重心を移しながら進めます。</p>
+<h2 id="s2">1週目：権限を整え、構成を読む</h2>
+<h3>権限と接続を確かめる</h3>
+<p>最初の数日は、アカウントに入る方法、付与された権限、本番と検証の区別を確かめることから始めます。リモートでの接続の方法は<a href="/media/aws-remote/">AWSエンジニアのリモートの記事</a>で整理しているので、ここでは初月に気をつけたい点に絞ります。</p>
+<ul><li>本番と検証で、入るアカウントや使う権限が分かれているか</li><li>付いている権限が、作業に必要な範囲より広すぎないか</li><li>多要素認証が設定されているか</li></ul>
+<p>AWSのIAMの公式のベストプラクティスでも、作業に必要な権限だけを付ける「最小権限」や、人が使う場合の一時的な認証情報、多要素認証が勧められています。権限が広すぎると感じたら、自分から絞る提案をすると、外部の人として信頼を得やすくなります。</p>
+<h3>AWSエンジニアとして最初に読むもの</h3>
+<p>次の順で目を通すと、全体像をつかみやすくなります。</p>
+<ol><li><strong>構成図と設計書</strong>：アカウントの分け方、ネットワーク、主なサービスのつながり</li><li><strong>IaCのリポジトリ</strong>：どこまでがコードで管理されているか、モジュールの分け方、適用の手順</li><li><strong>監視とアラートの設定</strong>：何を見ていて、誰に通知が届くか</li><li><strong>直近の障害の記録と変更の履歴</strong>：何が起きやすく、どう直してきたか</li><li><strong>運用の手順書</strong>：定型作業、障害時の連絡の流れ、作業の時間帯の決まり</li></ol>
+<p>読みながら、「図ではこうなっているが、実際のアカウントでは違いそう」という点を書き留めておきます。画面で見た設定とコードの差は、後の改善案の大事な材料になります。この段階では結論を出さず、仮説としてためておきます。</p>
+<h3>関係者と短く話す</h3>
+<p>資料だけでは分からないのが、人の見方です。発注側の基盤の責任者、開発チームのリーダー、運用の担当、セキュリティの担当と、それぞれ短い時間で話す機会をもらいます。聞くことは、「今の基盤で一番気になっていること」「うまく回っていること」「この役割に期待すること」の3つに絞ると、相手の負担になりません。</p>
+<h2 id="s3">2週目：小さな変更を、正しい流れで一つ通す</h2>
+<h3>変更の流れを自分で一度たどる</h3>
+<p>2週目には、影響の小さい変更を一つ、現場の決まった流れに沿って通します。タグの付け直し、監視の閾値の調整、ドキュメントの修正など、何でもかまいません。コードの修正、実行計画の共有、レビュー、承認、適用、結果の報告という流れを一度たどると、本番の変更の入れ方が体で分かり、発注側も変更の進め方を確かめられます。</p>
+<h3>報告の形を責任者と合わせる</h3>
+<p>発注側の責任者に、どの頻度で、どの粒度の報告がほしいかを確かめ、初回の報告を出します。報告には、やったことに加えて「判断してほしいこと」と「気づいた危うい点」を先に書くと読まれやすくなります。</p>
+<h3>運用と障害対応の線を確かめる</h3>
+<p>障害が起きたときに、自分がどこまで対応するのか、夜間や休日の連絡は来るのか、誰に引き継ぐのかを確かめます。ここがあいまいなままだと、初めての障害のときに動き方を迷います。</p>
+<aside class="box box-view"><p class="box-label">エージェントベストの見解</p><p>案件紹介の現場で、参画後の評価が高いAWSエンジニアの方に共通しているのは、最初の2週間で「小さな変更を、現場の流れどおりに通している」ことです。腕を見せようと大きな改善から始めるより、レビューと承認の流れを守って一つ通すほうが、発注側は本番を任せる判断をしやすくなります。初月は、速さより変更の入れ方の確かさを優先することをおすすめします。</p></aside>
+<h2 id="s4">3〜4週目：見立てを出し、改善に合意を取る</h2>
+<h3>現状の見立てをまとめる</h3>
+<p>1〜2週目で集めた情報をもとに、現状の見立てをまとめます。中身は次のとおりです。</p>
+<ul><li>コードで管理されている範囲と、されていない範囲</li><li>権限、公開設定、ログ、バックアップなどで危うい点</li><li>費用で気になる点（使われていないリソースなど）</li><li>監視や障害対応で抜けている点</li></ul>
+<p>AWSは、基盤そのものの保護はAWSが担い、OSの更新や権限、データの管理などは利用者が担う、という責任の分け方（責任共有モデル）を公開しています。利用者の側で設定すべき項目に抜けがないかという視点で見ると、見立ての漏れが減ります。</p>
+<h3>改善の案は優先順位で出す</h3>
+<p>気づいた点を一度にすべて直そうとすると、現場の負担が大きくなり、「前の担当を否定された」と受け取られやすくなります。危うさの大きさと手間で並べ、どれから手をつけるかを責任者に選んでもらう形にします。自分として推す順番があれば、その理由を添えます。</p>
+<h3>次の1〜2か月の作業計画を引く</h3>
+<p>合意した内容をもとに、次の1〜2か月の作業計画を作り、関係者に共有します。ここまでできれば、初月の役割は十分に果たせています。</p>
+<h2 id="s5">案件の型によって初月の重心は変わる</h2>
+<p>同じAWSの案件でも、型によって初月に力を入れる場所が違います。</p>
+<h3>移行の案件</h3>
+<p>オンプレミスからの移行では、AWSの側より先に、現行環境の調べに重心を置きます。サーバー同士の依存関係、止められない業務の時間帯、切り替えの制約を把握し、月末には移行の方式と順番の案を出せることを目指します。</p>
+<h3>新規構築の案件</h3>
+<p>まだ環境がない段階で入る場合は、アカウントの分け方、ネットワーク、権限、IaCの書き方の決まりを関係者と言葉で合わせることが初月の中心になります。後から直しにくい部分を最初に決めるため、決めた理由を記録に残しておきます。</p>
+<h3>運用・改善の案件</h3>
+<p>既に動いている基盤では、障害の記録と監視の設定を読み、運用の流れに早く入ることが大切です。初月のうちに定型の作業を一通り経験し、繰り返しの手作業や抜けている監視を、改善の候補として一覧にしておきます。</p>
+<h2 id="s6">初月に避けたい動き</h2>
+<div class="table-wrap"><table><thead><tr><th>避けたい動き</th><th>起きやすいこと</th><th>代わりにすること</th></tr></thead><tbody><tr><td>本番の設定を画面から直接変える</td><td>コードと環境がずれ、経緯が追えなくなる</td><td>変更はコードと実行計画で見せ、レビューを通す</td></tr><tr><td>前任者の構成を否定する</td><td>関係者が身構え、情報が集まりにくくなる</td><td>事実の差と危うさだけを示し、理由は確かめる</td></tr><tr><td>一気にリファクタリングする</td><td>差分が大きくなり、レビューも障害の切り分けも難しくなる</td><td>小さな単位に分け、優先順位をつけて進める</td></tr><tr><td>広い権限のまま作業する</td><td>誤操作の影響が大きくなる</td><td>必要な範囲の権限に絞るよう提案する</td></tr><tr><td>範囲外の作業を抱え込む</td><td>本来の構築・改善の仕事が手薄になる</td><td>担う範囲を確かめ、外れる依頼は窓口と話す</td></tr></tbody></table></div>
+<p>範囲外の依頼が増えてきたときの扱いは<a href="/media/scope-change/">業務範囲が変わったときの記事</a>、AWSエンジニアがつまずきやすい場面は<a href="/media/aws-tsumazuki/">AWSエンジニアのフリーランスがつまずきやすい点と対策</a>で整理しています。</p>
+<aside class="box box-caution"><p class="box-label">注意</p><p>障害が続いている基盤では、初月から「すぐに直してほしい」と求められることがあります。それでも、構成と変更の流れをつかむ前に本番を触ると、原因を広げるおそれがあります。急ぎの対応が要る場合も、変更の内容と戻し方を事前に共有し、承認を得てから入れてください。</p></aside>
+<h2 id="s7">1か月の終わりに振り返ること</h2>
+<p>1か月が過ぎたら、次の点を自分で振り返ります。</p>
+<ul><li>責任者に、現状の見立てと改善の案を伝えられたか</li><li>変更の流れと承認者が、自分の中ではっきりしているか</li><li>障害時の自分の役割と連絡の流れを確かめられたか</li><li>付いている権限が、作業に必要な範囲に合っているか</li><li>契約で決めた業務の範囲と、実際に担っている仕事がずれていないか</li><li>稼働時間の記録が残っているか（夜間の作業を含む）</li></ul>
+<p>ずれている点があれば、2か月目の早い段階で窓口と話しておきます。引き継ぎの資料を受け取る側として気をつけたい点は<a href="/media/hikitsugi/">引き継ぎの記事</a>も参考になります。</p>
+<aside class="box box-view"><p class="box-label">エージェントベストの見解</p><p>当社では、契約で業務範囲・報酬・支払期日・契約期間を個別契約に書いてお渡ししています。参画して1か月の間に、聞いていた役割と実際の仕事に違いを感じたとき、たとえば構築の案件のはずが運用の当番まで頼まれるようになったときは、早めにご相談ください。契約の内容に関わる点は、ご質問いただければ確認します。</p></aside>
+<aside class="box box-point"><p class="box-label">ポイント</p><ul><li>AWSエンジニアの初月は、環境をつかむ、変更の入れ方をつかむ、次の手を合意する、の3つを順に進める</li><li>1週目は権限を整えて構成とIaCを読み、2週目に小さな変更を正しい流れで一つ通す</li><li>3〜4週目に現状の見立てを出し、改善は優先順位で示して責任者に選んでもらう</li><li>本番の手作業の変更、前任者の否定、一気のリファクタリング、広い権限のままの作業は避ける</li></ul></aside>
+<h2 id="s8">よくある質問</h2>
+<h3>構成図や設計書がほとんどありません。何から始めればよいですか？</h3>
+<p>IaCのコードと実際のアカウントの設定から、自分用の構成の一覧を作るのが近道です。そのうえで、基盤の責任者と運用の担当に、今一番気になっていることを聞いてください。資料がない状態そのものも、現状の見立ての一部として報告に含めておくとよいでしょう。</p>
+<h3>参画初月に本番の障害が起きたら、どう動けばよいですか？</h3>
+<p>まず、障害時の自分の役割と連絡の流れに沿って動きます。役割がまだ決まっていない場合は、勝手に本番を触らず、調べた事実と取れる手を責任者に伝えて判断を仰ぎます。その経験をもとに、障害時の役割をあらためて確かめておくと、次から迷わずに済みます。</p>
+<h3>1か月たっても全体像がつかめません。どうすればよいですか？</h3>
+<p>アカウントやサービスの多い基盤では、1か月で全体をつかみきれないこともあります。その場合は、分かっている範囲と分かっていない範囲を分けて報告し、残りをいつまでに確かめるかの予定を示してください。分からない点を隠したまま改善案を出すより、範囲を区切って示すほうが信頼されます。</p>
+  </div>
+  <section class="sources"><h2>参考にした公的情報・資料</h2><ul><li><a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html" target="_blank" rel="noopener nofollow">Security best practices in IAM（AWS ドキュメント）</a></li><li><a href="https://aws.amazon.com/compliance/shared-responsibility-model/" target="_blank" rel="noopener nofollow">Shared Responsibility Model（Amazon Web Services）</a></li></ul>
+  <p class="note">記事の内容は公開日時点の情報にもとづきます。制度や税率は変わることがあるため、手続きの前に必ず各機関の最新情報をご確認ください。</p></section>
+  <div class="cta-band">
+  <h2>条件に合う案件だけ、知りたい方へ</h2>
+  <p>ご登録は無料です。条件に合う案件だけを、ご本人の了承を得てからご提案します。</p>
+  <div class="cta-row">
+    <a class="btn btn-primary" href="https://airtable.com/appYkc36EvioYoL1A/pag6CZC4uJmxUcrXT/form" target="_blank" rel="noopener">無料で登録する</a>
+    <a class="btn btn-ghost" href="/jobs/">案件を探す</a>
+  </div>
+</div>
+  <section class="related"><h2>あわせて読みたい</h2><div class="grid g2"><a class="card art-card" href="/media/sankaku-junbi/">
+  <span class="art-hub">案件の探し方</span>
+  <h3>参画が決まってから開始日までにやること｜契約・事業の手続き・作業環境の準備</h3>
+  <p>参画が決まったら、開始日までに「契約の書面の確認」「他の選考の整理」「請求と事業の手続き」「作業環境」「業務の予習」の5つを進めます。時期ごとのやることと、開始前の作業を頼まれたときの注意点を整理します。</p>
+</a>
+<a class="card art-card" href="/media/sankaku-shoki/">
+  <span class="art-hub">案件の探し方</span>
+  <h3>参画初日から最初の1週間でやること｜業務委託で立ち上がりを早める進め方</h3>
+  <p>参画して最初の1週間は、成果を急ぐより「任された範囲・依頼の窓口・報告の形」を確かめ、小さな仕事を一つ終えることを優先します。初日から5日目までの進め方と、つまずきやすい点を整理します。</p>
+</a>
+<a class="card art-card" href="/media/hikitsugi/">
+  <span class="art-hub">案件の探し方</span>
+  <h3>契約終了時の引き継ぎの進め方｜業務の棚卸しから資料・並走・返却まで</h3>
+  <p>契約終了時の引き継ぎは、終了が決まった時点で「範囲・相手・期限」を窓口と決め、業務の棚卸し、資料作り、後任との並走、権限と資料の返却の順に進めます。後任が決まらないときや、終了後の問い合わせへの対応も整理します。</p>
+</a>
+<a class="card art-card" href="/media/aws-tsumazuki/">
+  <span class="art-hub">インフラ・クラウド</span>
+  <h3>AWSエンジニアのフリーランスがつまずきやすい点と対策</h3>
+  <p>フリーランスのAWSエンジニアがつまずきやすいのは、障害時の責任範囲があいまいな契約、権限待ちで止まる作業、本番への手作業の変更、検証環境の費用の膨らみなどです。契約・現場・技術・お金の順に、よくある場面と対策を整理します。</p>
+</a>
+<a class="card art-card" href="/media/aws-remote/">
+  <span class="art-hub">インフラ・クラウド</span>
+  <h3>AWSエンジニアのフリーランスはリモートで働ける？案件の傾向と探し方</h3>
+  <p>AWSエンジニアは、IaCでの構築や設計、移行の計画などでリモートの案件があります。ただし、閉域網からしか入れない環境や、障害対応の体制が決まっている案件では出社や待機の条件が付きやすくなります。案件の型、出社の場面、権限の受け取り方と確認点を解説します。</p>
+</a>
+<a class="card art-card" href="/media/aws-skills/">
+  <span class="art-hub">インフラ・クラウド</span>
+  <h3>AWSエンジニアのフリーランス案件で求められるスキルと経験</h3>
+  <p>AWSエンジニアのフリーランス案件では、設計から構築・運用までのどこを担えるか、ネットワーク・セキュリティの基礎、IaCや自動化の経験が見られます。案件で求められやすいスキル、AWS認定の位置づけ、経験の伝え方を解説します。</p>
+</a></div></section>
+</main>
+<footer class="site-foot">
+  <div class="wrap">
+    <strong>エージェントベストジョブ フリーランス</strong>
+    <div class="foot-links">
+      <a href="/">トップ</a>
+      <a href="/jobs/">案件を探す</a>
+      <a href="/media/">お役立ち記事</a>
+      <a href="https://airtable.com/appYkc36EvioYoL1A/pag6CZC4uJmxUcrXT/form" target="_blank" rel="noopener">ご登録（スキルシート・ご希望の条件）</a>
+      <a href="https://line.me/R/ti/p/@697nxhbt?oat_content=url&ts=08302134" target="_blank" rel="noopener" data-line-cta="footer">LINEで相談する</a>
+      <a href="/privacy.html">個人情報の取り扱い</a>
+      <a href="https://www.agent-best.net/company/">運営会社</a>
+    </div>
+    <div class="foot-links">
+      <a href="https://jobs.agent-best.net/">正社員の求人を探す（エージェントベストジョブ）</a>
+      <a href="https://skill.agent-best.net/">エージェントベストジョブ手に職</a>
+      <a href="https://www.agent-best.net/">エージェントベスト</a>
+    </div>
+    <p>運営：株式会社エージェントベスト（有料職業紹介事業 許可番号 13-ユ-316964）<br>〒106-0032 東京都港区六本木4-8-7 嶋田ビル5階</p>
+  </div>
+</footer>
+<script src="/assets/fav.js" defer></script>
+</body>
+</html>

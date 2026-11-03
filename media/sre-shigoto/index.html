@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>SREのフリーランス案件の仕事内容｜案件の種類別の1日・1か月の流れ｜エージェントベストジョブ フリーランス</title>
+<meta name="description" content="フリーランスのSREの仕事は、信頼性を数字で決め、壊れにくく直しやすい仕組みをつくることです。SLO・可観測性の整備、トイルの削減、オンコールを含む運用、基盤の移行の4つの案件ごとに、1日と1か月の流れ、関わる相手、成果物を整理します。">
+<link rel="canonical" href="https://freelance.agent-best.net/media/sre-shigoto/">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="エージェントベストジョブ フリーランス">
+<meta property="og:title" content="SREのフリーランス案件の仕事内容｜案件の種類別の1日・1か月の流れ｜エージェントベストジョブ フリーランス">
+<meta property="og:description" content="フリーランスのSREの仕事は、信頼性を数字で決め、壊れにくく直しやすい仕組みをつくることです。SLO・可観測性の整備、トイルの削減、オンコールを含む運用、基盤の移行の4つの案件ごとに、1日と1か月の流れ、関わる相手、成果物を整理します。">
+<meta property="og:url" content="https://freelance.agent-best.net/media/sre-shigoto/">
+<meta property="og:image" content="https://freelance.agent-best.net/assets/ogp.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://freelance.agent-best.net/assets/ogp.png">
+<meta name="theme-color" content="#1E3A5F">
+<link rel="icon" href="/assets/favicon.ico">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="stylesheet" href="/assets/site.css">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1XXMP8Y1B4"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-1XXMP8Y1B4');
+document.addEventListener('click',e=>{const a=e.target.closest('[data-line-cta]');if(a)gtag('event','line_add_friend',{placement:a.dataset.lineCta,page_path:location.pathname});});</script>
+<script type="application/ld+json">[{"@context":"https://schema.org","@type":"Article","headline":"SREのフリーランス案件の仕事内容｜案件の種類別の1日・1か月の流れ","description":"フリーランスのSREの仕事は、信頼性を数字で決め、壊れにくく直しやすい仕組みをつくることです。SLO・可観測性の整備、トイルの削減、オンコールを含む運用、基盤の移行の4つの案件ごとに、1日と1か月の流れ、関わる相手、成果物を整理します。","datePublished":"2026-11-04","dateModified":"2026-11-04","author":{"@type":"Organization","name":"株式会社エージェントベスト","url":"https://www.agent-best.net/"},"publisher":{"@type":"Organization","name":"株式会社エージェントベスト","logo":{"@type":"ImageObject","url":"https://freelance.agent-best.net/assets/logo.png"}},"mainEntityOfPage":"https://freelance.agent-best.net/media/sre-shigoto/"},{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"トップ","item":"https://freelance.agent-best.net/"},{"@type":"ListItem","position":2,"name":"お役立ち記事","item":"https://freelance.agent-best.net/media/"},{"@type":"ListItem","position":3,"name":"インフラ・クラウド","item":"https://freelance.agent-best.net/media/hub/infra-cloud/"},{"@type":"ListItem","position":4,"name":"SREのフリーランス案件の仕事内容｜案件の種類別の1日・1か月の流れ"}]},{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"フリーランスのSREは、毎日障害対応をしているのですか？","acceptedAnswer":{"@type":"Answer","text":"案件によります。オンコールを含む運用SREの案件では障害対応の比重が高くなりますが、SLOの整備やトイルの削減が中心の案件では、障害対応は当番の日や大きな障害のときに限られることもあります。参画前に、当番の有無と頻度を確かめておきましょう。"}},{"@type":"Question","name":"SREはどのくらいコードを書きますか？","acceptedAnswer":{"@type":"Answer","text":"自動化のスクリプト、IaC、監視の設定、ときにはアプリケーションの修正まで、コードを書く場面は多くあります。どの言語やツールで書くかは案件ごとに違うため、SREのスキルの記事を参考に、得意な範囲を整理しておくと案件を選びやすくなります。"}},{"@type":"Question","name":"参画して最初の1か月は何をすることが多いですか？","acceptedAnswer":{"@type":"Answer","text":"構成と監視の現状の把握、過去の障害の記録の読み込み、関係者と役割の確認から始めるのが一般的です。初月の進め方はSREの参画初月にやることで詳しく解説します。"}}]}]</script>
+</head>
+<body>
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="/"><img src="/assets/mark.png" alt="" width="28" height="28"><span>エージェントベストジョブ フリーランス<small>フリーランスのエンジニア・コンサル向け案件紹介</small></span></a>
+    <nav class="head-nav" aria-label="メニュー">
+      <a class="link" href="/jobs/">案件を探す</a>
+      <a class="link" href="/media/">お役立ち記事</a>
+      <a class="link keep" href="/mypage/" aria-label="気になる案件">☆ 気になる<span class="fav-count" data-fav-count hidden></span></a>
+      <a class="btn btn-primary btn-sm" href="https://airtable.com/appYkc36EvioYoL1A/pag6CZC4uJmxUcrXT/form" target="_blank" rel="noopener">無料で登録</a>
+    </nav>
+  </div>
+</header>
+<main class="wrap narrow article">
+  <p class="crumbs"><a href="/">トップ</a> › <a href="/media/">お役立ち記事</a> › <a href="/media/hub/infra-cloud/">インフラ・クラウド</a></p>
+  <a class="art-hub" href="/media/hub/infra-cloud/">インフラ・クラウド</a>
+  <h1 class="art-title">SREのフリーランス案件の仕事内容｜案件の種類別の1日・1か月の流れ</h1>
+  <p class="note">公開 2026-11-04　監修：株式会社エージェントベスト</p>
+  <nav class="toc" aria-label="目次"><strong>目次</strong><ol><li><a href="#s1">仕事の中身は「改善か運用か」と「基盤の段階」で決まる</a></li><li><a href="#s2">SLO・可観測性を整える案件の仕事</a></li><li><a href="#s3">トイルを減らす案件の仕事</a></li><li><a href="#s4">オンコールを含む運用SREの仕事</a></li><li><a href="#s5">基盤の移行・刷新の案件の仕事</a></li><li><a href="#s6">どの案件にも共通する仕事</a></li><li><a href="#s7">関わる相手と、その相手に出すもの</a></li><li><a href="#s8">よくある質問</a></li></ol></nav>
+  <div class="art-body">
+<p>フリーランスのSRE（サイト信頼性エンジニア）の仕事は、<strong>サービスがどのくらい安定していればよいかを数字で決め、その水準を守るための仕組みをコードと手順でつくること</strong>です。ただし、案件によって「仕組みをつくる」比重が大きいのか、「日々の運用と障害対応を回す」比重が大きいのかが違い、1日の過ごし方も向き合う相手も変わります。</p>
+<p>この記事では、SREの案件を4つの種類に分け、それぞれの1日と1か月の流れ、関わる相手、成果物を整理します。求められるスキルは<a href="/media/sre-skills/">SREのスキルの記事</a>、報酬の決まり方は<a href="/media/sre-rate/">SREの報酬の記事</a>で扱っているので、ここでは「参画したら実際に何をしているか」に絞ります。</p>
+<h2 id="s1">仕事の中身は「改善か運用か」と「基盤の段階」で決まる</h2>
+<p>SREの募集は、同じ肩書きでも中身に幅があります。違いを生むのは主に次の2つです。</p>
+<ul><li><strong>改善と運用の比重</strong>：信頼性の仕組みを新しくつくる仕事が中心か、すでにある運用を回し障害に対応する仕事が中心か</li><li><strong>基盤の段階</strong>：監視や指標がまだ整っていないか、整っていて磨く段階か、別の基盤へ移す途中か</li></ul>
+<p>この2つを掛け合わせると、フリーランスのSRE案件はおおむね次の4種類に分けられます。</p>
+<div class="table-wrap"><table><thead><tr><th>案件の種類</th><th>主な相手</th><th>時間を多く使う仕事</th></tr></thead><tbody><tr><td>SLO・可観測性の整備</td><td>開発チーム、プロダクトの責任者</td><td>指標の選定、ダッシュボードとアラートの設計</td></tr><tr><td>トイルの削減・自動化</td><td>運用チーム、インフラの担当者</td><td>手作業の洗い出し、IaCやスクリプトでの置き換え</td></tr><tr><td>オンコールを含む運用SRE</td><td>運用チーム、開発チーム、カスタマーサポート</td><td>障害対応、振り返り、再発防止の実装</td></tr><tr><td>基盤の移行・刷新</td><td>インフラの責任者、各サービスの開発チーム</td><td>移行計画、切り替えの手順、移行後の安定化</td></tr></tbody></table></div>
+<p>以下は典型的な例です。時間の配分は案件ごとに違うため、目安として読んでください。</p>
+<h2 id="s2">SLO・可観測性を整える案件の仕事</h2>
+<h3>1日の流れ（例）</h3>
+<p>朝は、前日のアラートとダッシュボードを見て、鳴ったのに誰も対応しなかったアラートや、障害だったのに鳴らなかった指標を拾います。午前は、開発チームと「利用者が困るのはどんな状態か」を話し合い、SLI（サービスの状態を表す指標）の候補を決めます。午後は、ログやメトリクス、トレースの取り方を設計し、計測の設定やダッシュボードを実装します。</p>
+<p>最初の数週間は、<strong>今何が計測されていて、何が計測されていないかを把握すること</strong>に多くの時間を使います。</p>
+<h3>1か月の流れ（例）</h3>
+<ul><li><strong>月初</strong>：前月のSLOの達成状況と、エラーバジェット（許容できる失敗の量）の消費を開発チームに共有する</li><li><strong>毎週</strong>：アラートの見直し会で、不要なアラートを減らし、足りない監視を足す</li><li><strong>月の半ば</strong>：SLOを下回りそうなサービスについて、リリースの進め方や改善の優先度を開発チームと相談する</li><li><strong>月末</strong>：指標の定義や見直しの経緯を文書に残し、翌月に整備するサービスを決める</li></ul>
+<h3>成果物</h3>
+<p>SLI・SLOの定義書、ダッシュボード、アラートの設定と対応手順、計測の設計書、エラーバジェットの運用ルールなどです。SLOの定義や目標は、システムのふるまいが分かるにつれて見直していけるものとされています（Googleの『Site Reliability Engineering』による）。一度決めて終わりにせず、利用者の体験と合っているかを確かめ続けることが仕事になります。</p>
+<h2 id="s3">トイルを減らす案件の仕事</h2>
+<h3>1日の流れ（例）</h3>
+<p>運用チームが毎日くり返している手作業を聞き取り、作業の手順と頻度を書き出します。そのうえで、効果の大きいものから、IaC（コードによる基盤の管理）やスクリプト、ジョブの仕組みに置き換えます。午後はコードのレビューや、置き換えた作業が正しく動くかの確認に時間を使います。</p>
+<p>トイルとは、手作業でくり返され、自動化でき、続けても価値が積み上がらない運用作業のことです（Googleの『Site Reliability Engineering』による）。<strong>どの作業がトイルにあたるかを運用チームと合意すること</strong>が、この案件の出発点になります。</p>
+<h3>1か月の流れ（例）</h3>
+<ul><li><strong>月初</strong>：手作業の一覧を更新し、今月置き換える作業を決める</li><li><strong>毎週</strong>：置き換えの実装とレビュー、運用チームへの使い方の説明</li><li><strong>月末</strong>：置き換えた作業にかかっていた時間の変化をまとめ、次の候補を並べ直す</li></ul>
+<h3>成果物</h3>
+<p>手作業の一覧と優先度、IaCのコード、自動化のスクリプトやジョブ、運用手順書の改訂版などです。外から参画するSREにとっては、<strong>自分が抜けた後もチームが保守できる形で残すこと</strong>が成果物の質を左右します。</p>
+<aside class="box box-view"><p class="box-label">エージェントベストの見解</p><p>SREの案件をご紹介していると、募集の名前が同じ「SRE」でも、参画してみると仕組みづくりより日々の運用対応が大半だった、と感じる方がいます。反対に、運用の経験が長い方が、開発チームとの合意づくりに想像以上の時間がかかることに戸惑う場面も見られます。応募の段階で、改善と運用の時間の配分と、オンコールの有無を具体的に聞いておくことをおすすめします。</p></aside>
+<h2 id="s4">オンコールを含む運用SREの仕事</h2>
+<h3>1日・1か月の流れ（例）</h3>
+<p>当番の日は、アラートが鳴れば一次対応に入り、影響の範囲を確かめ、関係者に状況を伝え、復旧の手を打ちます。当番でない日は、過去の障害の振り返りで決まった再発防止策を実装したり、手順書を直したりします。</p>
+<p>1か月の単位では、障害の振り返り会を運営し、原因と対策を文書に残します。再発防止策が実際に入ったかを追いかけるのも大切な仕事です。オンコールの当番表や、時間外に対応したときの扱いは案件ごとに違います。リモートで当番に入るときの注意は<a href="/media/sre-remote/">SREのリモート案件の記事</a>で解説しています。</p>
+<h3>成果物</h3>
+<p>障害の記録、振り返りの文書（ポストモーテム）、再発防止策の実装、手順書（ランブック）、当番の引き継ぎの記録などです。</p>
+<h2 id="s5">基盤の移行・刷新の案件の仕事</h2>
+<h3>1日・1か月の流れ（例）</h3>
+<p>オンプレミスからクラウドへ、仮想マシンからコンテナ基盤へなど、基盤を移す案件です。前半は、各サービスの依存関係と、移行中も守るべき信頼性の水準を整理し、切り替えの手順と戻す手順を設計します。後半は、サービスごとの切り替えに立ち会い、移行後のしばらくは指標を通常より細かく見て安定させます。</p>
+<p>移行の山場では、夜間や休日に切り替え作業が入ることがあります。Kubernetesを中心にした基盤の仕事はKubernetesエンジニアの仕事内容、クラウドの構築が中心の仕事は<a href="/media/aws-shigoto/">AWSエンジニアの仕事内容</a>もあわせてご覧ください。</p>
+<h3>成果物</h3>
+<p>移行計画、依存関係の一覧、切り替えと切り戻しの手順書、移行後の監視とSLOの設定、移行の振り返りなどです。</p>
+<h2 id="s6">どの案件にも共通する仕事</h2>
+<p>種類が違っても、次の仕事はほぼすべてのSRE案件にあります。</p>
+<ol><li><strong>数字で話す</strong>：障害の件数や復旧までの時間、SLOの達成状況など、合意のもとになる数字をそろえる</li><li><strong>開発チームと優先度を決める</strong>：信頼性の改善と機能の開発のどちらを先にするかを、数字をもとに話し合う</li><li><strong>振り返りを残す</strong>：責める場ではなく仕組みを直す場として運営し、決まった対策を追いかける</li><li><strong>仕組みを渡す</strong>：手順書やコードを、ほかの人が引き継げる形で残す</li></ol>
+<p>フリーランスならではの仕事として、<strong>自分の稼働の記録</strong>もあります。オンコールの待機や時間外の対応がある案件では、通常の稼働とは分けて記録しておくと、精算のときに食い違いが起きにくくなります。精算の仕組みは<a href="/media/seisan-haba/">精算幅の記事</a>をご覧ください。</p>
+<aside class="box box-caution"><p class="box-label">注意</p><p>SREは「困ったら頼まれる」立場になりやすい役割です。開発チームの調査の手伝い、別のシステムの監視、急ぎの構築作業など、契約した業務の範囲から外れる仕事が少しずつ増えることがあります。引き受ける前に契約の業務範囲に入るかを確かめ、外れる場合は条件の見直しを相談しましょう。考え方は<a href="/media/scope-change/">作業範囲が広がったときの契約の扱い</a>で解説しています。</p></aside>
+<h2 id="s7">関わる相手と、その相手に出すもの</h2>
+<div class="table-wrap"><table><thead><tr><th>相手</th><th>SREが出すもの</th><th>頻度の目安</th></tr></thead><tbody><tr><td>プロダクトや事業の責任者</td><td>SLOの達成状況、信頼性への投資が必要な理由</td><td>月次、節目ごと</td></tr><tr><td>開発チーム</td><td>エラーバジェットの状況、リリースの進め方の提案、振り返りの結果</td><td>週次、随時</td></tr><tr><td>運用チーム</td><td>自動化した仕組み、手順書、アラートの見直し</td><td>毎日〜週次</td></tr><tr><td>インフラやセキュリティの担当者</td><td>構成の変更、権限の申請、移行の計画</td><td>随時</td></tr><tr><td>カスタマーサポート</td><td>障害の影響と復旧の見通し</td><td>障害の発生時</td></tr></tbody></table></div>
+<p>働く場所については、仕組みづくりや振り返りはリモートで進めやすい一方、移行の切り替えやデータセンターが関わる作業では出社や現地作業が入ることがあります。</p>
+<aside class="box box-view"><p class="box-label">エージェントベストの見解</p><p>当社では、案件をご案内する前に稼働日数・リモートの希望・ご希望の金額を伺い、合う案件だけをお出ししています。SREの案件では、オンコールの有無と、改善と運用の時間の配分で毎日の仕事が大きく変わります。「これまで多く時間を使ってきた仕事」と「避けたい働き方」をあわせてお伝えいただくと、案件を照らし合わせやすくなります。当番の頻度や時間外の対応の扱いなど、案件票に書かれていない点は、ご質問いただければ確認します。</p></aside>
+<aside class="box box-point"><p class="box-label">ポイント</p><ul><li>SREの仕事は、改善と運用のどちらに比重があるか、基盤がどの段階かで大きく変わる</li><li>SLO・可観測性の整備、トイルの削減、オンコールを含む運用、基盤の移行の4種類に分けて考えると働き方を描きやすい</li><li>どの案件でも、数字で話す・開発チームと優先度を決める・振り返りを残す・仕組みを渡すことが共通の仕事になる</li></ul></aside>
+<h2 id="s8">よくある質問</h2>
+<h3>フリーランスのSREは、毎日障害対応をしているのですか？</h3>
+<p>案件によります。オンコールを含む運用SREの案件では障害対応の比重が高くなりますが、SLOの整備やトイルの削減が中心の案件では、障害対応は当番の日や大きな障害のときに限られることもあります。参画前に、当番の有無と頻度を確かめておきましょう。</p>
+<h3>SREはどのくらいコードを書きますか？</h3>
+<p>自動化のスクリプト、IaC、監視の設定、ときにはアプリケーションの修正まで、コードを書く場面は多くあります。どの言語やツールで書くかは案件ごとに違うため、<a href="/media/sre-skills/">SREのスキルの記事</a>を参考に、得意な範囲を整理しておくと案件を選びやすくなります。</p>
+<h3>参画して最初の1か月は何をすることが多いですか？</h3>
+<p>構成と監視の現状の把握、過去の障害の記録の読み込み、関係者と役割の確認から始めるのが一般的です。初月の進め方は<a href="/media/sre-first-month/">SREの参画初月にやること</a>で詳しく解説します。</p>
+  </div>
+  <section class="sources"><h2>参考にした公的情報・資料</h2><ul><li><a href="https://sre.google/sre-book/service-level-objectives/" target="_blank" rel="noopener nofollow">Service Level Objectives（Site Reliability Engineering｜Google）</a></li><li><a href="https://sre.google/sre-book/eliminating-toil/" target="_blank" rel="noopener nofollow">Eliminating Toil（Site Reliability Engineering｜Google）</a></li></ul>
+  <p class="note">記事の内容は公開日時点の情報にもとづきます。制度や税率は変わることがあるため、手続きの前に必ず各機関の最新情報をご確認ください。</p></section>
+  <div class="cta-band">
+  <h2>条件に合う案件だけ、知りたい方へ</h2>
+  <p>ご登録は無料です。条件に合う案件だけを、ご本人の了承を得てからご提案します。</p>
+  <div class="cta-row">
+    <a class="btn btn-primary" href="https://airtable.com/appYkc36EvioYoL1A/pag6CZC4uJmxUcrXT/form" target="_blank" rel="noopener">無料で登録する</a>
+    <a class="btn btn-ghost" href="/jobs/">案件を探す</a>
+  </div>
+</div>
+  <section class="related"><h2>あわせて読みたい</h2><div class="grid g2"><a class="card art-card" href="/media/sre-how-to/">
+  <span class="art-hub">インフラ・クラウド</span>
+  <h3>SREがフリーランスになるには｜必要な経験と独立までの進め方</h3>
+  <p>SREとしてフリーランスになるには、SLOの設計や障害の振り返りなど、信頼性を数字で扱い開発チームと改善を進めた経験が必要です。案件の型、独立前に積む実績、外部から参画するときの進め方、オンコールの契約上の注意を解説します。</p>
+</a>
+<a class="card art-card" href="/media/sre-skills/">
+  <span class="art-hub">インフラ・クラウド</span>
+  <h3>SREのフリーランス案件で求められるスキルと経験</h3>
+  <p>SREのフリーランス案件では、利用者の体験から指標（SLI）を選びSLOとエラーバジェットで判断する力、可観測性の設計、安全なリリースの仕組み、トイルをコードで減らす力が見られます。スキルの中身と示し方を解説します。</p>
+</a>
+<a class="card art-card" href="/media/sre-remote/">
+  <span class="art-hub">インフラ・クラウド</span>
+  <h3>SREのフリーランスはリモートで働ける？案件の傾向と探し方</h3>
+  <p>SREは、可観測性の整備やSLOの導入、リリースの仕組みづくりなどでリモートの案件があります。リモートの条件を大きく左右するのはオンコールです。応答の速さ、待機中の場所の制約、当番の頻度と扱いなど、参画前に確かめる点を解説します。</p>
+</a>
+<a class="card art-card" href="/media/sre-rate/">
+  <span class="art-hub">インフラ・クラウド</span>
+  <h3>SREのフリーランス案件｜報酬の決まり方と単価を上げる考え方</h3>
+  <p>SREの報酬は、信頼性の改善を任されるか運用を回すだけか、開発の優先度に口を出せる裁量、オンコールの待機と対応の扱い、基盤技術の経験、仕組みを残せるかで決まり、案件ごとに大きく変わります。上下する理由と交渉の材料を解説します。</p>
+</a>
+<a class="card art-card" href="/media/sre-anken-erabi/">
+  <span class="art-hub">インフラ・クラウド</span>
+  <h3>SREのフリーランス案件の選び方｜契約前に確かめたい7つの点</h3>
+  <p>SRE案件は、名前が同じでも改善と運用の比重、オンコールの条件、本番の権限で負担が大きく変わります。役割の実態、オンコール、権限と承認、基盤と監視の状態、開発チームとの関係、障害時の責任、契約期間の7点を契約前にどう確かめるかを解説します。</p>
+</a>
+<a class="card art-card" href="/media/sre-interview/">
+  <span class="art-hub">インフラ・クラウド</span>
+  <h3>SREのフリーランス面談でよく聞かれる質問と答え方の準備</h3>
+  <p>SRE案件の面談では、SLOの決め方、障害対応での役割、振り返りから何を変えたか、トイルの減らし方、オンコールの関わり方がよく聞かれます。質問ごとに面談官が確かめたいこと、答えの組み立て方、準備の進め方、SREならではの逆質問を整理します。</p>
+</a></div></section>
+</main>
+<footer class="site-foot">
+  <div class="wrap">
+    <strong>エージェントベストジョブ フリーランス</strong>
+    <div class="foot-links">
+      <a href="/">トップ</a>
+      <a href="/jobs/">案件を探す</a>
+      <a href="/media/">お役立ち記事</a>
+      <a href="https://airtable.com/appYkc36EvioYoL1A/pag6CZC4uJmxUcrXT/form" target="_blank" rel="noopener">ご登録（スキルシート・ご希望の条件）</a>
+      <a href="https://line.me/R/ti/p/@697nxhbt?oat_content=url&ts=08302134" target="_blank" rel="noopener" data-line-cta="footer">LINEで相談する</a>
+      <a href="/privacy.html">個人情報の取り扱い</a>
+      <a href="https://www.agent-best.net/company/">運営会社</a>
+    </div>
+    <div class="foot-links">
+      <a href="https://jobs.agent-best.net/">正社員の求人を探す（エージェントベストジョブ）</a>
+      <a href="https://skill.agent-best.net/">エージェントベストジョブ手に職</a>
+      <a href="https://www.agent-best.net/">エージェントベスト</a>
+    </div>
+    <p>運営：株式会社エージェントベスト（有料職業紹介事業 許可番号 13-ユ-316964）<br>〒106-0032 東京都港区六本木4-8-7 嶋田ビル5階</p>
+  </div>
+</footer>
+<script src="/assets/fav.js" defer></script>
+</body>
+</html>
