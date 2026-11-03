@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>テスト自動化エンジニアのフリーランス面談でよく聞かれる質問と答え方｜エージェントベストジョブ フリーランス</title>
+<meta name="description" content="テスト自動化の面談では、何を自動化し何を残したか、どの層で確かめたか、不安定なテストをどう直したか、CIにどう組み込んだかがよく聞かれます。質問ごとに面談官が確かめたいことと答えの組み立て方、準備、逆質問を整理します。">
+<link rel="canonical" href="https://freelance.agent-best.net/media/test-automation-interview/">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="エージェントベストジョブ フリーランス">
+<meta property="og:title" content="テスト自動化エンジニアのフリーランス面談でよく聞かれる質問と答え方｜エージェントベストジョブ フリーランス">
+<meta property="og:description" content="テスト自動化の面談では、何を自動化し何を残したか、どの層で確かめたか、不安定なテストをどう直したか、CIにどう組み込んだかがよく聞かれます。質問ごとに面談官が確かめたいことと答えの組み立て方、準備、逆質問を整理します。">
+<meta property="og:url" content="https://freelance.agent-best.net/media/test-automation-interview/">
+<meta property="og:image" content="https://freelance.agent-best.net/assets/ogp.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://freelance.agent-best.net/assets/ogp.png">
+<meta name="theme-color" content="#1E3A5F">
+<link rel="icon" href="/assets/favicon.ico">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="stylesheet" href="/assets/site.css">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1XXMP8Y1B4"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-1XXMP8Y1B4');
+document.addEventListener('click',e=>{const a=e.target.closest('[data-line-cta]');if(a)gtag('event','line_add_friend',{placement:a.dataset.lineCta,page_path:location.pathname});});</script>
+<script type="application/ld+json">[{"@context":"https://schema.org","@type":"Article","headline":"テスト自動化エンジニアのフリーランス面談でよく聞かれる質問と答え方","description":"テスト自動化の面談では、何を自動化し何を残したか、どの層で確かめたか、不安定なテストをどう直したか、CIにどう組み込んだかがよく聞かれます。質問ごとに面談官が確かめたいことと答えの組み立て方、準備、逆質問を整理します。","datePublished":"2026-11-04","dateModified":"2026-11-04","author":{"@type":"Organization","name":"株式会社エージェントベスト","url":"https://www.agent-best.net/"},"publisher":{"@type":"Organization","name":"株式会社エージェントベスト","logo":{"@type":"ImageObject","url":"https://freelance.agent-best.net/assets/logo.png"}},"mainEntityOfPage":"https://freelance.agent-best.net/media/test-automation-interview/"},{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"トップ","item":"https://freelance.agent-best.net/"},{"@type":"ListItem","position":2,"name":"お役立ち記事","item":"https://freelance.agent-best.net/media/"},{"@type":"ListItem","position":3,"name":"QA・テスト","item":"https://freelance.agent-best.net/media/hub/qa/"},{"@type":"ListItem","position":4,"name":"テスト自動化エンジニアのフリーランス面談でよく聞かれる質問と答え方"}]},{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"使ったことのないツールの案件でも、面談で通りますか？","acceptedAnswer":{"@type":"Answer","text":"通ることはあります。ツールの違いより、待ち方の設計や層の分け方など、どのツールでも生きる考え方を話せるかが見られます。似たツールでの経験と、新しいツールに慣れるまでの見込みを正直に伝えましょう。"}},{"@type":"Question","name":"面談でコーディングの課題を出されることはありますか？","acceptedAnswer":{"@type":"Answer","text":"案件によっては、簡単なテストを書く課題や、既存のテストの問題点を指摘する課題が出ることがあります。事前に知らされる場合が多いので、面談の形式は前もって確かめておくと安心です。"}},{"@type":"Question","name":"自動化の経験が短く、手動テストの経験が長い場合はどう話せばよいですか？","acceptedAnswer":{"@type":"Answer","text":"手動テストで観点を出してきた経験は、自動化の対象を決めるときに生きます。自動化で担った範囲を正確に伝え、観点の経験とどうつながるかを話しましょう。QAとして見られる点はQAエンジニアの面談の記事、見送られやすい理由は面談で見送られる理由の記事で解説しています。"}}]}]</script>
+</head>
+<body>
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="/"><img src="/assets/mark.png" alt="" width="28" height="28"><span>エージェントベストジョブ フリーランス<small>フリーランスのエンジニア・コンサル向け案件紹介</small></span></a>
+    <nav class="head-nav" aria-label="メニュー">
+      <a class="link" href="/jobs/">案件を探す</a>
+      <a class="link" href="/media/">お役立ち記事</a>
+      <a class="link keep" href="/mypage/" aria-label="気になる案件">☆ 気になる<span class="fav-count" data-fav-count hidden></span></a>
+      <a class="btn btn-primary btn-sm" href="https://airtable.com/appYkc36EvioYoL1A/pag6CZC4uJmxUcrXT/form" target="_blank" rel="noopener">無料で登録</a>
+    </nav>
+  </div>
+</header>
+<main class="wrap narrow article">
+  <p class="crumbs"><a href="/">トップ</a> › <a href="/media/">お役立ち記事</a> › <a href="/media/hub/qa/">QA・テスト</a></p>
+  <a class="art-hub" href="/media/hub/qa/">QA・テスト</a>
+  <h1 class="art-title">テスト自動化エンジニアのフリーランス面談でよく聞かれる質問と答え方</h1>
+  <p class="note">公開 2026-11-04　監修：株式会社エージェントベスト</p>
+  <nav class="toc" aria-label="目次"><strong>目次</strong><ol><li><a href="#s1">テスト自動化の面談で面談官が見ていること</a></li><li><a href="#s2">よく聞かれる質問と答え方の考え方</a></li><li><a href="#s3">準備は「判断の場面」と「直した場面」を選ぶ</a></li><li><a href="#s4">面談の相手によって重心が変わる</a></li><li><a href="#s5">テスト自動化ならではの逆質問</a></li><li><a href="#s6">よくある質問</a></li></ol></nav>
+  <div class="art-body">
+<p>フリーランスのテスト自動化エンジニアの面談でよく聞かれるのは、<strong>何を自動化し何を人の確認に残したか、どの層で確かめる設計にしたか、不安定なテストをどう見つけて直したか、CIにどう組み込んでチームに使ってもらったか</strong>の4つです。面談官は、ツールの名前を知っているかより、「この人に任せたら、チームが信頼して使える自動テストになるか」を確かめようとしています。</p>
+<p>答えるときは、模範解答を覚えるより、自分の経験から「判断した場面」と「直した場面」を3〜4つ選び、どの質問にもそこから答えられるように準備しておくのが近道です。面談全般の答え方の型は<a href="/media/interview-questions/">業務委託の面談でよく聞かれる質問と答え方</a>で解説しているので、この記事ではテスト自動化の面談に固有の質問に絞ります。</p>
+<h2 id="s1">テスト自動化の面談で面談官が見ていること</h2>
+<p>テスト自動化の面談に出てくるのは、開発の責任者、QAの責任者、現場のテックリードであることが多くあります。自分でもテストを書いたことがある人が多く、話の中に出てくる<strong>判断の理由と、うまくいかなかったときの手の打ち方</strong>を聞いています。</p>
+<p>面談官が知りたいのは、おおむね次の3点です。</p>
+<ol><li><strong>任せられる範囲</strong>：テストを書く担当か、方針や構成まで決められるか、CIまで触れるか</li><li><strong>保守の感覚</strong>：仕様が変わっても壊れにくいテストを書けるか、不安定なテストを放置しないか</li><li><strong>チームとの相性</strong>：開発者と同じ言葉で話せるか、結果をどう共有するか</li></ol>
+<p>以下の質問は、この3点のどれかを確かめるためのものです。質問の意図が分かれば、答えの中心に何を置くかも決まります。</p>
+<h2 id="s2">よく聞かれる質問と答え方の考え方</h2>
+<p>ここで示す答えの例は、組み立て方を伝えるための<strong>架空の例</strong>です。そのまま使うのではなく、ご自身の経験に置き換えて準備してください。</p>
+<h3>1. 「直近の案件で、自動化のどこを担当しましたか」</h3>
+<p>確かめたいのは任せられる範囲です。対象のシステムの種類、チームの人数、担った層（E2E・API・単体）、立ち上げ・拡充・立て直しのどの局面だったか、使った言語とツールを短く伝えます。ツールを自分で選んだのか、決まっていたのかも分けて話すと、後の質問との食い違いが起きません。</p>
+<p>架空の例：「Webサービスの開発チームで、E2EとAPIのテストを担当しました。ツールは参画時に決まっており、私は共通部品の整理とCIでの並列実行の設定を担いました」</p>
+<h3>2. 「何を自動化し、何を手動に残しましたか。その理由は」</h3>
+<p>最もよく聞かれる質問の一つです。全部を自動化しようとしていないか、費用と効果を考えているかを見ています。回帰で繰り返し確かめる流れ、変更が多くて保守がかさむ画面、人の目で見るほうが早い見た目の確認、のように<strong>対象外にしたものと理由</strong>まで話すと、判断の質が伝わります。</p>
+<h3>3. 「その確認を、なぜその層のテストにしたのですか」</h3>
+<p>画面からの確認をAPIや単体のテストに移した、あるいは逆にした場面を話します。「入力の組み合わせはAPIの層で確かめ、E2Eは主要な流れだけにした」のように、実行時間と壊れにくさの両面で説明できると、全体を設計できる人として受け止められます。</p>
+<h3>4. 「不安定なテストにはどう対応しましたか」</h3>
+<p>特によく掘り下げられるテーマです。答えは次の順番で組み立てると伝わりやすくなります。</p>
+<ul><li>どの情報から不安定さに気づいたか（CIの記録、失敗の頻度など）</li><li>原因をどう切り分けたか（待ち方、データの取り合い、環境、本当の不具合）</li><li>どう直したか、直すまでの間はどう扱ったか</li><li>改善の前後で何が変わったか</li></ul>
+<p>「再実行の回数を増やしました」だけで終わると、原因に向き合ったかが見えません。<strong>一時的な手当てと根本の修正を分けて</strong>話せると、保守の感覚が伝わります。</p>
+<h3>5. 「CIにはどう組み込みましたか」</h3>
+<p>変更のたびに流すテストと夜間に流すテストを分けたか、並列化や対象の絞り込みで実行時間をどう抑えたか、失敗したときに誰に何が届くようにしたかを話します。CIの設定を自分で書いたのか、依頼して変えてもらったのかも正直に分けましょう。</p>
+<h3>6. 「テストが落ちたとき、開発者とどうやり取りしましたか」</h3>
+<p>自動テストは、結果が見られなくなると価値を失います。落ちたテストを誰が最初に見るか、不具合として渡すときに何を添えたか（再現の手順、スクリーンショット、実行の記録など）を話します。開発者からテストの書き方に意見が出た場面があれば、どう受け止めたかも材料になります。</p>
+<h3>7. 「前任者が書いたテストを引き継いだことはありますか」</h3>
+<p>保守の局面の案件でよく聞かれます。読みにくいコードをどう把握したか、すぐに書き直したのか、少しずつ整えたのかを話します。前任者のやり方を否定する話し方は避け、何を残して何を変えたかに焦点を当てます。</p>
+<h3>8. 「AIの支援を使ってテストを書いていますか」</h3>
+<p>使っている場合は、何に使い、出てきたコードをどう確かめているかを話します。使っていない場合も、現場の決まりに合わせて使えるか、生成されたテストの意味をどう見極めるかの考えを示せれば十分です。道具の名前より、<strong>確認の責任をどこに置いているか</strong>が見られています。</p>
+<aside class="box box-view"><p class="box-label">エージェントベストの見解</p><p>テスト自動化の案件をご紹介していると、面談で評価されやすいのは、書いたテストの本数より「やめたテスト」「移したテスト」の判断を理由とともに話せる方です。反対に、ツールの機能の説明が中心になり、自分が何を決めたかが見えないと、見送られやすい傾向があります。不安定なテストに苦労した話も、原因の分け方まで話せれば経験として受け止められることが多くあります。</p></aside>
+<h2 id="s3">準備は「判断の場面」と「直した場面」を選ぶ</h2>
+<p>上の質問は数が多く見えますが、答えの材料は共通しています。準備は次の手順で進めると効率的です。</p>
+<ol><li><strong>場面を選ぶ</strong>：対象を決めた場面、層を移した場面、不安定なテストを直した場面、CIを変えた場面から3〜4つ選ぶ</li><li><strong>場面ごとにメモをつくる</strong>：状況、気づいたきっかけ、選択肢、選んだ理由、結果、学びを書き出す</li><li><strong>数字をそろえる</strong>：実行時間や失敗の割合を、相対の形でどの場面でも同じように言えるようにする</li><li><strong>短い版と詳しい版をつくる</strong>：最初は2分で話し、掘り下げられたら詳しく話せるようにする</li><li><strong>スキルシートと照らし合わせる</strong>：シートに書いた内容と話がずれていないかを確かめる</li></ol>
+<p>スキルシートとの一致は特に大切です。面談官はシートを見ながら質問するため、ツールを「導入した」と書いたのに話では「決まっていた」となると、どちらも信用されにくくなります。書き方は<a href="/media/test-automation-skillsheet/">テスト自動化エンジニアのスキルシートの記事</a>、冒頭の自己紹介は<a href="/media/self-introduction/">面談の自己紹介の記事</a>で解説しています。</p>
+<aside class="box box-caution"><p class="box-label">注意</p><p>前の案件のテストコードを画面共有で見せたり、手元に持ち出したりするのは避けましょう。テストコードには、画面の構造、APIの仕様、テスト用のアカウントなど、取引先の情報が多く含まれます。見せられるのは、個人で作った公開のコードか、許可を得たものだけです。話すときも、サービス名や社名は伏せ、規模は人数や期間で示します。成果物の権利の考え方は<a href="/media/copyright/">著作権の記事</a>をご覧ください。</p></aside>
+<h2 id="s4">面談の相手によって重心が変わる</h2>
+<div class="table-wrap"><table><thead><tr><th>面談の相手</th><th>重く見られやすい点</th></tr></thead><tbody><tr><td>開発の責任者・テックリード</td><td>コードの設計、CIへの組み込み、開発の速さへの影響</td></tr><tr><td>QAの責任者</td><td>自動化の対象の決め方、手動のテストとの分担、観点の抜け</td></tr><tr><td>プロダクトの責任者</td><td>リリースの判断にどう役立つか、費用と効果の説明</td></tr></tbody></table></div>
+<p>オンラインで技術的な質問が続く場合は、画面共有で図を描いたり、架空の例でテストの構成を説明したりできるよう準備しておくと話がしやすくなります。進め方は<a href="/media/online-interview/">オンライン面談の記事</a>で解説しています。</p>
+<h2 id="s5">テスト自動化ならではの逆質問</h2>
+<p>逆質問は、印象づくりより<strong>参画後のずれを防ぐ確認</strong>に使います。次の点を聞いておくと判断がしやすくなります。</p>
+<ul><li>今あるテストの量と層の内訳、CIで流れているか</li><li>落ちたテストを最初に見るのは誰か、今どのくらい放置されているか</li><li>CIの設定やテスト環境を変える権限があるか</li><li>テストデータを作る手段と、環境を他のチームと共有しているか</li><li>QAの担当者との分担と、手動のテストを頼まれる可能性</li></ul>
+<p>一般的な考え方は<a href="/media/reverse-questions/">業務委託の面談で聞いておくべき逆質問</a>にまとめています。聞いた内容は契約前の確認にも使えます。確認点は<a href="/media/test-automation-anken-erabi/">テスト自動化エンジニアの案件の選び方</a>で整理しています。</p>
+<aside class="box box-view"><p class="box-label">エージェントベストの見解</p><p>当社では、経歴をご本人の了承を得た案件にだけ、氏名・連絡先を伏せてご提案しています。テスト自動化の面談では、案件票だけでは分からない既存のテストの状態やCIの権限について、面談の前に確認しておきたい点があれば、ご質問いただければ確認します。面談の後に参画を迷う点が出てきた場合も、早めにご相談ください。</p></aside>
+<aside class="box box-point"><p class="box-label">ポイント</p><ul><li>テスト自動化の面談では、対象の決め方、層の分け方、不安定なテストの直し方、CIへの組み込みがよく聞かれる</li><li>答えは「気づいたきっかけ→原因の切り分け→選んだ手→結果」の順で組み立てる</li><li>準備は判断と修正の場面を3〜4つに絞り、スキルシートとそろえる</li><li>逆質問では、既存テストの状態、失敗を見る人、CIの権限、テストデータを確かめる</li></ul></aside>
+<h2 id="s6">よくある質問</h2>
+<h3>使ったことのないツールの案件でも、面談で通りますか？</h3>
+<p>通ることはあります。ツールの違いより、待ち方の設計や層の分け方など、どのツールでも生きる考え方を話せるかが見られます。似たツールでの経験と、新しいツールに慣れるまでの見込みを正直に伝えましょう。</p>
+<h3>面談でコーディングの課題を出されることはありますか？</h3>
+<p>案件によっては、簡単なテストを書く課題や、既存のテストの問題点を指摘する課題が出ることがあります。事前に知らされる場合が多いので、面談の形式は前もって確かめておくと安心です。</p>
+<h3>自動化の経験が短く、手動テストの経験が長い場合はどう話せばよいですか？</h3>
+<p>手動テストで観点を出してきた経験は、自動化の対象を決めるときに生きます。自動化で担った範囲を正確に伝え、観点の経験とどうつながるかを話しましょう。QAとして見られる点は<a href="/media/qa-engineer-interview/">QAエンジニアの面談の記事</a>、見送られやすい理由は<a href="/media/interview-fail-reasons/">面談で見送られる理由の記事</a>で解説しています。</p>
+  </div>
+  
+  <div class="cta-band">
+  <h2>条件に合う案件だけ、知りたい方へ</h2>
+  <p>ご登録は無料です。条件に合う案件だけを、ご本人の了承を得てからご提案します。</p>
+  <div class="cta-row">
+    <a class="btn btn-primary" href="https://airtable.com/appYkc36EvioYoL1A/pag6CZC4uJmxUcrXT/form" target="_blank" rel="noopener">無料で登録する</a>
+    <a class="btn btn-ghost" href="/jobs/">案件を探す</a>
+  </div>
+</div>
+  <section class="related"><h2>あわせて読みたい</h2><div class="grid g2"><a class="card art-card" href="/media/interview-questions/">
+  <span class="art-hub">スキルシート・面談</span>
+  <h3>業務委託の面談でよく聞かれる質問と答え方｜回答の組み立て方</h3>
+  <p>業務委託の面談では、経歴の説明、直近案件での役割、技術や業務の深さ、稼働条件の4つがよく聞かれます。「結論→背景→自分の行動→結果」の順で短く答えると伝わりやすくなります。質問ごとの答え方を架空の例で紹介します。</p>
+</a>
+<a class="card art-card" href="/media/reverse-questions/">
+  <span class="art-hub">スキルシート・面談</span>
+  <h3>業務委託の面談で聞いておくべき逆質問｜参画後のずれを防ぐ確認項目</h3>
+  <p>業務委託の面談の逆質問は、印象づくりより「参画後のずれを防ぐ確認」に使うのが基本です。業務の範囲、体制と指示の流れ、稼働の実態、期間の見込みの4つを確かめておくと、契約後の「話が違う」を減らせます。</p>
+</a>
+<a class="card art-card" href="/media/self-introduction/">
+  <span class="art-hub">スキルシート・面談</span>
+  <h3>面談の自己紹介の組み立て方｜1〜2分で伝える経歴と話す順番</h3>
+  <p>業務委託の面談の自己紹介は「経験の全体像→直近の案件と役割→この案件に生かせる経験」の3段で、1〜2分にまとめるのが基本です。年代順に全部話さず、案件に合う経験を選んで話す組み立て方を架空の例で紹介します。</p>
+</a>
+<a class="card art-card" href="/media/interview-fail-reasons/">
+  <span class="art-hub">スキルシート・面談</span>
+  <h3>業務委託の面談で見送られる理由と次に生かす方法｜振り返りの手順</h3>
+  <p>業務委託の面談で見送られる理由は、経験のずれ、条件のずれ、伝わり方、自分では変えられない事情の4つに分けられます。理由を分けて振り返り、変えられるものだけを次の応募や面談で直すのが基本です。分類と振り返りの手順を整理します。</p>
+</a>
+<a class="card art-card" href="/media/online-interview/">
+  <span class="art-hub">スキルシート・面談</span>
+  <h3>オンライン面談で気をつけること｜環境・話し方・資料の準備</h3>
+  <p>業務委託のオンライン面談では、通信・音声・カメラの環境を前日までに試し、結論から短く話し、画面共有する資料は守秘義務に触れないものに絞ることが大切です。準備から当日の流れ、接続トラブルへの備えまで整理します。</p>
+</a>
+<a class="card art-card" href="/media/test-automation-skillsheet/">
+  <span class="art-hub">QA・テスト</span>
+  <h3>テスト自動化エンジニアのスキルシートの書き方｜面談で評価される実績の見せ方</h3>
+  <p>テスト自動化エンジニアのスキルシートは、ツール名を並べるより、立ち上げ・拡充・立て直しのどれを担ったか、どの層で確かめる設計にしたか、CIでどう回し安定させたかを書くのが基本です。記入例と数字の扱いを紹介します。</p>
+</a></div></section>
+</main>
+<footer class="site-foot">
+  <div class="wrap">
+    <strong>エージェントベストジョブ フリーランス</strong>
+    <div class="foot-links">
+      <a href="/">トップ</a>
+      <a href="/jobs/">案件を探す</a>
+      <a href="/media/">お役立ち記事</a>
+      <a href="https://airtable.com/appYkc36EvioYoL1A/pag6CZC4uJmxUcrXT/form" target="_blank" rel="noopener">ご登録（スキルシート・ご希望の条件）</a>
+      <a href="https://line.me/R/ti/p/@697nxhbt?oat_content=url&ts=08302134" target="_blank" rel="noopener" data-line-cta="footer">LINEで相談する</a>
+      <a href="/privacy.html">個人情報の取り扱い</a>
+      <a href="https://www.agent-best.net/company/">運営会社</a>
+    </div>
+    <div class="foot-links">
+      <a href="https://jobs.agent-best.net/">正社員の求人を探す（エージェントベストジョブ）</a>
+      <a href="https://skill.agent-best.net/">エージェントベストジョブ手に職</a>
+      <a href="https://www.agent-best.net/">エージェントベスト</a>
+    </div>
+    <p>運営：株式会社エージェントベスト（有料職業紹介事業 許可番号 13-ユ-316964）<br>〒106-0032 東京都港区六本木4-8-7 嶋田ビル5階</p>
+  </div>
+</footer>
+<script src="/assets/fav.js" defer></script>
+</body>
+</html>
