@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Rubyエンジニアのフリーランス面談でよく聞かれる質問と答え方の準備｜エージェントベストジョブ フリーランス</title>
+<meta name="description" content="Rubyの面談では、Railsの版と構成、既存コードの改修、N+1や遅い処理の対応、テストの粒度、版の更新、ジョブの失敗や障害の対応がよく聞かれます。質問ごとに面談官が確かめたいことと答えの組み立て方、準備、逆質問を整理します。">
+<link rel="canonical" href="https://freelance.agent-best.net/media/ruby-interview/">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="エージェントベストジョブ フリーランス">
+<meta property="og:title" content="Rubyエンジニアのフリーランス面談でよく聞かれる質問と答え方の準備｜エージェントベストジョブ フリーランス">
+<meta property="og:description" content="Rubyの面談では、Railsの版と構成、既存コードの改修、N+1や遅い処理の対応、テストの粒度、版の更新、ジョブの失敗や障害の対応がよく聞かれます。質問ごとに面談官が確かめたいことと答えの組み立て方、準備、逆質問を整理します。">
+<meta property="og:url" content="https://freelance.agent-best.net/media/ruby-interview/">
+<meta property="og:image" content="https://freelance.agent-best.net/assets/ogp.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://freelance.agent-best.net/assets/ogp.png">
+<meta name="theme-color" content="#1E3A5F">
+<link rel="icon" href="/assets/favicon.ico">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="stylesheet" href="/assets/site.css">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1XXMP8Y1B4"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-1XXMP8Y1B4');
+document.addEventListener('click',e=>{const a=e.target.closest('[data-line-cta]');if(a)gtag('event','line_add_friend',{placement:a.dataset.lineCta,page_path:location.pathname});});</script>
+<script type="application/ld+json">[{"@context":"https://schema.org","@type":"Article","headline":"Rubyエンジニアのフリーランス面談でよく聞かれる質問と答え方の準備","description":"Rubyの面談では、Railsの版と構成、既存コードの改修、N+1や遅い処理の対応、テストの粒度、版の更新、ジョブの失敗や障害の対応がよく聞かれます。質問ごとに面談官が確かめたいことと答えの組み立て方、準備、逆質問を整理します。","datePublished":"2026-11-04","dateModified":"2026-11-04","author":{"@type":"Organization","name":"株式会社エージェントベスト","url":"https://www.agent-best.net/"},"publisher":{"@type":"Organization","name":"株式会社エージェントベスト","logo":{"@type":"ImageObject","url":"https://freelance.agent-best.net/assets/logo.png"}},"mainEntityOfPage":"https://freelance.agent-best.net/media/ruby-interview/"},{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"トップ","item":"https://freelance.agent-best.net/"},{"@type":"ListItem","position":2,"name":"お役立ち記事","item":"https://freelance.agent-best.net/media/"},{"@type":"ListItem","position":3,"name":"バックエンド開発","item":"https://freelance.agent-best.net/media/hub/backend/"},{"@type":"ListItem","position":4,"name":"Rubyエンジニアのフリーランス面談でよく聞かれる質問と答え方の準備"}]},{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Railsの経験が1つのサービスだけでも、面談で不利になりますか？","acceptedAnswer":{"@type":"Answer","text":"サービスの数より、そのサービスでどこまで担ったかが見られます。1つのサービスで機能開発から改修、更新、障害対応まで経験していれば、十分に話せる材料があります。複数の版や構成を経験していない点は、学習中の内容を実務と分けて正直に伝えれば問題になりにくい傾向があります。"}},{"@type":"Question","name":"技術の質問に答えられなかったとき、どうすればよいですか？","acceptedAnswer":{"@type":"Answer","text":"知らないことは、推測で答えるより「触ったことがないので、調べて確かめたい」と伝えるほうが信頼されます。そのうえで、近い経験があれば、それをどう応用できそうかを話します。面談で見送られやすい受け答えは面談で見送られる理由の記事で解説しています。"}},{"@type":"Question","name":"オンラインの面談でコードを見せてほしいと言われたら、どうしますか？","acceptedAnswer":{"@type":"Answer","text":"前の現場のコードは守秘の対象なので、見せられないことを伝えて問題ありません。代わりに、公開している小さなRailsアプリや、gemへの修正の提案があれば、その場で画面を共有して説明できます。公開できる成果がない場合は、書き方の考え方を口頭で伝えれば十分です。環境の準備はオンライン面談で気をつけることをご覧ください。"}}]}]</script>
+</head>
+<body>
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="/"><img src="/assets/mark.png" alt="" width="28" height="28"><span>エージェントベストジョブ フリーランス<small>フリーランスのエンジニア・コンサル向け案件紹介</small></span></a>
+    <nav class="head-nav" aria-label="メニュー">
+      <a class="link" href="/jobs/">案件を探す</a>
+      <a class="link" href="/media/">お役立ち記事</a>
+      <a class="link keep" href="/mypage/" aria-label="気になる案件">☆ 気になる<span class="fav-count" data-fav-count hidden></span></a>
+      <a class="btn btn-primary btn-sm" href="https://airtable.com/appYkc36EvioYoL1A/pag6CZC4uJmxUcrXT/form" target="_blank" rel="noopener">無料で登録</a>
+    </nav>
+  </div>
+</header>
+<main class="wrap narrow article">
+  <p class="crumbs"><a href="/">トップ</a> › <a href="/media/">お役立ち記事</a> › <a href="/media/hub/backend/">バックエンド開発</a></p>
+  <a class="art-hub" href="/media/hub/backend/">バックエンド開発</a>
+  <h1 class="art-title">Rubyエンジニアのフリーランス面談でよく聞かれる質問と答え方の準備</h1>
+  <p class="note">公開 2026-11-04　監修：株式会社エージェントベスト</p>
+  <nav class="toc" aria-label="目次"><strong>目次</strong><ol><li><a href="#s1">Rubyの面談で面談官が見ていること</a></li><li><a href="#s2">よく聞かれる質問と答え方の考え方</a></li><li><a href="#s3">技術面談・コーディングテストがある場合</a></li><li><a href="#s4">準備は「判断の場面」を3〜4つに絞る</a></li><li><a href="#s5">面談の相手によって重心が変わる</a></li><li><a href="#s6">Rubyならではの逆質問</a></li><li><a href="#s7">よくある質問</a></li></ol></nav>
+  <div class="art-body">
+<p>Rubyエンジニアのフリーランス面談でよく聞かれるのは、<strong>どの版のRailsでどんな構成のサービスを担当したか、既存のコードをどう読んでどう直したか、遅い処理やジョブの失敗にどう対応したか、テストと更新にどう向き合ってきたか</strong>の4つです。面談官は、知識の量より「このチームのコードを渡したら、壊さずに機能を出し、問題が起きたときに自分で原因を追えるか」を確かめようとしています。</p>
+<p>答えるときは、模範解答を覚えるより、自分の経験から「判断した場面」を3〜4つ選び、どの質問にもそこから答えられるように準備しておくのが近道です。面談全般の答え方の型は<a href="/media/interview-questions/">業務委託の面談でよく聞かれる質問と答え方</a>で解説しているので、この記事ではRubyの面談に固有の質問に絞ります。</p>
+<h2 id="s1">Rubyの面談で面談官が見ていること</h2>
+<p>Rubyの案件の面談に出てくるのは、開発チームのリーダーやCTOであることが多く、本人もRailsでコードを書いています。そのため、用語を知っているかより、話の中に出てくる<strong>コードの読み方と判断の根拠</strong>を聞いています。</p>
+<p>面談官が知りたいのは、おおむね次の3点です。</p>
+<ol><li><strong>入ってすぐ動けるか</strong>：自分たちと近い版・構成のRailsを触ってきたか、既存のコードを読んで直せるか</li><li><strong>壊さずに出せるか</strong>：テストを書き、影響の範囲を見極め、小さな単位で本番に出す習慣があるか</li><li><strong>問題を自分で追えるか</strong>：遅い処理、ジョブの失敗、障害が起きたときに、原因を調べて直した経験があるか</li></ol>
+<p>以下の質問は、この3点のどれかを確かめるためのものです。質問の意図が分かれば、答えの中心に何を置くかも決まります。</p>
+<h2 id="s2">よく聞かれる質問と答え方の考え方</h2>
+<p>ここで示す答えの例は、組み立て方を伝えるための<strong>架空の例</strong>です。そのまま使うのではなく、ご自身の経験に置き換えて準備してください。</p>
+<h3>1. 「直近のサービスの構成と、担当した範囲を教えてください」</h3>
+<p>確かめたいのは、入ってすぐ動けるかです。RubyとRailsの版、画面までRailsで作る構成かRailsをAPIにしてフロントエンドを分けた構成か、チームの人数、自分が担った工程（設計・実装・テスト・リリース・障害対応のどこまでか）を短く伝えます。「Rails開発」とまとめず、版と構成を最初に言うと、面談官は自分たちのサービスと重ねて聞けます。</p>
+<p>架空の例：「Ruby 3.2とRails 7.1の予約サービスで、画面はHotwireで作る構成でした。エンジニア4名のチームで、機能の設計からリリース後の一次対応までを担当していました」</p>
+<h3>2. 「既存のコードを読んで直したとき、どこから手をつけましたか」</h3>
+<p>Rubyの面談で最も特徴的な質問です。Railsの案件のほとんどは、すでに動いているサービスに途中から加わる形のため、他人のコードを読む力を見ています。答えは次の順番で組み立てると伝わります。</p>
+<ul><li>どの機能のコードで、どんな状態だったか（モデルに処理が集まっていた、テストがなかった、など）</li><li>影響の範囲をどう調べたか（呼び出し元、コールバック、ジョブからの参照など）</li><li>直す前に何をしたか（テストを足した、動きを記録した）</li><li>どの単位で分けて直し、どう本番に出したか</li></ul>
+<p>「リファクタリングしました」だけで終わると、判断の中身が見えません。<strong>なぜその単位で分けたか</strong>まで話せると、設計の考え方が伝わります。</p>
+<h3>3. 「遅い処理やN+1に気づいたとき、どう見つけてどう直しましたか」</h3>
+<p>Active Recordを性能まで考えて使えるかを見る質問です。気づいたきっかけ（監視の数字、ログ、利用者の声）、原因の調べ方（発行されたSQL、実行計画）、取った手（includesやpreloadの使い分け、インデックス、集計の見直し）、改善の前後の数字を話します。数字が手元になければ、「表示にかかる時間が目に見えて短くなった」のように、確かめた方法を添えます。</p>
+<h3>4. 「テストはどの粒度で書きますか。テストのないコードにはどう向き合いますか」</h3>
+<p>テストを書くこと自体は前提として扱われることが多く、差がつくのは判断の部分です。モデル・リクエスト・画面操作のどこで何を確かめるか、テストデータの作り方で気をつけていること、遅くなったテストをどう保ったか、テストのない古いコードにどこから足したかを話します。「カバレッジを上げました」より、<strong>何を守るためにどこに書いたか</strong>が聞かれています。</p>
+<h3>5. 「RubyやRailsの版の更新に関わったことはありますか」</h3>
+<p>運用の長いサービスの案件で、よく掘り下げられる質問です。どの版からどの版へ、自分は何を担当したか（非推奨の置き換え、gemの更新、テストの修正、段階的なリリースのどこか）、何が壊れてどう見つけたかを話します。チームで経験した更新を自分が主導したように話すと、「どの非推奨で苦労したか」と聞かれたときに答えに詰まります。関わった範囲を正確に伝えるほうが信頼されます。</p>
+<h3>6. 「ジョブの失敗やデータの不整合、障害が起きたとき、何をしましたか」</h3>
+<p>問題を自分で追えるかを見る質問です。Sidekiqなどのジョブが失敗したときの再実行の設計、二重実行への備え、本番で起きた障害の発生から復旧までの流れ、再発を防ぐために変えたことを話します。自分が一次対応をしていない場合も、障害のあとにチームで何を変えたかを話せれば、運用への関心が伝わります。</p>
+<h3>7. 「レビューで指摘されて直したこと、レビューで見ていることは何ですか」</h3>
+<p>少人数のチームで一緒に働けるかを見ています。指摘を受けて設計を変えた経験を一つ、自分がレビューするときに見る点（発行されるSQL、テストの意図、規約からの逸脱、マイグレーションの影響など）を話します。前の現場のレビュー文化を批判する話し方は、「自分たちも同じように言われるのでは」と受け取られやすいので避けたほうが無難です。</p>
+<h3>8. 「gemの選定や、規約から外れる判断をしたことはありますか」</h3>
+<p>Railsの規約を理解したうえで、どこで外れる判断をしたかを見る質問です。gemを選ぶときに確かめること（更新の頻度、依存の多さ、代わりの手段）、サービスオブジェクトやconcernの使い方でチームと決めたことなどを話します。「規約どおりにしか書いたことがない」でも、理由をもって規約に沿ってきたことを話せば問題ありません。</p>
+<h3>9. 「開始できる時期と、稼働の条件を教えてください」</h3>
+<p>開始時期、週の稼働日数、チャットで連絡が取れる時間帯、会議に出られる曜日、リモートか出社か、夜間のリリースや障害の連絡に応じられるかを聞かれます。答えに迷いがあると、条件のずれが参画後に表に出ます。希望の単価を聞かれたときの答え方は<a href="/media/mensetsu-tanka/">面談で希望単価を聞かれたときの答え方</a>で解説しています。</p>
+<aside class="box box-view"><p class="box-label">エージェントベストの見解</p><p>Rubyの案件をご紹介していると、面談で評価されやすいのは、作った機能の数より「既存のコードをどう読み、どこまで直したか」を順を追って話せる方です。反対に、どの質問にも「Railsで一通り開発できます」のような答えが続くと、判断の中身が見えず、見送られやすい傾向があります。地味な改修でも、自分が判断した場面を具体的に話せれば、少人数のチームで任せやすい人として受け止められることが多くあります。</p></aside>
+<h2 id="s3">技術面談・コーディングテストがある場合</h2>
+<p>Rubyの案件では、会話の面談に加えて、簡単なコードを書く課題や、既存のコードを読んで問題点を挙げる形の技術面談が行われることがあります。見られているのは、正解を出す速さより、<strong>読みながら何を考えているかを言葉にできるか</strong>です。</p>
+<ul><li>コードを読むときは、処理の流れを声に出して確かめる</li><li>気になった点（SQLの発行回数、例外の扱い、テストのしやすさ）は、直す前に挙げる</li><li>分からない部分は推測で押し切らず、「ここは実際に動かして確かめたい」と言う</li></ul>
+<p>課題の量が多く、長い時間を無償で求められる場合は、線引きを考える必要があります。備え方は<a href="/media/tech-test/">技術面談・コーディングテストへの備え方</a>で解説しています。</p>
+<h2 id="s4">準備は「判断の場面」を3〜4つに絞る</h2>
+<p>上の質問は数が多く見えますが、答えの材料は共通しています。準備は次の手順で進めると効率的です。</p>
+<ol><li><strong>場面を選ぶ</strong>：既存コードの改修、性能の改善、版の更新、ジョブや障害の対応など、性質の違う場面を3〜4つ選ぶ</li><li><strong>場面ごとにメモをつくる</strong>：状態、気づいたきっかけ、調べ方、選んだ手と理由、本番への出し方、結果、次に変えたことを書き出す</li><li><strong>版と構成の数字をそろえる</strong>：RubyとRailsの版、チームの人数、担当した工程を、どの場面でも同じように言えるようにする</li><li><strong>2分版と5分版をつくる</strong>：最初は2分で話し、掘り下げられたら詳しく話せるようにする</li><li><strong>スキルシートと照らし合わせる</strong>：シートに書いた版、構成、担当範囲と話の内容が一致しているかを確かめる</li></ol>
+<p>スキルシートとの一致は特に大切です。面談官はシートを見ながら質問するため、話とシートがずれると、どちらも信用されにくくなります。シートの書き方は<a href="/media/ruby-skillsheet/">Rubyエンジニアのスキルシートの記事</a>、冒頭の自己紹介の組み立て方は<a href="/media/self-introduction/">面談の自己紹介の記事</a>で解説しています。</p>
+<aside class="box box-caution"><p class="box-label">注意</p><p>面談では、前のサービスの社名や、利用者の数、売上に関わる数字、本番で起きた障害の詳しい経緯などを話してしまいがちです。Rubyの案件は自社サービスの内部に深く触れる分、話の具体性と守秘のバランスが問われます。社名やサービス名は伏せ、規模はチームの人数やデータの量の目安で示しましょう。前の現場のコードやチームへの批判も、聞き手の印象を悪くしやすいので避けたほうが無難です。</p></aside>
+<h2 id="s5">面談の相手によって重心が変わる</h2>
+<p>Rubyの面談は、相手によって聞かれる内容の重心が変わります。</p>
+<div class="table-wrap"><table><thead><tr><th>面談の相手</th><th>重く見られやすい点</th></tr></thead><tbody><tr><td>開発リーダー・CTO</td><td>コードの読み方、設計の判断、テストと更新への向き合い方</td></tr><tr><td>事業責任者・企画の担当</td><td>仕様のやりとりの仕方、できることとできないことの伝え方</td></tr><tr><td>受託会社のPM・リーダー（受託の案件）</td><td>工程ごとの経験、文書の作成、納期への向き合い方</td></tr></tbody></table></div>
+<p>立ち上げの案件では、事業責任者が一人で面談することもあります。その場合は、技術の細かい話より、仕様が固まらない中でどう形にしてきたかに重心を置くと、限られた時間を有効に使えます。</p>
+<h2 id="s6">Rubyならではの逆質問</h2>
+<p>面談の終わりには、こちらから質問できる時間があります。逆質問は、印象づくりより<strong>参画後のずれを防ぐ確認</strong>に使います。Rubyの案件では、次の点を聞いておくと判断がしやすくなります。</p>
+<ul><li>今のRubyとRailsの版と、更新の予定があるか</li><li>テストとCIはどこまで整っているか。レビューは誰が、どのくらいの時間で行うか</li><li>画面までRailsで作る構成か、APIとフロントエンドを分けた構成か</li><li>本番のデータベースやコンソールの操作は、誰がどう行うか</li><li>会議の頻度と時間帯、出社する日の有無</li><li>担当する範囲が、インフラやフロントエンドまで広がる想定か</li></ul>
+<p>一般的な逆質問の考え方は<a href="/media/reverse-questions/">業務委託の面談で聞いておくべき逆質問</a>にまとめています。逆質問で聞いた内容は、契約前の確認にもそのまま使えます。案件を選ぶときの確認点は<a href="/media/ruby-anken-erabi/">Ruby案件の選び方</a>で整理しています。</p>
+<aside class="box box-view"><p class="box-label">エージェントベストの見解</p><p>当社では、経歴をご本人の了承を得た案件にだけ、氏名・連絡先を伏せてご提案しています。Rubyの面談では、案件票だけでは分からない版やテストの状況、レビューの体制について、面談の前に確認しておきたい点があれば、ご質問いただければ確認します。面談後に参画を迷う点が出てきた場合も、早めにご相談ください。</p></aside>
+<aside class="box box-point"><p class="box-label">ポイント</p><ul><li>Rubyの面談では、版と構成、既存コードの改修、性能の対応、テストの粒度、版の更新、ジョブや障害の対応がよく聞かれる</li><li>答えは「状態→気づいたきっかけ→調べ方→選んだ手と理由→本番への出し方→結果」の順で組み立てる</li><li>準備は判断の場面を3〜4つに絞り、スキルシートの版・構成・担当範囲とそろえる</li><li>逆質問では、版と更新の予定、テストとCI、構成、本番の操作、会議の時間帯、担当範囲の広がりを確かめる</li></ul></aside>
+<h2 id="s7">よくある質問</h2>
+<h3>Railsの経験が1つのサービスだけでも、面談で不利になりますか？</h3>
+<p>サービスの数より、そのサービスでどこまで担ったかが見られます。1つのサービスで機能開発から改修、更新、障害対応まで経験していれば、十分に話せる材料があります。複数の版や構成を経験していない点は、学習中の内容を実務と分けて正直に伝えれば問題になりにくい傾向があります。</p>
+<h3>技術の質問に答えられなかったとき、どうすればよいですか？</h3>
+<p>知らないことは、推測で答えるより「触ったことがないので、調べて確かめたい」と伝えるほうが信頼されます。そのうえで、近い経験があれば、それをどう応用できそうかを話します。面談で見送られやすい受け答えは<a href="/media/interview-fail-reasons/">面談で見送られる理由の記事</a>で解説しています。</p>
+<h3>オンラインの面談でコードを見せてほしいと言われたら、どうしますか？</h3>
+<p>前の現場のコードは守秘の対象なので、見せられないことを伝えて問題ありません。代わりに、公開している小さなRailsアプリや、gemへの修正の提案があれば、その場で画面を共有して説明できます。公開できる成果がない場合は、書き方の考え方を口頭で伝えれば十分です。環境の準備は<a href="/media/online-interview/">オンライン面談で気をつけること</a>をご覧ください。</p>
+  </div>
+  
+  <div class="cta-band">
+  <h2>条件に合う案件だけ、知りたい方へ</h2>
+  <p>ご登録は無料です。条件に合う案件だけを、ご本人の了承を得てからご提案します。</p>
+  <div class="cta-row">
+    <a class="btn btn-primary" href="https://airtable.com/appYkc36EvioYoL1A/pag6CZC4uJmxUcrXT/form" target="_blank" rel="noopener">無料で登録する</a>
+    <a class="btn btn-ghost" href="/jobs/">案件を探す</a>
+  </div>
+</div>
+  <section class="related"><h2>あわせて読みたい</h2><div class="grid g2"><a class="card art-card" href="/media/interview-questions/">
+  <span class="art-hub">スキルシート・面談</span>
+  <h3>業務委託の面談でよく聞かれる質問と答え方｜回答の組み立て方</h3>
+  <p>業務委託の面談では、経歴の説明、直近案件での役割、技術や業務の深さ、稼働条件の4つがよく聞かれます。「結論→背景→自分の行動→結果」の順で短く答えると伝わりやすくなります。質問ごとの答え方を架空の例で紹介します。</p>
+</a>
+<a class="card art-card" href="/media/reverse-questions/">
+  <span class="art-hub">スキルシート・面談</span>
+  <h3>業務委託の面談で聞いておくべき逆質問｜参画後のずれを防ぐ確認項目</h3>
+  <p>業務委託の面談の逆質問は、印象づくりより「参画後のずれを防ぐ確認」に使うのが基本です。業務の範囲、体制と指示の流れ、稼働の実態、期間の見込みの4つを確かめておくと、契約後の「話が違う」を減らせます。</p>
+</a>
+<a class="card art-card" href="/media/tech-test/">
+  <span class="art-hub">スキルシート・面談</span>
+  <h3>技術面談・コーディングテストへの備え方｜形式の確かめ方と当日の進め方</h3>
+  <p>技術面談やコーディングテストで見られるのは、正解の速さより、考え方を説明しながら進められるかです。事前に形式・時間・使える道具を確かめ、直近の業務を説明する準備と、手を動かす練習を分けて行います。当日の進め方と注意点もまとめます。</p>
+</a>
+<a class="card art-card" href="/media/ruby-skillsheet/">
+  <span class="art-hub">バックエンド開発</span>
+  <h3>Rubyエンジニアのスキルシートの書き方｜面談で評価される実績の見せ方</h3>
+  <p>Rubyのスキルシートは、RubyとRailsの版、画面まで作る構成かAPI構成か、少人数チームで担った範囲を書き分けるのが基本です。バージョンアップやテストの示し方、OSSの扱い、記入例を紹介します。</p>
+</a>
+<a class="card art-card" href="/media/ruby-skills/">
+  <span class="art-hub">バックエンド開発</span>
+  <h3>Rubyエンジニアのフリーランス案件で求められるスキルと経験</h3>
+  <p>Rubyのフリーランス案件では、Railsの規約に沿った設計、Active Recordと非同期処理の扱い、RSpecを中心としたテスト、RubyとRailsの更新を進める力が見られます。案件で求められやすいスキル、資格の位置づけ、経験の示し方を解説します。</p>
+</a>
+<a class="card art-card" href="/media/ruby-how-to/">
+  <span class="art-hub">バックエンド開発</span>
+  <h3>Rubyエンジニアがフリーランスになるには｜必要な経験と独立までの進め方</h3>
+  <p>Rubyでフリーランスになるには、Ruby on Railsでの機能開発に加え、運用中のサービスの改修やバージョンアップ、テストを書いて品質を守った経験が要ります。案件の型、独立前に積む実績、面談で問われる点を解説します。</p>
+</a></div></section>
+</main>
+<footer class="site-foot">
+  <div class="wrap">
+    <strong>エージェントベストジョブ フリーランス</strong>
+    <div class="foot-links">
+      <a href="/">トップ</a>
+      <a href="/jobs/">案件を探す</a>
+      <a href="/media/">お役立ち記事</a>
+      <a href="https://airtable.com/appYkc36EvioYoL1A/pag6CZC4uJmxUcrXT/form" target="_blank" rel="noopener">ご登録（スキルシート・ご希望の条件）</a>
+      <a href="https://line.me/R/ti/p/@697nxhbt?oat_content=url&ts=08302134" target="_blank" rel="noopener" data-line-cta="footer">LINEで相談する</a>
+      <a href="/privacy.html">個人情報の取り扱い</a>
+      <a href="https://www.agent-best.net/company/">運営会社</a>
+    </div>
+    <div class="foot-links">
+      <a href="https://jobs.agent-best.net/">正社員の求人を探す（エージェントベストジョブ）</a>
+      <a href="https://skill.agent-best.net/">エージェントベストジョブ手に職</a>
+      <a href="https://www.agent-best.net/">エージェントベスト</a>
+    </div>
+    <p>運営：株式会社エージェントベスト（有料職業紹介事業 許可番号 13-ユ-316964）<br>〒106-0032 東京都港区六本木4-8-7 嶋田ビル5階</p>
+  </div>
+</footer>
+<script src="/assets/fav.js" defer></script>
+</body>
+</html>

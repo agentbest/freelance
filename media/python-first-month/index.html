@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Pythonエンジニアの参画初月にやること｜現場で信頼される進め方｜エージェントベストジョブ フリーランス</title>
+<meta name="description" content="Pythonエンジニアの参画初月は、環境とデータへのアクセスを整え、コードとデータの流れを把握し、小さな変更を本番まで通して現場の書き方に合わせるところまでが目標です。週ごとの進め方、分野による重心の違い、初月に避けたい動きを整理します。">
+<link rel="canonical" href="https://freelance.agent-best.net/media/python-first-month/">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="エージェントベストジョブ フリーランス">
+<meta property="og:title" content="Pythonエンジニアの参画初月にやること｜現場で信頼される進め方｜エージェントベストジョブ フリーランス">
+<meta property="og:description" content="Pythonエンジニアの参画初月は、環境とデータへのアクセスを整え、コードとデータの流れを把握し、小さな変更を本番まで通して現場の書き方に合わせるところまでが目標です。週ごとの進め方、分野による重心の違い、初月に避けたい動きを整理します。">
+<meta property="og:url" content="https://freelance.agent-best.net/media/python-first-month/">
+<meta property="og:image" content="https://freelance.agent-best.net/assets/ogp.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://freelance.agent-best.net/assets/ogp.png">
+<meta name="theme-color" content="#1E3A5F">
+<link rel="icon" href="/assets/favicon.ico">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="stylesheet" href="/assets/site.css">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1XXMP8Y1B4"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-1XXMP8Y1B4');
+document.addEventListener('click',e=>{const a=e.target.closest('[data-line-cta]');if(a)gtag('event','line_add_friend',{placement:a.dataset.lineCta,page_path:location.pathname});});</script>
+<script type="application/ld+json">[{"@context":"https://schema.org","@type":"Article","headline":"Pythonエンジニアの参画初月にやること｜現場で信頼される進め方","description":"Pythonエンジニアの参画初月は、環境とデータへのアクセスを整え、コードとデータの流れを把握し、小さな変更を本番まで通して現場の書き方に合わせるところまでが目標です。週ごとの進め方、分野による重心の違い、初月に避けたい動きを整理します。","datePublished":"2026-11-04","dateModified":"2026-11-04","author":{"@type":"Organization","name":"株式会社エージェントベスト","url":"https://www.agent-best.net/"},"publisher":{"@type":"Organization","name":"株式会社エージェントベスト","logo":{"@type":"ImageObject","url":"https://freelance.agent-best.net/assets/logo.png"}},"mainEntityOfPage":"https://freelance.agent-best.net/media/python-first-month/"},{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"トップ","item":"https://freelance.agent-best.net/"},{"@type":"ListItem","position":2,"name":"お役立ち記事","item":"https://freelance.agent-best.net/media/"},{"@type":"ListItem","position":3,"name":"バックエンド開発","item":"https://freelance.agent-best.net/media/hub/backend/"},{"@type":"ListItem","position":4,"name":"Pythonエンジニアの参画初月にやること｜現場で信頼される進め方"}]},{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"環境構築の手順書がなく、初日から動かせません。何から始めればよいですか？","acceptedAnswer":{"@type":"Answer","text":"まず、動かすために足りないもの（バージョン、権限、接続情報など）を書き出し、窓口に共有してください。待つ間は、コードの構成とデータの流れを読み、分からない点を一覧にします。手順書がない状態そのものを、自分が作った手順のメモとして残しておくと、現場への最初の貢献になります。"}},{"@type":"Question","name":"参画初月から大きな機能の実装を求められたら、どうすればよいですか？","acceptedAnswer":{"@type":"Answer","text":"急ぐ必要がある場合でも、先に小さな変更を一つ本番まで通し、レビューとデプロイの流れを把握してから取りかかるほうが、結果として早く済みます。大きな機能は、設計の案と分からない点を先に示し、発注側と前提を合わせてから進めると、後で手戻りが減ります。"}},{"@type":"Question","name":"現場のコードに型ヒントもテストもありません。自分の担当分には入れてよいですか？","acceptedAnswer":{"@type":"Answer","text":"自分が書く範囲に型ヒントやテストを入れること自体は、多くの現場で歓迎されます。ただ、既存のコードにさかのぼって入れるのは、範囲と時間がかかる作業です。まず自分の担当分で実践し、効果が見えたところで、既存部分への適用を提案として出す順番をおすすめします。"}}]}]</script>
+</head>
+<body>
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="/"><img src="/assets/mark.png" alt="" width="28" height="28"><span>エージェントベストジョブ フリーランス<small>フリーランスのエンジニア・コンサル向け案件紹介</small></span></a>
+    <nav class="head-nav" aria-label="メニュー">
+      <a class="link" href="/jobs/">案件を探す</a>
+      <a class="link" href="/media/">お役立ち記事</a>
+      <a class="link keep" href="/mypage/" aria-label="気になる案件">☆ 気になる<span class="fav-count" data-fav-count hidden></span></a>
+      <a class="btn btn-primary btn-sm" href="https://airtable.com/appYkc36EvioYoL1A/pag6CZC4uJmxUcrXT/form" target="_blank" rel="noopener">無料で登録</a>
+    </nav>
+  </div>
+</header>
+<main class="wrap narrow article">
+  <p class="crumbs"><a href="/">トップ</a> › <a href="/media/">お役立ち記事</a> › <a href="/media/hub/backend/">バックエンド開発</a></p>
+  <a class="art-hub" href="/media/hub/backend/">バックエンド開発</a>
+  <h1 class="art-title">Pythonエンジニアの参画初月にやること｜現場で信頼される進め方</h1>
+  <p class="note">公開 2026-11-04　監修：株式会社エージェントベスト</p>
+  <nav class="toc" aria-label="目次"><strong>目次</strong><ol><li><a href="#s1">初月のゴールを4つに分ける</a></li><li><a href="#s2">1週目：環境を動かし、コードとデータを読む</a></li><li><a href="#s3">2週目：小さな変更を本番まで通す</a></li><li><a href="#s4">3〜4週目：担当範囲を自走し、見立てを共有する</a></li><li><a href="#s5">分野によって初月の重心は変わる</a></li><li><a href="#s6">初月に避けたい動き</a></li><li><a href="#s7">1か月の終わりに振り返ること</a></li><li><a href="#s8">よくある質問</a></li></ol></nav>
+  <div class="art-body">
+<p>Pythonエンジニアの参画初月は、<strong>環境とデータへのアクセスを整え、コードとデータの流れを把握し、小さな変更を一つ本番まで通して、現場の書き方に合わせる</strong>ところまでを目標にします。最初の1か月で求められるのは、大きな機能を作ることより、<strong>このエンジニアに任せて大丈夫だと発注側が判断できる材料</strong>を示すことです。</p>
+<p>Pythonの案件は、Web・API開発、データ基盤、機械学習、業務の自動化と分野が広く、初月に力を入れる場所が分野によって違います。参画前の契約・環境の準備は<a href="/media/sankaku-junbi/">参画が決まってから開始日までにやること</a>、職種を問わない最初の1週間の進め方は<a href="/media/sankaku-shoki/">参画初日から最初の1週間でやること</a>で解説しています。この記事では、Pythonエンジニアならではの初月の動き方に絞ります。</p>
+<h2 id="s1">初月のゴールを4つに分ける</h2>
+<div class="table-wrap"><table><thead><tr><th>ゴール</th><th>中身</th><th>月末に手元にあるもの</th></tr></thead><tbody><tr><td>動かせる</td><td>環境、権限、データへのアクセスが整い、既存のコードとテストが手元で動く</td><td>自分の環境で再現できる手順のメモ</td></tr><tr><td>分かる</td><td>コードの構成、データの流れ、本番の動き方、現場の書き方の決まりを把握する</td><td>構成とデータの流れの図、分からない点の一覧</td></tr><tr><td>通せる</td><td>小さな変更をレビューから本番の反映まで一度通す</td><td>本番に入った変更が一つ以上</td></tr><tr><td>合わせる</td><td>型ヒント、テスト、整形、レビューの作法を現場の基準にそろえる</td><td>レビューで指摘される点が減っている状態</td></tr></tbody></table></div>
+<p>この4つを、1週目、2週目、3〜4週目の順に重心を移しながら進めます。</p>
+<h2 id="s2">1週目：環境を動かし、コードとデータを読む</h2>
+<h3>まず動かす</h3>
+<p>Pythonの現場は、「動かす前の準備」でつまずきやすいのが特徴です。初日から数日で、次の点を確かめて動かします。</p>
+<ol><li><strong>言語のバージョンと仮想環境</strong>：どのバージョンで、どのツールで依存関係を管理しているか。手順書どおりに環境を作り、ずれがあれば書き留める</li><li><strong>テストの実行</strong>：既存のテストが手元で通るか。通らないテストがあれば、それ自体が現場の状態を知る手がかりになる</li><li><strong>データとクラウドへのアクセス</strong>：データベース、ストレージ、クラウドの権限の申請が通っているか。通っていなければ、何を待っているかを窓口に伝える</li><li><strong>本番への道筋</strong>：CI/CD、デプロイの手順、本番と検証環境の違いを把握する</li></ol>
+<p>環境が動かない時間を抱え込まないことが大切です。足りないものを書き出して共有し、待つ間に読めるコードや資料を進めます。</p>
+<p>なお、サポートの終わったバージョンが残っている現場もあります。2026年10月時点で保守の対象は3.11〜3.15で、各バージョンはリリースから5年でサポートが終わる方針です（Python開発者向けガイドによる）。古いバージョンに気づいても、初月は事実として記録するにとどめ、上げる提案は現状を把握してからにします。</p>
+<h3>コードとデータの流れを読む</h3>
+<p>Pythonのコードは、構成の自由度が高いぶん、現場ごとに流儀が違います。次の順で読むと、全体像をつかみやすくなります。</p>
+<ul><li>エントリーポイント（APIの起動、バッチの呼び出し、パイプラインの定義）から、処理がどう分かれているか</li><li>データがどこから来て、どこへ出ていくか（テーブル、ファイル、外部API）</li><li>設定や秘密情報の扱い方（環境変数、設定ファイル、クラウドのサービス）</li><li>フォーマッター、リンター、型チェッカーの設定と、CIで何が検査されているか</li><li>直近のプルリクエストとレビューのやりとり（現場で何が指摘されるか）</li></ul>
+<p>読みながら、「資料ではこうなっているが、コードは違いそう」という点を書き留めておきます。この段階では結論を出さず、仮説としてためておきます。</p>
+<h3>関係者と短く話す</h3>
+<p>資料だけでは分からないのが、人の見方です。技術の責任者、レビューをする人、データの持ち主である業務部門の担当者と、それぞれ短い時間で話す機会をもらいます。聞くことは次の3つに絞ると、相手の負担になりません。</p>
+<ul><li>このコードやデータで一番困っていること</li><li>変えてほしくないこと</li><li>最初の1か月で期待すること</li></ul>
+<h2 id="s3">2週目：小さな変更を本番まで通す</h2>
+<h3>最初の課題は「小さく、本番まで届くもの」を選ぶ</h3>
+<p>2週目には、小さな変更を一つ、レビューから本番の反映まで通します。軽微なバグの修正、ログの追加、テストの補強、ドキュメントの更新など、影響の範囲が小さく、現場の流れを一通り経験できるものが向いています。この一周で、レビューの作法、デプロイの手順、本番での確認の仕方が身につきます。</p>
+<h3>現場の書き方に合わせる</h3>
+<p>最初のレビューで指摘される点は、技術の正誤より「現場の流儀との違い」であることが多くあります。型ヒントの範囲、関数の分け方、テストの書き方、コミットの粒度など、指摘はそのまま現場の基準として受け取り、次から合わせます。自分の流儀と違っても、初月は踏襲を優先します。</p>
+<h3>報告の形を決める</h3>
+<p>発注側の窓口に、どの頻度で、どの粒度の報告がほしいかを確かめ、初回の報告を出します。Pythonエンジニアの報告は、作業の一覧より「動いたもの」「待っているもの」「判断がほしいこと」を先に書くと読まれやすくなります。書き方は<a href="/media/shuho/">週報・進捗報告の書き方</a>、リモート中心の案件での段取りは<a href="/media/python-remote/">Pythonエンジニアのリモートの記事</a>でも触れています。</p>
+<aside class="box box-view"><p class="box-label">エージェントベストの見解</p><p>案件紹介の現場で、参画後の評価が高いPythonエンジニアの方に共通しているのは、最初の2週間で「小さな変更を本番まで通している」ことです。大きな機能に手を付ける前に一周を終えておくと、発注側はレビューの受け止め方と本番への慎重さを早い段階で感じ取れます。初月は、作る量より、現場の流れを一度通すことを優先するのをおすすめします。</p></aside>
+<h2 id="s4">3〜4週目：担当範囲を自走し、見立てを共有する</h2>
+<h3>担当する範囲の仕事を進める</h3>
+<p>3週目からは、契約で決めた担当範囲の仕事を自分で進めます。APIの機能、パイプラインの追加、モデルの検証など、本来の仕事です。分からない点は早めに聞き、見立てを添えて相談すると、相手も答えやすくなります。</p>
+<h3>コードとデータの「見立て」をまとめる</h3>
+<p>1〜2週目で集めた情報をもとに、現状の見立てを短い文書にまとめます。中身は次のとおりです。</p>
+<ul><li>構成とデータの流れ（図があるとよい）</li><li>気づいた点（テストの薄い場所、古い依存関係、性能が心配な処理、手順書と実態の差）</li><li>自分の担当範囲でできること、担当範囲の外で判断が要ること</li></ul>
+<p>気づいた点は「直すべき」と断定せず、事実と影響を並べて、優先順位は発注側に決めてもらう形にします。</p>
+<h3>手順書を残し始める</h3>
+<p>環境の構築手順、本番への反映手順、データの取り方など、自分が初月にまとめたメモは、そのまま現場の資料になります。引き継ぎの材料にもなるため、早い段階から整えておきます。残し方は<a href="/media/document/">設計書・手順書を残す習慣</a>をご覧ください。</p>
+<h2 id="s5">分野によって初月の重心は変わる</h2>
+<h3>Web・API開発の案件</h3>
+<p>既存のAPIの構成、認証の仕組み、データベースのスキーマ、テストの範囲を早くつかむことが中心です。小さな変更を本番まで通す経験を、2週目のうちに済ませておきます。</p>
+<h3>データ基盤の案件</h3>
+<p>データがどこから来て、どう加工され、誰が使うかの把握が中心です。データの定義や品質の問題は、コードを読むだけでは分かりません。業務部門の担当者と話し、「このデータはなぜこうなっているか」を聞く時間を多めに取ります。初月の進め方はデータエンジニアの参画初月にやることも参考になります。</p>
+<h3>機械学習・生成AIの案件</h3>
+<p>既存のモデルや試作が、どのデータで、どんな前提で評価されたかの把握が中心です。本番化を目指す案件では、試作と本番の境目を早い段階で発注側と確かめます。進め方は機械学習エンジニアの参画初月にやることで整理しています。</p>
+<h3>業務の自動化の案件</h3>
+<p>自動化の対象となる業務の例外や属人化を知ることが中心です。業務部門の担当者の隣で実際の作業を見せてもらう時間が、コードを書く時間より役に立つことがあります。</p>
+<h2 id="s6">初月に避けたい動き</h2>
+<div class="table-wrap"><table><thead><tr><th>避けたい動き</th><th>起きやすいこと</th><th>代わりにすること</th></tr></thead><tbody><tr><td>いきなり大きなリファクタリングをする</td><td>影響の範囲が読めず、障害や反発を招く</td><td>担当範囲の中で小さく直し、全体の提案は見立てとして出す</td></tr><tr><td>自分のツールや流儀を持ち込む</td><td>「やり方を押し付ける人」と見られる</td><td>現場の設定と作法を踏襲し、困っている点が見えてから提案する</td></tr><tr><td>ノートブックの試作をそのまま本番に置く</td><td>障害や再現性の問題につながる</td><td>試作と本番を分け、本番は現場の作法で書き直す</td></tr><tr><td>依存ライブラリを一気に更新する</td><td>動かなくなり、原因の切り分けに時間を取られる</td><td>版を固定し、更新は必要な範囲で差分を確かめて行う</td></tr><tr><td>データを手元に持ち出す</td><td>契約や規程に反するおそれがある</td><td>許された環境の中だけで扱い、不明な点は窓口に確かめる</td></tr><tr><td>環境の問題を抱え込む</td><td>作業が止まったまま報告が遅れ、信頼を損なう</td><td>何を待っているかを早めに共有し、待つ間にできることを進める</td></tr></tbody></table></div>
+<p>データの扱いや端末の決まりは、参画前に確かめておくと安心です。貸与端末の注意点は<a href="/media/taiyo-pc/">取引先から貸与PCを使うときの注意点</a>、Pythonエンジニアがつまずきやすい場面は<a href="/media/python-tsumazuki/">Pythonエンジニアのフリーランスがつまずきやすい点と対策</a>で整理しています。</p>
+<aside class="box box-caution"><p class="box-label">注意</p><p>現場のコードの質が低いと感じても、初月から全体の書き直しを始めるのは避けてください。見立てを誤ったときの影響が大きく、契約で決めた担当範囲を超えることもあります。問題点と直す案を文書にして窓口に示し、範囲と期間を決めてから進めると、後で動きやすくなります。範囲が広がりそうなときの扱いは<a href="/media/scope-change/">作業範囲が広がったときの記事</a>をご覧ください。</p></aside>
+<h2 id="s7">1か月の終わりに振り返ること</h2>
+<p>1か月が過ぎたら、次の点を自分で振り返ります。</p>
+<ul><li>環境の構築手順が、自分以外の人にも再現できる形で残っているか</li><li>小さな変更を本番まで通せたか。レビューで指摘される点は減っているか</li><li>コードとデータの流れを、図や文書で説明できるか</li><li>契約で決めた業務の範囲と、実際に担っている仕事がずれていないか</li><li>稼働時間の記録が残っているか。データ待ちなど「書いていない時間」も記録したか</li></ul>
+<p>ずれている点があれば、2か月目の早い段階で窓口と話しておきます。</p>
+<aside class="box box-view"><p class="box-label">エージェントベストの見解</p><p>当社では、契約で業務範囲・報酬・支払期日・契約期間を個別契約に書いてお渡ししています。参画して1か月の間に、聞いていた分野や役割と実際の仕事に違いを感じたときは、早めにご相談ください。契約の内容に関わる点は、ご質問いただければ確認します。</p></aside>
+<aside class="box box-point"><p class="box-label">ポイント</p><ul><li>Pythonエンジニアの初月は、動かせる、分かる、通せる、合わせる、の4つを順に進める</li><li>1週目は環境を動かしてコードとデータを読み、2週目に小さな変更を本番まで通す</li><li>3〜4週目に担当範囲を自走し、気づいた点は事実と影響を並べて発注側に優先順位を決めてもらう</li><li>大きなリファクタリング、流儀の持ち込み、試作の本番投入、依存関係の一斉更新は避ける</li></ul></aside>
+<h2 id="s8">よくある質問</h2>
+<h3>環境構築の手順書がなく、初日から動かせません。何から始めればよいですか？</h3>
+<p>まず、動かすために足りないもの（バージョン、権限、接続情報など）を書き出し、窓口に共有してください。待つ間は、コードの構成とデータの流れを読み、分からない点を一覧にします。手順書がない状態そのものを、自分が作った手順のメモとして残しておくと、現場への最初の貢献になります。</p>
+<h3>参画初月から大きな機能の実装を求められたら、どうすればよいですか？</h3>
+<p>急ぐ必要がある場合でも、先に小さな変更を一つ本番まで通し、レビューとデプロイの流れを把握してから取りかかるほうが、結果として早く済みます。大きな機能は、設計の案と分からない点を先に示し、発注側と前提を合わせてから進めると、後で手戻りが減ります。</p>
+<h3>現場のコードに型ヒントもテストもありません。自分の担当分には入れてよいですか？</h3>
+<p>自分が書く範囲に型ヒントやテストを入れること自体は、多くの現場で歓迎されます。ただ、既存のコードにさかのぼって入れるのは、範囲と時間がかかる作業です。まず自分の担当分で実践し、効果が見えたところで、既存部分への適用を提案として出す順番をおすすめします。</p>
+  </div>
+  <section class="sources"><h2>参考にした公的情報・資料</h2><ul><li><a href="https://devguide.python.org/versions/" target="_blank" rel="noopener nofollow">Status of Python versions（Python Developer&#39;s Guide）</a></li></ul>
+  <p class="note">記事の内容は公開日時点の情報にもとづきます。制度や税率は変わることがあるため、手続きの前に必ず各機関の最新情報をご確認ください。</p></section>
+  <div class="cta-band">
+  <h2>条件に合う案件だけ、知りたい方へ</h2>
+  <p>ご登録は無料です。条件に合う案件だけを、ご本人の了承を得てからご提案します。</p>
+  <div class="cta-row">
+    <a class="btn btn-primary" href="https://airtable.com/appYkc36EvioYoL1A/pag6CZC4uJmxUcrXT/form" target="_blank" rel="noopener">無料で登録する</a>
+    <a class="btn btn-ghost" href="/jobs/">案件を探す</a>
+  </div>
+</div>
+  <section class="related"><h2>あわせて読みたい</h2><div class="grid g2"><a class="card art-card" href="/media/sankaku-junbi/">
+  <span class="art-hub">案件の探し方</span>
+  <h3>参画が決まってから開始日までにやること｜契約・事業の手続き・作業環境の準備</h3>
+  <p>参画が決まったら、開始日までに「契約の書面の確認」「他の選考の整理」「請求と事業の手続き」「作業環境」「業務の予習」の5つを進めます。時期ごとのやることと、開始前の作業を頼まれたときの注意点を整理します。</p>
+</a>
+<a class="card art-card" href="/media/sankaku-shoki/">
+  <span class="art-hub">案件の探し方</span>
+  <h3>参画初日から最初の1週間でやること｜業務委託で立ち上がりを早める進め方</h3>
+  <p>参画して最初の1週間は、成果を急ぐより「任された範囲・依頼の窓口・報告の形」を確かめ、小さな仕事を一つ終えることを優先します。初日から5日目までの進め方と、つまずきやすい点を整理します。</p>
+</a>
+<a class="card art-card" href="/media/python-tsumazuki/">
+  <span class="art-hub">バックエンド開発</span>
+  <h3>Pythonエンジニアのフリーランスがつまずきやすい点と対策</h3>
+  <p>フリーランスのPythonエンジニアがつまずきやすいのは、「Python開発」の範囲があいまいな契約、試作のつもりが本番の責任を負うこと、環境と依存関係で止まること、データ待ちの稼働の扱いなどです。契約・現場・技術・お金の順に、よくある場面と対策を整理します。</p>
+</a>
+<a class="card art-card" href="/media/python-skills/">
+  <span class="art-hub">バックエンド開発</span>
+  <h3>Pythonエンジニアのフリーランス案件で求められるスキルと経験</h3>
+  <p>Pythonのフリーランス案件では、分野ごとの専門スキルに加え、型ヒント・テスト・依存関係の管理など、保守できるコードを書く力が共通して見られます。Web・データ・機械学習・生成AIの分野別スキル、資格の位置づけ、経験の示し方を解説します。</p>
+</a>
+<a class="card art-card" href="/media/python-remote/">
+  <span class="art-hub">バックエンド開発</span>
+  <h3>Pythonエンジニアのフリーランスはリモートで働ける？案件の傾向と探し方</h3>
+  <p>Pythonエンジニアは、Web・API開発やクラウドのデータ基盤の仕事を中心にリモートで働ける案件があります。ただし社内データを扱う分析では、接続先や作業環境が限られることも。分野ごとの傾向と確認点を解説します。</p>
+</a>
+<a class="card art-card" href="/media/python-how-to/">
+  <span class="art-hub">バックエンド開発</span>
+  <h3>Pythonエンジニアがフリーランスになるには｜必要な経験と独立までの進め方</h3>
+  <p>Pythonでフリーランスになるには、Web開発・データ基盤・機械学習など狙う分野を一つ決め、その分野で本番運用まで担った経験を示すことが近道です。分野別に必要な経験、面談で問われること、独立前後の手続きを解説します。</p>
+</a></div></section>
+</main>
+<footer class="site-foot">
+  <div class="wrap">
+    <strong>エージェントベストジョブ フリーランス</strong>
+    <div class="foot-links">
+      <a href="/">トップ</a>
+      <a href="/jobs/">案件を探す</a>
+      <a href="/media/">お役立ち記事</a>
+      <a href="https://airtable.com/appYkc36EvioYoL1A/pag6CZC4uJmxUcrXT/form" target="_blank" rel="noopener">ご登録（スキルシート・ご希望の条件）</a>
+      <a href="https://line.me/R/ti/p/@697nxhbt?oat_content=url&ts=08302134" target="_blank" rel="noopener" data-line-cta="footer">LINEで相談する</a>
+      <a href="/privacy.html">個人情報の取り扱い</a>
+      <a href="https://www.agent-best.net/company/">運営会社</a>
+    </div>
+    <div class="foot-links">
+      <a href="https://jobs.agent-best.net/">正社員の求人を探す（エージェントベストジョブ）</a>
+      <a href="https://skill.agent-best.net/">エージェントベストジョブ手に職</a>
+      <a href="https://www.agent-best.net/">エージェントベスト</a>
+    </div>
+    <p>運営：株式会社エージェントベスト（有料職業紹介事業 許可番号 13-ユ-316964）<br>〒106-0032 東京都港区六本木4-8-7 嶋田ビル5階</p>
+  </div>
+</footer>
+<script src="/assets/fav.js" defer></script>
+</body>
+</html>

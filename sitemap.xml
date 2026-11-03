@@ -16,9 +16,13 @@
   <url><loc>https://freelance.agent-best.net/media/hub/biz-consul/3/</loc><lastmod>2026-11-03</lastmod></url>
   <url><loc>https://freelance.agent-best.net/media/hub/sap-erp/</loc><lastmod>2026-11-03</lastmod></url>
   <url><loc>https://freelance.agent-best.net/media/hub/sap-erp/2/</loc><lastmod>2026-11-03</lastmod></url>
+  <url><loc>https://freelance.agent-best.net/media/hub/sap-erp/3/</loc><lastmod>2026-11-03</lastmod></url>
+  <url><loc>https://freelance.agent-best.net/media/hub/sap-erp/4/</loc><lastmod>2026-11-03</lastmod></url>
   <url><loc>https://freelance.agent-best.net/media/hub/backend/</loc><lastmod>2026-11-03</lastmod></url>
   <url><loc>https://freelance.agent-best.net/media/hub/backend/2/</loc><lastmod>2026-11-03</lastmod></url>
   <url><loc>https://freelance.agent-best.net/media/hub/backend/3/</loc><lastmod>2026-11-03</lastmod></url>
+  <url><loc>https://freelance.agent-best.net/media/hub/backend/4/</loc><lastmod>2026-11-03</lastmod></url>
+  <url><loc>https://freelance.agent-best.net/media/hub/backend/5/</loc><lastmod>2026-11-03</lastmod></url>
   <url><loc>https://freelance.agent-best.net/media/hub/frontend/</loc><lastmod>2026-11-03</lastmod></url>
   <url><loc>https://freelance.agent-best.net/media/hub/web-design/</loc><lastmod>2026-11-03</lastmod></url>
   <url><loc>https://freelance.agent-best.net/media/hub/mobile/</loc><lastmod>2026-11-03</lastmod></url>
@@ -54,6 +58,86 @@
   <url><loc>https://freelance.agent-best.net/media/hub/career/</loc><lastmod>2026-11-03</lastmod></url>
   <url><loc>https://freelance.agent-best.net/media/hub/side-job/</loc><lastmod>2026-11-03</lastmod></url>
   <url><loc>https://freelance.agent-best.net/media/hub/back-to-employee/</loc><lastmod>2026-11-03</lastmod></url>
+  <url><loc>https://freelance.agent-best.net/media/java-anken-erabi/</loc><lastmod>2026-11-03</lastmod></url>
+  <url><loc>https://freelance.agent-best.net/media/java-career-change/</loc><lastmod>2026-11-03</lastmod></url>
+  <url><loc>https://freelance.agent-best.net/media/java-first-month/</loc><lastmod>2026-11-03</lastmod></url>
+  <url><loc>https://freelance.agent-best.net/media/java-interview/</loc><lastmod>2026-11-03</lastmod></url>
+  <url><loc>https://freelance.agent-best.net/media/java-nenrei/</loc><lastmod>2026-11-03</lastmod></url>
+  <url><loc>https://freelance.agent-best.net/media/java-seishain-hikaku/</loc><lastmod>2026-11-03</lastmod></url>
+  <url><loc>https://freelance.agent-best.net/media/java-shigoto/</loc><lastmod>2026-11-03</lastmod></url>
+  <url><loc>https://freelance.agent-best.net/media/java-shikaku/</loc><lastmod>2026-11-03</lastmod></url>
+  <url><loc>https://freelance.agent-best.net/media/java-shuu3/</loc><lastmod>2026-11-03</lastmod></url>
+  <url><loc>https://freelance.agent-best.net/media/java-tsumazuki/</loc><lastmod>2026-11-03</lastmod></url>
+  <url><loc>https://freelance.agent-best.net/media/php-anken-erabi/</loc><lastmod>2026-11-03</lastmod></url>
+  <url><loc>https://freelance.agent-best.net/media/php-career-change/</loc><lastmod>2026-11-03</lastmod></url>
+  <url><loc>https://freelance.agent-best.net/media/php-first-month/</loc><lastmod>2026-11-03</lastmod></url>
+  <url><loc>https://freelance.agent-best.net/media/php-interview/</loc><lastmod>2026-11-03</lastmod></url>
+  <url><loc>https://freelance.agent-best.net/media/php-nenrei/</loc><lastmod>2026-11-03</lastmod></url>
+  <url><loc>https://freelance.agent-best.net/media/php-seishain-hikaku/</loc><lastmod>2026-11-03</lastmod></url>
+  <url><loc>https://freelance.agent-best.net/media/php-shigoto/</loc><lastmod>2026-11-03</lastmod></url>
+  <url><loc>https://freelance.agent-best.net/media/php-shikaku/</loc><lastmod>2026-11-03</lastmod></url>
+  <url><loc>https://freelance.agent-best.net/media/php-shuu3/</loc><lastmod>2026-11-03</lastmod></url>
+  <url><loc>https://freelance.agent-best.net/media/php-tsumazuki/</loc><lastmod>2026-11-03</lastmod></url>
+  <url><loc>https://freelance.agent-best.net/media/python-anken-erabi/</loc><lastmod>2026-11-03</lastmod></url>
+  <url><loc>https://freelance.agent-best.net/media/python-career-change/</loc><lastmod>2026-11-03</lastmod></url>
+  <url><loc>https://freelance.agent-best.net/media/python-first-month/</loc><lastmod>2026-11-03</lastmod></url>
+  <url><loc>https://freelance.agent-best.net/media/python-interview/</loc><lastmod>2026-11-03</lastmod></url>
+  <url><loc>https://freelance.agent-best.net/media/python-nenrei/</loc><lastmod>2026-11-03</lastmod></url>
+  <url><loc>https://freelance.agent-best.net/media/python-seishain-hikaku/</loc><lastmod>2026-11-03</lastmod></url>
+  <url><loc>https://freelance.agent-best.net/media/python-shigoto/</loc><lastmod>2026-11-03</lastmod></url>
+  <url><loc>https://freelance.agent-best.net/media/python-shikaku/</loc><lastmod>2026-11-03</lastmod></url>
+  <url><loc>https://freelance.agent-best.net/media/python-shuu3/</loc><lastmod>2026-11-03</lastmod></url>
+  <url><loc>https://freelance.agent-best.net/media/python-tsumazuki/</loc><lastmod>2026-11-03</lastmod></url>
+  <url><loc>https://freelance.agent-best.net/media/ruby-anken-erabi/</loc><lastmod>2026-11-03</lastmod></url>
+  <url><loc>https://freelance.agent-best.net/media/ruby-career-change/</loc><lastmod>2026-11-03</lastmod></url>
+  <url><loc>https://freelance.agent-best.net/media/ruby-first-month/</loc><lastmod>2026-11-03</lastmod></url>
+  <url><loc>https://freelance.agent-best.net/media/ruby-interview/</loc><lastmod>2026-11-03</lastmod></url>
+  <url><loc>https://freelance.agent-best.net/media/ruby-nenrei/</loc><lastmod>2026-11-03</lastmod></url>
+  <url><loc>https://freelance.agent-best.net/media/ruby-seishain-hikaku/</loc><lastmod>2026-11-03</lastmod></url>
+  <url><loc>https://freelance.agent-best.net/media/ruby-shigoto/</loc><lastmod>2026-11-03</lastmod></url>
+  <url><loc>https://freelance.agent-best.net/media/ruby-shikaku/</loc><lastmod>2026-11-03</lastmod></url>
+  <url><loc>https://freelance.agent-best.net/media/ruby-shuu3/</loc><lastmod>2026-11-03</lastmod></url>
+  <url><loc>https://freelance.agent-best.net/media/ruby-tsumazuki/</loc><lastmod>2026-11-03</lastmod></url>
+  <url><loc>https://freelance.agent-best.net/media/s4hana-anken-erabi/</loc><lastmod>2026-11-03</lastmod></url>
+  <url><loc>https://freelance.agent-best.net/media/s4hana-career-change/</loc><lastmod>2026-11-03</lastmod></url>
+  <url><loc>https://freelance.agent-best.net/media/s4hana-first-month/</loc><lastmod>2026-11-03</lastmod></url>
+  <url><loc>https://freelance.agent-best.net/media/s4hana-interview/</loc><lastmod>2026-11-03</lastmod></url>
+  <url><loc>https://freelance.agent-best.net/media/s4hana-nenrei/</loc><lastmod>2026-11-03</lastmod></url>
+  <url><loc>https://freelance.agent-best.net/media/s4hana-seishain-hikaku/</loc><lastmod>2026-11-03</lastmod></url>
+  <url><loc>https://freelance.agent-best.net/media/s4hana-shigoto/</loc><lastmod>2026-11-03</lastmod></url>
+  <url><loc>https://freelance.agent-best.net/media/s4hana-shikaku/</loc><lastmod>2026-11-03</lastmod></url>
+  <url><loc>https://freelance.agent-best.net/media/s4hana-shuu3/</loc><lastmod>2026-11-03</lastmod></url>
+  <url><loc>https://freelance.agent-best.net/media/s4hana-tsumazuki/</loc><lastmod>2026-11-03</lastmod></url>
+  <url><loc>https://freelance.agent-best.net/media/sap-basis-anken-erabi/</loc><lastmod>2026-11-03</lastmod></url>
+  <url><loc>https://freelance.agent-best.net/media/sap-basis-career-change/</loc><lastmod>2026-11-03</lastmod></url>
+  <url><loc>https://freelance.agent-best.net/media/sap-basis-first-month/</loc><lastmod>2026-11-03</lastmod></url>
+  <url><loc>https://freelance.agent-best.net/media/sap-basis-interview/</loc><lastmod>2026-11-03</lastmod></url>
+  <url><loc>https://freelance.agent-best.net/media/sap-basis-nenrei/</loc><lastmod>2026-11-03</lastmod></url>
+  <url><loc>https://freelance.agent-best.net/media/sap-basis-seishain-hikaku/</loc><lastmod>2026-11-03</lastmod></url>
+  <url><loc>https://freelance.agent-best.net/media/sap-basis-shigoto/</loc><lastmod>2026-11-03</lastmod></url>
+  <url><loc>https://freelance.agent-best.net/media/sap-basis-shikaku/</loc><lastmod>2026-11-03</lastmod></url>
+  <url><loc>https://freelance.agent-best.net/media/sap-basis-shuu3/</loc><lastmod>2026-11-03</lastmod></url>
+  <url><loc>https://freelance.agent-best.net/media/sap-basis-tsumazuki/</loc><lastmod>2026-11-03</lastmod></url>
+  <url><loc>https://freelance.agent-best.net/media/sap-fico-anken-erabi/</loc><lastmod>2026-11-03</lastmod></url>
+  <url><loc>https://freelance.agent-best.net/media/sap-fico-career-change/</loc><lastmod>2026-11-03</lastmod></url>
+  <url><loc>https://freelance.agent-best.net/media/sap-fico-first-month/</loc><lastmod>2026-11-03</lastmod></url>
+  <url><loc>https://freelance.agent-best.net/media/sap-fico-interview/</loc><lastmod>2026-11-03</lastmod></url>
+  <url><loc>https://freelance.agent-best.net/media/sap-fico-nenrei/</loc><lastmod>2026-11-03</lastmod></url>
+  <url><loc>https://freelance.agent-best.net/media/sap-fico-seishain-hikaku/</loc><lastmod>2026-11-03</lastmod></url>
+  <url><loc>https://freelance.agent-best.net/media/sap-fico-shigoto/</loc><lastmod>2026-11-03</lastmod></url>
+  <url><loc>https://freelance.agent-best.net/media/sap-fico-shikaku/</loc><lastmod>2026-11-03</lastmod></url>
+  <url><loc>https://freelance.agent-best.net/media/sap-fico-shuu3/</loc><lastmod>2026-11-03</lastmod></url>
+  <url><loc>https://freelance.agent-best.net/media/sap-fico-tsumazuki/</loc><lastmod>2026-11-03</lastmod></url>
+  <url><loc>https://freelance.agent-best.net/media/sap-sdmm-anken-erabi/</loc><lastmod>2026-11-03</lastmod></url>
+  <url><loc>https://freelance.agent-best.net/media/sap-sdmm-career-change/</loc><lastmod>2026-11-03</lastmod></url>
+  <url><loc>https://freelance.agent-best.net/media/sap-sdmm-first-month/</loc><lastmod>2026-11-03</lastmod></url>
+  <url><loc>https://freelance.agent-best.net/media/sap-sdmm-interview/</loc><lastmod>2026-11-03</lastmod></url>
+  <url><loc>https://freelance.agent-best.net/media/sap-sdmm-nenrei/</loc><lastmod>2026-11-03</lastmod></url>
+  <url><loc>https://freelance.agent-best.net/media/sap-sdmm-seishain-hikaku/</loc><lastmod>2026-11-03</lastmod></url>
+  <url><loc>https://freelance.agent-best.net/media/sap-sdmm-shigoto/</loc><lastmod>2026-11-03</lastmod></url>
+  <url><loc>https://freelance.agent-best.net/media/sap-sdmm-shikaku/</loc><lastmod>2026-11-03</lastmod></url>
+  <url><loc>https://freelance.agent-best.net/media/sap-sdmm-shuu3/</loc><lastmod>2026-11-03</lastmod></url>
+  <url><loc>https://freelance.agent-best.net/media/sap-sdmm-tsumazuki/</loc><lastmod>2026-11-03</lastmod></url>
   <url><loc>https://freelance.agent-best.net/media/20s/</loc><lastmod>2026-11-03</lastmod></url>
   <url><loc>https://freelance.agent-best.net/media/30s/</loc><lastmod>2026-11-03</lastmod></url>
   <url><loc>https://freelance.agent-best.net/media/40s/</loc><lastmod>2026-11-03</lastmod></url>

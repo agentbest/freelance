@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Javaエンジニアの参画初月にやること｜現場で信頼される進め方｜エージェントベストジョブ フリーランス</title>
+<meta name="description" content="Javaエンジニアの参画初月は、開発環境とビルドを自分の手で回せるようにし、現場の規約と工程の進め方をつかみ、小さな変更を一つレビューを通して出すところまでが目標です。週ごとの進め方、案件の型による重心の違い、避けたい動きを整理します。">
+<link rel="canonical" href="https://freelance.agent-best.net/media/java-first-month/">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="エージェントベストジョブ フリーランス">
+<meta property="og:title" content="Javaエンジニアの参画初月にやること｜現場で信頼される進め方｜エージェントベストジョブ フリーランス">
+<meta property="og:description" content="Javaエンジニアの参画初月は、開発環境とビルドを自分の手で回せるようにし、現場の規約と工程の進め方をつかみ、小さな変更を一つレビューを通して出すところまでが目標です。週ごとの進め方、案件の型による重心の違い、避けたい動きを整理します。">
+<meta property="og:url" content="https://freelance.agent-best.net/media/java-first-month/">
+<meta property="og:image" content="https://freelance.agent-best.net/assets/ogp.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://freelance.agent-best.net/assets/ogp.png">
+<meta name="theme-color" content="#1E3A5F">
+<link rel="icon" href="/assets/favicon.ico">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="stylesheet" href="/assets/site.css">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1XXMP8Y1B4"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-1XXMP8Y1B4');
+document.addEventListener('click',e=>{const a=e.target.closest('[data-line-cta]');if(a)gtag('event','line_add_friend',{placement:a.dataset.lineCta,page_path:location.pathname});});</script>
+<script type="application/ld+json">[{"@context":"https://schema.org","@type":"Article","headline":"Javaエンジニアの参画初月にやること｜現場で信頼される進め方","description":"Javaエンジニアの参画初月は、開発環境とビルドを自分の手で回せるようにし、現場の規約と工程の進め方をつかみ、小さな変更を一つレビューを通して出すところまでが目標です。週ごとの進め方、案件の型による重心の違い、避けたい動きを整理します。","datePublished":"2026-11-04","dateModified":"2026-11-04","author":{"@type":"Organization","name":"株式会社エージェントベスト","url":"https://www.agent-best.net/"},"publisher":{"@type":"Organization","name":"株式会社エージェントベスト","logo":{"@type":"ImageObject","url":"https://freelance.agent-best.net/assets/logo.png"}},"mainEntityOfPage":"https://freelance.agent-best.net/media/java-first-month/"},{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"トップ","item":"https://freelance.agent-best.net/"},{"@type":"ListItem","position":2,"name":"お役立ち記事","item":"https://freelance.agent-best.net/media/"},{"@type":"ListItem","position":3,"name":"バックエンド開発","item":"https://freelance.agent-best.net/media/hub/backend/"},{"@type":"ListItem","position":4,"name":"Javaエンジニアの参画初月にやること｜現場で信頼される進め方"}]},{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"環境構築に1週間以上かかっています。問題ありませんか？","acceptedAnswer":{"@type":"Answer","text":"仮想デスクトップや社内リポジトリの権限が関わる現場では、環境構築に時間がかかることは珍しくありません。大切なのは、詰まっている点と待っている対応を、リーダーに日々伝えておくことです。待つ間に規約や設計書、既存のコードを読み込んでおくと、環境が動いた後の立ち上がりが早くなります。"}},{"@type":"Question","name":"既存のコードの品質が低いと感じます。初月から直してもよいですか？","acceptedAnswer":{"@type":"Answer","text":"初月は、担当の範囲だけを直すことをおすすめします。業務システムでは、動いているコードを大きく直すと影響範囲が読めず、本番の障害につながることがあります。気づいた点はチケットや文書に残し、現場の信頼を得てから、根拠を添えて提案する順番が安全です。"}},{"@type":"Question","name":"参画してすぐ、本番リリースの作業を任されました。どうすればよいですか？","acceptedAnswer":{"@type":"Answer","text":"手順書と戻し方を先に確かめ、分からない点を残したまま作業しないことが基本です。初めての本番作業は、現場の人に手順を確認してもらいながら進められないかを相談してください。作業の記録を残しておくと、後から確認が要るときにも説明しやすくなります。"}}]}]</script>
+</head>
+<body>
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="/"><img src="/assets/mark.png" alt="" width="28" height="28"><span>エージェントベストジョブ フリーランス<small>フリーランスのエンジニア・コンサル向け案件紹介</small></span></a>
+    <nav class="head-nav" aria-label="メニュー">
+      <a class="link" href="/jobs/">案件を探す</a>
+      <a class="link" href="/media/">お役立ち記事</a>
+      <a class="link keep" href="/mypage/" aria-label="気になる案件">☆ 気になる<span class="fav-count" data-fav-count hidden></span></a>
+      <a class="btn btn-primary btn-sm" href="https://airtable.com/appYkc36EvioYoL1A/pag6CZC4uJmxUcrXT/form" target="_blank" rel="noopener">無料で登録</a>
+    </nav>
+  </div>
+</header>
+<main class="wrap narrow article">
+  <p class="crumbs"><a href="/">トップ</a> › <a href="/media/">お役立ち記事</a> › <a href="/media/hub/backend/">バックエンド開発</a></p>
+  <a class="art-hub" href="/media/hub/backend/">バックエンド開発</a>
+  <h1 class="art-title">Javaエンジニアの参画初月にやること｜現場で信頼される進め方</h1>
+  <p class="note">公開 2026-11-04　監修：株式会社エージェントベスト</p>
+  <nav class="toc" aria-label="目次"><strong>目次</strong><ol><li><a href="#s1">初月のゴールを3つに分ける</a></li><li><a href="#s2">1週目：環境と全体像をつかむ</a></li><li><a href="#s3">2週目：小さな変更を一つ通す</a></li><li><a href="#s4">3〜4週目：担当範囲を広げ、品質を自分で示す</a></li><li><a href="#s5">案件の型によって初月の重心は変わる</a></li><li><a href="#s6">初月に避けたい動き</a></li><li><a href="#s7">1か月の終わりに振り返ること</a></li><li><a href="#s8">よくある質問</a></li></ol></nav>
+  <div class="art-body">
+<p>Javaエンジニアの参画初月は、<strong>開発環境とビルドを自分の手で回せるようにし、現場の規約と工程の進め方をつかみ、小さな変更を一つレビューを通して出す</strong>ところまでを目標にします。最初の1か月で求められるのは、大きな機能を作ることより、<strong>この人に任せて大丈夫だと発注側のリーダーが判断できる材料</strong>を示すことです。</p>
+<p>参画前の契約・環境の準備は<a href="/media/sankaku-junbi/">参画が決まってから開始日までにやること</a>、職種を問わない最初の1週間の進め方は<a href="/media/sankaku-shoki/">参画初日から最初の1週間でやること</a>で解説しています。この記事では、Javaエンジニアならではの初月の動き方に絞ります。</p>
+<h2 id="s1">初月のゴールを3つに分ける</h2>
+<div class="table-wrap"><table><thead><tr><th>ゴール</th><th>中身</th><th>月末に手元にあるもの</th></tr></thead><tbody><tr><td>環境を回す</td><td>ローカルや仮想デスクトップで、ビルド・テスト・起動が自分の手でできる</td><td>自分の環境構築のメモ、詰まった点と解決法</td></tr><tr><td>現場の型をつかむ</td><td>規約、ブランチの運用、設計書の雛形、レビューの流れ、リリースの手順を知る</td><td>現場の進め方の一覧と、聞ける人の一覧</td></tr><tr><td>小さな成果を出す</td><td>小さな変更を一つ、設計からレビュー、テストまで通して出す</td><td>レビューを通ったコードと、残した設計書・テストの記録</td></tr></tbody></table></div>
+<p>この3つを、1週目、2週目、3〜4週目の順に重心を移しながら進めます。</p>
+<h2 id="s2">1週目：環境と全体像をつかむ</h2>
+<h3>環境構築は「動くまで」を最優先にする</h3>
+<p>Javaの現場では、JDKの版、ビルドツール（MavenかGradleか）、社内のリポジトリの設定、アプリケーションサーバーやコンテナの起動方法など、環境構築に手順が多くあります。仮想デスクトップ上で開発する案件では、端末の受け取りや権限の付与に数日かかることもあります。</p>
+<p>1週目は、ビルドが通り、テストが回り、アプリケーションが手元で起動するところまでを最優先にします。手順書どおりに進まなかった点は、自分のメモに残しておきます。後から入る人の助けになり、現場への最初の貢献にもなります。</p>
+<h3>最初に読むもの</h3>
+<p>環境が動くのを待つ間に、次の順で目を通すと全体像をつかみやすくなります。</p>
+<ol><li><strong>構成図と技術の一覧</strong>：JavaとSpringの版、DB、外部の接続先、コンテナやクラウドの有無</li><li><strong>コーディング規約と設計書の雛形</strong>：何を書けば設計書として通るか、命名や例外の扱いの決まり</li><li><strong>ブランチの運用とレビューの流れ</strong>：誰がレビューするか、マージの条件、CIで何が回るか</li><li><strong>リリースの手順と環境の一覧</strong>：開発・検証・本番の分け方、リリースの頻度と立ち会いの有無</li><li><strong>課題管理とチケットの書き方</strong>：どの粒度でチケットを切り、どう報告するか</li></ol>
+<p>読みながら、「一般的なやり方と違う点」を書き留めておきます。この段階では良し悪しを判断せず、現場の決まりとして受け取ります。</p>
+<h3>聞ける人を把握する</h3>
+<p>技術の質問、業務の質問、環境や権限の質問で、聞く相手が違うことがあります。リーダーに「この件は誰に聞けばよいか」を確かめ、一覧にしておきます。業務システムの案件では、業務の用語を聞ける人を早く見つけておくと、仕様の読み違いを防げます。</p>
+<h2 id="s3">2週目：小さな変更を一つ通す</h2>
+<h3>最初のタスクは小さく、工程を全部通す</h3>
+<p>2週目には、小さな改修や不具合の修正を一つ引き受けます。大きさより、<strong>設計のメモ、実装、単体テスト、レビュー、検証環境での確認</strong>という現場の工程を一通り通すことが目的です。ここで現場の型とのずれが見えるので、以降の仕事の精度が上がります。</p>
+<h3>レビューの受け方で信頼が決まる</h3>
+<p>最初のレビューでは、規約や設計方針との違いを多く指摘されるのが普通です。指摘には理由を確かめたうえで、素直に合わせます。「前の現場ではこうだった」は、この段階では口にしないほうが安全です。指摘された点はメモにまとめ、次のコードで同じ指摘を受けないようにします。</p>
+<h3>設計書とテストの記録を現場の形に合わせる</h3>
+<p>業務システムの案件では、詳細設計書やテスト仕様書を決まった形で残す進め方が多くあります。最初のタスクで、雛形どおりに書いてレビューを受けておくと、以降の書き直しが減ります。Web系の案件では、プルリクエストの説明に変更の目的と確認した方法を書くことが、設計書の代わりになります。</p>
+<aside class="box box-view"><p class="box-label">エージェントベストの見解</p><p>Javaの案件紹介の現場で、参画後の評価が高い方に共通しているのは、最初の2週間で「小さな変更を現場の工程どおりに一つ出している」ことです。環境構築に時間がかかっても、その間に規約や設計書の雛形を読み込み、最初のレビューで指摘された点を次に生かしている方は、発注側のリーダーから早い段階で信頼を得やすい傾向があります。初月は、量より、現場の型に合わせることを優先するのをおすすめします。</p></aside>
+<h2 id="s4">3〜4週目：担当範囲を広げ、品質を自分で示す</h2>
+<h3>機能を一つ担当する</h3>
+<p>小さな変更が通ったら、機能や改修を一つまとまった単位で担当します。設計の段階で、トランザクションの範囲、排他の方式、既存の共通部品の使い方など、判断が要る点を書き出し、リーダーに確かめてから実装に入ります。業務システムでは、ここでの確認が結合テストでの手戻りを減らします。</p>
+<h3>テストと確認の結果を見える形で残す</h3>
+<p>フリーランスは、自分の書いたコードの品質を自分で示す必要があります。単体テストを書き、検証環境で確かめた内容を、チケットやプルリクエスト、テスト仕様書に残します。「動きました」ではなく、「この条件で、このデータで、こう確かめた」が伝わる形にします。</p>
+<h3>障害や問い合わせの対応に加わる</h3>
+<p>3〜4週目には、検証環境の不具合や業務担当者からの問い合わせの調査に加わると、システムの弱い部分と業務の流れが早くつかめます。調査の過程で分かったことは、文書に残してチームで使えるようにします。</p>
+<h2 id="s5">案件の型によって初月の重心は変わる</h2>
+<p>同じJavaの案件でも、型によって初月に力を入れる場所が違います。</p>
+<h3>新規開発の案件</h3>
+<p>設計がまだ動いている段階で入る場合は、規約と設計方針をチームと合わせることが中心になります。共通部品の使い方や、層の分け方の決まりを早くつかみ、自分の担当する機能で最初の実装例をつくると、チームの型として使われることがあります。</p>
+<h3>業務システムの保守・改修の案件</h3>
+<p>既存のコードと業務の理解が中心になります。改修の影響範囲を読み違えると本番の障害につながるため、最初の改修は小さく、影響調査の方法（呼び出し元の洗い出し、テーブルの利用箇所の確認）を現場の人に教わりながら進めます。引き継ぎが薄い場合の進め方は<a href="/media/hikitsugi/">引き継ぎの記事</a>も参考になります。</p>
+<h3>移行・バージョンアップの案件</h3>
+<p>移行前と移行後の版の差分、影響調査の進め方、移行後に何をもって「同じ動き」とするかの確認方法を、初月でつかみます。変更の量が多くなりやすいため、自分が担当する範囲の区切りと、確認の方法を早めに合意しておきます。</p>
+<h3>少人数のWeb系の案件</h3>
+<p>設計書が少なく、コードとプルリクエストで仕様を読み取る進め方が多くなります。リリースの周期が短いため、初月から本番に出る変更を担当することもあります。リリースの手順と戻し方を先に確かめておくと安心です。リモート中心の案件での進め方は<a href="/media/java-remote/">Javaエンジニアのリモートの記事</a>で触れています。</p>
+<h2 id="s6">初月に避けたい動き</h2>
+<div class="table-wrap"><table><thead><tr><th>避けたい動き</th><th>起きやすいこと</th><th>代わりにすること</th></tr></thead><tbody><tr><td>環境構築で詰まったまま一人で抱える</td><td>最初の成果が遅れ、評価の落差が生まれる</td><td>詰まった点を早めに伝え、手順書の不備も報告する</td></tr><tr><td>前の現場の書き方を持ち込む</td><td>レビューで差し戻され、「合わせない人」と見られる</td><td>規約と既存のコードに合わせ、提案は後に回す</td></tr><tr><td>既存のコードを大きく直す</td><td>影響範囲が読めず、不具合の原因になる</td><td>担当の範囲だけを直し、気づいた点はチケットに残す</td></tr><tr><td>仕様を推測で実装する</td><td>結合テストで業務担当者から手戻りを指摘される</td><td>迷う点は書き出して、実装の前に確かめる</td></tr><tr><td>持ち出しや外部ツールの決まりを確かめずに使う</td><td>契約違反になる</td><td>初日に使ってよい道具と場所を確かめる</td></tr></tbody></table></div>
+<p>持ち出しや外部ツールの考え方は<a href="/media/nda/">秘密保持契約（NDA）の記事</a>、範囲外の依頼が増えてきたときの扱いは<a href="/media/scope-change/">業務範囲が変わったときの記事</a>、Javaエンジニアがつまずきやすい場面は<a href="/media/java-tsumazuki/">Javaエンジニアのフリーランスがつまずきやすい点と対策</a>で整理しています。</p>
+<aside class="box box-caution"><p class="box-label">注意</p><p>業務システムの案件では、初月から結合テストやリリースの時期に重なることがあります。環境や業務に慣れる前に大きな作業を求められた場合は、分かっている範囲と確認が要る点を分けて伝え、担当の区切りを合意してから進めてください。黙って引き受けて遅れると、信頼を取り戻すのに時間がかかります。</p></aside>
+<h2 id="s7">1か月の終わりに振り返ること</h2>
+<p>1か月が過ぎたら、次の点を自分で振り返ります。</p>
+<ul><li>環境構築からリリースまでの流れを、自分の手で一通り回せたか</li><li>最初のレビューで受けた指摘が、以降のコードで減っているか</li><li>現場の規約と設計書の型に合わせられているか</li><li>技術の質問、業務の質問、環境の質問を、それぞれ誰に聞けばよいか分かっているか</li><li>契約で決めた業務の範囲と、実際に担っている仕事がずれていないか</li><li>稼働時間の記録が残っているか</li></ul>
+<p>ずれている点があれば、2か月目の早い段階で窓口と話しておきます。現場での立ち位置の考え方は<a href="/media/genba-tachiichi/">現場での立ち位置の記事</a>でも扱っています。</p>
+<aside class="box box-view"><p class="box-label">エージェントベストの見解</p><p>当社では、契約で業務範囲・報酬・支払期日・契約期間を個別契約に書いてお渡ししています。参画して1か月の間に、聞いていた工程や範囲と実際の仕事に違いを感じたときは、早めにご相談ください。契約の内容に関わる点は、ご質問いただければ確認します。</p></aside>
+<aside class="box box-point"><p class="box-label">ポイント</p><ul><li>Javaの初月は、環境を回す、現場の型をつかむ、小さな成果を出す、の3つを順に進める</li><li>1週目は環境構築と規約・設計書の雛形の読み込み、2週目に小さな変更を工程どおりに一つ通す</li><li>3〜4週目に機能を一つ担当し、テストと確認の結果を見える形で残す</li><li>前の現場の書き方の持ち込み、既存コードの大きな修正、推測での実装は避ける</li></ul></aside>
+<h2 id="s8">よくある質問</h2>
+<h3>環境構築に1週間以上かかっています。問題ありませんか？</h3>
+<p>仮想デスクトップや社内リポジトリの権限が関わる現場では、環境構築に時間がかかることは珍しくありません。大切なのは、詰まっている点と待っている対応を、リーダーに日々伝えておくことです。待つ間に規約や設計書、既存のコードを読み込んでおくと、環境が動いた後の立ち上がりが早くなります。</p>
+<h3>既存のコードの品質が低いと感じます。初月から直してもよいですか？</h3>
+<p>初月は、担当の範囲だけを直すことをおすすめします。業務システムでは、動いているコードを大きく直すと影響範囲が読めず、本番の障害につながることがあります。気づいた点はチケットや文書に残し、現場の信頼を得てから、根拠を添えて提案する順番が安全です。</p>
+<h3>参画してすぐ、本番リリースの作業を任されました。どうすればよいですか？</h3>
+<p>手順書と戻し方を先に確かめ、分からない点を残したまま作業しないことが基本です。初めての本番作業は、現場の人に手順を確認してもらいながら進められないかを相談してください。作業の記録を残しておくと、後から確認が要るときにも説明しやすくなります。</p>
+  </div>
+  
+  <div class="cta-band">
+  <h2>条件に合う案件だけ、知りたい方へ</h2>
+  <p>ご登録は無料です。条件に合う案件だけを、ご本人の了承を得てからご提案します。</p>
+  <div class="cta-row">
+    <a class="btn btn-primary" href="https://airtable.com/appYkc36EvioYoL1A/pag6CZC4uJmxUcrXT/form" target="_blank" rel="noopener">無料で登録する</a>
+    <a class="btn btn-ghost" href="/jobs/">案件を探す</a>
+  </div>
+</div>
+  <section class="related"><h2>あわせて読みたい</h2><div class="grid g2"><a class="card art-card" href="/media/sankaku-junbi/">
+  <span class="art-hub">案件の探し方</span>
+  <h3>参画が決まってから開始日までにやること｜契約・事業の手続き・作業環境の準備</h3>
+  <p>参画が決まったら、開始日までに「契約の書面の確認」「他の選考の整理」「請求と事業の手続き」「作業環境」「業務の予習」の5つを進めます。時期ごとのやることと、開始前の作業を頼まれたときの注意点を整理します。</p>
+</a>
+<a class="card art-card" href="/media/sankaku-shoki/">
+  <span class="art-hub">案件の探し方</span>
+  <h3>参画初日から最初の1週間でやること｜業務委託で立ち上がりを早める進め方</h3>
+  <p>参画して最初の1週間は、成果を急ぐより「任された範囲・依頼の窓口・報告の形」を確かめ、小さな仕事を一つ終えることを優先します。初日から5日目までの進め方と、つまずきやすい点を整理します。</p>
+</a>
+<a class="card art-card" href="/media/java-tsumazuki/">
+  <span class="art-hub">バックエンド開発</span>
+  <h3>Javaエンジニアのフリーランスがつまずきやすい点と対策</h3>
+  <p>フリーランスのJavaエンジニアがつまずきやすいのは、契約と現場で担当工程がずれること、社内独自のフレームワークや業務の壁、版の違いによる技術の手戻り、リリースや夜間対応での稼働の膨らみです。契約・現場・技術・お金の順に、場面と対策を整理します。</p>
+</a>
+<a class="card art-card" href="/media/java-skills/">
+  <span class="art-hub">バックエンド開発</span>
+  <h3>Javaエンジニアのフリーランス案件で求められるスキルと経験</h3>
+  <p>Javaのフリーランス案件では、Spring Bootでの開発に加え、データベースとSQL、テストの自動化、バッチや性能の調査、バージョン移行の経験が見られます。案件で問われる技術を分野ごとに整理し、2026年10月時点のJavaとSpringの前提もあわせて解説します。</p>
+</a>
+<a class="card art-card" href="/media/java-remote/">
+  <span class="art-hub">バックエンド開発</span>
+  <h3>Javaエンジニアのフリーランスはリモートで働ける？案件の傾向と探し方</h3>
+  <p>Javaエンジニアは、Webサービスや社内システムの開発を中心にリモートで働ける案件があります。一方で金融・公共などの業務システムでは、閉じたネットワークでの開発や結合テスト、リリース作業で出社が求められやすくなります。傾向と確認点を解説します。</p>
+</a>
+<a class="card art-card" href="/media/java-how-to/">
+  <span class="art-hub">バックエンド開発</span>
+  <h3>Javaエンジニアがフリーランスになるには｜必要な経験と独立までの進め方</h3>
+  <p>Javaでフリーランスになるには、Spring系での開発経験に加えて、設計書を書いた経験と担当工程を説明できる材料が要ります。SIer出身とWeb系出身で違う準備、面談で問われる点、独立前後の手続きを順に解説します。</p>
+</a></div></section>
+</main>
+<footer class="site-foot">
+  <div class="wrap">
+    <strong>エージェントベストジョブ フリーランス</strong>
+    <div class="foot-links">
+      <a href="/">トップ</a>
+      <a href="/jobs/">案件を探す</a>
+      <a href="/media/">お役立ち記事</a>
+      <a href="https://airtable.com/appYkc36EvioYoL1A/pag6CZC4uJmxUcrXT/form" target="_blank" rel="noopener">ご登録（スキルシート・ご希望の条件）</a>
+      <a href="https://line.me/R/ti/p/@697nxhbt?oat_content=url&ts=08302134" target="_blank" rel="noopener" data-line-cta="footer">LINEで相談する</a>
+      <a href="/privacy.html">個人情報の取り扱い</a>
+      <a href="https://www.agent-best.net/company/">運営会社</a>
+    </div>
+    <div class="foot-links">
+      <a href="https://jobs.agent-best.net/">正社員の求人を探す（エージェントベストジョブ）</a>
+      <a href="https://skill.agent-best.net/">エージェントベストジョブ手に職</a>
+      <a href="https://www.agent-best.net/">エージェントベスト</a>
+    </div>
+    <p>運営：株式会社エージェントベスト（有料職業紹介事業 許可番号 13-ユ-316964）<br>〒106-0032 東京都港区六本木4-8-7 嶋田ビル5階</p>
+  </div>
+</footer>
+<script src="/assets/fav.js" defer></script>
+</body>
+</html>
