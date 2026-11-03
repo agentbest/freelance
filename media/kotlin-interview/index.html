@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Kotlinエンジニアのフリーランス面談でよく聞かれる質問と答え方｜エージェントベストジョブ フリーランス</title>
+<meta name="description" content="サーバーサイドKotlinの面談では、Kotlinの実務の範囲とJavaとの比率、null安全とJavaとの境界、コルーチンで起きた問題、フレームワークと版、移行の進め方がよく聞かれます。質問の意図と答えの組み立て方、準備、逆質問を整理します。">
+<link rel="canonical" href="https://freelance.agent-best.net/media/kotlin-interview/">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="エージェントベストジョブ フリーランス">
+<meta property="og:title" content="Kotlinエンジニアのフリーランス面談でよく聞かれる質問と答え方｜エージェントベストジョブ フリーランス">
+<meta property="og:description" content="サーバーサイドKotlinの面談では、Kotlinの実務の範囲とJavaとの比率、null安全とJavaとの境界、コルーチンで起きた問題、フレームワークと版、移行の進め方がよく聞かれます。質問の意図と答えの組み立て方、準備、逆質問を整理します。">
+<meta property="og:url" content="https://freelance.agent-best.net/media/kotlin-interview/">
+<meta property="og:image" content="https://freelance.agent-best.net/assets/ogp.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://freelance.agent-best.net/assets/ogp.png">
+<meta name="theme-color" content="#1E3A5F">
+<link rel="icon" href="/assets/favicon.ico">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="stylesheet" href="/assets/site.css">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1XXMP8Y1B4"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-1XXMP8Y1B4');
+document.addEventListener('click',e=>{const a=e.target.closest('[data-line-cta]');if(a)gtag('event','line_add_friend',{placement:a.dataset.lineCta,page_path:location.pathname});});</script>
+<script type="application/ld+json">[{"@context":"https://schema.org","@type":"Article","headline":"Kotlinエンジニアのフリーランス面談でよく聞かれる質問と答え方","description":"サーバーサイドKotlinの面談では、Kotlinの実務の範囲とJavaとの比率、null安全とJavaとの境界、コルーチンで起きた問題、フレームワークと版、移行の進め方がよく聞かれます。質問の意図と答えの組み立て方、準備、逆質問を整理します。","datePublished":"2026-11-04","dateModified":"2026-11-04","author":{"@type":"Organization","name":"株式会社エージェントベスト","url":"https://www.agent-best.net/"},"publisher":{"@type":"Organization","name":"株式会社エージェントベスト","logo":{"@type":"ImageObject","url":"https://freelance.agent-best.net/assets/logo.png"}},"mainEntityOfPage":"https://freelance.agent-best.net/media/kotlin-interview/"},{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"トップ","item":"https://freelance.agent-best.net/"},{"@type":"ListItem","position":2,"name":"お役立ち記事","item":"https://freelance.agent-best.net/media/"},{"@type":"ListItem","position":3,"name":"バックエンド開発","item":"https://freelance.agent-best.net/media/hub/backend/"},{"@type":"ListItem","position":4,"name":"Kotlinエンジニアのフリーランス面談でよく聞かれる質問と答え方"}]},{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Kotlinの実務が短いのですが、面談ではどう話せばよいですか？","acceptedAnswer":{"@type":"Answer","text":"Kotlinの期間とJavaなどほかの言語の期間を分けて示し、Kotlinで書いた部分で自分が判断したことを中心に話します。期間を長く見せるより、短い期間でもKotlinらしい設計の例を一つ具体的に話せるほうが、評価につながりやすくなります。"}},{"@type":"Question","name":"AndroidでKotlinを書いてきた経験は、サーバーサイドの面談で通用しますか？","acceptedAnswer":{"@type":"Answer","text":"言語とコルーチンの経験は土台として伝わります。ただ、データベースの設計やトランザクション、APIの設計、本番の監視について聞かれることが多いため、サーバー側で担った経験があれば、それを中心に話せるよう準備しておきましょう。"}},{"@type":"Question","name":"面談で答えられない技術の質問が出たらどうすればよいですか？","acceptedAnswer":{"@type":"Answer","text":"分からないことは分からないと伝え、似た経験や、調べるとしたらどこから当たるかを添えるのが無難です。知らないことを推測で言い切ると、掘り下げられたときに信頼を損ねます。見送られやすい理由は面談で見送られる理由の記事で解説しています。"}}]}]</script>
+</head>
+<body>
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="/"><img src="/assets/mark.png" alt="" width="28" height="28"><span>エージェントベストジョブ フリーランス<small>フリーランスのエンジニア・コンサル向け案件紹介</small></span></a>
+    <nav class="head-nav" aria-label="メニュー">
+      <a class="link" href="/jobs/">案件を探す</a>
+      <a class="link" href="/media/">お役立ち記事</a>
+      <a class="link keep" href="/mypage/" aria-label="気になる案件">☆ 気になる<span class="fav-count" data-fav-count hidden></span></a>
+      <a class="btn btn-primary btn-sm" href="https://airtable.com/appYkc36EvioYoL1A/pag6CZC4uJmxUcrXT/form" target="_blank" rel="noopener">無料で登録</a>
+    </nav>
+  </div>
+</header>
+<main class="wrap narrow article">
+  <p class="crumbs"><a href="/">トップ</a> › <a href="/media/">お役立ち記事</a> › <a href="/media/hub/backend/">バックエンド開発</a></p>
+  <a class="art-hub" href="/media/hub/backend/">バックエンド開発</a>
+  <h1 class="art-title">Kotlinエンジニアのフリーランス面談でよく聞かれる質問と答え方</h1>
+  <p class="note">公開 2026-11-04　監修：株式会社エージェントベスト</p>
+  <nav class="toc" aria-label="目次"><strong>目次</strong><ol><li><a href="#s1">Kotlinの面談で面談官が見ていること</a></li><li><a href="#s2">よく聞かれる質問と答え方の考え方</a></li><li><a href="#s3">技術課題やコードを見せる場面への備え</a></li><li><a href="#s4">準備は「判断の場面」と「起きた問題」を3〜4つに絞る</a></li><li><a href="#s5">Kotlinならではの逆質問</a></li><li><a href="#s6">よくある質問</a></li></ol></nav>
+  <div class="art-body">
+<p>Kotlinエンジニアのフリーランス面談でよく聞かれるのは、<strong>Kotlinでどこまでの実務を担ったか、Javaとの境界やnullをどう扱ったか、コルーチンを本番でどう使い何が起きたか、版の更新や移行をどう進めたか</strong>の4つです。面談官は文法の知識より、「この人に任せたら、Kotlinらしく保守しやすいコードを書き、問題が起きたときに自分で原因を追えるか」を確かめようとしています。</p>
+<p>答えるときは、模範解答を覚えるより、自分の経験から「判断した場面」と「本番で起きた問題」を3〜4つ選び、どの質問にもそこから答えられるように準備しておくのが近道です。面談全般の答え方は<a href="/media/interview-questions/">業務委託の面談でよく聞かれる質問と答え方</a>で解説しているので、この記事ではKotlinの面談に固有の質問に絞ります。</p>
+<h2 id="s1">Kotlinの面談で面談官が見ていること</h2>
+<p>Kotlinの案件の面談には、発注元のテックリードやKotlinの経験がある開発者が出てくることが多くあります。そのため、使った技術の名前を並べるより、<strong>なぜその書き方を選んだか</strong>を聞いています。</p>
+<p>面談官が知りたいのは、おおむね次の3点です。</p>
+<ol><li><strong>Kotlinの実務の深さ</strong>：Javaの書き方を置き換えただけか、型の仕組みや非同期処理を生かして設計してきたか</li><li><strong>既存資産との付き合い方</strong>：Javaのコードやライブラリ、古い版の設定が残る現場で動けるか</li><li><strong>自走できるか</strong>：問題が起きたときに、ログや指標から原因を追い、直して説明できるか</li></ol>
+<h2 id="s2">よく聞かれる質問と答え方の考え方</h2>
+<p>ここで示す答えの例は、組み立て方を伝えるための<strong>架空の例</strong>です。ご自身の経験に置き換えて準備してください。</p>
+<h3>1. 「Kotlinの実務はどのくらいですか。Javaとの比率も教えてください」</h3>
+<p>確かめたいのは、Kotlinの経験の中身です。期間に加えて、新しいコードをKotlinで書いていたのか、Javaとの混在の中で一部だけだったのか、使ったフレームワークは何かを短く伝えます。Javaの経験が長い人は、Javaの期間とKotlinの期間を分けて話すと、スキルシートとの食い違いが起きません。</p>
+<p>架空の例：「直近の2年は、Spring Bootの新しいAPIをすべてKotlinで書いていました。既存の部分はJavaで、チーム全体ではおよそ半々です」</p>
+<h3>2. 「null安全をどう生かしていましたか。Javaのライブラリとの境界は？」</h3>
+<p>Kotlinらしい設計ができるかを測る質問です。<code>?</code>を付けて逃がすだけでなく、<strong>どこでnullを許し、どこで型として排除したか</strong>を話します。Javaのライブラリが返す値をどの層で受けて、Kotlinの型に変換していたか、といった具体的な線の引き方を示すと伝わります。</p>
+<h3>3. 「コルーチンを本番で使って、困ったことはありますか」</h3>
+<p>差がつきやすい質問です。「使ったことがある」で終わらせず、次の順で組み立てます。</p>
+<ul><li>どんな処理でコルーチンを使ったか</li><li>何が起きたか（処理が取り残された、例外が握りつぶされた、遅延が増えたなど）</li><li>どうやって原因に気づき、何を直したか</li><li>その後、チームの書き方として何を決めたか</li></ul>
+<p>Kotlinの公式ドキュメントは、Ktorがコルーチンを使って高いスケーラビリティを得ていると説明しています（2026年10月時点）。非同期の処理を扱う現場は多いため、キャンセルや例外の伝わり方まで説明できると、設計を任せてもらいやすくなります。</p>
+<h3>4. 「sealedクラスやdata classで、業務の状態をどう表しましたか」</h3>
+<p>型で業務を表す力を見ています。たとえば処理の結果を成功と失敗の型に分けた、状態の遷移を型で表して<code>when</code>で漏れなく扱った、といった例を、<strong>それで何が防げたか</strong>とあわせて話します。</p>
+<h3>5. 「Spring BootとKtorのどちらを使っていましたか。版はいくつでしたか」</h3>
+<p>技術の前提が合うかの確認です。フレームワークと、Kotlin・JDK・フレームワークの版を答えます。版を上げた経験があれば、何が変わり、どこでつまずいたかを添えると、運用の経験として受け止められます。版を正確に覚えていない場合は、おおよその時期とともに「当時の最新の系列から一つ前」のように答え、あいまいな数字を言い切らないほうが無難です。</p>
+<h3>6. 「JavaからKotlinへの移行は、どう進めましたか」</h3>
+<p>移行の案件で特に深く聞かれます。どのモジュールから移したか、なぜその順番にしたか、混在する期間にビルドとテストをどう保ったか、Javaのコードから呼ばれる部分をどう公開したかを話します。自分が決める立場でなかった場合は、決めた人と自分が担った範囲を分けて伝えます。</p>
+<h3>7. 「テストとビルドはどうしていましたか」</h3>
+<p>単体テストと結合テストの分け方、モックの使い方、GradleのKotlin DSLを自分で直せるかを見ています。依存関係の更新を自分で進めた経験があれば、その手順を一つ話せるようにしておきます。</p>
+<h3>8. 「本番で遅延や障害が起きたとき、どう調べましたか」</h3>
+<p>自走できるかの確認です。どの指標やログで気づき、JVMのメモリやスレッドの状態をどう見て、原因をどう特定したかを順に話します。原因が自分のコードでなかった場合も、切り分けの手順を話せれば経験として伝わります。</p>
+<aside class="box box-view"><p class="box-label">エージェントベストの見解</p><p>Kotlinの案件をご紹介していると、面談で評価されやすいのは、うまくいった機能の話より「本番で起きた問題」を順を追って話せる方です。反対に、どの質問にも「Kotlinらしく書くよう心がけていました」のような答えが続くと、判断の中身が見えず、見送られやすい傾向があります。小さな不具合の話でも、何を見て何を直したかを具体的に話せれば、十分な材料になります。</p></aside>
+<h2 id="s3">技術課題やコードを見せる場面への備え</h2>
+<p>面談の前後に、簡単な技術課題や、過去に書いたコードの説明を求められることがあります。課題が出た場合は、動くことに加えて、<strong>なぜその書き方にしたかを短く説明できること</strong>が見られます。課題の範囲や扱いの考え方は<a href="/media/tech-test/">技術テストの記事</a>で解説しています。</p>
+<p>公開しているコードを見せる場合は、前の現場のコードや社名が含まれていないかを先に確かめます。業務のコードを持ち出して見せることは、守秘の面で問題になります。</p>
+<h2 id="s4">準備は「判断の場面」と「起きた問題」を3〜4つに絞る</h2>
+<ol><li><strong>場面を選ぶ</strong>：設計の判断、コルーチンの問題、移行や版の更新、障害の調査など、性質の違う場面を3〜4つ選ぶ</li><li><strong>場面ごとにメモをつくる</strong>：状況、気づいたきっかけ、選択肢、選んだ理由、結果、チームで決めたことを書き出す</li><li><strong>数字をそろえる</strong>：期間、チームの人数、Kotlinとほかの言語の比率を、どの場面でも同じ数字で言えるようにする</li><li><strong>2分版と5分版をつくる</strong>：最初は短く話し、掘り下げられたら詳しく話せるようにする</li><li><strong>スキルシートと照らし合わせる</strong>：シートに書いたフレームワークや版と、話の内容が一致しているかを確かめる</li></ol>
+<p>面談官はシートを見ながら質問するため、話とシートがずれると、どちらも信用されにくくなります。シートの書き方は<a href="/media/kotlin-skillsheet/">Kotlinのスキルシートの書き方</a>、冒頭の自己紹介は<a href="/media/self-introduction/">面談の自己紹介の記事</a>で解説しています。</p>
+<aside class="box box-caution"><p class="box-label">注意</p><p>前の現場のサービス名や社名、内部の設計の細部、障害の詳しい内容を話しすぎないよう注意しましょう。障害の話は、規模や影響を伏せても、気づき方と直し方を話せば十分に伝わります。前の現場のコードや前任者の書き方を批判する話し方も、聞き手に「自分たちのコードも同じように言われるのでは」と受け取られやすいので避けたほうが無難です。</p></aside>
+<h2 id="s5">Kotlinならではの逆質問</h2>
+<p>逆質問は、印象づくりより<strong>参画後のずれを防ぐ確認</strong>に使います。Kotlinの案件では、次の点を聞いておくと判断がしやすくなります。</p>
+<ul><li>新しいコードはKotlinで書くのか、Javaの保守がどのくらいあるか</li><li>Kotlin・JDK・フレームワークの版と、版の更新の方針</li><li>コルーチンを使っているか、使っている場合の書き方の決まり</li><li>コーディング規約や静的解析の設定があるか</li><li>移行の案件なら、移す順番と、残りの範囲の見込み</li><li>障害の当番があるか</li></ul>
+<p>一般的な逆質問の考え方は<a href="/media/reverse-questions/">業務委託の面談で聞いておくべき逆質問</a>にまとめています。聞いた内容は、契約前の確認にもそのまま使えます。案件を選ぶときの確認点は<a href="/media/kotlin-anken-erabi/">Kotlinの案件の選び方</a>で整理しています。</p>
+<aside class="box box-view"><p class="box-label">エージェントベストの見解</p><p>当社では、経歴はご本人の了承を得た案件にだけ、氏名・連絡先を伏せてご提案しています。Kotlinの案件は、新規開発か移行か、Spring BootかKtorかで、面談で掘り下げられる点が変わります。面談の前に、案件票では分からない技術の前提や体制について確かめたい点があれば、ご質問いただければ確認します。</p></aside>
+<aside class="box box-point"><p class="box-label">ポイント</p><ul><li>Kotlinの面談では、実務の範囲とJavaとの比率、null安全と境界、コルーチンの問題、版と移行がよく聞かれる</li><li>答えは「状況→気づいたきっかけ→選んだ理由→結果→チームで決めたこと」の順で組み立てる</li><li>準備は判断の場面と起きた問題を3〜4つに絞り、スキルシートと内容をそろえる</li><li>逆質問では、Kotlinの比率、版の方針、コルーチンの決まり、当番の有無を確かめる</li></ul></aside>
+<h2 id="s6">よくある質問</h2>
+<h3>Kotlinの実務が短いのですが、面談ではどう話せばよいですか？</h3>
+<p>Kotlinの期間とJavaなどほかの言語の期間を分けて示し、Kotlinで書いた部分で自分が判断したことを中心に話します。期間を長く見せるより、短い期間でもKotlinらしい設計の例を一つ具体的に話せるほうが、評価につながりやすくなります。</p>
+<h3>AndroidでKotlinを書いてきた経験は、サーバーサイドの面談で通用しますか？</h3>
+<p>言語とコルーチンの経験は土台として伝わります。ただ、データベースの設計やトランザクション、APIの設計、本番の監視について聞かれることが多いため、サーバー側で担った経験があれば、それを中心に話せるよう準備しておきましょう。</p>
+<h3>面談で答えられない技術の質問が出たらどうすればよいですか？</h3>
+<p>分からないことは分からないと伝え、似た経験や、調べるとしたらどこから当たるかを添えるのが無難です。知らないことを推測で言い切ると、掘り下げられたときに信頼を損ねます。見送られやすい理由は<a href="/media/interview-fail-reasons/">面談で見送られる理由の記事</a>で解説しています。</p>
+  </div>
+  <section class="sources"><h2>参考にした公的情報・資料</h2><ul><li><a href="https://kotlinlang.org/docs/server-overview.html" target="_blank" rel="noopener nofollow">Kotlin for server side（Kotlin Documentation）</a></li></ul>
+  <p class="note">記事の内容は公開日時点の情報にもとづきます。制度や税率は変わることがあるため、手続きの前に必ず各機関の最新情報をご確認ください。</p></section>
+  <div class="cta-band">
+  <h2>条件に合う案件だけ、知りたい方へ</h2>
+  <p>ご登録は無料です。条件に合う案件だけを、ご本人の了承を得てからご提案します。</p>
+  <div class="cta-row">
+    <a class="btn btn-primary" href="https://airtable.com/appYkc36EvioYoL1A/pag6CZC4uJmxUcrXT/form" target="_blank" rel="noopener">無料で登録する</a>
+    <a class="btn btn-ghost" href="/jobs/">案件を探す</a>
+  </div>
+</div>
+  <section class="related"><h2>あわせて読みたい</h2><div class="grid g2"><a class="card art-card" href="/media/interview-questions/">
+  <span class="art-hub">スキルシート・面談</span>
+  <h3>業務委託の面談でよく聞かれる質問と答え方｜回答の組み立て方</h3>
+  <p>業務委託の面談では、経歴の説明、直近案件での役割、技術や業務の深さ、稼働条件の4つがよく聞かれます。「結論→背景→自分の行動→結果」の順で短く答えると伝わりやすくなります。質問ごとの答え方を架空の例で紹介します。</p>
+</a>
+<a class="card art-card" href="/media/reverse-questions/">
+  <span class="art-hub">スキルシート・面談</span>
+  <h3>業務委託の面談で聞いておくべき逆質問｜参画後のずれを防ぐ確認項目</h3>
+  <p>業務委託の面談の逆質問は、印象づくりより「参画後のずれを防ぐ確認」に使うのが基本です。業務の範囲、体制と指示の流れ、稼働の実態、期間の見込みの4つを確かめておくと、契約後の「話が違う」を減らせます。</p>
+</a>
+<a class="card art-card" href="/media/kotlin-skillsheet/">
+  <span class="art-hub">バックエンド開発</span>
+  <h3>Kotlinエンジニアのスキルシートの書き方｜面談で評価される実績の見せ方</h3>
+  <p>サーバーサイドKotlinのスキルシートは、Kotlinの期間をJavaなどと分け、フレームワークと版、コルーチンを使った箇所、Javaからの移行で担ったことを書くのが基本です。書き方と架空の記入例を紹介します。</p>
+</a>
+<a class="card art-card" href="/media/kotlin-skills/">
+  <span class="art-hub">バックエンド開発</span>
+  <h3>Kotlinエンジニアのフリーランス案件で求められるスキルと経験</h3>
+  <p>サーバーサイドKotlinの案件では、null安全や型を生かした設計、コルーチンでの非同期処理、Spring BootやKtorの作法、Javaとの相互運用、Gradleとテストが見られます。分野ごと・経験の段階ごとに整理します。</p>
+</a>
+<a class="card art-card" href="/media/kotlin-how-to/">
+  <span class="art-hub">バックエンド開発</span>
+  <h3>Kotlinエンジニアがフリーランスになるには｜必要な経験と独立までの進め方</h3>
+  <p>サーバーサイドKotlinで独立するには、KotlinでAPIやサービスを作り本番で動かした経験と、JVM・Spring Boot・Gradleなど周辺の土台を扱えることが目安です。出発点ごとの準備と独立までの手順を解説します。</p>
+</a>
+<a class="card art-card" href="/media/kotlin-anken-erabi/">
+  <span class="art-hub">バックエンド開発</span>
+  <h3>Kotlinエンジニアのフリーランス案件の選び方｜契約前に確かめたいこと</h3>
+  <p>Kotlinの案件は、同じ募集でもKotlinの比率や版、案件の型、運用の範囲で中身と負担が大きく変わります。Kotlinの比率、版と更新の方針、案件の型と役割、非同期処理と運用の範囲、体制、契約の形と精算、期間と商流の7点の確かめ方を解説します。</p>
+</a></div></section>
+</main>
+<footer class="site-foot">
+  <div class="wrap">
+    <strong>エージェントベストジョブ フリーランス</strong>
+    <div class="foot-links">
+      <a href="/">トップ</a>
+      <a href="/jobs/">案件を探す</a>
+      <a href="/media/">お役立ち記事</a>
+      <a href="https://airtable.com/appYkc36EvioYoL1A/pag6CZC4uJmxUcrXT/form" target="_blank" rel="noopener">ご登録（スキルシート・ご希望の条件）</a>
+      <a href="https://line.me/R/ti/p/@697nxhbt?oat_content=url&ts=08302134" target="_blank" rel="noopener" data-line-cta="footer">LINEで相談する</a>
+      <a href="/privacy.html">個人情報の取り扱い</a>
+      <a href="https://www.agent-best.net/company/">運営会社</a>
+    </div>
+    <div class="foot-links">
+      <a href="https://jobs.agent-best.net/">正社員の求人を探す（エージェントベストジョブ）</a>
+      <a href="https://skill.agent-best.net/">エージェントベストジョブ手に職</a>
+      <a href="https://www.agent-best.net/">エージェントベスト</a>
+    </div>
+    <p>運営：株式会社エージェントベスト（有料職業紹介事業 許可番号 13-ユ-316964）<br>〒106-0032 東京都港区六本木4-8-7 嶋田ビル5階</p>
+  </div>
+</footer>
+<script src="/assets/fav.js" defer></script>
+</body>
+</html>

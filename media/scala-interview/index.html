@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Scalaエンジニアのフリーランス面談でよく聞かれる質問と答え方の準備｜エージェントベストジョブ フリーランス</title>
+<meta name="description" content="Scala案件の面談では、使った版と書き方の型、失敗の扱い方、抽象化をやめた判断、副作用の閉じ込め方、移行や性能の問題の解き方がよく聞かれます。質問ごとの意図と答えの組み立て方、準備、逆質問を整理します。">
+<link rel="canonical" href="https://freelance.agent-best.net/media/scala-interview/">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="エージェントベストジョブ フリーランス">
+<meta property="og:title" content="Scalaエンジニアのフリーランス面談でよく聞かれる質問と答え方の準備｜エージェントベストジョブ フリーランス">
+<meta property="og:description" content="Scala案件の面談では、使った版と書き方の型、失敗の扱い方、抽象化をやめた判断、副作用の閉じ込め方、移行や性能の問題の解き方がよく聞かれます。質問ごとの意図と答えの組み立て方、準備、逆質問を整理します。">
+<meta property="og:url" content="https://freelance.agent-best.net/media/scala-interview/">
+<meta property="og:image" content="https://freelance.agent-best.net/assets/ogp.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://freelance.agent-best.net/assets/ogp.png">
+<meta name="theme-color" content="#1E3A5F">
+<link rel="icon" href="/assets/favicon.ico">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="stylesheet" href="/assets/site.css">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1XXMP8Y1B4"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-1XXMP8Y1B4');
+document.addEventListener('click',e=>{const a=e.target.closest('[data-line-cta]');if(a)gtag('event','line_add_friend',{placement:a.dataset.lineCta,page_path:location.pathname});});</script>
+<script type="application/ld+json">[{"@context":"https://schema.org","@type":"Article","headline":"Scalaエンジニアのフリーランス面談でよく聞かれる質問と答え方の準備","description":"Scala案件の面談では、使った版と書き方の型、失敗の扱い方、抽象化をやめた判断、副作用の閉じ込め方、移行や性能の問題の解き方がよく聞かれます。質問ごとの意図と答えの組み立て方、準備、逆質問を整理します。","datePublished":"2026-11-04","dateModified":"2026-11-04","author":{"@type":"Organization","name":"株式会社エージェントベスト","url":"https://www.agent-best.net/"},"publisher":{"@type":"Organization","name":"株式会社エージェントベスト","logo":{"@type":"ImageObject","url":"https://freelance.agent-best.net/assets/logo.png"}},"mainEntityOfPage":"https://freelance.agent-best.net/media/scala-interview/"},{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"トップ","item":"https://freelance.agent-best.net/"},{"@type":"ListItem","position":2,"name":"お役立ち記事","item":"https://freelance.agent-best.net/media/"},{"@type":"ListItem","position":3,"name":"バックエンド開発","item":"https://freelance.agent-best.net/media/hub/backend/"},{"@type":"ListItem","position":4,"name":"Scalaエンジニアのフリーランス面談でよく聞かれる質問と答え方の準備"}]},{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"参画先と違うエフェクトのライブラリしか使ったことがありません。不利になりますか？","acceptedAnswer":{"@type":"Answer","text":"不利になるとは限りません。面談官が見ているのは、副作用をどこに閉じ込め、資源をどう解放するかという考え方であることが多いためです。使ったライブラリでの書き方と、参画先のライブラリでの対応する書き方を説明できるようにしておくと安心です。"}},{"@type":"Question","name":"Scala 3の経験がないと面談で厳しく見られますか？","acceptedAnswer":{"@type":"Answer","text":"Scala 2.13で動いている現場やSparkの案件では、Scala 3の経験がなくても問題にならないことがあります。新しく作る案件や移行を控えた案件では聞かれやすいので、手元でScala 3に触れ、Scala 2との違いを自分の言葉で話せるようにしておきましょう。"}},{"@type":"Question","name":"Javaの経験が長いことは、どう話せばよいですか？","acceptedAnswer":{"@type":"Answer","text":"JVMの性能調査やJavaのライブラリとの組み合わせなど、Javaの経験が生きる場面を具体的に話すと評価につながります。あわせて、Scalaでは例外やnullに頼らず型で失敗を表す書き方に移れていることを示しましょう。Javaの面談との違いはJavaエンジニアの面談の記事も参考になります。"}}]}]</script>
+</head>
+<body>
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="/"><img src="/assets/mark.png" alt="" width="28" height="28"><span>エージェントベストジョブ フリーランス<small>フリーランスのエンジニア・コンサル向け案件紹介</small></span></a>
+    <nav class="head-nav" aria-label="メニュー">
+      <a class="link" href="/jobs/">案件を探す</a>
+      <a class="link" href="/media/">お役立ち記事</a>
+      <a class="link keep" href="/mypage/" aria-label="気になる案件">☆ 気になる<span class="fav-count" data-fav-count hidden></span></a>
+      <a class="btn btn-primary btn-sm" href="https://airtable.com/appYkc36EvioYoL1A/pag6CZC4uJmxUcrXT/form" target="_blank" rel="noopener">無料で登録</a>
+    </nav>
+  </div>
+</header>
+<main class="wrap narrow article">
+  <p class="crumbs"><a href="/">トップ</a> › <a href="/media/">お役立ち記事</a> › <a href="/media/hub/backend/">バックエンド開発</a></p>
+  <a class="art-hub" href="/media/hub/backend/">バックエンド開発</a>
+  <h1 class="art-title">Scalaエンジニアのフリーランス面談でよく聞かれる質問と答え方の準備</h1>
+  <p class="note">公開 2026-11-04　監修：株式会社エージェントベスト</p>
+  <nav class="toc" aria-label="目次"><strong>目次</strong><ol><li><a href="#s1">Scalaの面談で面談官が見ていること</a></li><li><a href="#s2">よく聞かれる質問と答え方の考え方</a></li><li><a href="#s3">コードを読む・書く課題が出ることもある</a></li><li><a href="#s4">準備は「判断の場面」を3〜4つに絞る</a></li><li><a href="#s5">面談の相手によって重心が変わる</a></li><li><a href="#s6">Scalaならではの逆質問</a></li><li><a href="#s7">よくある質問</a></li></ol></nav>
+  <div class="art-body">
+<p>Scalaエンジニアのフリーランスの面談でよく聞かれるのは、<strong>どの版のScalaをどんな書き方の現場で使ったか、失敗をどう型で表したか、抽象化をどこで止めたか、副作用をどこに閉じ込めたか、移行や性能の問題をどう解いたか</strong>の5つです。面談官は、知っている機能の数より「この人がうちのコードに入ったら、チームの書き方に合わせて読みやすく書けるか」を確かめようとしています。</p>
+<p>模範回答を覚えるより、自分の経験から「判断した場面」を3〜4つ選び、どの質問にもそこから答えられるようにしておくのが近道です。面談全般の答え方の型は<a href="/media/interview-questions/">業務委託の面談でよく聞かれる質問と答え方</a>で解説しているので、この記事ではScalaの面談に固有の質問に絞ります。</p>
+<h2 id="s1">Scalaの面談で面談官が見ていること</h2>
+<p>Scalaの案件の面談には、参画先の技術リードや、Scalaで長く書いてきた開発者が出てくることが多くあります。Scalaは同じ処理を何通りにも書ける言語なので、面談官は<strong>書き方の選び方の理由</strong>を聞きたがります。</p>
+<p>見ている点は、おおむね次の3つです。</p>
+<ol><li><strong>書き方の型が合うか</strong>：標準ライブラリのFuture中心か、エフェクトを型で扱うライブラリ中心か、Scala 2か3か。自社の現場に近い経験か</li><li><strong>読みやすさへの感覚</strong>：高度な型を使えることより、チームの習熟に合わせて抽象化の程度を決められるか</li><li><strong>本番で問題を追えるか</strong>：ビルドの依存の衝突、JVMのメモリやスレッド、遅い処理の原因をどこまで自分で調べられるか</li></ol>
+<p>以下の質問は、この3つのどれかを確かめるためのものです。</p>
+<h2 id="s2">よく聞かれる質問と答え方の考え方</h2>
+<p>ここで示す答えの例は、組み立て方を伝えるための<strong>架空の例</strong>です。ご自身の経験に置き換えて準備してください。</p>
+<h3>1. 「直近の案件で使っていたScalaの版と、主なライブラリを教えてください」</h3>
+<p>確かめたいのは、書き方の型が自社に近いかです。Scalaの版（2.12・2.13・3）、ビルドの仕組み、非同期の書き方（Futureか、エフェクトのライブラリか）、Webの層やデータベースのライブラリを短く伝えます。名前を並べるだけでなく、「チームの中ではこういう書き方が決まりだった」と一言添えると、現場の姿が伝わります。</p>
+<p>架空の例：「Scala 2.13で、非同期はエフェクトのライブラリに統一していました。業務のエラーはEitherで返し、例外は境界の層でだけ扱う決まりでした」</p>
+<h3>2. 「失敗やエラーはどう扱っていましたか」</h3>
+<p>Scalaの面談でとても多い質問です。Option・Either・例外をどう使い分けたか、業務のエラーとシステムのエラーをどこで分けたかを話します。<strong>なぜその使い分けにしたか</strong>まで話せると、決まりに従っていただけでないことが伝わります。</p>
+<h3>3. 「抽象化をやりすぎた、あるいはやめた経験はありますか」</h3>
+<p>Scalaらしい質問です。型クラスやimplicit（Scala 3ではgiven・using）で共通化しようとして、読めるコードにならなかった場面や、あえて単純な書き方を選んだ場面を話します。面談官は、高度な書き方を自慢する話より、<strong>チームのことを考えて書き方を選んだ話</strong>を評価しやすい傾向があります。</p>
+<h3>4. 「副作用のある処理は、どこに集めていましたか」</h3>
+<p>データベースや外部APIの呼び出しを、どの層に集め、どう試験していたかを確かめる質問です。処理を途中で止めるときの資源の解放や、並行で動かす数の抑え方まで話せると、本番での振る舞いを分かっている印象になります。使ったことのないライブラリについて聞かれたら、知っている考え方とどう対応するかを話せば十分です。</p>
+<h3>5. 「Scala 2と3の違いで、移行のときに問題になる点は何ですか」</h3>
+<p>移行を控えた現場でよく聞かれます。公式の移行ガイドでは、Scala 3はScala 2.13でコンパイルされたライブラリを使える一方、Scala 3のコンパイラはScala 2のマクロを展開できないことなどが示されています（2026年10月時点）。移行の経験がある人は、依存の洗い出しから反映までの順番と、詰まった点を話します。経験がない人は、何を最初に調べるかを順に示せれば、考え方は伝わります。</p>
+<p>また、2026年9月にScala 3.9が新しい長期サポートの系列として公開されています。Scala 3の現場では「どの版に合わせるか」の話題になることもあるため、公式の案内に目を通しておくと話がしやすくなります。</p>
+<h3>6. 「性能の問題やビルドの不具合を調べた経験を教えてください」</h3>
+<p>遅い処理、メモリの不足、依存の衝突など、原因が分かりにくかった場面を選びます。<strong>何から疑い、どの道具で確かめ、何が原因だったか</strong>の順に話します。Scalaのコードではなく、JVMの設定や依存の版に原因があった話は、本番で頼れる人だという印象につながります。</p>
+<h3>7. 「コードレビューで、どんな指摘をすることが多いですか」</h3>
+<p>チームの書き方をそろえる側に回れるかを確かめる質問です。指摘の内容と、指摘の伝え方（理由を添える、代わりの書き方を示す）の両方を話します。</p>
+<h3>8. 「なぜScalaの案件を選んでいるのですか」</h3>
+<p>長く続けられるか、ほかの言語の案件へ移るつもりかを確かめる質問でもあります。Scalaのどこを生かしたいのかと、得意な領域（バックエンド、共通基盤、データ処理など）を添えると、案件との合い方が伝わります。</p>
+<aside class="box box-view"><p class="box-label">エージェントベストの見解</p><p>Scalaの案件をご紹介していると、面談で評価されやすいのは、使った機能の多さより「この書き方を選んだ理由」と「やめた理由」を具体的に話せる方です。反対に、ライブラリの名前を多く挙げても、それぞれの使い方を掘り下げられたときに答えが浅くなると、見送られやすい傾向があります。実務で深く使ったものに話を絞ることをおすすめします。</p></aside>
+<h2 id="s3">コードを読む・書く課題が出ることもある</h2>
+<p>Scalaの案件では、面談の中で短いコードを読んで説明したり、その場で小さな修正を考えたりする課題が出ることがあります。ねらいは正解の速さより、<strong>考えながら話す様子</strong>を見ることです。</p>
+<ul><li>分からないところは、分からないと言ってから、どう調べるかを話す</li><li>書き方が複数ある場合は、どれを選ぶか、なぜかを口に出す</li><li>Scala 2と3のどちらの前提かを最初に確かめる</li></ul>
+<p>課題の種類と準備の仕方は<a href="/media/tech-test/">技術テストの記事</a>で解説しています。</p>
+<h2 id="s4">準備は「判断の場面」を3〜4つに絞る</h2>
+<ol><li><strong>場面を選ぶ</strong>：失敗の扱い方、抽象化の判断、副作用の設計、移行または性能の調査など、性質の違う場面を3〜4つ選ぶ</li><li><strong>場面ごとにメモをつくる</strong>：状況、選択肢、選んだ理由、結果、次に変えたことを書き出す</li><li><strong>版とライブラリをそろえる</strong>：どの案件で何の版を使ったかを、スキルシートと同じ内容で言えるようにする</li><li><strong>短いコードを手元で書いておく</strong>：説明に使えそうな書き方を、自分の言葉で説明できる形にしておく</li><li><strong>2分版と5分版を用意する</strong>：最初は短く話し、掘り下げられたら詳しく話す</li></ol>
+<p>スキルシートと話の内容がずれると、どちらも信用されにくくなります。シートの書き方は<a href="/media/scala-skillsheet/">Scalaのスキルシートの記事</a>、冒頭の自己紹介は<a href="/media/self-introduction/">面談の自己紹介の記事</a>をご覧ください。</p>
+<aside class="box box-caution"><p class="box-label">注意</p><p>前の現場のコードの詳細や、社内のライブラリの名前、システムの構成をそのまま話してしまうと、守秘の面で不安を持たれます。説明に使うコードは、手元で書き直した一般的な例にしましょう。また、前の現場の書き方を強く批判すると、「うちの書き方にも合わせてもらえないのでは」と受け取られやすくなります。</p></aside>
+<h2 id="s5">面談の相手によって重心が変わる</h2>
+<div class="table-wrap"><table><thead><tr><th>面談の相手</th><th>重く見られやすい点</th></tr></thead><tbody><tr><td>技術リード・Scalaの開発者</td><td>書き方の選び方、型と副作用の設計、レビューの観点</td></tr><tr><td>開発の責任者・マネージャー</td><td>立ち上がりの早さ、チームとのやりとり、稼働の条件</td></tr><tr><td>データ基盤の担当者（Sparkの案件）</td><td>処理の性能の調整、データの偏りへの対処、ジョブの運用</td></tr></tbody></table></div>
+<h2 id="s6">Scalaならではの逆質問</h2>
+<p>逆質問は、参画後のずれを防ぐ確認に使います。Scalaの案件では、次の点を聞いておくと判断しやすくなります。</p>
+<ul><li>Scalaの版と、移行の予定の有無</li><li>非同期の書き方とライブラリの方針、チームの書き方の決まりが文書になっているか</li><li>レビューの進め方と、1つの変更が反映されるまでの流れ</li><li>チームの中でScalaに詳しい人の数と、相談できる相手</li><li>障害の当番の有無</li></ul>
+<p>一般的な逆質問の考え方は<a href="/media/reverse-questions/">業務委託の面談で聞いておくべき逆質問</a>にまとめています。逆質問で聞いた内容は、契約前の確認にも使えます。案件の選び方は<a href="/media/scala-anken-erabi/">Scala案件の選び方</a>で整理しています。</p>
+<aside class="box box-view"><p class="box-label">エージェントベストの見解</p><p>当社では、経歴をご本人の了承を得た案件にだけ、氏名・連絡先を伏せてご提案しています。Scalaの面談では、使われている版やライブラリ、書き方の方針など、案件票だけでは分からない点を事前に知っておくと準備がしやすくなります。面談の前に確かめたい点があれば、ご質問いただければ確認します。</p></aside>
+<aside class="box box-point"><p class="box-label">ポイント</p><ul><li>Scalaの面談では、版と書き方の型、失敗の扱い方、抽象化の判断、副作用の閉じ込め方、移行や性能の調査がよく聞かれる</li><li>答えは「状況→選択肢→選んだ理由→結果」の順に組み立て、やめた理由も話す</li><li>準備は判断の場面を3〜4つに絞り、スキルシートと内容をそろえる</li><li>逆質問では、版と移行の予定、書き方の方針、レビューの流れ、障害の当番を確かめる</li></ul></aside>
+<h2 id="s7">よくある質問</h2>
+<h3>参画先と違うエフェクトのライブラリしか使ったことがありません。不利になりますか？</h3>
+<p>不利になるとは限りません。面談官が見ているのは、副作用をどこに閉じ込め、資源をどう解放するかという考え方であることが多いためです。使ったライブラリでの書き方と、参画先のライブラリでの対応する書き方を説明できるようにしておくと安心です。</p>
+<h3>Scala 3の経験がないと面談で厳しく見られますか？</h3>
+<p>Scala 2.13で動いている現場やSparkの案件では、Scala 3の経験がなくても問題にならないことがあります。新しく作る案件や移行を控えた案件では聞かれやすいので、手元でScala 3に触れ、Scala 2との違いを自分の言葉で話せるようにしておきましょう。</p>
+<h3>Javaの経験が長いことは、どう話せばよいですか？</h3>
+<p>JVMの性能調査やJavaのライブラリとの組み合わせなど、Javaの経験が生きる場面を具体的に話すと評価につながります。あわせて、Scalaでは例外やnullに頼らず型で失敗を表す書き方に移れていることを示しましょう。Javaの面談との違いは<a href="/media/java-interview/">Javaエンジニアの面談の記事</a>も参考になります。</p>
+  </div>
+  <section class="sources"><h2>参考にした公的情報・資料</h2><ul><li><a href="https://docs.scala-lang.org/scala3/guides/migration/interoperability.html" target="_blank" rel="noopener nofollow">Interoperability Overview（Scala 3 Migration Guide）</a></li><li><a href="https://scala-lang.org/news/3.9/" target="_blank" rel="noopener nofollow">Scala 3.9 LTS released!（scala-lang.org）</a></li></ul>
+  <p class="note">記事の内容は公開日時点の情報にもとづきます。制度や税率は変わることがあるため、手続きの前に必ず各機関の最新情報をご確認ください。</p></section>
+  <div class="cta-band">
+  <h2>条件に合う案件だけ、知りたい方へ</h2>
+  <p>ご登録は無料です。条件に合う案件だけを、ご本人の了承を得てからご提案します。</p>
+  <div class="cta-row">
+    <a class="btn btn-primary" href="https://airtable.com/appYkc36EvioYoL1A/pag6CZC4uJmxUcrXT/form" target="_blank" rel="noopener">無料で登録する</a>
+    <a class="btn btn-ghost" href="/jobs/">案件を探す</a>
+  </div>
+</div>
+  <section class="related"><h2>あわせて読みたい</h2><div class="grid g2"><a class="card art-card" href="/media/interview-questions/">
+  <span class="art-hub">スキルシート・面談</span>
+  <h3>業務委託の面談でよく聞かれる質問と答え方｜回答の組み立て方</h3>
+  <p>業務委託の面談では、経歴の説明、直近案件での役割、技術や業務の深さ、稼働条件の4つがよく聞かれます。「結論→背景→自分の行動→結果」の順で短く答えると伝わりやすくなります。質問ごとの答え方を架空の例で紹介します。</p>
+</a>
+<a class="card art-card" href="/media/reverse-questions/">
+  <span class="art-hub">スキルシート・面談</span>
+  <h3>業務委託の面談で聞いておくべき逆質問｜参画後のずれを防ぐ確認項目</h3>
+  <p>業務委託の面談の逆質問は、印象づくりより「参画後のずれを防ぐ確認」に使うのが基本です。業務の範囲、体制と指示の流れ、稼働の実態、期間の見込みの4つを確かめておくと、契約後の「話が違う」を減らせます。</p>
+</a>
+<a class="card art-card" href="/media/tech-test/">
+  <span class="art-hub">スキルシート・面談</span>
+  <h3>技術面談・コーディングテストへの備え方｜形式の確かめ方と当日の進め方</h3>
+  <p>技術面談やコーディングテストで見られるのは、正解の速さより、考え方を説明しながら進められるかです。事前に形式・時間・使える道具を確かめ、直近の業務を説明する準備と、手を動かす練習を分けて行います。当日の進め方と注意点もまとめます。</p>
+</a>
+<a class="card art-card" href="/media/scala-skillsheet/">
+  <span class="art-hub">バックエンド開発</span>
+  <h3>Scalaエンジニアのスキルシートの書き方｜面談で評価される実績の見せ方</h3>
+  <p>Scalaエンジニアのスキルシートは、Scalaの版とビルドの仕組み、使ったライブラリと現場の書き方の型をプロジェクトごとに書き、担当内容には設計の判断を書くのが基本です。Java経験との分け方、移行の書き方を架空の例で解説します。</p>
+</a>
+<a class="card art-card" href="/media/scala-skills/">
+  <span class="art-hub">バックエンド開発</span>
+  <h3>Scalaエンジニアのフリーランス案件で求められるスキルと経験</h3>
+  <p>Scalaのフリーランス案件では、型で失敗やデータの形を表す書き方、エフェクトや並行処理のライブラリの扱い、sbtとJVMの知識、Scala 2と3の違いの理解が見られます。分野ごと・経験の段階ごとに解説します。</p>
+</a>
+<a class="card art-card" href="/media/scala-how-to/">
+  <span class="art-hub">バックエンド開発</span>
+  <h3>Scalaエンジニアがフリーランスになるには｜必要な経験と独立までの進め方</h3>
+  <p>Scalaでフリーランスになるには、Scalaで書いたサービスを本番で動かした経験と、チームの書き方に合わせて関数型のコードを読み書きできることが目安です。Java出身・他言語出身ごとの準備、独立までの手順を解説します。</p>
+</a></div></section>
+</main>
+<footer class="site-foot">
+  <div class="wrap">
+    <strong>エージェントベストジョブ フリーランス</strong>
+    <div class="foot-links">
+      <a href="/">トップ</a>
+      <a href="/jobs/">案件を探す</a>
+      <a href="/media/">お役立ち記事</a>
+      <a href="https://airtable.com/appYkc36EvioYoL1A/pag6CZC4uJmxUcrXT/form" target="_blank" rel="noopener">ご登録（スキルシート・ご希望の条件）</a>
+      <a href="https://line.me/R/ti/p/@697nxhbt?oat_content=url&ts=08302134" target="_blank" rel="noopener" data-line-cta="footer">LINEで相談する</a>
+      <a href="/privacy.html">個人情報の取り扱い</a>
+      <a href="https://www.agent-best.net/company/">運営会社</a>
+    </div>
+    <div class="foot-links">
+      <a href="https://jobs.agent-best.net/">正社員の求人を探す（エージェントベストジョブ）</a>
+      <a href="https://skill.agent-best.net/">エージェントベストジョブ手に職</a>
+      <a href="https://www.agent-best.net/">エージェントベスト</a>
+    </div>
+    <p>運営：株式会社エージェントベスト（有料職業紹介事業 許可番号 13-ユ-316964）<br>〒106-0032 東京都港区六本木4-8-7 嶋田ビル5階</p>
+  </div>
+</footer>
+<script src="/assets/fav.js" defer></script>
+</body>
+</html>

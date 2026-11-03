@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Kotlinエンジニアのフリーランスがつまずきやすい点と対策｜エージェントベストジョブ フリーランス</title>
+<meta name="description" content="フリーランスのKotlinエンジニアがつまずきやすいのは、Kotlinの案件のつもりがJava中心だったという食い違い、現場ごとの書き方の揺れ、Javaとの境界のnullやコルーチンの扱い、版の更新や障害対応での稼働の膨らみです。契約・現場・技術・お金の順に整理します。">
+<link rel="canonical" href="https://freelance.agent-best.net/media/kotlin-tsumazuki/">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="エージェントベストジョブ フリーランス">
+<meta property="og:title" content="Kotlinエンジニアのフリーランスがつまずきやすい点と対策｜エージェントベストジョブ フリーランス">
+<meta property="og:description" content="フリーランスのKotlinエンジニアがつまずきやすいのは、Kotlinの案件のつもりがJava中心だったという食い違い、現場ごとの書き方の揺れ、Javaとの境界のnullやコルーチンの扱い、版の更新や障害対応での稼働の膨らみです。契約・現場・技術・お金の順に整理します。">
+<meta property="og:url" content="https://freelance.agent-best.net/media/kotlin-tsumazuki/">
+<meta property="og:image" content="https://freelance.agent-best.net/assets/ogp.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://freelance.agent-best.net/assets/ogp.png">
+<meta name="theme-color" content="#1E3A5F">
+<link rel="icon" href="/assets/favicon.ico">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="stylesheet" href="/assets/site.css">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1XXMP8Y1B4"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-1XXMP8Y1B4');
+document.addEventListener('click',e=>{const a=e.target.closest('[data-line-cta]');if(a)gtag('event','line_add_friend',{placement:a.dataset.lineCta,page_path:location.pathname});});</script>
+<script type="application/ld+json">[{"@context":"https://schema.org","@type":"Article","headline":"Kotlinエンジニアのフリーランスがつまずきやすい点と対策","description":"フリーランスのKotlinエンジニアがつまずきやすいのは、Kotlinの案件のつもりがJava中心だったという食い違い、現場ごとの書き方の揺れ、Javaとの境界のnullやコルーチンの扱い、版の更新や障害対応での稼働の膨らみです。契約・現場・技術・お金の順に整理します。","datePublished":"2026-11-04","dateModified":"2026-11-04","author":{"@type":"Organization","name":"株式会社エージェントベスト","url":"https://www.agent-best.net/"},"publisher":{"@type":"Organization","name":"株式会社エージェントベスト","logo":{"@type":"ImageObject","url":"https://freelance.agent-best.net/assets/logo.png"}},"mainEntityOfPage":"https://freelance.agent-best.net/media/kotlin-tsumazuki/"},{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"トップ","item":"https://freelance.agent-best.net/"},{"@type":"ListItem","position":2,"name":"お役立ち記事","item":"https://freelance.agent-best.net/media/"},{"@type":"ListItem","position":3,"name":"バックエンド開発","item":"https://freelance.agent-best.net/media/hub/backend/"},{"@type":"ListItem","position":4,"name":"Kotlinエンジニアのフリーランスがつまずきやすい点と対策"}]},{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"参画してから、Kotlinをほとんど書かない現場だと気づきました。どうすればよいですか？","acceptedAnswer":{"@type":"Answer","text":"まずは、聞いていた内容と実際の作業の違いを具体的に書き出し、契約で明示された業務の内容と照らし合わせます。そのうえで、紹介を受けたエージェントや発注側の窓口に相談してください。Kotlinに移す計画がある現場なら、移行の準備に関わる形を提案できることもあります。"}},{"@type":"Question","name":"前の現場の書き方のほうが良いと思うとき、提案してもよいですか？","acceptedAnswer":{"@type":"Answer","text":"提案してかまいませんが、参画してすぐは現場の決まりに合わせ、信頼ができてから根拠をつけて出すほうが受け入れられやすくなります。提案は、読みやすさや障害の防ぎやすさなど、現場にとっての利点で説明してください。参画初月の進め方はKotlinエンジニアの参画初月にやることで整理しています。"}},{"@type":"Question","name":"コルーチンの経験が浅いまま、非同期処理を任されました。どうすればよいですか？","acceptedAnswer":{"@type":"Answer","text":"引き受ける前に、経験した範囲を正直に伝え、既存のコードで同じような処理がどう書かれているかを確かめます。設計の段階でレビューを受け、キャンセルや例外の扱いをテストで押さえてから進めると、手戻りを小さくできます。求められるスキルの全体像はKotlinエンジニアのスキルの記事をご覧ください。"}}]}]</script>
+</head>
+<body>
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="/"><img src="/assets/mark.png" alt="" width="28" height="28"><span>エージェントベストジョブ フリーランス<small>フリーランスのエンジニア・コンサル向け案件紹介</small></span></a>
+    <nav class="head-nav" aria-label="メニュー">
+      <a class="link" href="/jobs/">案件を探す</a>
+      <a class="link" href="/media/">お役立ち記事</a>
+      <a class="link keep" href="/mypage/" aria-label="気になる案件">☆ 気になる<span class="fav-count" data-fav-count hidden></span></a>
+      <a class="btn btn-primary btn-sm" href="https://airtable.com/appYkc36EvioYoL1A/pag6CZC4uJmxUcrXT/form" target="_blank" rel="noopener">無料で登録</a>
+    </nav>
+  </div>
+</header>
+<main class="wrap narrow article">
+  <p class="crumbs"><a href="/">トップ</a> › <a href="/media/">お役立ち記事</a> › <a href="/media/hub/backend/">バックエンド開発</a></p>
+  <a class="art-hub" href="/media/hub/backend/">バックエンド開発</a>
+  <h1 class="art-title">Kotlinエンジニアのフリーランスがつまずきやすい点と対策</h1>
+  <p class="note">公開 2026-11-04　監修：株式会社エージェントベスト</p>
+  <nav class="toc" aria-label="目次"><strong>目次</strong><ol><li><a href="#s1">契約でのつまずき</a></li><li><a href="#s2">現場でのつまずき</a></li><li><a href="#s3">技術でのつまずき</a></li><li><a href="#s4">お金でのつまずき</a></li><li><a href="#s5">よくある質問</a></li></ol></nav>
+  <div class="art-body">
+<p>フリーランスのKotlinエンジニアがつまずきやすいのは、<strong>Kotlinの案件のつもりで入ったらJavaの保守が中心だったという食い違い、現場ごとのKotlinの書き方の揺れ、Javaとの境界でのnullやコルーチンの扱い、版の更新や障害対応で稼働が膨らむこと</strong>です。どれも、KotlinがJavaと混ぜて使える言語であることと、現場ごとに使い方の幅が大きいことから起きます。</p>
+<p>対策の基本は、<strong>つまずきの種を契約と参画初期の確認で小さくしておき、現場では記録と早めの共有で守ること</strong>です。この記事では、契約・現場・技術・お金の順に、Kotlinエンジニアならではの場面と対策を整理します。独立前の準備は<a href="/media/kotlin-how-to/">Kotlinエンジニアがフリーランスになるには</a>で扱っているので、ここでは「参画してから実際に起きやすい場面」に絞ります。</p>
+<h2 id="s1">契約でのつまずき</h2>
+<h3>「Kotlinの案件」のはずが、Javaの作業が中心になる</h3>
+<p>Kotlinの公式ドキュメントは、大きなコードベースをJavaから少しずつKotlinへ移せることを特長に挙げています（2026年10月時点）。そのため、案件の説明では「Kotlinを使う現場」とされていても、実際にはJavaのコードが大半で、Kotlinは新しいモジュールの一部だけ、ということがあります。逆に、Kotlinでの新規開発のつもりで入ったら、Javaからの書き換えの作業が中心だったという食い違いも起きます。</p>
+<p><strong>対策</strong>：面談や契約の前に、KotlinとJavaのおおよその比率、自分が触るモジュール、新規の実装か移行の作業かを確かめます。フリーランス法では、発注側は業務の内容、報酬の額、支払期日などを書面やメールで明示することになっています（2026年10月時点、公正取引委員会の案内による）。明示される事項は<a href="/media/freelance-act-terms/">フリーランス法の取引条件の記事</a>で整理しています。書面の業務の内容と、聞いた話が合っているかを照らし合わせてください。</p>
+<h3>担う範囲が実装から運用まで広がっていく</h3>
+<p>少人数の自社サービスでは、APIの実装で入ったのに、気づけばデプロイの仕組みの手入れや障害の一次対応まで任されていた、ということがあります。範囲が広がること自体は経験になりますが、報酬や稼働の前提と合わなくなることがあります。</p>
+<p><strong>対策</strong>：範囲の外の作業を頼まれたら、引き受ける前に窓口と範囲の扱いを話します。考え方は<a href="/media/scope-change/">業務範囲が変わったときの記事</a>をご覧ください。</p>
+<h3>指示の受け方が社員と変わらなくなる</h3>
+<p>社員のチームに深く入って開発していると、勤務時間や作業の手順まで細かく指示されるようになることがあります。準委任の契約と実態がずれてくる状態です。考え方は<a href="/media/gisou-ukeoi/">偽装請負の記事</a>で解説しています。</p>
+<h2 id="s2">現場でのつまずき</h2>
+<h3>現場ごとにKotlinの書き方が違い、レビューで差し戻される</h3>
+<p>Kotlinは同じ処理を何通りにも書ける言語です。スコープ関数をどこまで使うか、例外を投げるか結果の型で返すか、拡張関数をどこに置くかといった決まりは、現場によって違います。前の現場で当たり前だった書き方が、次の現場では差し戻されることがあります。</p>
+<p><strong>対策</strong>：参画した最初の週に、コーディング規約、静的解析の設定、最近マージされたプルリクエストをいくつか読み、その現場の書き方をつかみます。決まりが文書になっていなければ、レビューで指摘された点を自分で書き留めておくと、同じ指摘を繰り返さずに済みます。</p>
+<h3>Javaの経験者とKotlinに慣れた人の間で板挟みになる</h3>
+<p>移行の途中の現場では、Javaに慣れたメンバーと、Kotlinらしく書きたいメンバーの考え方がぶつかることがあります。外部のエンジニアとして、どちらかの肩を持つ形になると、チームの中で動きにくくなります。</p>
+<p><strong>対策</strong>：自分の意見は根拠をつけて出しつつ、決めるのは現場のリードだという線を守ります。決まった内容はチャットや議事録に残しておくと、後から蒸し返されにくくなります。</p>
+<h3>生成AIや外部ツールの決まりを知らずに使ってしまう</h3>
+<p>コードの補完やレビューに生成AIを使うことが広がっていますが、使ってよいツール、コードを貼り付けてよい範囲は現場ごとに違います。決まりを知らずに使うと、契約や秘密保持の違反になることがあります。</p>
+<p><strong>対策</strong>：参画の初期に、使ってよいツールと、社外のサービスに出してよい情報の範囲を確かめます。考え方は<a href="/media/ai-riyou-keiyaku/">生成AIの利用と契約の記事</a>で整理しています。</p>
+<h2 id="s3">技術でのつまずき</h2>
+<h3>Javaとの境界でnullの扱いを誤る</h3>
+<p>KotlinからJavaのコードを呼ぶと、戻り値がnullになりうるかをKotlinの型が判断できない場面があります。Kotlinのコードだけを見て「nullは来ない」と思い込むと、本番で例外が起きることがあります。移行の途中の現場ほど、この境界が多くなります。</p>
+<p><strong>対策</strong>：Javaのライブラリや既存コードを呼ぶ箇所では、nullになりうるかを確かめ、境界で型をはっきりさせます。気になる箇所はテストで押さえておくと、レビューでも説明しやすくなります。</p>
+<h3>コルーチンの使い方が現場の構成と合わない</h3>
+<p>コルーチンは便利ですが、Spring MVCのようなブロッキングの構成と、WebFluxやKtorのようなノンブロッキングの構成では、使い方の注意点が違います。ブロッキングの処理をそのままコルーチンの中で呼ぶ、キャンセルや例外の伝わり方を考えずにスコープを作る、といった書き方は、負荷がかかったときに問題になります。</p>
+<p><strong>対策</strong>：参画した現場が、どの構成で、コルーチンをどこまで使っているかを最初につかみます。自分の経験が浅い使い方を求められたら、早めにそう伝え、レビューを厚めにしてもらうほうが安全です。</p>
+<h3>版の違いで手戻りが出る</h3>
+<p>Spring Bootのリファレンスでは、KotlinにはKotlin 2.2系以上が必要とされています（2026年10月時点）。Kotlin・Spring Boot・JDK・Gradleの版の組み合わせは現場ごとに違い、前の現場で使えた書き方やプラグインの設定がそのまま使えないことがあります。</p>
+<p><strong>対策</strong>：参画の初日に、Kotlin・JDK・Spring BootまたはKtor・Gradleの版を書き出しておきます。版の更新を任された場合は、一度に上げず、段階を分けて計画すると手戻りを小さくできます。</p>
+<aside class="box box-view"><p class="box-label">エージェントベストの見解</p><p>案件紹介の現場では、参画後につまずいたKotlinエンジニアの方の話を伺うと、技術そのものより「聞いていた現場の姿と違った」ことが出発点になっている場合が多い傾向があります。KotlinとJavaの比率、触るモジュール、使っている版は、面談の段階で質問しておくと食い違いを減らせます。</p></aside>
+<h2 id="s4">お金でのつまずき</h2>
+<h3>障害対応や版の更新で稼働が精算幅を超える</h3>
+<p>障害の対応や、版の更新でビルドが通らなくなった日などは、稼働が延びやすくなります。精算幅を超えた分の扱いを決めていないと、報酬に反映されないまま働くことになりかねません。</p>
+<p><strong>対策</strong>：稼働を日々記録し、精算幅を超えそうな段階で窓口に伝えます。精算の仕組みは<a href="/media/seisan-haba/">精算幅の記事</a>、待機の扱いは<a href="/media/taiki-houshu/">待機の報酬の記事</a>で解説しています。</p>
+<h3>移行の区切りで契約が終わる</h3>
+<p>Javaからの移行の案件では、予定したモジュールの移行が終わった時点で契約が更新されないことがあります。フリーランス法では、6か月以上の業務委託を中途で解除したり更新しなかったりする場合、原則として少なくとも30日前までに予告することになっています（2026年10月時点、公正取引委員会の案内による）。それでも、次の案件を探す時間は限られます。</p>
+<p><strong>対策</strong>：契約期間と移行の計画の区切りを並べて見ておき、更新の見込みを早めに確かめます。契約期間の考え方は<a href="/media/keiyaku-period/">契約期間の記事</a>をご覧ください。</p>
+<h3>Kotlinの案件だけを待って空白が長くなる</h3>
+<p>サーバーサイドKotlinの案件は、Javaの案件に比べると数が限られます。Kotlinだけに絞って次の案件を待つと、空白が長くなることがあります。</p>
+<p><strong>対策</strong>：契約の終わりの1〜2か月前には次の案件の相談を始め、JavaとKotlinが混在する案件も候補に入れておきます。</p>
+<aside class="box box-caution"><p class="box-label">注意</p><p>本番の障害対応で深夜や休日の作業が続くと、稼働の記録が残っていないまま精算の相談をすることになり、体調の管理も難しくなります。作業した日時と内容は、その日のうちに残してください。</p></aside>
+<aside class="box box-view"><p class="box-label">エージェントベストの見解</p><p>当社では、契約で業務範囲・報酬・支払期日・契約期間を個別契約に書いてお渡ししています。担当する範囲や稼働の扱いなど、参画前に気になる点はご質問いただければ確認します。</p></aside>
+<aside class="box box-point"><p class="box-label">ポイント</p><ul><li>契約では、KotlinとJavaの比率、触るモジュール、新規か移行かを確かめ、書面と照らし合わせる</li><li>現場では、最初の週に書き方の決まりと版をつかみ、意見は根拠をつけて出す</li><li>技術では、Javaとの境界のnull、構成に合ったコルーチンの使い方、版の組み合わせに気をつける</li><li>稼働は日々記録し、次の案件の相談は早めに始める</li></ul></aside>
+<h2 id="s5">よくある質問</h2>
+<h3>参画してから、Kotlinをほとんど書かない現場だと気づきました。どうすればよいですか？</h3>
+<p>まずは、聞いていた内容と実際の作業の違いを具体的に書き出し、契約で明示された業務の内容と照らし合わせます。そのうえで、紹介を受けたエージェントや発注側の窓口に相談してください。Kotlinに移す計画がある現場なら、移行の準備に関わる形を提案できることもあります。</p>
+<h3>前の現場の書き方のほうが良いと思うとき、提案してもよいですか？</h3>
+<p>提案してかまいませんが、参画してすぐは現場の決まりに合わせ、信頼ができてから根拠をつけて出すほうが受け入れられやすくなります。提案は、読みやすさや障害の防ぎやすさなど、現場にとっての利点で説明してください。参画初月の進め方は<a href="/media/kotlin-first-month/">Kotlinエンジニアの参画初月にやること</a>で整理しています。</p>
+<h3>コルーチンの経験が浅いまま、非同期処理を任されました。どうすればよいですか？</h3>
+<p>引き受ける前に、経験した範囲を正直に伝え、既存のコードで同じような処理がどう書かれているかを確かめます。設計の段階でレビューを受け、キャンセルや例外の扱いをテストで押さえてから進めると、手戻りを小さくできます。求められるスキルの全体像は<a href="/media/kotlin-skills/">Kotlinエンジニアのスキルの記事</a>をご覧ください。</p>
+  </div>
+  <section class="sources"><h2>参考にした公的情報・資料</h2><ul><li><a href="https://www.jftc.go.jp/freelancelaw_2026/" target="_blank" rel="noopener nofollow">2026年 フリーランス法特設サイト（公正取引委員会）</a></li><li><a href="https://kotlinlang.org/docs/server-overview.html" target="_blank" rel="noopener nofollow">Kotlin for server side（Kotlin Documentation）</a></li><li><a href="https://docs.spring.io/spring-boot/reference/features/kotlin.html" target="_blank" rel="noopener nofollow">Kotlin Support（Spring Boot Reference Documentation）</a></li></ul>
+  <p class="note">記事の内容は公開日時点の情報にもとづきます。制度や税率は変わることがあるため、手続きの前に必ず各機関の最新情報をご確認ください。</p></section>
+  <div class="cta-band">
+  <h2>条件に合う案件だけ、知りたい方へ</h2>
+  <p>ご登録は無料です。条件に合う案件だけを、ご本人の了承を得てからご提案します。</p>
+  <div class="cta-row">
+    <a class="btn btn-primary" href="https://airtable.com/appYkc36EvioYoL1A/pag6CZC4uJmxUcrXT/form" target="_blank" rel="noopener">無料で登録する</a>
+    <a class="btn btn-ghost" href="/jobs/">案件を探す</a>
+  </div>
+</div>
+  <section class="related"><h2>あわせて読みたい</h2><div class="grid g2"><a class="card art-card" href="/media/kotlin-how-to/">
+  <span class="art-hub">バックエンド開発</span>
+  <h3>Kotlinエンジニアがフリーランスになるには｜必要な経験と独立までの進め方</h3>
+  <p>サーバーサイドKotlinで独立するには、KotlinでAPIやサービスを作り本番で動かした経験と、JVM・Spring Boot・Gradleなど周辺の土台を扱えることが目安です。出発点ごとの準備と独立までの手順を解説します。</p>
+</a>
+<a class="card art-card" href="/media/kotlin-first-month/">
+  <span class="art-hub">バックエンド開発</span>
+  <h3>Kotlinエンジニアの参画初月にやること｜現場で信頼される進め方</h3>
+  <p>Kotlinエンジニアの参画初月は、環境と版をそろえて動かし、現場の書き方の決まりをつかみ、小さな変更を本番まで通してから担当の範囲を広げるのが基本です。週ごとの進め方、案件の型による重心の違い、避けたい動きを整理します。</p>
+</a>
+<a class="card art-card" href="/media/kotlin-skills/">
+  <span class="art-hub">バックエンド開発</span>
+  <h3>Kotlinエンジニアのフリーランス案件で求められるスキルと経験</h3>
+  <p>サーバーサイドKotlinの案件では、null安全や型を生かした設計、コルーチンでの非同期処理、Spring BootやKtorの作法、Javaとの相互運用、Gradleとテストが見られます。分野ごと・経験の段階ごとに整理します。</p>
+</a>
+<a class="card art-card" href="/media/kotlin-rate/">
+  <span class="art-hub">バックエンド開発</span>
+  <h3>Kotlinエンジニアのフリーランス案件｜報酬の決まり方と単価を上げる考え方</h3>
+  <p>サーバーサイドKotlinの報酬は、案件の型、Kotlinらしい設計の深さ、JVMとSpring・Ktorの経験、担う役割、稼働条件で決まり、案件ごとに大きく変わります。上下する要素と交渉の材料を解説します。</p>
+</a>
+<a class="card art-card" href="/media/kotlin-seishain-hikaku/">
+  <span class="art-hub">バックエンド開発</span>
+  <h3>Kotlinエンジニアは正社員とフリーランスのどちらがよい？比べるときの観点</h3>
+  <p>Kotlinエンジニアとして正社員とフリーランスのどちらがよいかは、収入の安定、社会保険、技術選定の権限とキャリア、働き方の4つの観点で比べると判断しやすくなります。Kotlinならではの違いと、自分に合う方を確かめる順番を整理します。</p>
+</a>
+<a class="card art-card" href="/media/kotlin-remote/">
+  <span class="art-hub">バックエンド開発</span>
+  <h3>Kotlinエンジニアのフリーランスはリモートで働ける？案件の傾向と探し方</h3>
+  <p>サーバーサイドKotlinは、Webサービスや自社サービスのバックエンドを中心にリモートで進めやすい案件があります。一方、閉じたネットワークの業務システムや、Javaの既存資産と密に連携する移行では出社が条件になることも。傾向と確認点を解説します。</p>
+</a></div></section>
+</main>
+<footer class="site-foot">
+  <div class="wrap">
+    <strong>エージェントベストジョブ フリーランス</strong>
+    <div class="foot-links">
+      <a href="/">トップ</a>
+      <a href="/jobs/">案件を探す</a>
+      <a href="/media/">お役立ち記事</a>
+      <a href="https://airtable.com/appYkc36EvioYoL1A/pag6CZC4uJmxUcrXT/form" target="_blank" rel="noopener">ご登録（スキルシート・ご希望の条件）</a>
+      <a href="https://line.me/R/ti/p/@697nxhbt?oat_content=url&ts=08302134" target="_blank" rel="noopener" data-line-cta="footer">LINEで相談する</a>
+      <a href="/privacy.html">個人情報の取り扱い</a>
+      <a href="https://www.agent-best.net/company/">運営会社</a>
+    </div>
+    <div class="foot-links">
+      <a href="https://jobs.agent-best.net/">正社員の求人を探す（エージェントベストジョブ）</a>
+      <a href="https://skill.agent-best.net/">エージェントベストジョブ手に職</a>
+      <a href="https://www.agent-best.net/">エージェントベスト</a>
+    </div>
+    <p>運営：株式会社エージェントベスト（有料職業紹介事業 許可番号 13-ユ-316964）<br>〒106-0032 東京都港区六本木4-8-7 嶋田ビル5階</p>
+  </div>
+</footer>
+<script src="/assets/fav.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Kotlinエンジニアの参画初月にやること｜現場で信頼される進め方｜エージェントベストジョブ フリーランス</title>
+<meta name="description" content="Kotlinエンジニアの参画初月は、環境と版をそろえて動かし、現場の書き方の決まりをつかみ、小さな変更を本番まで通してから担当の範囲を広げるのが基本です。週ごとの進め方、案件の型による重心の違い、避けたい動きを整理します。">
+<link rel="canonical" href="https://freelance.agent-best.net/media/kotlin-first-month/">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="エージェントベストジョブ フリーランス">
+<meta property="og:title" content="Kotlinエンジニアの参画初月にやること｜現場で信頼される進め方｜エージェントベストジョブ フリーランス">
+<meta property="og:description" content="Kotlinエンジニアの参画初月は、環境と版をそろえて動かし、現場の書き方の決まりをつかみ、小さな変更を本番まで通してから担当の範囲を広げるのが基本です。週ごとの進め方、案件の型による重心の違い、避けたい動きを整理します。">
+<meta property="og:url" content="https://freelance.agent-best.net/media/kotlin-first-month/">
+<meta property="og:image" content="https://freelance.agent-best.net/assets/ogp.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://freelance.agent-best.net/assets/ogp.png">
+<meta name="theme-color" content="#1E3A5F">
+<link rel="icon" href="/assets/favicon.ico">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="stylesheet" href="/assets/site.css">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1XXMP8Y1B4"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-1XXMP8Y1B4');
+document.addEventListener('click',e=>{const a=e.target.closest('[data-line-cta]');if(a)gtag('event','line_add_friend',{placement:a.dataset.lineCta,page_path:location.pathname});});</script>
+<script type="application/ld+json">[{"@context":"https://schema.org","@type":"Article","headline":"Kotlinエンジニアの参画初月にやること｜現場で信頼される進め方","description":"Kotlinエンジニアの参画初月は、環境と版をそろえて動かし、現場の書き方の決まりをつかみ、小さな変更を本番まで通してから担当の範囲を広げるのが基本です。週ごとの進め方、案件の型による重心の違い、避けたい動きを整理します。","datePublished":"2026-11-04","dateModified":"2026-11-04","author":{"@type":"Organization","name":"株式会社エージェントベスト","url":"https://www.agent-best.net/"},"publisher":{"@type":"Organization","name":"株式会社エージェントベスト","logo":{"@type":"ImageObject","url":"https://freelance.agent-best.net/assets/logo.png"}},"mainEntityOfPage":"https://freelance.agent-best.net/media/kotlin-first-month/"},{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"トップ","item":"https://freelance.agent-best.net/"},{"@type":"ListItem","position":2,"name":"お役立ち記事","item":"https://freelance.agent-best.net/media/"},{"@type":"ListItem","position":3,"name":"バックエンド開発","item":"https://freelance.agent-best.net/media/hub/backend/"},{"@type":"ListItem","position":4,"name":"Kotlinエンジニアの参画初月にやること｜現場で信頼される進め方"}]},{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"環境構築に何日もかかっています。問題ありませんか？","acceptedAnswer":{"@type":"Answer","text":"古いプロジェクトや、JavaとKotlinが混在するプロジェクトでは、環境構築に時間がかかること自体は珍しくありません。大切なのは、どこで詰まっているかを早めに共有することです。試したことと結果を添えて質問し、解決した手順はメモに残して、手順書への追記を提案すると、次に入る人の助けにもなります。"}},{"@type":"Question","name":"既存のKotlinのコードがJavaの書き方のままです。初月から直してもよいですか？","acceptedAnswer":{"@type":"Answer","text":"初月は、担当するタスクの範囲の中で、現場の決まりに沿って書くことを優先します。気になる点はメモにためておき、信頼ができた段階で、読みやすさや不具合の防ぎやすさといった利点を添えて提案するほうが受け入れられやすくなります。"}},{"@type":"Question","name":"参画してすぐ、Kotlinの版の更新を任されました。どうすればよいですか？","acceptedAnswer":{"@type":"Answer","text":"まず、今の版の組み合わせと、更新の目的を確かめます。そのうえで、一度に上げず、段階を分けた計画を書いて、方針を決める人に見てもらってから進めます。2.4.0からはJVM向けの標準ライブラリに系列ごと18か月のサポート期間が設けられているため（2026年10月時点、Kotlinの公式ドキュメントによる）、今の版のサポートの状況も計画に入れておくと説明しやすくなります。求められるスキルの全体像はKotlinエンジニアのスキルの記事をご覧ください。"}}]}]</script>
+</head>
+<body>
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="/"><img src="/assets/mark.png" alt="" width="28" height="28"><span>エージェントベストジョブ フリーランス<small>フリーランスのエンジニア・コンサル向け案件紹介</small></span></a>
+    <nav class="head-nav" aria-label="メニュー">
+      <a class="link" href="/jobs/">案件を探す</a>
+      <a class="link" href="/media/">お役立ち記事</a>
+      <a class="link keep" href="/mypage/" aria-label="気になる案件">☆ 気になる<span class="fav-count" data-fav-count hidden></span></a>
+      <a class="btn btn-primary btn-sm" href="https://airtable.com/appYkc36EvioYoL1A/pag6CZC4uJmxUcrXT/form" target="_blank" rel="noopener">無料で登録</a>
+    </nav>
+  </div>
+</header>
+<main class="wrap narrow article">
+  <p class="crumbs"><a href="/">トップ</a> › <a href="/media/">お役立ち記事</a> › <a href="/media/hub/backend/">バックエンド開発</a></p>
+  <a class="art-hub" href="/media/hub/backend/">バックエンド開発</a>
+  <h1 class="art-title">Kotlinエンジニアの参画初月にやること｜現場で信頼される進め方</h1>
+  <p class="note">公開 2026-11-04　監修：株式会社エージェントベスト</p>
+  <nav class="toc" aria-label="目次"><strong>目次</strong><ol><li><a href="#s1">初月のゴールを3つに分ける</a></li><li><a href="#s2">1週目：環境と版をそろえ、全体像をつかむ</a></li><li><a href="#s3">2週目：小さな変更を一つ本番まで通す</a></li><li><a href="#s4">3〜4週目：担当の範囲を広げ、品質を自分で示す</a></li><li><a href="#s5">案件の型によって初月の重心は変わる</a></li><li><a href="#s6">初月に避けたい動き</a></li><li><a href="#s7">1か月の終わりに振り返ること</a></li><li><a href="#s8">よくある質問</a></li></ol></nav>
+  <div class="art-body">
+<p>Kotlinエンジニアの参画初月は、<strong>環境と版をそろえて手元で動かし、現場のKotlinの書き方の決まりをつかみ、小さな変更を一つ本番まで通してから、担当の範囲を広げる</strong>のが基本です。最初の1か月で大きな機能を作ることより、「この人に任せれば、現場の決まりに沿ったコードが上がってくる」と思ってもらうことが、その後の信頼につながります。</p>
+<p>この記事では、初月のゴール、週ごとの進め方、案件の型による重心の違い、避けたい動き、月末の振り返りを整理します。参画前の契約・環境の準備は<a href="/media/sankaku-junbi/">参画が決まってから開始日までにやること</a>、職種を問わない最初の数日の動き方は<a href="/media/sankaku-shoki/">参画初期の進め方</a>で扱っています。</p>
+<h2 id="s1">初月のゴールを3つに分ける</h2>
+<div class="table-wrap"><table><thead><tr><th>ゴール</th><th>中身</th><th>月末に手元にあるもの</th></tr></thead><tbody><tr><td>動かせる</td><td>手元でビルドとテストが通り、版の組み合わせを把握している</td><td>環境構築の手順のメモ、版の一覧</td></tr><tr><td>現場の書き方に合わせられる</td><td>規約、静的解析、レビューで見られる点をつかむ</td><td>自分用の書き方の決まりのメモ</td></tr><tr><td>任せてもらえる</td><td>小さな変更を本番まで通し、機能を一つ担当する</td><td>マージされたプルリクエスト、担当範囲の合意</td></tr></tbody></table></div>
+<p>この3つを、1週目、2週目、3〜4週目の順に重心を移しながら進めます。</p>
+<h2 id="s2">1週目：環境と版をそろえ、全体像をつかむ</h2>
+<h3>版の組み合わせを最初に書き出す</h3>
+<p>Kotlinの現場では、Kotlin・JDK・フレームワーク・Gradleの版の組み合わせが、プロジェクトごとに違います。Kotlinの公式ドキュメントでは、言語の版はおよそ6か月ごと、ツールの版はその3か月後に出るとされ、2026年10月時点の最新の系列は2.4です。Spring Bootのリファレンスでは、KotlinにはKotlin 2.2系以上が必要とされています。現場がどの版を使っているかで、使える書き方やコンパイラのプラグインの設定が変わります。</p>
+<p>初日のうちに、次の項目を書き出しておきます。</p>
+<ul><li>Kotlinの版と、Javaとの混在の有無</li><li>JDKの版</li><li>Spring BootかKtorか、ほかのフレームワークか。その版</li><li>Gradleの版と、ビルドの設定がKotlinのDSLかどうか</li><li>静的解析やフォーマッタの設定</li></ul>
+<h3>環境構築は「動くまで」を優先する</h3>
+<p>手元でビルドとテストが通るまでを最優先にします。詰まったら半日以上ひとりで抱えず、どこまで試したかを添えて質問します。つまずいた点と解決の手順をメモに残し、既存の手順書に足りない点があれば、あとで追記を提案すると喜ばれることが多いでしょう。</p>
+<h3>最初に読むもの</h3>
+<ol><li><strong>README・設計の文書</strong>：サービスの目的、モジュールの分け方、外部とのつながり</li><li><strong>コーディング規約と静的解析の設定</strong>：何が禁止され、何が推奨されているか</li><li><strong>最近マージされたプルリクエスト</strong>：レビューでどんな指摘が出ているか。ここに現場の書き方が一番よく表れる</li><li><strong>主要なモジュールのコード</strong>：リクエストを受けてからデータベースに届くまでの流れを一本追う</li><li><strong>障害の記録や運用の手順</strong>：過去にどこで問題が起きたか</li></ol>
+<h3>聞ける人を把握する</h3>
+<p>技術方針を決める人、レビューをする人、業務の仕様を知っている人、環境やアカウントの窓口を把握しておきます。リモートの現場では、質問はどのチャンネルに書くか、急ぎのときはどうするかも最初に確かめます。報告の書き方は<a href="/media/chat-houkoku/">チャットでの報告の記事</a>で整理しています。</p>
+<h2 id="s3">2週目：小さな変更を一つ本番まで通す</h2>
+<h3>最初のタスクは小さく、工程を全部通す</h3>
+<p>最初のタスクは、小さな不具合の修正や、テストの追加など、範囲の狭いものが向いています。大切なのは大きさより、<strong>ブランチの作成、実装、テスト、レビュー、マージ、デプロイまでの流れを一度全部通すこと</strong>です。一度通すと、その現場の進め方の癖が一通り分かります。</p>
+<h3>レビューの受け方で信頼が決まる</h3>
+<p>レビューで指摘された点は、理由を確かめたうえで直し、同じ指摘を二度受けないようにメモに残します。スコープ関数の使い方、例外の扱い、nullを許す型の使い方、コルーチンのスコープの作り方など、Kotlinは現場ごとに決まりが違いやすい部分が多い言語です。前の現場の書き方と違っても、この段階では現場の決まりに合わせます。</p>
+<h3>Javaとの境界の扱いを確かめる</h3>
+<p>JavaとKotlinが混在している現場では、Javaのコードを呼ぶ箇所で、nullをどう扱う決まりになっているかを確かめます。Kotlinの型だけを見て判断すると、本番で思わぬ例外が起きることがあります。</p>
+<aside class="box box-view"><p class="box-label">エージェントベストの見解</p><p>案件紹介の現場で、参画後の評価が高いKotlinエンジニアの方に共通しているのは、最初の2週間で小さなプルリクエストを複数出し、レビューの指摘をすぐに次へ生かしていることです。大きな変更を一度に出すより、小さな変更を早く重ねるほうが、現場の書き方に合わせられる人だと伝わりやすい傾向があります。</p></aside>
+<h2 id="s4">3〜4週目：担当の範囲を広げ、品質を自分で示す</h2>
+<h3>機能を一つ担当する</h3>
+<p>小さな変更を通せたら、機能や改修を一つ担当します。実装に入る前に、方針をチケットやプルリクエストの説明に短く書き、レビューする人と合わせておくと、手戻りを減らせます。データの持ち方やAPIの形を変える場合は、とくに早めに相談します。</p>
+<h3>テストと確認の結果を見える形で残す</h3>
+<p>テストを書いたこと、手元や検証環境で確かめたことを、プルリクエストの説明に残します。非同期の処理を書いた場合は、キャンセルや例外の場面をどう確かめたかも書いておくと、レビューする人が安心できます。</p>
+<h3>障害や問い合わせの対応に加わる</h3>
+<p>運用まで含む案件では、障害の一次対応や問い合わせの調査に加わり、ログや監視の見方を覚えます。初月のうちに一度でも障害の切り分けに関わっておくと、その後の担当範囲を広げる話がしやすくなります。</p>
+<h2 id="s5">案件の型によって初月の重心は変わる</h2>
+<h3>Javaからの段階的な移行の案件</h3>
+<p>移行の案件では、Kotlinを書くより先に、既存のJavaのコードと移行の計画を読み込むことが中心になります。どのモジュールから移すのか、移行の途中でJavaとKotlinの境界をどう保つのかを、初月のうちにつかみます。書き換えの前後で動きが変わらないことを確かめるテストの有無も、早めに確かめておきます。</p>
+<h3>新規サービスのバックエンドの案件</h3>
+<p>立ち上げの段階では、決まりがまだ固まっていないことがあります。初月は、決まっていることと決まっていないことを分け、決まっていない点は提案の形で出します。ただし、方針を決めるのは現場のリードです。</p>
+<h3>マイクロサービスの開発・運用の案件</h3>
+<p>サービスの数が多い現場では、担当するサービスと、そのサービスがつながる相手を先に図にしておくと、全体像をつかみやすくなります。監視の画面と障害の手順を早めに覚えることが、初月の重心になります。</p>
+<h3>週2〜3日の案件</h3>
+<p>稼働日が少ない案件では、稼働しない日にレビューや質問が止まりやすくなります。稼働日と連絡がつく時間を最初に共有し、作業の区切りごとに状況をチャットに残しておくと、チームが動きやすくなります。</p>
+<h2 id="s6">初月に避けたい動き</h2>
+<div class="table-wrap"><table><thead><tr><th>避けたい動き</th><th>起きやすいこと</th><th>代わりにすること</th></tr></thead><tbody><tr><td>前の現場の書き方を持ち込む</td><td>レビューで差し戻しが続き、合わせられない人と見られる</td><td>現場の規約と最近のプルリクエストに合わせる</td></tr><tr><td>大きなリファクタリングを始める</td><td>差分が大きくなり、レビューも動作の確認も重くなる</td><td>気になる点はメモにためて、信頼ができてから提案する</td></tr><tr><td>版の更新やライブラリの追加を独断で進める</td><td>ほかのモジュールに影響が出る</td><td>必要性と影響を書いて、方針を決める人に相談する</td></tr><tr><td>決まりを確かめずに生成AIや外部ツールを使う</td><td>秘密保持や契約の違反になることがある</td><td>使ってよいツールと情報の範囲を先に確かめる</td></tr><tr><td>範囲外の作業を黙って抱え込む</td><td>本来の担当が手薄になり、稼働も膨らむ</td><td>担う範囲を確かめ、外れる依頼は窓口と話す</td></tr></tbody></table></div>
+<p>生成AIの使い方と契約の関係は<a href="/media/ai-riyou-keiyaku/">生成AIの利用と契約の記事</a>、範囲外の依頼の扱いは<a href="/media/scope-change/">業務範囲が変わったときの記事</a>、Kotlinエンジニアがつまずきやすい場面は<a href="/media/kotlin-tsumazuki/">Kotlinエンジニアのつまずきやすい点の記事</a>で整理しています。</p>
+<aside class="box box-caution"><p class="box-label">注意</p><p>参画してすぐに本番環境のデータベースや設定を触る作業を頼まれることがあります。手順書がない場合は、作業の前に手順を書き出して確かめてもらい、できれば二人で確認しながら進めてください。初月の事故は、その後の信頼に長く響きます。</p></aside>
+<h2 id="s7">1か月の終わりに振り返ること</h2>
+<p>1か月が過ぎたら、次の点を自分で振り返ります。</p>
+<ul><li>手元の環境と版の一覧が整い、ほかの人にも渡せる形になっているか</li><li>レビューで同じ指摘を繰り返していないか</li><li>小さな変更を本番まで通し、機能を一つ担当できたか</li><li>契約で決めた業務の範囲と、実際に担っている仕事がずれていないか</li><li>稼働時間の記録が残っているか</li></ul>
+<p>ずれている点があれば、2か月目の早い段階で窓口と話しておきます。</p>
+<aside class="box box-view"><p class="box-label">エージェントベストの見解</p><p>当社では、契約で業務範囲・報酬・支払期日・契約期間を個別契約に書いてお渡ししています。参画して1か月の間に、聞いていた役割と実際の仕事の違いが気になったときは、ご質問いただければ確認します。</p></aside>
+<aside class="box box-point"><p class="box-label">ポイント</p><ul><li>初月は、動かせる、現場の書き方に合わせられる、任せてもらえる、の3つを順に進める</li><li>1週目に版の組み合わせを書き出し、2週目に小さな変更を本番まで通す</li><li>3〜4週目に機能を一つ担当し、テストと確認の結果を見える形で残す</li><li>前の現場の書き方の持ち込み、大きなリファクタリング、版の独断の更新は避ける</li></ul></aside>
+<h2 id="s8">よくある質問</h2>
+<h3>環境構築に何日もかかっています。問題ありませんか？</h3>
+<p>古いプロジェクトや、JavaとKotlinが混在するプロジェクトでは、環境構築に時間がかかること自体は珍しくありません。大切なのは、どこで詰まっているかを早めに共有することです。試したことと結果を添えて質問し、解決した手順はメモに残して、手順書への追記を提案すると、次に入る人の助けにもなります。</p>
+<h3>既存のKotlinのコードがJavaの書き方のままです。初月から直してもよいですか？</h3>
+<p>初月は、担当するタスクの範囲の中で、現場の決まりに沿って書くことを優先します。気になる点はメモにためておき、信頼ができた段階で、読みやすさや不具合の防ぎやすさといった利点を添えて提案するほうが受け入れられやすくなります。</p>
+<h3>参画してすぐ、Kotlinの版の更新を任されました。どうすればよいですか？</h3>
+<p>まず、今の版の組み合わせと、更新の目的を確かめます。そのうえで、一度に上げず、段階を分けた計画を書いて、方針を決める人に見てもらってから進めます。2.4.0からはJVM向けの標準ライブラリに系列ごと18か月のサポート期間が設けられているため（2026年10月時点、Kotlinの公式ドキュメントによる）、今の版のサポートの状況も計画に入れておくと説明しやすくなります。求められるスキルの全体像は<a href="/media/kotlin-skills/">Kotlinエンジニアのスキルの記事</a>をご覧ください。</p>
+  </div>
+  <section class="sources"><h2>参考にした公的情報・資料</h2><ul><li><a href="https://kotlinlang.org/docs/releases.html" target="_blank" rel="noopener nofollow">Kotlin releases（Kotlin Documentation）</a></li><li><a href="https://docs.spring.io/spring-boot/reference/features/kotlin.html" target="_blank" rel="noopener nofollow">Kotlin Support（Spring Boot Reference Documentation）</a></li></ul>
+  <p class="note">記事の内容は公開日時点の情報にもとづきます。制度や税率は変わることがあるため、手続きの前に必ず各機関の最新情報をご確認ください。</p></section>
+  <div class="cta-band">
+  <h2>条件に合う案件だけ、知りたい方へ</h2>
+  <p>ご登録は無料です。条件に合う案件だけを、ご本人の了承を得てからご提案します。</p>
+  <div class="cta-row">
+    <a class="btn btn-primary" href="https://airtable.com/appYkc36EvioYoL1A/pag6CZC4uJmxUcrXT/form" target="_blank" rel="noopener">無料で登録する</a>
+    <a class="btn btn-ghost" href="/jobs/">案件を探す</a>
+  </div>
+</div>
+  <section class="related"><h2>あわせて読みたい</h2><div class="grid g2"><a class="card art-card" href="/media/sankaku-junbi/">
+  <span class="art-hub">案件の探し方</span>
+  <h3>参画が決まってから開始日までにやること｜契約・事業の手続き・作業環境の準備</h3>
+  <p>参画が決まったら、開始日までに「契約の書面の確認」「他の選考の整理」「請求と事業の手続き」「作業環境」「業務の予習」の5つを進めます。時期ごとのやることと、開始前の作業を頼まれたときの注意点を整理します。</p>
+</a>
+<a class="card art-card" href="/media/sankaku-shoki/">
+  <span class="art-hub">案件の探し方</span>
+  <h3>参画初日から最初の1週間でやること｜業務委託で立ち上がりを早める進め方</h3>
+  <p>参画して最初の1週間は、成果を急ぐより「任された範囲・依頼の窓口・報告の形」を確かめ、小さな仕事を一つ終えることを優先します。初日から5日目までの進め方と、つまずきやすい点を整理します。</p>
+</a>
+<a class="card art-card" href="/media/genba-tachiichi/">
+  <span class="art-hub">案件の探し方</span>
+  <h3>常駐先での立ち位置と人間関係の考え方｜業務委託で社員と働くときの距離感</h3>
+  <p>常駐先でのフリーランスは「社員の一員」でも「外の業者」でもなく、契約で任された範囲を担う人という立ち位置です。関係者ごとの距離感、社員と同じ扱いになりにくい場面、摩擦が起きたときの相談の順番を整理します。</p>
+</a>
+<a class="card art-card" href="/media/hikitsugi/">
+  <span class="art-hub">案件の探し方</span>
+  <h3>契約終了時の引き継ぎの進め方｜業務の棚卸しから資料・並走・返却まで</h3>
+  <p>契約終了時の引き継ぎは、終了が決まった時点で「範囲・相手・期限」を窓口と決め、業務の棚卸し、資料作り、後任との並走、権限と資料の返却の順に進めます。後任が決まらないときや、終了後の問い合わせへの対応も整理します。</p>
+</a>
+<a class="card art-card" href="/media/kotlin-tsumazuki/">
+  <span class="art-hub">バックエンド開発</span>
+  <h3>Kotlinエンジニアのフリーランスがつまずきやすい点と対策</h3>
+  <p>フリーランスのKotlinエンジニアがつまずきやすいのは、Kotlinの案件のつもりがJava中心だったという食い違い、現場ごとの書き方の揺れ、Javaとの境界のnullやコルーチンの扱い、版の更新や障害対応での稼働の膨らみです。契約・現場・技術・お金の順に整理します。</p>
+</a>
+<a class="card art-card" href="/media/kotlin-skills/">
+  <span class="art-hub">バックエンド開発</span>
+  <h3>Kotlinエンジニアのフリーランス案件で求められるスキルと経験</h3>
+  <p>サーバーサイドKotlinの案件では、null安全や型を生かした設計、コルーチンでの非同期処理、Spring BootやKtorの作法、Javaとの相互運用、Gradleとテストが見られます。分野ごと・経験の段階ごとに整理します。</p>
+</a></div></section>
+</main>
+<footer class="site-foot">
+  <div class="wrap">
+    <strong>エージェントベストジョブ フリーランス</strong>
+    <div class="foot-links">
+      <a href="/">トップ</a>
+      <a href="/jobs/">案件を探す</a>
+      <a href="/media/">お役立ち記事</a>
+      <a href="https://airtable.com/appYkc36EvioYoL1A/pag6CZC4uJmxUcrXT/form" target="_blank" rel="noopener">ご登録（スキルシート・ご希望の条件）</a>
+      <a href="https://line.me/R/ti/p/@697nxhbt?oat_content=url&ts=08302134" target="_blank" rel="noopener" data-line-cta="footer">LINEで相談する</a>
+      <a href="/privacy.html">個人情報の取り扱い</a>
+      <a href="https://www.agent-best.net/company/">運営会社</a>
+    </div>
+    <div class="foot-links">
+      <a href="https://jobs.agent-best.net/">正社員の求人を探す（エージェントベストジョブ）</a>
+      <a href="https://skill.agent-best.net/">エージェントベストジョブ手に職</a>
+      <a href="https://www.agent-best.net/">エージェントベスト</a>
+    </div>
+    <p>運営：株式会社エージェントベスト（有料職業紹介事業 許可番号 13-ユ-316964）<br>〒106-0032 東京都港区六本木4-8-7 嶋田ビル5階</p>
+  </div>
+</footer>
+<script src="/assets/fav.js" defer></script>
+</body>
+</html>
