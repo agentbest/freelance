@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Kubernetesエンジニアのフリーランス面談でよく聞かれる質問と答え方｜エージェントベストジョブ フリーランス</title>
+<meta name="description" content="Kubernetes案件の面談では、クラスターの規模と自分の役割、障害の切り分けの順番、版上げの進め方、変更の届け方、権限の線引きがよく聞かれます。質問ごとに面談官が確かめたいことと答えの組み立て方、準備の進め方、逆質問を整理します。">
+<link rel="canonical" href="https://freelance.agent-best.net/media/kubernetes-interview/">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="エージェントベストジョブ フリーランス">
+<meta property="og:title" content="Kubernetesエンジニアのフリーランス面談でよく聞かれる質問と答え方｜エージェントベストジョブ フリーランス">
+<meta property="og:description" content="Kubernetes案件の面談では、クラスターの規模と自分の役割、障害の切り分けの順番、版上げの進め方、変更の届け方、権限の線引きがよく聞かれます。質問ごとに面談官が確かめたいことと答えの組み立て方、準備の進め方、逆質問を整理します。">
+<meta property="og:url" content="https://freelance.agent-best.net/media/kubernetes-interview/">
+<meta property="og:image" content="https://freelance.agent-best.net/assets/ogp.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://freelance.agent-best.net/assets/ogp.png">
+<meta name="theme-color" content="#1E3A5F">
+<link rel="icon" href="/assets/favicon.ico">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="stylesheet" href="/assets/site.css">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1XXMP8Y1B4"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-1XXMP8Y1B4');
+document.addEventListener('click',e=>{const a=e.target.closest('[data-line-cta]');if(a)gtag('event','line_add_friend',{placement:a.dataset.lineCta,page_path:location.pathname});});</script>
+<script type="application/ld+json">[{"@context":"https://schema.org","@type":"Article","headline":"Kubernetesエンジニアのフリーランス面談でよく聞かれる質問と答え方","description":"Kubernetes案件の面談では、クラスターの規模と自分の役割、障害の切り分けの順番、版上げの進め方、変更の届け方、権限の線引きがよく聞かれます。質問ごとに面談官が確かめたいことと答えの組み立て方、準備の進め方、逆質問を整理します。","datePublished":"2026-11-04","dateModified":"2026-11-04","author":{"@type":"Organization","name":"株式会社エージェントベスト","url":"https://www.agent-best.net/"},"publisher":{"@type":"Organization","name":"株式会社エージェントベスト","logo":{"@type":"ImageObject","url":"https://freelance.agent-best.net/assets/logo.png"}},"mainEntityOfPage":"https://freelance.agent-best.net/media/kubernetes-interview/"},{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"トップ","item":"https://freelance.agent-best.net/"},{"@type":"ListItem","position":2,"name":"お役立ち記事","item":"https://freelance.agent-best.net/media/"},{"@type":"ListItem","position":3,"name":"インフラ・クラウド","item":"https://freelance.agent-best.net/media/hub/infra-cloud/"},{"@type":"ListItem","position":4,"name":"Kubernetesエンジニアのフリーランス面談でよく聞かれる質問と答え方"}]},{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"検証環境でしか経験していない機能について聞かれたら、どう答えればよいですか？","acceptedAnswer":{"@type":"Answer","text":"本番での経験がないことを先に伝え、検証環境で何を試し、どこまで分かったかを話します。本番の経験のように話すと、掘り下げられたときに答えに詰まります。正直に範囲を示したほうが、任せる範囲を決めやすくなり、面談官の評価も安定します。"}},{"@type":"Question","name":"面談でその場でコマンドや設定を書くように言われることはありますか？","acceptedAnswer":{"@type":"Answer","text":"案件によっては、設定ファイルの読み方や、障害の場面を想定した調べ方を口頭やその場の作業で確かめることがあります。暗記より、何を確かめるためにそのコマンドを使うのかを説明できるようにしておくと落ち着いて答えられます。"}},{"@type":"Question","name":"面談で見送られたとき、何を見直せばよいですか？","acceptedAnswer":{"@type":"Answer","text":"役割の伝え方、障害の話の組み立て、スキルシートとの一致の3点から見直すのがおすすめです。ツールの経験が足りないのか、判断の中身が伝わらなかったのかで、次にやることが変わります。見送られやすい理由は面談で見送られる理由の記事で解説しています。"}}]}]</script>
+</head>
+<body>
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="/"><img src="/assets/mark.png" alt="" width="28" height="28"><span>エージェントベストジョブ フリーランス<small>フリーランスのエンジニア・コンサル向け案件紹介</small></span></a>
+    <nav class="head-nav" aria-label="メニュー">
+      <a class="link" href="/jobs/">案件を探す</a>
+      <a class="link" href="/media/">お役立ち記事</a>
+      <a class="link keep" href="/mypage/" aria-label="気になる案件">☆ 気になる<span class="fav-count" data-fav-count hidden></span></a>
+      <a class="btn btn-primary btn-sm" href="https://airtable.com/appYkc36EvioYoL1A/pag6CZC4uJmxUcrXT/form" target="_blank" rel="noopener">無料で登録</a>
+    </nav>
+  </div>
+</header>
+<main class="wrap narrow article">
+  <p class="crumbs"><a href="/">トップ</a> › <a href="/media/">お役立ち記事</a> › <a href="/media/hub/infra-cloud/">インフラ・クラウド</a></p>
+  <a class="art-hub" href="/media/hub/infra-cloud/">インフラ・クラウド</a>
+  <h1 class="art-title">Kubernetesエンジニアのフリーランス面談でよく聞かれる質問と答え方</h1>
+  <p class="note">公開 2026-11-04　監修：株式会社エージェントベスト</p>
+  <nav class="toc" aria-label="目次"><strong>目次</strong><ol><li><a href="#s1">Kubernetesの面談で面談官が見ていること</a></li><li><a href="#s2">よく聞かれる質問と答え方の考え方</a></li><li><a href="#s3">準備は「本番で判断した場面」を3〜4つに絞る</a></li><li><a href="#s4">面談の相手によって重心が変わる</a></li><li><a href="#s5">Kubernetes案件ならではの逆質問</a></li><li><a href="#s6">よくある質問</a></li></ol></nav>
+  <div class="art-body">
+<p>フリーランスのKubernetesエンジニアの面談でよく聞かれるのは、<strong>どんなクラスターをどの役割で扱ったか、障害のときに何をどの順番で調べたか、版上げをどこから担ったか、変更をどう本番に届けていたか</strong>の4つです。面談官は、知っているツールの数より「この人に本番のクラスターを預けたら、壊さずに変えられるか、壊れたときに戻せるか」を確かめようとしています。</p>
+<p>答えるときは、模範解答を覚えるより、自分の経験から「本番で判断した場面」を3〜4つ選び、どの質問にもそこから答えられるように準備しておくのが近道です。面談全般の答え方の型は<a href="/media/interview-questions/">業務委託の面談でよく聞かれる質問と答え方</a>で解説しているので、この記事ではKubernetesの面談に固有の質問に絞ります。</p>
+<h2 id="s1">Kubernetesの面談で面談官が見ていること</h2>
+<p>Kubernetes案件の面談に出てくるのは、発注元の基盤チームのリーダーやSRE、インフラの責任者であることが多く、本人もクラスターを運用しています。そのため、用語の説明より、話の中に出てくる<strong>調べる順番と、変更の安全の確かめ方</strong>を聞いています。</p>
+<p>面談官が知りたいのは、おおむね次の3点です。</p>
+<ol><li><strong>任せられる範囲</strong>：マネージドか自前か、何個のクラスターを、どこまでの権限で扱ってきたか</li><li><strong>崩れたときの動き方</strong>：障害や版上げの失敗のときに、何を見て、どう戻したか</li><li><strong>現場のやり方との相性</strong>：レビューや記録の習慣、開発チームとの接し方が自社に合うか</li></ol>
+<p>以下の質問は、この3点のどれかを確かめるためのものです。質問の意図が分かれば、答えの中心に何を置くかも決まります。</p>
+<h2 id="s2">よく聞かれる質問と答え方の考え方</h2>
+<p>ここで示す答えの例は、組み立て方を伝えるための<strong>架空の例</strong>です。そのまま使うのではなく、ご自身の経験に置き換えて準備してください。</p>
+<h3>1. 「直近の現場のクラスターの構成と、あなたの役割を教えてください」</h3>
+<p>確かめたいのは、任せられる範囲です。マネージドサービスか自前の構築か、クラスターの数と分け方（本番・検証、チームごとなど）、載っているアプリの数、自分が設計・構築・運用のどこを担ったかを短く伝えます。チームで担っていた場合は、自分が決めたことと、ほかの人が決めたことを分けて話すと、後の質問との食い違いが起きません。</p>
+<p>架空の例：「マネージドサービスのクラスターを本番と検証で2つ、基盤チーム3名で運用していました。私は版上げと配布の仕組みの担当で、権限の設計はリーダーが決めていました」</p>
+<h3>2. 「Podが起動しないとき、何から調べますか」</h3>
+<p>最もよく聞かれる質問の一つです。正解の手順を暗唱するより、<strong>自分の調べる順番と、その順番にしている理由</strong>を話します。たとえば、Podの状態とイベントを見て、スケジュールされていないのか、イメージが取れないのか、起動後に落ちているのかを分け、それぞれで次に見るものを決める、といった流れです。実際に起きた障害を一つ添えると、話に重みが出ます。</p>
+<h3>3. 「本番で起きた障害で、印象に残っているものを教えてください」</h3>
+<p>答えは次の順番で組み立てると伝わりやすくなります。</p>
+<ul><li>何から異常に気づいたか（アラート、問い合わせ、指標の変化など）</li><li>影響の範囲をどう見積もったか</li><li>原因をどう絞ったか（アプリ、クラスター、クラウドのどこか）</li><li>まず何をして影響を止め、その後どう直したか</li><li>再発を防ぐために何を変えたか</li></ul>
+<p>「再起動したら直りました」で終わると、判断の中身が見えません。<strong>影響を止める手と、原因を直す手を分けて話せる</strong>と、運用を任せられる人だと伝わります。</p>
+<h3>4. 「版上げはどのように進めましたか」</h3>
+<p>版上げは、計画、影響調査、検証、切り替え、振り返りのどこから担ったかで経験の重さが変わります。廃止されるAPIをどう洗い出したか、アドオンの対応をどう確かめたか、戻し方をどう用意したかを具体的に話します。手順書に沿って実施しただけの場合も、正直にそう伝えたうえで、気づいたことを添えれば十分な材料になります。</p>
+<h3>5. 「変更は、どうやって本番に届けていましたか」</h3>
+<p>GitOpsのツールやCI/CDの名前を挙げるだけでなく、<strong>誰のレビューを通り、どこで自動に反映され、問題が出たらどう戻すか</strong>を一続きで説明します。手作業でkubectlを使う場面があった場合は、どんなときに、どんな手続きで行っていたかも話せるようにしておきます。</p>
+<h3>6. 「権限やネットワークの制限をどう決めましたか」</h3>
+<p>名前空間の分け方、RBACの付け方、ネットワークポリシーで通信を絞った経験を聞く質問です。設定の細部より、<strong>どこまで許し、どこから許さないかの線を、誰とどう合意したか</strong>が見られています。</p>
+<h3>7. 「リソースの要求と上限は、どう決めていましたか」</h3>
+<p>値を決めた根拠を確かめる質問です。実際の使用量を測ってから決めたか、見直しの時期を決めていたか、メモリ不足による強制終了が続いたときに何を調べたかを話します。</p>
+<h3>8. 「なぜフリーランスでKubernetesの仕事をしているのですか」</h3>
+<p>長く続けられるか、どんな仕事で力を出したいかを確かめる質問でもあります。働き方の希望だけでなく、運用の改善、移行、基盤づくりなど、関わりたい仕事の種類を添えると、案件との合い方が伝わります。仕事の種類の違いは<a href="/media/kubernetes-shigoto/">Kubernetesエンジニアの仕事内容</a>で整理しています。</p>
+<aside class="box box-view"><p class="box-label">エージェントベストの見解</p><p>Kubernetesの案件をご紹介していると、面談で評価されやすいのは、うまくいった構築の話より「本番で問題が起きた場面」を順を追って話せる方です。反対に、ツールの名前が続くだけで、どの判断を自分がしたのかが見えない答えは、見送られやすい傾向があります。結果がよくなかった障害でも、何を見て、何から手を打ったかを話せれば、経験として受け止められることが多くあります。</p></aside>
+<h2 id="s3">準備は「本番で判断した場面」を3〜4つに絞る</h2>
+<p>上の質問は数が多く見えますが、答えの材料は共通しています。準備は次の手順で進めると効率的です。</p>
+<ol><li><strong>場面を選ぶ</strong>：障害、版上げ、権限や通信の設計、配布の仕組みの変更など、性質の違う場面を3〜4つ選ぶ</li><li><strong>場面ごとにメモをつくる</strong>：状況、気づいたきっかけ、調べた順番、選んだ手、戻し方、結果、その後に変えたことを書き出す</li><li><strong>構成の数字をそろえる</strong>：クラスターの数、チームの人数、載っているアプリの数を、どの場面でも同じ数字で言えるようにする</li><li><strong>口頭で図を説明できるようにする</strong>：通信の経路や配布の流れを、画面共有がなくても言葉で説明できるようにしておく</li><li><strong>スキルシートと照らし合わせる</strong>：シートに書いた役割と、話す内容が一致しているかを確かめる</li></ol>
+<p>スキルシートとの一致は特に大切です。面談官はシートを見ながら質問するため、話とシートがずれると、どちらも信用されにくくなります。シートの書き方は<a href="/media/kubernetes-skillsheet/">Kubernetesエンジニアのスキルシートの記事</a>、冒頭の自己紹介の組み立て方は<a href="/media/self-introduction/">面談の自己紹介の記事</a>で解説しています。</p>
+<aside class="box box-caution"><p class="box-label">注意</p><p>面談では、前の現場の社名、サービスの名前、クラスターの内部の構成の細部、セキュリティの設定の具体的な値などを話してしまいがちです。基盤の担当者は機密に触れる立場だった分、具体性と守秘のバランスが問われます。社名やサービス名は伏せ、規模はクラスターの数や人数で示しましょう。どこまで話してよいかの考え方は<a href="/media/confidentiality-in-skillsheet/">スキルシートに書いてよいこと・いけないこと</a>が参考になります。</p></aside>
+<h2 id="s4">面談の相手によって重心が変わる</h2>
+<div class="table-wrap"><table><thead><tr><th>面談の相手</th><th>重く見られやすい点</th></tr></thead><tbody><tr><td>基盤チームのリーダー・SRE</td><td>障害の切り分け、版上げの進め方、記録とレビューの習慣</td></tr><tr><td>インフラやアーキテクチャの責任者</td><td>構成の判断の理由、クラウドとの組み合わせ、セキュリティの考え方</td></tr><tr><td>開発チームの責任者</td><td>開発チームへの説明の仕方、依頼への対応の速さ、配布の仕組みの使いやすさ</td></tr></tbody></table></div>
+<p>技術の掘り下げが深い面談では、その場で構成図を描くように頼まれることもあります。オンラインの面談なら、画面共有で図を描ける準備をしておくと安心です。環境の整え方は<a href="/media/online-interview/">オンライン面談で気をつけること</a>をご覧ください。</p>
+<h2 id="s5">Kubernetes案件ならではの逆質問</h2>
+<p>面談の終わりの逆質問は、印象づくりより<strong>参画後のずれを防ぐ確認</strong>に使います。Kubernetesの案件では、次の点を聞いておくと判断がしやすくなります。</p>
+<ul><li>マネージドか自前か、クラスターの数と、今の版の状況</li><li>変更の届け方と、本番に直接操作する権限を持つ人の範囲</li><li>障害時の呼び出しの体制に、自分が入るかどうか</li><li>直近で予定している版上げや移行と、その期限</li><li>基盤チームと開発チームの役割の分担</li></ul>
+<p>一般的な逆質問の考え方は<a href="/media/reverse-questions/">業務委託の面談で聞いておくべき逆質問</a>にまとめています。逆質問で聞いた内容は、契約前の確認にもそのまま使えます。案件を選ぶときの確認点は<a href="/media/kubernetes-anken-erabi/">Kubernetes案件の選び方</a>で整理しています。</p>
+<aside class="box box-view"><p class="box-label">エージェントベストの見解</p><p>当社では、経歴をご本人の了承を得た案件にだけ、氏名・連絡先を伏せてご提案しています。Kubernetesの案件では、案件票だけでは分からない版の状況や障害対応の体制について、面談の前に確かめておきたい点があれば、ご質問いただければ確認します。面談の後に参画を迷う点が出てきた場合も、早めにご相談ください。</p></aside>
+<aside class="box box-point"><p class="box-label">ポイント</p><ul><li>Kubernetesの面談では、構成と役割、障害の切り分け、版上げ、変更の届け方、権限の線引きがよく聞かれる</li><li>障害の話は「気づいたきっかけ→影響の見積もり→原因の絞り込み→影響を止める手→再発防止」の順で組み立てる</li><li>準備は本番で判断した場面を3〜4つに絞り、スキルシートと内容をそろえる</li><li>逆質問では、版の状況、変更の経路、障害時の体制、直近の移行の予定を確かめる</li></ul></aside>
+<h2 id="s6">よくある質問</h2>
+<h3>検証環境でしか経験していない機能について聞かれたら、どう答えればよいですか？</h3>
+<p>本番での経験がないことを先に伝え、検証環境で何を試し、どこまで分かったかを話します。本番の経験のように話すと、掘り下げられたときに答えに詰まります。正直に範囲を示したほうが、任せる範囲を決めやすくなり、面談官の評価も安定します。</p>
+<h3>面談でその場でコマンドや設定を書くように言われることはありますか？</h3>
+<p>案件によっては、設定ファイルの読み方や、障害の場面を想定した調べ方を口頭やその場の作業で確かめることがあります。暗記より、何を確かめるためにそのコマンドを使うのかを説明できるようにしておくと落ち着いて答えられます。</p>
+<h3>面談で見送られたとき、何を見直せばよいですか？</h3>
+<p>役割の伝え方、障害の話の組み立て、スキルシートとの一致の3点から見直すのがおすすめです。ツールの経験が足りないのか、判断の中身が伝わらなかったのかで、次にやることが変わります。見送られやすい理由は<a href="/media/interview-fail-reasons/">面談で見送られる理由の記事</a>で解説しています。</p>
+  </div>
+  
+  <div class="cta-band">
+  <h2>条件に合う案件だけ、知りたい方へ</h2>
+  <p>ご登録は無料です。条件に合う案件だけを、ご本人の了承を得てからご提案します。</p>
+  <div class="cta-row">
+    <a class="btn btn-primary" href="https://airtable.com/appYkc36EvioYoL1A/pag6CZC4uJmxUcrXT/form" target="_blank" rel="noopener">無料で登録する</a>
+    <a class="btn btn-ghost" href="/jobs/">案件を探す</a>
+  </div>
+</div>
+  <section class="related"><h2>あわせて読みたい</h2><div class="grid g2"><a class="card art-card" href="/media/interview-questions/">
+  <span class="art-hub">スキルシート・面談</span>
+  <h3>業務委託の面談でよく聞かれる質問と答え方｜回答の組み立て方</h3>
+  <p>業務委託の面談では、経歴の説明、直近案件での役割、技術や業務の深さ、稼働条件の4つがよく聞かれます。「結論→背景→自分の行動→結果」の順で短く答えると伝わりやすくなります。質問ごとの答え方を架空の例で紹介します。</p>
+</a>
+<a class="card art-card" href="/media/reverse-questions/">
+  <span class="art-hub">スキルシート・面談</span>
+  <h3>業務委託の面談で聞いておくべき逆質問｜参画後のずれを防ぐ確認項目</h3>
+  <p>業務委託の面談の逆質問は、印象づくりより「参画後のずれを防ぐ確認」に使うのが基本です。業務の範囲、体制と指示の流れ、稼働の実態、期間の見込みの4つを確かめておくと、契約後の「話が違う」を減らせます。</p>
+</a>
+<a class="card art-card" href="/media/self-introduction/">
+  <span class="art-hub">スキルシート・面談</span>
+  <h3>面談の自己紹介の組み立て方｜1〜2分で伝える経歴と話す順番</h3>
+  <p>業務委託の面談の自己紹介は「経験の全体像→直近の案件と役割→この案件に生かせる経験」の3段で、1〜2分にまとめるのが基本です。年代順に全部話さず、案件に合う経験を選んで話す組み立て方を架空の例で紹介します。</p>
+</a>
+<a class="card art-card" href="/media/interview-fail-reasons/">
+  <span class="art-hub">スキルシート・面談</span>
+  <h3>業務委託の面談で見送られる理由と次に生かす方法｜振り返りの手順</h3>
+  <p>業務委託の面談で見送られる理由は、経験のずれ、条件のずれ、伝わり方、自分では変えられない事情の4つに分けられます。理由を分けて振り返り、変えられるものだけを次の応募や面談で直すのが基本です。分類と振り返りの手順を整理します。</p>
+</a>
+<a class="card art-card" href="/media/confidentiality-in-skillsheet/">
+  <span class="art-hub">スキルシート・面談</span>
+  <h3>スキルシートに書いてよいこと・いけないこと｜守秘義務を守りながら実績を伝える書き方</h3>
+  <p>スキルシートに書いてよいのは、自分の役割・担当工程・使った技術・規模の目安です。取引先の社名、未公開の数値や計画、資料そのものは書きません。業界や幅、増減の方向に置き換えれば、守秘義務を守りながら実績は伝わります。</p>
+</a>
+<a class="card art-card" href="/media/kubernetes-skillsheet/">
+  <span class="art-hub">インフラ・クラウド</span>
+  <h3>Kubernetesエンジニアのスキルシートの書き方｜面談で評価される実績の見せ方</h3>
+  <p>Kubernetesのスキルシートは、ツール名を並べるより、マネージドか自前か・クラスターの数と分け方・担った役割・変更の届け方・版上げの経験を書き分けるのが基本です。項目ごとの書き方と、架空の記入例を紹介します。</p>
+</a></div></section>
+</main>
+<footer class="site-foot">
+  <div class="wrap">
+    <strong>エージェントベストジョブ フリーランス</strong>
+    <div class="foot-links">
+      <a href="/">トップ</a>
+      <a href="/jobs/">案件を探す</a>
+      <a href="/media/">お役立ち記事</a>
+      <a href="https://airtable.com/appYkc36EvioYoL1A/pag6CZC4uJmxUcrXT/form" target="_blank" rel="noopener">ご登録（スキルシート・ご希望の条件）</a>
+      <a href="https://line.me/R/ti/p/@697nxhbt?oat_content=url&ts=08302134" target="_blank" rel="noopener" data-line-cta="footer">LINEで相談する</a>
+      <a href="/privacy.html">個人情報の取り扱い</a>
+      <a href="https://www.agent-best.net/company/">運営会社</a>
+    </div>
+    <div class="foot-links">
+      <a href="https://jobs.agent-best.net/">正社員の求人を探す（エージェントベストジョブ）</a>
+      <a href="https://skill.agent-best.net/">エージェントベストジョブ手に職</a>
+      <a href="https://www.agent-best.net/">エージェントベスト</a>
+    </div>
+    <p>運営：株式会社エージェントベスト（有料職業紹介事業 許可番号 13-ユ-316964）<br>〒106-0032 東京都港区六本木4-8-7 嶋田ビル5階</p>
+  </div>
+</footer>
+<script src="/assets/fav.js" defer></script>
+</body>
+</html>

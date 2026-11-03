@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Unityエンジニアの参画初月にやること｜現場で信頼される進め方｜エージェントベストジョブ フリーランス</title>
+<meta name="description" content="Unityエンジニアの参画初月は、プロジェクトの版と構成、ビルドと実機確認の手順をつかみ、小さな変更を最後まで通し、月末に気づいた課題と改善案を出すのが基本です。週ごとの進め方と案件の型による違い、避けたい動きを整理します。">
+<link rel="canonical" href="https://freelance.agent-best.net/media/unity-first-month/">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="エージェントベストジョブ フリーランス">
+<meta property="og:title" content="Unityエンジニアの参画初月にやること｜現場で信頼される進め方｜エージェントベストジョブ フリーランス">
+<meta property="og:description" content="Unityエンジニアの参画初月は、プロジェクトの版と構成、ビルドと実機確認の手順をつかみ、小さな変更を最後まで通し、月末に気づいた課題と改善案を出すのが基本です。週ごとの進め方と案件の型による違い、避けたい動きを整理します。">
+<meta property="og:url" content="https://freelance.agent-best.net/media/unity-first-month/">
+<meta property="og:image" content="https://freelance.agent-best.net/assets/ogp.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://freelance.agent-best.net/assets/ogp.png">
+<meta name="theme-color" content="#1E3A5F">
+<link rel="icon" href="/assets/favicon.ico">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="stylesheet" href="/assets/site.css">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1XXMP8Y1B4"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-1XXMP8Y1B4');
+document.addEventListener('click',e=>{const a=e.target.closest('[data-line-cta]');if(a)gtag('event','line_add_friend',{placement:a.dataset.lineCta,page_path:location.pathname});});</script>
+<script type="application/ld+json">[{"@context":"https://schema.org","@type":"Article","headline":"Unityエンジニアの参画初月にやること｜現場で信頼される進め方","description":"Unityエンジニアの参画初月は、プロジェクトの版と構成、ビルドと実機確認の手順をつかみ、小さな変更を最後まで通し、月末に気づいた課題と改善案を出すのが基本です。週ごとの進め方と案件の型による違い、避けたい動きを整理します。","datePublished":"2026-11-04","dateModified":"2026-11-04","author":{"@type":"Organization","name":"株式会社エージェントベスト","url":"https://www.agent-best.net/"},"publisher":{"@type":"Organization","name":"株式会社エージェントベスト","logo":{"@type":"ImageObject","url":"https://freelance.agent-best.net/assets/logo.png"}},"mainEntityOfPage":"https://freelance.agent-best.net/media/unity-first-month/"},{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"トップ","item":"https://freelance.agent-best.net/"},{"@type":"ListItem","position":2,"name":"お役立ち記事","item":"https://freelance.agent-best.net/media/"},{"@type":"ListItem","position":3,"name":"組込み・ゲーム・XR","item":"https://freelance.agent-best.net/media/hub/embedded-game/"},{"@type":"ListItem","position":4,"name":"Unityエンジニアの参画初月にやること｜現場で信頼される進め方"}]},{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"環境がそろわず、最初の数日作業ができません。どうすればよいですか？","acceptedAnswer":{"@type":"Answer","text":"何が足りず、誰の対応を待っているかを窓口に伝え、待っている間にできることを提案します。構成の資料やコードを読む、手順書の抜けを書き留める、といった作業は環境がそろう前でも進められます。待ちが長引く場合は、その状況を記録に残しておくと、稼働の扱いを相談するときの材料になります。"}},{"@type":"Question","name":"初月から大きな機能の実装を任されたら、どうすればよいですか？","acceptedAnswer":{"@type":"Answer","text":"引き受ける場合でも、最初に既存の構成と影響範囲を確かめる時間をとり、途中の段階で一度レビューを受ける形を提案するのがおすすめです。早い段階で方向のずれを直せると、手戻りが小さくなります。"}},{"@type":"Question","name":"既存のコードの質が低いと感じたら、すぐに指摘してよいですか？","acceptedAnswer":{"@type":"Answer","text":"初月は、なぜその作りになっているのかを理解することを優先します。納期や過去の事情で今の形になっていることも多いためです。気づいた点は課題の一覧にためておき、月末に、影響と直す手間を添えた改善の案としてまとめて伝えるほうが、受け入れてもらいやすくなります。"}}]}]</script>
+</head>
+<body>
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="/"><img src="/assets/mark.png" alt="" width="28" height="28"><span>エージェントベストジョブ フリーランス<small>フリーランスのエンジニア・コンサル向け案件紹介</small></span></a>
+    <nav class="head-nav" aria-label="メニュー">
+      <a class="link" href="/jobs/">案件を探す</a>
+      <a class="link" href="/media/">お役立ち記事</a>
+      <a class="link keep" href="/mypage/" aria-label="気になる案件">☆ 気になる<span class="fav-count" data-fav-count hidden></span></a>
+      <a class="btn btn-primary btn-sm" href="https://airtable.com/appYkc36EvioYoL1A/pag6CZC4uJmxUcrXT/form" target="_blank" rel="noopener">無料で登録</a>
+    </nav>
+  </div>
+</header>
+<main class="wrap narrow article">
+  <p class="crumbs"><a href="/">トップ</a> › <a href="/media/">お役立ち記事</a> › <a href="/media/hub/embedded-game/">組込み・ゲーム・XR</a></p>
+  <a class="art-hub" href="/media/hub/embedded-game/">組込み・ゲーム・XR</a>
+  <h1 class="art-title">Unityエンジニアの参画初月にやること｜現場で信頼される進め方</h1>
+  <p class="note">公開 2026-11-04　監修：株式会社エージェントベスト</p>
+  <nav class="toc" aria-label="目次"><strong>目次</strong><ol><li><a href="#s1">初月のゴールを3つに分ける</a></li><li><a href="#s2">1週目：環境をそろえ、構成をつかむ</a></li><li><a href="#s3">2週目：小さな変更を最後まで通す</a></li><li><a href="#s4">3〜4週目：課題を整理し、改善の案を出す</a></li><li><a href="#s5">案件の型によって初月の重心は変わる</a></li><li><a href="#s6">初月に避けたい動き</a></li><li><a href="#s7">1か月の終わりに振り返ること</a></li><li><a href="#s8">よくある質問</a></li></ol></nav>
+  <div class="art-body">
+<p>Unityエンジニアの参画初月は、<strong>プロジェクトの版と構成、ビルドと実機確認の手順をつかみ、小さな変更を一度最後まで通し、月末に「気づいた課題」と「改善の案」を出す</strong>ところまでを目標にします。最初の1か月で求められるのは、大きな機能を作ることより、<strong>この人なら既存の作りを壊さずに任せられると発注側が判断できる材料</strong>を示すことです。</p>
+<p>参画前の契約・環境の準備は<a href="/media/sankaku-junbi/">参画が決まってから開始日までにやること</a>、職種を問わない最初の1週間の進め方は<a href="/media/sankaku-shoki/">参画初日から最初の1週間でやること</a>で解説しています。この記事では、Unityならではの初月の動き方に絞ります。</p>
+<h2 id="s1">初月のゴールを3つに分ける</h2>
+<div class="table-wrap"><table><thead><tr><th>ゴール</th><th>中身</th><th>月末に手元にあるもの</th></tr></thead><tbody><tr><td>土台をつかむ</td><td>版、パッケージ、構成、ビルド、実機確認の手順を把握する</td><td>自分用の構成メモと、環境の再現手順</td></tr><tr><td>一度通す</td><td>小さな変更を、実装・レビュー・ビルド・実機確認まで通す</td><td>取り込まれた変更と、確認の記録</td></tr><tr><td>次の手を示す</td><td>作業の中で気づいた課題と、改善の案を出す</td><td>課題の一覧と、優先度を付けた改善案</td></tr></tbody></table></div>
+<p>この3つを、1週目、2週目、3〜4週目の順に重心を移しながら進めます。</p>
+<h2 id="s2">1週目：環境をそろえ、構成をつかむ</h2>
+<h3>最初にそろえるもの</h3>
+<p>Unityの案件は、環境がそろわないと何も始められません。初日から数日のうちに、次の順で確かめます。</p>
+<ol><li><strong>Unityの版</strong>：プロジェクトが固定している版と同じものを入れる。新しい版で開くと変換が走るため、開く前に確かめる</li><li><strong>ライセンスとアカウント</strong>：どのシート（ライセンス）で作業するか、組織への招待が済んでいるか</li><li><strong>リポジトリと大きなファイルの扱い</strong>：ブランチの運用、大容量のアセットの管理方法、最初の取得にかかる時間</li><li><strong>ビルドの手順</strong>：手元でのビルド方法と、自動ビルドの仕組みがあるか</li><li><strong>実機と機材</strong>：検証用の端末やヘッドセット、開発機材の場所と借り方</li></ol>
+<p>環境の再現でつまずいた点は、そのままメモに残しておきます。次に入る人が同じところで止まらないよう、後で共有できる形にしておくと、それ自体が小さな貢献になります。</p>
+<h3>構成を読む</h3>
+<p>環境がそろったら、プロジェクトの構成を読みます。見る順番は次のとおりです。</p>
+<ul><li>起動から最初の画面までの流れ（最初に読み込まれるシーンと、初期化の処理）</li><li>フォルダとアセットの置き場所、命名の決まり</li><li>使っているパッケージとプラグイン、レンダーパイプラインの設定</li><li>シーンとPrefabの分け方、誰がどこを触るかの決まり</li><li>調整用のデータの持ち方（プランナーが値を変える仕組み）</li></ul>
+<p>この段階では、良し悪しを判断しません。「なぜこうなっているのか分からない」点は、仮の疑問としてためておきます。</p>
+<h2 id="s3">2週目：小さな変更を最後まで通す</h2>
+<h3>最初の作業は小さく選ぶ</h3>
+<p>2週目には、小さな不具合の修正や、既存の画面の改修など、影響範囲が限られた作業を一つ引き受けます。目的は成果の大きさではなく、<strong>実装からレビュー、ビルド、実機確認、取り込みまでの流れを一度通すこと</strong>です。流れを一度通すと、その現場で何に時間がかかるか、誰の確認が要るかが見えてきます。</p>
+<h3>実機で確かめてから報告する</h3>
+<p>変更したら、エディタ上だけでなく、対象の実機で動作を確かめます。報告には、どの機種で、どの場面を確かめたかを添えます。実機が手元にない場合は、確かめられていない範囲をはっきり書いておきます。</p>
+<h3>報告の形を合わせる</h3>
+<p>窓口やリードに、どの頻度で、どの粒度の報告がほしいかを確かめます。チャットでの報告の工夫は<a href="/media/chat-houkoku/">チャットでの報告の記事</a>、リモート中心の案件での進め方は<a href="/media/unity-remote/">Unityエンジニアのリモートの記事</a>でも触れています。</p>
+<aside class="box box-view"><p class="box-label">エージェントベストの見解</p><p>案件紹介の現場で、参画後の評価が高いUnityエンジニアの方に共通しているのは、最初の数週間で「確かめた機種と範囲」を毎回はっきり報告していることです。エディタで動いた、ではなく、どの端末で何を確かめ、どこが未確認かを示すと、発注側は作業の確かさを早い段階で感じ取れます。初月は、作業の速さより、確認の丁寧さを優先することをおすすめします。</p></aside>
+<h2 id="s4">3〜4週目：課題を整理し、改善の案を出す</h2>
+<h3>気づいた課題をまとめる</h3>
+<p>1〜2週目にためた疑問と、作業の中で困った点をもとに、課題を整理します。Unityの現場で挙がりやすいのは、次のような点です。</p>
+<ul><li>ビルドに時間がかかる、手順が人によって違う</li><li>特定の機種で重い場面がある、メモリの使用量が多い</li><li>シーンやPrefabの衝突が起きやすい</li><li>版やパッケージが古く、更新の計画が決まっていない</li><li>調整用のデータを変えるたびにプログラマの作業が要る</li></ul>
+<h3>改善の案は選択肢で出す</h3>
+<p>課題を並べるだけでなく、取れる手と、それぞれにかかる手間、影響を添えて出します。一つの案だけを出すと、「今の作りを否定された」と受け取られやすくなります。どれを進めるかは、リードや発注側に選んでもらいます。性能の課題であれば、計測した機種と数字の取り方を添えると、判断の材料になります。</p>
+<h2 id="s5">案件の型によって初月の重心は変わる</h2>
+<p>同じUnityの案件でも、型によって初月に力を入れる場所が違います。</p>
+<h3>運営中タイトルの改修・保守</h3>
+<p>既存のコードとアセットが大量にあり、壊さないことが何より大切です。初月は、構成を読む時間を多めにとり、変更の前に影響範囲を確かめる習慣を示すことに重心を置きます。</p>
+<h3>版上げ・移行の案件</h3>
+<p>最初の数週間は調査が中心になります。使っているパッケージとプラグインの一覧、新しい版で動かなくなるものの洗い出し、確認が要る機種の一覧を作り、月末に移行の順番の案を出せることを目指します。</p>
+<h3>XR・産業用途の案件</h3>
+<p>機材や設備がないと確かめられない作業が多く、出社や現地での確認の段取りが初月の要になります。どの機材をいつ使えるか、現地での確認に誰が立ち会うかを早めに決めておきます。</p>
+<h3>新規開発・立ち上げの案件</h3>
+<p>まだ構成が固まっていない段階で入る場合は、構成の方針、アセットの管理、ビルドの仕組みを関係者と言葉で合わせることが初月の中心になります。月末には、構成の骨子と、決めきれていない論点の一覧を出せることを目指します。</p>
+<h2 id="s6">初月に避けたい動き</h2>
+<div class="table-wrap"><table><thead><tr><th>避けたい動き</th><th>起きやすいこと</th><th>代わりにすること</th></tr></thead><tbody><tr><td>プロジェクトと違う版で開く</td><td>変換が走り、チームの作業に影響が出る</td><td>開く前に固定の版を確かめて入れる</td></tr><tr><td>パッケージを独断で更新する</td><td>別の機能が動かなくなる</td><td>目的と影響を伝え、合意してから行う</td></tr><tr><td>構成を大きく作り直す</td><td>既存の作りを否定されたと受け取られる</td><td>課題と選択肢を示し、判断を仰ぐ</td></tr><tr><td>エディタだけで確認して報告する</td><td>実機で問題が見つかり手戻りになる</td><td>対象の実機で確かめ、範囲を添えて報告する</td></tr><tr><td>範囲外の作業を抱え込む</td><td>本来の作業が遅れる</td><td>担う範囲を確かめ、外れる依頼は窓口と話す</td></tr></tbody></table></div>
+<p>範囲外の依頼が増えてきたときの扱いは<a href="/media/scope-change/">業務範囲が変わったときの記事</a>、Unityでつまずきやすい場面は<a href="/media/unity-tsumazuki/">Unityエンジニアのフリーランスがつまずきやすい点と対策</a>で整理しています。前任者からの引き継ぎがある場合は<a href="/media/hikitsugi/">引き継ぎの記事</a>も参考になります。</p>
+<aside class="box box-caution"><p class="box-label">注意</p><p>未発表のタイトルや製品の案件では、画面の撮影や私物の端末への持ち出しが禁じられていることがあります。初月は、作業に慣れることに気を取られて守秘義務の範囲を確かめ忘れやすい時期です。参画した週のうちに、持ち出せる情報と使ってよい端末の範囲を確かめておいてください。</p></aside>
+<h2 id="s7">1か月の終わりに振り返ること</h2>
+<p>1か月が過ぎたら、次の点を自分で振り返ります。</p>
+<ul><li>プロジェクトの版、構成、ビルドの手順を、自分の言葉で説明できるか</li><li>小さな変更を、実機確認まで含めて最後まで通せたか</li><li>気づいた課題と改善の案を、リードや窓口に伝えられたか</li><li>契約で決めた業務の範囲と、実際に担っている仕事がずれていないか</li><li>機材やライセンスの扱いで、困っていることが残っていないか</li><li>稼働時間の記録が残っているか</li></ul>
+<p>ずれている点があれば、2か月目の早い段階で窓口と話しておきます。ゲームの領域全体の初月の進め方は<a href="/media/game-engineer-first-month/">ゲームエンジニアの参画初月</a>、XRの場合は<a href="/media/xr-first-month/">XRエンジニアの参画初月</a>も比べてみてください。</p>
+<aside class="box box-view"><p class="box-label">エージェントベストの見解</p><p>当社では、契約で業務範囲・報酬・支払期日・契約期間を個別契約に書いてお渡ししています。参画して1か月の間に、聞いていた作業と実際の仕事に違いを感じたときや、機材・ライセンスの扱いで困ったときは、早めにご相談ください。契約の内容に関わる点は、ご質問いただければ確認します。</p></aside>
+<aside class="box box-point"><p class="box-label">ポイント</p><ul><li>Unityの初月は、土台をつかむ、小さな変更を一度通す、課題と改善案を示す、の3つを順に進める</li><li>1週目は版・ライセンス・リポジトリ・ビルド・実機をそろえ、構成を読む</li><li>2週目に小さな変更を実機確認まで通し、確かめた範囲を添えて報告する</li><li>違う版で開く、パッケージの独断の更新、構成の大きな作り直しは避ける</li></ul></aside>
+<h2 id="s8">よくある質問</h2>
+<h3>環境がそろわず、最初の数日作業ができません。どうすればよいですか？</h3>
+<p>何が足りず、誰の対応を待っているかを窓口に伝え、待っている間にできることを提案します。構成の資料やコードを読む、手順書の抜けを書き留める、といった作業は環境がそろう前でも進められます。待ちが長引く場合は、その状況を記録に残しておくと、稼働の扱いを相談するときの材料になります。</p>
+<h3>初月から大きな機能の実装を任されたら、どうすればよいですか？</h3>
+<p>引き受ける場合でも、最初に既存の構成と影響範囲を確かめる時間をとり、途中の段階で一度レビューを受ける形を提案するのがおすすめです。早い段階で方向のずれを直せると、手戻りが小さくなります。</p>
+<h3>既存のコードの質が低いと感じたら、すぐに指摘してよいですか？</h3>
+<p>初月は、なぜその作りになっているのかを理解することを優先します。納期や過去の事情で今の形になっていることも多いためです。気づいた点は課題の一覧にためておき、月末に、影響と直す手間を添えた改善の案としてまとめて伝えるほうが、受け入れてもらいやすくなります。</p>
+  </div>
+  
+  <div class="cta-band">
+  <h2>条件に合う案件だけ、知りたい方へ</h2>
+  <p>ご登録は無料です。条件に合う案件だけを、ご本人の了承を得てからご提案します。</p>
+  <div class="cta-row">
+    <a class="btn btn-primary" href="https://airtable.com/appYkc36EvioYoL1A/pag6CZC4uJmxUcrXT/form" target="_blank" rel="noopener">無料で登録する</a>
+    <a class="btn btn-ghost" href="/jobs/">案件を探す</a>
+  </div>
+</div>
+  <section class="related"><h2>あわせて読みたい</h2><div class="grid g2"><a class="card art-card" href="/media/sankaku-junbi/">
+  <span class="art-hub">案件の探し方</span>
+  <h3>参画が決まってから開始日までにやること｜契約・事業の手続き・作業環境の準備</h3>
+  <p>参画が決まったら、開始日までに「契約の書面の確認」「他の選考の整理」「請求と事業の手続き」「作業環境」「業務の予習」の5つを進めます。時期ごとのやることと、開始前の作業を頼まれたときの注意点を整理します。</p>
+</a>
+<a class="card art-card" href="/media/sankaku-shoki/">
+  <span class="art-hub">案件の探し方</span>
+  <h3>参画初日から最初の1週間でやること｜業務委託で立ち上がりを早める進め方</h3>
+  <p>参画して最初の1週間は、成果を急ぐより「任された範囲・依頼の窓口・報告の形」を確かめ、小さな仕事を一つ終えることを優先します。初日から5日目までの進め方と、つまずきやすい点を整理します。</p>
+</a>
+<a class="card art-card" href="/media/hikitsugi/">
+  <span class="art-hub">案件の探し方</span>
+  <h3>契約終了時の引き継ぎの進め方｜業務の棚卸しから資料・並走・返却まで</h3>
+  <p>契約終了時の引き継ぎは、終了が決まった時点で「範囲・相手・期限」を窓口と決め、業務の棚卸し、資料作り、後任との並走、権限と資料の返却の順に進めます。後任が決まらないときや、終了後の問い合わせへの対応も整理します。</p>
+</a>
+<a class="card art-card" href="/media/unity-tsumazuki/">
+  <span class="art-hub">組込み・ゲーム・XR</span>
+  <h3>Unityエンジニアのフリーランスがつまずきやすい点と対策</h3>
+  <p>フリーランスのUnityエンジニアがつまずきやすいのは、完成の定義と修正範囲、機材とライセンスの負担、既存プロジェクトの作法、版とパッケージの扱い、提出前の稼働超過などです。契約・現場・技術・お金の順に場面と対策を整理します。</p>
+</a>
+<a class="card art-card" href="/media/unity-skills/">
+  <span class="art-hub">組込み・ゲーム・XR</span>
+  <h3>Unityエンジニアのフリーランス案件で求められるスキルと経験</h3>
+  <p>Unityの案件では、C#とUnityの仕組みの理解を土台に、描画と性能、プラットフォーム対応、エディタ拡張やビルド、領域ごとの知識が問われます。分野ごとに求められるスキルと、経験の段階ごとに期待される役割を解説します。</p>
+</a>
+<a class="card art-card" href="/media/unity-remote/">
+  <span class="art-hub">組込み・ゲーム・XR</span>
+  <h3>Unityエンジニアのフリーランスはリモートで働ける？案件の傾向と探し方</h3>
+  <p>Unityエンジニアは、モバイルゲームの改修やツール開発などではリモートで働ける案件があります。一方、XR機器や家庭用ゲーム機の開発機材、産業用の設備を使う案件は出社や現地作業が増えやすい傾向です。見分け方と確認点を解説します。</p>
+</a></div></section>
+</main>
+<footer class="site-foot">
+  <div class="wrap">
+    <strong>エージェントベストジョブ フリーランス</strong>
+    <div class="foot-links">
+      <a href="/">トップ</a>
+      <a href="/jobs/">案件を探す</a>
+      <a href="/media/">お役立ち記事</a>
+      <a href="https://airtable.com/appYkc36EvioYoL1A/pag6CZC4uJmxUcrXT/form" target="_blank" rel="noopener">ご登録（スキルシート・ご希望の条件）</a>
+      <a href="https://line.me/R/ti/p/@697nxhbt?oat_content=url&ts=08302134" target="_blank" rel="noopener" data-line-cta="footer">LINEで相談する</a>
+      <a href="/privacy.html">個人情報の取り扱い</a>
+      <a href="https://www.agent-best.net/company/">運営会社</a>
+    </div>
+    <div class="foot-links">
+      <a href="https://jobs.agent-best.net/">正社員の求人を探す（エージェントベストジョブ）</a>
+      <a href="https://skill.agent-best.net/">エージェントベストジョブ手に職</a>
+      <a href="https://www.agent-best.net/">エージェントベスト</a>
+    </div>
+    <p>運営：株式会社エージェントベスト（有料職業紹介事業 許可番号 13-ユ-316964）<br>〒106-0032 東京都港区六本木4-8-7 嶋田ビル5階</p>
+  </div>
+</footer>
+<script src="/assets/fav.js" defer></script>
+</body>
+</html>

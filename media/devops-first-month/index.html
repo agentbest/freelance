@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>DevOpsエンジニアの参画初月にやること｜現場で信頼される進め方｜エージェントベストジョブ フリーランス</title>
+<meta name="description" content="DevOpsエンジニアの参画初月は、パイプライン・IaC・権限・リリース手順の現状をつかみ、使う人と決める人を知り、小さな改善を一つ届けたうえで、月末に改善の順番を合意するのが基本です。週ごとの進め方と、初月に避けたい動きを整理します。">
+<link rel="canonical" href="https://freelance.agent-best.net/media/devops-first-month/">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="エージェントベストジョブ フリーランス">
+<meta property="og:title" content="DevOpsエンジニアの参画初月にやること｜現場で信頼される進め方｜エージェントベストジョブ フリーランス">
+<meta property="og:description" content="DevOpsエンジニアの参画初月は、パイプライン・IaC・権限・リリース手順の現状をつかみ、使う人と決める人を知り、小さな改善を一つ届けたうえで、月末に改善の順番を合意するのが基本です。週ごとの進め方と、初月に避けたい動きを整理します。">
+<meta property="og:url" content="https://freelance.agent-best.net/media/devops-first-month/">
+<meta property="og:image" content="https://freelance.agent-best.net/assets/ogp.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://freelance.agent-best.net/assets/ogp.png">
+<meta name="theme-color" content="#1E3A5F">
+<link rel="icon" href="/assets/favicon.ico">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="stylesheet" href="/assets/site.css">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1XXMP8Y1B4"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-1XXMP8Y1B4');
+document.addEventListener('click',e=>{const a=e.target.closest('[data-line-cta]');if(a)gtag('event','line_add_friend',{placement:a.dataset.lineCta,page_path:location.pathname});});</script>
+<script type="application/ld+json">[{"@context":"https://schema.org","@type":"Article","headline":"DevOpsエンジニアの参画初月にやること｜現場で信頼される進め方","description":"DevOpsエンジニアの参画初月は、パイプライン・IaC・権限・リリース手順の現状をつかみ、使う人と決める人を知り、小さな改善を一つ届けたうえで、月末に改善の順番を合意するのが基本です。週ごとの進め方と、初月に避けたい動きを整理します。","datePublished":"2026-11-04","dateModified":"2026-11-04","author":{"@type":"Organization","name":"株式会社エージェントベスト","url":"https://www.agent-best.net/"},"publisher":{"@type":"Organization","name":"株式会社エージェントベスト","logo":{"@type":"ImageObject","url":"https://freelance.agent-best.net/assets/logo.png"}},"mainEntityOfPage":"https://freelance.agent-best.net/media/devops-first-month/"},{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"トップ","item":"https://freelance.agent-best.net/"},{"@type":"ListItem","position":2,"name":"お役立ち記事","item":"https://freelance.agent-best.net/media/"},{"@type":"ListItem","position":3,"name":"インフラ・クラウド","item":"https://freelance.agent-best.net/media/hub/infra-cloud/"},{"@type":"ListItem","position":4,"name":"DevOpsエンジニアの参画初月にやること｜現場で信頼される進め方"}]},{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"初月はほとんど権限がもらえません。何から始めればよいですか？","acceptedAnswer":{"@type":"Answer","text":"読み取りの権限で見られる範囲から、構成図と課題の一覧を作るのが近道です。改善案はプルリクエストの形で用意し、反映は社員のメンバーにお願いする形にすれば、権限がなくても成果を見せられます。必要な権限は理由と一緒に早めに出しておきます。リモートの案件での進め方はDevOpsエンジニアのリモート案件の記事でも触れています。"}},{"@type":"Question","name":"前任者の仕組みが複雑で、全体がつかめません。","acceptedAnswer":{"@type":"Answer","text":"一度に全体をつかもうとせず、よく使われるパイプラインから順に、きっかけ、工程、反映先を書き出していきます。分かっていることと分かっていないことを分けて報告し、残りをいつまでに確かめるかの予定を示すほうが信頼されます。"}},{"@type":"Question","name":"社員のDevOps担当やSREがいる現場で、どう振る舞えばよいですか？","acceptedAnswer":{"@type":"Answer","text":"最初の週のうちに、どの仕組みを誰が持ち、どの変更を誰が承認するかを確かめておきます。担当を仕組みごとに分けておくと、同じ箇所を二人で直す食い違いを防げます。SREとの役割の分け方はSREの参画初月の記事も参考にしてください。"}}]}]</script>
+</head>
+<body>
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="/"><img src="/assets/mark.png" alt="" width="28" height="28"><span>エージェントベストジョブ フリーランス<small>フリーランスのエンジニア・コンサル向け案件紹介</small></span></a>
+    <nav class="head-nav" aria-label="メニュー">
+      <a class="link" href="/jobs/">案件を探す</a>
+      <a class="link" href="/media/">お役立ち記事</a>
+      <a class="link keep" href="/mypage/" aria-label="気になる案件">☆ 気になる<span class="fav-count" data-fav-count hidden></span></a>
+      <a class="btn btn-primary btn-sm" href="https://airtable.com/appYkc36EvioYoL1A/pag6CZC4uJmxUcrXT/form" target="_blank" rel="noopener">無料で登録</a>
+    </nav>
+  </div>
+</header>
+<main class="wrap narrow article">
+  <p class="crumbs"><a href="/">トップ</a> › <a href="/media/">お役立ち記事</a> › <a href="/media/hub/infra-cloud/">インフラ・クラウド</a></p>
+  <a class="art-hub" href="/media/hub/infra-cloud/">インフラ・クラウド</a>
+  <h1 class="art-title">DevOpsエンジニアの参画初月にやること｜現場で信頼される進め方</h1>
+  <p class="note">公開 2026-11-04　監修：株式会社エージェントベスト</p>
+  <nav class="toc" aria-label="目次"><strong>目次</strong><ol><li><a href="#s1">初月のゴールを3つに分ける</a></li><li><a href="#s2">1週目：仕組みと人から現状を集める</a></li><li><a href="#s3">2週目：小さな改善を一つ届ける</a></li><li><a href="#s4">3〜4週目：見立てを出し、改善の順番に合意を取る</a></li><li><a href="#s5">案件の型によって初月の重心は変わる</a></li><li><a href="#s6">初月に避けたい動き</a></li><li><a href="#s7">1か月の終わりに振り返ること</a></li><li><a href="#s8">よくある質問</a></li></ol></nav>
+  <div class="art-body">
+<p>DevOpsエンジニアの参画初月は、<strong>パイプライン・IaC・権限・リリース手順の現状をつかみ、使う人と決める人を知り、小さな改善を一つ届けたうえで、月末に「現状の見立て」と「改善の順番」を出して合意を取る</strong>ところまでを目標にします。初月に求められるのは大きな仕組みを作ることより、<strong>この人に開発の流れを任せて大丈夫だと発注側が判断できる材料</strong>を示すことです。</p>
+<p>参画前の契約や環境の準備は<a href="/media/sankaku-junbi/">参画が決まってから開始日までにやること</a>、職種を問わない最初の1週間の進め方は<a href="/media/sankaku-shoki/">参画初日から最初の1週間でやること</a>で解説しています。この記事では、DevOpsならではの初月の動き方に絞ります。</p>
+<h2 id="s1">初月のゴールを3つに分ける</h2>
+<div class="table-wrap"><table><thead><tr><th>ゴール</th><th>中身</th><th>月末に手元にあるもの</th></tr></thead><tbody><tr><td>現状をつかむ</td><td>パイプライン、IaC、権限、リリースの手順、困りごとを把握する</td><td>現状の構成図と、課題の一覧</td></tr><tr><td>使う人と決める人をつかむ</td><td>どのチームが何を使い、誰が道具や決まりを決めるかを知る</td><td>利用者と決裁の一覧</td></tr><tr><td>次の手を合意する</td><td>小さな改善を一つ届け、改善の順番を示して判断を仰ぐ</td><td>合意した改善の順番と、次の1〜2か月の計画</td></tr></tbody></table></div>
+<p>この3つを、1週目、2週目、3〜4週目の順に重心を移しながら進めます。</p>
+<h2 id="s2">1週目：仕組みと人から現状を集める</h2>
+<h3>最初に読むもの</h3>
+<p>DevOpsエンジニアは、資料より実物を読む比重が大きくなります。次の順で目を通すと、全体像をつかみやすくなります。</p>
+<ol><li><strong>リポジトリとブランチの運用</strong>：どこで開発し、何をきっかけにパイプラインが動くか</li><li><strong>パイプラインの定義</strong>：テスト、ビルド、成果物の保存、デプロイの各工程と、かかっている時間</li><li><strong>IaCのコードとstateの置き場所</strong>：どの環境がコードで管理され、どこが手作業のまま残っているか、誰が適用しているか</li><li><strong>権限と秘密情報の扱い</strong>：パイプラインに渡している権限と、認証情報の置き場所</li><li><strong>リリースの手順書と直近の障害の記録</strong>：手作業が残る工程と、過去に失敗した場面</li></ol>
+<p>読みながら、「仕組みではこうなっているが、実際は手で補っていそう」という点を書き留めておきます。この段階では結論を出さず、仮説としてためておきます。</p>
+<h3>開発者と短く話す</h3>
+<p>仕組みの困りごとは、使っている人に聞くのが一番早く分かります。開発チームのリーダー、よくリリースを担当する人、インフラの担当者と、それぞれ短い時間で話す機会をもらいます。聞くことは次の3つに絞ると、相手の負担になりません。</p>
+<ul><li>開発やリリースで一番時間を取られていること</li><li>今の仕組みで助かっていること</li><li>外部のDevOpsエンジニアに期待すること</li></ul>
+<p>同じ質問を複数のチームにすると、困りごとの重なりと違いがはっきりします。</p>
+<h3>今の状態を測っておく</h3>
+<p>改善の効果を後で示すために、最初の状態を測っておきます。DORAは、ソフトウェアの届け方の指標として、変更のリードタイム、デプロイの頻度、失敗したデプロイからの復旧時間、変更の失敗率、本番の障害が原因で行う計画外のデプロイの割合（デプロイの手戻り率）を挙げています（2026年1月更新の公式ガイドによる）。すべてを正確に測る必要はありません。パイプラインの実行時間や、直近のデプロイの回数など、記録から拾えるものだけでも控えておくと、月末の見立てに使えます。</p>
+<h2 id="s3">2週目：小さな改善を一つ届ける</h2>
+<h3>権限が要らない、または小さい改善を選ぶ</h3>
+<p>2週目には、影響が小さく、効果が分かりやすい改善を一つ選んで届けます。たとえば、遅い工程のキャッシュの見直し、失敗しやすいテストの切り分け、パイプラインの失敗時の通知の整理などです。最初の改善は、プルリクエストとしてレビューを受け、現場の変更の流れに乗せて出します。</p>
+<h3>変更の流れを体で覚える</h3>
+<p>最初の改善を出すことで、レビューの決まり、誰が承認するか、本番に反映するまでの手順が分かります。ここで分かった流れは、3週目以降の大きな変更の計画に使います。</p>
+<h3>必要な権限を一覧にして出す</h3>
+<p>初月のうちに必要になる権限と、その理由を一覧にして窓口に出します。権限は必要な範囲に絞って求めるのが基本です。GitHubのドキュメントでも、ワークフローのトークンの権限を必要最小限にすることが勧められています（2026年10月時点）。自分の権限も同じ考え方で求めると、発注側も判断しやすくなります。</p>
+<aside class="box box-view"><p class="box-label">エージェントベストの見解</p><p>案件紹介の現場で、参画後の評価が高いDevOpsエンジニアの方に共通しているのは、最初の2週間で「小さくても目に見える改善」を一つ届けていることです。大きな提案の前に、開発者が日々の作業で違いを感じられる変更を出すと、その後の提案が聞いてもらいやすくなります。初月は、大きく作り直すことより、現場の流れに乗って一つ届けることを優先するのをおすすめします。</p></aside>
+<h2 id="s4">3〜4週目：見立てを出し、改善の順番に合意を取る</h2>
+<h3>現状の見立てをまとめる</h3>
+<p>1〜2週目で集めた情報をもとに、現状の見立てをまとめます。中身は次のとおりです。</p>
+<ul><li>手作業が残る工程と、そのために起きていること</li><li>コードで管理されていない環境と、食い違いの危うさ</li><li>権限や秘密情報の扱いで直したほうがよい点</li><li>開発チームの困りごとと、その原因の見立て</li></ul>
+<h3>改善の順番は選択肢で出す</h3>
+<p>改善が必要な点が多い場合、一つの案だけを出すと、「今の仕組みを否定された」と受け取られやすくなります。効果、手間、止めてはいけない業務への影響を並べ、どれから手を付けるかを発注側に選んでもらう形にします。推す順番があれば、その理由を添えます。</p>
+<h3>次の1〜2か月の計画を引く</h3>
+<p>合意した順番をもとに、次の1〜2か月の計画を引き、関係するチームに共有します。移行を伴う場合は、どのチームから移すか、元に戻す手順をどうするかも書いておきます。</p>
+<h2 id="s5">案件の型によって初月の重心は変わる</h2>
+<h3>新しい基盤を立ち上げる案件</h3>
+<p>まだ仕組みがない段階で入る場合は、現状の把握より、使うチームの要望と、決まりや統制の条件を言葉で合わせることが中心になります。月末には、構成の骨子と、決めきれていない論点の一覧を出せることを目指します。</p>
+<h3>古い仕組みから移す案件</h3>
+<p>手作業のリリースや古いCIツールからの移行では、止めてはいけない業務と、移す順番の見立てが初月の中心です。最初の移行は、影響の小さいサービス一つに絞って計画します。</p>
+<h3>複数チームの標準をそろえる案件</h3>
+<p>チームごとに違うやり方をそろえる案件では、技術より合意の取り方が大切です。初月は、各チームの今のやり方と、そろえたときに困ることを聞き取るのに時間を使います。</p>
+<h3>運用を引き継ぐ案件</h3>
+<p>前任者が作った仕組みを引き継ぐ場合は、作り直しを考える前に、今の仕組みを動かし続けられる状態をつくることを優先します。引き継ぎの資料が少ないときの進め方は<a href="/media/hikitsugi/">引き継ぎの記事</a>も参考にしてください。</p>
+<h2 id="s6">初月に避けたい動き</h2>
+<div class="table-wrap"><table><thead><tr><th>避けたい動き</th><th>起きやすいこと</th><th>代わりにすること</th></tr></thead><tbody><tr><td>道具を一気に入れ替える</td><td>開発が止まり、問題の切り分けも難しくなる</td><td>現状を示し、入れ替えは順番を合意してから</td></tr><tr><td>広い権限を最初から求める</td><td>警戒され、権限の手続きも長引く</td><td>必要な権限と理由を一覧にして段階的に求める</td></tr><tr><td>本番に手で直接手を入れる</td><td>経緯が残らず、事故の説明ができなくなる</td><td>現場の変更の流れに乗せ、記録を残す</td></tr><tr><td>自分だけが分かるスクリプトを増やす</td><td>契約が終わった後に誰も直せなくなる</td><td>理由と使い方を文書に残し、レビューを受ける</td></tr><tr><td>説明なしに決まりを必須にする</td><td>開発チームの反発を招き、使われなくなる</td><td>一つのチームで試し、効果を見せてから広げる</td></tr></tbody></table></div>
+<p>範囲外の依頼が増えてきたときの扱いは<a href="/media/scope-change/">業務範囲が変わったときの記事</a>、DevOpsエンジニアがつまずきやすい場面は<a href="/media/devops-tsumazuki/">DevOpsエンジニアのフリーランスがつまずきやすい点と対策</a>で整理しています。</p>
+<aside class="box box-caution"><p class="box-label">注意</p><p>「すぐにデプロイを速くしてほしい」と初月から求められることがあります。それでも、権限や秘密情報の扱いを把握する前に仕組みを大きく変えると、思わぬ箇所を壊したときの影響が大きくなります。最初の数週間を現状の把握にあてることを、参画の時点で発注側と合意しておくと、後で動きやすくなります。</p></aside>
+<h2 id="s7">1か月の終わりに振り返ること</h2>
+<p>1か月が過ぎたら、次の点を自分で振り返ります。</p>
+<ul><li>決める立場の人に、現状の見立てと改善の順番を伝えられたか</li><li>小さな改善を一つ、現場の変更の流れに乗せて届けられたか</li><li>最初の状態を、後で比べられる形で記録できているか</li><li>契約で決めた業務の範囲と、実際に担っている仕事がずれていないか</li><li>時間外の作業を含め、稼働時間の記録が残っているか</li></ul>
+<p>ずれている点があれば、2か月目の早い段階で窓口と話しておきます。</p>
+<aside class="box box-view"><p class="box-label">エージェントベストの見解</p><p>当社では、契約で業務範囲・報酬・支払期日・契約期間を個別契約に書いてお渡ししています。参画して1か月の間に、聞いていた役割と実際の仕事に違いを感じたときは、早めにご相談ください。契約の内容に関わる点は、ご質問いただければ確認します。</p></aside>
+<aside class="box box-point"><p class="box-label">ポイント</p><ul><li>DevOpsの初月は、現状をつかむ、使う人と決める人をつかむ、次の手を合意する、の3つを順に進める</li><li>1週目は仕組みと開発者から情報を集め、最初の状態を測っておく</li><li>2週目に小さな改善を一つ現場の流れに乗せて届け、必要な権限を一覧にして出す</li><li>3〜4週目に見立てを出し、改善の順番は選択肢で示して選んでもらう</li></ul></aside>
+<h2 id="s8">よくある質問</h2>
+<h3>初月はほとんど権限がもらえません。何から始めればよいですか？</h3>
+<p>読み取りの権限で見られる範囲から、構成図と課題の一覧を作るのが近道です。改善案はプルリクエストの形で用意し、反映は社員のメンバーにお願いする形にすれば、権限がなくても成果を見せられます。必要な権限は理由と一緒に早めに出しておきます。リモートの案件での進め方は<a href="/media/devops-remote/">DevOpsエンジニアのリモート案件の記事</a>でも触れています。</p>
+<h3>前任者の仕組みが複雑で、全体がつかめません。</h3>
+<p>一度に全体をつかもうとせず、よく使われるパイプラインから順に、きっかけ、工程、反映先を書き出していきます。分かっていることと分かっていないことを分けて報告し、残りをいつまでに確かめるかの予定を示すほうが信頼されます。</p>
+<h3>社員のDevOps担当やSREがいる現場で、どう振る舞えばよいですか？</h3>
+<p>最初の週のうちに、どの仕組みを誰が持ち、どの変更を誰が承認するかを確かめておきます。担当を仕組みごとに分けておくと、同じ箇所を二人で直す食い違いを防げます。SREとの役割の分け方は<a href="/media/sre-first-month/">SREの参画初月の記事</a>も参考にしてください。</p>
+  </div>
+  <section class="sources"><h2>参考にした公的情報・資料</h2><ul><li><a href="https://dora.dev/guides/dora-metrics/" target="_blank" rel="noopener nofollow">DORA&#39;s software delivery performance metrics（DORA）</a></li><li><a href="https://docs.github.com/en/actions/reference/security/secure-use" target="_blank" rel="noopener nofollow">Secure use reference（GitHub Docs）</a></li></ul>
+  <p class="note">記事の内容は公開日時点の情報にもとづきます。制度や税率は変わることがあるため、手続きの前に必ず各機関の最新情報をご確認ください。</p></section>
+  <div class="cta-band">
+  <h2>条件に合う案件だけ、知りたい方へ</h2>
+  <p>ご登録は無料です。条件に合う案件だけを、ご本人の了承を得てからご提案します。</p>
+  <div class="cta-row">
+    <a class="btn btn-primary" href="https://airtable.com/appYkc36EvioYoL1A/pag6CZC4uJmxUcrXT/form" target="_blank" rel="noopener">無料で登録する</a>
+    <a class="btn btn-ghost" href="/jobs/">案件を探す</a>
+  </div>
+</div>
+  <section class="related"><h2>あわせて読みたい</h2><div class="grid g2"><a class="card art-card" href="/media/sankaku-junbi/">
+  <span class="art-hub">案件の探し方</span>
+  <h3>参画が決まってから開始日までにやること｜契約・事業の手続き・作業環境の準備</h3>
+  <p>参画が決まったら、開始日までに「契約の書面の確認」「他の選考の整理」「請求と事業の手続き」「作業環境」「業務の予習」の5つを進めます。時期ごとのやることと、開始前の作業を頼まれたときの注意点を整理します。</p>
+</a>
+<a class="card art-card" href="/media/sankaku-shoki/">
+  <span class="art-hub">案件の探し方</span>
+  <h3>参画初日から最初の1週間でやること｜業務委託で立ち上がりを早める進め方</h3>
+  <p>参画して最初の1週間は、成果を急ぐより「任された範囲・依頼の窓口・報告の形」を確かめ、小さな仕事を一つ終えることを優先します。初日から5日目までの進め方と、つまずきやすい点を整理します。</p>
+</a>
+<a class="card art-card" href="/media/devops-tsumazuki/">
+  <span class="art-hub">インフラ・クラウド</span>
+  <h3>DevOpsエンジニアのフリーランスがつまずきやすい点と対策</h3>
+  <p>フリーランスのDevOpsエンジニアがつまずきやすいのは、構築と運用の境目があいまいな契約、権限待ちで止まる初期、使われない仕組みや属人化、stateや秘密情報の扱い、時間外対応の精算などです。契約・現場・技術・お金の順に場面と対策を整理します。</p>
+</a>
+<a class="card art-card" href="/media/devops-skills/">
+  <span class="art-hub">インフラ・クラウド</span>
+  <h3>DevOpsエンジニアのフリーランス案件で求められるスキルと経験</h3>
+  <p>DevOpsエンジニアのフリーランス案件では、CI/CDの設計、IaCのモジュールとstateの扱い、パイプラインの権限と秘密情報の管理、開発者が使いやすい共通の仕組みづくりが見られます。分野ごとの中身と、経験の段階ごとに求められる水準を解説します。</p>
+</a>
+<a class="card art-card" href="/media/devops-remote/">
+  <span class="art-hub">インフラ・クラウド</span>
+  <h3>DevOpsエンジニアのフリーランスはリモートで働ける？案件の傾向と探し方</h3>
+  <p>DevOpsエンジニアは、CI/CDの整備やIaCへの移行など、リモートで進めやすい案件があります。一方で、閉じたネットワークの中で動かすパイプラインや、本番反映に立ち会う体制では出社が求められやすくなります。仕事の型と、参画前に確かめる点を解説します。</p>
+</a>
+<a class="card art-card" href="/media/devops-how-to/">
+  <span class="art-hub">インフラ・クラウド</span>
+  <h3>DevOpsエンジニアがフリーランスになるには｜必要な経験と独立までの進め方</h3>
+  <p>DevOpsエンジニアとして独立するには、CI/CDやIaCを使える経験に加え、仕組みを作って開発チームに使ってもらい、手放せる形で残した経験が必要です。出身別の補い方、在職中に積む実績、独立までの進め方を解説します。</p>
+</a></div></section>
+</main>
+<footer class="site-foot">
+  <div class="wrap">
+    <strong>エージェントベストジョブ フリーランス</strong>
+    <div class="foot-links">
+      <a href="/">トップ</a>
+      <a href="/jobs/">案件を探す</a>
+      <a href="/media/">お役立ち記事</a>
+      <a href="https://airtable.com/appYkc36EvioYoL1A/pag6CZC4uJmxUcrXT/form" target="_blank" rel="noopener">ご登録（スキルシート・ご希望の条件）</a>
+      <a href="https://line.me/R/ti/p/@697nxhbt?oat_content=url&ts=08302134" target="_blank" rel="noopener" data-line-cta="footer">LINEで相談する</a>
+      <a href="/privacy.html">個人情報の取り扱い</a>
+      <a href="https://www.agent-best.net/company/">運営会社</a>
+    </div>
+    <div class="foot-links">
+      <a href="https://jobs.agent-best.net/">正社員の求人を探す（エージェントベストジョブ）</a>
+      <a href="https://skill.agent-best.net/">エージェントベストジョブ手に職</a>
+      <a href="https://www.agent-best.net/">エージェントベスト</a>
+    </div>
+    <p>運営：株式会社エージェントベスト（有料職業紹介事業 許可番号 13-ユ-316964）<br>〒106-0032 東京都港区六本木4-8-7 嶋田ビル5階</p>
+  </div>
+</footer>
+<script src="/assets/fav.js" defer></script>
+</body>
+</html>

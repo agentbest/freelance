@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>DevOpsエンジニアのフリーランスがつまずきやすい点と対策｜エージェントベストジョブ フリーランス</title>
+<meta name="description" content="フリーランスのDevOpsエンジニアがつまずきやすいのは、構築と運用の境目があいまいな契約、権限待ちで止まる初期、使われない仕組みや属人化、stateや秘密情報の扱い、時間外対応の精算などです。契約・現場・技術・お金の順に場面と対策を整理します。">
+<link rel="canonical" href="https://freelance.agent-best.net/media/devops-tsumazuki/">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="エージェントベストジョブ フリーランス">
+<meta property="og:title" content="DevOpsエンジニアのフリーランスがつまずきやすい点と対策｜エージェントベストジョブ フリーランス">
+<meta property="og:description" content="フリーランスのDevOpsエンジニアがつまずきやすいのは、構築と運用の境目があいまいな契約、権限待ちで止まる初期、使われない仕組みや属人化、stateや秘密情報の扱い、時間外対応の精算などです。契約・現場・技術・お金の順に場面と対策を整理します。">
+<meta property="og:url" content="https://freelance.agent-best.net/media/devops-tsumazuki/">
+<meta property="og:image" content="https://freelance.agent-best.net/assets/ogp.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://freelance.agent-best.net/assets/ogp.png">
+<meta name="theme-color" content="#1E3A5F">
+<link rel="icon" href="/assets/favicon.ico">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="stylesheet" href="/assets/site.css">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1XXMP8Y1B4"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-1XXMP8Y1B4');
+document.addEventListener('click',e=>{const a=e.target.closest('[data-line-cta]');if(a)gtag('event','line_add_friend',{placement:a.dataset.lineCta,page_path:location.pathname});});</script>
+<script type="application/ld+json">[{"@context":"https://schema.org","@type":"Article","headline":"DevOpsエンジニアのフリーランスがつまずきやすい点と対策","description":"フリーランスのDevOpsエンジニアがつまずきやすいのは、構築と運用の境目があいまいな契約、権限待ちで止まる初期、使われない仕組みや属人化、stateや秘密情報の扱い、時間外対応の精算などです。契約・現場・技術・お金の順に場面と対策を整理します。","datePublished":"2026-11-04","dateModified":"2026-11-04","author":{"@type":"Organization","name":"株式会社エージェントベスト","url":"https://www.agent-best.net/"},"publisher":{"@type":"Organization","name":"株式会社エージェントベスト","logo":{"@type":"ImageObject","url":"https://freelance.agent-best.net/assets/logo.png"}},"mainEntityOfPage":"https://freelance.agent-best.net/media/devops-tsumazuki/"},{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"トップ","item":"https://freelance.agent-best.net/"},{"@type":"ListItem","position":2,"name":"お役立ち記事","item":"https://freelance.agent-best.net/media/"},{"@type":"ListItem","position":3,"name":"インフラ・クラウド","item":"https://freelance.agent-best.net/media/hub/infra-cloud/"},{"@type":"ListItem","position":4,"name":"DevOpsエンジニアのフリーランスがつまずきやすい点と対策"}]},{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"参画してから、聞いていた範囲よりも運用の仕事が多いと気づきました。どうすればよいですか？","acceptedAnswer":{"@type":"Answer","text":"何が範囲の外なのかを具体的に書き出し、契約で決めた業務範囲と照らし合わせます。そのうえで、紹介を受けたエージェントや発注側の窓口に早めに伝えてください。我慢して続けると、運用の代行が当たり前になり、後から戻しにくくなります。"}},{"@type":"Question","name":"自分が作ったパイプラインが原因で本番に障害が出たら、賠償を求められますか？","acceptedAnswer":{"@type":"Answer","text":"準委任契約では、成果そのものではなく、専門家として求められる注意を払って業務を行うことが約束の中身です。ただし、契約の内容や進め方に落ち度があったかで判断が変わることがあります。不安がある場合は契約書の損害賠償の条項を読み、弁護士などの専門家にご相談ください。"}},{"@type":"Question","name":"前任者の仕組みに問題が多いとき、どう伝えればよいですか？","acceptedAnswer":{"@type":"Answer","text":"前任者を否定する言い方は避け、事実として起きていることと、そのままにした場合の影響、直す順番の案を並べて示します。どこから直すかは発注側に選んでもらう形にすると、現場の協力を得やすくなります。"}}]}]</script>
+</head>
+<body>
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="/"><img src="/assets/mark.png" alt="" width="28" height="28"><span>エージェントベストジョブ フリーランス<small>フリーランスのエンジニア・コンサル向け案件紹介</small></span></a>
+    <nav class="head-nav" aria-label="メニュー">
+      <a class="link" href="/jobs/">案件を探す</a>
+      <a class="link" href="/media/">お役立ち記事</a>
+      <a class="link keep" href="/mypage/" aria-label="気になる案件">☆ 気になる<span class="fav-count" data-fav-count hidden></span></a>
+      <a class="btn btn-primary btn-sm" href="https://airtable.com/appYkc36EvioYoL1A/pag6CZC4uJmxUcrXT/form" target="_blank" rel="noopener">無料で登録</a>
+    </nav>
+  </div>
+</header>
+<main class="wrap narrow article">
+  <p class="crumbs"><a href="/">トップ</a> › <a href="/media/">お役立ち記事</a> › <a href="/media/hub/infra-cloud/">インフラ・クラウド</a></p>
+  <a class="art-hub" href="/media/hub/infra-cloud/">インフラ・クラウド</a>
+  <h1 class="art-title">DevOpsエンジニアのフリーランスがつまずきやすい点と対策</h1>
+  <p class="note">公開 2026-11-04　監修：株式会社エージェントベスト</p>
+  <nav class="toc" aria-label="目次"><strong>目次</strong><ol><li><a href="#s1">契約でのつまずき</a></li><li><a href="#s2">現場でのつまずき</a></li><li><a href="#s3">技術でのつまずき</a></li><li><a href="#s4">お金でのつまずき</a></li><li><a href="#s5">よくある質問</a></li></ol></nav>
+  <div class="art-body">
+<p>フリーランスのDevOpsエンジニアがつまずきやすいのは、<strong>構築と運用の境目があいまいな契約、権限が渡されずに止まる初期、作った仕組みが使われないことや自分しか直せない状態、そして夜間のリリースや障害対応の稼働の膨らみ</strong>です。どれも、外部の立場で「組織のやり方を変える仕事」を担うことから起きます。</p>
+<p>対策の基本は、<strong>範囲と完了の基準を契約と参画初期に言葉で決め、現場では小さく変えて記録を残し、引き継げる形で手放すこと</strong>です。この記事では、契約・現場・技術・お金の順に、DevOpsならではの場面と対策を整理します。案件を選ぶ段階で確かめる項目は<a href="/media/devops-anken-erabi/">DevOpsエンジニアの案件の選び方</a>で扱っているので、ここでは「参画してから起きやすい場面」に絞ります。</p>
+<h2 id="s1">契約でのつまずき</h2>
+<h3>「構築」のつもりが「運用」まで続く</h3>
+<p>パイプラインやIaCの整備で参画したのに、完成後も問い合わせ対応や不具合の修正、毎回のリリース作業まで期待され続ける、という食い違いはよく起きます。DevOpsの仕組みは作った後も使われ続けるため、構築と運用の境目が契約に書かれていないと、範囲が少しずつ広がります。</p>
+<p><strong>対策</strong>：参画前に、作るもの（パイプラインの定義、IaCのモジュール、使い方の文書など）と、受けないもの（毎回のリリース作業の代行、アプリの不具合の調査など）を言葉で確かめます。範囲の外の依頼が増えたときの扱いは<a href="/media/scope-change/">業務範囲が変わったときの記事</a>をご覧ください。</p>
+<h3>完了の基準が決まっておらず、終わらない</h3>
+<p>「CI/CDを整備する」とだけ決めて始めると、どこまでで完了なのかが人によって違います。準委任の契約でも、成果物の完成を約束するように読める書き方になっていると、責任の範囲が広く見えることがあります。契約の形による違いは<a href="/media/junin-vs-ukeoi/">準委任契約と請負契約の違い</a>で確かめてください。</p>
+<p><strong>対策</strong>：「対象のサービス」「対象の環境」「引き継ぎの相手」を区切り、どの状態になったら一区切りかを最初の打ち合わせで書き出しておきます。</p>
+<h3>本番の事故の責任を問われる</h3>
+<p>自動化した仕組みの不具合で本番に影響が出たとき、「仕組みを作った人の責任」と言われそうになることがあります。</p>
+<p><strong>対策</strong>：本番に反映する前の承認の流れを発注側と決め、誰の承認で反映したかを記録に残します。契約書の損害賠償の条項は署名の前に読み、上限の考え方は<a href="/media/damages-cap/">損害賠償の上限の記事</a>と<a href="/media/baisho-sekinin/">賠償責任保険の記事</a>を参考にしてください。判断に迷う場合は弁護士などの専門家にご相談ください。</p>
+<h3>作ったモジュールや雛形の権利があいまい</h3>
+<p>案件で作った共通のモジュールやスクリプトを、ほかの案件でも使えると思い込むのは危険です。権利の扱いは契約によって決まります。考え方は<a href="/media/copyright/">著作権の記事</a>で整理しています。</p>
+<h2 id="s2">現場でのつまずき</h2>
+<h3>権限が渡されず、最初の数週間が止まる</h3>
+<p>外部のDevOpsエンジニアには、最初は読み取りの権限だけが渡され、クラウドやリポジトリの設定の変更は社員に依頼する形になることがあります。権限の申請に時間がかかると、何もできないまま評価の時期が来てしまいます。</p>
+<p><strong>対策</strong>：権限がなくても進められる仕事（現状の把握、構成図の作成、改善案の比較）を先に進め、必要な権限と理由を一覧にして早めに出します。最初の1か月の進め方は<a href="/media/devops-first-month/">DevOpsエンジニアの参画初月にやること</a>で整理しています。</p>
+<h3>作った仕組みが開発チームに使われない</h3>
+<p>よかれと思って作った雛形や決まりが、開発チームに「押し付け」と受け取られ、使われないまま終わることがあります。DevOpsの成果は使われて初めて生まれるため、ここでつまずくと契約の更新に響きます。</p>
+<p><strong>対策</strong>：最初に一つのチームと一緒に試し、困りごとが減ったことを確かめてから広げます。使い方の文書と、質問を受ける場所を決めておくと、移ってもらいやすくなります。</p>
+<h3>自分しか直せない仕組みになる</h3>
+<p>急いで整備すると、構成の理由が自分の頭の中にしかなく、契約が終わった後に誰も手を入れられない仕組みが残ります。発注側にとっては負担になり、引き継ぎの段階で信頼を損ないます。</p>
+<p><strong>対策</strong>：構成を選んだ理由をプルリクエストや文書に残し、社員のメンバーにレビューや変更を担ってもらう機会を早くから作ります。引き継ぎの進め方は<a href="/media/hikitsugi/">引き継ぎの記事</a>をご覧ください。</p>
+<aside class="box box-view"><p class="box-label">エージェントベストの見解</p><p>案件紹介の現場で、DevOpsエンジニアの方が契約の更新を見送られる理由として耳にしやすいのは、技術の不足よりも「現場に合わない進め方」です。一度に多くの道具を入れ替える、開発チームへの説明なしに決まりを必須にする、といった場面が続くと、仕組みの出来がよくても使われなくなります。最初は小さく試し、使う人の声を聞いてから広げることをおすすめします。</p></aside>
+<h2 id="s3">技術でのつまずき</h2>
+<h3>stateの置き場所と適用の流れを決めずに始める</h3>
+<p>IaCを導入するとき、stateの置き場所や、誰がいつ適用するかを決めないまま進めると、手元での適用が重なって環境が食い違うことがあります。Terraformの公式ドキュメントでは、stateをローカルに置くと共同作業が難しくなり失う危険もあるとして、HCP Terraformやリモートのバックエンドでの保管を勧め、ロックやアクセス制御のない保管は秘密情報の漏えいにつながるおそれがあると注意しています（2026年10月時点）。</p>
+<p><strong>対策</strong>：取り込みを始める前に、stateの保管場所、ロック、適用する人と手順を決めて合意します。既存の環境を取り込むときは、範囲を小さく区切って進めます。</p>
+<h3>パイプラインに強すぎる権限と長期の鍵を置く</h3>
+<p>自動化を急ぐと、パイプラインに広い権限や長期の認証情報を持たせがちです。GitHubのドキュメントでは、ワークフローのトークンの権限を必要最小限にし、外部のアクションは完全なコミットSHAで固定すること、クラウドへの認証にはOpenID Connectで短期のトークンを使うことを勧めています（2026年10月時点）。</p>
+<p><strong>対策</strong>：権限の範囲と秘密情報の置き場所を、構築の最初に設計の一部として決めます。前任者の設定を引き継ぐ場合も、権限が広すぎないかを最初に見直します。</p>
+<h3>一度に移行して、全チームを止める</h3>
+<p>古いCIツールからの移行やリポジトリの構成の変更を一度に行うと、問題が出たときに全チームの開発が止まります。</p>
+<p><strong>対策</strong>：一つのチーム、一つの環境から移し、元に戻す手順を用意してから次へ進みます。切り替えの日は発注側の業務の予定と合わせて決めます。</p>
+<h2 id="s4">お金でのつまずき</h2>
+<h3>夜間のリリースや障害対応が精算されない</h3>
+<p>業務時間外のリリースへの立ち会いや、仕組みの不具合で開発が止まったときの呼び出しが続くと、稼働が精算幅を超えることがあります。待機の扱いを決めていないと、報酬に反映されないまま負担だけが増えます。</p>
+<p><strong>対策</strong>：稼働を日々記録し、精算幅を超えそうな段階で窓口に伝えます。仕組みは<a href="/media/seisan-haba/">精算幅の記事</a>、待機の扱いは<a href="/media/taiki-houshu/">待機の報酬の記事</a>で解説しています。</p>
+<h3>検証のクラウド費用を自分で持つ</h3>
+<p>案件の検証のために、自分のクラウドのアカウントで環境を立てると、費用を立て替えたまま精算の決まりがないことがあります。業務の情報を個人の環境に置くこと自体が、契約上の問題になる場合もあります。</p>
+<p><strong>対策</strong>：検証は発注側が用意した環境で行うのを基本とし、費用の扱いが分からない場合は始める前に窓口に尋ねます。</p>
+<h3>整ったところで契約が終わる</h3>
+<p>移行や整備がうまく進むほど、外部の人の役目は小さくなります。フリーランス法では、6か月以上の業務委託を解除したり更新しなかったりする場合、発注側は少なくとも30日前までに予告することになっています（2026年10月時点、公正取引委員会の特設サイトによる）。</p>
+<p><strong>対策</strong>：引き継ぎの時期が見えたら、契約の更新時期の1〜2か月前には次の案件の相談を始めます。終わりが近づいたら、作った仕組みと成果を、守秘義務の範囲で一般化してスキルシートに書き足しておきます。</p>
+<aside class="box box-caution"><p class="box-label">注意</p><p>本番環境の権限を持った状態で、時間外に一人で作業を続けるのは避けてください。操作の誤りに気づく人がいないうえ、事故が起きたときに経緯を説明しにくくなります。時間外の作業は、立ち会いの人と手順を決めたうえで行うのが安全です。</p></aside>
+<aside class="box box-view"><p class="box-label">エージェントベストの見解</p><p>当社では、契約で業務範囲・報酬・支払期日・契約期間を個別契約に書いてお渡ししています。構築と運用の境目や、時間外の対応の扱いなど、参画前に気になる点はご質問いただければ確認します。参画後に範囲が広がってきたと感じたときも、早めにご相談ください。</p></aside>
+<aside class="box box-point"><p class="box-label">ポイント</p><ul><li>契約では、作るものと受けないもの、完了の基準、本番反映の承認の流れを決める</li><li>現場では、権限がなくても進められる仕事から始め、小さく試してから広げ、引き継げる形で残す</li><li>技術では、stateの扱いとパイプラインの権限を最初に設計し、移行は段階を分ける</li><li>時間外の稼働は日々記録し、精算幅を超えそうなら早めに伝える</li></ul></aside>
+<h2 id="s5">よくある質問</h2>
+<h3>参画してから、聞いていた範囲よりも運用の仕事が多いと気づきました。どうすればよいですか？</h3>
+<p>何が範囲の外なのかを具体的に書き出し、契約で決めた業務範囲と照らし合わせます。そのうえで、紹介を受けたエージェントや発注側の窓口に早めに伝えてください。我慢して続けると、運用の代行が当たり前になり、後から戻しにくくなります。</p>
+<h3>自分が作ったパイプラインが原因で本番に障害が出たら、賠償を求められますか？</h3>
+<p>準委任契約では、成果そのものではなく、専門家として求められる注意を払って業務を行うことが約束の中身です。ただし、契約の内容や進め方に落ち度があったかで判断が変わることがあります。不安がある場合は契約書の損害賠償の条項を読み、弁護士などの専門家にご相談ください。</p>
+<h3>前任者の仕組みに問題が多いとき、どう伝えればよいですか？</h3>
+<p>前任者を否定する言い方は避け、事実として起きていることと、そのままにした場合の影響、直す順番の案を並べて示します。どこから直すかは発注側に選んでもらう形にすると、現場の協力を得やすくなります。</p>
+  </div>
+  <section class="sources"><h2>参考にした公的情報・資料</h2><ul><li><a href="https://www.jftc.go.jp/freelancelaw_2026/" target="_blank" rel="noopener nofollow">2026年 フリーランス法特設サイト（公正取引委員会）</a></li><li><a href="https://docs.github.com/en/actions/reference/security/secure-use" target="_blank" rel="noopener nofollow">Secure use reference（GitHub Docs）</a></li><li><a href="https://developer.hashicorp.com/terraform/language/state" target="_blank" rel="noopener nofollow">State（Terraform｜HashiCorp Developer）</a></li></ul>
+  <p class="note">記事の内容は公開日時点の情報にもとづきます。制度や税率は変わることがあるため、手続きの前に必ず各機関の最新情報をご確認ください。</p></section>
+  <div class="cta-band">
+  <h2>条件に合う案件だけ、知りたい方へ</h2>
+  <p>ご登録は無料です。条件に合う案件だけを、ご本人の了承を得てからご提案します。</p>
+  <div class="cta-row">
+    <a class="btn btn-primary" href="https://airtable.com/appYkc36EvioYoL1A/pag6CZC4uJmxUcrXT/form" target="_blank" rel="noopener">無料で登録する</a>
+    <a class="btn btn-ghost" href="/jobs/">案件を探す</a>
+  </div>
+</div>
+  <section class="related"><h2>あわせて読みたい</h2><div class="grid g2"><a class="card art-card" href="/media/devops-how-to/">
+  <span class="art-hub">インフラ・クラウド</span>
+  <h3>DevOpsエンジニアがフリーランスになるには｜必要な経験と独立までの進め方</h3>
+  <p>DevOpsエンジニアとして独立するには、CI/CDやIaCを使える経験に加え、仕組みを作って開発チームに使ってもらい、手放せる形で残した経験が必要です。出身別の補い方、在職中に積む実績、独立までの進め方を解説します。</p>
+</a>
+<a class="card art-card" href="/media/devops-first-month/">
+  <span class="art-hub">インフラ・クラウド</span>
+  <h3>DevOpsエンジニアの参画初月にやること｜現場で信頼される進め方</h3>
+  <p>DevOpsエンジニアの参画初月は、パイプライン・IaC・権限・リリース手順の現状をつかみ、使う人と決める人を知り、小さな改善を一つ届けたうえで、月末に改善の順番を合意するのが基本です。週ごとの進め方と、初月に避けたい動きを整理します。</p>
+</a>
+<a class="card art-card" href="/media/devops-skills/">
+  <span class="art-hub">インフラ・クラウド</span>
+  <h3>DevOpsエンジニアのフリーランス案件で求められるスキルと経験</h3>
+  <p>DevOpsエンジニアのフリーランス案件では、CI/CDの設計、IaCのモジュールとstateの扱い、パイプラインの権限と秘密情報の管理、開発者が使いやすい共通の仕組みづくりが見られます。分野ごとの中身と、経験の段階ごとに求められる水準を解説します。</p>
+</a>
+<a class="card art-card" href="/media/devops-rate/">
+  <span class="art-hub">インフラ・クラウド</span>
+  <h3>DevOpsエンジニアのフリーランス案件｜報酬の決まり方と単価を上げる考え方</h3>
+  <p>DevOpsエンジニアの報酬は、任される範囲が一本のパイプラインか開発基盤全体か、現状の成熟度、影響する開発チームの数、標準を決める裁量、成果を示せるかで決まり、案件ごとに大きく変わります。上下する理由と交渉の材料を解説します。</p>
+</a>
+<a class="card art-card" href="/media/devops-anken-erabi/">
+  <span class="art-hub">インフラ・クラウド</span>
+  <h3>DevOpsエンジニアのフリーランス案件の選び方｜契約前に確かめたい8つの点</h3>
+  <p>DevOpsの案件は、同じ募集名でも範囲・権限・運用の担い手で負担が大きく変わります。任される範囲、本番の権限と承認、構成を決める裁量、作った後の運用、夜間の作業、契約の形と責任、認証情報の扱い、契約期間の8点の確かめ方を解説します。</p>
+</a>
+<a class="card art-card" href="/media/devops-seishain-hikaku/">
+  <span class="art-hub">インフラ・クラウド</span>
+  <h3>DevOpsエンジニアは正社員とフリーランスのどちらがよい？比べるときの観点</h3>
+  <p>DevOpsエンジニアとして正社員とフリーランスのどちらがよいかは、収入の安定、社会保険、権限とキャリア、働き方の4つで比べると判断しやすくなります。仕組みの効果を見届けられるか、本番の権限をどこまで持てるかなど、DevOpsならではの違いを整理します。</p>
+</a></div></section>
+</main>
+<footer class="site-foot">
+  <div class="wrap">
+    <strong>エージェントベストジョブ フリーランス</strong>
+    <div class="foot-links">
+      <a href="/">トップ</a>
+      <a href="/jobs/">案件を探す</a>
+      <a href="/media/">お役立ち記事</a>
+      <a href="https://airtable.com/appYkc36EvioYoL1A/pag6CZC4uJmxUcrXT/form" target="_blank" rel="noopener">ご登録（スキルシート・ご希望の条件）</a>
+      <a href="https://line.me/R/ti/p/@697nxhbt?oat_content=url&ts=08302134" target="_blank" rel="noopener" data-line-cta="footer">LINEで相談する</a>
+      <a href="/privacy.html">個人情報の取り扱い</a>
+      <a href="https://www.agent-best.net/company/">運営会社</a>
+    </div>
+    <div class="foot-links">
+      <a href="https://jobs.agent-best.net/">正社員の求人を探す（エージェントベストジョブ）</a>
+      <a href="https://skill.agent-best.net/">エージェントベストジョブ手に職</a>
+      <a href="https://www.agent-best.net/">エージェントベスト</a>
+    </div>
+    <p>運営：株式会社エージェントベスト（有料職業紹介事業 許可番号 13-ユ-316964）<br>〒106-0032 東京都港区六本木4-8-7 嶋田ビル5階</p>
+  </div>
+</footer>
+<script src="/assets/fav.js" defer></script>
+</body>
+</html>
