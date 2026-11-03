@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>組込みエンジニアのフリーランスがつまずきやすい点と対策｜エージェントベストジョブ フリーランス</title>
+<meta name="description" content="フリーランスの組込みエンジニアがつまずきやすいのは、機材と情報の扱いがあいまいなまま始まること、実機待ちでの遅れ、ハードとソフトの責任の境目、評価期の稼働超過などです。契約・現場・技術・お金の順に対策を整理します。">
+<link rel="canonical" href="https://freelance.agent-best.net/media/embedded-tsumazuki/">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="エージェントベストジョブ フリーランス">
+<meta property="og:title" content="組込みエンジニアのフリーランスがつまずきやすい点と対策｜エージェントベストジョブ フリーランス">
+<meta property="og:description" content="フリーランスの組込みエンジニアがつまずきやすいのは、機材と情報の扱いがあいまいなまま始まること、実機待ちでの遅れ、ハードとソフトの責任の境目、評価期の稼働超過などです。契約・現場・技術・お金の順に対策を整理します。">
+<meta property="og:url" content="https://freelance.agent-best.net/media/embedded-tsumazuki/">
+<meta property="og:image" content="https://freelance.agent-best.net/assets/ogp.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://freelance.agent-best.net/assets/ogp.png">
+<meta name="theme-color" content="#1E3A5F">
+<link rel="icon" href="/assets/favicon.ico">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="stylesheet" href="/assets/site.css">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1XXMP8Y1B4"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-1XXMP8Y1B4');
+document.addEventListener('click',e=>{const a=e.target.closest('[data-line-cta]');if(a)gtag('event','line_add_friend',{placement:a.dataset.lineCta,page_path:location.pathname});});</script>
+<script type="application/ld+json">[{"@context":"https://schema.org","@type":"Article","headline":"組込みエンジニアのフリーランスがつまずきやすい点と対策","description":"フリーランスの組込みエンジニアがつまずきやすいのは、機材と情報の扱いがあいまいなまま始まること、実機待ちでの遅れ、ハードとソフトの責任の境目、評価期の稼働超過などです。契約・現場・技術・お金の順に対策を整理します。","datePublished":"2026-11-04","dateModified":"2026-11-04","author":{"@type":"Organization","name":"株式会社エージェントベスト","url":"https://www.agent-best.net/"},"publisher":{"@type":"Organization","name":"株式会社エージェントベスト","logo":{"@type":"ImageObject","url":"https://freelance.agent-best.net/assets/logo.png"}},"mainEntityOfPage":"https://freelance.agent-best.net/media/embedded-tsumazuki/"},{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"トップ","item":"https://freelance.agent-best.net/"},{"@type":"ListItem","position":2,"name":"お役立ち記事","item":"https://freelance.agent-best.net/media/"},{"@type":"ListItem","position":3,"name":"組込み・ゲーム・XR","item":"https://freelance.agent-best.net/media/hub/embedded-game/"},{"@type":"ListItem","position":4,"name":"組込みエンジニアのフリーランスがつまずきやすい点と対策"}]},{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"参画してから、聞いていた層や工程と違う仕事を頼まれました。どうすればよいですか？","acceptedAnswer":{"@type":"Answer","text":"まずは、何が違うのかを具体的に書き出し、契約で決めた業務範囲と照らし合わせます。そのうえで、紹介を受けたエージェントや発注側の窓口に早めに伝えてください。我慢して続けると、範囲外の作業が当たり前になり、後から戻しにくくなります。"}},{"@type":"Question","name":"自分が書いたコードの不具合が出荷後に見つかったら、賠償を求められますか？","acceptedAnswer":{"@type":"Answer","text":"準委任契約では、成果そのものを約束しているわけではありません。ただし、契約の内容や、業務の進め方に落ち度があったかどうかで判断が変わることがあります。不安がある場合は、契約書の損害賠償の条項を読み、弁護士などの専門家にご相談ください。"}},{"@type":"Question","name":"自宅で評価ボードを使って作業してもよいですか？","acceptedAnswer":{"@type":"Answer","text":"発注側の許可とルールによります。扱う情報や技術によっては、社外での作業が認められないこともあります。自宅での作業を希望する場合は、参画前に作業の場所と機材の扱いを確かめてください。リモートとの相性は組込みエンジニアのリモートの記事で整理しています。"}}]}]</script>
+</head>
+<body>
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="/"><img src="/assets/mark.png" alt="" width="28" height="28"><span>エージェントベストジョブ フリーランス<small>フリーランスのエンジニア・コンサル向け案件紹介</small></span></a>
+    <nav class="head-nav" aria-label="メニュー">
+      <a class="link" href="/jobs/">案件を探す</a>
+      <a class="link" href="/media/">お役立ち記事</a>
+      <a class="link keep" href="/mypage/" aria-label="気になる案件">☆ 気になる<span class="fav-count" data-fav-count hidden></span></a>
+      <a class="btn btn-primary btn-sm" href="https://airtable.com/appYkc36EvioYoL1A/pag6CZC4uJmxUcrXT/form" target="_blank" rel="noopener">無料で登録</a>
+    </nav>
+  </div>
+</header>
+<main class="wrap narrow article">
+  <p class="crumbs"><a href="/">トップ</a> › <a href="/media/">お役立ち記事</a> › <a href="/media/hub/embedded-game/">組込み・ゲーム・XR</a></p>
+  <a class="art-hub" href="/media/hub/embedded-game/">組込み・ゲーム・XR</a>
+  <h1 class="art-title">組込みエンジニアのフリーランスがつまずきやすい点と対策</h1>
+  <p class="note">公開 2026-11-04　監修：株式会社エージェントベスト</p>
+  <nav class="toc" aria-label="目次"><strong>目次</strong><ol><li><a href="#s1">契約でのつまずき</a></li><li><a href="#s2">現場でのつまずき</a></li><li><a href="#s3">技術でのつまずき</a></li><li><a href="#s4">お金でのつまずき</a></li><li><a href="#s5">よくある質問</a></li></ol></nav>
+  <div class="art-body">
+<p>フリーランスの組込みエンジニアがつまずきやすいのは、<strong>機材と情報の扱いがあいまいなまま始まること、実機や部品の到着待ちで作業が止まること、ハードとソフトの責任の境目、評価や量産前の稼働の膨らみ</strong>です。どれも、会社員なら社内の機材管理やハードの担当者が受け止めてくれた部分を、外部の立場で一人で抱えることから起きます。</p>
+<p>対策の基本は、<strong>つまずきの種を契約と参画初期の取り決めで小さくしておき、現場では記録と早めの共有で守ること</strong>です。この記事では、契約・現場・技術・お金の順に、組込みならではの場面と対策を整理します。契約前に確かめる項目の一覧は<a href="/media/embedded-anken-erabi/">組込みエンジニアのフリーランス案件の選び方</a>で扱っているので、ここでは「実際に起きやすい場面」に絞ります。</p>
+<h2 id="s1">契約でのつまずき</h2>
+<h3>「ファームウェア開発」の範囲と現場の期待がずれる</h3>
+<p>契約書には「ファームウェア開発業務」とだけ書かれ、現場では評価の手順書づくりや、試験の実施、量産工場への立ち会いまで期待されていた、という食い違いは起きやすいものです。組込みの仕事は、実装と評価、ソフトとハードの境目があいまいなため、引き受けた範囲が少しずつ広がりがちです。</p>
+<p><strong>対策</strong>：参画前に、自分が担う層と工程（たとえば「通信ドライバーの詳細設計から単体試験まで」）と、担わないもの（実機での総合試験、量産の立ち会いなど）を言葉で確かめておきます。範囲の外の依頼が来たときの扱いは<a href="/media/scope-change/">業務範囲が変わったときの記事</a>をご覧ください。</p>
+<h3>不具合の責任を背負わされそうになる</h3>
+<p>出荷前や出荷後に不具合が見つかったとき、「あなたが書いた部分だから」と責任を問われることがあります。準委任契約では、成果そのものではなく、業務を専門家として通常求められる注意を払って行うことが約束の中身です。ただ、請負に近い書き方の契約書や、成果物の保証を求める条項があると、責任の範囲が広く読める場合もあります。</p>
+<p><strong>対策</strong>：署名の前に、契約の形と、損害賠償や保証の条項を読みます。考え方は<a href="/media/baisho-sekinin/">損害賠償の責任の記事</a>で整理しています。判断に迷う場合は弁護士などの専門家に相談するのが安全です。</p>
+<h3>秘密の扱いのルールを知らずに破ってしまう</h3>
+<p>試作品の撮影、資料の持ち帰り、私物の記録媒体の持ち込みなど、組込みの現場には細かなルールがあります。説明を受けないまま、いつもの癖で手元のスマートフォンで基板を撮ってしまう、といったことが契約違反になるおそれがあります。</p>
+<p><strong>対策</strong>：初日に、撮影、持ち出し、私物の持ち込み、社外での作業についてのルールを窓口に尋ね、書面があれば読みます。秘密保持の契約の考え方は<a href="/media/nda/">秘密保持契約の記事</a>をご覧ください。</p>
+<h2 id="s2">現場でのつまずき</h2>
+<h3>実機や部品が届かず、作業が止まる</h3>
+<p>試作基板の遅れ、部品の調達の遅れ、実機の台数不足で、予定していた作業ができないことはよくあります。外部の立場だと、待っている間の作業が見えにくく、「進んでいない人」と見られかねません。</p>
+<p><strong>対策</strong>：実機がなくても進められる作業（設計書、シミュレーターやエミュレーターでの確認、試験項目の準備、評価ボードでの先行確認）をあらかじめ並べておき、待ちが出たらすぐ切り替えます。待ちの理由と、その間に進めたことは週報などに残します。</p>
+<h3>実機の使用時間の取り合いになる</h3>
+<p>台数の少ない実機や試験装置を、チームで順番に使う現場では、使える時間が限られます。予約の仕組みを知らずにいると、評価が後ろにずれ込みます。</p>
+<p><strong>対策</strong>：参画の初期に、実機と試験装置の予約の方法、優先順位を誰が決めるかを確かめます。実機の時間には、試す内容と手順を事前にまとめておき、短い時間で結果を出せるようにします。</p>
+<h3>悪い知らせを抱え込む</h3>
+<p>外部の立場だと、「原因が分からないと言ったら評価が下がる」と考え、不具合の報告を先送りしがちです。しかし、評価の終盤になって表に出ると、日程全体に響きます。</p>
+<p><strong>対策</strong>：原因が分からなくても、症状、再現の条件、疑っている箇所、次に試すことを「兆し」の段階で伝えます。ハードの担当者に確かめてほしい点があれば、その旨も一緒に出します。</p>
+<aside class="box box-view"><p class="box-label">エージェントベストの見解</p><p>案件紹介の現場で、フリーランスの組込みエンジニアの方が契約の更新を見送られる理由として耳にしやすいのは、技術の不足よりも「待ちの時間の使い方」と「報告の遅さ」です。実機待ちの間に何をしていたかが見えない、不具合を一人で抱えて数日たってから報告する、という場面が続くと、信頼を取り戻すのに時間がかかります。進められることを先に並べ、迷ったら早めに伝えることをおすすめします。</p></aside>
+<h2 id="s3">技術でのつまずき</h2>
+<h3>ハードとソフトの境目で原因の押し付け合いになる</h3>
+<p>信号のタイミングや電源の揺れが原因の不具合は、ソフトの側からは「ハードの問題」、ハードの側からは「ソフトの問題」に見えます。外部のエンジニアは立場が弱く、ソフトの修正で吸収する役を押し付けられがちです。</p>
+<p><strong>対策</strong>：オシロスコープやロジックアナライザーで取った波形、ログ、再現条件など、事実を並べて示します。「どちらの責任か」ではなく「どこで何が起きているか」から話すと、ハードの担当者と協力しやすくなります。必要な技術は<a href="/media/embedded-skills/">組込みエンジニアのスキルの記事</a>で整理しています。</p>
+<h3>現場の構成や規約に合わせきれない</h3>
+<p>マイコンの系統、RTOS、コンパイラーの版、コーディング規約、静的解析のルールが前の現場と違うと、慣れた書き方で書いたコードがレビューで差し戻されます。</p>
+<p><strong>対策</strong>：最初の数日で、規約、ビルドの手順、レビューの観点、過去の差し戻しの例に目を通します。慣れた書き方を持ち込みたいときは、先に理由を説明して合意を取ります。</p>
+<h3>品質の手順を後回しにする</h3>
+<p>安全や品質の手順に沿う現場では、設計とコードと試験のつながりを記録として残すことが求められます。コードを書くことを優先し、記録を後回しにすると、終盤にまとめて作ることになり、抜けも出やすくなります。</p>
+<p><strong>対策</strong>：作業のたびに、どの要求に対応する変更か、どの試験で確かめたかを記録に残します。現場の手順書があれば、最初に読みます。</p>
+<h2 id="s4">お金でのつまずき</h2>
+<h3>評価期の稼働超過が精算されない</h3>
+<p>評価や量産前、市場での不具合対応の時期には、稼働が延びやすく、精算幅を大きく超えることがあります。超えた分の扱いを決めていないと、報酬に反映されないまま負担だけが増えます。</p>
+<p><strong>対策</strong>：稼働を日々記録し、精算幅を超えそうな段階で窓口に伝えます。仕組みは<a href="/media/seisan-haba/">精算幅の記事</a>で解説しています。</p>
+<h3>交通費や機材の費用を自分で抱える</h3>
+<p>拠点が遠い、工場や試験場への出張がある、自分で用意した道具を使う、といった場面で、費用の扱いを決めていないと持ち出しになります。</p>
+<p><strong>対策</strong>：交通費、出張の費用、機材の貸し出しの範囲を、参画前に確かめます。報酬に含まれるのか、別に精算されるのかを書面で確かめておくと安心です。</p>
+<h3>開発日程の変更で契約が突然終わる</h3>
+<p>製品の発売時期の見直しや開発の中止で、契約が更新されないことがあります。フリーランス法では、6か月以上の業務委託を途中で解除したり更新しなかったりする場合、発注側は原則として30日前までに予告することになっています（2026年10月時点、公正取引委員会の案内による）。</p>
+<p><strong>対策</strong>：契約期間と開発日程の区切りを並べて見ておき、更新の見込みを早めに確かめます。契約期間の考え方は<a href="/media/keiyaku-period/">契約期間の記事</a>をご覧ください。</p>
+<aside class="box box-caution"><p class="box-label">注意</p><p>発注側の社員と同じ席で、勤務時間や作業の手順まで細かく指示される状態が続く場合は、準委任の契約と実態がずれているおそれがあります。組込みの現場は社員と同じ机で働くことが多く、気づきにくい点です。考え方は<a href="/media/gisou-ukeoi/">偽装請負の記事</a>をご覧ください。</p></aside>
+<aside class="box box-view"><p class="box-label">エージェントベストの見解</p><p>当社では、契約で業務範囲・報酬・支払期日・契約期間を個別契約に書いてお渡ししています。担う層と工程、機材や出張の扱いなど、参画前に気になる点はご質問いただければ確認します。参画後に範囲が広がってきたと感じたときも、早めにご相談ください。</p></aside>
+<aside class="box box-point"><p class="box-label">ポイント</p><ul><li>契約では、担う層と工程、責任の書き方、秘密の扱いのルールを参画前に確かめる</li><li>現場では、実機待ちの間に進める作業を並べ、不具合は兆しの段階で伝える</li><li>技術では、波形やログの事実から話し、現場の規約と品質の手順に合わせる</li><li>稼働、交通費、機材の扱いを記録し、早めに伝える</li></ul></aside>
+<h2 id="s5">よくある質問</h2>
+<h3>参画してから、聞いていた層や工程と違う仕事を頼まれました。どうすればよいですか？</h3>
+<p>まずは、何が違うのかを具体的に書き出し、契約で決めた業務範囲と照らし合わせます。そのうえで、紹介を受けたエージェントや発注側の窓口に早めに伝えてください。我慢して続けると、範囲外の作業が当たり前になり、後から戻しにくくなります。</p>
+<h3>自分が書いたコードの不具合が出荷後に見つかったら、賠償を求められますか？</h3>
+<p>準委任契約では、成果そのものを約束しているわけではありません。ただし、契約の内容や、業務の進め方に落ち度があったかどうかで判断が変わることがあります。不安がある場合は、契約書の損害賠償の条項を読み、弁護士などの専門家にご相談ください。</p>
+<h3>自宅で評価ボードを使って作業してもよいですか？</h3>
+<p>発注側の許可とルールによります。扱う情報や技術によっては、社外での作業が認められないこともあります。自宅での作業を希望する場合は、参画前に作業の場所と機材の扱いを確かめてください。リモートとの相性は<a href="/media/embedded-remote/">組込みエンジニアのリモートの記事</a>で整理しています。</p>
+  </div>
+  <section class="sources"><h2>参考にした公的情報・資料</h2><ul><li><a href="https://www.jftc.go.jp/freelancelaw_2026/" target="_blank" rel="noopener nofollow">2026年 フリーランス法特設サイト（公正取引委員会）</a></li></ul>
+  <p class="note">記事の内容は公開日時点の情報にもとづきます。制度や税率は変わることがあるため、手続きの前に必ず各機関の最新情報をご確認ください。</p></section>
+  <div class="cta-band">
+  <h2>条件に合う案件だけ、知りたい方へ</h2>
+  <p>ご登録は無料です。条件に合う案件だけを、ご本人の了承を得てからご提案します。</p>
+  <div class="cta-row">
+    <a class="btn btn-primary" href="https://airtable.com/appYkc36EvioYoL1A/pag6CZC4uJmxUcrXT/form" target="_blank" rel="noopener">無料で登録する</a>
+    <a class="btn btn-ghost" href="/jobs/">案件を探す</a>
+  </div>
+</div>
+  <section class="related"><h2>あわせて読みたい</h2><div class="grid g2"><a class="card art-card" href="/media/embedded-how-to/">
+  <span class="art-hub">組込み・ゲーム・XR</span>
+  <h3>組込みエンジニアがフリーランスになるには｜必要な経験と独立までの進め方</h3>
+  <p>組込みでフリーランスになるには、製品を一つ量産や出荷まで通した経験と、担当した層・マイコン・OSを説明できる材料が要ります。メーカー・受託・評価出身で違う準備、機材と秘密の扱い、独立までの順番を解説します。</p>
+</a>
+<a class="card art-card" href="/media/embedded-first-month/">
+  <span class="art-hub">組込み・ゲーム・XR</span>
+  <h3>組込みエンジニアの参画初月にやること｜現場で信頼される進め方</h3>
+  <p>組込みエンジニアの参画初月は、開発環境と実機で動く状態をつくり、製品の構成とハードの資料をつかみ、小さな修正を一つ通して月末に担当範囲の見立てを出すのが基本です。週ごとの進め方と避けたい動きを整理します。</p>
+</a>
+<a class="card art-card" href="/media/embedded-skills/">
+  <span class="art-hub">組込み・ゲーム・XR</span>
+  <h3>組込みエンジニアのフリーランス案件で求められるスキルと経験</h3>
+  <p>組込みのフリーランス案件では、C言語での実装に加えて、ハードウェアの資料を読む力、RTOSや組込みLinuxの経験、通信インターフェース、デバッガーや計測器での切り分け、品質の手順が見られます。分野ごと・経験の段階ごとに解説します。</p>
+</a>
+<a class="card art-card" href="/media/embedded-rate/">
+  <span class="art-hub">組込み・ゲーム・XR</span>
+  <h3>組込みエンジニアのフリーランス案件｜報酬の決まり方と単価を上げる考え方</h3>
+  <p>組込みエンジニアの報酬は、製品分野、担当するソフトの層、工程、ハードウェアを読める度合い、安全・品質の手順の経験、現地作業の条件で決まり、案件によって大きく変わります。上下する要素と交渉の材料を解説します。</p>
+</a>
+<a class="card art-card" href="/media/embedded-remote/">
+  <span class="art-hub">組込み・ゲーム・XR</span>
+  <h3>組込みエンジニアのフリーランスはリモートで働ける？案件の傾向と探し方</h3>
+  <p>組込みエンジニアのフリーランスは、実機・評価ボード・計測器を使う作業が多く、フルリモートの案件は限られます。設計やシミュレーター上の作業はリモートにしやすい一方、評価や不具合の切り分けは現地になりやすい傾向です。探し方と確認点を解説します。</p>
+</a>
+<a class="card art-card" href="/media/embedded-anken-erabi/">
+  <span class="art-hub">組込み・ゲーム・XR</span>
+  <h3>組込みエンジニアのフリーランス案件の選び方｜契約前に確かめたいこと</h3>
+  <p>組込み案件は、同じファームウェア開発でも構成・局面・実機の環境で負担が大きく変わります。担当の層と構成、局面、実機と機材、出社、品質の手順、契約の形と不具合の責任、稼働の振れ幅、秘密の条件の8点を契約前に確かめる方法を解説します。</p>
+</a></div></section>
+</main>
+<footer class="site-foot">
+  <div class="wrap">
+    <strong>エージェントベストジョブ フリーランス</strong>
+    <div class="foot-links">
+      <a href="/">トップ</a>
+      <a href="/jobs/">案件を探す</a>
+      <a href="/media/">お役立ち記事</a>
+      <a href="https://airtable.com/appYkc36EvioYoL1A/pag6CZC4uJmxUcrXT/form" target="_blank" rel="noopener">ご登録（スキルシート・ご希望の条件）</a>
+      <a href="https://line.me/R/ti/p/@697nxhbt?oat_content=url&ts=08302134" target="_blank" rel="noopener" data-line-cta="footer">LINEで相談する</a>
+      <a href="/privacy.html">個人情報の取り扱い</a>
+      <a href="https://www.agent-best.net/company/">運営会社</a>
+    </div>
+    <div class="foot-links">
+      <a href="https://jobs.agent-best.net/">正社員の求人を探す（エージェントベストジョブ）</a>
+      <a href="https://skill.agent-best.net/">エージェントベストジョブ手に職</a>
+      <a href="https://www.agent-best.net/">エージェントベスト</a>
+    </div>
+    <p>運営：株式会社エージェントベスト（有料職業紹介事業 許可番号 13-ユ-316964）<br>〒106-0032 東京都港区六本木4-8-7 嶋田ビル5階</p>
+  </div>
+</footer>
+<script src="/assets/fav.js" defer></script>
+</body>
+</html>

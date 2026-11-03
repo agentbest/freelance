@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>React Nativeエンジニアの参画初月にやること｜現場で信頼される進め方｜エージェントベストジョブ フリーランス</title>
+<meta name="description" content="React Nativeエンジニアの参画初月は、手元で両OSのビルドを通し、版と依存関係とリリースの流れを把握し、小さな変更を一度公開まで運んだうえで、月末に技術面の見立てを共有するのが基本です。週ごとの進め方と避けたい動きを整理します。">
+<link rel="canonical" href="https://freelance.agent-best.net/media/react-native-first-month/">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="エージェントベストジョブ フリーランス">
+<meta property="og:title" content="React Nativeエンジニアの参画初月にやること｜現場で信頼される進め方｜エージェントベストジョブ フリーランス">
+<meta property="og:description" content="React Nativeエンジニアの参画初月は、手元で両OSのビルドを通し、版と依存関係とリリースの流れを把握し、小さな変更を一度公開まで運んだうえで、月末に技術面の見立てを共有するのが基本です。週ごとの進め方と避けたい動きを整理します。">
+<meta property="og:url" content="https://freelance.agent-best.net/media/react-native-first-month/">
+<meta property="og:image" content="https://freelance.agent-best.net/assets/ogp.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://freelance.agent-best.net/assets/ogp.png">
+<meta name="theme-color" content="#1E3A5F">
+<link rel="icon" href="/assets/favicon.ico">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="stylesheet" href="/assets/site.css">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1XXMP8Y1B4"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-1XXMP8Y1B4');
+document.addEventListener('click',e=>{const a=e.target.closest('[data-line-cta]');if(a)gtag('event','line_add_friend',{placement:a.dataset.lineCta,page_path:location.pathname});});</script>
+<script type="application/ld+json">[{"@context":"https://schema.org","@type":"Article","headline":"React Nativeエンジニアの参画初月にやること｜現場で信頼される進め方","description":"React Nativeエンジニアの参画初月は、手元で両OSのビルドを通し、版と依存関係とリリースの流れを把握し、小さな変更を一度公開まで運んだうえで、月末に技術面の見立てを共有するのが基本です。週ごとの進め方と避けたい動きを整理します。","datePublished":"2026-11-04","dateModified":"2026-11-04","author":{"@type":"Organization","name":"株式会社エージェントベスト","url":"https://www.agent-best.net/"},"publisher":{"@type":"Organization","name":"株式会社エージェントベスト","logo":{"@type":"ImageObject","url":"https://freelance.agent-best.net/assets/logo.png"}},"mainEntityOfPage":"https://freelance.agent-best.net/media/react-native-first-month/"},{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"トップ","item":"https://freelance.agent-best.net/"},{"@type":"ListItem","position":2,"name":"お役立ち記事","item":"https://freelance.agent-best.net/media/"},{"@type":"ListItem","position":3,"name":"モバイルアプリ開発","item":"https://freelance.agent-best.net/media/hub/mobile/"},{"@type":"ListItem","position":4,"name":"React Nativeエンジニアの参画初月にやること｜現場で信頼される進め方"}]},{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"1週間たってもビルドが通りません。どうすればよいですか？","acceptedAnswer":{"@type":"Answer","text":"React Nativeの現場では、環境の差でビルドに時間がかかることは珍しくありません。試したことと、エラーの内容を整理して、早めにリードや窓口に共有してください。詰まった点と直し方を手順書に残せば、それ自体が現場への貢献になります。"}},{"@type":"Question","name":"引き継ぎの資料がほとんどありません。何から始めればよいですか？","acceptedAnswer":{"@type":"Answer","text":"依存ライブラリの一覧と、ビルドと配布の設定から読み始め、分からない点の一覧を自分で作るのが近道です。そのうえで、直近に公開を担当した人に、手順と注意点を短く聞いてください。引き継ぎの進め方は引き継ぎの記事でも整理しています。"}},{"@type":"Question","name":"初月から大きな機能の開発を任されました。どう進めればよいですか？","acceptedAnswer":{"@type":"Answer","text":"任された機能を進めつつ、最初の1〜2週間はビルドの確認とアプリの状態の把握に時間を割くことを、窓口と合意しておくと安心です。状態を知らないまま大きな変更を入れると、版や依存関係の問題に後からぶつかることがあります。"}}]}]</script>
+</head>
+<body>
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="/"><img src="/assets/mark.png" alt="" width="28" height="28"><span>エージェントベストジョブ フリーランス<small>フリーランスのエンジニア・コンサル向け案件紹介</small></span></a>
+    <nav class="head-nav" aria-label="メニュー">
+      <a class="link" href="/jobs/">案件を探す</a>
+      <a class="link" href="/media/">お役立ち記事</a>
+      <a class="link keep" href="/mypage/" aria-label="気になる案件">☆ 気になる<span class="fav-count" data-fav-count hidden></span></a>
+      <a class="btn btn-primary btn-sm" href="https://airtable.com/appYkc36EvioYoL1A/pag6CZC4uJmxUcrXT/form" target="_blank" rel="noopener">無料で登録</a>
+    </nav>
+  </div>
+</header>
+<main class="wrap narrow article">
+  <p class="crumbs"><a href="/">トップ</a> › <a href="/media/">お役立ち記事</a> › <a href="/media/hub/mobile/">モバイルアプリ開発</a></p>
+  <a class="art-hub" href="/media/hub/mobile/">モバイルアプリ開発</a>
+  <h1 class="art-title">React Nativeエンジニアの参画初月にやること｜現場で信頼される進め方</h1>
+  <p class="note">公開 2026-11-04　監修：株式会社エージェントベスト</p>
+  <nav class="toc" aria-label="目次"><strong>目次</strong><ol><li><a href="#s1">初月のゴールを3つに分ける</a></li><li><a href="#s2">1週目：両OSで動かせる状態をつくる</a></li><li><a href="#s3">2週目：アプリの状態と決め方をつかむ</a></li><li><a href="#s4">3〜4週目：一度出し切り、見立てを共有する</a></li><li><a href="#s5">案件の型によって初月の重心は変わる</a></li><li><a href="#s6">初月に避けたい動き</a></li><li><a href="#s7">1か月の終わりに振り返ること</a></li><li><a href="#s8">よくある質問</a></li></ol></nav>
+  <div class="art-body">
+<p>React Nativeエンジニアの参画初月は、<strong>手元で両OSのビルドを通し、アプリの版と依存関係とリリースの流れを把握し、小さな変更を一度公開まで運んだうえで、月末に技術面の見立てを共有する</strong>ところまでを目標にします。最初の1か月で求められるのは、大きな機能を作ることより、<strong>このエンジニアに任せればアプリを止めずに出し続けられる、と発注側が判断できる材料</strong>を示すことです。</p>
+<p>参画前の契約・環境の準備は<a href="/media/sankaku-junbi/">参画が決まってから開始日までにやること</a>、職種を問わない最初の1週間の進め方は<a href="/media/sankaku-shoki/">参画初日から最初の1週間でやること</a>で解説しています。この記事では、React Nativeならではの初月の動き方に絞ります。</p>
+<h2 id="s1">初月のゴールを3つに分ける</h2>
+<div class="table-wrap"><table><thead><tr><th>ゴール</th><th>中身</th><th>月末に手元にあるもの</th></tr></thead><tbody><tr><td>動かせる状態をつくる</td><td>両OSのビルドと実機での確認が手元でできる</td><td>環境構築の手順の追記、確認に使う端末の一覧</td></tr><tr><td>アプリの状態をつかむ</td><td>版、アーキテクチャ、依存関係、リリースの流れを知る</td><td>技術面の見立て（危うい点、版上げの要否）</td></tr><tr><td>一度出し切る</td><td>小さな変更を確認から公開まで運ぶ</td><td>公開した変更と、手順のつまずきのメモ</td></tr></tbody></table></div>
+<p>この3つを、1週目、2週目、3〜4週目の順に重心を移しながら進めます。</p>
+<h2 id="s2">1週目：両OSで動かせる状態をつくる</h2>
+<h3>最初にビルドを通す</h3>
+<p>React Nativeの現場では、手元でビルドが通るまでに時間がかかることがよくあります。iOSとAndroidの両方で、開発用のビルドを作り、実機で起動するところまでを最初の目標にします。詰まった点と直し方は、そのまま環境構築の手順書に書き足します。次に入る人の助けになり、現場への最初の貢献として受け取ってもらいやすくなります。</p>
+<h3>最初に確かめる資料と設定</h3>
+<p>ビルドと並行して、次の順に目を通すと、アプリの全体像をつかみやすくなります。</p>
+<ol><li><strong>package.jsonと依存ライブラリの一覧</strong>：React NativeやExpoの版、古いまま止まっているライブラリがないか</li><li><strong>ネイティブ側の構成</strong>：Expoの仕組みでネイティブの構成を生成しているのか、iOSとAndroidのフォルダを自前で持っているのか</li><li><strong>ビルドと配布の仕組み</strong>：どこでビルドし、確認用のアプリをどう配っているか</li><li><strong>ストア外の更新の運用</strong>：使っているなら、配信の手順と承認の流れ</li><li><strong>不具合の管理表と、直近のストアのレビューや問い合わせ</strong>：利用者が困っていること</li></ol>
+<p>この段階では、結論を出さずに気づいた点を書き留めておきます。</p>
+<h3>権限と道具を確かめる</h3>
+<p>ストアの管理画面、ビルドの仕組み、エラーを集める仕組みなどの権限が、担当の範囲に合っているかを確かめます。署名の鍵やストアのアカウントの扱いは、誰が管理しているかを窓口と確かめておきます。足りない権限は早めに申し出ます。</p>
+<h2 id="s3">2週目：アプリの状態と決め方をつかむ</h2>
+<h3>版と依存関係の状態を整理する</h3>
+<p>React Nativeは、公式に保守されるのが最新の3つのマイナー系列です（2026年10月時点のReleases Overview）。アプリの版がその範囲に入っているか、0.82以降のNew Architectureだけで動く版に移れているか（React Native公式ブログ、2025年10月）を確かめ、移れていなければ妨げになっているライブラリを洗い出します。この整理は、3〜4週目の見立ての材料になります。</p>
+<h3>リリースの流れと決め方を知る</h3>
+<p>誰が公開を決め、どのような確認を経てストアに申請するのか、ストア外の更新は誰の承認で配信するのかを、窓口と確かめます。ネイティブの担当者やデザイナー、サーバーサイドの担当者がいる場合は、それぞれとの境目もこのころまでに把握しておきます。</p>
+<h3>小さな改修に取りかかる</h3>
+<p>不具合の修正や小さな改善など、影響の範囲が狭い仕事を一つ引き受けます。両OSのどの端末で確かめたかを、報告に分けて書くようにすると、確認の丁寧さが伝わります。</p>
+<aside class="box box-view"><p class="box-label">エージェントベストの見解</p><p>案件紹介の現場で、参画後の評価が高いReact Nativeエンジニアの方に共通しているのは、最初の2週間で「手元で両OSが動くようになるまでに詰まった点」を手順書に残していることです。新しく入った人の視点で見つけた問題は、既存のメンバーには見えにくいものです。初月は、自分の作業を進めるのと同じくらい、次の人が動きやすくなる記録を残すことをおすすめします。</p></aside>
+<h2 id="s4">3〜4週目：一度出し切り、見立てを共有する</h2>
+<h3>小さな変更を公開まで運ぶ</h3>
+<p>2週目に始めた改修を、確認用の環境での確認、ストアへの申請またはストア外の更新、公開後の確認まで運びます。ストア外の更新で出せるのは、JavaScriptや画像などネイティブ以外の部分です。ネイティブのコードや依存関係、権限を変える場合は新しいビルドが要ります（Expo公式ドキュメント、2026年10月時点）。どちらで出すべき変更かを確かめたうえで、現場の手順どおりに進めます。一度通しでやると、手順のどこが危ういかが分かります。</p>
+<h3>技術面の見立てをまとめる</h3>
+<p>月末には、次の内容を短くまとめて、窓口やリードに共有します。</p>
+<ul><li>版とアーキテクチャの状態、版上げの要否</li><li>古いまま止まっている依存ライブラリと、その影響</li><li>ビルドと公開の手順で危うい点</li><li>優先して直したほうがよい点と、その理由</li></ul>
+<p>見立ては、すぐに直すべきことと、計画を立てて進めることに分けて示すと、発注側が判断しやすくなります。決めるのは発注側で、エンジニアは判断の材料を出す、という線を守ります。</p>
+<h2 id="s5">案件の型によって初月の重心は変わる</h2>
+<h3>運用中のアプリの改修・保守</h3>
+<p>利用者のいるアプリでは、壊さないことが最優先です。不具合の管理表とストアのレビューから、利用者の困りごとをつかみ、小さな修正を一つずつ着実に出すことに重心を置きます。</p>
+<h3>版上げ・移行の案件</h3>
+<p>最初の数週間を調査にあて、詰まりそうなライブラリと移行の手順を洗い出します。初月の成果は、作業そのものより、計画と見積もりの根拠です。調査の結果をもとに、進め方を発注側と合意します。</p>
+<h3>新規アプリの立ち上げ</h3>
+<p>まだアプリがない段階では、構成の選び方、ストアのアカウントと署名の名義、ビルドと配布の仕組みを決めることが初月の中心になります。最初の確認用のアプリを両OSで配れる状態にすることを目指します。</p>
+<h2 id="s6">初月に避けたい動き</h2>
+<div class="table-wrap"><table><thead><tr><th>避けたい動き</th><th>起きやすいこと</th><th>代わりにすること</th></tr></thead><tbody><tr><td>片方のOSだけで確かめて出す</td><td>もう片方で不具合が見つかり、信頼を落とす</td><td>どのOSのどの端末で確かめたかを報告に書く</td></tr><tr><td>参画早々に構成やライブラリの変更を提案する</td><td>既存のメンバーが身構える</td><td>まず今の構成で動き、困りごとが見えてから提案する</td></tr><tr><td>ストア外の更新を手順を確かめずに配信する</td><td>古いビルドに合わない更新が届くおそれがある</td><td>配信の基準と承認の流れを確かめてから出す</td></tr><tr><td>版上げを自分の判断で始める</td><td>範囲外の作業と受け取られ、他の作業も止まる</td><td>見立てを示し、進めるかどうかの判断を仰ぐ</td></tr><tr><td>ビルドの詰まりを一人で抱える</td><td>立ち上がりが遅れ、稼働も膨らむ</td><td>一定の時間を過ぎたら状況を共有して助けを求める</td></tr></tbody></table></div>
+<p>範囲外の依頼が増えてきたときの扱いは<a href="/media/scope-change/">業務範囲が変わったときの記事</a>、React Nativeでつまずきやすい場面は<a href="/media/react-native-tsumazuki/">React Nativeのフリーランスがつまずきやすい点と対策</a>で整理しています。</p>
+<aside class="box box-caution"><p class="box-label">注意</p><p>署名の鍵やストアのアカウントの権限を、参画初月のうちに広く渡されることがあります。担当の範囲を超える権限は、使わずに置いておくより、必要な範囲に絞ってもらうほうが安全です。扱いに迷ったら、窓口と確かめてください。</p></aside>
+<h2 id="s7">1か月の終わりに振り返ること</h2>
+<p>1か月が過ぎたら、次の点を自分で振り返ります。</p>
+<ul><li>両OSのビルドと実機での確認が、手元で滞りなくできるか</li><li>小さな変更を一度、公開まで運べたか</li><li>技術面の見立てを、窓口やリードに伝えられたか</li><li>公開や更新を誰が決めるかが、関係者と共有できているか</li><li>契約で決めた業務の範囲と、実際に担っている仕事がずれていないか</li></ul>
+<p>ずれている点があれば、2か月目の早い段階で窓口と話しておきます。リモート中心の案件での報告の工夫は<a href="/media/react-native-remote/">React Nativeのリモートの記事</a>でも触れています。</p>
+<aside class="box box-view"><p class="box-label">エージェントベストの見解</p><p>当社では、契約で業務範囲・報酬・支払期日・契約期間を個別契約に書いてお渡ししています。参画して1か月の間に、聞いていた担当の範囲と実際の仕事に違いを感じたときは、早めにご相談ください。契約の内容に関わる点は、ご質問いただければ確認します。</p></aside>
+<aside class="box box-point"><p class="box-label">ポイント</p><ul><li>初月は、両OSで動かせる状態をつくる、アプリの状態をつかむ、一度出し切る、の3つを順に進める</li><li>1週目にビルドを通して手順書に書き足し、2週目に版と依存関係とリリースの流れを整理する</li><li>3〜4週目に小さな変更を公開まで運び、技術面の見立てを判断の材料として共有する</li><li>片方のOSだけでの確認、早すぎる構成変更、手順を確かめないストア外の更新は避ける</li></ul></aside>
+<h2 id="s8">よくある質問</h2>
+<h3>1週間たってもビルドが通りません。どうすればよいですか？</h3>
+<p>React Nativeの現場では、環境の差でビルドに時間がかかることは珍しくありません。試したことと、エラーの内容を整理して、早めにリードや窓口に共有してください。詰まった点と直し方を手順書に残せば、それ自体が現場への貢献になります。</p>
+<h3>引き継ぎの資料がほとんどありません。何から始めればよいですか？</h3>
+<p>依存ライブラリの一覧と、ビルドと配布の設定から読み始め、分からない点の一覧を自分で作るのが近道です。そのうえで、直近に公開を担当した人に、手順と注意点を短く聞いてください。引き継ぎの進め方は<a href="/media/hikitsugi/">引き継ぎの記事</a>でも整理しています。</p>
+<h3>初月から大きな機能の開発を任されました。どう進めればよいですか？</h3>
+<p>任された機能を進めつつ、最初の1〜2週間はビルドの確認とアプリの状態の把握に時間を割くことを、窓口と合意しておくと安心です。状態を知らないまま大きな変更を入れると、版や依存関係の問題に後からぶつかることがあります。</p>
+  </div>
+  <section class="sources"><h2>参考にした公的情報・資料</h2><ul><li><a href="https://reactnative.dev/releases/overview" target="_blank" rel="noopener nofollow">Releases Overview（React Native）</a></li><li><a href="https://reactnative.dev/blog/2025/10/08/react-native-0.82" target="_blank" rel="noopener nofollow">React Native 0.82 - A New Era（React Native Blog）</a></li><li><a href="https://docs.expo.dev/eas-update/introduction/" target="_blank" rel="noopener nofollow">EAS Update（Expo Documentation）</a></li></ul>
+  <p class="note">記事の内容は公開日時点の情報にもとづきます。制度や税率は変わることがあるため、手続きの前に必ず各機関の最新情報をご確認ください。</p></section>
+  <div class="cta-band">
+  <h2>条件に合う案件だけ、知りたい方へ</h2>
+  <p>ご登録は無料です。条件に合う案件だけを、ご本人の了承を得てからご提案します。</p>
+  <div class="cta-row">
+    <a class="btn btn-primary" href="https://airtable.com/appYkc36EvioYoL1A/pag6CZC4uJmxUcrXT/form" target="_blank" rel="noopener">無料で登録する</a>
+    <a class="btn btn-ghost" href="/jobs/">案件を探す</a>
+  </div>
+</div>
+  <section class="related"><h2>あわせて読みたい</h2><div class="grid g2"><a class="card art-card" href="/media/sankaku-junbi/">
+  <span class="art-hub">案件の探し方</span>
+  <h3>参画が決まってから開始日までにやること｜契約・事業の手続き・作業環境の準備</h3>
+  <p>参画が決まったら、開始日までに「契約の書面の確認」「他の選考の整理」「請求と事業の手続き」「作業環境」「業務の予習」の5つを進めます。時期ごとのやることと、開始前の作業を頼まれたときの注意点を整理します。</p>
+</a>
+<a class="card art-card" href="/media/sankaku-shoki/">
+  <span class="art-hub">案件の探し方</span>
+  <h3>参画初日から最初の1週間でやること｜業務委託で立ち上がりを早める進め方</h3>
+  <p>参画して最初の1週間は、成果を急ぐより「任された範囲・依頼の窓口・報告の形」を確かめ、小さな仕事を一つ終えることを優先します。初日から5日目までの進め方と、つまずきやすい点を整理します。</p>
+</a>
+<a class="card art-card" href="/media/react-native-tsumazuki/">
+  <span class="art-hub">モバイルアプリ開発</span>
+  <h3>React Nativeエンジニアのフリーランスがつまずきやすい点と対策</h3>
+  <p>フリーランスのReact Nativeエンジニアがつまずきやすいのは、ストア公開や署名の責任があいまいな契約、版上げの見積もりの甘さ、ストア外の更新の誤配信、道具の自己負担などです。契約・現場・技術・お金の順に場面と対策を整理します。</p>
+</a>
+<a class="card art-card" href="/media/react-native-skills/">
+  <span class="art-hub">モバイルアプリ開発</span>
+  <h3>React Nativeエンジニアのフリーランス案件で求められるスキルと経験</h3>
+  <p>React Nativeの案件では、ReactとTypeScriptの力に加え、New Architectureの理解、Expoのビルドと配布の仕組み、SwiftやKotlinでのネイティブ連携、両ストアのルールへの対応が見られます。分野ごと・経験の段階ごとに解説します。</p>
+</a>
+<a class="card art-card" href="/media/react-native-remote/">
+  <span class="art-hub">モバイルアプリ開発</span>
+  <h3>React Nativeエンジニアのフリーランスはリモートで働ける？案件の傾向と探し方</h3>
+  <p>React Nativeは、Expoの開発ビルドやクラウドのビルドを使えば、両OSの開発をリモートで回しやすい技術です。ただし、Macや実機、署名とストアの権限の扱いが条件になります。進めやすい仕事・しにくい仕事、探し方と確認点を解説します。</p>
+</a>
+<a class="card art-card" href="/media/react-native-how-to/">
+  <span class="art-hub">モバイルアプリ開発</span>
+  <h3>React Nativeエンジニアがフリーランスになるには｜必要な経験と独立までの進め方</h3>
+  <p>React Nativeでフリーランスになるには、Reactでの画面開発に加え、iOSとAndroidの両ストアに出した経験、ビルドや版上げで詰まった問題を自分で直した経験が要ります。出身別に補う点、独立前の準備、面談で問われる点を解説します。</p>
+</a></div></section>
+</main>
+<footer class="site-foot">
+  <div class="wrap">
+    <strong>エージェントベストジョブ フリーランス</strong>
+    <div class="foot-links">
+      <a href="/">トップ</a>
+      <a href="/jobs/">案件を探す</a>
+      <a href="/media/">お役立ち記事</a>
+      <a href="https://airtable.com/appYkc36EvioYoL1A/pag6CZC4uJmxUcrXT/form" target="_blank" rel="noopener">ご登録（スキルシート・ご希望の条件）</a>
+      <a href="https://line.me/R/ti/p/@697nxhbt?oat_content=url&ts=08302134" target="_blank" rel="noopener" data-line-cta="footer">LINEで相談する</a>
+      <a href="/privacy.html">個人情報の取り扱い</a>
+      <a href="https://www.agent-best.net/company/">運営会社</a>
+    </div>
+    <div class="foot-links">
+      <a href="https://jobs.agent-best.net/">正社員の求人を探す（エージェントベストジョブ）</a>
+      <a href="https://skill.agent-best.net/">エージェントベストジョブ手に職</a>
+      <a href="https://www.agent-best.net/">エージェントベスト</a>
+    </div>
+    <p>運営：株式会社エージェントベスト（有料職業紹介事業 許可番号 13-ユ-316964）<br>〒106-0032 東京都港区六本木4-8-7 嶋田ビル5階</p>
+  </div>
+</footer>
+<script src="/assets/fav.js" defer></script>
+</body>
+</html>

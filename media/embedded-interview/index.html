@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>組込みエンジニアのフリーランス面談でよく聞かれる質問と答え方｜エージェントベストジョブ フリーランス</title>
+<meta name="description" content="組込み案件の面談では、製品分野と担当の層、マイコンやOSの系統、不具合の切り分け、計測器の扱い、品質の手順、ハード担当とのやり取りがよく聞かれます。質問ごとの意図と答え方、準備、逆質問を整理します。">
+<link rel="canonical" href="https://freelance.agent-best.net/media/embedded-interview/">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="エージェントベストジョブ フリーランス">
+<meta property="og:title" content="組込みエンジニアのフリーランス面談でよく聞かれる質問と答え方｜エージェントベストジョブ フリーランス">
+<meta property="og:description" content="組込み案件の面談では、製品分野と担当の層、マイコンやOSの系統、不具合の切り分け、計測器の扱い、品質の手順、ハード担当とのやり取りがよく聞かれます。質問ごとの意図と答え方、準備、逆質問を整理します。">
+<meta property="og:url" content="https://freelance.agent-best.net/media/embedded-interview/">
+<meta property="og:image" content="https://freelance.agent-best.net/assets/ogp.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://freelance.agent-best.net/assets/ogp.png">
+<meta name="theme-color" content="#1E3A5F">
+<link rel="icon" href="/assets/favicon.ico">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="stylesheet" href="/assets/site.css">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1XXMP8Y1B4"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-1XXMP8Y1B4');
+document.addEventListener('click',e=>{const a=e.target.closest('[data-line-cta]');if(a)gtag('event','line_add_friend',{placement:a.dataset.lineCta,page_path:location.pathname});});</script>
+<script type="application/ld+json">[{"@context":"https://schema.org","@type":"Article","headline":"組込みエンジニアのフリーランス面談でよく聞かれる質問と答え方","description":"組込み案件の面談では、製品分野と担当の層、マイコンやOSの系統、不具合の切り分け、計測器の扱い、品質の手順、ハード担当とのやり取りがよく聞かれます。質問ごとの意図と答え方、準備、逆質問を整理します。","datePublished":"2026-11-04","dateModified":"2026-11-04","author":{"@type":"Organization","name":"株式会社エージェントベスト","url":"https://www.agent-best.net/"},"publisher":{"@type":"Organization","name":"株式会社エージェントベスト","logo":{"@type":"ImageObject","url":"https://freelance.agent-best.net/assets/logo.png"}},"mainEntityOfPage":"https://freelance.agent-best.net/media/embedded-interview/"},{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"トップ","item":"https://freelance.agent-best.net/"},{"@type":"ListItem","position":2,"name":"お役立ち記事","item":"https://freelance.agent-best.net/media/"},{"@type":"ListItem","position":3,"name":"組込み・ゲーム・XR","item":"https://freelance.agent-best.net/media/hub/embedded-game/"},{"@type":"ListItem","position":4,"name":"組込みエンジニアのフリーランス面談でよく聞かれる質問と答え方"}]},{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"案件と同じマイコンの経験がないと、面談で落とされますか？","acceptedAnswer":{"@type":"Answer","text":"同じ系統の経験があると有利ですが、それだけで決まるわけではありません。資料を読んで周辺機能を立ち上げた経験や、別の系統へ移ったときの進め方を具体的に話せれば、立ち上がりの早さを伝える材料になります。"}},{"@type":"Question","name":"評価・検証の経験が中心ですが、開発の案件の面談ではどう話せばよいですか？","acceptedAnswer":{"@type":"Answer","text":"不具合を再現させ、条件を絞り込み、ログや波形を添えて開発側に渡した経験を中心に話します。ソースを読んで原因の候補を挙げたことがあれば、それも伝えましょう。自分が修正まで担っていない場合は、その線を正直に分けて話すほうが信頼されます。"}},{"@type":"Question","name":"面談で製品名を聞かれたら、答えるべきですか？","acceptedAnswer":{"@type":"Answer","text":"前の現場の製品名や顧客名は、秘密保持の約束の対象になっていることが多くあります。「守秘の約束があるため製品名は控えますが、分野は産業機器です」のように伝えれば、多くの面談官は理解してくれます。面談で見送られやすい理由は面談で見送られる理由の記事で解説しています。"}}]}]</script>
+</head>
+<body>
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="/"><img src="/assets/mark.png" alt="" width="28" height="28"><span>エージェントベストジョブ フリーランス<small>フリーランスのエンジニア・コンサル向け案件紹介</small></span></a>
+    <nav class="head-nav" aria-label="メニュー">
+      <a class="link" href="/jobs/">案件を探す</a>
+      <a class="link" href="/media/">お役立ち記事</a>
+      <a class="link keep" href="/mypage/" aria-label="気になる案件">☆ 気になる<span class="fav-count" data-fav-count hidden></span></a>
+      <a class="btn btn-primary btn-sm" href="https://airtable.com/appYkc36EvioYoL1A/pag6CZC4uJmxUcrXT/form" target="_blank" rel="noopener">無料で登録</a>
+    </nav>
+  </div>
+</header>
+<main class="wrap narrow article">
+  <p class="crumbs"><a href="/">トップ</a> › <a href="/media/">お役立ち記事</a> › <a href="/media/hub/embedded-game/">組込み・ゲーム・XR</a></p>
+  <a class="art-hub" href="/media/hub/embedded-game/">組込み・ゲーム・XR</a>
+  <h1 class="art-title">組込みエンジニアのフリーランス面談でよく聞かれる質問と答え方</h1>
+  <p class="note">公開 2026-11-04　監修：株式会社エージェントベスト</p>
+  <nav class="toc" aria-label="目次"><strong>目次</strong><ol><li><a href="#s1">組込みの面談で面談官が見ていること</a></li><li><a href="#s2">よく聞かれる質問と答え方の考え方</a></li><li><a href="#s3">技術的な確認の形もある</a></li><li><a href="#s4">準備は「追った不具合」を2〜3件に絞る</a></li><li><a href="#s5">組込みならではの逆質問</a></li><li><a href="#s6">よくある質問</a></li></ol></nav>
+  <div class="art-body">
+<p>組込みエンジニアのフリーランス面談でよく聞かれるのは、<strong>どの製品分野で、ソフトのどの層を、どのマイコン・OSで担当したか</strong>と、<strong>実機で不具合が起きたときに、何を使ってハードとソフトを切り分けたか</strong>の2つです。面談官は言語の知識の量より、「この人を明日から評価の現場に入れたら、自分で原因を追えるか」を確かめようとしています。</p>
+<p>答えるときは、模範解答を覚えるより、自分が追った不具合を2〜3件選び、どの質問にもそこから答えられるように準備しておくのが近道です。面談全般の答え方の型は<a href="/media/interview-questions/">業務委託の面談でよく聞かれる質問と答え方</a>で解説しているので、この記事では組込みの面談に固有の質問に絞ります。</p>
+<h2 id="s1">組込みの面談で面談官が見ていること</h2>
+<p>組込み案件の面談に出てくるのは、発注元のソフトのリーダーや開発の管理職であることが多く、本人も実機で苦労してきた技術者です。そのため、技術の名前を並べるより、<strong>具体的な不具合の話の中に出てくる手順と根拠</strong>を聞いています。</p>
+<p>面談官が知りたいのは、おおむね次の3点です。</p>
+<ol><li><strong>すぐ入れるか</strong>：案件で使うマイコン・OS・層に近い経験があるか</li><li><strong>自分で原因を追えるか</strong>：実機の不具合を、道具を使って切り分けられるか</li><li><strong>現場の手順に乗れるか</strong>：規約やレビュー、記録の残し方など、決まった手順の中で開発できるか</li></ol>
+<p>以下の質問は、この3点のどれかを確かめるためのものです。質問の意図が分かれば、答えの中心に何を置くかも決まります。</p>
+<h2 id="s2">よく聞かれる質問と答え方の考え方</h2>
+<p>ここで示す答えの例は、組み立て方を伝えるための<strong>架空の例</strong>です。ご自身の経験に置き換えて準備してください。</p>
+<h3>1. 「直近の開発の製品分野と、担当した層を教えてください」</h3>
+<p>確かめたいのは、すぐ入れるかです。製品分野、担当した層、マイコンやSoCの系統、OS（ベアメタル、RTOS、組込みLinux）、担当した工程、チームの人数を短く伝えます。製品名や顧客名は出さなくてかまいません。</p>
+<p>架空の例：「産業機器のモーター制御基板で、RTOS上のドライバーとミドルウェアを担当しました。マイコンは32ビットの汎用系統です。詳細設計から評価の不具合対応まで、5名のチームの一員として関わりました」</p>
+<h3>2. 「このマイコン（OS）は使ったことがありますか」</h3>
+<p>案件の構成と経歴が完全に一致することは多くありません。使ったことがなければ正直に言い、そのうえで<strong>近い系統の経験と、新しいマイコンを立ち上げたときの進め方</strong>を話します。データシートを読んで初期化を自分で組んだ経験があれば、系統の違いを補う材料になります。</p>
+<h3>3. 「一番苦労した不具合と、原因をどう突き止めたかを教えてください」</h3>
+<p>最もよく掘り下げられる質問です。次の順番で組み立てると伝わりやすくなります。</p>
+<ul><li>どんな症状が、どんな条件で起きたか（再現の頻度も含めて）</li><li>最初にどこを疑い、何で確かめたか</li><li>何を見て、ハードかソフトかを切り分けたか</li><li>原因と、取った対策</li><li>再発を防ぐために残したこと</li></ul>
+<p>「タイミングの問題でした」だけで終わると、手順が見えません。<strong>疑いを一つずつ消していった順番と、その根拠に使った道具</strong>まで話せると、経験の深さが伝わります。</p>
+<h3>4. 「オシロスコープやロジックアナライザーは使えますか」</h3>
+<p>道具の名前を知っているかではなく、何を確かめるために使ったかを聞いています。「SPIの通信が途中で崩れる不具合で、ロジックアナライザーでクロックとデータの波形を取り、チップセレクトの切り替えのタイミングがずれていることを確かめた」のように、場面とセットで答えます。</p>
+<h3>5. 「RTOSのタスクや割り込みの設計はどうしていましたか」</h3>
+<p>RTOSの案件で聞かれやすい質問です。タスクの分け方、優先度の決め方、割り込みの処理とタスクへの受け渡しの方法を話します。優先度の逆転やスタックの不足など、RTOSならではの不具合を調べた経験があれば、ここで出すと効果的です。</p>
+<h3>6. 「コーディング規約や静的解析、レビューの手順はありましたか」</h3>
+<p>現場の手順に乗れるかを確かめる質問です。どんな規約に沿い、静的解析の指摘にどう対応し、レビューで何を見ていたかを話します。車載や産業機器の経験があれば、要求と試験の対応づけや変更の影響分析の記録をどこまで作っていたかも伝えます。</p>
+<h3>7. 「ハードの担当者とは、どうやり取りしていましたか」</h3>
+<p>組込みに特有の質問です。面談官は、問題を一人で抱え込まず、根拠を添えて相手に渡せるかを見ています。「ソフトの問題ではないと考えた根拠として、波形とログを添えて報告した」「端子の割り当ての変更を取り決めとして記録した」など、やり取りの形を具体的に話します。</p>
+<h3>8. 「出社や実機での作業はどのくらいできますか」</h3>
+<p>働き方の条件を確かめる質問です。週に何日なら出社できるか、評価の時期に出社が増えても対応できるか、通える範囲はどこまでかを、あいまいにせず答えます。条件の整理の仕方は<a href="/media/embedded-remote/">組込みエンジニアのリモートの記事</a>で解説しています。</p>
+<aside class="box box-view"><p class="box-label">エージェントベストの見解</p><p>組込みの案件をご紹介していると、面談で評価されやすいのは、不具合の話を「症状→疑ったこと→確かめた道具→分かったこと」の順で話せる方です。反対に、どの質問にも「チームで協力して解決しました」のような答えが続くと、自分が何をしたかが見えず、見送られやすい傾向があります。原因が最後まで分からなかった不具合でも、どこまで絞り込んだかを話せれば、経験として受け止められることが多くあります。</p></aside>
+<h2 id="s3">技術的な確認の形もある</h2>
+<p>組込みの面談では、口頭の質問に加えて、次のような確認を受けることがあります。</p>
+<ul><li>回路図やタイミング図の一部を見せられ、読み方を聞かれる</li><li>割り込みと共有変数を扱うコードの断片を見て、問題点を聞かれる</li><li>ポインターやビット操作など、C言語の基本を問う短い質問</li></ul>
+<p>事前の課題や技術試験への向き合い方は<a href="/media/tech-test/">技術テストの記事</a>で整理しています。分からないことを聞かれたときは、知っているふりをせず、「この資料のこの値を確かめて判断します」と調べ方を答えるほうが信頼されます。</p>
+<h2 id="s4">準備は「追った不具合」を2〜3件に絞る</h2>
+<p>上の質問は数が多く見えますが、答えの材料は共通しています。準備は次の手順で進めると効率的です。</p>
+<ol><li><strong>不具合を選ぶ</strong>：ハード寄り、タイミング寄り、メモリーや設計寄りなど、性質の違う不具合を2〜3件選ぶ</li><li><strong>不具合ごとにメモを作る</strong>：症状、条件、疑った順番、使った道具、原因、対策、残した記録を書き出す</li><li><strong>構成の言い方をそろえる</strong>：製品分野、層、マイコン・OSの系統を、どの話でも同じ言い方で言えるようにする</li><li><strong>1分版と3分版を作る</strong>：最初は短く話し、掘り下げられたら詳しく話せるようにする</li><li><strong>スキルシートと照らし合わせる</strong>：シートに書いた層や道具と、話の内容が一致しているかを確かめる</li></ol>
+<p>面談官はシートを見ながら質問するため、話とシートがずれると、どちらも信用されにくくなります。シートの書き方は<a href="/media/embedded-skillsheet/">組込みエンジニアのスキルシートの記事</a>、冒頭の自己紹介は<a href="/media/self-introduction/">面談の自己紹介の記事</a>で解説しています。</p>
+<aside class="box box-caution"><p class="box-label">注意</p><p>組込みの面談では、前の現場の製品名、発表前の製品の仕様、部品の型番の組み合わせ、試作品の写真などを、経験を伝えたい一心で出してしまいがちです。製品名や顧客名は伏せ、製品分野と系統で伝えましょう。どこまで話してよいかの考え方は<a href="/media/confidentiality-in-skillsheet/">スキルシートに書いてよいこと・いけないこと</a>が参考になります。</p></aside>
+<h2 id="s5">組込みならではの逆質問</h2>
+<p>面談の終わりには、こちらから質問できる時間があります。逆質問は、参画後のずれを防ぐ確認に使います。組込みの案件では、次の点を聞いておくと判断がしやすくなります。</p>
+<ul><li>担当する層と、使うマイコン・OS・開発環境</li><li>新規開発か既存製品か、今どの試作の版や局面か</li><li>実機や評価ボード、計測器を自分用に使えるか、チームで共有か</li><li>出社の頻度が、この先の局面でどう変わるか</li><li>コーディング規約やレビュー、記録の手順の重さ</li></ul>
+<p>一般的な逆質問の考え方は<a href="/media/reverse-questions/">業務委託の面談で聞いておくべき逆質問</a>にまとめています。聞いた内容は契約前の確認にもそのまま使えます。確認点は<a href="/media/embedded-anken-erabi/">組込みエンジニアの案件の選び方</a>で整理しています。</p>
+<aside class="box box-view"><p class="box-label">エージェントベストの見解</p><p>当社では、経歴をご本人の了承を得た案件にだけ、氏名・連絡先を伏せてご提案しています。組込みの面談では、案件票だけでは分からないマイコンやOSの構成、試作の局面について、面談の前に確認しておきたい点があれば、ご質問いただければ確認します。面談で話してよい範囲に迷う場合は、伝えたい経験と伏せたい情報を先に分けておくことをおすすめします。</p></aside>
+<aside class="box box-point"><p class="box-label">ポイント</p><ul><li>組込みの面談では、製品分野と層、マイコン・OSの系統、不具合の切り分け、計測器、品質の手順がよく聞かれる</li><li>不具合の話は「症状→疑った順番→使った道具→原因→対策」で組み立てる</li><li>準備は追った不具合を2〜3件に絞り、スキルシートと内容をそろえる</li><li>逆質問では、層と構成、局面、実機の使い方、出社の変化、手順の重さを確かめる</li></ul></aside>
+<h2 id="s6">よくある質問</h2>
+<h3>案件と同じマイコンの経験がないと、面談で落とされますか？</h3>
+<p>同じ系統の経験があると有利ですが、それだけで決まるわけではありません。資料を読んで周辺機能を立ち上げた経験や、別の系統へ移ったときの進め方を具体的に話せれば、立ち上がりの早さを伝える材料になります。</p>
+<h3>評価・検証の経験が中心ですが、開発の案件の面談ではどう話せばよいですか？</h3>
+<p>不具合を再現させ、条件を絞り込み、ログや波形を添えて開発側に渡した経験を中心に話します。ソースを読んで原因の候補を挙げたことがあれば、それも伝えましょう。自分が修正まで担っていない場合は、その線を正直に分けて話すほうが信頼されます。</p>
+<h3>面談で製品名を聞かれたら、答えるべきですか？</h3>
+<p>前の現場の製品名や顧客名は、秘密保持の約束の対象になっていることが多くあります。「守秘の約束があるため製品名は控えますが、分野は産業機器です」のように伝えれば、多くの面談官は理解してくれます。面談で見送られやすい理由は<a href="/media/interview-fail-reasons/">面談で見送られる理由の記事</a>で解説しています。</p>
+  </div>
+  
+  <div class="cta-band">
+  <h2>条件に合う案件だけ、知りたい方へ</h2>
+  <p>ご登録は無料です。条件に合う案件だけを、ご本人の了承を得てからご提案します。</p>
+  <div class="cta-row">
+    <a class="btn btn-primary" href="https://airtable.com/appYkc36EvioYoL1A/pag6CZC4uJmxUcrXT/form" target="_blank" rel="noopener">無料で登録する</a>
+    <a class="btn btn-ghost" href="/jobs/">案件を探す</a>
+  </div>
+</div>
+  <section class="related"><h2>あわせて読みたい</h2><div class="grid g2"><a class="card art-card" href="/media/embedded-skillsheet/">
+  <span class="art-hub">組込み・ゲーム・XR</span>
+  <h3>組込みエンジニアのスキルシートの書き方｜面談で評価される実績の見せ方</h3>
+  <p>組込みエンジニアのスキルシートは、製品分野、担当したソフトの層、マイコン・OS・道具の系統をプロジェクトごとにそろえ、担当内容には切り分けや設計の判断を書くのが基本です。製品名を伏せた書き方を架空の記入例で解説します。</p>
+</a>
+<a class="card art-card" href="/media/embedded-skills/">
+  <span class="art-hub">組込み・ゲーム・XR</span>
+  <h3>組込みエンジニアのフリーランス案件で求められるスキルと経験</h3>
+  <p>組込みのフリーランス案件では、C言語での実装に加えて、ハードウェアの資料を読む力、RTOSや組込みLinuxの経験、通信インターフェース、デバッガーや計測器での切り分け、品質の手順が見られます。分野ごと・経験の段階ごとに解説します。</p>
+</a>
+<a class="card art-card" href="/media/embedded-how-to/">
+  <span class="art-hub">組込み・ゲーム・XR</span>
+  <h3>組込みエンジニアがフリーランスになるには｜必要な経験と独立までの進め方</h3>
+  <p>組込みでフリーランスになるには、製品を一つ量産や出荷まで通した経験と、担当した層・マイコン・OSを説明できる材料が要ります。メーカー・受託・評価出身で違う準備、機材と秘密の扱い、独立までの順番を解説します。</p>
+</a>
+<a class="card art-card" href="/media/embedded-shigoto/">
+  <span class="art-hub">組込み・ゲーム・XR</span>
+  <h3>組込みエンジニアのフリーランス案件の仕事内容｜案件の種類と働き方</h3>
+  <p>組込みのフリーランス案件は、保守・派生開発、新規のファームウェア開発、組込みLinux、評価・検証、方式設計の5つに分けると働き方が見えます。種類ごとの1日・1か月の流れ、関わる相手、成果物を整理します。</p>
+</a>
+<a class="card art-card" href="/media/embedded-anken-erabi/">
+  <span class="art-hub">組込み・ゲーム・XR</span>
+  <h3>組込みエンジニアのフリーランス案件の選び方｜契約前に確かめたいこと</h3>
+  <p>組込み案件は、同じファームウェア開発でも構成・局面・実機の環境で負担が大きく変わります。担当の層と構成、局面、実機と機材、出社、品質の手順、契約の形と不具合の責任、稼働の振れ幅、秘密の条件の8点を契約前に確かめる方法を解説します。</p>
+</a>
+<a class="card art-card" href="/media/embedded-remote/">
+  <span class="art-hub">組込み・ゲーム・XR</span>
+  <h3>組込みエンジニアのフリーランスはリモートで働ける？案件の傾向と探し方</h3>
+  <p>組込みエンジニアのフリーランスは、実機・評価ボード・計測器を使う作業が多く、フルリモートの案件は限られます。設計やシミュレーター上の作業はリモートにしやすい一方、評価や不具合の切り分けは現地になりやすい傾向です。探し方と確認点を解説します。</p>
+</a></div></section>
+</main>
+<footer class="site-foot">
+  <div class="wrap">
+    <strong>エージェントベストジョブ フリーランス</strong>
+    <div class="foot-links">
+      <a href="/">トップ</a>
+      <a href="/jobs/">案件を探す</a>
+      <a href="/media/">お役立ち記事</a>
+      <a href="https://airtable.com/appYkc36EvioYoL1A/pag6CZC4uJmxUcrXT/form" target="_blank" rel="noopener">ご登録（スキルシート・ご希望の条件）</a>
+      <a href="https://line.me/R/ti/p/@697nxhbt?oat_content=url&ts=08302134" target="_blank" rel="noopener" data-line-cta="footer">LINEで相談する</a>
+      <a href="/privacy.html">個人情報の取り扱い</a>
+      <a href="https://www.agent-best.net/company/">運営会社</a>
+    </div>
+    <div class="foot-links">
+      <a href="https://jobs.agent-best.net/">正社員の求人を探す（エージェントベストジョブ）</a>
+      <a href="https://skill.agent-best.net/">エージェントベストジョブ手に職</a>
+      <a href="https://www.agent-best.net/">エージェントベスト</a>
+    </div>
+    <p>運営：株式会社エージェントベスト（有料職業紹介事業 許可番号 13-ユ-316964）<br>〒106-0032 東京都港区六本木4-8-7 嶋田ビル5階</p>
+  </div>
+</footer>
+<script src="/assets/fav.js" defer></script>
+</body>
+</html>
