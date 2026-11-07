@@ -1,4 +1,4 @@
-# フリーランス向けメディア 記事の書き方（freelance.agent-best.net/media/）
+# フリーランス向けメディア 記事の書き方（freelanceanken.com/media/）
 
 記事を書く人（Claude・サブエージェント）は、書く前に必ずこのファイルを読む。
 参考にしているのは jobs.agent-best.net/media（正社員向けキャリアメディア）の作り。文章は流用しない。

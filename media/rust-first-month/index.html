@@ -5,18 +5,18 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Rustエンジニアの参画初月にやること｜現場で信頼される進め方｜エージェントベストジョブ フリーランス</title>
 <meta name="description" content="Rustエンジニアの参画初月は、ビルドと開発環境を手元で再現し、Rustを選んだ理由とコードの決まりをつかみ、小さな変更を通して月末に改善の見立てを出すのが基本です。週ごとの進め方と、案件の型による違い、避けたい動きを整理します。">
-<link rel="canonical" href="https://freelance.agent-best.net/media/rust-first-month/">
+<link rel="canonical" href="https://freelanceanken.com/media/rust-first-month/">
 
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="エージェントベストジョブ フリーランス">
 <meta property="og:title" content="Rustエンジニアの参画初月にやること｜現場で信頼される進め方｜エージェントベストジョブ フリーランス">
 <meta property="og:description" content="Rustエンジニアの参画初月は、ビルドと開発環境を手元で再現し、Rustを選んだ理由とコードの決まりをつかみ、小さな変更を通して月末に改善の見立てを出すのが基本です。週ごとの進め方と、案件の型による違い、避けたい動きを整理します。">
-<meta property="og:url" content="https://freelance.agent-best.net/media/rust-first-month/">
-<meta property="og:image" content="https://freelance.agent-best.net/assets/ogp.png">
+<meta property="og:url" content="https://freelanceanken.com/media/rust-first-month/">
+<meta property="og:image" content="https://freelanceanken.com/assets/ogp.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://freelance.agent-best.net/assets/ogp.png">
+<meta name="twitter:image" content="https://freelanceanken.com/assets/ogp.png">
 <meta name="theme-color" content="#1E3A5F">
 <link rel="icon" href="/assets/favicon.ico">
 <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
@@ -24,7 +24,7 @@
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-1XXMP8Y1B4"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-1XXMP8Y1B4');
 document.addEventListener('click',e=>{const a=e.target.closest('[data-line-cta]');if(a)gtag('event','line_add_friend',{placement:a.dataset.lineCta,page_path:location.pathname});});</script>
-<script type="application/ld+json">[{"@context":"https://schema.org","@type":"Article","headline":"Rustエンジニアの参画初月にやること｜現場で信頼される進め方","description":"Rustエンジニアの参画初月は、ビルドと開発環境を手元で再現し、Rustを選んだ理由とコードの決まりをつかみ、小さな変更を通して月末に改善の見立てを出すのが基本です。週ごとの進め方と、案件の型による違い、避けたい動きを整理します。","datePublished":"2026-11-04","dateModified":"2026-11-04","author":{"@type":"Organization","name":"株式会社エージェントベスト","url":"https://www.agent-best.net/"},"publisher":{"@type":"Organization","name":"株式会社エージェントベスト","logo":{"@type":"ImageObject","url":"https://freelance.agent-best.net/assets/logo.png"}},"mainEntityOfPage":"https://freelance.agent-best.net/media/rust-first-month/"},{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"トップ","item":"https://freelance.agent-best.net/"},{"@type":"ListItem","position":2,"name":"お役立ち記事","item":"https://freelance.agent-best.net/media/"},{"@type":"ListItem","position":3,"name":"バックエンド開発","item":"https://freelance.agent-best.net/media/hub/backend/"},{"@type":"ListItem","position":4,"name":"Rustエンジニアの参画初月にやること｜現場で信頼される進め方"}]},{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"手順書どおりにやってもビルドが通りません。どうすればよいですか？","acceptedAnswer":{"@type":"Answer","text":"まずは、使っているRustの版と、rust-toolchain.tomlやrust-versionの設定を確かめます。それでも通らない場合は、試したことと出たエラーをまとめて、早めにチームに質問してください。手順書の抜けが見つかれば、直した内容を共有することでチームへの貢献にもなります。"}},{"@type":"Question","name":"既存のコードにunsafeが多く、危うく見えます。指摘してよいですか？","acceptedAnswer":{"@type":"Answer","text":"指摘してかまいませんが、初月は「ここに前提が残っていない」「ここはテストがない」のように事実と影響を示し、直すかどうかは発注側に選んでもらう形が安全です。理由があってそう書かれていることもあるため、まず経緯を尋ねることから始めてください。"}},{"@type":"Question","name":"初月から大きな機能を任されました。どう進めればよいですか？","acceptedAnswer":{"@type":"Answer","text":"設計の段階で、データの持ち方、エラーの返し方、他の部品との境界を短く書いてレビューを受けてから実装に入ると、チームの決まりとのずれを早めに直せます。分からない決まりは、推測で進めずに確かめてください。"}}]}]</script>
+<script type="application/ld+json">[{"@context":"https://schema.org","@type":"Article","headline":"Rustエンジニアの参画初月にやること｜現場で信頼される進め方","description":"Rustエンジニアの参画初月は、ビルドと開発環境を手元で再現し、Rustを選んだ理由とコードの決まりをつかみ、小さな変更を通して月末に改善の見立てを出すのが基本です。週ごとの進め方と、案件の型による違い、避けたい動きを整理します。","datePublished":"2026-11-04","dateModified":"2026-11-04","author":{"@type":"Organization","name":"株式会社エージェントベスト","url":"https://www.agent-best.net/"},"publisher":{"@type":"Organization","name":"株式会社エージェントベスト","logo":{"@type":"ImageObject","url":"https://freelanceanken.com/assets/logo.png"}},"mainEntityOfPage":"https://freelanceanken.com/media/rust-first-month/"},{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"トップ","item":"https://freelanceanken.com/"},{"@type":"ListItem","position":2,"name":"お役立ち記事","item":"https://freelanceanken.com/media/"},{"@type":"ListItem","position":3,"name":"バックエンド開発","item":"https://freelanceanken.com/media/hub/backend/"},{"@type":"ListItem","position":4,"name":"Rustエンジニアの参画初月にやること｜現場で信頼される進め方"}]},{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"手順書どおりにやってもビルドが通りません。どうすればよいですか？","acceptedAnswer":{"@type":"Answer","text":"まずは、使っているRustの版と、rust-toolchain.tomlやrust-versionの設定を確かめます。それでも通らない場合は、試したことと出たエラーをまとめて、早めにチームに質問してください。手順書の抜けが見つかれば、直した内容を共有することでチームへの貢献にもなります。"}},{"@type":"Question","name":"既存のコードにunsafeが多く、危うく見えます。指摘してよいですか？","acceptedAnswer":{"@type":"Answer","text":"指摘してかまいませんが、初月は「ここに前提が残っていない」「ここはテストがない」のように事実と影響を示し、直すかどうかは発注側に選んでもらう形が安全です。理由があってそう書かれていることもあるため、まず経緯を尋ねることから始めてください。"}},{"@type":"Question","name":"初月から大きな機能を任されました。どう進めればよいですか？","acceptedAnswer":{"@type":"Answer","text":"設計の段階で、データの持ち方、エラーの返し方、他の部品との境界を短く書いてレビューを受けてから実装に入ると、チームの決まりとのずれを早めに直せます。分からない決まりは、推測で進めずに確かめてください。"}}]}]</script>
 </head>
 <body>
 <header class="site-head">

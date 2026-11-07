@@ -238,7 +238,7 @@ function renderMarkdown(md, esc, bySlug){
     .replace(/\[([^\]]+)\]\(([^)\s]+)\)/g, (_, t, u) => {
       const own = u.match(/^\/media\/([a-z0-9-]+)\/$/);
       if(own && !bySlug[own[1]] && !['search', 'hub'].includes(own[1])) return t;
-      const ext = /^https?:/.test(u) && !u.startsWith('https://freelance.agent-best.net');
+      const ext = /^https?:/.test(u) && !u.startsWith('https://freelanceanken.com');
       return `<a href="${u}"${ext ? ' target="_blank" rel="noopener"' : ''}>${t}</a>`;
     });
   const lines = md.split('\n');

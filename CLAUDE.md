@@ -1,4 +1,4 @@
-# freelance — エージェントベストジョブ フリーランス（freelance.agent-best.net）
+# freelance — エージェントベストジョブ フリーランス（freelanceanken.com）
 
 フリーランスのエンジニア・コンサル向けの業務委託案件サイト。LP（index.html）＋案件一覧（jobs/）＋案件ページ（job/F0001/）。2026-10-29 作成。
 

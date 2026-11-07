@@ -5,18 +5,18 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Scalaエンジニアのフリーランス面談でよく聞かれる質問と答え方の準備｜エージェントベストジョブ フリーランス</title>
 <meta name="description" content="Scala案件の面談では、使った版と書き方の型、失敗の扱い方、抽象化をやめた判断、副作用の閉じ込め方、移行や性能の問題の解き方がよく聞かれます。質問ごとの意図と答えの組み立て方、準備、逆質問を整理します。">
-<link rel="canonical" href="https://freelance.agent-best.net/media/scala-interview/">
+<link rel="canonical" href="https://freelanceanken.com/media/scala-interview/">
 
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="エージェントベストジョブ フリーランス">
 <meta property="og:title" content="Scalaエンジニアのフリーランス面談でよく聞かれる質問と答え方の準備｜エージェントベストジョブ フリーランス">
 <meta property="og:description" content="Scala案件の面談では、使った版と書き方の型、失敗の扱い方、抽象化をやめた判断、副作用の閉じ込め方、移行や性能の問題の解き方がよく聞かれます。質問ごとの意図と答えの組み立て方、準備、逆質問を整理します。">
-<meta property="og:url" content="https://freelance.agent-best.net/media/scala-interview/">
-<meta property="og:image" content="https://freelance.agent-best.net/assets/ogp.png">
+<meta property="og:url" content="https://freelanceanken.com/media/scala-interview/">
+<meta property="og:image" content="https://freelanceanken.com/assets/ogp.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://freelance.agent-best.net/assets/ogp.png">
+<meta name="twitter:image" content="https://freelanceanken.com/assets/ogp.png">
 <meta name="theme-color" content="#1E3A5F">
 <link rel="icon" href="/assets/favicon.ico">
 <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
@@ -24,7 +24,7 @@
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-1XXMP8Y1B4"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-1XXMP8Y1B4');
 document.addEventListener('click',e=>{const a=e.target.closest('[data-line-cta]');if(a)gtag('event','line_add_friend',{placement:a.dataset.lineCta,page_path:location.pathname});});</script>
-<script type="application/ld+json">[{"@context":"https://schema.org","@type":"Article","headline":"Scalaエンジニアのフリーランス面談でよく聞かれる質問と答え方の準備","description":"Scala案件の面談では、使った版と書き方の型、失敗の扱い方、抽象化をやめた判断、副作用の閉じ込め方、移行や性能の問題の解き方がよく聞かれます。質問ごとの意図と答えの組み立て方、準備、逆質問を整理します。","datePublished":"2026-11-04","dateModified":"2026-11-04","author":{"@type":"Organization","name":"株式会社エージェントベスト","url":"https://www.agent-best.net/"},"publisher":{"@type":"Organization","name":"株式会社エージェントベスト","logo":{"@type":"ImageObject","url":"https://freelance.agent-best.net/assets/logo.png"}},"mainEntityOfPage":"https://freelance.agent-best.net/media/scala-interview/"},{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"トップ","item":"https://freelance.agent-best.net/"},{"@type":"ListItem","position":2,"name":"お役立ち記事","item":"https://freelance.agent-best.net/media/"},{"@type":"ListItem","position":3,"name":"バックエンド開発","item":"https://freelance.agent-best.net/media/hub/backend/"},{"@type":"ListItem","position":4,"name":"Scalaエンジニアのフリーランス面談でよく聞かれる質問と答え方の準備"}]},{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"参画先と違うエフェクトのライブラリしか使ったことがありません。不利になりますか？","acceptedAnswer":{"@type":"Answer","text":"不利になるとは限りません。面談官が見ているのは、副作用をどこに閉じ込め、資源をどう解放するかという考え方であることが多いためです。使ったライブラリでの書き方と、参画先のライブラリでの対応する書き方を説明できるようにしておくと安心です。"}},{"@type":"Question","name":"Scala 3の経験がないと面談で厳しく見られますか？","acceptedAnswer":{"@type":"Answer","text":"Scala 2.13で動いている現場やSparkの案件では、Scala 3の経験がなくても問題にならないことがあります。新しく作る案件や移行を控えた案件では聞かれやすいので、手元でScala 3に触れ、Scala 2との違いを自分の言葉で話せるようにしておきましょう。"}},{"@type":"Question","name":"Javaの経験が長いことは、どう話せばよいですか？","acceptedAnswer":{"@type":"Answer","text":"JVMの性能調査やJavaのライブラリとの組み合わせなど、Javaの経験が生きる場面を具体的に話すと評価につながります。あわせて、Scalaでは例外やnullに頼らず型で失敗を表す書き方に移れていることを示しましょう。Javaの面談との違いはJavaエンジニアの面談の記事も参考になります。"}}]}]</script>
+<script type="application/ld+json">[{"@context":"https://schema.org","@type":"Article","headline":"Scalaエンジニアのフリーランス面談でよく聞かれる質問と答え方の準備","description":"Scala案件の面談では、使った版と書き方の型、失敗の扱い方、抽象化をやめた判断、副作用の閉じ込め方、移行や性能の問題の解き方がよく聞かれます。質問ごとの意図と答えの組み立て方、準備、逆質問を整理します。","datePublished":"2026-11-04","dateModified":"2026-11-04","author":{"@type":"Organization","name":"株式会社エージェントベスト","url":"https://www.agent-best.net/"},"publisher":{"@type":"Organization","name":"株式会社エージェントベスト","logo":{"@type":"ImageObject","url":"https://freelanceanken.com/assets/logo.png"}},"mainEntityOfPage":"https://freelanceanken.com/media/scala-interview/"},{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"トップ","item":"https://freelanceanken.com/"},{"@type":"ListItem","position":2,"name":"お役立ち記事","item":"https://freelanceanken.com/media/"},{"@type":"ListItem","position":3,"name":"バックエンド開発","item":"https://freelanceanken.com/media/hub/backend/"},{"@type":"ListItem","position":4,"name":"Scalaエンジニアのフリーランス面談でよく聞かれる質問と答え方の準備"}]},{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"参画先と違うエフェクトのライブラリしか使ったことがありません。不利になりますか？","acceptedAnswer":{"@type":"Answer","text":"不利になるとは限りません。面談官が見ているのは、副作用をどこに閉じ込め、資源をどう解放するかという考え方であることが多いためです。使ったライブラリでの書き方と、参画先のライブラリでの対応する書き方を説明できるようにしておくと安心です。"}},{"@type":"Question","name":"Scala 3の経験がないと面談で厳しく見られますか？","acceptedAnswer":{"@type":"Answer","text":"Scala 2.13で動いている現場やSparkの案件では、Scala 3の経験がなくても問題にならないことがあります。新しく作る案件や移行を控えた案件では聞かれやすいので、手元でScala 3に触れ、Scala 2との違いを自分の言葉で話せるようにしておきましょう。"}},{"@type":"Question","name":"Javaの経験が長いことは、どう話せばよいですか？","acceptedAnswer":{"@type":"Answer","text":"JVMの性能調査やJavaのライブラリとの組み合わせなど、Javaの経験が生きる場面を具体的に話すと評価につながります。あわせて、Scalaでは例外やnullに頼らず型で失敗を表す書き方に移れていることを示しましょう。Javaの面談との違いはJavaエンジニアの面談の記事も参考になります。"}}]}]</script>
 </head>
 <body>
 <header class="site-head">

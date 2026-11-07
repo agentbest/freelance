@@ -9,7 +9,7 @@
 const fs = require('fs'), path = require('path');
 const dir = __dirname;
 
-const SITE_URL  = 'https://freelance.agent-best.net';
+const SITE_URL  = 'https://freelanceanken.com';
 const SITE_NAME = 'エージェントベストジョブ フリーランス';
 const GA_ID     = 'G-1XXMP8Y1B4';
 const FORM_URL  = 'https://airtable.com/appYkc36EvioYoL1A/pag6CZC4uJmxUcrXT/form'; // ご登録フォーム（スキルシート・希望条件）→ 求職者（フリーランス）tblDp1w31rRtbgOyc
