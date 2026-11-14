@@ -38,7 +38,8 @@ document.addEventListener('click',e=>{const a=e.target.closest('[data-line-cta]'
     </nav>
   </div>
 </header>
-<main class="wrap narrow article">
+<main class="wrap art-layout">
+  <article class="art-main">
   <p class="crumbs"><a href="/">トップ</a> › <a href="/media/">お役立ち記事</a> › <a href="/media/hub/independence/">独立・開業の準備</a></p>
   <a class="art-hub" href="/media/hub/independence/">独立・開業の準備</a>
   <h1 class="art-title">個人事業主とフリーランスの違い｜呼び方の意味と、手続きが変わる場面</h1>
@@ -106,36 +107,90 @@ document.addEventListener('click',e=>{const a=e.target.closest('[data-line-cta]'
     <a class="btn btn-ghost" href="/jobs/">案件を探す</a>
   </div>
 </div>
-  <section class="related"><h2>あわせて読みたい</h2><div class="grid g2"><a class="card art-card" href="/media/kaigyo-todoke/">
-  <span class="art-hub">独立・開業の準備</span>
-  <h3>開業届の出し方｜フリーランスが出すタイミングと書き方</h3>
-  <p>開業届は、事業を始めた年分の確定申告期限までに、納税地の税務署へ出す届出です（2026年10月時点）。初年度から青色申告にするなら、開業から2か月以内の承認申請書と一緒に出すのが確実です。書き方と提出方法を整理します。</p>
+  <section class="related"><h2>あわせて読みたい</h2><div class="pt-grid"><a class="pt-card" href="/media/kaigyo-todoke/">
+  <span class="thumb th2" aria-hidden="true"><span class="th-cat">独立・開業の準備</span><span class="th-key">開業届</span></span>
+  <div class="pt-body"><span class="pt-meta"><span class="art-hub">独立・開業の準備</span><time datetime="2026-10-29">2026.10.29</time></span>
+  <h3>開業届の出し方｜フリーランスが出すタイミングと書き方</h3></div>
 </a>
-<a class="card art-card" href="/media/aoiro-shinkoku/">
-  <span class="art-hub">確定申告・所得税</span>
-  <h3>青色申告とは｜65万円控除を受けるための条件と令和9年分からの変更</h3>
-  <p>青色申告で65万円の控除を受けるには、複式簿記で記帳し、期限内にe-Taxで申告するか優良な電子帳簿を保存することが条件です。令和9年分からは最高75万円になり、書面申告は10万円に下がります。</p>
+<a class="pt-card" href="/media/aoiro-shinkoku/">
+  <span class="thumb th3" aria-hidden="true"><span class="th-cat">確定申告・所得税</span><span class="th-key">青色申告</span></span>
+  <div class="pt-body"><span class="pt-meta"><span class="art-hub">確定申告・所得税</span><time datetime="2026-10-29">2026.10.29</time></span>
+  <h3>青色申告とは｜65万円控除を受けるための条件と令和9年分からの変更</h3></div>
 </a>
-<a class="card art-card" href="/media/freelance-act-overview/">
-  <span class="art-hub">フリーランス新法・下請法</span>
-  <h3>フリーランス新法の要点｜発注側の義務とフリーランスの権利（2026年版）</h3>
-  <p>フリーランス新法は2024年11月施行。発注者に取引条件の明示、60日以内の報酬支払、7つの禁止行為、ハラスメント対策、中途解除の30日前予告などを義務づけています。対象となる人と取引、違反時の申出先を2026年10月時点で整理します。</p>
+<a class="pt-card" href="/media/freelance-act-overview/">
+  <span class="thumb th4" aria-hidden="true"><span class="th-cat">フリーランス新法・下請法</span><span class="th-key">フリーランス新法</span></span>
+  <div class="pt-body"><span class="pt-meta"><span class="art-hub">フリーランス新法・下請法</span><time datetime="2026-10-29">2026.10.29</time></span>
+  <h3>フリーランス新法の要点｜発注側の義務とフリーランスの権利（2026年版）</h3></div>
 </a>
-<a class="card art-card" href="/media/roudousha-sei/">
-  <span class="art-hub">フリーランス新法・下請法</span>
-  <h3>労働者性とは｜業務委託でも労働者と判断される場合と判断の基準</h3>
-  <p>労働者性は、業務委託でも実態として労働基準法上の労働者にあたるかという問題です。契約の名称ではなく、指揮監督の有無と報酬の性格（使用従属性）を中心に総合判断されます。判断基準の読み方と点検の方法を整理します。</p>
+<a class="pt-card" href="/media/roudousha-sei/">
+  <span class="thumb th4" aria-hidden="true"><span class="th-cat">フリーランス新法・下請法</span><span class="th-key">労働者性</span></span>
+  <div class="pt-body"><span class="pt-meta"><span class="art-hub">フリーランス新法・下請法</span><time datetime="2026-10-29">2026.10.29</time></span>
+  <h3>労働者性とは｜業務委託でも労働者と判断される場合と判断の基準</h3></div>
 </a>
-<a class="card art-card" href="/media/fukugyo-kaigyo/">
-  <span class="art-hub">副業・複業</span>
-  <h3>副業でも開業届は出すべき？事業所得か雑所得かで変わる判断の考え方</h3>
-  <p>副業の開業届は、副業が事業所得を生む「事業」にあたるなら提出の対象で、雑所得にとどまるなら対象外です。出すかどうかは届出の有無ではなく活動の中身で決まります。判断の材料と、出す・出さないそれぞれの注意点を整理します。</p>
+<a class="pt-card" href="/media/fukugyo-kaigyo/">
+  <span class="thumb th7" aria-hidden="true"><span class="th-cat">副業・複業</span><span class="th-key">副業</span></span>
+  <div class="pt-body"><span class="pt-meta"><span class="art-hub">副業・複業</span><time datetime="2026-10-29">2026.10.29</time></span>
+  <h3>副業でも開業届は出すべき？事業所得か雑所得かで変わる判断の考え方</h3></div>
 </a>
-<a class="card art-card" href="/media/yago/">
-  <span class="art-hub">独立・開業の準備</span>
-  <h3>屋号の決め方｜付けるメリットと注意点、使ってはいけない名前</h3>
-  <p>屋号は個人事業の名前で、付けるかどうかは任意です。付けるなら、仕事の内容が伝わり、長く使え、会社や他の事業者と誤認されない名前にします。「株式会社」など会社と誤認される文字は使えません（会社法7条）。</p>
+<a class="pt-card" href="/media/yago/">
+  <span class="thumb th2" aria-hidden="true"><span class="th-cat">独立・開業の準備</span><span class="th-key">屋号</span></span>
+  <div class="pt-body"><span class="pt-meta"><span class="art-hub">独立・開業の準備</span><time datetime="2026-10-29">2026.10.29</time></span>
+  <h3>屋号の決め方｜付けるメリットと注意点、使ってはいけない名前</h3></div>
 </a></div></section>
+  <p class="pt-more-row"><a class="pt-more" href="/media/hub/independence/">独立・開業の準備の記事をもっと見る →</a></p>
+  </article>
+  <aside class="art-side" aria-label="記事のメニュー">
+    <section class="side-box">
+      <h2 class="side-h">独立・開業の準備の記事</h2>
+      <div class="side-list"><a class="pt-hcard" href="/media/accounting-software/">
+  <span class="thumb th2 thumb-sm" aria-hidden="true"><span class="th-cat">独立・開業の準備</span><span class="th-key">会計ソフト</span></span>
+  <div class="pt-body"><span class="pt-meta"><span class="art-hub">独立・開業の準備</span><time datetime="2026-10-29">2026.10.29</time></span>
+  <p class="pt-title">フリーランスの会計ソフトの選び方と帳簿の付け方｜毎月の記帳の流れ</p></div>
+</a>
+<a class="pt-hcard" href="/media/before-independence-prepare/">
+  <span class="thumb th2 thumb-sm" aria-hidden="true"><span class="th-cat">独立・開業の準備</span><span class="th-key">独立準備</span></span>
+  <div class="pt-body"><span class="pt-meta"><span class="art-hub">独立・開業の準備</span><time datetime="2026-10-29">2026.10.29</time></span>
+  <p class="pt-title">独立前に済ませておくべき準備｜クレジットカード・ローン・口座と退職時の手続き</p></div>
+</a>
+<a class="pt-hcard" href="/media/business-account/">
+  <span class="thumb th2 thumb-sm" aria-hidden="true"><span class="th-cat">独立・開業の準備</span><span class="th-key">事業用口座</span></span>
+  <div class="pt-body"><span class="pt-meta"><span class="art-hub">独立・開業の準備</span><time datetime="2026-10-29">2026.10.29</time></span>
+  <p class="pt-title">事業用の銀行口座とクレジットカードの分け方｜お金の流れの決め方</p></div>
+</a>
+<a class="pt-hcard" href="/media/coworking/">
+  <span class="thumb th2 thumb-sm" aria-hidden="true"><span class="th-cat">独立・開業の準備</span><span class="th-key">コワーキングスペース</span></span>
+  <div class="pt-body"><span class="pt-meta"><span class="art-hub">独立・開業の準備</span><time datetime="2026-10-29">2026.10.29</time></span>
+  <p class="pt-title">コワーキングスペースを使うときの経費と注意点｜勘定科目・住所・情報管理</p></div>
+</a>
+<a class="pt-hcard" href="/media/dokuritsu-1nenme-okane/">
+  <span class="thumb th2 thumb-sm" aria-hidden="true"><span class="th-cat">独立・開業の準備</span><span class="th-key">独立1年目</span></span>
+  <div class="pt-body"><span class="pt-meta"><span class="art-hub">独立・開業の準備</span><time datetime="2026-10-29">2026.10.29</time></span>
+  <p class="pt-title">独立1年目のお金の流れ｜税金・保険料の支払い時期と、最初の入金までの見通し</p></div>
+</a></div>
+      <a class="pt-more" href="/media/hub/independence/">もっと見る →</a>
+    </section>
+    <section class="side-box">
+      <h2 class="side-h">カテゴリ一覧</h2>
+      <p class="side-group">職種・スキル別</p>
+      <ul class="side-cats"><li><a href="/media/hub/pm-pmo/"><span class="dot th8" aria-hidden="true"></span>PM・PMO<span class="cnt">112</span></a></li><li><a href="/media/hub/it-consul/"><span class="dot th8" aria-hidden="true"></span>ITコンサル<span class="cnt">192</span></a></li><li><a href="/media/hub/biz-consul/"><span class="dot th0" aria-hidden="true"></span>業務・戦略コンサル<span class="cnt">128</span></a></li><li><a href="/media/hub/sap-erp/"><span class="dot th2" aria-hidden="true"></span>SAP・ERP<span class="cnt">160</span></a></li><li><a href="/media/hub/backend/"><span class="dot th2" aria-hidden="true"></span>バックエンド開発<span class="cnt">224</span></a></li><li><a href="/media/hub/frontend/"><span class="dot th2" aria-hidden="true"></span>フロントエンド開発<span class="cnt">80</span></a></li><li><a href="/media/hub/web-design/"><span class="dot th5" aria-hidden="true"></span>Web制作・デザイン<span class="cnt">80</span></a></li><li><a href="/media/hub/mobile/"><span class="dot th2" aria-hidden="true"></span>モバイルアプリ開発<span class="cnt">64</span></a></li><li><a href="/media/hub/embedded-game/"><span class="dot th3" aria-hidden="true"></span>組込み・ゲーム・XR<span class="cnt">80</span></a></li><li><a href="/media/hub/infra-cloud/"><span class="dot th2" aria-hidden="true"></span>インフラ・クラウド<span class="cnt">176</span></a></li><li><a href="/media/hub/data-ai/"><span class="dot th1" aria-hidden="true"></span>データ・AI<span class="cnt">112</span></a></li><li><a href="/media/hub/security/"><span class="dot th0" aria-hidden="true"></span>セキュリティ<span class="cnt">112</span></a></li><li><a href="/media/hub/qa/"><span class="dot th0" aria-hidden="true"></span>QA・テスト<span class="cnt">48</span></a></li></ul>
+      <p class="side-group">業界・資格</p>
+      <ul class="side-cats"><li><a href="/media/hub/industry/"><span class="dot th2" aria-hidden="true"></span>業界別の案件<span class="cnt">80</span></a></li><li><a href="/media/hub/certification/"><span class="dot th6" aria-hidden="true"></span>資格<span class="cnt">41</span></a></li></ul>
+      <p class="side-group">独立・案件獲得</p>
+      <ul class="side-cats"><li><a href="/media/hub/independence/" aria-current="true"><span class="dot th2" aria-hidden="true"></span>独立・開業の準備<span class="cnt">26</span></a></li><li><a href="/media/hub/find-projects/"><span class="dot th2" aria-hidden="true"></span>案件の探し方<span class="cnt">33</span></a></li><li><a href="/media/hub/skillsheet-interview/"><span class="dot th2" aria-hidden="true"></span>スキルシート・面談<span class="cnt">22</span></a></li><li><a href="/media/hub/rate/"><span class="dot th8" aria-hidden="true"></span>単価・報酬交渉<span class="cnt">19</span></a></li></ul>
+      <p class="side-group">契約・法律</p>
+      <ul class="side-cats"><li><a href="/media/hub/contract/"><span class="dot th0" aria-hidden="true"></span>業務委託契約の基礎<span class="cnt">32</span></a></li><li><a href="/media/hub/law/"><span class="dot th4" aria-hidden="true"></span>フリーランス新法・下請法<span class="cnt">20</span></a></li></ul>
+      <p class="side-group">お金・税金</p>
+      <ul class="side-cats"><li><a href="/media/hub/tax/"><span class="dot th3" aria-hidden="true"></span>確定申告・所得税<span class="cnt">34</span></a></li><li><a href="/media/hub/invoice/"><span class="dot th7" aria-hidden="true"></span>インボイス・消費税<span class="cnt">14</span></a></li><li><a href="/media/hub/social-insurance/"><span class="dot th6" aria-hidden="true"></span>社会保険・年金<span class="cnt">18</span></a></li><li><a href="/media/hub/incorporation/"><span class="dot th1" aria-hidden="true"></span>法人化<span class="cnt">14</span></a></li><li><a href="/media/hub/savings/"><span class="dot th9" aria-hidden="true"></span>共済・将来への備え<span class="cnt">11</span></a></li></ul>
+      <p class="side-group">働き方・キャリア</p>
+      <ul class="side-cats"><li><a href="/media/hub/workstyle/"><span class="dot th6" aria-hidden="true"></span>リモート・稼働日数<span class="cnt">21</span></a></li><li><a href="/media/hub/career/"><span class="dot th6" aria-hidden="true"></span>年代別のキャリア<span class="cnt">26</span></a></li><li><a href="/media/hub/side-job/"><span class="dot th7" aria-hidden="true"></span>副業・複業<span class="cnt">10</span></a></li><li><a href="/media/hub/back-to-employee/"><span class="dot th6" aria-hidden="true"></span>正社員との比較・転職<span class="cnt">11</span></a></li></ul>
+    </section>
+    <div class="side-sticky"><section class="side-box side-cta">
+      <h2 class="side-h">条件に合う案件だけ、知りたい方へ</h2>
+      <p>ご登録は無料です。条件に合う案件だけを、ご本人の了承を得てからご提案します。</p>
+      <a class="btn btn-primary" href="https://airtable.com/appYkc36EvioYoL1A/pag6CZC4uJmxUcrXT/form" target="_blank" rel="noopener">無料で登録する</a>
+      <a class="btn btn-ghost" href="/jobs/">案件を探す</a>
+    </section></div>
+  </aside>
 </main>
 <footer class="site-foot">
   <div class="wrap">

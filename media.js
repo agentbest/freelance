@@ -58,18 +58,70 @@ module.exports = function buildMedia({dir, SITE_URL, SITE_NAME, FORM_URL, TALK_U
   </div>
 </div>`;
 
-  /* ---------- トップ ---------- */
+  /* ---------- ポータル風の部品（サムネイル・カード・サイドバー） ---------- */
+  // 記事に画像は無いので、サムネイルは CSS だけで作る。ハブ → 色は slug のハッシュで固定（毎回同じ色）
+  const TH_COLORS = 10;
+  const hubColor = h => { let x = 0; for(const c of h) x = (x * 31 + c.charCodeAt(0)) >>> 0; return x % TH_COLORS; };
+  const thumbKey = a => (a.tags || []).find(t => t && t.length <= 10) || HUB[a.hub].label;
+  const thumb = (a, cls = '') => `<span class="thumb th${hubColor(a.hub)}${cls ? ' ' + cls : ''}" aria-hidden="true"><span class="th-cat">${esc(HUB[a.hub].label)}</span><span class="th-key">${esc(thumbKey(a))}</span></span>`;
+  const dateOf = a => `<time datetime="${esc(a.pubDate)}">${esc(a.pubDate.replace(/-/g, '.'))}</time>`;
+  // 縦型カード（サムネ上・タイトル下）
+  const tcard = (a, {desc = false, big = false} = {}) => `<a class="pt-card${big ? ' pt-card-big' : ''}" href="${artUrl(a)}">
+  ${thumb(a)}
+  <div class="pt-body"><span class="pt-meta"><span class="art-hub">${esc(HUB[a.hub].label)}</span>${dateOf(a)}</span>
+  <h3>${esc(a.title)}</h3>${desc ? `\n  <span class="pt-desc">${esc(a.description)}</span>` : ''}</div>
+</a>`;
+  // 横型の小さいカード（サムネ左・タイトル右）
+  const hcard = (a, tag = 'h3') => `<a class="pt-hcard" href="${artUrl(a)}">
+  ${thumb(a, 'thumb-sm')}
+  <div class="pt-body"><span class="pt-meta"><span class="art-hub">${esc(HUB[a.hub].label)}</span>${dateOf(a)}</span>
+  <${tag} class="pt-title">${esc(a.title)}</${tag}></div>
+</a>`;
+  // カテゴリ一覧（件数つき）。サイドバー用
+  const sideCats = current => `<section class="side-box">
+      <h2 class="side-h">カテゴリ一覧</h2>
+      ${tax.groups.map(g => `<p class="side-group">${esc(g.name)}</p>
+      <ul class="side-cats">${g.hubs.map(([h, label]) => `<li><a href="${hubUrl(h)}"${h === current ? ' aria-current="true"' : ''}><span class="dot th${hubColor(h)}" aria-hidden="true"></span>${esc(label)}<span class="cnt">${byHub[h] ? byHub[h].length : 0}</span></a></li>`).join('')}</ul>`).join('\n      ')}
+    </section>`;
+  const sideCta = `<section class="side-box side-cta">
+      <h2 class="side-h">条件に合う案件だけ、知りたい方へ</h2>
+      <p>ご登録は無料です。条件に合う案件だけを、ご本人の了承を得てからご提案します。</p>
+      <a class="btn btn-primary" href="${FORM_URL}" target="_blank" rel="noopener">無料で登録する</a>
+      <a class="btn btn-ghost" href="/jobs/">案件を探す</a>
+    </section>`;
+  // 「注目の記事」= ほかの記事の related から多く参照されている記事（アクセス数ではない。決定的）
+  const inbound = {};
+  arts.forEach(a => (a.related || []).forEach(s => { if(bySlug[s] && s !== a.slug) inbound[s] = (inbound[s] || 0) + 1; }));
+  const noteworthy = [...arts].sort((a, b) => (inbound[b.slug] || 0) - (inbound[a.slug] || 0) || a.slug.localeCompare(b.slug)).slice(0, 8);
+
+  /* ---------- トップ（ポータル風：カテゴリのタブ・ピックアップ・新着・カテゴリ別・サイドバー） ---------- */
   {
-    const groups = tax.groups.map(g => {
+    // ピックアップ：グループごとの最新記事を1本ずつ、最大5本（決定的。arts は新しい順）
+    const pickup = [];
+    for(const a of arts){
+      if(pickup.length >= 5) break;
+      if(!pickup.some(x => HUB[x.hub].group === HUB[a.hub].group)) pickup.push(a);
+    }
+    const shown = new Set(pickup.map(a => a.slug));
+    // 新着：これまでの「新着の記事」12本は必ずトップに残る（ピックアップに入ったもの以外をここに出す）
+    const latest = arts.filter(a => !shown.has(a.slug)).slice(0, 12);
+    const groupSecs = tax.groups.map((g, gi) => {
       const hubs = g.hubs.map(([h, label]) => `<a class="cat" href="${hubUrl(h)}">${esc(label)}${byHub[h] ? `（${byHub[h].length}）` : ''}</a>`).join('\n        ');
-      return `<section class="media-group">
-      <h2>${esc(g.name)}</h2>
+      const inGroup = arts.filter(a => HUB[a.hub].group === g.name);
+      // 「もっと見る」はグループ内で記事がいちばん多いハブへ
+      const main = g.hubs.map(([h]) => h).sort((x, y) => (byHub[y] || []).length - (byHub[x] || []).length)[0];
+      return `<section class="pt-sec" id="g${gi + 1}">
+      <div class="pt-sec-head"><h2>${esc(g.name)}</h2>${byHub[main] ? `<a class="pt-more" href="${hubUrl(main)}">${esc(HUB[main].label)}をもっと見る →</a>` : ''}</div>
       <p class="sub">${esc(g.desc)}</p>
       <div class="cat-list">
         ${hubs}
       </div>
+      ${inGroup.length ? `<div class="pt-grid">${inGroup.slice(0, 6).map(a => tcard(a)).join('\n')}</div>` : ''}
     </section>`;
     }).join('\n    ');
+    const tagCount = {};
+    arts.forEach(a => (a.tags || []).forEach(t => { tagCount[t] = (tagCount[t] || 0) + 1; }));
+    const topTags = Object.entries(tagCount).sort((x, y) => y[1] - x[1] || x[0].localeCompare(y[0])).slice(0, 24).map(([t]) => t);
     const html = head({
       title: `フリーランスのお役立ち記事｜${SITE_NAME}`,
       desc: 'フリーランスのエンジニア・コンサル向けに、案件の探し方、単価の決まり方、業務委託契約、確定申告・インボイス、社会保険までを解説する記事集です。',
@@ -83,12 +135,44 @@ module.exports = function buildMedia({dir, SITE_URL, SITE_NAME, FORM_URL, TALK_U
     ${searchBox}
   </div>
 </section>
+<nav class="pt-tabs" aria-label="記事のカテゴリ">
+  <div class="wrap"><ul>
+    <li><a href="#pickup">ピックアップ</a></li>
+    <li><a href="#new">新着記事</a></li>
+    ${tax.groups.map((g, gi) => `<li><a href="#g${gi + 1}">${esc(g.name)}</a></li>`).join('\n    ')}
+  </ul></div>
+</nav>
+<div class="wrap pt-layout">
+  <div class="pt-main">
+    <section class="pt-sec" id="pickup">
+      <div class="pt-sec-head"><h2>ピックアップ</h2></div>
+      <div class="pt-feature">
+        ${pickup[0] ? tcard(pickup[0], {desc: true, big: true}) : ''}
+        <div class="pt-feature-list">
+${pickup.slice(1).map(a => hcard(a)).join('\n')}
+        </div>
+      </div>
+    </section>
+    <section class="pt-sec" id="new">
+      <div class="pt-sec-head"><h2>新着記事</h2><a class="pt-more" href="/media/search/">記事を検索 →</a></div>
+      <div class="pt-grid">${latest.map(a => tcard(a)).join('\n')}</div>
+    </section>
+    ${groupSecs}
+  </div>
+  <aside class="pt-side" aria-label="記事のメニュー">
+    <section class="side-box">
+      <h2 class="side-h">注目の記事</h2>
+      <ol class="side-num">${noteworthy.map(a => `<li><a href="${artUrl(a)}">${esc(a.title)}</a></li>`).join('')}</ol>
+    </section>
+    ${sideCats('')}
+    ${sideCta}
+    <section class="side-box">
+      <h2 class="side-h">タグ</h2>
+      <div class="side-tags">${topTags.map(t => `<a href="/media/search/?q=${encodeURIComponent(t)}">#${esc(t)}</a>`).join('')}</div>
+    </section>
+  </aside>
+</div>
 <div class="wrap">
-    ${groups}
-  <section class="media-group">
-    <h2>新着の記事</h2>
-    <div class="grid g2">${arts.slice(0, 12).map(card).join('\n')}</div>
-  </section>
   ${ctaBand()}
 </div>
 </main>
@@ -131,6 +215,8 @@ module.exports = function buildMedia({dir, SITE_URL, SITE_NAME, FORM_URL, TALK_U
       ...(a.related || []).map(s => bySlug[s]).filter(Boolean),
       ...(byHub[a.hub] || []).filter(x => x.slug !== a.slug)
     ].filter((x, i, arr) => arr.indexOf(x) === i).slice(0, 6);
+    // サイドバー：同じカテゴリの新しい記事（本文下の「あわせて読みたい」と重ならないもの）
+    const sameHub = (byHub[a.hub] || []).filter(x => x.slug !== a.slug && !related.includes(x)).slice(0, 5);
     const hub = HUB[a.hub];
     const ld = [{
       '@context': 'https://schema.org', '@type': 'Article',
@@ -156,7 +242,8 @@ module.exports = function buildMedia({dir, SITE_URL, SITE_NAME, FORM_URL, TALK_U
       title: `${a.title}｜${SITE_NAME}`,
       desc: a.description,
       canonical: artUrl(a)
-    }).replace('</head>', `<script type="application/ld+json">${JSON.stringify(ld).replace(/</g, '\\u003c')}</script>\n</head>`) + `<main class="wrap narrow article">
+    }).replace('</head>', `<script type="application/ld+json">${JSON.stringify(ld).replace(/</g, '\\u003c')}</script>\n</head>`) + `<main class="wrap art-layout">
+  <article class="art-main">
   <p class="crumbs"><a href="/">トップ</a> › <a href="/media/">お役立ち記事</a> › <a href="${hubUrl(a.hub)}">${esc(hub.label)}</a></p>
   <a class="art-hub" href="${hubUrl(a.hub)}">${esc(hub.label)}</a>
   <h1 class="art-title">${esc(a.title)}</h1>
@@ -168,7 +255,18 @@ ${body}
   ${a.sources && a.sources.length ? `<section class="sources"><h2>参考にした公的情報・資料</h2><ul>${a.sources.map(s => `<li><a href="${esc(s.u)}" target="_blank" rel="noopener nofollow">${esc(s.t)}</a></li>`).join('')}</ul>
   <p class="note">記事の内容は公開日時点の情報にもとづきます。制度や税率は変わることがあるため、手続きの前に必ず各機関の最新情報をご確認ください。</p></section>` : ''}
   ${ctaBand('条件に合う案件だけ、知りたい方へ')}
-  ${related.length ? `<section class="related"><h2>あわせて読みたい</h2><div class="grid g2">${related.map(card).join('\n')}</div></section>` : ''}
+  ${related.length ? `<section class="related"><h2>あわせて読みたい</h2><div class="pt-grid">${related.map(x => tcard(x)).join('\n')}</div></section>` : ''}
+  <p class="pt-more-row"><a class="pt-more" href="${hubUrl(a.hub)}">${esc(hub.label)}の記事をもっと見る →</a></p>
+  </article>
+  <aside class="art-side" aria-label="記事のメニュー">
+    ${sameHub.length ? `<section class="side-box">
+      <h2 class="side-h">${esc(hub.label)}の記事</h2>
+      <div class="side-list">${sameHub.map(x => hcard(x, 'p')).join('\n')}</div>
+      <a class="pt-more" href="${hubUrl(a.hub)}">もっと見る →</a>
+    </section>` : ''}
+    ${sideCats(a.hub)}
+    <div class="side-sticky">${sideCta}</div>
+  </aside>
 </main>
 ` + foot();
     write(`media/${a.slug}/index.html`, html);
