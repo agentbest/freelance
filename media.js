@@ -14,6 +14,73 @@ const BOX = {
   caution: '注意'
 };
 
+/* ---------- 記事末尾の「正社員の求人も見てみる」（2026-11-18） ----------
+   運営会社の中途求人サイト jobs.agent-best.net の募集中の求人を、記事のハブ（職種）に合わせて4件出す。
+   閲覧時に https://jobs.agent-best.net/data/group-jobs/<大分類slug>.json（jobsite の media-jobs.js が毎朝作る・CORS可）を読む。
+   取れないときは hidden のまま＝何も出ない。フリーランスの記事なので控えめに、CTA帯の後ろに置く。
+   税金・契約・法律などの記事は職種が決まらないので出さない。正社員との比較・年代別キャリアの記事はエンジニアの求人。
+   リンクは utm_source=freelance&utm_medium=article-jobs&utm_campaign=<slug>、クリックは GA4 jobs_click（placement=freelance-article-jobs）。 */
+const JOBS_GROUP_BY_HUB = {
+  'pm-pmo': ['project-management', 'プロジェクト管理'],
+  'it-consul': ['it-consultant', 'ITコンサルタント'], 'sap-erp': ['it-consultant', 'ITコンサルタント'],
+  'biz-consul': ['consultant', 'コンサルタント'],
+  backend: ['engineer', 'エンジニア'], frontend: ['engineer', 'エンジニア'], mobile: ['engineer', 'エンジニア'],
+  'embedded-game': ['engineer', 'エンジニア'], 'infra-cloud': ['engineer', 'エンジニア'], 'data-ai': ['engineer', 'エンジニア'],
+  security: ['engineer', 'エンジニア'], qa: ['engineer', 'エンジニア'],
+  'web-design': ['design', 'デザイン'],
+  'back-to-employee': ['engineer', 'エンジニア'], career: ['engineer', 'エンジニア'],
+};
+/* 閲覧時に動く部分。toString() でページに埋めるので、外の変数を参照しないこと */
+function jobsCardsClient(placement, source) {
+  var b = document.querySelector('[data-ab-jobs]');
+  if (!b || !window.fetch) return;
+  var d = b.dataset;
+  var esc = function (s) {
+    return String(s == null ? '' : s).replace(/[&<>"']/g, function (c) {
+      return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c];
+    });
+  };
+  var h = 0;
+  for (var i = 0; i < d.slug.length; i++) h = (h * 31 + d.slug.charCodeAt(i)) >>> 0;
+  var send = function () {
+    if (window.gtag) window.gtag('event', 'jobs_click', { placement: placement, page_path: location.pathname });
+  };
+  b.querySelector('[data-ab-jobs-all]').addEventListener('click', send);
+  fetch('https://jobs.agent-best.net/data/group-jobs/' + d.group + '.json')
+    .then(function (r) { return r.ok ? r.json() : null; })
+    .then(function (x) {
+      if (!x || !x.j || !x.j.length) return;
+      var n = x.j.length, per = Math.min(4, n), st = (h * per) % n, pick = [];
+      for (var k = 0; k < per; k++) pick.push(x.j[(st + k) % n]);
+      var utm = '?utm_source=' + source + '&utm_medium=article-jobs&utm_campaign=' + encodeURIComponent(d.slug);
+      var ul = b.querySelector('[data-ab-jobs-list]');
+      ul.innerHTML = pick.map(function (j) {
+        var base = j[6] === 's' ? 'https://skill.agent-best.net/' : 'https://jobs.agent-best.net/';
+        return '<li><a href="' + esc(base + 'job/' + encodeURIComponent(j[0]) + '/' + utm) + '" target="_blank" rel="noopener">'
+          + '<span class="abj-co">' + esc(j[1]) + '</span><span class="abj-name">' + esc(j[2]) + '</span>'
+          + '<span class="abj-meta"><b>' + esc(j[3]) + '</b>' + (j[4] ? '・' + esc(j[4]) : '') + '</span></a></li>';
+      }).join('');
+      Array.prototype.forEach.call(ul.querySelectorAll('a'), function (a) { a.addEventListener('click', send); });
+      if (x.n) b.querySelector('[data-ab-jobs-n]').textContent = '（' + Number(x.n).toLocaleString('ja-JP') + '件）';
+      b.hidden = false;
+    })
+    .catch(function () {});
+}
+const JOBS_CARDS_CSS = '<style>.abj{margin:28px 0;padding:16px 18px;border:1px solid #d8dee6;border-radius:8px;background:#f7f9fb;color:#1f2933}.abj a{color:#0b4f8a}.abj-eyebrow{margin:0 0 2px;font-size:.75rem;font-weight:700;color:#5b6573}.abj-title{margin:0 0 4px;font-weight:700}.abj-lead{margin:0 0 10px;font-size:.82rem;color:#5b6573}.abj ul{list-style:none;margin:0;padding:0;display:grid;gap:8px}.abj li{margin:0;padding:0}.abj li:before{content:none}.abj li a{display:grid;gap:2px;padding:10px 12px;border:1px solid #d8dee6;border-radius:6px;background:#fff;color:#1f2933;text-decoration:none}.abj li a:hover{border-color:#0b2a4a}.abj-co{font-size:.76rem;color:#5b6573}.abj-name{font-weight:700;line-height:1.5;color:#0b2a4a}.abj-meta{font-size:.8rem}.abj-meta b{color:#c2410c}.abj-all{margin:10px 0 0;font-size:.88rem}.abj-note{margin:6px 0 0;font-size:.72rem;color:#5b6573}</style>';
+function jobsCards(a, esc) {
+  const g = JOBS_GROUP_BY_HUB[a.hub];
+  if (!g) return '';
+  const all = `https://jobs.agent-best.net/jobs/${g[0]}/?utm_source=freelance&utm_medium=article-jobs&utm_campaign=${encodeURIComponent(a.slug)}`;
+  return `${JOBS_CARDS_CSS}<aside class="abj" data-ab-jobs hidden data-group="${g[0]}" data-slug="${esc(a.slug)}" aria-label="正社員の求人">
+  <p class="abj-eyebrow">正社員の求人も見てみる</p>
+  <p class="abj-title">${esc(g[1])}の募集中の求人</p>
+  <p class="abj-lead">業務委託と比べてみたい方へ。運営会社の中途採用の求人サイトから、いま募集中の求人です。</p>
+  <ul data-ab-jobs-list></ul>
+  <p class="abj-all"><a href="${all}" target="_blank" rel="noopener" data-ab-jobs-all>${esc(g[1])}の求人<span data-ab-jobs-n></span>をすべて見る →</a></p>
+  <p class="abj-note">株式会社エージェントベストの求人サイト（jobs.agent-best.net）に掲載中の求人です。応募は無料で、当社から企業へ推薦する形で選考が進みます。</p>
+</aside><script>(${jobsCardsClient.toString()})("freelance-article-jobs","freelance");</script>`;
+}
+
 module.exports = function buildMedia({dir, SITE_URL, SITE_NAME, FORM_URL, TALK_URL, esc, head, foot, write}){
   const src = path.join(dir, '_media');
   const tax = JSON.parse(fs.readFileSync(path.join(src, 'taxonomy.json'), 'utf8'));
@@ -254,7 +321,7 @@ ${body}
   </div>
   ${a.sources && a.sources.length ? `<section class="sources"><h2>参考にした公的情報・資料</h2><ul>${a.sources.map(s => `<li><a href="${esc(s.u)}" target="_blank" rel="noopener nofollow">${esc(s.t)}</a></li>`).join('')}</ul>
   <p class="note">記事の内容は公開日時点の情報にもとづきます。制度や税率は変わることがあるため、手続きの前に必ず各機関の最新情報をご確認ください。</p></section>` : ''}
-  ${ctaBand('条件に合う案件だけ、知りたい方へ')}
+  ${ctaBand('条件に合う案件だけ、知りたい方へ')}${(jc => jc ? '\n  ' + jc : '')(jobsCards(a, esc))}
   ${related.length ? `<section class="related"><h2>あわせて読みたい</h2><div class="pt-grid">${related.map(x => tcard(x)).join('\n')}</div></section>` : ''}
   <p class="pt-more-row"><a class="pt-more" href="${hubUrl(a.hub)}">${esc(hub.label)}の記事をもっと見る →</a></p>
   </article>

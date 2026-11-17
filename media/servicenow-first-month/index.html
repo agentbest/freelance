@@ -113,6 +113,48 @@ document.addEventListener('click',e=>{const a=e.target.closest('[data-line-cta]'
     <a class="btn btn-ghost" href="/jobs/">案件を探す</a>
   </div>
 </div>
+  <style>.abj{margin:28px 0;padding:16px 18px;border:1px solid #d8dee6;border-radius:8px;background:#f7f9fb;color:#1f2933}.abj a{color:#0b4f8a}.abj-eyebrow{margin:0 0 2px;font-size:.75rem;font-weight:700;color:#5b6573}.abj-title{margin:0 0 4px;font-weight:700}.abj-lead{margin:0 0 10px;font-size:.82rem;color:#5b6573}.abj ul{list-style:none;margin:0;padding:0;display:grid;gap:8px}.abj li{margin:0;padding:0}.abj li:before{content:none}.abj li a{display:grid;gap:2px;padding:10px 12px;border:1px solid #d8dee6;border-radius:6px;background:#fff;color:#1f2933;text-decoration:none}.abj li a:hover{border-color:#0b2a4a}.abj-co{font-size:.76rem;color:#5b6573}.abj-name{font-weight:700;line-height:1.5;color:#0b2a4a}.abj-meta{font-size:.8rem}.abj-meta b{color:#c2410c}.abj-all{margin:10px 0 0;font-size:.88rem}.abj-note{margin:6px 0 0;font-size:.72rem;color:#5b6573}</style><aside class="abj" data-ab-jobs hidden data-group="it-consultant" data-slug="servicenow-first-month" aria-label="正社員の求人">
+  <p class="abj-eyebrow">正社員の求人も見てみる</p>
+  <p class="abj-title">ITコンサルタントの募集中の求人</p>
+  <p class="abj-lead">業務委託と比べてみたい方へ。運営会社の中途採用の求人サイトから、いま募集中の求人です。</p>
+  <ul data-ab-jobs-list></ul>
+  <p class="abj-all"><a href="https://jobs.agent-best.net/jobs/it-consultant/?utm_source=freelance&utm_medium=article-jobs&utm_campaign=servicenow-first-month" target="_blank" rel="noopener" data-ab-jobs-all>ITコンサルタントの求人<span data-ab-jobs-n></span>をすべて見る →</a></p>
+  <p class="abj-note">株式会社エージェントベストの求人サイト（jobs.agent-best.net）に掲載中の求人です。応募は無料で、当社から企業へ推薦する形で選考が進みます。</p>
+</aside><script>(function jobsCardsClient(placement, source) {
+  var b = document.querySelector('[data-ab-jobs]');
+  if (!b || !window.fetch) return;
+  var d = b.dataset;
+  var esc = function (s) {
+    return String(s == null ? '' : s).replace(/[&<>"']/g, function (c) {
+      return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c];
+    });
+  };
+  var h = 0;
+  for (var i = 0; i < d.slug.length; i++) h = (h * 31 + d.slug.charCodeAt(i)) >>> 0;
+  var send = function () {
+    if (window.gtag) window.gtag('event', 'jobs_click', { placement: placement, page_path: location.pathname });
+  };
+  b.querySelector('[data-ab-jobs-all]').addEventListener('click', send);
+  fetch('https://jobs.agent-best.net/data/group-jobs/' + d.group + '.json')
+    .then(function (r) { return r.ok ? r.json() : null; })
+    .then(function (x) {
+      if (!x || !x.j || !x.j.length) return;
+      var n = x.j.length, per = Math.min(4, n), st = (h * per) % n, pick = [];
+      for (var k = 0; k < per; k++) pick.push(x.j[(st + k) % n]);
+      var utm = '?utm_source=' + source + '&utm_medium=article-jobs&utm_campaign=' + encodeURIComponent(d.slug);
+      var ul = b.querySelector('[data-ab-jobs-list]');
+      ul.innerHTML = pick.map(function (j) {
+        var base = j[6] === 's' ? 'https://skill.agent-best.net/' : 'https://jobs.agent-best.net/';
+        return '<li><a href="' + esc(base + 'job/' + encodeURIComponent(j[0]) + '/' + utm) + '" target="_blank" rel="noopener">'
+          + '<span class="abj-co">' + esc(j[1]) + '</span><span class="abj-name">' + esc(j[2]) + '</span>'
+          + '<span class="abj-meta"><b>' + esc(j[3]) + '</b>' + (j[4] ? '・' + esc(j[4]) : '') + '</span></a></li>';
+      }).join('');
+      Array.prototype.forEach.call(ul.querySelectorAll('a'), function (a) { a.addEventListener('click', send); });
+      if (x.n) b.querySelector('[data-ab-jobs-n]').textContent = '（' + Number(x.n).toLocaleString('ja-JP') + '件）';
+      b.hidden = false;
+    })
+    .catch(function () {});
+})("freelance-article-jobs","freelance");</script>
   <section class="related"><h2>あわせて読みたい</h2><div class="pt-grid"><a class="pt-card" href="/media/sankaku-junbi/">
   <span class="thumb th2" aria-hidden="true"><span class="th-cat">案件の探し方</span><span class="th-key">参画準備</span></span>
   <div class="pt-body"><span class="pt-meta"><span class="art-hub">案件の探し方</span><time datetime="2026-10-29">2026.10.29</time></span>
